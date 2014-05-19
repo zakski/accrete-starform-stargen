@@ -11,5 +11,7 @@ Mat Burdick - http://znark.com/create/accrete.html
  	be easier to port over because of this. Unfortunately I was unable to detect a site containing his latest up to date code, so
  	Ian Burrell's copy will have to do.
 
-Chris "Keris Croughton - http://www.firedrake.org/keris/
-	Chris's version is also very significant, it used as the basis of StarGen and several other forks and introduces various improvements. Not yet Processed.
+Chris "Keris" Croughton - http://www.firedrake.org/keris/
+	Chris builds upon mat's version and this is used as the basis of StarGen and several other forks. His main contributions are 
+	improving the code's structure, adding various atmosphere bits and bobs and prototype moon code. He has also build upon a 
+	version made by Andrew Folkins. 

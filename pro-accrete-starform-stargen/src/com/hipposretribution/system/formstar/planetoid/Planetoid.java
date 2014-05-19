@@ -1,10 +1,12 @@
 package com.hipposretribution.system.formstar.planetoid;
 
+import com.hipposretribution.system.formstar.SolarConst;
+
 /**
  * Abstract Class to store all planetoid information
  * 
  * @author zakski
- *
+ * 
  */
 abstract class Planetoid {
 	public double axis; /* semi-major axis of the orbit (in AU) */
@@ -28,14 +30,31 @@ abstract class Planetoid {
 	public double rmsVelocity; /* units of cm/sec */
 	public double molec_weight; /* smallest molecular weight retained */
 	public double surfGravity; /* units of Earth gravities */
-	
+
 	public double volatileGasInventory;
 	public double surfPressure; /* units of millibars (mb) */
 	public double boilPoint; /* the boiling point of water (Kelvin) */
 	public double albedo; /* albedo of the planet */
 	public double surf_temp; /* surface temperature in Kelvin */
-	
+
 	public double hydrosphere; /* fraction of surface covered */
 	public double cloud_cover; /* fraction of surface covered */
 	public double ice_cover; /* fraction of surface covered */
+
+	@Override
+	public String toString() {
+		StringBuilder build = new StringBuilder();
+		build.append(axis + " " + ecc + " " + mass);
+	
+		if (mass > 2e-15) {
+			build.append(" (" + mass * SolarConst.SUN_MASS_IN_EARTH_MASSES + ")");
+		}
+	
+		if (gasGiant) {
+			build.append(" giant");
+		}
+
+		return build.toString();
+	}
+
 }
