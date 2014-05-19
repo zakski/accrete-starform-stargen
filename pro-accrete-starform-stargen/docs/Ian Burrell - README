@@ -1,0 +1,26 @@
+-- Taken From His Webpage
+
+History
+Long ago, before I was born, there was published an article by Dole about simulating the creation of planetary systems by accretion. This simple model was later analyzed in another paper by Carl Sagan. A later article published Fortran code for implementing the original algorithm and for simulating the creation of a planetary system.
+
+As far as I know, the first widespread implementation was done by Matt Burdick. He wrote a Turbo Pascal version, a C version, and put together a package called starform. All of these implementations include environmental code to create and calculate temperature, atmosphere, and other environmental parameters beyond those of the Dole accretion model.
+
+The accrete program got a wide distribution from the USML mailing list in 1988. That mailing list's lofty goal was to explore the simulation of the universe, concentrating on the creation of fictional planetary systems, random terrain generation, and modeling human societies. It eventually died out due to lack of interest and a broadening of topic.
+
+Although this model is good enough for creating fictional star systems, the current theory for the creation of the solar system has moved on. Current scientific models are much more complicated and require significant computation time. The discovery of extrasolar planets has raised significant questions about the formation of planets.
+Versions
+
+I have written a Java applet. The source and class files are available.
+
+If you know of or have any more versions of the accretion program, have any information on different implementations, or know of any derivative code, please send me email at iburrell@znark.com. I am also looking for any similiar code or information of simulation of planetary systems, planetary surfaces, environments, etc.
+
+    Turbo Pascal version, by Matt Burdick, 1988. Available as zip archive.
+    C version, by Matt Burdick, 1988. Most commonly distributed as accrete. Available as zip archive.
+    Starform program, by Matt Burdick, 1988. Enhancement of basic accretion code with more output options. Available as shar archive.
+    C++ version, by Jon Leech; just includes accretion code. Available as zip archive. 
+
+References
+
+    Dole, Stephen H. "Computer Simulation of the Formation of Planetary Systems". Icarus, vol 13, pp 494-508, 1970.
+    Isaacman, Richard. & Sagan, Carl. "Computer Simulation of Planetary Accretion Dynamics: Sensitivity to Initial Conditions". Icarus, vol 31, p 510, 1977.
+    Fogg, Martyn J. "Extra-Solar Planetary Systems: A Microcomputer Simulation". Journal of the British Interplanetary Society, vol 38, p 501-514, 1985.

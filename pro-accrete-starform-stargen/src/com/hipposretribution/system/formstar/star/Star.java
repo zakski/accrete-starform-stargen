@@ -3,6 +3,7 @@ package com.hipposretribution.system.formstar.star;
 import java.util.Random;
 
 /**
+ * Class to Represent a Star
  * 
  * @author zakski
  *

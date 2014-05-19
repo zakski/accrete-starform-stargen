@@ -1,0 +1,15 @@
+Authors of Various Versions that I have looked at so far
+
+Ian Burrell - http://znark.com/create/accrete.html
+	Ian Burrell's version, written in java, has provided the initial understanding of how accretion works.
+
+Jon Leech - http://znark.com/create/accrete.html, http://www.cs.cmu.edu/afs/cs/usr/mnr/st/std096
+	Jon Leech wrote an alternative version, which I have included for the sake of completeness.
+	
+Mat Burdick - http://znark.com/create/accrete.html
+ 	This version is used as a basis for this port, as it is the most widely used and any improvements made by other authors will
+ 	be easier to port over because of this. Unfortunately I was unable to detect a site containing his latest up to date code, so
+ 	Ian Burrell's copy will have to do.
+
+Chris "Keris Croughton - http://www.firedrake.org/keris/
+	Chris's version is also very significant, it used as the basis of StarGen and several other forks and introduces various improvements.
