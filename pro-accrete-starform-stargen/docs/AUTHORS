@@ -12,10 +12,10 @@ Mat Burdick - http://znark.com/create/accrete.html, http://reocities.com/CapeCan
  	Ian Burrell's unmodified copy will have to do.
 
 Andrew Folkins - http://reocities.com/CapeCanaveral/8191/usmlarchive.html
-	Andrew Folkins at some point published his own version, which was then modified by keris, unfortunately it is packed up in a shar 
+	Andrew Folkins at some point published his own version (for the amiga), which was then modified by keris, unfortunately it is packed up in a shar 
 	which I am unable to open on windows.
 
 Chris "Keris" Croughton - DECEASED - http://www.firedrake.org/keris/
 	Chris builds upon mat's version and this is used as the basis of StarGen and several other forks. His main contributions are 
 	improving the code's structure, adding various atmosphere bits and bobs and prototype moon code. He has also build upon a 
-	version made by Andrew Folkins, that I cannot find the original of. 
+	version made by Andrew Folkins. 
