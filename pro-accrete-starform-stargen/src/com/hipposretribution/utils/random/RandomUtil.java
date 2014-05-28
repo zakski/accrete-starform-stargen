@@ -1,4 +1,4 @@
-package com.hipposretribution.random;
+package com.hipposretribution.utils.random;
 
 import java.util.Random;
 

@@ -2,5 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/zszadowski/Documents/Dropbox/Portfolio/lib/processing-2.1.1/core/library/core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zszadowski/Documents/Dropbox/Portfolio/lib/processing-2.1.1/core/library/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zszadowski/Documents/Dropbox/Portfolio/lib/processing-2.1.1/core/library/jogl-all.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/controlP5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

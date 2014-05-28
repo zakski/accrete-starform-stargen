@@ -2,8 +2,8 @@ package com.hipposretribution.system.formstar.star;
 
 import java.util.Random;
 
-import com.hipposretribution.random.RandomUtil;
 import com.hipposretribution.system.formstar.SolarConst;
+import com.hipposretribution.utils.random.RandomUtil;
 
 /**
  * Class to do the heavy calculations of generating a star

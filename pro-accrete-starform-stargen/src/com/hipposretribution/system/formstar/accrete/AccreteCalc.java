@@ -297,4 +297,18 @@ final class AccreteCalc {
 			return (density * 5.5);
 	}
 
+	/**
+	 * Method to calculate the orbital period in terms of Earth days.
+	 * 
+	 * @param separation - the distance between the two masses
+	 * @param small - the mass rotating around the large mass
+	 * @param large - the anchor for the small mass to rotate around
+	 * @return the orbital period
+	 */
+	static double period(double separation, double small, double large) {
+		double period_in_years;
+
+		period_in_years = Math.sqrt(Math.pow(separation, 3) / (small + large));
+		return (period_in_years * SolarConst.DAYS_IN_A_YEAR);
+	}
 }

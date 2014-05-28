@@ -21,6 +21,7 @@ public class SystemGen {
 		// Create the Planets and Moons, if applicable
 		AccretionProcess accrete = new AccretionProcess(rand, moons, verbose);
 		sys.innermost = accrete.accretePlanetMoons(sys.sun);
+		sys.planetCount = accrete.getPlanetCount();
 		
 		if (verbose){
 			for(Planet plan = sys.innermost; plan != null; plan = plan.next){

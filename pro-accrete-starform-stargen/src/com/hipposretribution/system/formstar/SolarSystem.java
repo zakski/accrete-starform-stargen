@@ -13,6 +13,7 @@ public class SolarSystem {
 
 	public Star sun; // the sun TODO look into binary systems
 	public Planet innermost; // innermost system planet
+	public int planetCount; // number of planets
 
 	public SolarSystem(Star star) {
 		sun = star;

@@ -75,6 +75,9 @@ public class SolarConst {
 	public static final double CM_PER_KM = 1.0E5; /* number of cm in a km */
 	public static final double KM_PER_AU = CM_PER_AU / CM_PER_KM;
 
+	/* Time */
+	public static final double SECONDS_PER_HOUR = 3600.0;
+	public static final double DAYS_IN_A_YEAR = 365.256; /* Earth days per Earth year */
 
 
 }

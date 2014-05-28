@@ -2,11 +2,11 @@ package com.hipposretribution.system.formstar.accrete;
 
 import java.util.Random;
 
-import com.hipposretribution.random.RandomUtil;
 import com.hipposretribution.system.formstar.SolarConst;
 import com.hipposretribution.system.formstar.planetoid.Moon;
 import com.hipposretribution.system.formstar.planetoid.Planet;
 import com.hipposretribution.system.formstar.star.Star;
+import com.hipposretribution.utils.random.RandomUtil;
 
 public class AccretionProcess {
 
@@ -382,7 +382,9 @@ public class AccretionProcess {
 				dist2 = AccreteCalc.outerEffectLimit(curr.axis, curr.ecc, curr.mass) - curr.axis;
 			}
 			if ((Math.abs(dist) <= dist1) || (Math.abs(dist) <= dist2)) {
-				System.err.println("Collision between two planetesimals!");
+				if (verbose) {
+					System.err.println("Collision between two planetesimals!");
+				}
 				mergeTwoPlanets(curr, axis, ecc, mass, criticalMass, stellarLuminosity);
 				return true;
 			}
@@ -440,8 +442,9 @@ public class AccretionProcess {
 					if (!coalescePlanetesimals(axis, ecc, mass, criticalMass, star.stellarLuminosity)) {
 						insertPlanet(axis, ecc, mass);
 						planetCount++;
-						System.err.println(" Injection Successful.");
-
+						if (verbose) {
+							System.err.println(" Injection Successful.");
+						}
 					}
 				} else if (verbose) {
 					System.err.println(" failed due to large neighbor.");
@@ -558,9 +561,10 @@ public class AccretionProcess {
 		for (Planet planet = innermost; planet != null; planet = planet.next) {
 			planet.orbitZone = AccreteCalc.orbitalZone(planet.axis, star.stellarLuminosity);
 			calculateDensityAndRadius(planet, star.radiusEcosphere);
-			if (moons) {
-				planet.innermost = accreteMoons(planet.mass, planet.radius);
-			}
+			planet.orbitPeriod = AccreteCalc.period(planet.axis, planet.mass, star.stellarMass);
+			// if (moons) {
+			// planet.innermost = accreteMoons(planet.mass, planet.radius);
+			// }
 		}
 
 		return innermost;
