@@ -1,5 +1,7 @@
 package com.szadowsz.formstar.star;
 
+import com.szadowsz.formstar.calc.StarCalc;
+
 import java.util.Random;
 
 /**

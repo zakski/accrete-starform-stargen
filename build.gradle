@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'scala'
 
 sourceCompatibility = '1.8'
 version = '0.1'
@@ -8,6 +9,7 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.scala-lang', name: 'scala-compiler', version: '2.11.6'
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
     compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.12'
 

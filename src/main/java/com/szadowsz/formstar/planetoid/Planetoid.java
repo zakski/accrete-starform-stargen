@@ -1,6 +1,6 @@
 package com.szadowsz.formstar.planetoid;
 
-import com.szadowsz.formstar.SolarConst;
+import com.szadowsz.formstar.calc.SolarConst;
 
 import java.text.DecimalFormat;
 

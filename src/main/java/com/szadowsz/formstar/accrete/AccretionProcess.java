@@ -1,6 +1,7 @@
 package com.szadowsz.formstar.accrete;
 
-import com.szadowsz.formstar.SolarConst;
+import com.szadowsz.formstar.calc.AccreteCalc;
+import com.szadowsz.formstar.calc.SolarConst;
 import com.szadowsz.formstar.planetoid.Moon;
 import com.szadowsz.formstar.planetoid.Planet;
 import com.szadowsz.formstar.star.Star;
@@ -519,21 +520,6 @@ public class AccretionProcess {
         return head;
     }
 
-    /**
-     * Method to calculate the density and radius
-     *
-     * @param planet          - the planet to calc the density and radius of
-     * @param radiusEcosphere - the system ecosphere radius
-     */
-    private void calculateDensityAndRadius(Planet planet, double radiusEcosphere) {
-        if (planet.gasGiant) {
-            planet.density = AccreteCalc.empiricalDensity(planet.axis, planet.mass, planet.gasGiant, radiusEcosphere);
-            planet.radius = AccreteCalc.volumeRadius(planet.mass, planet.density);
-        } else {
-            planet.radius = AccreteCalc.kothariRadius(planet.mass, planet.gasGiant, planet.orbitZone);
-            planet.density = AccreteCalc.volumeDensity(planet.mass, planet.radius);
-        }
-    }
 
     /**
      * Method to return the number of planets generated
@@ -553,18 +539,13 @@ public class AccretionProcess {
      * @param star - sun of the solar system
      * @return head of the planet for this system
      */
-    public Planet accretePlanetMoons(Star star) {
+    public Planet accretePlanetAndMoons(Star star) {
         Planet innermost = accretePlanets(_rand, star);
-        for (Planet planet = innermost; planet != null; planet = planet.next) {
-            planet.orbitZone = AccreteCalc.orbitalZone(planet.axis, star.stellarLuminosity);
-            calculateDensityAndRadius(planet, star.radiusEcosphere);
-            planet.orbitPeriod = AccreteCalc.period(planet.axis, planet.mass, star.stellarMass);
-
-            if (_genMoons) {
+        if (_genMoons) {
+            for (Planet planet = innermost; planet != null; planet = planet.next) {
                 planet.innermost = accreteMoons(planet.mass, planet.radius);
             }
         }
-
         return innermost;
     }
 }
