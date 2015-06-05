@@ -1,4 +1,4 @@
-package com.szadowsz.starform.constants
+package com.szadowsz.accrete.base.constants
 
 /**
  * Constants File made up of values taken from all versions of the program. Most have been updated where more

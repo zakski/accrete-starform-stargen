@@ -1,4 +1,4 @@
-package com.szadowsz.starform.constants
+package com.szadowsz.accrete.base.constants
 
 /**
  * Constants File made up of values taken from all versions of the program. Most have been updated where more 
@@ -7,7 +7,6 @@ package com.szadowsz.starform.constants
  * @author Zakski : 31/05/2015.
  */
 trait EarthConstants extends UnitConstants {
-
   /**
    * Number of metres in a Astronomical Unit. An AU is the distance between the Earth and the Sun.
    *
@@ -25,6 +24,16 @@ trait EarthConstants extends UnitConstants {
    * @author Ian Burrell - accrete
    */
   final val CM_PER_AU: Double = M_PER_AU * CM_PER_METRE
+  /**
+   * Number of kilometres in a Astronomical Unit. An AU is the distance between the Earth and the Sun.
+   *
+   * @note unit is kilometres.
+   *
+   * @author Carl Burke - starform
+   * @author Mat Burdick - accrete / starform
+   * @author Ian Burrell - accrete
+   */
+  val KM_PER_AU: Double = 1.495978707E8
   /**
    * Earth Mass in g. Original value used by Carl, Mat and Ian is 5.977E27. A more up-to-date  and (hopefully)
    * accurate value is 5.9722E27 taken from the Nasa space facts website and converted from kilograms to grams.
@@ -202,15 +211,6 @@ trait EarthConstants extends UnitConstants {
    * @author Ian Burrell - accrete
    */
   val DAYS_IN_A_YEAR: Double = 365.26
-  /**
-   * Number of kilometres in a Astronomical Unit. An AU is the distance between the Earth and the Sun.
-   *
-   * @note unit is kilometres.
-   *
-   * @author Carl Burke - starform
-   * @author Mat Burdick - accrete / starform
-   * @author Ian Burrell - accrete
-   */
-  val KM_PER_AU: Double = 1.495978707E8
+
 
 }

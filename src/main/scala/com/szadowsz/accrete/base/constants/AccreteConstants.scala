@@ -1,4 +1,4 @@
-package com.szadowsz.starform.constants
+package com.szadowsz.accrete.base.constants
 
 /**
  * @author Zakski : 03/06/2015.
@@ -25,7 +25,7 @@ trait AccreteConstants {
    * @author Mat Burdick
    * @author Carl Burke
    */
-  val DUST_DENSITY_COEFF = 1.5E-3
+  def DUST_DENSITY_COEFF = 1.5E-3
 
   /**
    * Value of the inverted exponent applied to the distance from the stellar mass (in AU) in dust cloud density
@@ -42,7 +42,7 @@ trait AccreteConstants {
    * @author Mat Burdick
    * @author Carl Burke
    */
-  val N = 3.0
+  def N = 3.0
 
   /**
    * Value of the negative coefficient multiplied by the distance from the stellar mass (in AU) in dust cloud density
@@ -59,7 +59,7 @@ trait AccreteConstants {
    * @author Mat Burdick
    * @author Carl Burke
    */
-  val ALPHA: Double = 5.0
+  def ALPHA: Double = 5.0
 
   /**
    * Gas to Dust Ratio of the nebula surrounding the Star. Used in dust cloud density calculations during determination
@@ -78,7 +78,7 @@ trait AccreteConstants {
    * @author Carl Burke
 
    */
-  val K: Double = 50.0
+  def K: Double = 50.0
 
 
   /**
@@ -93,7 +93,7 @@ trait AccreteConstants {
    * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
    *
    */
-  val INNERMOST_PLANET: Double = 0.3
+  def INNERMOST_PLANET: Double = 0.3
 
   /**
    * Furthest distance from the Sun where can we we expect a planet to form. Used in planetismal orbit calculations
@@ -107,7 +107,7 @@ trait AccreteConstants {
    * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
    *
    */
-  val OUTERMOST_PLANET: Double = 50.0
+  def OUTERMOST_PLANET: Double = 50.0
 
   /**
    * The eccentricity coefficient. Used in planetismal orbit calculations to calculate the elliptical nature of the
@@ -115,8 +115,9 @@ trait AccreteConstants {
    * The Planetary Nuclei". Has its roots in "Habitable Planets for Man"'s Probability That The Planet's Eccentricity
    * Is Sufficiently Low equation.
    *
+   * @note should be between 0.0 and 1.0
    * @note Original value from Dole is 0.077.
-   * @note parameter for the accretion process. value was chosen for its ability to produce sensible eccentricities;
+   * @note input parameter for the accretion process. value was chosen for its ability to produce sensible eccentricities;
    *       other values may not produce desired output.
    *
    * @see Habitable Planets for Man - Stephen H. Dole
@@ -126,5 +127,54 @@ trait AccreteConstants {
    * @author Mat Burdick
    * @author Carl Burke
    */
-  val ECCENTRICITY_COEFF: Double = 0.077
+  def ECCENTRICITY_COEFF: Double = 0.077
+
+  /**
+   * The Cloud Eccentricity coefficient. Represent the average eccentricity of particles in the cloud. Used in dust
+   * band width calculations to more accurately simulate particle orbits in the cloud. Represented by W in "Formation
+   * of Planetary Systems by Aggregation: A Computer Simulation" in "c) Aggregation". Mat and Carl use 0.2 and Ian uses
+   * 0.25 for its value.
+   *
+   * @note tested between 0.0 and 0.25
+   * @note Dole recommends 0.2 or 0.25 for solar systems resembling our own.
+   * @note input parameter for the accretion process. value was chosen for its ability to produce sensible eccentricities;
+   *       other values may not produce desired output.
+   *
+   * @see Habitable Planets for Man - Stephen H. Dole
+   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+   *
+   * @author Ian Burrell
+   * @author Mat Burdick
+   * @author Carl Burke
+   */
+  def CLOUD_ECCENTRICITY: Double = 0.2
+
+  /**
+   * The Starting mass given to all protoplanets.
+   *
+   * @note unit is solar mass.
+   * @note referred to as m0 in Dole's Paper.
+   * @note Dole states that the simulation is pretty insensitive to this value becoming smaller.
+   *
+   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+   *
+   * @author Ian Burrell
+   * @author Mat Burdick
+   * @author Carl Burke
+   */
+  def PROTOPLANET_MASS: Double = 1.0E-15 /* Starting Mass in solar mass */
+
+  /**
+   * The Starting mass given to all protoplanets.
+   *
+   * @note unit is solar mass.
+   * @note referred to as B in Dole's Paper.
+   *
+   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+   *
+   * @author Ian Burrell
+   * @author Mat Burdick
+   * @author Carl Burke
+   */
+  def B: Double = 1.2E-5
 }
