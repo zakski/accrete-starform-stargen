@@ -1,5 +1,8 @@
+group 'com.szadowsz'
+
 apply plugin: 'java'
 apply plugin: 'scala'
+
 
 sourceCompatibility = '1.8'
 version = '0.1'

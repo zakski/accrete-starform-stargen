@@ -5,7 +5,6 @@ package com.szadowsz.accrete.base.constants
  */
 trait AccreteConstants {
 
-
   /**
    * Coefficient used in dust cloud density calculations during determination of the initial conditions of the
    * extra-solar planetary system. Represented by 'A' in "Formation of Planetary Systems by Aggregation: A

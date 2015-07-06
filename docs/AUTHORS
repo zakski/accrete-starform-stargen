@@ -1,15 +1,30 @@
 Authors of Various Versions that I have looked at so far
 
+ACCRETE
+
 Ian Burrell - http://znark.com/create/accrete.html
 	Ian Burrell's version, written in java, has provided the initial understanding of how accretion works.
 
+Mat Burdick - http://znark.com/create/accrete.html, http://reocities.com/CapeCanaveral/8191/usmlarchive.html
+ 	Most widely used version of accrete and any improvements made by other authors will be easier to port over
+ 	because of this. Unfortunately I was unable to detect a site containing his latest up to date code, so
+ 	Ian Burrell's hosted unmodified copy will have to do.
+
+
+STARFORM
+
+Mat Burdick - http://znark.com/create/accrete.html, http://reocities.com/CapeCanaveral/8191/usmlarchive.html
+ 	Improved version of Accrete. Basis on which a lot of the later versions are built.
+
+Carl Burke - http://www.reocities.com/Area51/6902/w_accr.html
+	Another Java Applet, but with some visuals.
+
+
+UNPROCESSED
+
 Jon Leech - http://znark.com/create/accrete.html, http://www.cs.cmu.edu/afs/cs/usr/mnr/st/std096
 	Jon Leech wrote an alternative version, which I have included for the sake of completeness.
-	
-Mat Burdick - http://znark.com/create/accrete.html, http://reocities.com/CapeCanaveral/8191/usmlarchive.html
- 	This version is used as a basis for this port, as it is the most widely used and any improvements made by other authors will
- 	be easier to port over because of this. Unfortunately I was unable to detect a site containing his latest up to date code, so
- 	Ian Burrell's unmodified copy will have to do.
+
 
 Andrew Folkins - http://reocities.com/CapeCanaveral/8191/usmlarchive.html
 	Andrew Folkins at some point published his own version (for the amiga), which was then modified by keris, unfortunately it is packed up in a shar 
@@ -17,8 +32,6 @@ Andrew Folkins - http://reocities.com/CapeCanaveral/8191/usmlarchive.html
 
 Chris "Keris" Croughton - DECEASED - http://www.firedrake.org/keris/
 	Chris builds upon mat's version and this is used as the basis of StarGen and several other forks. His main contributions are 
-	improving the code's structure, adding various atmosphere bits and bobs and prototype moon code. He has also build upon a 
-	version made by Andrew Folkins. TODO Further Investigate
+	improving the code's structure, adding various atmosphere bits and bobs and improved star code. He has also build upon a
+	version made by Andrew Folkins.
 	
-Carl Burke - http://www.reocities.com/Area51/6902/w_accr.html
-	Another Java Applet, but with better visuals. TODO Further Investigate

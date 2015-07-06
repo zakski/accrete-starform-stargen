@@ -1,9 +1,5 @@
 package com.szadowsz.formstar.calc;
 
-import com.szadowsz.utils.RandomUtil;
-
-import java.util.Random;
-
 /**
  * @author Zakski : 30/05/2015.
  */
@@ -138,17 +134,17 @@ public class PlanetoidCalc {
         return base_angular_velocity + (change_in_angular * stell_age);
     }
 
-    /**
-     * Estimates planetary inclination (axial tilt).  Calibrated to Earth.
-     *
-     * @param orb_radius Semi-major axis of orbit in AU
-     * @returns Tilt in degrees
-     */
-    public static int inclination(Random rand, double orb_radius) {
-        int temp;
-        temp = (int) (Math.pow(orb_radius, 0.2) * RandomUtil.variation(rand, SolarConst.EARTH_AXIAL_TILT, 0.4));
-        return (temp % 360);
-    }
+//    /**
+//     * Estimates planetary inclination (axial tilt).  Calibrated to Earth.
+//     *
+//     * @param orb_radius Semi-major axis of orbit in AU
+//     * @returns Tilt in degrees
+//     */
+//    public static int inclination(Random rand, double orb_radius) {
+//        int temp;
+//        temp = (int) (Math.pow(orb_radius, 0.2) * RandomUtil.variation(rand, SolarConst.EARTH_AXIAL_TILT, 0.4));
+//        return (temp % 360);
+//    }
 
     /**
      * Estimates length of the planet's day.

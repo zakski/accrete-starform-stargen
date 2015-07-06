@@ -1,13 +1,14 @@
 Short Term
-Conver to Scala (In Progress)
+Convert to Scala (In Progress)
 Consider Carl Burke's Code (In Progress)
 
-Investigate Folkins' Accretion Branch and Keris' modifications
-
 Medium Term
-Get a solid Moon/Rings/Asteroid Belt accretion process
-Better Star Classification
-Add Visuals
+Investigate Folkins' Accretion Branch and Keris' modifications
 
 Long Term
 Reconcile StarGen with codebase
+Get a solid Moon/Rings/Asteroid Belt accretion process
+Better Star Classification
+Add Visuals
+Make Decision on whether to add option of using older inaccurate values
+Try to recreate older random number generators if using older values

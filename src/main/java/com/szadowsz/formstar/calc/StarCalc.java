@@ -1,7 +1,6 @@
 package com.szadowsz.formstar.calc;
 
 import com.szadowsz.formstar.star.Star;
-import com.szadowsz.utils.RandomUtil;
 
 import java.util.Random;
 
@@ -42,9 +41,9 @@ public final class StarCalc {
 	 * @param stellarMass - star's mass in terms of solar mass
 	 * @return star's radius in terms of solar radius
 	 */
-	private static double radius(Random rand, double stellarMass) {
-		return RandomUtil.variation(rand, Math.pow(stellarMass, 1.0 / 3.0), 0.05);
-	}
+//	private static double radius(Random rand, double stellarMass) {
+//		return RandomUtil.variation(rand, Math.pow(stellarMass, 1.0 / 3.0), 0.05);
+//	}
 
 	/**
 	 * Method to calculate the aproximate greenhouse limit of the star
@@ -77,14 +76,14 @@ public final class StarCalc {
 	 * @param mainSeqLife - the main sequence lifespan for upper limit of the generated star' age.
 	 * @return the star's generated age
 	 */
-	private static double age(Random rand, double mainSeqLife) {
-		if (mainSeqLife > SolarConst.AGE_OUTER_LIMIT)
-			return RandomUtil.nextDouble(rand, SolarConst.AGE_INNER_LIMIT, SolarConst.AGE_OUTER_LIMIT);
-		else if (mainSeqLife > SolarConst.AGE_INNER_LIMIT)
-			return RandomUtil.nextDouble(rand, SolarConst.AGE_INNER_LIMIT, mainSeqLife);
-		else
-			return RandomUtil.nextDouble(rand, mainSeqLife / 10, mainSeqLife);
-	}
+//	private static double age(Random rand, double mainSeqLife) {
+//		if (mainSeqLife > SolarConst.AGE_OUTER_LIMIT)
+//			return RandomUtil.nextDouble(rand, SolarConst.AGE_INNER_LIMIT, SolarConst.AGE_OUTER_LIMIT);
+//		else if (mainSeqLife > SolarConst.AGE_INNER_LIMIT)
+//			return RandomUtil.nextDouble(rand, SolarConst.AGE_INNER_LIMIT, mainSeqLife);
+//		else
+//			return RandomUtil.nextDouble(rand, mainSeqLife / 10, mainSeqLife);
+//	}
 
 	/**
 	 * Method to calculate the star's approximate lifespan on the main sequence
@@ -136,9 +135,9 @@ public final class StarCalc {
 	 * @param rand - pseudo-random number generator interface
 	 * @return generated mass in terms of solar mass
 	 */
-	private static double mass(Random rand) {
-		return RandomUtil.nextDouble(rand, 0.6, 1.3);
-	}
+//	private static double mass(Random rand) {
+//		return RandomUtil.nextDouble(rand, 0.6, 1.3);
+//	}
 
 	/**
 	 * Method to procedurally generate information for a star
@@ -148,16 +147,16 @@ public final class StarCalc {
 	 */
 	public static Star formStar(Random rand) {
 		Star star = new Star();
-		star.stellarMass = mass(rand);
+		//	star.stellarMass = mass(rand);
 		star.stellarLuminosity = luminosity(star.stellarMass);
 
 		star.mainSeqLife = mainSequenceLife(star.stellarMass, star.stellarLuminosity);
-		star.age = StarCalc.age(rand, star.mainSeqLife);
+		//	star.age = StarCalc.age(rand, star.mainSeqLife);
 
 		star.radiusEcosphere = outerHabitableLimit(star.stellarLuminosity);
 		star.radiusGreenhouse = innerHabitableLimit(star.radiusEcosphere);
 
-		star.stellarRadius = StarCalc.radius(rand, star.stellarMass);
+		//	star.stellarRadius = StarCalc.radius(rand, star.stellarMass);
 
 		star.stellarTemp = StarCalc.temperature(star.stellarLuminosity, star.stellarRadius);
 
