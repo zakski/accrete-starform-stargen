@@ -3,20 +3,20 @@ package com.szadowsz.accrete.base.process
 import java.util.Random
 
 import com.szadowsz.accrete.base.bodies.{DustBand, ProtoPlanet}
-import com.szadowsz.accrete.base.calc
+import com.szadowsz.accrete.base.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc}
 import com.szadowsz.accrete.base.constants.AccreteConstants
 import org.slf4j.{Logger, LoggerFactory}
 
-class AccretionProcess(random: Random) {
-  this: calc.AccreteCalc with calc.PlanetaryCalc with AccreteConstants =>
+abstract class AbstractProcess(random: Random) {
+  this: AccreteCalc with PlanetesimalCalc with CollisionCalc with AccreteConstants =>
 
-  protected val _logger: Logger = LoggerFactory.getLogger(classOf[AccretionProcess])
+  protected val _logger: Logger = LoggerFactory.getLogger(classOf[AbstractProcess])
 
   protected val _rand: Random = random
-  private var _dustHead: DustBand = null
-  private var _innermost: ProtoPlanet = null
-  private var _planetCount: Int = 0
-  private var _hasDust: Boolean = false
+  protected var _dustHead: DustBand = null
+  protected var _innermost: ProtoPlanet = null
+  protected var _planetCount: Int = 0
+  protected var _hasDust: Boolean = false
 
   /**
    * Method to return the number of planets generated
@@ -32,8 +32,11 @@ class AccretionProcess(random: Random) {
    *
    * @return head of the planet for this system
    */
-  def generate(): ProtoPlanet = {
-    accrete(_rand)
+  def accrete(): ProtoPlanet = {
+    if (_innermost == null)
+      accrete(_rand)
+    else
+      _innermost
   }
 
   protected def createProtoPlanet(): ProtoPlanet = {
@@ -51,7 +54,7 @@ class AccretionProcess(random: Random) {
    * @return whether or not there is still dust between innerBandLimit and outerBandLimit in this current
    *         accretion process.
    */
-  private def isDustAvailable(proto: ProtoPlanet): Boolean = {
+  protected def isDustAvailable(proto: ProtoPlanet): Boolean = {
     var current: DustBand = _dustHead
     var hasDust: Boolean = false
     while (current != null && current.outerEdge < proto.innerBandLimit) {
@@ -71,7 +74,7 @@ class AccretionProcess(random: Random) {
    *
    * @param proto
    */
-  private def accreteDust(proto: ProtoPlanet): Unit = {
+  protected def accreteDust(proto: ProtoPlanet): Unit = {
     var lastMass: Double = .0
     do {
       lastMass = proto.mass
@@ -87,7 +90,7 @@ class AccretionProcess(random: Random) {
    * @param band
    * @return the new calculated mass
    */
-  private def accreteDust(proto: ProtoPlanet, band: DustBand): Double = {
+  protected def accreteDust(proto: ProtoPlanet, band: DustBand): Double = {
     if (band == null) {
       return 0.0
     }
@@ -120,7 +123,7 @@ class AccretionProcess(random: Random) {
    * @param hasGas - whether there is gas
    * @return next band
    */
-  private def splitForSubPlanet(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
+  protected def splitForSubPlanet(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
     val middle: DustBand = new DustBand(proto.innerBandLimit, proto.outerBandLimit, false, band.hasGas && hasGas)
     val right: DustBand = new DustBand(proto.outerBandLimit, band.outerEdge, band.hasDust, band.hasGas)
     right.next = band.next
@@ -137,7 +140,7 @@ class AccretionProcess(random: Random) {
    * @param hasGas - whether there is gas
    * @return next band
    */
-  private def splitOnPlanetMaxEdge(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
+  protected def splitOnPlanetMaxEdge(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
     val right: DustBand = new DustBand(proto.outerBandLimit, band.outerEdge, band.hasDust, band.hasGas)
     right.next = band.next
     band.next = Some(right)
@@ -154,7 +157,7 @@ class AccretionProcess(random: Random) {
    * @param hasGas - whether there is gas
    * @return next band
    */
-  private def splitOnPlanetMinEdge(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
+  protected def splitOnPlanetMinEdge(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
     val right: DustBand = new DustBand(proto.innerBandLimit, band.outerEdge, false, band.hasGas && hasGas)
     right.next = band.next
     band.next = Some(right)
@@ -166,7 +169,7 @@ class AccretionProcess(random: Random) {
    * Split a dust lane into several dust lanes, and mark the dust as used. Returns the next dust lane in the
    * list.
    */
-  private def splitBands(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
+  protected def splitBands(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): DustBand = {
     if (band.innerEdge < proto.innerBandLimit && band.outerEdge > proto.outerBandLimit) {
       return splitForSubPlanet(proto, band, hasGas)
     }
@@ -193,7 +196,7 @@ class AccretionProcess(random: Random) {
    * this function coalesces neighbor dust lanes that have or do not have dust and/or gas
    *
    */
-  private def mergeDustBands() {
+  protected def mergeDustBands() {
     {
       var lane: DustBand = _dustHead
       while (lane != null) {
@@ -216,7 +219,7 @@ class AccretionProcess(random: Random) {
    *
    * @param proto  newly coalesced proto-planet
    */
-  private def updateDustLanes(proto: ProtoPlanet) {
+  protected def updateDustLanes(proto: ProtoPlanet) {
     _hasDust = false
     val removeGas: Boolean = proto.mass <= proto.criticalMass
 
@@ -234,7 +237,7 @@ class AccretionProcess(random: Random) {
    * @param planet the existing planet
    * @param newcomer the new planet
    */
-  private def mergeTwoPlanets(planet: ProtoPlanet, newcomer: ProtoPlanet) {
+  protected def mergeTwoPlanets(planet: ProtoPlanet, newcomer: ProtoPlanet) {
     val new_mass: Double = planet.mass + newcomer.mass
     val new_axis: Double = coalesceAxis(planet.mass, planet.axis, newcomer.mass, newcomer.axis)
     val new_ecc: Double = coalesceEccentricity(planet.mass, planet.axis, planet.ecc,
@@ -250,7 +253,7 @@ class AccretionProcess(random: Random) {
    * Method to add a newly coalesced planet
    *
    */
-  private def insertPlanet(proto: ProtoPlanet) {
+  protected def insertPlanet(proto: ProtoPlanet) {
     if (_innermost == null) {
       _innermost = proto
     }
@@ -275,7 +278,7 @@ class AccretionProcess(random: Random) {
    * @param newcomer the new plantismal
    * @return true if planets collided, false if not
    */
-  private def coalescePlanetesimals(newcomer: ProtoPlanet): Boolean = {
+  protected def coalescePlanetesimals(newcomer: ProtoPlanet): Boolean = {
 
     var curr: ProtoPlanet = _innermost
     while (curr != null) {
@@ -307,7 +310,7 @@ class AccretionProcess(random: Random) {
    * @param rand - pseudo-random number generator
    * @return head of the planet for this system
    */
-  private def accrete(rand: Random): ProtoPlanet = {
+  protected def accrete(rand: Random): ProtoPlanet = {
     _hasDust = true
     _dustHead = new DustBand(0.0, outerDustLimit(1.0))
     while (_hasDust) {

@@ -1,12 +1,11 @@
 package com.szadowsz.accrete.base.calc
 
 /**
- * Calculations that are useful, not only to the accretion process, but for the planets that are formed after it is
- * complete as well.
+ * Orbital Calculations, useful during and after the accretion process.
  *
  * @author Zakski : 26/06/2015.
  */
-trait PlanetaryCalc {
+trait OrbitalCalc {
 
 
   /**
@@ -24,7 +23,7 @@ trait PlanetaryCalc {
    * @param ecc - the eccentricity of the planetary body's orbit
    * @return the greatest distance between the body and its host star in AU.
    */
-  def aphelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 + ecc)
+  protected def aphelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 + ecc)
 
 
   /**
@@ -42,6 +41,6 @@ trait PlanetaryCalc {
    * @param ecc - the eccentricity of the planetary body's orbit
    * @return the closest distance between the body and its host star in AU.
    */
-  def perihelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 - ecc)
+  protected def perihelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 - ecc)
 
 }

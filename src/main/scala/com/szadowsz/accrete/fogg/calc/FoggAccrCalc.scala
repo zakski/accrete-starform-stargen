@@ -1,15 +1,15 @@
 package com.szadowsz.accrete.fogg.calc
 
-import com.szadowsz.accrete.base.calc.{AccreteCalc, PlanetaryCalc}
+import com.szadowsz.accrete.base.calc.{AccreteCalc, PlanetesimalCalc}
 import com.szadowsz.accrete.fogg.constants.FoggConstants
 
 import scala.util.Random
 
 /**
- * @author Zakski : 26/06/2015.
+ * @author Zakski : 21/07/2015.
  */
-trait FoggCalc extends AccreteCalc {
-  this: PlanetaryCalc with FoggConstants =>
+trait FoggAccrCalc extends AccreteCalc {
+  this: PlanetesimalCalc with FoggConstants =>
 
   /**
    * Method to procedurally generate the mass of a star in solar mass.
@@ -125,6 +125,21 @@ trait FoggCalc extends AccreteCalc {
    */
   def greenhouseRadius(ecosphereRadius: Double): Double = {
     ecosphereRadius * GREENHOUSE_EFFECT_CONST
+  }
+
+  /**
+   * Method to calculate dust cloud density at a given radius. Formula taken from "Formation of Planetary Systems
+   * by Aggregation: A Computer Simulation" in section a) Initial Conditions in the Cloud. Modified by Fogg to take
+   * solar mass into account.
+   *
+   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   *
+   * @param radius - the current distance from the stellar mass in AU
+   * @return Dust density at that radius of the cloud
+   */
+  override def dustCloudDensity(radius: Double): Double = {
+    (DUST_DENSITY_COEFF * Math.sqrt(getStarMass)) * Math.exp(-ALPHA * Math.pow(radius, 1.0 / N))
   }
 
 }

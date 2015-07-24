@@ -1,9 +1,11 @@
 package com.szadowsz.accrete.base.constants.unit
 
 /**
+ * Separation of Mass Unit Constants from General Program Constants.
+ *
  * @author Zakski : 08/07/2015.
  */
-private[constants] trait MassConstants {
+protected[unit] trait MassConstants {
 
   /**
    * Number of grams in a kilogram. Unit of Mass.
@@ -27,7 +29,7 @@ private[constants] trait MassConstants {
    * @see http://solarsystem.nasa.gov/planets/profile.cfm?Object=Earth&Display=Facts
    *
    */
-  val EARTH_MASS_IN_KG: Double = 5.9722E24
+  final val EARTH_MASS_IN_KG: Double = 5.9722E24
 
   /**
    * Earth Mass in g. Original value used by Carl, Mat and Ian is 5.977E27. A more up-to-date  and (hopefully)
@@ -42,7 +44,7 @@ private[constants] trait MassConstants {
    * @see line 15 in const.h - Mat Burdick (starform)
    * @see line 65 in PhysicalConstants.java - Carl Burke (starform)
    */
-  val EARTH_MASS_IN_GRAMS: Double = EARTH_MASS_IN_KG * GRAMS_PER_KG
+  final val EARTH_MASS_IN_GRAMS: Double = EARTH_MASS_IN_KG * GRAMS_PER_KG
 
   /**
    * Sun Mass in kg.
@@ -53,7 +55,7 @@ private[constants] trait MassConstants {
    * @see http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html
    *
    */
-  val SOLAR_MASS_IN_KG: Double = 1.9885E30
+  final val SOLAR_MASS_IN_KG: Double = 1.9885E30
 
   /**
    * Sun Mass in grams.
@@ -67,7 +69,7 @@ private[constants] trait MassConstants {
    * @see line 14 in const.h - Mat Burdick (starform)
    * @see line 64 in PhysicalConstants.java - Carl Burke (starform)
    */
-  val SOLAR_MASS_IN_GRAMS: Double = SOLAR_MASS_IN_GRAMS * GRAMS_PER_KG
+  final val SOLAR_MASS_IN_GRAMS: Double = SOLAR_MASS_IN_GRAMS * GRAMS_PER_KG
 
   /**
    * Sun Mass in Earth Mass.
@@ -83,5 +85,5 @@ private[constants] trait MassConstants {
    * @see line 22 in const.h - Mat Burdick (starform)
    * @see line 72 in PhysicalConstants.java - Carl Burke (starform)
    */
-  val SOLAR_MASS_IN_EARTH_MASS: Double = SOLAR_MASS_IN_KG / EARTH_MASS_IN_KG
+  final val SOLAR_MASS_IN_EARTH_MASS: Double = SOLAR_MASS_IN_KG / EARTH_MASS_IN_KG
 }

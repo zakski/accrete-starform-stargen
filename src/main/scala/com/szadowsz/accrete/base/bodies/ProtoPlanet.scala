@@ -2,7 +2,7 @@ package com.szadowsz.accrete.base.bodies
 
 import java.text.DecimalFormat
 
-import com.szadowsz.accrete.base.calc.{AccreteCalc, PlanetaryCalc}
+import com.szadowsz.accrete.base.calc.{OrbitalCalc, PlanetesimalCalc}
 import com.szadowsz.accrete.util.UnitConverter
 
 /**
@@ -24,7 +24,7 @@ import com.szadowsz.accrete.util.UnitConverter
 
  * @author Zakski : 25/06/2015.
  */
-protected[accrete] class ProtoPlanet(calc: AccreteCalc with PlanetaryCalc, m: Double, a: Double, e: Double) {
+protected[accrete] class ProtoPlanet(calc: PlanetesimalCalc, m: Double, a: Double, e: Double) extends OrbitalCalc {
 
   /**
    * The chosen calculation system for the accretion process.
@@ -75,13 +75,6 @@ protected[accrete] class ProtoPlanet(calc: AccreteCalc with PlanetaryCalc, m: Do
   def outerGravLimit = _accrete.outerGravLimit(aphelion, mass)
 
   /**
-   * The furthest from the star that the planet will be during its orbit..
-   *
-   * @note unit of value is AU.
-   */
-  def aphelion = _accrete.aphelionDistance(axis, ecc)
-
-  /**
    * The closest to the star that the planet will accrete mass from, given gravitational pull and
    * cloud particle eccentricity.
    *
@@ -94,7 +87,9 @@ protected[accrete] class ProtoPlanet(calc: AccreteCalc with PlanetaryCalc, m: Do
    *
    * @note unit of value is AU.
    */
-  def perihelion = _accrete.perihelionDistance(axis, ecc)
+  def perihelion: Double = {
+    perihelionDistance(axis, ecc)
+  }
 
   /**
    * The furthest from the star that the planet will accrete mass from, given gravitational pull and
@@ -103,6 +98,15 @@ protected[accrete] class ProtoPlanet(calc: AccreteCalc with PlanetaryCalc, m: Do
    * @note unit of value is AU.
    */
   def outerBandLimit = _accrete.outerBandLimit(_accrete.outerGravLimit(aphelion, mass))
+
+  /**
+   * The furthest from the star that the planet will be during its orbit..
+   *
+   * @note unit of value is AU.
+   */
+  def aphelion: Double = {
+    aphelionDistance(axis, ecc)
+  }
 
   /**
    * Method to supply String representation of the proto planet.
