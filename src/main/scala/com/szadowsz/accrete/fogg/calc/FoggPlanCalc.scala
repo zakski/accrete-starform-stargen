@@ -190,10 +190,11 @@ trait FoggPlanCalc extends PlanetesimalCalc {
 
   def dayLength(angularVelocity: Double, orbitLength: Double, ecc: Double): Double = {
     val dayLength = UnitConverter.radSecToHoursPerRotation(angularVelocity)
+    val orbitInHours = orbitLength * HOURS_PER_DAY
 
-    if (dayLength >= orbitLength) {
+    if (dayLength >= orbitInHours) {
       val resonance = spinResonancePeriod(ecc)
-      resonance * orbitLength
+      resonance * orbitInHours
     } else {
       dayLength
     }
@@ -215,6 +216,157 @@ trait FoggPlanCalc extends PlanetesimalCalc {
    */
   def spinResonancePeriod(ecc: Double): Double = {
     (1.0 - ecc) / (1.0 + ecc)
+  }
+
+  /**
+   * method to calculate Surface gravity using Newton's Law of Gravitation.
+   *
+   * @note unit is m / sec^2^.
+
+   * @see Habitable Planets For Man - Stephen H. Dole
+   * @see method acceleration, line 319 in enviro.c - Mat Burdick (accrete)
+   * @see method acceleration, line 317 in enviro.c - Mat Burdick (starform)
+   * @see method acceleration, line 649 in Planet.java - Carl Burke (starform)
+   *
+   * @param mass the mass of the planet in solar mass.
+   * @param radius the radius of the planet in kilometers.
+   * @return surface gravity of the planet in m per sec squared.
+   */
+  def surfaceGravity(mass: Double, radius: Double) = {
+    val massInKG = UnitConverter.solarMassToKilograms(mass)
+    val radInMeters = UnitConverter.kmToM(radius)
+    (GRAV_CONSTANT * massInKG) / Math.pow(radInMeters, 2)
+  }
+
+
+  /**
+   * This is Fogg's eq.15. It is used as part of the equation to determine whether the planetary body is capable of
+   * retaining an atmosphere.
+   *
+   * It is known as the Root- Mean-Square-Speed formula. Root-mean-square speed is the measure
+   * of the speed of particles in a gas that is most convenient for problem solving within the kinetic theory of
+   * gases. It is defined as the square root of the average velocity-squared of the molecules in a gas.
+   *
+   * @note unit is km / sec.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   * @see Habitable Planets For Man - Stephen H. Dole
+   * @see method rms_vel, line 285 in enviro.c - Mat Burdick (accrete)
+   * @see method rms_vel, line 282 in enviro.c - Mat Burdick (starform)
+   * @see method rms_vel, line 612 in Planet.java - Carl Burke (starform)
+   *
+   * @param surfaceGravity surface gravity of the planet in m / sec^2^.
+   * @param radius the radius of the planet in kilometers.
+   * @return escape velocity of the planet in km per sec.
+   */
+  def escapeVelocity(surfaceGravity: Double, radius: Double) = {
+    val grav = UnitConverter.mToKm(surfaceGravity)
+    Math.sqrt(2.0 * grav * radius)
+  }
+
+
+  /**
+   * This is Fogg's eq.16. It is used as part of the equation to determine whether the planetary body is capable of
+   * retaining an atmosphere.
+   *
+   * It is known as the Root- Mean-Square-Speed formula. Root-mean-square speed is the measure of the speed of
+   * particles in a gas that is most convenient for problem solving within the kinetic theory of gases. It is defined
+   * as the square root of the average velocity-squared of the molecules in a gas.
+   *
+   * @note unit is km / sec.
+   * @note Modified from Fogg eq. 16 to use Molar Gas Constant variant.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   * @see method rms_vel, line 285 in enviro.c - Mat Burdick (accrete)
+   * @see method rms_vel, line 282 in enviro.c - Mat Burdick (starform)
+   * @see method rms_vel, line 612 in Planet.java - Carl Burke (starform)
+   *
+   * @param molecularWeight kg per mole of the molecule, we use N2(Nitrogen) as ours.
+   * @param orbitalRadius used to calculate a value for the exospheric temperature.
+   * @return root mean square velocity of the molecule in the exosphere.
+   */
+  def speedRMS(molecularWeight: Double, orbitalRadius: Double) = {
+    val exosphericTemp = EARTH_EXOSPHERE_TEMP / Math.pow(orbitalRadius, 2) // in kelvin
+    Math.sqrt((3.0 * MOLAR_GAS_CONST * exosphericTemp) / molecularWeight)
+  }
+
+
+  /**
+   * Quick check to see if a planet suffers from a runnaway greenhouse effect
+   *
+   * @see method greenhouse, line 346 in enviro.c - Mat Burdick (accrete)
+   * @see method grnhouse, line 344 in enviro.c - Mat Burdick (starform)
+   *
+   * @param orbit semi-major axis in AU.
+   * @param greenhouse greenhouse radius in AU.
+   * @return true if there is a runnaway greenhouse effect, false otherwise
+   */
+  def suffersGreenhouseEffect(orbit: Double, greenhouse: Double) = {
+    if (orbit < greenhouse) true else false
+  }
+
+
+  /**
+   * Calculates the volatile gas inventory of the planet.Uses Fog's assumption that the initial inventory is directly
+   * proportional to the mass of the planet and inversely proportional to the mass of the central star. This is taken
+   * from Fogg's equation 17.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   * @see method vol_inventory, line 361 in enviro.c - Mat Burdick (accrete)
+   * @see method vol_inventory, line 359 in enviro.c - Mat Burdick (starform)
+   * @see method vol_inventory, line 692 in Planet.java - Carl Burke (starform)
+   *
+   * @param mass planetary mass in terms of solar mass.
+   * @param escapeVel velocity required to escaped planet's gravity
+   * @param rmsVel root mean square speed of escaping molecules
+   * @param zone the zone the planet is classified within (1-3)
+   * @param isGE true if the planet is too close to the sun, false otherwise (Greenhouse Effect)
+   * @param stellarMass mass of the central star in terms of solar mass.
+   * @return volatile gas inventory.
+   */
+  def vGasInventory(mass: Double, escapeVel: Double, rmsVel: Double, zone: Int, isGE: Boolean, stellarMass: Double) = {
+
+    val velocity_ratio = escapeVel / rmsVel
+    if (velocity_ratio >= GAS_RETENTION_THRESHOLD) {
+      val q = zone match {
+        case 1 => 100000.0
+        case 2 => 75000.0
+        case 3 => 250.0
+      }
+      val massInEM = UnitConverter.solarMassToEarthMass(mass) // equation calls for earth mass.
+      val temp1 = (q * massInEM) / stellarMass
+      val temp2 = temp1 //about(temp1, 0.2)
+      if (isGE) {
+        temp2
+        // matt and everyone that follows him applies this to all planets outside the greenhouse zone unlike fogg.
+      } else if (zone == 1) {
+        temp2 / 100.0
+      } else {
+        temp2
+      }
+    } else {
+      0.0
+    }
+  }
+
+
+  /**
+   * This implements Fogg's eq.18.  The pressure returned is in units of millibars (mb).  The gravity is in units
+   * of Earth gravities.
+   *
+   * @param vGas the volatile gas inventory.
+   * @param radius the radius of the planet in kilometers.
+   * @param gravity the gravity of the planet in terms of earth gs.
+   * @return pressure in units of millibars (mb).
+   */
+  def surfacePressure(vGas: Double, radius: Double, gravity: Double) = {
+    val equatorialRadius = radius / EARTH_RADIUS_IN_KM
+    vGas * gravity / Math.pow(equatorialRadius, 2)
+  }
+
+  def isIterative(isGasGiant: Boolean, vGasInventory: Double, greenhouseRadius: Double, axis: Double,
+                  ecoRadius: Double): Boolean = {
+    vGasInventory > 0 && !isGasGiant && axis > greenhouseRadius && axis < ecoRadius * 4
   }
 
   /**

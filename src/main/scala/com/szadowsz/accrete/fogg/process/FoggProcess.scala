@@ -38,27 +38,42 @@ abstract class FoggProcess(random: Random) extends AbstractProcess(random) {
     }
   }
 
+  /**
+   * Convenience constant to avoid tying down the calculations to the star class
+   *
+   * TODO consider better way
+   *
+   */
+  override def getStarLuminosity: Double = _star.luminosity
+
+  /**
+   * Convenience constant to avoid tying down the calculations to the star class
+   *
+   * TODO consider better way
+   */
+  override def getStarMass: Double = _star.mass
+
+  /**
+   * Convenience constant to avoid tying down the calculations to the star class
+   *
+   * TODO consider better way
+   */
+  override def getStarAge: Double = _star.age
+
+  /**
+   * Convenience constant to avoid tying down the calculations to the star class
+   *
+   * TODO consider better way
+   */
+  override def getStarEcosphereRadius: Double = _star.meanHabitableRadius
+
+  /**
+   * Convenience constant to avoid tying down the calculations to the star class
+   *
+   * TODO consider better way
+   */
+  override def getStarGreenhouseRadius: Double = _star.innerHabitableRadius
+
   protected def createStar(): Star = new Star(this, _rand)
 
-  /**
-   * Convenience constant to avoid tying down the calculations to the star class
-   *
-   * @todo consider better way
-   *
-   */
-  protected override def getStarLuminosity: Double = _star.luminosity
-
-  /**
-   * Convenience constant to avoid tying down the calculations to the star class
-   *
-   * @todo consider better way
-   */
-  protected override def getStarMass: Double = _star.mass
-
-  /**
-   * Convenience constant to avoid tying down the calculations to the star class
-   *
-   * @todo consider better way
-   */
-  protected override def getStarAge: Double = _star.age
 }

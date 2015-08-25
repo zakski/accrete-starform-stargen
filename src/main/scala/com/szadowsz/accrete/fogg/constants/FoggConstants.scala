@@ -111,7 +111,7 @@ trait FoggConstants extends AccreteConstants {
   /**
    * Purported value for the change in earth's angular velocity as defined in eq 12 in Fogg's article.
    *
-   * @todo investigate if this is being sued correctly in our recreation.
+   * TODO investigate if this is being sued correctly in our recreation.
    *
    * @note unit is radians/sec/ byr
    *
@@ -123,9 +123,71 @@ trait FoggConstants extends AccreteConstants {
   def CHANGE_IN_EARTH_ANG_VEL = -1.3E-15
 
   /**
+   * The minimum ratio of escape velocity to molecule root mean square speed require for the plane to successfully
+   * retain an atmosphere according to Fogg in "5.3 Atmosphere and Climate".
+   *
+   * @note unitless.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   * @see line 34 in const.h - Mat Burdick (accrete)
+   * @see line 32 in const.h - Mat Burdick (starform)
+   * @see line 81 in PhysicalConstants.java - Carl Burke (starform)
+
+   */
+  def GAS_RETENTION_THRESHOLD = 5.0 /* ratio of esc vel to RMS vel */
+
+  def EARTH_ALBEDO = 0.3
+
+  def GAS_GIANT_ALBEDO = 0.5
+
+  /* albedo of a gas giant    */
+  def AIRLESS_ROCKY_ALBEDO = 0.07
+
+
+  def AIRLESS_ICE_ALBEDO = 0.5
+
+
+  /**
+   * Measure of the albedo of a cloud. Taken from Table 3 in Fogg's article. Used to calculate the effective
+   * temperature of Planets that are going through an iterative feedback process.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   *
+   */
+  def CLOUD_ALBEDO = 0.52
+
+  /**
+   * Measure of the albedo of a cloud. Taken from Table 3 in Fogg's article. Used to calculate the effective
+   * temperature of Planets that are going through an iterative feedback process.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   *
+   */
+  def ROCK_ALBEDO = 0.15
+
+  /**
+   * Measure of the albedo of a cloud. Taken from Table 3 in Fogg's article. Used to calculate the effective
+   * temperature of Planets that are going through an iterative feedback process.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   *
+   */
+  def OCEAN_ALBEDO = 0.04
+
+  /**
+   * Measure of the albedo of a cloud. Taken from Table 3 in Fogg's article. Used to calculate the effective
+   * temperature of Planets that are going through an iterative feedback process.
+   *
+   * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
+   *
+   */
+  def ICE_ALBEDO = 0.7
+
+
+  /**
    * Convenience constant to avoid tying down the calculations to the star class
    *
-   * @todo consider better way
+   * TODO consider better way
    *
    */
   def getStarLuminosity: Double
@@ -133,22 +195,29 @@ trait FoggConstants extends AccreteConstants {
   /**
    * Convenience constant to avoid tying down the calculations to the star class
    *
-   * @todo consider better way
+   * TODO consider better way
    */
   def getStarMass: Double
 
   /**
    * Convenience constant to avoid tying down the calculations to the star class
    *
-   * @todo consider better way
+   * TODO consider better way
    */
   def getStarAge: Double
 
   /**
    * Convenience constant to avoid tying down the calculations to the star class
    *
-   * @todo consider better way
+   * TODO consider better way
    */
   def getStarEcosphereRadius: Double
+
+  /**
+   * Convenience constant to avoid tying down the calculations to the star class
+   *
+   * TODO consider better way
+   */
+  def getStarGreenhouseRadius: Double
 
 }

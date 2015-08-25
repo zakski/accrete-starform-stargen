@@ -3,6 +3,7 @@ package com.szadowsz.accrete.fogg.bodies
 import com.szadowsz.accrete.base.bodies.ProtoPlanet
 import com.szadowsz.accrete.fogg.calc.FoggPlanCalc
 import com.szadowsz.accrete.fogg.constants.FoggConstants
+import com.szadowsz.accrete.util.UnitConverter
 
 /**
  * Class to represent an accreting proto planetary body. Uses an internal linked-list structure to maintain the
@@ -92,19 +93,24 @@ class Planet(calc: FoggPlanCalc with FoggConstants, proto: ProtoPlanet) {
 
   val orbitLength = calc.orbitLength(axis, mass, calc.getStarMass)
 
-  val dayLength = calc.dayLength(angularVelocity, orbitLength)
+  val dayLength = calc.dayLength(angularVelocity, orbitLength, ecc)
 
-  //  double orbital_period;   	/* length of the local year (days)   */
+  val gravity = calc.surfaceGravity(mass, equatorialRadius)
+
+  val escapeVelocity = calc.escapeVelocity(gravity, equatorialRadius)
+
+  val rmsSpeed = calc.speedRMS(calc.MOLECULAR_NITROGEN, equatorialRadius)
+
+  val volatileGasInventory = calc.vGasInventory(mass, escapeVelocity, rmsSpeed, orbitalZone,
+    calc.suffersGreenhouseEffect(axis, calc.getStarGreenhouseRadius), calc.getStarMass)
+
+  val surfacePressure = calc.surfacePressure(volatileGasInventory, equatorialRadius, gravity_inGs)
+
+  def gravity_inGs: Double = UnitConverter.mSec2ToGs(gravity)
+
   //  int resonant_period;	/* TRUE if in resonant rotation   */
   //  int axial_tilt;		/* units of degrees		     */
-  //  double escape_velocity;	/* units of cm/sec		     */
-  //  double surface_accel;  	/* units of cm/sec2		     */
-  //  double surface_grav;   	/* units of Earth gravities	     */
-  //  double rms_velocity;	/* units of cm/sec		     */
   //  double molecule_weight;	/* smallest molecular weight retained*/
-  //  double volatile_gas_inventory;
-  //  double surface_pressure;	/* units of millibars (mb)	     */
-  //  int greenhouse_effect;	/* runaway greenhouse effect?	*/
   //  double boil_point;		/* the boiling point of water (Kelvin)*/
   //  double albedo;		/* albedo of the planet		     */
   //  double surf_temp;   	/* surface temperature in Kelvin     */

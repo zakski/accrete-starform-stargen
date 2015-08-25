@@ -16,4 +16,5 @@ class Star(calc: FoggAccrCalc, rand: Random) {
   val meanHabitableRadius: Double = calc.ecosphereRadius(luminosity)
   val innerHabitableRadius: Double = calc.greenhouseRadius(meanHabitableRadius)
   private val _lifespan: Double = calc.stellarMSLifespan(mass, luminosity)
+
 }

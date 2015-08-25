@@ -14,7 +14,7 @@ trait AccreteConstants extends UnitConstants {
    * proposes that 'A' should be modified to scale with stellar mass. Fogg states that A should be proportional
    * to sqrt of (Mass of Star/Mass of Sun).
    *
-   * @todo Confirm if the change from 1.5 to 2.0 was made by Dole in subsequent paper. until then leave original value.
+   * TODO Confirm if the change from 1.5 to 2.0 was made by Dole in subsequent paper. until then leave original value.
    *
    * @note Original value from Dole is 1.5E-3 which is the value that Ian uses. Mat and Carl alter this to 2.0E-3.
    * @note unit is solar masses per cubic AU.
@@ -86,7 +86,7 @@ trait AccreteConstants extends UnitConstants {
    * to calculate the semi-major axis of the planetismal's orbit. Introduced in "Formation of Planetary Systems by
    * Aggregation: A Computer Simulation" in "b) The Planetary Nuclei".
    *
-   * @todo Note specific version that Ian, Mat and Carl use.
+   * TODO Note specific version that Ian, Mat and Carl use.
    *
    * @note Original value from Dole is 0.3.
    *
@@ -102,7 +102,7 @@ trait AccreteConstants extends UnitConstants {
    * to calculate the semi-major axis of the planetismal's orbit. Introduced in "Formation of Planetary Systems by
    * Aggregation: A Computer Simulation" in "b) The Planetary Nuclei".
    *
-   * @todo Note specific version that Ian, Mat and Carl use.
+   * TODO Note specific version that Ian, Mat and Carl use.
    *
    * @note Original value from Dole is 0.3.
    *
