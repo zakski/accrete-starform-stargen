@@ -1,20 +1,92 @@
-group 'com.szadowsz'
+/* Equivalent to groupid and version in maven, artifactid is set in settings.gradle.  */
+group 'com.companyname'
+version '1.0'
 
+/* Standard plugins documentation is available here https://docs.gradle.org/current/userguide/standard_plugins.html. */
+
+/* Language plugins to aid in compilation of target languages, probably best to be explicit here.*/
 apply plugin: 'java'
 apply plugin: 'scala'
 
+apply plugin: 'scalaStyle'
 
-sourceCompatibility = '1.8'
-version = '0.1'
+/*
+ * IDE plugins to aid in building of project files, in this case we use intellij, but eclipse can also be used. That
+ * being said, IntelliJ can pull build a project from the build.gradle file so its not strictly necessary.
+ */
+apply plugin: 'idea'
 
+buildscript {
+    repositories {
+        jcenter() // only work after gradle 1.7
+    }
+
+    dependencies {
+        classpath 'org.github.ngbinh.scalastyle:gradle-scalastyle-plugin_2.11:0.8.1'
+    }
+}
+
+/* Explicitly Target Java for 1.8, so that it doesn't decide we are targeting 1.5. */
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+/*
+ * Specifying the versions as extra variables here so that they can be reused across multiple dependencies. Note you
+ * can add a '+' in the version info instead of a major/minor version to get the latest relevant version of the jar.
+ */
+ext {
+    scalaVersion = '2.11.7'
+    scalaTestVersion = '2.2.4'
+    slf4jVersion = '1.7.12'
+    junitVersion = '4.11'
+}
+
+/*
+ * This enables scala/java joint compilation by adding the java source folders to the scala compile source sets and
+ * removing them from the java compile source set.
+ */
+sourceSets.main.scala.srcDir "src/main/java"
+sourceSets.main.java.srcDirs = []
+
+/* The Repositories to pull the dependencies from. Can include local jars. */
 repositories {
+    jcenter()
     mavenCentral()
 }
 
+/*
+ * Dependencies of the current system. Important dependencies for interops between scala and java are: scala compiler,
+ * slf4j logger, scalatest and junit.
+ */
 dependencies {
-    compile group: 'org.scala-lang', name: 'scala-compiler', version: '2.11.6'
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
-    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.12'
+    compile group: 'org.scala-lang', name: 'scala-compiler', version: scalaVersion
 
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
+
+    /* Defaulting this to test only to allow for the choice of other logging systems */
+    testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: slf4jVersion
+
+    testCompile group: 'org.scalatest', name: 'scalatest_2.11', version: scalaTestVersion
+    testCompile group: 'junit', name: 'junit', version: junitVersion
+}
+
+task javadocJar(type: Jar) {
+    classifier = 'javadoc'
+    from javadoc
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives javadocJar, sourcesJar
+}
+
+scalaStyle {
+    configLocation = "scalastyle_config.xml"
+    includeTestSourceDirectory = true
+    source = "src/man/scala/"
+    testSource = "src/test/scala/"
 }
