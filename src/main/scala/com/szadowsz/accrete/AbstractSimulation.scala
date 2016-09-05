@@ -1,14 +1,15 @@
-package com.szadowsz.gen.accrete.base
+package com.szadowsz.accrete
 
 import java.util.Random
 
-import com.szadowsz.gen.accrete.base.bodies.{DustBand, Planet, ProtoPlanet}
-import com.szadowsz.gen.accrete.base.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc}
+import com.szadowsz.accrete.bodies.{DustBand, Planet, ProtoPlanet}
+import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc}
+import com.szadowsz.accrete.constants.AccreteConstants
 import org.slf4j.{Logger, LoggerFactory}
 
 import scala.collection.mutable.ListBuffer
 
-abstract class AbstractSimulation(random: Random) {
+abstract class AbstractSimulation(protected val random: Random) {
   this: AccreteCalc with PlanetesimalCalc with CollisionCalc with AccreteConstants =>
 
   protected val _logger: Logger = LoggerFactory.getLogger(classOf[AbstractSimulation])

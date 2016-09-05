@@ -1,6 +1,7 @@
-package com.szadowsz.gen.accrete.base.calc
+package com.szadowsz.accrete.calc
 
-import com.szadowsz.gen.accrete.base.AccreteConstants
+
+import com.szadowsz.accrete.constants.AccreteConstants
 
 import scala.util.Random
 

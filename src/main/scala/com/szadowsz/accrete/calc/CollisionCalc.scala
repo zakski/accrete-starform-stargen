@@ -1,4 +1,4 @@
-package com.szadowsz.gen.accrete.base.calc
+package com.szadowsz.accrete.calc
 
 /**
  * Basic Calculations for Combining to planetesimals into one.

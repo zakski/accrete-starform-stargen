@@ -1,9 +1,9 @@
-package com.szadowsz.gen.accrete.base.bodies
+package com.szadowsz.accrete.bodies
 
 import java.text.DecimalFormat
 
-import com.szadowsz.gen.accrete.base.calc.{OrbitalCalc, PlanetesimalCalc}
-import com.szadowsz.gen.util.unit.UnitConverter
+import com.szadowsz.accrete.constants.UnitConverter
+import com.szadowsz.accrete.calc.{OrbitalCalc, PlanetesimalCalc}
 
 object ProtoPlanet {
 

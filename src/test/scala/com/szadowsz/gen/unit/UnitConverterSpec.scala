@@ -1,6 +1,6 @@
 package com.szadowsz.gen.unit
 
-import com.szadowsz.gen.util.unit.UnitConverter
+import com.szadowsz.accrete.constants.UnitConverter
 import org.junit.runner.RunWith
 import org.scalatest.FunSpec
 import org.scalatest.junit.JUnitRunner

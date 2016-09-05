@@ -1,6 +1,6 @@
-package com.szadowsz.gen.accrete.base
+package com.szadowsz.accrete.constants
 
-import com.szadowsz.gen.util.unit.UnitConstants
+import com.szadowsz.accrete.constants.units.UnitConstants
 
 /**
  * @author Zakski : 03/06/2015.

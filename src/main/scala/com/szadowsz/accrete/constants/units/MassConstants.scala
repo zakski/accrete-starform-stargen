@@ -1,11 +1,11 @@
-package com.szadowsz.gen.util.unit
+package com.szadowsz.accrete.constants.units
 
 /**
  * Separation of Mass Unit Constants from General Program Constants.
  *
  * @author Zakski : 08/07/2015.
  */
-protected[unit] trait MassConstants {
+protected[constants] trait MassConstants {
 
   /**
    * Number of grams in a kilogram. Unit of Mass.

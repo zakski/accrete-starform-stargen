@@ -1,4 +1,4 @@
-package com.szadowsz.gen.accrete.base.calc
+package com.szadowsz.accrete.calc
 
 /**
  * Orbital Calculations, useful during and after the accretion process.

@@ -1,9 +1,9 @@
-package com.szadowsz.gen.accrete.dole
+package com.szadowsz.accrete
 
 import java.util.Random
 
-import com.szadowsz.gen.accrete.base.calc.{AccreteCalc, CollisionCalc, OrbitalCalc, PlanetesimalCalc}
-import com.szadowsz.gen.accrete.base.{AbstractSimulation, AccreteConstants}
+import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, OrbitalCalc, PlanetesimalCalc}
+import com.szadowsz.accrete.constants.AccreteConstants
 import org.slf4j.{Logger, LoggerFactory}
 
 class DoleSimulation(random: Random, a: Option[Double], k: Option[Double], w: Option[Double]) extends AbstractSimulation(random) with AccreteCalc with

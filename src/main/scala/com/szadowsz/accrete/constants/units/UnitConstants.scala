@@ -1,4 +1,4 @@
-package com.szadowsz.gen.util.unit
+package com.szadowsz.accrete.constants.units
 
 /**
  * Constants File inherits the fully fledged unit categories and declares constants that don't quite fit into them.

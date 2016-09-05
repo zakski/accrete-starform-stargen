@@ -1,4 +1,4 @@
-package com.szadowsz.gen.accrete.base.bodies
+package com.szadowsz.accrete.bodies
 
 import java.text.DecimalFormat
 

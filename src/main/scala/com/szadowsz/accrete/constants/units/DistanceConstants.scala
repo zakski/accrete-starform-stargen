@@ -1,11 +1,11 @@
-package com.szadowsz.gen.util.unit
+package com.szadowsz.accrete.constants.units
 
 /**
  * Separation of Distance Unit Constants from General Program Constants.
  *
  * @author Zakski : 08/07/2015.
  */
-protected[unit] trait DistanceConstants {
+protected[constants] trait DistanceConstants {
 
   /**
    * Number of centimetres in a metre.
@@ -47,7 +47,7 @@ protected[unit] trait DistanceConstants {
    * @note represents 1 Astronomical Unit (AU).
    *
    * @see http://neo.jpl.nasa.gov/glossary/au.html
-   * @see line 23 in Astro.java - Ian Burrell (accrete)
+   * @see line 23 in Astro.java - Ian Burrell (accrete) - 1.495978707e8
    * @see line 45 in const.h - Mat Burdick (accrete)
    * @see line 43 in const.h - Mat Burdick (starform)
    * @see line 92 in  PhysicalConstants.java - Carl Burke (starform)
@@ -70,13 +70,11 @@ protected[unit] trait DistanceConstants {
   final val CM_PER_AU: Double = KM_PER_AU * CM_PER_KM
 
   /**
-   * Earth Radius in cm. Represents mean radius. Distances from points on the surface to the center range from
+   * Earth Radius in km. Represents mean radius. Distances from points on the surface to the center range from
    * 6,353 km to 6,384 km (3,947–3,968 mi). This length is also used as a unit of distance, especially in
    * astronomy and geology.
    *
-   * Original value used by Carl and Mat is 6.378E8, whereas Ian incorrectly uses 6.378E6. A more up-to-date and
-   * (hopefully) accurate value is 6.371E8 taken from the Nasa space facts website and converted from kilometers
-   * to centimetres.
+   * @see [[EARTH_RADIUS_IN_CM]] for implementation details, since most of the implementations start with the value in cm and convert it to km.
    *
    * @note unit is kilometres.
    * @note Earth radius is the unit of distance equal to that of Earth in km.
@@ -94,8 +92,9 @@ protected[unit] trait DistanceConstants {
    * 6,353 km to 6,384 km (3,947–3,968 mi). This length is also used as a unit of distance, especially in
    * astronomy and geology.
    *
-   * Original value used by Carl and Mat is 6.378E8, whereas Ian incorrectly uses 6.378E6. A more up-to-date and
-   * (hopefully) accurate value is 6.371E8 taken from the Nasa space facts website and converted from kilometers
+   * Original value used by Carl and Mat is 6.378E8, whereas Ian incorrectly uses 6.378E6 (Though he does not actually use the variable).
+   *
+   * A more up-to-date and (hopefully) accurate value is 6.371E8 taken from the Nasa space facts website and converted from kilometers
    * to centimetres.
    *
    * @note unit is centimetres.
