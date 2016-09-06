@@ -1,11 +1,10 @@
+// scalastyle:off method.name
 package com.szadowsz.accrete.constants
-
-import com.szadowsz.accrete.constants.units.UnitConstants
 
 /**
  * @author Zakski : 03/06/2015.
  */
-trait AccreteConstants extends UnitConstants {
+trait AccreteConstants {
 
   /**
    * Coefficient used in dust cloud density calculations during determination of the initial conditions of the
