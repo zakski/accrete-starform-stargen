@@ -1,4 +1,4 @@
-package com.szadowsz.accrete.constants.units
+package com.szadowsz.accrete.constants
 
 /**
  * Separation of Mass Unit Constants from General Program Constants.

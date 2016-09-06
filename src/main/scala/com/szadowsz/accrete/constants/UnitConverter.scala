@@ -1,7 +1,5 @@
 package com.szadowsz.accrete.constants
 
-import com.szadowsz.accrete.constants.units.MassConstants
-
 /**
   * @author Zakski : 03/07/2015.
   */

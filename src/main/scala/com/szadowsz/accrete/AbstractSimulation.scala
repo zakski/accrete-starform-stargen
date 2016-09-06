@@ -7,14 +7,12 @@ import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc}
 import com.szadowsz.accrete.constants.AccreteConstants
 import org.slf4j.{Logger, LoggerFactory}
 
-import scala.collection.mutable.ListBuffer
-
-abstract class AbstractSimulation(protected val random: Random) {
+abstract class AbstractSimulation {
   this: AccreteCalc with PlanetesimalCalc with CollisionCalc with AccreteConstants =>
 
-  protected val _logger: Logger = LoggerFactory.getLogger(classOf[AbstractSimulation])
+  protected val rand: Random
 
-  protected val _rand: Random = random
+  protected val logger: Logger = LoggerFactory.getLogger(getClass)
 
   protected var _planets: List[Planet] = Nil
 
@@ -29,8 +27,8 @@ abstract class AbstractSimulation(protected val random: Random) {
     */
   def accrete(): List[Planet] = {
     if (_planets.isEmpty) {
-      _logger.info("Beginning generation of protoplanets.")
-      _planets = accrete(_rand).map(p => Planet(p))
+      logger.info("Beginning generation of protoplanets.")
+      _planets = accrete(rand).map(p => Planet(p))
     }
     _planets
   }
@@ -40,28 +38,24 @@ abstract class AbstractSimulation(protected val random: Random) {
   }
 
   protected def createProtoplanet(): ProtoPlanet = {
-    val axis: Double = semiMajorAxis(_rand)
-    val ecc: Double = eccentricity(_rand)
+    val axis: Double = semiMajorAxis(rand)
+    val ecc: Double = eccentricity(rand)
     val mass: Double = PROTOPLANET_MASS
     ProtoPlanet(this, mass, axis, ecc)
   }
-
-  protected def hasDust: Boolean = _dust.exists(d => d.hasDust)
 
   /**
     * Steps through list of dust bands checking to see if any of those that bands that overlap the given
     * range have dust present.
     *
-    * @param proto the protoplanet trying to pull dust
-    * @return whether or not there is still dust between innerBandLimit and outerBandLimit in this current
-    *         accretion process.
+    * @param inner the inner limit of the range in AU.
+    * @param outer the outer limit of the range in AU.
+    * @return whether or not there is still dust between inner and outer limits in this current accretion process.
     */
-  protected def isDustAvailable(proto: ProtoPlanet): Boolean = {
-    val bandCandidates = _dust.filter(current => current.outerEdge < proto.innerBandLimit
-      && current.innerEdge < proto.outerBandLimit)
-
-    bandCandidates.exists(d => d.hasDust)
+  protected def isDustAvailable(inner : Double, outer : Double): Boolean = {
+    _dust.exists(d => d.hasDust && d.outerEdge > INNERMOST_PLANET  && d.innerEdge < OUTERMOST_PLANET)
   }
+
 
   /**
     * Method to calculate the mass for the protoplanet
@@ -87,21 +81,24 @@ abstract class AbstractSimulation(protected val random: Random) {
   protected def accreteDust(proto: ProtoPlanet, bands: List[DustBand]): Double = {
     val innerSweep = if (proto.innerBandLimit < 0.0) 0.0 else proto.innerBandLimit
     val outerSweep = proto.outerBandLimit
-    val band = bands.head
 
-    if (band.outerEdge <= innerSweep) {
-      accreteDust(proto, bands.tail)
-    } else if (band.innerEdge >= outerSweep) {
-      0.0
-    } else {
-      var density: Double = if (band.hasDust) dustCloudDensity(proto.axis) else 0.0
+    bands match {
+      case band :: tail =>
+        if (band.outerEdge <= innerSweep) {
+          accreteDust(proto, tail)
+        } else if (band.innerEdge >= outerSweep) {
+          0.0
+        } else {
+          var density: Double = if (band.hasDust) dustCloudDensity(proto.axis) else 0.0
 
-      if (band.hasGas && proto.isGas) {
-        density = cloudDensity(density, proto.criticalMass, proto.mass)
-      }
+          if (band.hasGas && proto.isGas) {
+            density = cloudDensity(density, proto.criticalMass, proto.mass)
+          }
 
-      val volume = bandVolume(proto.mass, proto.axis, proto.ecc, innerSweep, outerSweep, band.innerEdge, band.outerEdge)
-      volume * density + accreteDust(proto, bands.tail)
+          val volume = bandVolume(proto.mass, proto.axis, proto.ecc, innerSweep, outerSweep, band.innerEdge, band.outerEdge)
+          volume * density + accreteDust(proto,tail)
+        }
+      case Nil => 0.0
     }
   }
 
@@ -165,40 +162,38 @@ abstract class AbstractSimulation(protected val random: Random) {
       List(band)
     }
   }
-
   /**
     * this function coalesces neighbor dust lanes that have or do not have dust and/or gas
     *
     */
-  protected def mergeDustBands(): Unit = {
-    val buffer = ListBuffer(_dust: _*)
-    for (i <- 0 until buffer.length - 1) {
-      if (buffer(i).canMerge(buffer(i + 1))) {
-        val nBand = DustBand(buffer(i).innerEdge, buffer(i + 1).outerEdge, buffer(i).hasDust, buffer(i).hasGas)
-        buffer.update(i, nBand)
-        buffer.remove(i + 1)
-      }
+  protected def mergeDustBands(head : DustBand, tail : List[DustBand]): List[DustBand] = {
+    tail match {
+      case Nil => List(head)
+
+      case other :: ntail if head.canMerge(other) =>
+        val nHead = DustBand(head.innerEdge, other.outerEdge, head.hasDust,head.hasGas)
+        mergeDustBands(nHead,ntail)
+
+      case nHead :: ntail =>
+        List(head) ++ mergeDustBands(nHead,ntail)
     }
-    _dust = buffer.toList
   }
 
   /**
     * Method to Update (Split/Merge) dust bands based on an inserted planet
     *
-    * @param proto  newly coalesced proto-planet
+    * @param proto newly coalesced proto-planet
     */
   protected def updateDustLanes(proto: ProtoPlanet): Unit = {
     val removeGas: Boolean = proto.mass <= proto.criticalMass
-
     _dust = _dust.flatMap(d => splitBands(proto, d, removeGas))
-
-    mergeDustBands()
+    _dust = mergeDustBands(_dust.head,_dust.tail)
   }
 
   /**
     * Method to merge a newly coalesced planet with an existing one
     *
-    * @param planet the existing planet
+    * @param planet   the existing planet
     * @param newcomer the new planet
     */
   protected def mergeTwoPlanets(planet: ProtoPlanet, newcomer: ProtoPlanet): Unit = {
@@ -245,7 +240,7 @@ abstract class AbstractSimulation(protected val random: Random) {
 
     result match {
       case Some(existing) =>
-        _logger.debug("Collision between planetesimals {} and {}", Array(newcomer, existing))
+        logger.info("Collision between planetesimals {} AU and {} AU", newcomer.axis, existing.axis)
         mergeTwoPlanets(existing, newcomer)
         true
       case _ =>
@@ -261,12 +256,12 @@ abstract class AbstractSimulation(protected val random: Random) {
     */
   protected def accrete(rand: Random): List[ProtoPlanet] = {
     _dust = createDust()
-    while (hasDust) {
+    while (isDustAvailable(INNERMOST_PLANET,OUTERMOST_PLANET)) {
       val proto = createProtoplanet()
-      _logger.info("Checking {} AU for suitability.", proto.axis)
+      logger.debug("Checking {} AU for suitability.", proto.axis)
 
-      if (isDustAvailable(proto)) {
-        _logger.info("Injecting protoplanet at {} AU.", proto.axis)
+      if (isDustAvailable(proto.innerBandLimit,proto.outerBandLimit)) {
+        logger.info("Injecting protoplanet at {} AU.", proto.axis)
 
         accreteDust(proto)
         updateDustLanes(proto)
@@ -274,13 +269,13 @@ abstract class AbstractSimulation(protected val random: Random) {
         if (proto.mass > PROTOPLANET_MASS) {
           if (!coalescePlanetesimals(proto)) {
             insertPlanet(proto)
-            _logger.info("Injecting protoplanet at {} AU Successful.", proto.axis)
+            logger.info("Injecting protoplanet at {} AU Successful.", proto.axis)
           }
         } else {
-          _logger.info("Injection of protoplanet at {} AU failed due to large neighbor.", proto.axis)
+          logger.debug("Injection of protoplanet at {} AU failed due to large neighbor.", proto.axis)
         }
       } else {
-        _logger.info("Injection of protoplanet at {} AU failed due to no available dust.", proto.axis)
+        logger.debug("Injection of protoplanet at {} AU failed due to no available dust.", proto.axis)
       }
     }
     _planetismals
