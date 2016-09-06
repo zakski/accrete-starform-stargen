@@ -2,7 +2,7 @@ package com.szadowsz.accrete
 
 import java.util.Random
 
-import com.szadowsz.accrete.bodies.{DustBand, ProtoPlanet}
+import com.szadowsz.accrete.bodies.{DustBand, ProtoPlanet,Planetismal}
 import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc, RandomCalc}
 import com.szadowsz.accrete.constants.AccreteConstants
 import org.slf4j.{Logger, LoggerFactory}
@@ -31,7 +31,7 @@ abstract class AbstractSimulation {
   protected val rand: Random
 
   /**
-    * Method to turn all available DustBands into mass for the protoplanet
+    * Method to turn all available DustBands into mass for the Planetismal
     *
     * @param proto
     * @param bands
@@ -50,7 +50,7 @@ abstract class AbstractSimulation {
         } else {
           var density: Double = if (band.hasDust) dustCloudDensity(proto.axis) else 0.0
 
-          if (band.hasGas && proto.isGas) {
+          if (band.hasGas && proto.isGasGiant) {
             density = cloudDensity(density, proto.criticalMass, proto.mass)
           }
 
@@ -105,18 +105,18 @@ abstract class AbstractSimulation {
     * Split a dust lane into several dust lanes, and mark the dust as used. Returns the next dust lane in the
     * list.
     */
-  protected def splitBands(proto: ProtoPlanet, band: DustBand, hasGas: Boolean): List[DustBand] = {
+  protected def splitBands(proto: ProtoPlanet, band: DustBand, retainGas: Boolean): List[DustBand] = {
     if (band.innerEdge < proto.innerBandLimit && band.outerEdge > proto.outerBandLimit) {
-      splitForSubPlanet(proto, band, hasGas)
+      splitForSubPlanet(proto, band, retainGas)
 
     } else if (band.innerEdge < proto.outerBandLimit && band.outerEdge > proto.outerBandLimit) {
-      splitOnPlanetMaxEdge(proto, band, hasGas)
+      splitOnPlanetMaxEdge(proto, band, retainGas)
 
     } else if (band.innerEdge < proto.innerBandLimit && band.outerEdge > proto.innerBandLimit) {
-      splitOnPlanetMinEdge(proto, band, hasGas)
+      splitOnPlanetMinEdge(proto, band, retainGas)
 
     } else if (band.innerEdge >= proto.innerBandLimit && band.outerEdge <= proto.outerBandLimit) {
-      List(DustBand(band.innerEdge, band.outerEdge, false, if (band.hasGas) hasGas else false))
+      List(DustBand(band.innerEdge, band.outerEdge, false, if (band.hasGas) retainGas else false))
     } else {
       List(band)
     }
@@ -144,8 +144,8 @@ abstract class AbstractSimulation {
     * @param proto newly coalesced proto-planet
     */
   protected def updateDustLanes(proto: ProtoPlanet): Unit = {
-    val removeGas: Boolean = proto.mass <= proto.criticalMass
-    _dust = _dust.flatMap(d => splitBands(proto, d, removeGas))
+    val retainGas : Boolean = !proto.isGasGiant
+    _dust = _dust.flatMap(d => splitBands(proto, d, retainGas))
     _dust = mergeDustBands(_dust.head,_dust.tail)
   }
 
@@ -211,7 +211,7 @@ abstract class AbstractSimulation {
 
 
   /**
-    * Method to calculate the mass for the protoplanet. Sucks mass from all dustbands in range of its gravitational pull during its ellipical orbit.
+    * Method to calculate the mass for the Planetismal. Sucks mass from all dust bands in range of its gravitational pull during its elliptical orbit.
     *
     * @param proto
     */
@@ -223,6 +223,13 @@ abstract class AbstractSimulation {
       proto.mass = if (currMass > lastMass) currMass else lastMass
     } while (shouldAccreteContinue(lastMass, proto.mass))
   }
+
+  /**
+    * Method to generate a new Planetismal. Varies from implementation to implementation.
+    *
+    * @return a freshly made proto-planet.
+    */
+  protected def createProtoplanet() : ProtoPlanet
 
   /**
     * Steps through list of dust bands checking to see if any of those that bands that overlap the given
@@ -253,7 +260,7 @@ abstract class AbstractSimulation {
     */
   protected def accrete(): List[ProtoPlanet] = {
     while (isDustAvailable(INNERMOST_PLANET,OUTERMOST_PLANET)) {
-      val proto = new ProtoPlanet(this,PROTOPLANET_MASS, semiMajorAxis(rand), eccentricity(rand))
+      val proto : ProtoPlanet = createProtoplanet()
       logger.debug("Checking {} AU for suitability.", proto.axis)
 
       if (isDustAvailable(proto.innerBandLimit,proto.outerBandLimit)) {
@@ -282,10 +289,11 @@ abstract class AbstractSimulation {
     *
     * @return the list of generated proto-planets for this system.
     */
-  def generate(): List[ProtoPlanet] = {
+  def generate(): List[Planetismal] = {
     if (_planetismals.isEmpty) {
       logger.info("Beginning generation of protoplanets.")
       accrete()
+      logger.info("Finished generation of protoplanets.")
     }
     _planetismals
   }

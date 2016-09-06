@@ -1,4 +1,4 @@
-package com.szadowsz.dole
+package com.szadowsz.dole.calc
 
 import com.szadowsz.accrete.calc._
 import com.szadowsz.accrete.constants.AccreteConstants
