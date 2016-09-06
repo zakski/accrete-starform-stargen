@@ -253,7 +253,7 @@ abstract class AbstractSimulation {
     */
   protected def accrete(): List[ProtoPlanet] = {
     while (isDustAvailable(INNERMOST_PLANET,OUTERMOST_PLANET)) {
-      val proto = ProtoPlanet(PROTOPLANET_MASS, semiMajorAxis(rand), eccentricity(rand))
+      val proto = new ProtoPlanet(this,PROTOPLANET_MASS, semiMajorAxis(rand), eccentricity(rand))
       logger.debug("Checking {} AU for suitability.", proto.axis)
 
       if (isDustAvailable(proto.innerBandLimit,proto.outerBandLimit)) {

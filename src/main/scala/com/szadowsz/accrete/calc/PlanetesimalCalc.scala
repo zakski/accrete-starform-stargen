@@ -28,7 +28,7 @@ trait PlanetesimalCalc {
     * @param ecc - the eccentricity of the planetary body's orbit
     * @return the greatest distance between the body and its host star in AU.
     */
-  protected def aphelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 + ecc)
+  def aphelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 + ecc)
 
 
   /**
@@ -46,7 +46,7 @@ trait PlanetesimalCalc {
     * @param ecc - the eccentricity of the planetary body's orbit
     * @return the closest distance between the body and its host star in AU.
     */
-  protected def perihelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 - ecc)
+  def perihelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 - ecc)
 
   /**
    * Method to calculate whether a planetesimal has gained enough mass to accrete gas as well as dust, see "c)
