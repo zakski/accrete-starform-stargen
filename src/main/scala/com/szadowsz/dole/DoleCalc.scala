@@ -1,6 +1,6 @@
 package com.szadowsz.dole
 
-import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, OrbitalCalc, PlanetesimalCalc}
+import com.szadowsz.accrete.calc._
 import com.szadowsz.accrete.constants.AccreteConstants
 
 /**
@@ -8,5 +8,5 @@ import com.szadowsz.accrete.constants.AccreteConstants
   *
   * @author Zakski : 06/09/2016.
   */
-trait DoleCalc extends AccreteCalc with PlanetesimalCalc with OrbitalCalc with CollisionCalc with AccreteConstants
+trait DoleCalc extends AccreteCalc with PlanetesimalCalc with RandomCalc with CollisionCalc with AccreteConstants
 

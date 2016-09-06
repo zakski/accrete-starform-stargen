@@ -2,13 +2,13 @@ package com.szadowsz.accrete.bodies
 
 import java.text.DecimalFormat
 
-import com.szadowsz.accrete.constants.UnitConverter
-import com.szadowsz.accrete.calc.{OrbitalCalc, PlanetesimalCalc}
+import com.szadowsz.accrete.calc.PlanetesimalCalc
+import com.szadowsz.accrete.constants.{AccreteConstants, UnitConverter}
 
 object ProtoPlanet {
 
-  def apply(calc: PlanetesimalCalc, m: Double, a: Double, e: Double): ProtoPlanet = {
-    new ProtoPlanet(calc, m, a, e)
+  def apply(m: Double, a: Double, e: Double): ProtoPlanet = {
+    new ProtoPlanet(m, a, e)
   }
 }
 
@@ -24,19 +24,9 @@ object ProtoPlanet {
  * @constructor Constructor is used make all subsequent dust bands during the splitting process, in which we
  *              acknowledge dust and gas being removed from part of existing bands.
  *
- * @param calc inner limit of the dust band in AU.
- * @param m outer limit of the dust band in AU.
- * @param a true if dust is present, false otherwise.
- * @param e true if gas is present, false otherwise.
-
  * @author Zakski : 25/06/2015.
  */
-class ProtoPlanet(calc: PlanetesimalCalc, m: Double, a: Double, e: Double) extends OrbitalCalc {
-
-  /**
-   * The chosen calculation system for the accretion process.
-   */
-  private val _accrete = calc
+class ProtoPlanet(m: Double, a: Double, e: Double) extends PlanetesimalCalc with AccreteConstants {
 
   /**
    * The mas of the planetismal body.
@@ -66,14 +56,14 @@ class ProtoPlanet(calc: PlanetesimalCalc, m: Double, a: Double, e: Double) exten
    *
    * @note unit of value is AU.
    */
-  def innerGravLimit: Double = _accrete.innerGravLimit(perihelion, mass)
+  def innerGravLimit: Double = innerGravLimit(perihelion, mass)
 
   /**
    * The furthest from the star that the planet will accrete mass from, given gravitational pull.
    *
    * @note unit of value is AU.
    */
-  def outerGravLimit: Double = _accrete.outerGravLimit(aphelion, mass)
+  def outerGravLimit: Double = outerGravLimit(aphelion, mass)
 
   /**
     * The furthest from the star that the planet will be during its orbit..
@@ -90,7 +80,7 @@ class ProtoPlanet(calc: PlanetesimalCalc, m: Double, a: Double, e: Double) exten
    *
    * @note unit of value is AU.
    */
-  def innerBandLimit: Double = _accrete.innerBandLimit(_accrete.innerGravLimit(perihelion, mass))
+  def innerBandLimit: Double = innerBandLimit(innerGravLimit)
 
   /**
    * The furthest from the star that the planet will accrete mass from, given gravitational pull and
@@ -98,7 +88,7 @@ class ProtoPlanet(calc: PlanetesimalCalc, m: Double, a: Double, e: Double) exten
    *
    * @note unit of value is AU.
    */
-  def outerBandLimit: Double = _accrete.outerBandLimit(_accrete.outerGravLimit(aphelion, mass))
+  def outerBandLimit: Double = outerBandLimit(outerGravLimit)
 
   /**
    * Method to supply String representation of the proto planet.
@@ -131,7 +121,7 @@ class ProtoPlanet(calc: PlanetesimalCalc, m: Double, a: Double, e: Double) exten
    *
    * @note unit of value is Solar Masses.
    */
-  def criticalMass: Double = _accrete.criticalMass(perihelion)
+  def criticalMass: Double = criticalMass(perihelion)
 
   /**
     * The closest to the star that the planet will be during its orbit.

@@ -83,13 +83,13 @@ trait AccreteConstants {
   /**
    * Smallest distance from the Sun where can we we expect a planet to form. Used in planetismal orbit calculations
    * to calculate the semi-major axis of the planetismal's orbit. Introduced in "Formation of Planetary Systems by
-   * Aggregation: A Computer Simulation" in "b) The Planetary Nuclei".
+   * Aggregation: A Computer Simulation" in "III. Experimental Simulation b) The Planetary Nuclei".
    *
    * TODO Note specific version that Ian, Mat and Carl use.
    *
    * @note Original value from Dole is 0.3.
    *
-   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+   * @see pg15. Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
    * @see method InnermostPlanet at line 145 in DoleParams.java - Ian Burrell (accrete)
    * @see method innermost_planet at line 53 in accrete.c - Mat Burdick (accrete)
    * @see method nearest_planet at line 221 in Star.java - Carl Burke (starform)
@@ -99,13 +99,13 @@ trait AccreteConstants {
   /**
    * Furthest distance from the Sun where can we we expect a planet to form. Used in planetismal orbit calculations
    * to calculate the semi-major axis of the planetismal's orbit. Introduced in "Formation of Planetary Systems by
-   * Aggregation: A Computer Simulation" in "b) The Planetary Nuclei".
+   * Aggregation: A Computer Simulation" in "III. Experimental Simulation b) The Planetary Nuclei".
    *
    * TODO Note specific version that Ian, Mat and Carl use.
    *
    * @note Original value from Dole is 0.3.
    *
-   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+   * @see pg15. Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
    * @see method OutermostPlanet at line 149 in DoleParams.java - Ian Burrell (accrete)
    * @see method outermost_planet at line 59 in accrete.c - Mat Burdick (accrete)
    * @see method farthest_planet at line 231 in Star.java - Carl Burke (starform)

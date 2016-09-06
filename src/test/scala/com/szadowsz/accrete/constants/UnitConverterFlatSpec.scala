@@ -1,4 +1,4 @@
-package com.szadowsz.gen.unit
+package com.szadowsz.accrete.constants
 
 import com.szadowsz.accrete.constants.UnitConverter
 import org.junit.runner.RunWith

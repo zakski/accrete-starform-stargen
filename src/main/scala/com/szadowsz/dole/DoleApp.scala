@@ -15,8 +15,8 @@ object DoleApp {
   private val logger: Logger = LoggerFactory.getLogger(getClass)
 
   def main(args: Array[String]) {
-    val acrete = DoleSimulation(new Random())
-    val planets = acrete.accrete()
+    val acrete = DoleSimulation(new Random(1))
+    val planets = acrete.generate()
     planets.zipWithIndex.foreach{case (pl,i) => logger.info("Planet {}: {}", i, pl)}
   }
 }

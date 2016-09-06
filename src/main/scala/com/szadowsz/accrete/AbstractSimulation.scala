@@ -2,74 +2,33 @@ package com.szadowsz.accrete
 
 import java.util.Random
 
-import com.szadowsz.accrete.bodies.{DustBand, Planet, ProtoPlanet}
-import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc}
+import com.szadowsz.accrete.bodies.{DustBand, ProtoPlanet}
+import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc, RandomCalc}
 import com.szadowsz.accrete.constants.AccreteConstants
 import org.slf4j.{Logger, LoggerFactory}
 
 abstract class AbstractSimulation {
-  this: AccreteCalc with PlanetesimalCalc with CollisionCalc with AccreteConstants =>
+  this: AccreteCalc with PlanetesimalCalc with CollisionCalc with RandomCalc with AccreteConstants =>
 
-  protected val rand: Random
-
+  /**
+    * SLF4J built logger to document the goings on during the generation.
+    */
   protected val logger: Logger = LoggerFactory.getLogger(getClass)
 
-  protected var _planets: List[Planet] = Nil
+  /**
+    * Representation of the dust cloud that the planetismals form from.
+    */
+  protected var _dust: List[DustBand] = List(DustBand(0.0, outerDustLimit(1.0)))
 
+  /**
+    * Current list of coalesced proto-planets in the system.
+    */
   protected var _planetismals: List[ProtoPlanet] = Nil
 
-  protected var _dust: List[DustBand] = Nil
-
   /**
-    * Method to form planets by accretion
-    *
-    * @return head of the planet for this system
+    * The random number generator to use throughout the process.
     */
-  def accrete(): List[Planet] = {
-    if (_planets.isEmpty) {
-      logger.info("Beginning generation of protoplanets.")
-      _planets = accrete(rand).map(p => Planet(p))
-    }
-    _planets
-  }
-
-  protected def createDust(): List[DustBand] = {
-    List(DustBand(0.0, outerDustLimit(1.0)))
-  }
-
-  protected def createProtoplanet(): ProtoPlanet = {
-    val axis: Double = semiMajorAxis(rand)
-    val ecc: Double = eccentricity(rand)
-    val mass: Double = PROTOPLANET_MASS
-    ProtoPlanet(this, mass, axis, ecc)
-  }
-
-  /**
-    * Steps through list of dust bands checking to see if any of those that bands that overlap the given
-    * range have dust present.
-    *
-    * @param inner the inner limit of the range in AU.
-    * @param outer the outer limit of the range in AU.
-    * @return whether or not there is still dust between inner and outer limits in this current accretion process.
-    */
-  protected def isDustAvailable(inner : Double, outer : Double): Boolean = {
-    _dust.exists(d => d.hasDust && d.outerEdge > INNERMOST_PLANET  && d.innerEdge < OUTERMOST_PLANET)
-  }
-
-
-  /**
-    * Method to calculate the mass for the protoplanet
-    *
-    * @param proto
-    */
-  protected def accreteDust(proto: ProtoPlanet): Unit = {
-    var lastMass: Double = .0
-    do {
-      lastMass = proto.mass
-      val currMass = accreteDust(proto, _dust)
-      proto.mass = if (currMass > lastMass) currMass else lastMass
-    } while (shouldAccreteContinue(lastMass, proto.mass))
-  }
+  protected val rand: Random
 
   /**
     * Method to turn all available DustBands into mass for the protoplanet
@@ -205,7 +164,9 @@ abstract class AbstractSimulation {
     planet.axis = new_axis
     planet.ecc = new_ecc
     planet.mass = new_mass
+
     accreteDust(planet)
+    updateDustLanes(planet)
   }
 
   /**
@@ -248,16 +209,51 @@ abstract class AbstractSimulation {
     }
   }
 
+
+  /**
+    * Method to calculate the mass for the protoplanet. Sucks mass from all dustbands in range of its gravitational pull during its ellipical orbit.
+    *
+    * @param proto
+    */
+  protected def accreteDust(proto: ProtoPlanet): Unit = {
+    var lastMass: Double = 0.0
+    do {
+      lastMass = proto.mass
+      val currMass = accreteDust(proto, _dust)
+      proto.mass = if (currMass > lastMass) currMass else lastMass
+    } while (shouldAccreteContinue(lastMass, proto.mass))
+  }
+
+  /**
+    * Steps through list of dust bands checking to see if any of those that bands that overlap the given
+    * range have dust present.
+    *
+    * This is used in two situations:
+    *
+    * 1: Checking the end conditions of the experiment, that all dust between two arbitrary radii is swept away. This is taken from "III. Experimental
+    * Simulation" in "Formation of Planetary Systems by Aggregation: A Computer Simulation"; The inner and outer bounds of where a planet can spawn are
+    * used by Dole as these radii, which has been adopted by several subsequent implementations.
+    *
+    * 2: To check whether an injection at a given AU is possible, based on the curretn dust banding situation.
+    *
+    * @see pg13. Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+    *
+    * @param inner the inner limit of the range in AU.
+    * @param outer the outer limit of the range in AU.
+    * @return whether or not there is still dust between inner and outer limits in this current accretion process.
+    */
+  protected def isDustAvailable(inner : Double, outer : Double): Boolean = {
+    _dust.exists(d => d.hasDust && d.outerEdge > inner  && d.innerEdge < outer)
+  }
+
   /**
     * Method to form planets by accretion
     *
-    * @param rand - pseudo-random number generator
     * @return head of the planet for this system
     */
-  protected def accrete(rand: Random): List[ProtoPlanet] = {
-    _dust = createDust()
+  protected def accrete(): List[ProtoPlanet] = {
     while (isDustAvailable(INNERMOST_PLANET,OUTERMOST_PLANET)) {
-      val proto = createProtoplanet()
+      val proto = ProtoPlanet(PROTOPLANET_MASS, semiMajorAxis(rand), eccentricity(rand))
       logger.debug("Checking {} AU for suitability.", proto.axis)
 
       if (isDustAvailable(proto.innerBandLimit,proto.outerBandLimit)) {
@@ -277,6 +273,19 @@ abstract class AbstractSimulation {
       } else {
         logger.debug("Injection of protoplanet at {} AU failed due to no available dust.", proto.axis)
       }
+    }
+    _planetismals
+  }
+
+  /**
+    * Method to form planets by accretion, if none have already been formed. The main entrypoint of the generation engine.
+    *
+    * @return the list of generated proto-planets for this system.
+    */
+  def generate(): List[ProtoPlanet] = {
+    if (_planetismals.isEmpty) {
+      logger.info("Beginning generation of protoplanets.")
+      accrete()
     }
     _planetismals
   }

@@ -11,43 +11,42 @@ import scala.util.Random
  * @author Zakski : 21/07/2015.
  */
 trait PlanetesimalCalc {
-  this: OrbitalCalc with AccreteConstants =>
+  this: AccreteConstants =>
 
   /**
-   * Method to produce the semi major axis of a planetesimal. Formula taken from "Formation of Planetary Systems
-   * by Aggregation: A Computer Simulation" in section b) The Planetary Nuclei.
-   *
-   * @note made minor cosmetic change from 50Yi, where Yi is a random number and 50 is outer limit. Innermost limit is
-   *       mentioned separately originally.
-   * @note unit of return value is AU
-   *
-   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
-   * @see method RandomPlanetismal, line 58 in Planetismal.java - Ian Burrell (accrete)
-   * @see method distribute_planetary_masses, line 405 in accrete.c - Mat Burdick (accrete)
-   * @see method dist_planetary_masses, line 403 in accrete.c - Mat Burdick (starform)
-   * @see constructor Protoplanet, line 150 in  Protoplanet.java - Carl Burke (starform)
-   *
-   * @param rand - a random number generator to supply a value between 0.0 and 1.0
-   * @return the semi major axis of a planetismal orbiting a star in AU.
-   */
-  def semiMajorAxis(rand: Random): Double = INNERMOST_PLANET + (OUTERMOST_PLANET - INNERMOST_PLANET) * rand.nextDouble()
+    * Method to get the Aphelion distance between an orbiting planetary body and its star. The Aphelion
+    * distance is the furthest away that the planetary body will be from its Star.Used to find the outer dust sweep
+    * limit, see c) Aggregation in "Formation of Planetary Systems by Aggregation: A Computer Simulation".
+    *
+    * @note equivalent of a + ae in dole's paper.
+    * @note unit of return value is AU
+    *
+    * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+    * @see method AphelionDistance, line 41 in DoleParams.java - Ian Burrell (accrete)
+    *
+    * @param axis - the radius of the planetary body's orbit AKA the semi-major axis in AU.
+    * @param ecc - the eccentricity of the planetary body's orbit
+    * @return the greatest distance between the body and its host star in AU.
+    */
+  protected def aphelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 + ecc)
+
 
   /**
-   * Method to produce the eccentricity of a planetesimal. Formula taken from "Formation of Planetary Systems
-   * by Aggregation: A Computer Simulation" in section b) The Planetary Nuclei.
-   *
-   * @note made minor cosmetic change from 1 - (1 - Yj)Q, where Yj is a random number and Q is the coefficient.
-   *
-   * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
-   * @see method RandomEccentricity, line 128 in DoleParams.java - Ian Burrell (accrete)
-   * @see method distribute_planetary_masses, line 406 in accrete.c - Mat Burdick (accrete)
-   * @see method dist_planetary_masses, line 404 in accrete.c - Mat Burdick (starform)
-   * @see constructor Protoplanet, line 151 in  Protoplanet.java - Carl Burke (starform)
-   *
-   * @param rand - a random number generator to supply a value between 0.0 and 1.0
-   * @return eccentricity between 0.0 and 1.0, essential for a planetesimal to stay in the system.
-   */
-  def eccentricity(rand: Random): Double = 1.0 - Math.pow(rand.nextDouble(), ECCENTRICITY_COEFF)
+    * Method to get the Perihelion distance between an orbiting planetary body and its star. The Perihelion
+    * distance is the closest that the planetary body will be from its Star. Used to find the outer dust sweep
+    * limit, see c) Aggregation in "Formation of Planetary Systems by Aggregation: A Computer Simulation".
+    *
+    * @note equivalent of a - ae in dole's paper.
+    * @note unit of return value is AU
+    *
+    * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+    * @see method PerihelionDistance, line 37 in DoleParams.java - Ian Burrell (accrete)
+    *
+    * @param axis - the radius of the planetary body's orbit AKA the semi-major axis in AU.
+    * @param ecc - the eccentricity of the planetary body's orbit
+    * @return the closest distance between the body and its host star in AU.
+    */
+  protected def perihelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 - ecc)
 
   /**
    * Method to calculate whether a planetesimal has gained enough mass to accrete gas as well as dust, see "c)

@@ -2,13 +2,6 @@ package com.szadowsz.accrete.bodies
 
 import java.text.DecimalFormat
 
-object DustBand {
-
-  def apply(innerEdge: Double, outerEdge: Double): DustBand = {
-    new DustBand(innerEdge, outerEdge)
-  }
-}
-
 /**
   * Class to represent a band of dust of gas. Contains the inner and outer edge, and whether it has dust or
   * gas present.
@@ -32,19 +25,14 @@ object DustBand {
   *
   * @author zakski : 06/07/2015.
   */
-case class DustBand(innerEdge: Double, outerEdge: Double, hasDust: Boolean, hasGas: Boolean) {
+case class DustBand(innerEdge: Double, outerEdge: Double, hasDust: Boolean = true, hasGas: Boolean  = true) {
 
   /**
-    * Initial Constructor during Accretion. Used solely to form the first band of gas and dust as it is the only
-    * time at which both gas and dust can be assumed to be present.
+    * Method to check that the levels of dust and gas in an other band suit it being merged with this one.
     *
-    * @param innerLimit inner limit of the dust band in AU.
-    * @param outerLimit outer limit of the dust band in AU.
+    * @param band the band to check against
+    * @return true if the two bands are compatible, false otherwise
     */
-  def this(innerLimit: Double, outerLimit: Double) {
-    this(innerLimit, outerLimit, true, true)
-  }
-
   def canMerge(band: DustBand): Boolean = {
     hasDust == band.hasDust && hasGas == band.hasGas
   }
