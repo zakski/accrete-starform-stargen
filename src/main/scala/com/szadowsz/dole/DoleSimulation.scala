@@ -3,7 +3,7 @@ package com.szadowsz.dole
 
 import java.util.Random
 
-import com.szadowsz.accrete.AbstractSimulation
+import com.szadowsz.accrete.AccreteSimulation
 import com.szadowsz.accrete.bodies.ProtoPlanet
 import com.szadowsz.dole.bodies.DolePlanet
 import com.szadowsz.dole.calc.DoleCalc
@@ -13,7 +13,7 @@ case class DoleSimulation(
                            private val a: Option[Double] = None,
                            private val k: Option[Double] = None,
                            private val w: Option[Double] = None
-                         ) extends AbstractSimulation with DoleCalc {
+                         ) extends AccreteSimulation with DoleCalc {
 
   override protected def createProtoplanet(): ProtoPlanet = {
     new DolePlanet(this, PROTOPLANET_MASS, semiMajorAxis(rand), eccentricity(rand))

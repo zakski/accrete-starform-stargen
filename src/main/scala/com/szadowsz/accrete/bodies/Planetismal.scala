@@ -3,10 +3,14 @@ package com.szadowsz.accrete.bodies
 import java.text.DecimalFormat
 
 /**
-  * Abstract Outline Class to represent an accreting proto-planetary body. Defines the basic members required for the aggregation part of simulation.
+  * Outline of an accreting proto-planetary body. Defines the basic members required for the aggregation part of simulation.
   *
   * @see Planetismal.java - Ian Burrell (accrete)
   * @see struct planets_record, line 4 in structs.h - Mat Burdick (accrete)
+  * @see struct Band, line 95 in Dole.c - Andrew Folkins (accretion)
+  * @see struct Band, line 104 in dole.c - Keris (accretion v1)
+  * @see struct Band, line 178 in dole.cc - Keris (accretion v2)
+  * @see struct dust_record, line 39 in structs.h - Keris (starform)
   * @see struct planets_record, line 4 in structs.h - Mat Burdick (starform)
   * @see Protoplanet.java - Carl Burke (starform)
   *

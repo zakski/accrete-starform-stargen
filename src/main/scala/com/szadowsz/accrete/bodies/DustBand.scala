@@ -12,6 +12,10 @@ import java.text.DecimalFormat
   *
   * @see DustBand.java - Ian Burrell (accrete)
   * @see struct dust_record, line 37 in structs.h - Mat Burdick (accrete)
+  * @see struct Band, line 95 in Dole.c - Andrew Folkins (accretion)
+  * @see struct Band, line 104 in dole.c - Keris (accretion v1)
+  * @see struct Band, line 178 in dole.cc - Keris (accretion v2)
+  * @see struct dust_record, line 39 in structs.h - Keris (starform)
   * @see struct dust_record, line 37 in structs.h - Mat Burdick (starform)
   * @see DustBand.java - Carl Burke (starform)
   *

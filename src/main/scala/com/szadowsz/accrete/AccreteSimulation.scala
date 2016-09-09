@@ -7,7 +7,7 @@ import com.szadowsz.accrete.calc.{AccreteCalc, CollisionCalc, PlanetesimalCalc, 
 import com.szadowsz.accrete.constants.AccreteConstants
 import org.slf4j.{Logger, LoggerFactory}
 
-abstract class AbstractSimulation {
+abstract class AccreteSimulation {
   this: AccreteCalc with PlanetesimalCalc with CollisionCalc with RandomCalc with AccreteConstants =>
 
   /**
@@ -48,13 +48,14 @@ abstract class AbstractSimulation {
         } else if (band.innerEdge >= outerSweep) {
           0.0
         } else {
-          var density: Double = if (band.hasDust) dustCloudDensity(proto.axis) else 0.0
+          var density: Double = if (band.hasDust) dustDensity(proto.axis) else 0.0
 
           if (band.hasGas && proto.isGasGiant) {
-            density = cloudDensity(density, proto.criticalMass, proto.mass)
+            density = dustAndGasDensity(density, proto.criticalMass, proto.mass)
           }
 
           val volume = bandVolume(proto.mass, proto.axis, proto.ecc, innerSweep, outerSweep, band.innerEdge, band.outerEdge)
+          // volume X density = mass
           volume * density + accreteDust(proto,tail)
         }
       case Nil => 0.0
