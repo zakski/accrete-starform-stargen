@@ -56,48 +56,9 @@ trait Planetismal {
   def aphelion: Double
 
   /**
-    * The closest to the star that the planet will accrete mass from, given gravitational pull.
-    *
-    * @note unit of value is AU.
-    */
-  def innerGravLimit: Double
-
-  /**
-    * The furthest from the star that the planet will accrete mass from, given gravitational pull.
-    *
-    * @note unit of value is AU.
-    */
-  def outerGravLimit: Double
-
-
-  /**
-    * The closest to the star that the planet will accrete mass from, given gravitational pull and
-    * cloud particle eccentricity.
-    *
-    * @note unit of value is AU.
-    */
-  def innerBandLimit: Double
-
-  /**
-    * The furthest from the star that the planet will accrete mass from, given gravitational pull and
-    * cloud particle eccentricity.
-    *
-    * @note unit of value is AU.
-    */
-  def outerBandLimit: Double
-
-  /**
-    * the limit at which a proto planet has gained enough mass to accrete gas as well as dust
-    *
-    * @note unit of value is Solar Masses.
-    */
-  def criticalMass: Double
-
-
-  /**
     * Whether the planet has surpassed its critical mass limit and become a gas giant.
     */
-  def isGasGiant: Boolean = mass >= criticalMass
+  def isGasGiant: Boolean
 
   /**
     * Method to supply String representation of the proto planet.

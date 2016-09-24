@@ -22,4 +22,48 @@ package com.szadowsz.accrete.bodies
   *
   * @author Zakski : 25/06/2015.
   */
-abstract class ProtoPlanet(var mass: Double, var axis: Double, var ecc: Double) extends Planetismal
+abstract class ProtoPlanet(var mass: Double, var axis: Double, var ecc: Double) extends Planetismal {
+  /**
+    * The closest to the star that the planet will accrete mass from, given gravitational pull.
+    *
+    * @note unit of value is AU.
+    */
+  def innerGravLimit: Double
+
+  /**
+    * The furthest from the star that the planet will accrete mass from, given gravitational pull.
+    *
+    * @note unit of value is AU.
+    */
+  def outerGravLimit: Double
+
+
+  /**
+    * The closest to the star that the planet will accrete mass from, given gravitational pull and
+    * cloud particle eccentricity.
+    *
+    * @note unit of value is AU.
+    */
+  def innerBandLimit: Double
+
+  /**
+    * The furthest from the star that the planet will accrete mass from, given gravitational pull and
+    * cloud particle eccentricity.
+    *
+    * @note unit of value is AU.
+    */
+  def outerBandLimit: Double
+
+  /**
+    * the limit at which a proto planet has gained enough mass to accrete gas as well as dust
+    *
+    * @note unit of value is Solar Masses.
+    */
+  def criticalMass: Double
+
+
+  /**
+    * Whether the planet has surpassed its critical mass limit and become a gas giant.
+    */
+  override def isGasGiant: Boolean = mass >= criticalMass
+}
