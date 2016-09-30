@@ -1,9 +1,9 @@
 package com.szadowsz.stargen.base.starform
 
 import com.szadowsz.stargen.base.accrete.AccreteSimulation
-import com.szadowsz.stargen.base.accrete.bodies.{Planetismal, ProtoPlanet}
+import com.szadowsz.stargen.base.accrete.bodies.Planetismal
 import com.szadowsz.stargen.base.accrete.calc.CollisionCalc
-import com.szadowsz.stargen.base.starform.bodies.Star
+import com.szadowsz.stargen.base.starform.bodies.{Planet, Star}
 import com.szadowsz.stargen.base.starform.calc._
 import com.szadowsz.stargen.base.starform.constants.StarformConstants
 import com.szadowsz.stargen.base.starform.constants.unit.UnitConstants
@@ -16,36 +16,15 @@ abstract class StarformSimulation extends AccreteSimulation {
 
   val star: Star
 
-//  def iterate_surface_temp(surfPressure : Double) = {
-//    var optical_depth = opacity(planet.molecule_weight, surfPressure)
-//    var effective_temp = effectiveTemperature(star.meanHabitableRadius, planet.a, EARTH_ALBEDO)
-//    var greenhouse_rise = green_rise(optical_depth, effective_temp, surfPressure)
-//    var surf1_temp = effective_temp + greenhouse_rise
-//    previous_temp = surf1_temp - 5.0 /* force the while loop the first time */
-//
-//    while ((fabs(surf1_temp - previous_temp) > 1.0)) {
-//      previous_temp = surf1_temp
-//      water = hydrosphere_fraction(planet.volatile_gas_inventory, planet.radius)
-//      clouds = cloud_fraction(surf1_temp, planet.molecule_weight, planet.radius, water)
-//      ice = ice_fraction(water, surf1_temp)
-//      if ((surf1_temp >= planet.boil_point) || (surf1_temp <= FREEZING_POINT_OF_WATER))
-//        water = 0.0
-//      albedo = planet_albedo(water, clouds, ice, surfPressure)
-//      optical_depth = opacity(planet.molecule_weight, surfPressure)
-//      effective_temp = effectiveTemperature(star.meanHabitableRadius, planet.a, albedo)
-//      greenhouse_rise = green_rise(optical_depth, effective_temp, surfPressure)
-//      surf1_temp = effective_temp + greenhouse_rise
-//    }
-//
-//    (water, clouds, ice, albedo, surf1_temp)
-//  }
+  def molecule_limit(mass: Double, escapeVel: Double,equat_radius: Double): Double = {
+     if (escapeVel == 0.0) return 0.0
+    (3.0 * Math.pow(GAS_RETENTION_THRESHOLD * CM_PER_METER, 2.0) * (MOLAR_GAS_CONST * EXOSPHERE_TEMP)) / (escapeVel * escapeVel)
+  }
 
-  def buildEcosphere(proto: ProtoPlanet): Planetismal = {
+  def buildEcosphere(proto: Planetismal): Planet = {
     val orbitZone: Int = orbitalZone(star.luminosity, proto.axis)
 
-    val equatorialRadius = kothariRadius(proto.mass, proto.isGasGiant, orbitZone)
-
-    val density = if (proto.isGasGiant) volumeDensity(proto.mass, equatorialRadius) else empiricalDensity(proto.mass, proto.axis, star.meanHabitableRadius)
+    val (equatorialRadius, density) = radiusAndDensity(proto.mass, proto.axis, star.meanHabitableRadius, proto.isGasGiant, orbitZone)
 
     val angularVelocity = totalAngularVelocity(star.mass, star.age, proto.mass, equatorialRadius, proto.axis, density, proto.isGasGiant)
     val lengthOfOrbit = orbitLength(proto.axis, proto.mass, star.mass)
@@ -60,6 +39,14 @@ abstract class StarformSimulation extends AccreteSimulation {
     val volatileGasInventory = vGasInventory(rand, proto.mass, orbitZone, retainsGas, suffersFromGE, star.mass)
 
     val surfPressure = surfacePressure(volatileGasInventory, equatorialRadius, gravity)
-    proto
+    val atmos = atmosphere(orbitZone, surfPressure, suffersFromGE, proto.isGasGiant)
+    val mw = molecule_limit(proto.mass,escapeVel,equatorialRadius)
+    val (water, clouds, ice, albedo, surfTemp) = calcClimate(star.meanHabitableRadius,proto.axis, equatorialRadius, surfPressure, volatileGasInventory, mw,
+      atmos)
+
+
+    new Planet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp)
   }
+
+  def generateSystems(): (Star, List[Planet]) = (star, generateProtoplanets().map(buildEcosphere))
 }

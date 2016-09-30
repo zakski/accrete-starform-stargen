@@ -1,7 +1,6 @@
 package com.szadowsz.stargen.base.starform.bodies
 
-import com.szadowsz.stargen.base.accrete.bodies.{Planetismal, ProtoPlanet}
-
+import com.szadowsz.stargen.base.accrete.bodies.Planetismal
 
 /**
   * Class to represent TODO.
@@ -10,7 +9,21 @@ import com.szadowsz.stargen.base.accrete.bodies.{Planetismal, ProtoPlanet}
   *
   * @author Zakski : 20/07/2015.
   */
-class Planet(proto: ProtoPlanet) extends Planetismal {
+class Planet(
+              proto: Planetismal,
+              eqRad: Double,
+              den: Double,
+              lengthOfOrbit: Double,
+              lengthOfDay: Double,
+              grav: Double,
+              surfPressure: Double,
+              water: Double,
+              clouds: Double,
+              ice: Double,
+              alb: Double,
+              surfTemp: Double
+            )
+  extends Planetismal {
 
   /**
     * The mass of the body.
@@ -54,43 +67,25 @@ class Planet(proto: ProtoPlanet) extends Planetismal {
     */
   override val isGasGiant: Boolean = proto.isGasGiant
 
-  //  /**
-  //    * the average radius of a planet, calculated using eq.9 in Fogg's article, although some typos
-  //    * crop up in that eq. Originally from eq 23 in "The Internal Constitution of Planets", by Dr. D. S. Kothari.
-  //    *
-  //    * @see Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
-  //    * @see The Internal Constitution of Planets - D. S. Kothari
-  //    *
-  //    * @note unit is km rather than in terms of earth.
-  //    */
-  //  val equatorialRadius = calc.kothariRadius(mass, isGas, orbitalZone)
-  //
-  //  val density = calc.empiricalDensity(mass, axis, calc.getStarEcosphereRadius)
-  //
-  //  val angularVelocity = calc.totalAngularVelocity(mass, equatorialRadius, axis, isGas, density)
-  //
-  //  val orbitLength = calc.orbitLength(axis, mass, calc.getStarMass)
-  //
-  //  val dayLength = calc.dayLength(angularVelocity, orbitLength, ecc)
-  //
-  //  val gravity = calc.surfaceGravity(mass, equatorialRadius)
-  //
-  //  val escapeVelocity = calc.escapeVelocity(gravity, equatorialRadius)
-  //
-  //  val rmsSpeed = calc.speedRMS(calc.MOLECULAR_NITROGEN, equatorialRadius)
-  //
-  //  val volatileGasInventory = calc.vGasInventory(mass, escapeVelocity, rmsSpeed, orbitalZone,
-  //    calc.suffersGreenhouseEffect(axis, calc.getStarGreenhouseRadius), calc.getStarMass)
-  //
-  //  val surfacePressure = calc.surfacePressure(volatileGasInventory, equatorialRadius, gravity_inGs)
-  //
-  //  def gravity_inGs: Double = UnitConverter.mSec2ToGs(gravity)
-  //
-  //  //  double molecule_weight;	/* smallest molecular weight retained*/
-  //  //  double boil_point;		/* the boiling point of water (Kelvin)*/
-  //  //  double albedo;		/* albedo of the planet		     */
-  //  //  double surf_temp;   	/* surface temperature in Kelvin     */
-  //  //  double hydrosphere;		/* fraction of surface covered	     */
-  //  //  double cloud_cover;		/* fraction of surface covered	     */
-  //  //  double ice_cover;		/* fraction of surface covered	     */
+  val equatorialRadius = eqRad
+
+  val density = den
+
+  val orbitLength = lengthOfOrbit
+
+  val dayLength = lengthOfDay
+
+  val gravity = grav
+
+  val surfacePressure = surfPressure
+
+  val hydrosphere = water
+
+  val cloudCover = clouds
+
+  val iceCover = ice
+
+  val albedo = alb
+
+  val surfaceTemperature = surfTemp
 }

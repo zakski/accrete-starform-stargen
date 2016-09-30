@@ -16,7 +16,7 @@ object DoleApp {
 
   def main(args: Array[String]) {
     val acrete = DoleSimulation(new Random(1))
-    val planets = acrete.generate()
+    val planets = acrete.generateProtoplanets()
     planets.zipWithIndex.foreach{case (pl,i) => logger.info("Planet {}: {}", i, pl)}
   }
 }

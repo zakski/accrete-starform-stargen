@@ -1,7 +1,7 @@
 package com.szadowsz.stargen.base.starform
 
 import com.szadowsz.stargen.base.starform.util.UnitConverter
-import org.scalatest.{FunSpec, GivenWhenThen, Matchers}
+import org.scalatest.{FunSpec, Matchers}
 
 /**
   * Test the Recreated Fogg Calculations Against Data provided by Fogg with tolerance for more accurate values and floating point changes.
@@ -23,18 +23,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = true
     val expectedDayLength = UnitConverter.daysToHours(expectedYear)
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -69,18 +62,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = true
     val expectedDayLength = UnitConverter.daysToHours(expectedYear)
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -93,7 +79,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)
@@ -115,18 +109,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = false
     val expectedDayLength = 14.81
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -139,7 +126,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)
@@ -161,18 +156,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = false
     val expectedDayLength = 15.13
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -185,7 +173,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)
@@ -207,18 +203,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = false
     val expectedDayLength = 14.92
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -231,7 +220,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)
@@ -253,18 +250,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = false
     val expectedDayLength = 12.02
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -277,7 +267,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)
@@ -299,18 +297,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = false
     val expectedDayLength = 7.54
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -323,7 +314,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)
@@ -345,18 +344,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = false
     val expectedDayLength = 12.87
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -369,7 +361,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)
@@ -391,18 +391,11 @@ class FoggCalcSpec extends FunSpec with Matchers {
     val expectedSynch = false
     val expectedDayLength = 31.13
 
-    it("it's Equatorial Radius should match the value in the paper") {
-      val equatorialRadius = FoggTestCalc.kothariRadius(pMass, isGasGiant, orbitZone)
+    it("it's Equatorial Radius And Density should match the values in the paper") {
+      val (equatorialRadius,density) = FoggTestCalc.radiusAndDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius, isGasGiant, orbitZone)
+
       val radiusTolerance = expectedEqRadius * tolerancePercentage
       equatorialRadius should be(expectedEqRadius +- radiusTolerance)
-    }
-
-    it("it's Density should match the value in the paper") {
-      val density = if (isGasGiant) {
-        FoggTestCalc.volumeDensity(pMass, expectedEqRadius)
-      } else {
-        FoggTestCalc.empiricalDensity(pMass, pAxis, FoggTestCalc.getStarEcosphereRadius)
-      }
 
       val densityTolerance = expectedDensity * tolerancePercentage
       density should be(expectedDensity +- densityTolerance)
@@ -415,7 +408,15 @@ class FoggCalcSpec extends FunSpec with Matchers {
     }
 
     it("it's Day Length should match the value in the paper") {
-      val angularVelocity = FoggTestCalc.totalAngularVelocity(FoggTestCalc.getStarMass, FoggTestCalc.getStarAge, pMass, expectedEqRadius, pAxis, expectedDensity, isGasGiant)
+      val angularVelocity = FoggTestCalc.totalAngularVelocity(
+        FoggTestCalc.getStarMass,
+        FoggTestCalc.getStarAge,
+        pMass,
+        expectedEqRadius,
+        pAxis,
+        expectedDensity,
+        isGasGiant
+      )
       val (synch, resonant, lengthOfDay) = FoggTestCalc.dayLength(angularVelocity, expectedYear, pEcc)
 
       synch should be (expectedSynch)

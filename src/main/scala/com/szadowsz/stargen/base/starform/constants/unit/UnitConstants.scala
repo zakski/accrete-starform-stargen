@@ -146,4 +146,8 @@ trait UnitConstants extends DistanceConstants with MassConstants {
 
 
   final val MILLIBARS_PER_BAR = 1000.0
+
+  final val EARTH_SURF_PRES_IN_MILLIBARS = 1000.0
+
+  final val FREEZING_POINT_OF_WATER = 273.0
 }

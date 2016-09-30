@@ -1,6 +1,6 @@
 package com.szadowsz.stargen.base.starform.calc
 
-import com.szadowsz.stargen.base.starform.constants.StarformConstants
+import com.szadowsz.stargen.base.starform.constants.{Atmosphere, StarformConstants}
 import com.szadowsz.stargen.base.starform.constants.Atmosphere._
 import com.szadowsz.stargen.base.starform.constants.unit.UnitConstants
 import com.szadowsz.stargen.base.starform.util.UnitConverter
@@ -54,19 +54,12 @@ trait EcoCalc {
     * @see method kothari_radius, line 68 in enviro.c - Mat Burdick (starform)
     * @see method kothari_radius, line 684 in Planet.java - Carl Burke (starform)
     *
-    * @param mass    the planetary mass
-    * @param isGiant if the planet is considered a gas giant.
-    * @param zone    the orbital zone.
+    * @param mass         the planetary mass
+    * @param atomicWeight The average atomic weight of the .
+    * @param atomicNum    the orbital zone.
     * @return radius of the planet in km.
     */
-  def kothariRadius(mass: Double, isGiant: Boolean, zone: Int): Double = {
-    val (atomicWeight, atomicNum) = zone match {
-      case 1 => if (isGiant) (9.5, 4.5) else (15.0, 8.0)
-
-      case 2 => if (isGiant) (2.47, 2.0) else (10.0, 5.0)
-
-      case _ => if (isGiant) (7.0, 4.0) else (10.0, 5.0)
-    }
+  def kothariRadius(mass: Double, atomicWeight: Double, atomicNum: Double): Double = {
     val numeratorP1 = (2.0 * BETA) / A1 // 1.7650695517774344
     val numeratorP2 = 1 / Math.pow(atomicWeight * atomicNum, 1.0 / 3.0)
     val numerator = numeratorP1 * numeratorP2 * Math.pow(SOLAR_MASS_IN_GRAMS, 1.0 / 3.0)
@@ -102,6 +95,12 @@ trait EcoCalc {
     temp * Math.pow(ecosphere / axis, 0.25) * 5.5
   }
 
+  def volumeRadius(mass: Double, density: Double): Double = {
+    val massInG = UnitConverter.solarMassToGrams(mass)
+    val volume = massInG / density
+    UnitConverter.cmToKm(Math.pow((3.0 * volume) / (4.0 * Math.PI), 1.0 / 3.0))
+  }
+
   /**
     * Function to calculate the average density of a planet, listed as eq. 10 in "The Internal Constitution of Planets", by Dr. D. S. Kothari. This is used by
     * Fogg instead of [[empiricalDensity()]] once the planet has exceeded critical mass and become a gas giant. See "5. Planetary Characteristics" in
@@ -125,6 +124,30 @@ trait EcoCalc {
     val eqRadiusInCM = UnitConverter.kmToCm(eqRadius)
     val volume = ((4.0 * Math.PI) / 3.0) * Math.pow(eqRadiusInCM, 3)
     massInGrams / volume
+  }
+
+  def calcAveragedAtomicValues(zone: Int): (Double, Double) = {
+    zone match {
+      case 1 =>
+        (9.5, 4.5)
+      case 2 =>
+        (2.47, 2.0)
+      case _ =>
+        (7.0, 4.0)
+    }
+  }
+
+  def radiusAndDensity(mass: Double, axis: Double, meanHabitableRadius: Double, isGiant: Boolean, zone: Int): (Double, Double) = {
+    if (isGiant) {
+      val (atomicWeight, atomicNum) = calcAveragedAtomicValues(zone) // TODO build better composition modelling
+      val equatorialRadius = kothariRadius(mass, atomicWeight, atomicNum)
+      val density = volumeDensity(mass, equatorialRadius)
+      (equatorialRadius, density)
+    } else {
+      val density = empiricalDensity(mass, axis, meanHabitableRadius)
+      val equatorialRadius = volumeRadius(mass, density)
+      (equatorialRadius, density)
+    }
   }
 
   /**
@@ -391,14 +414,36 @@ trait EcoCalc {
   }
 
 
-  def atmosphere(zone: Int, suffersGreenHouse: Boolean, retainsAtmos: Boolean, isGiant: Boolean): Atmosphere = {
-    (zone, suffersGreenHouse, retainsAtmos, isGiant) match {
-      case (_, _, _, true) => GAS_GIANT // gas giants all have the same atmosphere
-      case (_, _, false, false) => AIRLESS // handle airless terrestrials separately to those with an atmosphere
-      case (1, true, true, false) => ATMOS_II_VENUS // greenhouse effected terrestrials have atmosphere II (Venusian)
-      case (1, false, true, false) => ATMOS_I_II_OR_V // terrestrials between greenhouse radius and 4 x eco are subject to climate feedback
-      case (2, false, true, false) => ATMOS_III // zone 2 terrestrials that retain N2 but not H2 have atmosphere III
-      case (3, false, true, false) => ATMOS_VII // zone 3 terrestrials have atmosphere VII
+  def atmosphere(zone: Int, surfacePressure: Double, suffersGE: Boolean, isGiant: Boolean): Atmosphere = {
+    // IF It is a Gas Giant
+    if (isGiant) {
+      GAS_GIANT // RETURN Gas Giant Atmosphere
+      // ELSE
+    } else {
+      // IF Does Not Retains Atmosphere
+      if (surfacePressure < 1.0) {
+        if (zone == 3) AIRLESS_ICE else AIRLESS_ROCK // IF Zone 3, RETURN Icy Airless Atmosphere ELSE RETURN Rocky Airless Atmosphere
+        // ELSE
+      } else {
+        zone match {
+          case 3 => ATMOS_VII // IF Zone 3, RETURN Icy Atmosphere VII
+          case 2 => ATMOS_III // IF Zone 2, RETURN Atmosphere III
+          case 1 if suffersGE => ATMOS_II_VENUS // IF Zone 1 AND Suffering Runaway Greenhouse effect, RETURN Venus Atmosphere II
+          case _ => FEEDBACK_MODEL // ELSE RETURN Atmosphere I,II or V
+        }
+      }
+    }
+  }
+
+  def getInitialAlbedo(a: Atmosphere): Double = {
+    a match {
+      case GAS_GIANT => GAS_GIANT_ALBEDO
+      case AIRLESS_ROCK => AIRLESS_ROCKY_ALBEDO
+      case AIRLESS_ICE => AIRLESS_ICE_ALBEDO
+      case FEEDBACK_MODEL => EARTH_ALBEDO
+      case ATMOS_II_VENUS => ATMOSPHERE_II_V_ALBEDO
+      case ATMOS_III => ATMOSPHERE_III_ALBEDO
+      case ATMOS_VII => ATMOSPHERE_VII_ALBEDO
     }
   }
 
@@ -437,13 +482,6 @@ trait EcoCalc {
     (Math.pow(1.0 + 0.75 * opticalDepth, 0.5) - 1.0) * effectiveTemp * CONVECTION_FACTOR
   }
 
-
-  /*--------------------------------------------------------------------------*/
-  /*   This function returns the boiling point of water in an atmosphere of   */
-  /*   pressure 'surface_pressure', given in millibars.  The boiling point is    */
-  /*   returned in units of Kelvin.  This is Fogg's eq.21.                    */
-  /*--------------------------------------------------------------------------*/
-
   /**
     * This is Fogg's eq.21. it returns the boiling point of water in an atmosphere of pressure 'surface_pressure'.
     *
@@ -456,83 +494,101 @@ trait EcoCalc {
   }
 
 
-  //  //  /*--------------------------------------------------------------------------*/
-  //  //  /*   This function is Fogg's eq.22.  Given the volatile gas inventory and   */
-  //  //  /*   planetary radius of a planet (in Km), this function returns the        */
-  //  //  /*   fraction of the planet covered with water.                             */
-  //  //  /*   I have changed the function very slightly:  the fraction of Earth's    */
-  //  //  /*   surface covered by water is 71%, not 75% as Fogg used.                 */
-  //  //  /*--------------------------------------------------------------------------*/
-  //  //
-  //  //  double hydrosphere_fraction(volatile_gas_inventory, planet_radius)
-  //  //  double volatile_gas_inventory, planet_radius;
-  //  //  {
-  //  //    double temp;
-  //  //
-  //  //    temp = (0.71 * volatile_gas_inventory / 1000.0) * pow2(EARTH_RADIUS_IN_KM / planet_radius);
-  //  //    if (temp >= 1.0)
-  //  //      return(1.0);
-  //  //    else
-  //  //      return(temp);
-  //  //  }
-  //  //
-  //  //
-  //  //  /*--------------------------------------------------------------------------*/
-  //  //  /*   Given the surface temperature of a planet (in Kelvin), this function   */
-  //  //  /*   returns the fraction of cloud cover available.  This is Fogg's eq.23.  */
-  //  //  /*   See Hart in "Icarus" (vol 33, pp23 - 39, 1978) for an explanation.     */
-  //  //  /*   This equation is Hart's eq.3.                                          */
-  //  //  /*   I have modified it slightly using constants and relationships from     */
-  //  //  /*   Glass's book "Introduction to Planetary Geology", p.46.                */
-  //  //  /*   The 'CLOUD_COVERAGE_FACTOR' is the amount of surface area on Earth     */
-  //  //  /*   covered by one Kg. of cloud.					    */
-  //  //  /*--------------------------------------------------------------------------*/
-  //  //
-  //  //  double cloud_fraction(surf_temp, smallest_MW_retained, equatorial_radius, hydrosphere_fraction)
-  //  //  double surf_temp, smallest_MW_retained, equatorial_radius,
-  //  //  hydrosphere_fraction;
-  //  //  {
-  //  //    double water_vapor_in_kg, fraction, surface_area, hydrosphere_mass;
-  //  //
-  //  //    if (smallest_MW_retained > WATER_VAPOR)
-  //  //      return(0.0);
-  //  //    else
-  //  //    {
-  //  //      surface_area = 4.0 * PI * pow2(equatorial_radius);
-  //  //      hydrosphere_mass = hydrosphere_fraction * surface_area * EARTH_WATER_MASS_PER_AREA;
-  //  //      water_vapor_in_kg = (0.00000001 * hydrosphere_mass) * exp(Q2_36 * (surf_temp - 288.0));
-  //  //      fraction = CLOUD_COVERAGE_FACTOR * water_vapor_in_kg / surface_area;
-  //  //      if (fraction >= 1.0)
-  //  //        return(1.0);
-  //  //      else
-  //  //        return(fraction);
-  //  //    }
-  //  //  }
-  //  //
-  //  //
-  //  //  /*--------------------------------------------------------------------------*/
-  //  //  /*   Given the surface temperature of a planet (in Kelvin), this function   */
-  //  //  /*   returns the fraction of the planet's surface covered by ice.  This is  */
-  //  //  /*   Fogg's eq.24.  See Hart[24] in Icarus vol.33, p.28 for an explanation. */
-  //  //  /*   I have changed a constant from 70 to 90 in order to bring it more in   */
-  //  //  /*   line with the fraction of the Earth's surface covered with ice, which  */
-  //  //  /*   is approximatly .016 (=1.6%).                                          */
-  //  //  /*--------------------------------------------------------------------------*/
-  //  //
-  //  //  double ice_fraction(hydrosphere_fraction, surf_temp)
-  //  //  double hydrosphere_fraction, surf_temp;
-  //  //  {
-  //  //    double temp;
-  //  //
-  //  //    if (surf_temp > 328.0)
-  //  //      surf_temp = 328.0;
-  //  //    temp = pow(((328.0 - surf_temp) / 90.0),5.0);
-  //  //    if (temp > (1.5 * hydrosphere_fraction))
-  //  //      temp = (1.5 * hydrosphere_fraction);
-  //  //    if (temp >= 1.0)
-  //  //      return(1.0);
-  //  //    else
-  //  //      return(temp);
-  //  //  }
+  def hydrosphereFraction(vGasInv: Double, eqRadius: Double): Double = {
+    Math.min((0.75 * vGasInv / 1000.0) * Math.pow(EARTH_RADIUS_IN_KM / eqRadius, 2), 1.0)
+  }
 
+  def cloudFraction(surfTemperature: Double): Double = Q1 * Math.exp(Q2 * (surfTemperature - 288.0))
+
+  def iceFraction(hydrosphereFraction: Double, surfTemperature: Double): Double = {
+    val ice = Math.pow((328.0 - surfTemperature) / 70.0, 5.0)
+    Math.min(Math.max(ice, 1.5 * hydrosphereFraction), 0.0)
+  }
+
+  def calcAlbedo(hydrosphereFraction: Double, cloudFraction: Double, iceFraction: Double) = {
+    val rockFraction = 1.0 - hydrosphereFraction - iceFraction
+    val cloudAdjust = cloudFraction / List(rockFraction, cloudFraction, hydrosphereFraction).count(_ > 0.0)
+    val rock = Math.max(rockFraction - cloudAdjust, 0.0)
+    val ice = Math.max(iceFraction - cloudAdjust, 0.0)
+    val water = Math.max(hydrosphereFraction - cloudAdjust, 0.0)
+    cloudFraction * CLOUD_ALBEDO + rock * ROCK_ALBEDO + ice * ICE_ALBEDO + water * OCEAN_ALBEDO
+  }
+
+  /*--------------------------------------------------------------------------*/
+  /*   This function returns the dimensionless quantity of optical depth,     */
+  /*   which is useful in determining the amount of greenhouse effect on a    */
+  /*   planet.                                                                */
+  /*--------------------------------------------------------------------------*/
+
+  def opacity(molecular_weight: Double, surface_pressure: Double): Double = {
+    val initDepth = if ((molecular_weight >= 0.0) && (molecular_weight < 10.0)) {
+      3.0
+    } else if ((molecular_weight >= 10.0) && (molecular_weight < 20.0)) {
+      2.34
+    } else if ((molecular_weight >= 20.0) && (molecular_weight < 30.0)) {
+      1.0
+    } else if ((molecular_weight >= 30.0) && (molecular_weight < 45.0)) {
+      0.15
+    } else if ((molecular_weight >= 45.0) && (molecular_weight < 100.0)) {
+      0.05
+    } else {
+      0.0
+    }
+
+    if (surface_pressure >= (70.0 * EARTH_SURF_PRES_IN_MILLIBARS)) {
+      initDepth * 8.333
+    }
+    else if (surface_pressure >= (50.0 * EARTH_SURF_PRES_IN_MILLIBARS)) {
+      initDepth * 6.666
+    }
+    else if (surface_pressure >= (30.0 * EARTH_SURF_PRES_IN_MILLIBARS)) {
+      initDepth * 3.333
+    }
+    else if (surface_pressure >= (10.0 * EARTH_SURF_PRES_IN_MILLIBARS)) {
+      initDepth * 2.0
+    }
+    else if (surface_pressure >= (5.0 * EARTH_SURF_PRES_IN_MILLIBARS)) {
+      initDepth * 1.5
+    } else {
+      initDepth
+    }
+  }
+
+  def calcClimate(
+                   ecoRadius: Double,
+                   axis: Double,
+                   eqRadius: Double,
+                   surfPressure: Double,
+                   volatileGasInventory: Double,
+                   molecularWeight: Double,
+                   atmosphere: Atmosphere
+                 ): (Double, Double, Double, Double, Double) = {
+    var clouds = Double.NaN
+    var ice = Double.NaN
+    var albedo = getInitialAlbedo(atmosphere)
+    var surfTemperature = effectiveTemperature(ecoRadius, axis, albedo)
+    var water = hydrosphereFraction(volatileGasInventory, eqRadius)
+
+    if (atmosphere == Atmosphere.FEEDBACK_MODEL) {
+      var previous = Double.NaN
+      val boilPoint = boilingPoint(surfPressure)
+      do {
+        previous = surfTemperature
+        clouds = cloudFraction(surfTemperature)
+        water = hydrosphereFraction(volatileGasInventory, eqRadius)
+        ice = iceFraction(water, surfTemperature)
+
+        if ((surfTemperature >= boilPoint) || (surfTemperature <= FREEZING_POINT_OF_WATER)) {
+          water = 0.0
+        }
+
+        albedo = calcAlbedo(water, clouds, ice)
+        val optical_depth = opacity(molecularWeight, surfPressure)
+        val effectiveTemp = effectiveTemperature(ecoRadius, axis, albedo)
+        val greenhouseDelta = greenhouseEffectDelta(optical_depth, effectiveTemp, surfPressure)
+        surfTemperature = effectiveTemp + greenhouseDelta
+      } while (Math.abs(surfTemperature - previous) > 1.0)
+    }
+    (water, clouds, ice, albedo, surfTemperature)
+  }
 }

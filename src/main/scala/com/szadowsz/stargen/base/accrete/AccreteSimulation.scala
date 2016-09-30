@@ -290,7 +290,7 @@ abstract class AccreteSimulation {
     *
     * @return the list of generated proto-planets for this system.
     */
-  def generate(): List[Planetismal] = {
+  def generateProtoplanets(): List[Planetismal] = {
     if (_planetismals.isEmpty) {
       logger.info("Beginning generation of protoplanets.")
       accrete()
