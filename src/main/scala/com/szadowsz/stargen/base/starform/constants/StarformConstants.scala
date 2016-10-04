@@ -2,13 +2,16 @@
 package com.szadowsz.stargen.base.starform.constants
 
 import com.szadowsz.stargen.base.accrete.constants.AccreteConstants
+import com.szadowsz.stargen.base.starform.system.bodies.Star
 
 /**
   * Constants Specific to Martyn J. Fogg's adaptation of Dole's paper.
   *
   * @author Zakski : 26/06/2015.
   */
-trait StarformConstants extends AccreteConstants {
+trait StarformConstants[S <: Star] extends AccreteConstants {
+
+  var star : S
 
   /**
     * The range with which we bind the mass of the star between was chosen because as noted in "3. Characteristics Of The Primary Star" in "Extra-solar

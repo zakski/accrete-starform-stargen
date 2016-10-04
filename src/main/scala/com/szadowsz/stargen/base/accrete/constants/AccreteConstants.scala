@@ -13,13 +13,16 @@ trait AccreteConstants {
     * 'A' in "Formation of Planetary Systems by Aggregation: A Computer Simulation" in "section a) Initial Conditions in the Cloud". Eq. 8 in Fogg's paper
     * proposes that 'A' should be modified to scale with stellar mass. Fogg states that A should be proportional to sqrt of the Stellar Mass Ratio.
     *
-    * @note Original value from Dole is 1.5E-3 which is the value that Ian uses. Mat and Carl alter this to 2.0E-3.
+    * @note Original value from Dole is 1.5E-3. Mat and Carl alter this to 2.0E-3.
     * @note unit is solar masses per cubic AU.
     *
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see eq. 8, p. 503, Extra-Solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
     * @see var DUST_DENSITY_COEFF, line 88 in DoleParams.java - Ian Burrell (accrete)
     * @see var DUST_DENSITY_COEFF, line 54 in const.h - Mat Burdick (accrete)
+    * @see var Ao, line 78 in Dole.c - Andrew Folkins (accretion)
+    * @see var Ao, line 85 in dole.c - Keris (accretion v1)
+    * @see var Ao, line 135 in dole.cc - Keris (accretion v2)
     * @see var DUST_DENSITY_COEFF, line 55 in const.h - Keris (starform)
     * @see var DUST_DENSITY_COEFF, line 52 in const.h - Mat Burdick (starform)
     * @see var DUST_DENSITY_COEFF, line 101 in PhysicalConstants.java - Carl Burke (starform)
@@ -37,6 +40,9 @@ trait AccreteConstants {
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see var N, line 90 in DoleParams.java - Ian Burrell (accrete)
     * @see var N, line 56 in const.h - Mat Burdick (accrete)
+    * @see var gamma, line 81 in Dole.c - Andrew Folkins (accretion)
+    * @see var gamma, line 88 in dole.c - Keris (accretion v1)
+    * @see var gamma, line 145 in dole.cc - Keris (accretion v2)
     * @see var N, line 57 in const.h - Keris (starform)
     * @see var N, line 54 in const.h - Mat Burdick (starform)
     * @see var N, line 103 in PhysicalConstants.java - Carl Burke (starform)
@@ -54,6 +60,9 @@ trait AccreteConstants {
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see var ALPHA, line 89 in DoleParams.java - Ian Burrell (accrete)
     * @see var ALPHA, line 55 in const.h - Mat Burdick (accrete)
+    * @see var alpha, line 80 in Dole.c - Andrew Folkins (accretion)
+    * @see var alpha, line 87 in dole.c - Keris (accretion v1)
+    * @see var alpha, line 142 in dole.cc - Keris (accretion v2)
     * @see var ALPHA, line 56 in const.h - Keris (starform)
     * @see var ALPHA, line 53 in const.h - Mat Burdick (starform)
     * @see var ALPHA, line 102 in PhysicalConstants.java - Carl Burke (starform)
@@ -72,6 +81,9 @@ trait AccreteConstants {
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see var K, line 87 in DoleParams.java - Ian Burrell (accrete)
     * @see var K, line 52 in const.h - Mat Burdick (accrete)
+    * @see var K, line 82 in Dole.c - Andrew Folkins (accretion)
+    * @see var K, line 89 in dole.c - Keris (accretion v1)
+    * @see var K, line 148 in dole.cc - Keris (accretion v2)
     * @see var K, line 53 in const.h - Keris (starform)
     * @see var K, line 50 in const.h - Mat Burdick (starform)
     * @see var K, line 99 in PhysicalConstants.java - Carl Burke (starform)
@@ -89,6 +101,9 @@ trait AccreteConstants {
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see method InnermostPlanet, line 145 in DoleParams.java - Ian Burrell (accrete)
     * @see method innermost_planet, line 50 in accrete.c - Mat Burdick (accrete)
+    * @see var MINRADIUS, line 91 in Dole.c - Andrew Folkins (accretion)
+    * @see var MINRADIUS, line 98 in dole.c - Keris (accretion v1)
+    * @see var MINRADIUS, line 169 in dole.cc - Keris (accretion v2)
     * @see method nearest_planet, line 73 in accrete.c - Keris (starform)
     * @see method nearest_planet, line 50 in accrete.c - Mat Burdick (starform)
     * @see method nearest_planet, line 221 in Star.java - Carl Burke (starform)
@@ -105,6 +120,9 @@ trait AccreteConstants {
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see method OutermostPlanet, line 149 in DoleParams.java - Ian Burrell (accrete)
     * @see method outermost_planet, line 56 in accrete.c - Mat Burdick (accrete)
+    * @see var MAXRADIUS, line 92 in Dole.c - Andrew Folkins (accretion)
+    * @see var MAXRADIUS, line 99 in dole.c - Keris (accretion v1)
+    * @see var MAXRADIUS, line 170 in dole.cc - Keris (accretion v2)
     * @see method farthest_planet, line 79 in accrete.c - Keris (starform)
     * @see method farthest_planet, line 56 in accrete.c - Mat Burdick (starform)
     * @see method farthest_planet, line 231 in Star.java - Carl Burke (starform)
@@ -125,6 +143,9 @@ trait AccreteConstants {
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see var ECCENTRICITY_COEFF, line 126 in DoleParams.java - Ian Burrell (accrete)
     * @see var ECCENTRICITY_COEFF, line 12 in const.h - Mat Burdick (accrete)
+    * @see method CreatePlanet, line 148 in Dole.c - Andrew Folkins (accretion)
+    * @see method CreatePlanet, line 203 in dole.c - Keris (accretion v1)
+    * @see method CreatePlanet, line 288 in dole.cc - Keris (accretion v2)
     * @see var ECCENTRICITY_COEFF, line 13 in const.h - Keris (starform)
     * @see var ECCENTRICITY_COEFF, line 11 in const.h - Mat Burdick (starform)
     * @see var ECCENTRICITY_COEFF, line 106 in PhysicalConstants.java - Carl Burke (starform)
@@ -144,6 +165,9 @@ trait AccreteConstants {
     * @see pp. 20-21, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see var CLOUD_ECCENTRICITY, line 54 in DoleParams.java - Ian Burrell (accrete)
     * @see var cloud_eccentricity, lines 26,41 in const.h - Mat Burdick (accrete)
+    * @see var W, line 83 in Dole.c - Andrew Folkins (accretion)
+    * @see var W, line 90 in dole.c - Keris (accretion v1)
+    * @see var W, line 151 in dole.cc - Keris (accretion v2)
     * @see var cloud_eccen, lines 49,63 in const.h - Keris (starform)
     * @see var cloud_eccentricity, lines 26,41 in const.h - Mat Burdick (starform)
     * @see var cloud_eccentricity, line 43 in DustDisc.java - Carl Burke (starform)
@@ -157,9 +181,12 @@ trait AccreteConstants {
     * @note referred to as m0 in Dole's Paper.
     * @note Dole states that the simulation is pretty insensitive to this value becoming smaller.
     *
-    * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+    * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see var PROTOPLANET_MASS, line 41 in Planetismal.java - Ian Burrell (accrete)
     * @see var PROTOPLANET_MASS, line 13 in const.h - Mat Burdick (accrete)
+    * @see var m0, line 84 in Dole.c - Andrew Folkins (accretion)
+    * @see var m0, line 91 in dole.c - Keris (accretion v1)
+    * @see var m0, line 154 in dole.cc - Keris (accretion v2)
     * @see var PROTOPLANET_MASS, line 14 in const.h - Keris (starform)
     * @see var PROTOPLANET_MASS, line 12 in const.h - Mat Burdick (starform)
     * @see var PROTOPLANET_MASS, line 40 in Protoplanet.java - Carl Burke (starform)
@@ -175,6 +202,9 @@ trait AccreteConstants {
     * @see Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see var B, line 23 in DoleParams.java - Ian Burrell (accrete)
     * @see var B, line 53 in const.h - Mat Burdick (accrete)
+    * @see var B, line 85 in Dole.c - Andrew Folkins (accretion)
+    * @see var B, line 92 in dole.c - Keris (accretion v1)
+    * @see var B, line 157 in dole.cc - Keris (accretion v2)
     * @see var B, line 54 in const.h - Keris (starform)
     * @see var B, line 51 in const.h - Mat Burdick (starform)
     * @see var B, line 100 in PhysicalConstants.java - Carl Burke (starform)

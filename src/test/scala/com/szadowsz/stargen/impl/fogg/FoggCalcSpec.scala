@@ -1,4 +1,4 @@
-package com.szadowsz.stargen.base.starform
+package com.szadowsz.stargen.impl.fogg
 
 import com.szadowsz.stargen.base.starform.util.UnitConverter
 import org.scalatest.{FunSpec, Matchers}

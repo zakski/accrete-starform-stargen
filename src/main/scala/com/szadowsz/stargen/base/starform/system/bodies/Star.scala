@@ -1,4 +1,4 @@
-package com.szadowsz.stargen.base.starform.bodies
+package com.szadowsz.stargen.base.starform.system.bodies
 
 /**
   * Abstract Outline Class to represent a star. Defines the basic members required for the starform simulation.

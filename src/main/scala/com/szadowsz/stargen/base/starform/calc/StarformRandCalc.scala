@@ -2,6 +2,7 @@ package com.szadowsz.stargen.base.starform.calc
 
 import com.szadowsz.stargen.base.accrete.calc.RandomCalc
 import com.szadowsz.stargen.base.starform.constants.StarformConstants
+import com.szadowsz.stargen.base.starform.system.bodies.Star
 import com.szadowsz.stargen.base.starform.util.UnitConverter
 
 import scala.util.Random
@@ -11,8 +12,8 @@ import scala.util.Random
   *
   * @author Zakski : 07/09/2016.
   */
-trait StarformRandCalc extends RandomCalc {
-  this : StarformConstants =>
+trait StarformRandCalc[S <: Star] extends RandomCalc {
+  this : StarformConstants[S] =>
 
   /**
     * Method to pseudo-randomly generate the mass of a star in solar mass.

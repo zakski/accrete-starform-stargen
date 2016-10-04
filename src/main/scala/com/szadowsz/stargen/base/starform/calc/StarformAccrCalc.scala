@@ -1,17 +1,18 @@
 package com.szadowsz.stargen.base.starform.calc
 
 
-import com.szadowsz.stargen.base.accrete.calc.{AccreteCalc, PlanetesimalCalc}
+import com.szadowsz.stargen.base.accrete.calc.AccreteCalc
 import com.szadowsz.stargen.base.starform.constants.StarformConstants
-import com.szadowsz.stargen.base.starform.util.StarUtil
+import com.szadowsz.stargen.base.starform.system.bodies.Star
 
-import scala.util.Random
 
 /**
+  * Trait to apply the changes made by Fogg to Dole's original algorithm.
+  *
   * @author Zakski : 21/07/2015.
   */
-trait StarformAccrCalc extends AccreteCalc {
-  this: StarformPlanCalc with StarUtil with StarformConstants =>
+trait StarformAccrCalc[S <: Star] extends AccreteCalc {
+  this: StarformPlanCalc[S] with StarformConstants[S] =>
 
   /**
     * Method to calculate dust cloud density at a given radius. Original Formula taken from "III. Experimental Simulation section a) Initial Conditions in the
@@ -31,7 +32,5 @@ trait StarformAccrCalc extends AccreteCalc {
     * @param radius - the current distance from the stellar mass in AU
     * @return Dust density at that radius of the cloud
     */
-  override def dustDensity(radius: Double): Double = {
-   (DUST_DENSITY_COEFF * Math.sqrt(getStarMass)) * Math.exp(-ALPHA * Math.pow(radius, 1.0 / N)) // TODO check if changes to A are correct
-  }
+  override def dustDensity(radius: Double): Double = (DUST_DENSITY_COEFF * Math.sqrt(star.mass)) * Math.exp(-ALPHA * Math.pow(radius, 1.0 / N))
 }

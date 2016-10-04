@@ -1,4 +1,4 @@
-package com.szadowsz.stargen.base.accrete.bodies
+package com.szadowsz.stargen.base.accrete.system.bodies
 
 import java.text.DecimalFormat
 
@@ -59,6 +59,15 @@ trait Planetismal {
     * Whether the planet has surpassed its critical mass limit and become a gas giant.
     */
   def isGasGiant: Boolean
+
+
+  override def equals(obj: Any): Boolean = {
+    obj match {
+      case p : Planetismal =>
+        mass == p.mass && ecc == p.ecc && axis == p.axis && isGasGiant == p.isGasGiant
+      case _ => false
+    }
+  }
 
   /**
     * Method to supply String representation of the proto planet.

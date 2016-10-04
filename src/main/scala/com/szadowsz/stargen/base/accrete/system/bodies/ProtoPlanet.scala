@@ -1,7 +1,9 @@
-package com.szadowsz.stargen.base.accrete.bodies
+package com.szadowsz.stargen.base.accrete.system.bodies
+
+import com.szadowsz.stargen.base.accrete.calc.PlanetesimalCalc
 
 /**
-  * Abstract Class to represent an accreting proto planetary body. Adds variable mass/axis/ecc to the Planetismal trait to allow for easier alteration during
+  * Class to represent an accreting proto planetary body. Adds variable mass/axis/ecc to the Planetismal trait to allow for easier alteration during
   * the accretion process.
   *
   * @see Planetismal.java - Ian Burrell (accrete)
@@ -13,8 +15,7 @@ package com.szadowsz.stargen.base.accrete.bodies
   * @see struct planets_record, line 4 in structs.h - Mat Burdick (starform)
   * @see Protoplanet.java - Carl Burke (starform)
   *
-  * @constructor Constructor is used make all subsequent dust bands during the splitting process, in which we
-  *              acknowledge dust and gas being removed from part of existing bands.
+  * @constructor Constructor is used make all protoplanets during the accretion process.
   *
   * @param mass The mass of the body.
   * @param axis The semi-major axis of the body's orbit.
@@ -22,21 +23,35 @@ package com.szadowsz.stargen.base.accrete.bodies
   *
   * @author Zakski : 25/06/2015.
   */
-abstract class ProtoPlanet(var mass: Double, var axis: Double, var ecc: Double) extends Planetismal {
+class ProtoPlanet(val calc: PlanetesimalCalc, var mass: Double, var axis: Double, var ecc: Double) extends Planetismal {
+
+  /**
+    * The closest to the star that the planet will be during its orbit.
+    *
+    * @note unit of value is AU.
+    */
+  override def perihelion: Double = calc.perihelionDistance(axis, ecc)
+
+  /**
+    * The furthest from the star that the planet will be during its orbit..
+    *
+    * @note unit of value is AU.
+    */
+  override def aphelion: Double = calc.aphelionDistance(axis, ecc)
+
   /**
     * The closest to the star that the planet will accrete mass from, given gravitational pull.
     *
     * @note unit of value is AU.
     */
-  def innerGravLimit: Double
+  def innerGravLimit: Double = calc.innerGravLimit(perihelion, mass)
 
   /**
     * The furthest from the star that the planet will accrete mass from, given gravitational pull.
     *
     * @note unit of value is AU.
     */
-  def outerGravLimit: Double
-
+  def outerGravLimit: Double = calc.outerGravLimit(aphelion, mass)
 
   /**
     * The closest to the star that the planet will accrete mass from, given gravitational pull and
@@ -44,7 +59,7 @@ abstract class ProtoPlanet(var mass: Double, var axis: Double, var ecc: Double) 
     *
     * @note unit of value is AU.
     */
-  def innerBandLimit: Double
+  def innerBandLimit: Double = calc.innerBandLimit(innerGravLimit)
 
   /**
     * The furthest from the star that the planet will accrete mass from, given gravitational pull and
@@ -52,14 +67,14 @@ abstract class ProtoPlanet(var mass: Double, var axis: Double, var ecc: Double) 
     *
     * @note unit of value is AU.
     */
-  def outerBandLimit: Double
+  def outerBandLimit: Double = calc.outerBandLimit(outerGravLimit)
 
   /**
     * the limit at which a proto planet has gained enough mass to accrete gas as well as dust
     *
     * @note unit of value is Solar Masses.
     */
-  def criticalMass: Double
+  def criticalMass: Double = calc.criticalMass(perihelion)
 
 
   /**

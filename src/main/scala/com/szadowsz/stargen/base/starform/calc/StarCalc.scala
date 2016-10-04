@@ -1,12 +1,13 @@
 package com.szadowsz.stargen.base.starform.calc
 
 import com.szadowsz.stargen.base.starform.constants.StarformConstants
+import com.szadowsz.stargen.base.starform.system.bodies.Star
 
 /**
   * @author Zakski : 10/09/2016.
   */
-trait StarCalc {
-  this: StarformConstants =>
+trait StarCalc[S <: Star] {
+  this: StarformConstants[S] =>
 
   /**
     * Method to approximate the luminosity of a star for a given mass. See eq. 1-3 in section "3. Characteristics of The Primary Star" in Extra-solar Planetary

@@ -1,6 +1,6 @@
-package com.szadowsz.stargen.base.starform.bodies
+package com.szadowsz.stargen.base.starform.system.bodies
 
-import com.szadowsz.stargen.base.accrete.bodies.Planetismal
+import com.szadowsz.stargen.base.accrete.system.bodies.Planetismal
 
 /**
   * Class to represent TODO.

@@ -2,13 +2,13 @@ package com.szadowsz.stargen.base.starform.calc
 
 import com.szadowsz.stargen.base.accrete.calc.PlanetesimalCalc
 import com.szadowsz.stargen.base.starform.constants.StarformConstants
-import com.szadowsz.stargen.base.starform.util.StarUtil
+import com.szadowsz.stargen.base.starform.system.bodies.Star
 
 /**
   * @author Zakski : 21/07/2015.
   */
-trait StarformPlanCalc extends PlanetesimalCalc {
-  this: StarUtil with StarformConstants =>
+trait StarformPlanCalc[S <: Star] extends PlanetesimalCalc {
+  this: StarformConstants[S] =>
 
   /**
     * Method to calculate whether a planetesimal has gained enough mass to accrete gas as well as dust, see "III. Experimental Simulation, section c)
@@ -30,10 +30,5 @@ trait StarformPlanCalc extends PlanetesimalCalc {
     * @param perihelion closest protoplanet gets to the sun.
     * @return critical mass in solar mass.
     */
-  override def criticalMass(perihelion: Double): Double = B * Math.pow(perihelion * Math.sqrt(getStarLuminosity), -0.75)
-
-  //  def isIterative(isGasGiant: Boolean, vGasInventory: Double, greenhouseRadius: Double, axis: Double,
-  //                  ecoRadius: Double): Boolean = {
-  //    vGasInventory > 0 && !isGasGiant && axis > greenhouseRadius && axis < ecoRadius * 4
-  //  }
+  override def criticalMass(perihelion: Double): Double = B * Math.pow(perihelion * Math.sqrt(star.luminosity), -0.75)
 }

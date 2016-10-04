@@ -3,6 +3,7 @@ package com.szadowsz.stargen.base.starform.calc
 import com.szadowsz.stargen.base.starform.constants.{Atmosphere, StarformConstants}
 import com.szadowsz.stargen.base.starform.constants.Atmosphere._
 import com.szadowsz.stargen.base.starform.constants.unit.UnitConstants
+import com.szadowsz.stargen.base.starform.system.bodies.Star
 import com.szadowsz.stargen.base.starform.util.UnitConverter
 
 
@@ -11,8 +12,8 @@ import com.szadowsz.stargen.base.starform.util.UnitConverter
   *
   * @author Zakski : 11/09/2016.
   */
-trait EcoCalc {
-  this: StarformConstants with UnitConstants =>
+trait EcoCalc[S <: Star] {
+  this: StarformConstants[S] with UnitConstants =>
 
 
   /**
