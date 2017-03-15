@@ -1,12 +1,18 @@
+# Covers IntelliJ, Gradle, and Scala
+
+# Do not add user-specific sensitive/high-churn Intellij files
+.idea/
+
+# Do not add user-specific Gradle data and configuration
+.gradle/
+
+# Do not add user-specific Gradle Wrapper information
+gradle/
+gradlew
+gradlew.bat
+
+# Do not add local builds to git
+build/
+
+# Do not add complied jvm code to git
 *.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
