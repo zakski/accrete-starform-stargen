@@ -1,10 +1,19 @@
 # List of Academic References
  
+## Computer Simulation of the Formation of Planetary Systems
+- Poincaré, H., 1911. Leçons sur les hypothèses cosmogoniques. Paris: A. Hermann et fils, 1911.
+- Kurth, R., 1959. Introduction to the mechanics of the solar system. London: Pergamon Press, 1959, 1.
+- McCrea, W.H., 1960, June. The origin of the solar system. In Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences (Vol. 256, No. 1285, pp. 245-266). The Royal Society.
+- Hawkins, G.S., 1960. Asteroidal fragments. The Astronomical Journal, 65, p.318.
+- Dole, S.H., 1961. Limits for stable near-circular planetary or satellite orbits in the restricted three-body problem. ARS Journal, 31(2), pp.214-219.
+- Giuli, R.T., 1968. On the rotation of the Earth produced by gravitational accretion of particles. Icarus, 8(1-3), pp.301-323.
+- Spitzer, L., 1968. Nebulae and Interstellar Matter ed BM Middlehurst and LH Aller.
 
 ## Formation of Planetary Systems by Aggregation: A Computer Simulation
 - Poincaré, H., 1911. Leçons sur les hypothèses cosmogoniques. Paris: A. Hermann et fils, 1911.
 - Kurth, R., 1959. Introduction to the mechanics of the solar system. London: Pergamon Press, 1959, 1.
 - McCrea, W.H., 1960, June. The origin of the solar system. In Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences (Vol. 256, No. 1285, pp. 245-266). The Royal Society.
+- Dole, S.H., 1961. Limits for stable near-circular planetary or satellite orbits in the restricted three-body problem. ARS Journal, 31(2), pp.214-219.
 - Dole, S.H., 1964. Habitable planets for man.
 - Gilvarry, J.J., 1964. Effects of loss of lunar mass by meteoritic impact. Icarus, 3(2), pp.121-129.
 - Giuli, R.T., 1968. On the rotation of the Earth produced by gravitational accretion of particles. Icarus, 8(1-3), pp.301-323.
