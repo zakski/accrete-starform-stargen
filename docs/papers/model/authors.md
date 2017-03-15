@@ -25,3 +25,13 @@ with the exception of the random number generator that he used.
 
 Martyn J. Fogg wrote a subsequent research paper that attempted to vary the mass of the star and build up information about the potential atmosphere of each 
 planet in the generated system.
+
+###[ACCRETE 1a/1b](https://scholar.google.com/scholar?cluster=9385174980475541539&hl=en&as_sdt=0,5)
+
+- Author: Dave Allen
+- Language: IBM Basic
+- Year: 1988
+
+Dave Allen claims to have written variations of Accrete, 1a to allow captured moons rather than coalesce straight away. The second one, 1b, an attempt to 
+simulate moon systems, as well as potentially an original version. Cannot currently find any source code of these programs online so this branch is 
+considered orphaned right now, since I don't know where they fit into the bigger picture.

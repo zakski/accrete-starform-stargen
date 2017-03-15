@@ -1,0 +1,489 @@
+From @aplvax.jhuapl.edu:jwm@stdc.jhuapl.edu Thu Sep 15 12:17:37 1988
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA23048; Thu, 15 Sep 88 12:17:10 MDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA10054; Thu, 15 Sep 88 14:16:48 EDT
+Received: by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13652; Thu, 15 Sep 88 14:11:06 EDT
+Date: Thu, 15 Sep 88 14:11:06 EDT
+From: jwm@stdc.jhuapl.edu (Jim Meritt)
+Message-Id: <8809151811.AA13652@stdc.jhuapl.edu>
+To: usml-request@hc.dspo.gov
+Subject: universe15
+Status: O
+
+>From alan@argon.csl.sri.com Thu Sep 15 12:19:26 1988
+Return-Path: <alan@argon.csl.sri.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13110; Thu, 15 Sep 88 12:19:08 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA20958; Thu, 15 Sep 88 10:16:45 MDT
+Received: by argon.csl.sri.com
+	(5.59d++/IDA-1.2.3-9) id AA02494; Thu, 15 Sep 88 09:14:25 PDT
+Date: Thu, 15 Sep 88 09:14:25 PDT
+From: Alan Whitehurst <alan@csl.sri.com>
+Message-Id: <8809151614.AA02494@argon.csl.sri.com>
+To: cs2551af@charon.unm.edu
+Cc: usml@hc.dspo.gov
+In-Reply-To: Brian Bowers's message of Wed, 14 Sep 88 23:23:47 MDT <243.8809150523@charon.unm.edu>
+Subject: History Generation
+Status: RO
+
+
+I'm uncomfortable with the notion of a history generator which just
+makes random selections from some table of events.  History isn't like
+that.  When you talk about a given event in human history, you can
+always answer the question ``WHY?''  Sometimes the answers are
+complex, and sometimes we don't like the answers, but the answers are
+almost always there.  I'm not a historian, so I'll resist the urge to
+provide an example here.
+
+I would like to be able to explain the development of society on a
+particular world. One intuitively appealing a approach would be to
+attempt to formulate a (finite) set of cause-effect pairs which
+attempt to capture some notion of human development.  A model to think
+about is the computer simulation ``LIFE'', in which a very small set
+of rules governing the creation and destruction of neighboring cells
+can construct some very fantastic ``societies''.  It is important to note
+that the only ``random'' occurence is the seed (i.e., the initial
+configuration of the cells).  From that point on, everything proceeds
+according to the laws of LIFE.
+
+Now, couldn't we do something like this for history/politics in world
+development?  What sorts of events influence society?
+
+Example: MIGRATION is a fairly major event in a society. What
+causes it?  STARVATION, brought on by sever and prolonged DROUGHT is
+one cause.  DEPLETION of natural resources upon which a society
+depends for goods is another.  Fleeing ENEMIES, when threatened with
+destruction is a third.  Other major events might be EXPANSION, WAR,
+DECLINE, EXTINCTION, MERGE, ECONOMIC COLLAPSE, to name a few.
+
+It is intersting to note that the relationship sketched out above for
+MIGRATION is as valid for mid-evil society as it is for a futuristic
+society (it could be used to explain why a society would abandon one
+planet in favor of another just as easily as it explains why a city
+would be abandoned), which is a little surprising.  It implies that
+there may be a set of fundamental relationships which transcend the
+technological/intellectual development level of the particular
+society.  It's something to think about.
+
+These relationships would also have to capture the effects of
+geological occurrences on a society (EARTHQUAKES along fault lines,
+VOLCANIC ERUPTIONS in plate subduction zones, HURRICANES/TORNADOS
+according to the weather patterns, etc.), and also would incorporate
+geopolitics (trade routes governed by geographical proximity and
+availability, alliances, subversion?).  I may be going off the deep
+end a little, so I had better stop.
+
+Alan
+
+
+>From milliken@oak.bbn.com Thu Sep 15 12:21:05 1988
+Return-Path: <milliken@oak.bbn.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13119; Thu, 15 Sep 88 12:20:51 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA21151; Thu, 15 Sep 88 10:21:15 MDT
+Message-Id: <8809151621.AA21151@hc.dspo.gov>
+Date: Thu, 15 Sep 88 11:37 EDT
+From: Walter Milliken <milliken@oak.bbn.com>
+Subject: My interest in the mailing list
+To: usml@hc.dspo.gov
+Status: RO
+
+I'm mostly interested in using this stuff for generating worlds for SFRP
+and FRP games.  My primary interest is in map and climate generation,
+since I'd rather do the life and history parts by hand.
+
+I have a strong interest in astronomy, and a moderate amount of
+knowledge in all the earth sciences, although I'm certainly not an
+expert in any of them.  Some of the material in the universe-generation
+section of GURPS Space came from me, especially the tables relating to
+star generation.  (There are a couple minor flaws in these that were too
+picky to fix, BTW -- sometime I'll try to get around to posting the
+correct info here.)
+
+My background is mostly in computer software/hardware, generally
+concentrating on system tools.  I'm now working on graphical
+debugging/monitoring techniques.  I have access to some fairly powerful
+parallel machines here at BBN ACI (a 32- and a 128-processor GP1000), so
+I can handle running some real piggy programs, if they're C-Unix
+compatible and can be parallellized relatively easily.  I'm especially
+interested in the planet formation simulations and the terrain
+generation algorithms.  Unfortunately, I don't have the time right now
+to do much significant hacking on all this.
+
+---Walter
+
+>From sethg@athena.mit.edu Thu Sep 15 12:25:55 1988
+Return-Path: <sethg@athena.mit.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13145; Thu, 15 Sep 88 12:25:38 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA21211; Thu, 15 Sep 88 10:24:41 MDT
+Received: by ATHENA.MIT.EDU (5.45/4.7) id AA10441; Thu, 15 Sep 88 12:23:50 EDT
+Received: by M66-080-1.MIT.EDU (5.45/4.7) id AA01415; Thu, 15 Sep 88 12:23:30 EDT
+Message-Id: <8809151623.AA01415@M66-080-1.MIT.EDU>
+To: usml@hc.dspo.gov
+Subject: USML newsgroup?
+Date: Thu, 15 Sep 88 12:23:25 EDT
+From: Seth Gordon <sethg@athena.mit.edu>
+Status: RO
+
+I wouldn't mind.  However, having proposed two newsgroups, both of which
+failed, I advise that whoever formally proposes the group have a goodly
+amount of free time (e.g., the amount of time one would normally spend
+reading talk.politics.misc every day).  Not to mention a bit of disk
+space.  And a little tolerance for drudgery.
+
+Well, maybe it's not that bad.
+
+-- 
+* L'shana tovah... forgive me my net.sins
+: Seth Gordon / MIT Brnch., PO Box 53, Cambridge, MA 02139
+: bloom-beacon!athena.mit.edu!sethg / standard disclaimer
+
+>From @aplvax.jhuapl.edu:jwm@stdc.jhuapl.edu Thu Sep 15 12:33:41 1988
+Return-Path: <@aplvax.jhuapl.edu:jwm@stdc.jhuapl.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13211; Thu, 15 Sep 88 12:33:19 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA21285; Thu, 15 Sep 88 10:32:07 MDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA08346; Thu, 15 Sep 88 12:31:26 EDT
+Received: by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13146; Thu, 15 Sep 88 12:25:37 EDT
+Date: Thu, 15 Sep 88 12:25:37 EDT
+From: jwm@stdc.jhuapl.edu (Jim Meritt)
+Message-Id: <8809151625.AA13146@stdc.jhuapl.edu>
+To: alan@csl.sri.com, cs2551af@charon.unm.edu
+Subject: Re:  History Generation
+Cc: usml@hc.dspo.gov
+Status: RO
+
+
+>Now, couldn't we do something like this for history/politics in world
+>development?  What sorts of events influence society?
+>
+>Example: MIGRATION is a fairly major event in a society. What
+>causes it?  STARVATION, brought on by sever and prolonged DROUGHT is
+>one cause.  DEPLETION of natural resources upon which a society
+>depends for goods is another.  Fleeing ENEMIES, when threatened with
+>destruction is a third.  Other major events might be EXPANSION, WAR,
+>DECLINE, EXTINCTION, MERGE, ECONOMIC COLLAPSE, to name a few.
+
+The Club of Rome, with their World Model, did a lot along these lines.  Their
+model was very linearized & interpolated along very questionable (or humerous,
+depending) lines and of debatable use as a predictor, but it would probably
+be workable here.  Recommend glancing at some of the other references I posted -
+some are relevant.  Do the gamers we have here have some high-correlation /
+casuality relations we could archive?
+
+Jim
+
+>From sethg@athena.mit.edu Thu Sep 15 12:56:33 1988
+Return-Path: <sethg@athena.mit.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13268; Thu, 15 Sep 88 12:56:22 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA21556; Thu, 15 Sep 88 10:51:39 MDT
+Received: by ATHENA.MIT.EDU (5.45/4.7) id AA11032; Thu, 15 Sep 88 12:51:01 EDT
+Received: by M66-080-1.MIT.EDU (5.45/4.7) id AA01450; Thu, 15 Sep 88 12:50:46 EDT
+Message-Id: <8809151650.AA01450@M66-080-1.MIT.EDU>
+To: usml@hc.dspo.gov
+Subject: Hello!
+Date: Thu, 15 Sep 88 12:50:38 EDT
+From: Seth Gordon <sethg@athena.mit.edu>
+Status: RO
+
+I suppose I should introduce myself, too...
+
+Many, many moons ago, I was a DM for an AD&D game for a couple years,
+leading two or three friends through overpriced TSR modules and a few
+crude dungeons of my own design.  (You know, the good old-fashioned
+monster hotels.)  We all enjoyed it, but ever since then, I haven't had
+the Copious Free Time to run another campaign.
+
+I would like, someday, to run an FRPG campaign (not D&D, possibly
+Fantasy Hero), with a heavy emphasis on role-playing and frequent city
+or political adventures.  Because I'm a perfectionist, I want to have a
+lot of the geographical, cultural, and political context in place before
+dropping in the characters.
+
+So, my interests are, in rough order of importance:
+
+The effects of occasional magic on all the below topics.
+Economics, from the international to village levels.
+Structures
+How game countries would maneuver against each other, or get caught in
+  the middle.
+Geography with plate tectonics.
+City design (geography, economics, government, culture...).
+Meteorology.
+Designing an interesting game astrology system.
+Anything else on a planetary scale or smaller.
+
+I won't have time for contributing much, especially in the way of real
+programs, but I might be able to provide an occasional reference or
+speculation to someone else's publications.
+
+Good luck.
+
+-- 
+* L'shana tovah... forgive me my net.sins
+: Seth Gordon / MIT Brnch., PO Box 53, Cambridge, MA 02139
+: bloom-beacon!athena.mit.edu!sethg / standard disclaimer
+
+>From joel@dragon.gatech.edu Thu Sep 15 13:01:11 1988
+Return-Path: <joel@dragon.gatech.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13286; Thu, 15 Sep 88 13:01:01 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA19181; Thu, 15 Sep 88 08:34:04 MDT
+Received: from dragon.gatech.edu by gatech.edu (5.58/7.3.GT)
+	id AA27231; Thu, 15 Sep 88 10:18:26 EDT
+Received: from localhost.ARPA by dragon.gatech.edu (1.2/1.0)
+	id AA01681; Thu, 15 Sep 88 10:17:37 edt
+Message-Id: <8809151417.AA01681@dragon>
+To: usml@hc.dspo.gov
+Subject: Adventure Worlds
+Date: Thu, 15 Sep 88 10:17:35 -0400
+From: Joel M. Rives <joel@dragon.gatech.edu>
+Status: RO
+
+
+For those of you following this discussion who are particularly interested
+in finding or developing consistant and minutely detailed worlds as 
+backdrops to existing or planned FRP campaigns, i strongly recommend that
+you take a look at the Harn system. The Lythia module -- in particular --
+contains a large number of layered maps detailing various aspects of that
+particular planet. Though i don't have the maps here with me now, i do recall
+maps pertaining to tectonic plates, major ocean and air currents, languages
+and language families, vegetation, topographics, political amoung others. 
+Also included are star charts of the northern and southern hemisphere -- as
+well as astrological constellations. I have been using the Harn modules in my
+existing campaign for over three years now.
+
+joel
+
+>From mjs%mozart@research.att.com Thu Sep 15 13:05:50 1988
+Return-Path: <mjs%mozart@research.att.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13298; Thu, 15 Sep 88 13:05:31 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA21881; Thu, 15 Sep 88 11:07:58 MDT
+Message-Id: <8809151707.AA21881@hc.dspo.gov>
+From: mjs@mozart.att.com
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Date: Thu, 15 Sep 88 13:00 EDT
+To: usml@hc.dspo.gov
+Subject: empire world creation
+Status: RO
+
+I recall seeing a question about how empire generates its world, but I don't
+recall seeing an answer.  I meant to answer it then, but got sidetracked.  I
+hope this is sufficient to answer the question....
+
+Let me start with the caveat that I am speaking of Peter Langston's UNIX empire
+game, not the one that is more familiar to PC users.  Further, the last version
+that I've actively played with is a relatively old version (square grid, not
+hex, for those "in the know").  I believe the technique is the same in the
+newer versions, though I have not looked at the version from ucbvax (yet).
+
+The technique is very simple:
+
+	Start with a rectangular "flat" surface (wraps on each edge) of
+	"sectors" all at elevation 0.
+
+	Randomly seed volcanoes (# based on area of the world).
+
+	Erupt them, and propagate the elevation changes based on the lava
+	flows.
+
+	Now, make it rain.
+
+	Allow the water to carve rivers (# based on world area).
+
+	When done, normalize the elevations to an arbitrary "sea level", and
+	create 3 types of sectors:
+		"-" wilderness
+		"^" mountain
+		"." water (river/sea/ocean)
+
+Two types of mineral ores are also seeded (I *said* it was an old version!),
+iron and gold, but I don't recall the rules for seeding them.
+
+All pretty simple stuff, and the result is usually interesting.
+
+	Marty Shannon
+	mjs@mozart.att.com
+
+>From abbott%dean.Berkeley.EDU@berkeley.edu Thu Sep 15 13:22:07 1988
+Return-Path: <abbott%dean.Berkeley.EDU@berkeley.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13363; Thu, 15 Sep 88 13:21:54 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA21971; Thu, 15 Sep 88 11:16:36 MDT
+Received: by dean.Berkeley.EDU (5.57/1.16)
+	id AA19014; Thu, 15 Sep 88 10:16:20 PDT
+Date: Thu, 15 Sep 88 10:16:20 PDT
+From: abbott%dean.Berkeley.EDU@berkeley.edu (+Mark Abbott)
+Message-Id: <8809151716.AA19014@dean.Berkeley.EDU>
+To: usml@hc.dspo.gov
+Subject: History generation
+Status: RO
+
+Something to consider here-historians, sociologists, anthropologists, etc,
+can't make solid predictions about human future history.  Even given a 
+relatively small group, predictions are very difficult to make.  Human
+societies are too complex for current models and theories to grasp in
+any sort of completeness.  Societal changes happen for a variety of reasons,
+some external, some internal.  Pressures on a society may spark change
+or change may be moderately random, ala genetic drift.  Put simply, we
+don't know enough about the dynamics of human societies to really do
+any sort of comprehensive analysis.  So, how do you simulate it when
+you can't understand it?  
+
+What this is leading to is this:  we don't really have to simulate human
+history from the inside out, we can do it from the outside in.  As
+long as the result "feels" real, whether the algorithm corresponds to reality
+is of little consequence.  Our understanding of human societies isn't
+sophisticated enough to say "that model isn't the way it works", except
+in a very general sort of way, however, our intuitive feel for how 
+societies work IS fairly good.  Certainly it's biased by which societies
+we live in, but what we're really after is something that generates and
+interesting history which "feels" right.
+
+Mark   
+
+
+
+>From todd@crunch.unm.edu Thu Sep 15 13:34:32 1988
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13424; Thu, 15 Sep 88 13:34:23 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA22298; Thu, 15 Sep 88 11:33:41 MDT
+Return-Path: <todd@crunch.unm.edu>
+Received: by crunch.unm.edu (4.0/UNM/Math)
+	id AA03751; Thu, 15 Sep 88 11:33:34 MDT
+Date: Thu, 15 Sep 88 11:33:34 MDT
+From: todd@crunch.unm.edu (Todd/Dr. Nethack)
+Posted-Date: Thu, 15 Sep 88 11:33:34 MDT
+Message-Id: <8809151733.AA03751@crunch.unm.edu>
+To: cs2551af@charon.unm.edu, jwm@stdc.jhuapl.edu, usml@hc.dspo.gov
+Subject: Re:  History Generation
+Status: RO
+
+Hmmm.. for the sake of obnoxiousness.. most of the "chaos" I have seen
+is done with feedback loops. nice modelling, but still uses the same
+proportionality in determining points...
+
+So whats chaotic?
+
+;-)
+
+
+>From @aplvax.jhuapl.edu:jwm@stdc.jhuapl.edu Thu Sep 15 13:44:11 1988
+Return-Path: <@aplvax.jhuapl.edu:jwm@stdc.jhuapl.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13452; Thu, 15 Sep 88 13:44:00 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA22448; Thu, 15 Sep 88 11:43:12 MDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA09552; Thu, 15 Sep 88 13:42:23 EDT
+Received: by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13435; Thu, 15 Sep 88 13:36:40 EDT
+Date: Thu, 15 Sep 88 13:36:40 EDT
+From: jwm@stdc.jhuapl.edu (Jim Meritt)
+Message-Id: <8809151736.AA13435@stdc.jhuapl.edu>
+To: cs2551af@charon.unm.edu, todd@crunch.unm.edu, usml@hc.dspo.gov
+Subject: Re:  History Generation
+Status: RO
+
+>Hmmm.. for the sake of obnoxiousness.. most of the "chaos" I have seen
+>is done with feedback loops. nice modelling, but still uses the same
+>proportionality in determining points...
+
+look at weather.  External causes, but geeze....
+
+
+>So whats chaotic?
+
+the answer
+
+
+>From todd@crunch.unm.edu Thu Sep 15 13:47:35 1988
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13499; Thu, 15 Sep 88 13:47:22 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA22670; Thu, 15 Sep 88 11:52:48 MDT
+Return-Path: <todd@crunch.unm.edu>
+Received: by crunch.unm.edu (4.0/UNM/Math)
+	id AA03890; Thu, 15 Sep 88 11:52:45 MDT
+Date: Thu, 15 Sep 88 11:52:45 MDT
+From: todd@crunch.unm.edu (Todd/Dr. Nethack)
+Posted-Date: Thu, 15 Sep 88 11:52:45 MDT
+Message-Id: <8809151752.AA03890@crunch.unm.edu>
+To: jwm@stdc.jhuapl.edu
+Subject: Re:  History Generation
+Status: RO
+
+indeed!
+
+I was going to post to the guy who talked of not being able to model the
+history.. since even in small systems there are near impossible limits.
+
+I was going to suggest the "Rockefeller option" or the "Illuminatti option"
+
+The one that controls the history that is!!
+
+:-)
+
+
+>From davea@ll-vlsi.arpa Thu Sep 15 13:56:42 1988
+Return-Path: <davea@ll-vlsi.arpa>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA13541; Thu, 15 Sep 88 13:56:11 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA22728; Thu, 15 Sep 88 11:55:47 MDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Thu, 15 Sep 88 13:41:53 EDT
+Posted-Date: Thu, 15 Sep 88 13:42:09 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA26107; Thu, 15 Sep 88 13:42:09 EDT
+Date: Thu, 15 Sep 88 13:42:09 EDT
+From: Dave Allen <davea@ll-vlsi.arpa>
+Message-Id: <8809151742.AA26107@ll-vlsi.arpa>
+To: usml%hc.dspo.gov@XN.LL.MIT.EDU
+Subject: Empire mapmaking
+Status: RO
+
+Marty Shannon (mjs@mozart.att.com) writes: 
+> I recall seeing a question about how empire generates its world, but I don't
+> recall seeing an answer.  I meant to answer it then, but got sidetracked.  I
+> hope this is sufficient to answer the question....
+> The technique is very simple:
+> 	Start with a rectangular "flat" surface (wraps on each edge) of
+> 	"sectors" all at elevation 0.
+> 	Randomly seed volcanoes (# based on area of the world).
+> 	Erupt them, and propagate the elevation changes based on the lava
+> 	flows.
+> 	Now, make it rain.
+> 	Allow the water to carve rivers (# based on world area).
+
+Could you amplify on this a little?  Specifically, two points:
+
+What is the pattern of lava flow from a volcano?  Is it just cone-
+shaped?  Or is it fancier than that, with spurs, etc.  I guess
+with this technique you'd rarely see coastal mountains or long, skinny
+ranges, but rather big mountains near the middle of each continent.
+
+How do the rivers run?  A simple way is to just start at a high
+elevation and pick a path such that the next square is the lowest
+of all the adjacent squares.  Do the rivers erode the mountains or
+do they just sit there?
+
+ADVthanksANCE (thanks in advance),
+Dave Allen: internet davea@vlsi.ll.mit.edu or @ll-vlsi.arpa
+
+
+                                                                                                                                                                                                                                                                                                                       

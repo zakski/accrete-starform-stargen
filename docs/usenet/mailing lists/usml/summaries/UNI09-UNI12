@@ -1,0 +1,42 @@
+Summary of discussion on the unofficial "Universe Simulation" mailing list,
+Sept 8 - Sept 13:
+
+Josh Siegal has established an anonymous ftp account for our archives
+  at hc.dspo.gov (or dspo.dspo.gov or 192.12.184.4).  As of 8 Sept, the
+  directory pub/usml contains all the source code we have received as
+  well as copies of all the relevant messages.  Thanks Josh!
+Andy Sheppard (convex!sheppard@uunet.uu.net) mailed us some programs
+  that generate star systems using a mixture of ideas from the ICE SFRPG
+  "Future Law / Tech Law", Steve Jackson Games "GURPS Space" and his
+  own research.  It's written in C; here is one planet from a sample
+  system: 3.  radius 17.46 AU,  ecosphere planet; length of year 192.96 EU
+  length of day 36 hours; diameter 0.68 EU; surface gravity 0.60 G
+  density 0.80 EU (4.40),  composition low-iron; industrial metals plentiful
+  light metals plentiful; organics plentiful; small moons 1
+  axial tilt 12 degrees (minor seasonal effects)
+  terrain - mountainous/volcanic
+  atmosphere - plethora of toxic trace metals and gases
+Dave Allen (davea@vlsi.ll.mit.edu, hey that's me!) described some
+  attempts I'm making towards a tectonic simulator.  The goal is a
+  program which is fun to watch; you start it up and it does an animation
+  of a randomly-generated planet, showing how its continents drift.  I'd
+  like it to have a number of parameters so that it could be run for
+  planets like earth - parameters such as fraction of water, planet size,
+  and so on.  Right now there's no worthwhile code, and I'm in the
+  process of experimenting with a new algorithm and writing some
+  code to make rigid plates move on spheres without distortion.
+Eric Haines wrote to describe a prepackaged routine available through
+  the net to make fractal mountains.  It's a pre-packaged database
+  generator intended to benchmark ray tracing algorithms and machines.
+  To get it, send a one-line message to netlib@anl-mcs.arpa, saying
+  "Send Haines from Graphics".  That msg will be read by computer.
+Bruce Stephens (bruces@marque.mu.edu) summarized the algorithm
+  he uses to draw single fractal mountains.  Darren Senn
+(sinster@ucscb.ucsc.edu) suggested a smoothing method for
+  fractal mountains and described an iterative method for simulating
+  erosion by raising and lowering adjacent triangles in the mountain.
+
+Please contact Jim Meritt (jwm@stdc.jhuapl.edu) for information requests
+or to be added to / deleted from the list.
+
+Dave Allen: internet davea@vlsi.ll.mit.edu or @ll-vlsi.arpa

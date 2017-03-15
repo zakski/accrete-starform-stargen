@@ -1,0 +1,113 @@
+Article 286 of rec.games.programmer:
+Path: aplcomm!aplcen!umd5!haven!rutgers!mit-eddie!ll-xn!vlsi!davea
+From: davea@vlsi.ll.mit.edu (Dave Allen)
+Newsgroups: rec.games.programmer,rec.games.frp
+Subject: Universe Simulator
+Keywords: universe simulator
+Message-ID: <146@vlsi.ll.mit.edu>
+Date: 29 Aug 88 21:42:07 GMT
+Distribution: rec
+Organization: MIT Lincoln Laboratory, Lexington MA
+Lines: 100
+Xref: aplcomm rec.games.programmer:286 rec.games.frp:4012
+
+
+There has been some traffic on the net lately about a "Universe Simulator".
+This post is a summary and announcement of an informal mailing list.
+
+Jim Meritt has volunteered to host a mailing list and archive.  If
+you are interested in the topic, please email him and he will add
+your name to the list.  If you have a contribution, email it to him
+(preferred), or post it to rec.games.frp or .programmer.  If you
+email it, he will redistribute it to the list.
+
+The following people are on the list already:
+davea@vlsi.ll.mit.edu (Dave Allen, hey that's me)
+jwm@stdc.jhuapl.edu (Jim Meritt)
+dav@eleazar.dartmouth.edu (William David Haas)
+pearl@aramis.rutgers.edu (Stephen Pearl)
+spar!navtech!mark@decwrl.dec.com (Mark Stevans)
+dredick@vax.bbn.com (Don Redick)
+netxcom!ewiles@uunet.uu.net (Edwin Wiles)
+jl3j@andrew.cmu.edu (John Robert Leavitt)
+duncanj@umd5.umd.edu (James Duncan)
+If you're on this list but have no interest, we'd appreciate it
+if you could email Jim to tell him.
+
+I will post summaries of the discussion to both rec.games.frp and
+rec.games.programmer under the topic Universe Simulator.  Here is
+a summary of what has happened so far.
+
+ACTUAL hoax - "David M. Brown", r.g.p 126 (25 Jul), 130 (28 Jul)
+Call for discussion - Mark Stevans, r.g.p 146 (31 Jul)
+Statement of intent - Dave Allen, r.g.p (early Aug), posted
+  by Mark Stevans.  We are trying to write a program that
+  simulates the evolution of a large number of star systems,
+  showing the development of intelligent life, invention of culture,
+  and inter-relationships of interstellar civilizations.  Key points
+  are the variety of lifeforms, differing rates and types of technological
+  development, and a variety of interaction modes for alien contacts.
+  The resulting program would be something you would sit back and
+  watch, like the Scientific American game Life.  Each simulation
+  timestep, the universe would get a little older.
+Description of Universe Simulator - Dave Allen, r.g.p 165 (8 Aug)
+  Basically, it starts out with an empty universe full of dust.
+  Stars are born, live their life on the main sequence, and supernova.
+  Later stars have higher metallicity.  Each star is created with
+  planets, each having a temperature, atmosphere and (possibly) life.
+  Simulation uses die-rolling rather than astrophysical formulae,
+  is written in ~300 lines of Amiga Basic code, and runs in 6 minutes.
+Breakdown of simulation levels in the Universe Simulator, Dave Allen, to
+  Jim Meritt.  There are really three separate simulations involved
+  here:  development of planetary systems and stars; growth of a single
+  intelligent race; interaction of starfaring races with other races.
+Description of astrophysical-formula simulations, Jim Meritt, to Dave
+  Allen, 19 Aug 88.  Made up a random generator that pumped out stars
+  with a distribution similiar to a galactic arm.  Lifted a condensate
+  version of planetary creation to derive size and probable core/crust
+  composition.  Used the star mass and the distance/composition to get
+  planetary masses.  Used star temp and the distance/mass of the planet
+  to get probable atmosphere composition & pressure (ev calculations,
+  liquid water temp range, dust, that type of stuff).  Made random
+  generators for stuff like moons & rings.  For terrestrial-type surface
+  conditions, there is a reasonable amount of climatology that is not too
+  numeric intensive.
+Offer of working PC Basic programs, from Dave Allen, to Jim Meritt,
+  18 Aug 88.  A working condensation simulator, based on a paper by
+  Stephen Dole, that generates planetary systems given star mass
+  and initial dust density.  I've made two modified versions of these,
+  one to allow captured moons, and one to generate a moon system
+  given planet mass.  An atmosphere generator based on papers by M.H.
+  Hart which simulates the development of Earth's atmosphere with
+  parameters to generate the atmosphere of any terrestrial planet"
+Description of climatology system, from Jim Meritt, to Dave Allen,
+  19 Aug 88.  You can get climatology from (distance from sun, length of
+  year and day, and axial tilt), but you have to throw in things like
+  distance from ocean (for habitable) in direction of prevailing winds
+  (planet-wide hadley cells for prevailing zones).  For microclimates
+  ("local weather") you sorta gotta cheat (statistical separation from
+  predicted climate)  I think I have an article that has a basic
+  program that dies the planetwide climate from orbital characteristics
+  someplace.  Or maybe the other way (climate to orbit).
+Wish list for climatology program, from Dave Allen to Jim Meritt,
+  26 Aug 88.  Suggests  raster map of a planet, 70 x 210 pixels.  Each
+  pixel is either land, mountain or ocean.  Derive temperature ranges
+  by season and time of day from known parameters.  Determine global
+  atmospheric circulation.  Determine rainfall for each pixel,
+  accounting for rain shadows.  Determine ocean currents, microclimates.
+Description of using tectonics to generate world maps, Mark Isaak, r.g.f
+  2284, 24 Aug 88.  Divide globe into 20 plates, some continent, most
+  ocean.  Give each plate a random direction and velocity; let them move.
+  Change the directions every once in a while.  Erode the mountains.
+More description of tectonics, Mark Isaak, to Dave Allen, 26 Aug 88.
+  (Describes a complete method for generating world maps by hand)
+List of references to simulations of politics, human behavior and
+  international relations, from Jim Meritt, to Dave Allen and Stephen
+  Pearl, 26 Aug 88.  (Not included)
+Description of universe simulator, from Stan Shebs, article 276 of r.g.p
+  (26 Aug 88).  He has a document describing the basics of a simulator
+  for a universe.  Getting the basic concepts right is pretty hard -
+  for instance how to do 3D models of planets, how to track EM radiation
+  at various frequencies, and how to handle energy/info transfer of
+  various sorts, without all of this requiring a building full of Class
+  VI machines to run reasonably.

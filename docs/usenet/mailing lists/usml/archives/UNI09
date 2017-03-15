@@ -1,0 +1,650 @@
+From aplcomm!aplcen!umd5!haven!ames!pasteur!ucbvax!ucdavis!ccdbryan Wed Sep  7 09:24:06 EDT 1988
+Status: RO
+
+Article 4129 of rec.games.frp:
+Path: aplcomm!aplcen!umd5!haven!ames!pasteur!ucbvax!ucdavis!ccdbryan
+From: ccdbryan@ucdavis.ucdavis.edu (Bryan McDonald)
+Newsgroups: rec.games.frp
+Subject: Re: Mapping a World
+Keywords: tectonics terrain features
+Message-ID: <2998@ucdavis.ucdavis.edu>
+Date: 3 Sep 88 18:39:18 GMT
+References: <147@vlsi.ll.mit.edu>
+Reply-To: ccdbryan@ucdavis.ucdavis.edu.UUCP (Bryan McDonald)
+Distribution: rec
+Organization: University of California, Davis
+Lines: 24
+
+In article <147@vlsi.ll.mit.edu> davea@vlsi.ll.mit.edu (Dave Allen) writes:
+>
+>What other kinds of natural phenomena create terrain features?
+>
+>Offhand, I can think of several.  Meteor strikes will result in
+>big, circular bays or lakes.  After an ice age, the receding sheet
+>ice dumps huge boulders and leaves big scratches in mountains.
+>Rivers are natural terrain features by themselves, plus they
+>create bays by erosion and deltas by deposition.
+>
+Don't forget coral reefs...not the most prevalent form on Earth,
+but, if you wanted to tweek your animal kingdom, it could be
+a big factor.  Also, coral reefs aren't that old, on a planetary
+scale, so they would probably be one of the last things to add.
+
+
+--
+
+Bryan McDonald                  |                           U  U CCCC DDDD 
+ ccdbryan!ucdavis!{ucbvax,      | University of California  U  U C    D   D
+       lll-crg, sdcsvax}        |        at Davis           U  U C    D   D
+ bkmcdonald@ucdavis.ucdavis.edu |                           UUUU CCCC DDDD 
+
+         I refuse to have a battle of wits with an unarmed person.
+
+
+From @aplvax.jhuapl.edu:convex!sheppard@uunet.uu.net Wed Sep  7 12:52:35 1988
+Return-Path: <@aplvax.jhuapl.edu:convex!sheppard@uunet.uu.net>
+Received: from aplvax.jhuapl.edu by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA20280; Wed, 7 Sep 88 12:51:48 EDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA16878; Wed, 7 Sep 88 12:52:08 EDT
+Received: from convex.UUCP by uunet.UU.NET (5.59/1.14) with UUCP 
+	id AA09824; Wed, 7 Sep 88 12:50:55 EDT
+Received: from arioch (8003e3f4) by convex (4.12/4.7)
+	id AA17518; Wed, 7 Sep 88 11:49:10 cdt
+Received: by arioch (5.51/4.7)
+	id AA06122; Wed, 7 Sep 88 11:50:45 CDT
+Date: Wed, 7 Sep 88 11:50:45 CDT
+From: convex!sheppard@uunet.uu.net (Andy Sheppard)
+Message-Id: <8809071650.AA06122@arioch>
+Organization: Convex Computer Corporation
+To: jwm@uunet.uu.net
+Subject: Well, let's try this path
+Status: RO
+
+and see if it gets to you, and maybe you can get back to me. Btw, here's
+an example of the output of my system generation program. Not all of it
+is "scientifically" correct, but it works for the RPG that I run.
+
+Andy Sheppard
+Convex Computer Corporation
+{mcnc,purdue,sun,uiucdcs}!convex!sheppard
+
+
+
+------------------------ cut on the dotted line ------------------------
+solitary star:
+	class G,  type I (super-giant)
+	temperature rating 2,  temperature 6180 A,  whitish yellow
+	mass 7.00 SU,  diameter 193.57 SU
+	gravity well radius 361.98 AU
+	luminosity 50000.00 SU,  absolute magnitude -22.2
+	Oort Cloud
+orbits:
+     1.	radius 5.70 AU,  rock planet
+	diameter 0.42 EU
+	length of year 36.00 EU
+	length of day 50 hours
+	surface gravity 0.60 G
+	density 1.20 EU (6.60),  composition high-iron
+	radioactives scarce
+	heavy metals plentiful
+	light metals extremely plentiful
+	organics plentiful
+	axial tilt 18 degrees
+     2.	radius 9.97 AU,  asteroid belt
+	count 11000
+	density 1.50
+     3.	radius 17.46 AU,  ecosphere planet
+	length of year 192.96 EU
+	length of day 36 hours
+	diameter 0.68 EU
+	surface gravity 0.60 G
+	density 0.80 EU (4.40),  composition low-iron
+	industrial metals plentiful
+	light metals plentiful
+	organics plentiful
+	small moons 1
+	axial tilt 12 degrees (minor seasonal effects)
+	terrain - mountainous/volcanic
+	atmosphere - plethora of toxic trace metals and gases
+     4.	radius 30.55 AU,  ecosphere planet
+	length of year 446.72 EU
+	length of day 16 hours
+	diameter 0.67 EU
+	surface gravity 0.98 G
+	density 1.30 EU (7.15),  composition metallic
+	gemstones/industrial crystals extremely plentiful
+	rare/special minerals plentiful
+	radioactives scarce
+	heavy metals extremely plentiful
+	industrial metals plentiful
+	light metals extremely plentiful
+	axial tilt 27 degrees (earth-like seasonal effects)
+	terrain - mountainous/volcanic
+	atmosphere - exceedingly thin
+     5.	radius 53.46 AU,  gas giant
+	diameter 9.69 EU (medium)
+	length of year 1034.16 EU
+	length of day 8 hours
+	surface gravity 1.02 G
+	density 0.12 EU (0.66)
+	axial tilt 40 degrees
+	faint ring
+	moonlets 8,  small moons 5,  medium moons 4,  large moons 1
+     6.	radius 93.55 AU,  gas giant
+	diameter 9.69 EU (medium)
+	length of year 2394.12 EU
+	length of day 80 hours
+	surface gravity 0.68 G
+	density 0.08 EU (0.44)
+	axial tilt 29 degrees
+	moonlets 26,  small moons 12,  medium moons 8
+     7.	radius 163.72 AU,  asteroid belt
+	count 18000
+	density 0.90
+     8.	radius 286.51 AU,  gas giant
+	diameter 10.94 EU (large)
+	length of year 12831.01 EU
+	length of day 60 hours
+	surface gravity 0.85 G
+	density 0.10 EU (0.55)
+	axial tilt 6 degrees
+	faint ring
+	moonlets 9,  small moons 10,  medium moons 8
+     9.	radius 501.39 AU,  gas giant
+	diameter 4.69 EU (small)
+	length of year 29704.20 EU
+	length of day 20 hours
+	surface gravity 1.02 G
+	density 0.24 EU (1.32)
+	axial tilt 28 degrees
+	faint ring
+	moonlets 9,  small moons 9,  medium moons 4
+    10.	radius 877.44 AU,  rock planet
+	diameter 0.62 EU
+	length of year 68766.19 EU
+	length of day 13 hours
+	surface gravity 1.05 G
+	density 1.40 EU (7.70),  composition metallic
+	gemstones/industrial crystals plentiful
+	rare/special minerals scarce
+	radioactives scarce
+	heavy metals extremely plentiful
+	industrial metals extremely plentiful
+	light metals extremely plentiful
+	organics plentiful
+	axial tilt 6 degrees
+
+From davea@ll-vlsi.ARPA Wed Sep  7 20:59:58 1988
+Return-Path: <davea@ll-vlsi.ARPA>
+Received: from XN.LL.MIT.EDU (10.2.0.10) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA21326; Wed, 7 Sep 88 20:59:25 EDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Wed, 7 Sep 88 20:05:09 EDT
+Posted-Date: Wed, 7 Sep 88 20:05:29 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA02315; Wed, 7 Sep 88 20:05:29 EDT
+Date: Wed, 7 Sep 88 20:05:29 EDT
+From: Dave Allen <davea@ll-vlsi.ARPA>
+Message-Id: <8809080005.AA02315@ll-vlsi.arpa>
+To: jwm%stdc.jhuapl.edu@ll-xn.ARPA
+Subject: Universal Simulator List
+Status: RO
+
+This is a long note describing my efforts towards a tectonic
+simulator.  What I want to have is a program which is fun to watch; you
+start it up and it does an animation of a randomly-generated planet,
+showing how its continents drift.  I'd like it to have a number of
+parameters so that it could be run for planets like earth - parameters
+such as fraction of water, planet size, and so on.  It should have some
+kind of text output so you can save results either to look at them
+later or to add more details, notably erosion, river action, and
+glacier action.
+
+Right now I don't have anything I think is worthwhile.  I have a
+program that works but I don't like the results. I also have some ideas
+about a completely different technique, with which I will start to
+experiment soon.  More on that later.
+
+Here's some info about the program I wrote.  It's based on some
+conversations with Mark Isaak and a lot of thinking.  This program gets
+a supercontinent splitting up all right.  You can see rifts forming,
+and you can see mountains on coasts, but it doesn't look very real.
+Still looks too random.  It's about 100 lines of C (not counting
+simple graphics support code), and I can't get the code to the net.
+These are the steps it carries out.
+
+Take a cylinder the size of the earth (spheres are harder).  Divide it
+up into 100 x 100 squares.  Each square can be either ocean, land, or
+mountain.  Draw an initial supercontinent.  Right now this is just a
+rectangle; one would want to use a fractal technique to get a blot.
+
+Randomly place 12 "seeds" on the surface; each seed will be the center
+of a "plate".  Each of the 10,000 squares belongs to the plate whose seed
+it is closest to.  That guarantees that each plate is a convex polygon
+(all of its corners are less than 180 degrees).  You want that so you
+can avoid, for example, making a "V" - shaped plate drift sideways.
+
+Assign each plate a random velocity in x and a random velocity in y, each
+in the range 1-10.  Each timestep, everything on the plate drifts 1/10 of
+its velocity in squares.  Every 10 timesteps, change the velocities 
+slightly.  Thus, the plates don't move but they make like conveyor belts
+for the continents.  Raise mountains along the leading edges of the 
+continents.  Repeat for an infinite number of timesteps.
+
+
+I have come across some new ideas for a tectonic simulator.  The ideas
+came from a paper Jim Meritt told me about:
+
+> You really want to read "The Supercontinent Cycle" by Nance, Worsley, &
+> Moody, Scientific American, July 1988  before you get very far.  I will
+> want to use the time since the last supercontinent breakup as part of
+> the climatology model.   Besides, it gives nice timing & pattern for
+> continental drifting.
+
+I read it this morning.  It is really cool!  I've been reading some
+older refs on the subject and I couldn't get a good picture of how all
+the mechanisms for continental drift work together.  This article did
+it for me.  If you're at all interested in the history of Earth on the
+geological timescale, you should read it.
+
+Here's what the article says, in a nutshell.  They have a theory
+that says every 500 million years, a supercontinent breaks up, drifts
+apart, then drifts back together.  The sea level changes in a fixed way.
+Changes in the sea level lead to glaciation.  Changes in the sea level
+also have implications for the rate of evolution.  They present evidence
+from fossil records, ages of mountains, and geological indications of
+historical sea level.  I found it to be very convincing.
+
+Here's the sort of thing I'm thinking about to simulate this.  Generate
+a supercontinent (again probably a rectangle at first).  Generate random
+fissure lines running through the supercontinent.  Really only kind of
+random; you can't have things too concave, and I don't think you want 
+junctions more complicated than T's (no X's).  Take the fissured parts
+of the supercontinent and drift them for a while, with decreasing 
+velocity.  Then let the velocity reverse itself (more or less).  Build
+mountains when the continents crash into each other while reassembling
+into a supercontinent.
+
+I guess I'm not sure how you get mountains around the Pacific ocean
+based on this.  Right now, our continents are drifting away from the
+Atlantic.  If there's just flat oceanic crust on the Pacific side, why
+are the Rockies and the Andes there?
+
+Well, that's all for now.
+
+Dave Allen: internet davea@ll-vlsi.arpa or @vlsi.ll.mit.edu
+
+From alan@argon.csl.sri.com Wed Sep  7 18:01:08 1988
+Return-Path: <alan@argon.csl.sri.com>
+Received: from argon.csl.sri.com (192.12.33.31) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA21229; Wed, 7 Sep 88 17:59:30 EDT
+Received: by argon.csl.sri.com
+	(5.59b++/IDA-1.2.3-9) id AA28233; Wed, 7 Sep 88 15:02:45 PDT
+Date: Wed, 7 Sep 88 15:02:45 PDT
+From: Alan Whitehurst <alan@csl.sri.com>
+Message-Id: <8809072202.AA28233@argon.csl.sri.com>
+To: jwm@stdc.jhuapl.edu
+Cc: alan@csl.sri.com
+Subject: Universe Simulation Mailing List
+Status: RO
+
+
+Jim,
+
+Please add me to your list.  I am primarily interested in computer
+simulation of world creation, but am also interested in the other
+topics I've seen being discussed.
+
+Also, I'ld really like to see the journal references you appearently
+posted.  And where can I get a hold of King's program?
+
+
+Alan
+
+=========================================================================
+                                                                        
+   |\      /|     "There are those who claim that magic is like the tide;
+   ||      ||     that it swells and fades over the surface of the earth.
+   ||  /\  ||     There are also those who believe that if you stick your
+   || //\\ ||     fingers up your nose and blow, it will increase your
+   |\/====\/|     intelligence." --The Teachings of Ebenezum, Vol. VII
+   \_/    \_/                                                            
+                             UUCP:      ...!hplabs!sri-unix!hercules!alan
+ Alan Whitehurst             Internet:                   alan@csl.sri.com
+SRI International, 333 Ravenswood Ave, Menlo Park, CA 94025 (415)859-2336
+=========================================================================
+
+
+
+
+From sethg@ATHENA.MIT.EDU Wed Sep  7 20:45:50 1988
+Return-Path: <sethg@ATHENA.MIT.EDU>
+Received: from ATHENA (athena.mit.edu) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA21308; Wed, 7 Sep 88 20:44:05 EDT
+From: sethg@ATHENA.MIT.EDU
+Received: by ATHENA.MIT.EDU (5.45/4.7) id AA26116; Wed, 7 Sep 88 19:32:55 EDT
+Received: by M11-116-6.MIT.EDU (5.45/4.7) id AA04856; Wed, 7 Sep 88 19:32:29 EDT
+Date: Wed, 7 Sep 88 19:32:29 EDT
+Message-Id: <8809072332.AA04856@M11-116-6.MIT.EDU>
+To: davea@vlsi.ll.mit.edu
+Subject: Re: Universe Simulation 
+Newsgroups: rec.games.frp,rec.games.programmer 
+In-Reply-To: <157@vlsi.ll.mit.edu> 
+Organization: Thoughtcrime Associates: Miniluv Rm 101, London, Oceania 
+Cc: jwm@stdc.jhuapl.edu
+Status: RO
+
+In article <157@vlsi.ll.mit.edu> you write:
+>
+>Summary of discussion on the unofficial "Universe Simulation" mailing list,
+>Aug 31 - Sept 7:
+
+>There was some discussion about using fractal geometry to create terrain;
+>  several people mentioned programs they had written to generate random terrain
+>  using fractals.  Edwin King (elk@cbnews.att.com) gave us a working program
+>  in C to generate rectangular pieces of terrain.
+
+>Jim Meritt (jwm@stdc.jhuapl.edu) has posted about fifty journal references, 
+>  many from Scientific American, concerning scientific efforts to model
+>  planet creation, atmospheric development and circulation, climate, development
+>  of life, sociological and cultural development,
+
+>Mary Kuhner (jyamato@cory.berkeley.edu ?) brought up some questions related 
+>  to realistic patterns of weather and population density, and aggregation
+>  of small political units into larger ones.
+>Brian Bowers (cs2551af@charon.unm.edu) made some suggestions about weather
+>  patterns and historical development of nations, and Edwin Wiles
+>  (netxcom!ewiles@uunet.uu.net) made some more suggestions.  Darren Sinster
+>  gave us a whole list of relationships between landscape and weather
+>  patterns.
+
+Please put me on the mailing list AND please send me copies of the above
+m.l. submissions.
+
+My own contribution, for those who want to design their own languages:
+
+The book _Language Aquisition Made Practical_ has a very complete
+section on phonemics and general principles of sentence structure.
+
+The phonemics section describes almost every sound that can possibly be
+made by the human mouth, and how different languages prefer different
+combinations of phonemes, which contributes to "foreign accents."
+
+(For example, in Spanish, the phoneme /s/, when it comes at the
+beginning of the word, is always followed by a vowel.  Thus, when native
+Spanish speakers try to say words like "street," it comes out
+"estreet.")
+
+The structure section talks about the basic things any grammar has to
+deal with, like making reflexive statements or questions.
+
+I don't have the author and publication data for _L.A.M.P._, but you
+should be able to look it up in _Books in Print._  A few years ago,
+_Dragon_ had a series of articles on language design that were quite
+good, but back issues of _Dragon_ are probably a lot harder to come by.
+
+-- 
+-- 
+"Men, if we lose this [soccer game], we'll be the shame of the 
+ civilised world ... *and* America!"  --- _The Goon Show_
+-- bloom-beacon!athena.mit.edu!sethg / standard disclaimer
+
+From 8hum190@violet.Berkeley.EDU Wed Sep  7 21:19:11 1988
+Return-Path: <8hum190@violet.Berkeley.EDU>
+Received: from violet.berkeley.edu (128.32.136.22) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA21352; Wed, 7 Sep 88 21:18:10 EDT
+Received: by violet.berkeley.edu (5.54 (CFC 4.22.3)/1.16.17l)
+	id AA27408; Wed, 7 Sep 88 18:19:38 PDT
+Date: Wed, 7 Sep 88 18:19:38 PDT
+From: 8hum190@violet.Berkeley.EDU (Elliot Wilen)
+Message-Id: <8809080119.AA27408@violet.berkeley.edu>
+To: jwm@stdc.jhuapl.edu
+Subject: Universe Simulator
+Status: RO
+
+
+Please add me to the list and send any "back issues" so far. I'm
+mainly interesting in reading/contributing to discussions about
+development of nations and political units, although, frankly,
+I doubt that such things can be effectively automated at this
+point.
+
+--Elliot Wilen
+
+From therat%ucscb.UCSC.EDU@ucscc.UCSC.EDU Thu Sep  8 03:22:05 1988
+Return-Path: <therat%ucscb.UCSC.EDU@ucscc.UCSC.EDU>
+Received: from ucscc.UCSC.EDU (128.114.130.3) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA21630; Thu, 8 Sep 88 03:20:43 EDT
+Received: from ucscb.UCSC.EDU by ucscc.UCSC.EDU (5.59/1.1)
+	id AA16835; Thu, 8 Sep 88 00:24:34 PDT
+Received: by ucscb.UCSC.EDU (4.12/4.7)
+	id AA10415; Thu, 8 Sep 88 00:21:22 pdt
+Date: Thu, 8 Sep 88 00:21:22 pdt
+From: therat%ucscb.UCSC.EDU@ucscc.UCSC.EDU (the fugitive guy)
+Message-Id: <8809080721.AA10415@ucscb.UCSC.EDU>
+To: jwm@stdc.jhuapl.edu
+Subject: Re: Universal Simulator
+Status: RO
+
+
+> I guess I'm not sure how you get mountains around the Pacific ocean
+> based on this.  Right now, our continents are drifting away from the
+> Atlantic.  If there's just flat oceanic crust on the Pacific side, why
+> are the Rockies and the Andes there?
+
+Finally, I can make a tiny contribution to the list.  The pacific plate is 
+currently in the process of sliding under the continental plate that we're
+sitting on.  this causes the sierras and the chocolate mountains, and i'm
+not sure what else.  I dunno bout south america, or the rockies.
+
+Something your simulation should tke into account is the relative thickness of
+the different plates, and how that affects their momenta, and therefore how
+their velocities change.  For example, were the india chunk younger (and 
+lighter) it would not have been able to plow into asia with such striking
+results.
+
+-w
+ wade evans
+
+
+From aplcomm!aplcen!umd5!haven!ames!ll-xn!vlsi!davea Thu Sep  8 09:44:54 EDT 1988
+Status: RO
+
+Article 308 of rec.games.programmer:
+Path: aplcomm!aplcen!umd5!haven!ames!ll-xn!vlsi!davea
+From: davea@vlsi.ll.mit.edu (Dave Allen)
+Newsgroups: rec.games.frp,rec.games.programmer
+Subject: Universe Simulation
+Message-ID: <157@vlsi.ll.mit.edu>
+Date: 7 Sep 88 17:05:49 GMT
+Distribution: rec
+Organization: MIT Lincoln Laboratory, Lexington MA
+Lines: 45
+Xref: aplcomm rec.games.frp:4136 rec.games.programmer:308
+
+
+Summary of discussion on the unofficial "Universe Simulation" mailing list,
+Aug 31 - Sept 7:
+
+Sean Malloy (malloy@nprdc.arpa) sent us a set of programs to generate star
+  systems from the SFRPG Other Suns.  There are four; three in Pascal and one
+  in C.  They generate one "hex" (1000 ly across) and fill it with stars
+  and planets according to the charts and tables in the game.
+There was some discussion about using fractal geometry to create terrain;
+  several people mentioned programs they had written to generate random terrain
+  using fractals.  Edwin King (elk@cbnews.att.com) gave us a working program
+  in C to generate rectangular pieces of terrain.
+Jim Meritt (jwm@stdc.jhuapl.edu) has posted about fifty journal references, 
+  many from Scientific American, concerning scientific efforts to model
+  planet creation, atmospheric development and circulation, climate, development
+  of life, sociological and cultural development,
+Jim Meritt also dug up a set of programs to generate systems for Traveller,
+  originally posted to comp.sources.games.  Here is a quote from the README file:
+  "To generate complete listings of star systems (an allegedly complete
+  implementation of Single-Star Systems according to the rules in Book 6)
+  it is necessary to compile the files in sysgen (by typing make) and then
+  running the program st. Be warned this produces voluminous output."  The
+  programs look pretty complete and are written in C.
+Matt Burdick (burdick@hpindda.hp.com) has written a program in Turbo Pascal
+  based on a set of papers by Martin Fogg in Journal of the British Interplanetary
+  Society (JBIS).  The program uses astrophysical theories to simulate
+  the creation of a star system, with results that look much like our solar
+  system.  He posted (rec.games.programmer article 225) a sample output,
+  and it has a number of details about each planet like size, gravity,
+  est. surface temperature, albedo and so on.
+Andrew Folkins (mnetor!alberta!andrew@uunet.uu.net) has implemented Dole's
+  accretion simulator (upon which Fogg's simulator was based) in C on the Amiga.
+Mary Kuhner (jyamato@cory.berkeley.edu ?) brought up some questions related 
+  to realistic patterns of weather and population density, and aggregation
+  of small political units into larger ones.
+Brian Bowers (cs2551af@charon.unm.edu) made some suggestions about weather
+  patterns and historical development of nations, and Edwin Wiles
+  (netxcom!ewiles@uunet.uu.net) made some more suggestions.  Darren Sinster
+  gave us a whole list of relationships between landscape and weather
+  patterns.
+
+Please contact Jim Meritt (jwm@stdc.jhuapl.edu) for information requests
+or to be added to / deleted from the list.
+
+Dave Allen: internet davea@ll-vlsi.arpa or @vlsi.ll.mit.edu
+
+
+From aplcomm!aplcen!mimsy!dftsrv!ames!decwrl!sun!imagen!isaak 
+Article 4135 of rec.games.frp:
+Path: aplcomm!aplcen!mimsy!dftsrv!ames!decwrl!sun!imagen!isaak
+From: isaak@imagen.UUCP (Mark Isaak)
+Newsgroups: rec.games.frp
+Subject: Laws of Nature--Who Needs 'em?
+Message-ID: <1810@imagen.UUCP>
+Date: 6 Sep 88 23:59:08 GMT
+Organization: Imagen Corp., Santa Clara CA
+Lines: 43
+
+
+    On the subject of mapmaking, I suggested a method which simulated
+tectonics; a couple of other people said forget all that--just draw some
+shapes on a piece of paper.  This suggests the much larger question of how
+important it is for a world to have a basis on natural laws.
+    At one extreme, you have an Alice's Wonderland where anything is
+possible and depends only on the GM's whim ("Wha'd'ya mean 'how does it
+work'?  It's _magic_!").  At the other extreme, everything follows from
+known laws ("Well then, how does magic work?").
+    Most people I've talked with think that the Wonderland extreme is too
+arbitrary for playing in for any length of time.  But then the question is
+how far to go in the other direction.  Personally, I prefer to go about as
+far as humanly possible, for a number of reasons.
+    In the long run, it's easier to create a world from basic principles.
+After I got my continents mapped out, I didn't have to decide where the
+best mining areas were, or who were the major seafaring races, or where the
+trade routes for the spice trade go--they were all decided for me by the
+geography.  Once you have a firm foundation, it's easy to build other
+features on top of it.
+    Once you have enough features in place, others will suggest themselves
+to you.  When we started writing our magic system, for example, we had no
+idea that we would also write the "Mages' Compact" to describe mana use
+customs; it was a natural consequence of the system.
+    Resolving ambiguities in the rules becomes much easier.  For instance,
+will the spell "understand languages" help with a species that communicates
+with pheromones?  To answer a question like this, you first have to
+understand how the spell works.
+    Perhaps the most important reason for having a rational basis for
+everything is that it makes the world more realistic.  Your geography
+becomes more realistic if your deserts are in fact in the rain shadows of
+tall mountains.  Your magic items become more realistic if you can give the
+exact words and gestures of the spells used to create them.  Even your gods
+become more realistic if you have some creation and other myths telling how
+they interact.  All this, in turn, lets the players feel that the characters
+they are running are living in a real world, not just in a rule system.
+    Finally, there's the purely aesthetic enjoyment of seeing all the
+pieces of the world fit together.  I don't think I can put this into words,
+and this factor may not even apply for other people.  For me, however, it's
+one of the major reasons I am building a world.
+
+-- 
+Mark Isaak    	{decwrl,sun}!imagen!isaak  or  imagen!isaak@decwrl.dec.com
+	    "Inquiry is fatal to certainty." - Will Durant
+
+
+From aplcomm!aplcen!mimsy!dftsrv!ames!decwrl!sun!imagen!isaak Thu Sep  8 09:52:24 EDT 1988
+Status: R
+
+Article 4135 of rec.games.frp:
+Path: aplcomm!aplcen!mimsy!dftsrv!ames!decwrl!sun!imagen!isaak
+From: isaak@imagen.UUCP (Mark Isaak)
+Newsgroups: rec.games.frp
+Subject: Laws of Nature--Who Needs 'em?
+Message-ID: <1810@imagen.UUCP>
+Date: 6 Sep 88 23:59:08 GMT
+Organization: Imagen Corp., Santa Clara CA
+Lines: 43
+
+
+    On the subject of mapmaking, I suggested a method which simulated
+tectonics; a couple of other people said forget all that--just draw some
+shapes on a piece of paper.  This suggests the much larger question of how
+important it is for a world to have a basis on natural laws.
+    At one extreme, you have an Alice's Wonderland where anything is
+possible and depends only on the GM's whim ("Wha'd'ya mean 'how does it
+work'?  It's _magic_!").  At the other extreme, everything follows from
+known laws ("Well then, how does magic work?").
+    Most people I've talked with think that the Wonderland extreme is too
+arbitrary for playing in for any length of time.  But then the question is
+how far to go in the other direction.  Personally, I prefer to go about as
+far as humanly possible, for a number of reasons.
+    In the long run, it's easier to create a world from basic principles.
+After I got my continents mapped out, I didn't have to decide where the
+best mining areas were, or who were the major seafaring races, or where the
+trade routes for the spice trade go--they were all decided for me by the
+geography.  Once you have a firm foundation, it's easy to build other
+features on top of it.
+    Once you have enough features in place, others will suggest themselves
+to you.  When we started writing our magic system, for example, we had no
+idea that we would also write the "Mages' Compact" to describe mana use
+customs; it was a natural consequence of the system.
+    Resolving ambiguities in the rules becomes much easier.  For instance,
+will the spell "understand languages" help with a species that communicates
+with pheromones?  To answer a question like this, you first have to
+understand how the spell works.
+    Perhaps the most important reason for having a rational basis for
+everything is that it makes the world more realistic.  Your geography
+becomes more realistic if your deserts are in fact in the rain shadows of
+tall mountains.  Your magic items become more realistic if you can give the
+exact words and gestures of the spells used to create them.  Even your gods
+become more realistic if you have some creation and other myths telling how
+they interact.  All this, in turn, lets the players feel that the characters
+they are running are living in a real world, not just in a rule system.
+    Finally, there's the purely aesthetic enjoyment of seeing all the
+pieces of the world fit together.  I don't think I can put this into words,
+and this factor may not even apply for other people.  For me, however, it's
+one of the major reasons I am building a world.
+
+-- 
+Mark Isaak    	{decwrl,sun}!imagen!isaak  or  imagen!isaak@decwrl.dec.com
+	    "Inquiry is fatal to certainty." - Will Durant
+
+
+From davea@ll-vlsi.ARPA Thu Sep  8 11:14:36 1988
+Return-Path: <davea@ll-vlsi.ARPA>
+Received: from XN.LL.MIT.EDU (10.2.0.10) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA23250; Thu, 8 Sep 88 11:13:51 EDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Thu, 8 Sep 88 11:09:27 EDT
+Posted-Date: Thu, 8 Sep 88 11:09:44 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA06873; Thu, 8 Sep 88 11:09:44 EDT
+Date: Thu, 8 Sep 88 11:09:44 EDT
+From: Dave Allen <davea@ll-vlsi.ARPA>
+Message-Id: <8809081509.AA06873@ll-vlsi.arpa>
+To: jwm%stdc.jhuapl.edu@XN.LL.MIT.EDU
+Subject: Summary
+Status: R
+
+Yes, I'll post a summary every week or so - more if there's a lot of
+traffic, less if there isn't much traffic.
+
+What's the good word on a climatology simulator?  Still digging
+through references, I bet.
+
+Dave
+
+
+                  

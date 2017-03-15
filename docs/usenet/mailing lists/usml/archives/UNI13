@@ -1,0 +1,381 @@
+>From @RELAY.CS.NET:richk%wyvern.cax.tek.com@tektronix.tek.com Wed Sep 14 16:36:59 1988
+Return-Path: <@RELAY.CS.NET:richk%wyvern.cax.tek.com@tektronix.tek.com>
+Received: from RELAY.CS.NET by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10414; Wed, 14 Sep 88 16:36:18 EDT
+Received: from relay2.cs.net by RELAY.CS.NET id ad08321; 14 Sep 88 13:51 EDT
+Received: from tektronix.tek.com by RELAY.CS.NET id aa02065; 14 Sep 88 13:11 EDT
+Received: by tektronix.TEK.COM (5.51/6.24)
+	id AA21498; Wed, 14 Sep 88 10:02:12 PDT
+Received: by tekcae.CAX.TEK.COM (5.51/6.24)
+	id AA03966; Wed, 14 Sep 88 08:58:14 PDT
+Received: by wyvern.CAX.TEK.COM (5.17/6.24)
+	id AA25711; Wed, 14 Sep 88 08:58:41 PDT
+From: Richard Kurschner <richk%wyvern.cax.tek.com@RELAY.CS.NET>
+Message-Id: <8809141558.AA25711@wyvern.CAX.TEK.COM>
+Date: Wed, 14 Sep 88 08:58:39 PDT
+To: Jim Meritt <jwm%stdc.jhuapl.edu@RELAY.CS.NET>
+Cc: usml@HC.DSPO.GOV
+Subject: Re: Universal Simulator Mailing List
+In-Reply-To: Your message of Tue, 13 Sep 88 12:20:55 EDT.
+             <8809131620.AA04089@stdc.jhuapl.edu>
+Reply-To: richk%wyvern.cax.tek.com@RELAY.CS.NET
+Status: R
+
+Since you were asking for backgrounds and interests, here's mine:
+
+I'm a software engineer interested in Fantasy Role-playing games.  Although
+most of the areas discussed so far are of interest, my reason for joining
+the mailing list is to discover more about climate generation.  (My world
+already has a map and it's local space is not important)  I will be
+taking a class this fall on weather and climate, so in the future I may be
+able to contribute something.
+
+Something that would be useful to me, although I can't imagine how it could be
+done, would be a history generator.  It seems most fantasy worlds have thousands
+of years history behind them.  That is a lot of time to account for by hand!
+(Science fiction worlds tend to have short histories:  Planet colonized in
+year x, resources heavily exploted since then, rebels now trying to take over.
+1/2 ;-) )  Perhaps a standard random event generator could be used, but
+something tells me that the events wouldn't "hang together" as well as "real
+history" does.  Any suggestions, ideas?
+
+Finally, what exactly is "geopolitics"?  The generation of policical boundaries
+based on geography?
+
+Richard Kurschner
+
+
+>From 3comvax!excelan!ginger@sun.com Wed Sep 14 17:16:53 1988
+Return-Path: <3comvax!excelan!ginger@sun.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10512; Wed, 14 Sep 88 17:16:45 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA09848; Wed, 14 Sep 88 15:16:50 MDT
+Received: from sun.Sun.COM by Sun.COM (4.0/SMI-4.0)
+	id AA12119; Wed, 14 Sep 88 14:14:30 PDT
+Received: from 3comvax.UUCP by sun.Sun.COM (4.0/SMI-4.0)
+	id AA14405; Tue, 13 Sep 88 14:53:14 PDT
+Received: by vax.3Com.Com (5.51++/1.0)
+	id AA15201; Tue, 13 Sep 88 14:24:23 PDT
+Message-Id: <8809132124.AA15201@vax.3Com.Com>
+Received: by excelan.EXELAN.COM (5.51/4.7)
+	id AA10646; Tue, 13 Sep 88 14:29:45 PDT
+Received: by lalk.EXELAN.COM (4.12/4.7)
+	id AA14963; Tue, 13 Sep 88 14:24:26 pdt
+Date: Tue, 13 Sep 88 14:24:26 pdt
+From: excelan!ginger@sun.com (Judy "Ginger" Edighoffer)
+To: 3comvax!sun!hc.dspo.gov!usml@sun.com
+Subject: My interests and background
+Status: RO
+
+  My background is computer science.  A couple of years ago, I spent a lot of
+time skimming a wide a variety of books related to hand-crafts and technologies
+up through the Middle Ages.  I took notes and have collated many of them
+to generate rules-of-thumb for such things as crop yields, livestock sizes,
+food & pasture needs, and butchered-weight, vehicle & pack animal abilities,
+prices (in terms of bushels of barley), population densities, ...  I also
+have several books discussing the interrelationships between animal sizes,
+locomotive speeds, capacity for metabolic work, life-span, ....  None of this
+information is on line, but I would be willing to type in some of it from time 
+to time.
+
+  I am interested in learning terrain generating techniques, the abilities
+of lifeforms under various atmospheric and gravity conditions, how to pick
+plausible climates under assorted world-parameters, and guidelines for picking
+internally-consistent (plausible) societies.
+
+Ginger Edighoffer
+{sun!3comvax, ucbvax!mtxinu} !excelan!ginger
+
+>From imagen!@decwrl.uucp.apolling!isaak Wed Sep 14 19:50:43 1988
+Return-Path: <imagen!@decwrl.uucp.apolling!isaak>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10578; Wed, 14 Sep 88 19:50:34 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA12336; Wed, 14 Sep 88 17:53:41 MDT
+Received: by decwrl.dec.com (5.54.5/4.7.34)
+	id AA04995; Wed, 14 Sep 88 16:53:18 PDT
+Received: by imagen.uucp (5.51/Imagen-1.1)
+	id AA00772; Wed, 14 Sep 88 12:03:38 PDT
+Received: by decwrl.dec.com (5.54.5/4.7.34)
+	id AA16860; Wed, 14 Sep 88 11:29:22 PDT
+Received: by imagen.uucp (5.51/Imagen-1.1)
+	id AA27980; Tue, 13 Sep 88 14:42:40 PDT
+Received: by apolling (4.12/inc-1.3)
+	id AA00325; Tue, 13 Sep 88 14:39:37 pdt
+Date: Tue, 13 Sep 88 14:39:37 pdt
+From: imagen!@decwrl.uucp.apolling!isaak (Mark Isaak)
+Message-Id: <8809132139.AA00325@apolling>
+To: imagen!usml%hc.dspo.gov@decwrl.dec.com
+Subject: My Interests
+Status: RO
+
+    My main interests in this list are tectonics, climatology, biological
+development, and geopolitics.  I have been running and playing an AD&D-type
+game for about a decade, and I would like to get one well-mapped world to
+run in.
+    My background is computer programming, mainly 2-D graphics.  However,
+I've always been interested in pretty much all sciences, with entomology
+topping the list.
+
+Mark Isaak	imagen!isaak@decwrl.dec.com
+
+>From orawest!ore!brian@unix.sri.com Wed Sep 14 19:59:25 1988
+Return-Path: <orawest!ore!brian@unix.sri.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10588; Wed, 14 Sep 88 19:59:17 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA11356; Wed, 14 Sep 88 16:31:23 MDT
+Received: by unix.SRI.COM (5.31/5.14)
+	id AA11385; Wed, 14 Sep 88 15:31:54 PDT
+Received: from ore.orawest.uucp by orawest.orawest.uucp (3.2/SMI-3.2)
+	id AA02127; Wed, 14 Sep 88 15:15:04 PDT
+Received: by ore.orawest.uucp (3.2/SMI-3.2)
+	id AA00407; Wed, 14 Sep 88 15:15:44 PDT
+Date: Wed, 14 Sep 88 15:15:44 PDT
+From: orawest!ore!brian@unix.sri.com (Brian kahn)
+Message-Id: <8809142215.AA00407@ore.orawest.uucp>
+To: usml@hc.dspo.gov
+Subject: My Interest in the Mailing List (Was: What I did for summer vacation)
+Status: RO
+
+I joined this mailing list to gain concepts and techniques for planetary
+development, partly for intellectual stimulation and partly for use in
+fantasy and scifi role playing games.  I am most interested in map making,
+determination of weather patterns in generated continents, and the effects
+of geography and climate on cultures at various levels of technology.
+
+I don't think I bring much to the party except for a scifi fan world view
+and computer sophistry, which I think all members of the mailing list share.
+I can't keep up with some of the fancy tech talk on fractals and
+climatology, but I am interested anyway.
+
+B<
+
+Brian Kahn   ...!hplabs!sri-unix!orawest!brian   odyssey@unix.sri.com
+
+
+
+>From mnr@daisy.learning.cs.cmu.edu Wed Sep 14 20:54:12 1988
+Return-Path: <mnr@daisy.learning.cs.cmu.edu>
+Received: from DAISY.LEARNING.CS.CMU.EDU (128.2.218.26) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10613; Wed, 14 Sep 88 20:52:57 EDT
+Received: from CS.CMU.EDU by DAISY.LEARNING.CS.CMU.EDU; 14 Sep 88 20:45:50 EDT
+Received: from OBERON.USC.EDU by CS.CMU.EDU; 14 Sep 88 20:44:31 EDT
+Received: from priam.usc.edu by oberon.USC.EDU (5.59/5.5) id AA11040; 
+	Wed, 14 Sep 88 16:09:18 PDT
+Received: by priam.usc.edu (3.2/SMI-3.0DEV3) id AA27982; 
+                Wed, 14 Sep 88 16:07:10 PDT
+Date: Wed, 14 Sep 88 16:07:10 PDT
+From: jenine%priam.usc.edu@oberon.USC.EDU (Jenine Abarbanel)
+Message-Id: <8809142307.AA27982@priam.usc.edu>
+To: space-tech@cs.cmu.edu
+Subject: Senior projects
+Status: RO
+
+
+Do you suppose we could build an EML for $120 and
+in 3 months?  It's certainly orginal.
+
+Jenine
+my apologies for this, but I'm desperate and getting hysterical
+
+>From wes@chianti.cc.umich.edu Wed Sep 14 21:01:20 1988
+Return-Path: <wes@chianti.cc.umich.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10624; Wed, 14 Sep 88 21:01:13 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA12843; Wed, 14 Sep 88 19:03:16 MDT
+Received: by chianti.cc.umich.edu (5.54/umix-2.0)
+	id AA08134; Wed, 14 Sep 88 19:18:58 EDT
+From: wes@chianti.cc.umich.edu (Wes Craig)
+Message-Id: <8809142318.AA08134@chianti.cc.umich.edu>
+To: usml@hc.dspo.gov
+Subject: My Interest in the Mailing List
+Date: Wed, 14 Sep 88 19:18:53 EDT
+Status: RO
+
+I'm a programmer for the University of Michigan with a sweet
+tooth for games of various natures. Like a large number of
+respondees have said so far, I have simulated any universes
+lately, but I am very interested. What I do know about, is
+distributed computing, gaming theory, and AI. I'm not sure how
+to go about computing the characteristics of a third generation
+star, but if someone is, I can program it and make it work in
+a network of computers. Also, the life developement interests
+me, but so far I've not seen anything about extra-human
+developement. To wit, we haven't seen anything that might
+describe a non-omnivore/herbivore intelligence.
+
+wes
+
+wes@umix.cc.umich.edu /        "Thank you for not
+uunet!umix!wes       /          flaming :-)"
+
+>From imagen!jkiparsk%csli.Stanford.EDU@decwrl.dec.com Wed Sep 14 21:13:20 1988
+Return-Path: <imagen!jkiparsk%csli.Stanford.EDU@decwrl.dec.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10629; Wed, 14 Sep 88 21:13:12 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA12944; Wed, 14 Sep 88 19:16:47 MDT
+Received: by decwrl.dec.com (5.54.5/4.7.34)
+	id AA08889; Wed, 14 Sep 88 18:16:37 PDT
+Received: by imagen.uucp (5.51/Imagen-1.1)
+	id AA06218; Wed, 14 Sep 88 17:54:18 PDT
+Received: from CSLI.Stanford.EDU by decwrl.dec.com (5.54.5/4.7.34)
+	id AA07794; Wed, 14 Sep 88 17:51:53 PDT
+Message-Id: <8809150051.AA07794@decwrl.dec.com>
+Received: by csli.Stanford.EDU (4.0/4.7); Wed, 14 Sep 88 17:52:56 PDT
+Date: Wed, 14 Sep 88 17:52:56 PDT
+From: imagen!jkiparsk%csli.Stanford.EDU@decwrl.dec.com (Jonathan Kiparsky)
+To: imagen!%decwrl.uucp.apolling!isaak@decwrl.dec.com,
+        imagen!usml%hc.dspo.gov@decwrl.dec.com
+Subject: Re:  My Interests
+Status: RO
+
+I'm interested primarily in the results of all this, since I don't know too m 
+much about geology and such. I'm also interested from a programming angle,
+but you won't see much out of me.
+-jon
+
+>From c60c-3ax%WEB.Berkeley.EDU@lilac.berkeley.edu Wed Sep 14 22:23:55 1988
+Return-Path: <c60c-3ax%WEB.Berkeley.EDU@lilac.berkeley.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10664; Wed, 14 Sep 88 22:23:47 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA13377; Wed, 14 Sep 88 20:24:36 MDT
+Received: from web-1a.berkeley.edu
+	by lilac.berkeley.edu (5.54 (CFC 4.22.3)/1.16.18B)
+	id AA02455; Wed, 14 Sep 88 19:24:12 PDT
+Received: by web-1a.berkeley.edu (3.2/SMI-3.0DEV3.9MXl)
+	id AA00128; Wed, 14 Sep 88 19:25:03 PDT
+Date: Wed, 14 Sep 88 19:25:03 PDT
+From: c60c-3ax%WEB.Berkeley.EDU@lilac.berkeley.edu
+Message-Id: <8809150225.AA00128@web-1a.berkeley.edu>
+To: usml@hc.dspo.gov
+Subject: My Interest in the Mailing List
+Status: RO
+
+I've joined this mailing list primarily because I am interested in the idea
+of a computer-created gaming universe where the computer could assume the place
+of DM, possibly meshing pre-created scenes together to form a region.  To this
+end, I'd like to see information on creating a world (including the discussed
+tectonics, climatic modeling, and city growth and spread), populating a world
+(this is on the more fantastic end -- potential alien races, stages of civion, interaction between starfaring worlds and between empires on a single
+world, etc), and universe-to-game conversions (i.e. the average player may
+not have access to the volume of information printed out from the "system"
+program, or such access may not be desirable -- so the computer might tell
+him clues and such generated by the system information, such as "You have entered a system governed by a single brilliant blue-white giant.  Your sensors
+indicate the presence of six planets orbiting the star system...").
+
+I can't bring too much to this group because I am still relatively uneducated
+compared to doctorates and professionls -- I am a sophomore at U.C. Berkeley
+and plan to enter Computer Science as a major.  I've read a lot of science
+fiction and played a lot of computer games (I have little experience with RPGs
+in face-to-face play, however)...
+
+-- Conrad Wong
+c60c-3ax@wolf.Berkeley.Edu
+
+>From late@sun.com Wed Sep 14 23:17:45 1988
+Return-Path: <late@sun.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10692; Wed, 14 Sep 88 23:17:38 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA13758; Wed, 14 Sep 88 21:20:24 MDT
+Received: from snail.sun.com by Sun.COM (4.0/SMI-4.0)
+	id AA25799; Wed, 14 Sep 88 20:18:04 PDT
+Received: from night.sun.com by snail.sun.com (4.0/SMI-4.0)
+	id AA07690; Wed, 14 Sep 88 20:20:57 PDT
+Received: by night.sun.com (4.0/SMI-4.0)
+	id AA08597; Wed, 14 Sep 88 20:25:49 PDT
+Date: Wed, 14 Sep 88 20:25:49 PDT
+From: late@sun.com (Tom Hill)
+Message-Id: <8809150325.AA08597@night.sun.com>
+To: usml@hc.dspo.gov
+Subject: My interest
+Cc: late@sun.com
+Status: RO
+
+My primary goal is to develop a simulated world that a person/player can
+walk through and SEE. the person should not be constrained to walk only in
+the direction the game designer had planned, following a narrow well defined
+path through a nebulous world.
+
+To achieve this you need to be able to generate topography and plant life.
+>From topography comes a need for (probably) tectonics, weather patterns,
+erosion and probably more. Plant life requires climate, soil conditions,
+insect life. Climate & erosion depend on plant life. You probably could
+make a really twisted dependency graph out of just the first two dozen
+factors...
+
+Since I'd like to get something running in my current incarnation, I'm
+probably interested in focusing on the basic geography & climate. Let's
+say aiming for for a program which will provide topographical maps,
+(including placing bodies of water), temperature & rainfall information.
+
+If we have someone around with an interest in Grand Designs, an overall 
+structure for all of the various pieces that people are interested in building
+might be very useful. The general idea being that a topography and
+climate system could be designed to accept as input certain parameters from 
+a solar system gereration routine, and pass on its information as output
+to somone interested in plant life (Several steps down the pipe come
+sociology and civilization - that's the HARD stuff.)
+
+My background is in computer science, science fiction and role-playing 
+games. I'd like to find a way to combine the three...
+
+tom hill
+sun!late
+
+>From @relay.cs.net:richk%wyvern.cax.tek.com@tektronix.tek.com Wed Sep 14 23:19:07 1988
+Return-Path: <@relay.cs.net:richk%wyvern.cax.tek.com@tektronix.tek.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10697; Wed, 14 Sep 88 23:18:57 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA13777; Wed, 14 Sep 88 21:23:02 MDT
+Received: from relay2.cs.net by RELAY.CS.NET id ad08321; 14 Sep 88 13:51 EDT
+Received: from tektronix.tek.com by RELAY.CS.NET id aa02065; 14 Sep 88 13:11 EDT
+Received: by tektronix.TEK.COM (5.51/6.24)
+	id AA21498; Wed, 14 Sep 88 10:02:12 PDT
+Received: by tekcae.CAX.TEK.COM (5.51/6.24)
+	id AA03966; Wed, 14 Sep 88 08:58:14 PDT
+Received: by wyvern.CAX.TEK.COM (5.17/6.24)
+	id AA25711; Wed, 14 Sep 88 08:58:41 PDT
+From: Richard Kurschner <richk@wyvern.cax.tek.com>
+Message-Id: <8809141558.AA25711@wyvern.CAX.TEK.COM>
+Date: Wed, 14 Sep 88 08:58:39 PDT
+To: Jim Meritt <jwm@stdc.jhuapl.edu>
+Cc: usml@hc.dspo.gov
+Subject: Re: Universal Simulator Mailing List
+In-Reply-To: Your message of Tue, 13 Sep 88 12:20:55 EDT.
+             <8809131620.AA04089@stdc.jhuapl.edu>
+Reply-To: richk@wyvern.cax.tek.com
+Status: RO
+
+Since you were asking for backgrounds and interests, here's mine:
+
+I'm a software engineer interested in Fantasy Role-playing games.  Although
+most of the areas discussed so far are of interest, my reason for joining
+the mailing list is to discover more about climate generation.  (My world
+already has a map and it's local space is not important)  I will be
+taking a class this fall on weather and climate, so in the future I may be
+able to contribute something.
+
+Something that would be useful to me, although I can't imagine how it could be
+done, would be a history generator.  It seems most fantasy worlds have thousands
+of years history behind them.  That is a lot of time to account for by hand!
+(Science fiction worlds tend to have short histories:  Planet colonized in
+year x, resources heavily exploted since then, rebels now trying to take over.
+1/2 ;-) )  Perhaps a standard random event generator could be used, but
+something tells me that the events wouldn't "hang together" as well as "real
+history" does.  Any suggestions, ideas?
+
+Finally, what exactly is "geopolitics"?  The generation of policical boundaries
+based on geography?
+
+Richard Kurschner
+
+
+
+                                                                                                                                                                                                                                                                                                        

@@ -1,0 +1,1689 @@
+>From lsmith@apollo.com Tue Sep 13 15:34:39 1988
+Return-Path: <lsmith@apollo.com>
+Received: from apollo.com (129.248.0.1) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA05576; Tue, 13 Sep 88 15:32:37 EDT
+Received: from apollo.UUCP by apollo.com id AA06481; Tue, 13 Sep 88 15:32:58 EDT    
+Received: by apollo.UUCP id AA09874; Tue, 13 Sep 88 15:32:58 EDT
+Message-Id: <8809131932.AA09874@apollo.UUCP>
+From: apollo!lsmith
+Date: Tue, 13 Sep 88 14:54:16 EDT 
+Subject: Universe Simulator
+To: jwm@stdc.jhuapl.edu (Jim Meritt)
+In-Reply-To: A message dated Tuesday, September 13, 1988   2:55:02 pm (EDT)
+Status: RO
+
+
+My own work lies in the fractal area, but I have been unhappy with it.  I had not thought
+of the plate tectonics idea, and I find that most exciting - especially since it also
+helps with climate and the like, which fractals do not.  I intend to work on that, when
+I get some spare time (early next year, maybe).
+
+Other interests of mine include non-normal worlds.  Tectonics would be great for planetary
+terrain in SF, but it is limiting in Fantasy.  Think of Diskworld from Pratchett's
+"The Light Fantastic", for example.  One of my fantasy worlds (in a manual game) was a vast
+plain that stretched for infinity in every direction.  It had no plate tectonics, and
+was essentially static, although similar in detail to a "normal" landscape (this universe
+was based on certain medieval concepts of Earth, "logicalized" into a playable gamescape.
+Its internal logic permitted such flights of fantasy as flying up to the sun (which was a
+ball of fire a few hundred feet in diameter) and examining it - even at night when it was
+"out"!)
+
+For these, fractals offer the only real hope, I think, though I am unhappy with most of the
+algorithms I have.  Generating the surface (and seas) is relatively easy - translating THAT
+into stands of trees, plains, etc. (ie FEATURES of terrain) is not.
+
+How does EMPIRE do it?  I have never seen a listing of that game, but it seems to generate
+some plausible-looking maps.
+
+Larry Smith
+lsmith@apollo1.UUCP
+
+
+>From yaj@Ford-wdl1.ARPA Tue Sep 13 16:32:27 1988
+Return-Path: <yaj@Ford-wdl1.ARPA>
+Received: from Sun.COM (10.7.0.2) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA05792; Tue, 13 Sep 88 16:32:00 EDT
+Received: from FORD-WDL1.ARPA by Sun.COM (4.0/SMI-4.0)
+	id AA03754; Tue, 13 Sep 88 13:34:49 PDT
+Received: by FORD-WDL1.ARPA (5.51/5.9)
+	id AA00110; Tue, 13 Sep 88 13:37:52 PDT
+Date: Tue, 13 Sep 88 13:37:52 PDT
+From: yaj@Ford-wdl1.ARPA (Jay . Luo)
+Message-Id: <8809132037.AA00110@FORD-WDL1.ARPA>
+To: jwm@stdc.jhuapl.edu
+Subject: Universe Simulator
+Status: RO
+
+
+I regret that I have relatively little to contribute to this discussion,
+but find the information being shared here to be fascinating.  All of it --
+cosmology, planetology, meteorology, topography, sociology (and any other
+-ologies I might have left out) -- I find really interesting.  I hope that
+you do not mind me leeching off of this information feed....
+
+-Yaj
+
+>From @aplvax.jhuapl.edu:ellis@csd4.milw.wisc.edu Tue Sep 13 17:31:00 1988
+Return-Path: <@aplvax.jhuapl.edu:ellis@csd4.milw.wisc.edu>
+Received: from aplvax.jhuapl.edu by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA06113; Tue, 13 Sep 88 17:30:30 EDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA16463; Tue, 13 Sep 88 17:30:22 EDT
+Received: by csd4.milw.wisc.edu; id AA29081; Tue, 13 Sep 88 16:27:49 CDT
+From: Thomas J Ellis <ellis@csd4.milw.wisc.edu>
+Message-Id: <8809132127.AA29081@csd4.milw.wisc.edu>
+Subject: Re: Climate
+To: jwm@stdc.jhuapl.edu (Jim Meritt)
+Date: Tue, 13 Sep 88 16:27:47 CDT
+In-Reply-To: Message from "Jim Meritt" of Sep 13, 88 at 11:59 am
+X-Mailer: Elm [version 1.7 alpha]
+Status: RO
+
+	As soon as I move my program up to the big machine I'll send
+	it over to you. It has some bugs that are being very evasive.
+	You'll see them soon after you start playing with it. The
+	program is a finite element analyses algorithm. I don't know
+	the real differencial equations, but I have a good idea about
+	the linearized equations. The time scales are still not very
+	realistic, but they are easy to change. The trees live only
+	as long as it takes a drop of water to move down a large mountain.
+	As for weather I know exactly what needs to be done and how
+	to do it, in the frame work of my current program. However
+	classes and work restrict the amount of time I can spend working
+	on it. Also, I'm getting close to the limits of TP3, I'm very
+	close to the 64k limit. I'll have to use overlays. I wanted
+	to keep it as close to standard pascal as possible. A quick 
+	run down of climate is to lay a grid over the land, the smaller
+	the better. At each point on the grid you need to know temp,
+	pressure, moisture content of the air and soil type. Soil type
+	affects temp, and moisture content. Temp affects pressure.
+	The gradient of pressure is wind. wind carries temp and moisture.
+	Then check for cloud formation and rain. clouds change surface 
+	temp so does rain. This is simplified, but I think you get the
+	idea. I got this from reading an elementary book on meteorology.
+	the equations are very simple. You need at least 2 layers of air
+	for the formation of realistic storms. Thats what I'm going to
+	use. I'm going to use the existing code for all of the weather.
+	It's not very different from water flow. I should be able to send
+	it to you no later than a week from now.
+
+						Tom Ellis
+
+
+>From therat%ucscb.UCSC.EDU@ucscc.UCSC.EDU Tue Sep 13 17:57:50 1988
+Return-Path: <therat%ucscb.UCSC.EDU@ucscc.UCSC.EDU>
+Received: from ucscc (128.114.130.3) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA06126; Tue, 13 Sep 88 17:55:06 EDT
+Received: from ucscb.UCSC.EDU by ucscc (5.59/1.1)
+	id AA13899; Tue, 13 Sep 88 14:59:40 PDT
+Received: by ucscb.UCSC.EDU (4.12/4.7)
+	id AA07914; Tue, 13 Sep 88 14:56:32 pdt
+Date: Tue, 13 Sep 88 14:56:32 pdt
+From: therat%ucscb.UCSC.EDU@ucscc.UCSC.EDU (the fugitive guy)
+Message-Id: <8809132156.AA07914@ucscb.UCSC.EDU>
+To: jwm@stdc.jhuapl.edu
+Subject: Re: Universal Simulator Mailing List
+Status: RO
+
+I have no degrees as yet, and ot much useful to contribute to this list as yet.
+I was albe to answer the one tectonics querie because I watched an unusual 
+amount of public television when I was younger and i picked up a lot of mostly-
+useless trivia.  I can contribute programming skills, but so can just about
+everyone else on the list.  I will soon have a copy of _the scince of fractal
+images_ and may be able to contribute new tweaks to the algorithms therein,
+but that isn't much of a contribution.  I'ma thrid year math major who hasn't 
+taken very much math, although before a year has past I may have taken a class
+in fractal geometry that just opened up here at UCSC.  maybe then I'll be of
+some help.
+
+-w
+
+>From dasys1!newsome@uunet.UU.NET Tue Sep 13 21:46:46 1988
+Return-Path: <dasys1!newsome@uunet.UU.NET>
+Received: from uunet.UU.NET by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA06243; Tue, 13 Sep 88 21:41:55 EDT
+Received: from dasys1.UUCP by uunet.UU.NET (5.59/1.14) with UUCP 
+	id AA23283; Tue, 13 Sep 88 21:44:34 EDT
+Received: by dasys1.UUCP (anilla/UUCP-Project/rel-1.0/11-05-86)
+	id AA14652; Tue, 13 Sep 88 21:15:44 EDT
+Date: Tue, 13 Sep 88 21:15:44 EDT
+From: dasys1!newsome@uunet.UU.NET (Richard Newsome)
+Message-Id: <8809140115.AA14652@dasys1.UUCP>
+To: jwm@stdc.jhuapl.edu
+Subject: Re:  Actual postings
+Cc: n>, FGbnD>t, >&, GEp&Gn@uunet.UU.NET
+Status: RO
+
+File of ACTUAL postings follows:
+
+
+*--*  Qmodem Session Capture File  *--*
+
+*--*  Qmodem Capture File  08/01/88 23:14:53  *--*
+
+News>
+
+
+
+News> Read news
+
+Do you want to skip old (already read) news? (y/n) n
+
+Do you want to use the visual interface? (y/n) n
+
+
+
+------------------------------
+
+Newsgroup rec.games.programmer
+
+------------------------------
+
+
+
+Article 242 of 254, Wed 01:23.
+
+Subject: Re: C-ROBOTS.... arc'ed?
+
+Keywords: HELP!
+
+nd, Oh)
+
+(34 lines) More? [ynq] 244
+
+
+
+Article 244 of 254, Jul 25 17:36.
+
+Subject: want playing card bitmaps
+
+From: dcc@hpcldcc.HP.COM (Don Cameron @ HP NSG/ISD Computer Language Lab)
+
+(15 lines) More? [ynq] n
+
+
+
+Article 245 of 254, Wed 21:09.
+
+Subject: More questions about Actual
+
+Keywords: Actual version 6.6
+
+From: dmb@morgoth.UUCP (David M. Brown @ Goldberg-Zoino and Assoc., Newton, MA)
+
+Newsgroups: rec.games.programmer,rec.games.misc
+
+(57 lines) More? [ynq] y
+
+[ Actual v6.6, on uVAX II, under Ultrix 2.0 ]
+
+
+
+Thank you to all those who sent me the Quasi-Space and CyberTime
+
+libraries.  They are really great!  I sent two PsiBorgs back.  One
+
+got lost, but the other one got an old copy of the List (about six
+
+aeons old).  It wasn't immediately useful, but I did get an idea (I
+
+think) about what might be on it now.
+
+
+
+Thanks to jerri@mwvax1 for info on the Planet Compiler.  The trick is
+
+to use a second-generation Hydrogen Cloud (as I did) but also to
+
+fertilize it with a Rogue Comet (which I thought was unnecessary).  A
+
+regular Comet does not add enough rare earth metals.  You can also get
+
+the Rogue Comet to leave some RNA (I won't tell how).  Also, jerri
+
+pointed out that for Type G's, it helps to have at least two ice ages,
+
+(you get that with $(ICE) = 2 in the makefile).  Try it, you'll like it!
+
+
+
+witchazel@suncity was very informative as well as providing me with
+
+the newer Politics Editor.  I recommend it very highly.  I got to a
+
+Stage 12 very quickly and it has been stable for about 6 hours now
+
+(seven game centuries).  The keyboard macros make it much easier to
+
+maintain parity between the Scientists and the others.  Only problem
+
+was that when Bartering died out, Travel wasn't yet sufficiently
+
+advanced to allow for Asteroid Belt exploitation so there was one
+
+very messy period there when the Enemy was in every Clique.  I think
+
+I wore out the ^U on my keyboard!
+
+
+
+Anyway, I have a coupla more questions:
+
+
+
+     1.  Can using ChronStop affect later Interpreter Loops when the
+
+you're in the DemiGod Environment?  I use ChronStop a lot, but it
+
+seems to set a bit somewhere so when I eval any Planet-Recursive
+
+function I can't get any side effects.  Like even output!
+
+
+
+     2.  Why doesn't the (my?) Saviour like FTL travel?  Can there
+
+be more than one?  Does each planet have to breed it's own Saviour,
+
+or is there some other way for it to travel?  Can Robotics have
+
+Saviours?  One of mine seems to need it real bad.  Perhaps I should
+
+just wipe it and re'Gram it?  Seems a waste...
+
+
+
+     3.  I tried opening the SpaceNet server as a raw device.  Then I
+
+read the Star Matrix directly into the debugger.  Right there in the
+
+hexeditor was a very remarkable pattern!  I can't believe it still
+
+works as a program.  Is this intentional?  If so, I must compliment
+
+the authors on not only an extremely absorbing game system, but also a
+
+genuine work of art.  (You may bow now.  You know who you are.)
+
+
+
+Actually yours,
+
+
+
+David Brown
+
+{harvard | ll-xn | mirror}!adelie!morgoth!dmb
+
+ICF Technology, Robinson Plaza II, Suite 200, Pittsburgh, PA  15205
+
+(412) 788-9200
+
+
+
+ WE CHALLENGE our traditions
+
+      BECAUSE we believe
+
+        TRUTH without questioning
+
+     IS FALSE
+
+
+
+^L
+
+
+
+Article 246 of 254, Thu 11:14.
+
+Subject: Re: More questions about Actual
+
+Keywords: Actual version 6.6
+
+From: jmay@bbn.com (Jason May @ Bolt Beranek and Newman Inc., Cambridge MA)
+
+Newsgroups: rec.games.programmer,rec.games.misc
+
+(7 lines) More? [ynq] y
+
+Would someone mind describing Actual?  It sounds marvelous,
+
+but I've never heard of it before.  Is it freely redistributable?
+
+Where can I get a copy of it?
+
+
+
+Thanks,
+
+
+
+Jason
+
+
+
+Article 247 of 254, Thu 12:07.
+
+Subject: Re: More questions about Actual
+
+Keywords: Actual version 6.6
+
+ch)
+
+Newsgroups: rec.games.programmer,rec.games.misc
+
+(14 lines) More? [ynq] y
+
+603@bbn.COM>):
+
+>Would someone mind describing Actual?  It sounds marvelous,
+
+>but I've never heard of it before.  Is it freely redistributable?
+
+>Where can I get a copy of it?
+
+
+
+Ditto!!!
+
+
+
+joel
+
+
+
+--
+
+                The thief
+
+                  Left it behind--
+
+                    The moon at the window.
+
+                                                -Ryokan
+
+
+
+Article 248 of 254, Jul 22 16:57.
+
+Subject: hi
+
+/8 - Tolar's Taver, Mesa AZ)
+
+(7 lines) More? [ynq] y
+
+
+
+   This is your boy Khary can I join your team?
+
+
+
+--
+
+St. Joseph's Hospital/Medical Center - Usenet <=> FidoNet Gateway
+
+Uucp: ...ncar!noao!asuvax!stjhmc!8!Khary.Williams
+
+Internet: Khary.Williams@f8.n114.z1.fidonet.org
+
+
+
+Article 249 of 254, Jul 22 22:20.
+
+Subject: hi
+
+/8 - Tolar's Taver, Mesa AZ)
+
+(7 lines) More? [ynq] y
+
+I don;t have a team yet but you can join when i get one.
+
+
+
+
+
+--
+
+St. Joseph's Hospital/Medical Center - Usenet <=> FidoNet Gateway
+
+Uucp: ...ncar!noao!asuvax!stjhmc!8!Barry.Williams
+
+Internet: Barry.Williams@f8.n114.z1.fidonet.org
+
+
+
+Article 250 of 254, Jul 23 15:59.
+
+Subject: hi
+
+/8 - Tolar's Taver, Mesa AZ)
+
+(7 lines) More? [ynq] y
+
+
+
+  ok! Najah going to join to when she get's on!
+
+
+
+--
+
+St. Joseph's Hospital/Medical Center - Usenet <=> FidoNet Gateway
+
+Uucp: ...ncar!noao!asuvax!stjhmc!8!Khary.Williams
+
+Internet: Khary.Williams@f8.n114.z1.fidonet.org
+
+
+
+Article 251 of 254, Thu 21:58.
+
+Subject: Re: More questions about Actual
+
+, CA.)
+
+Newsgroups: rec.games.programmer,rec.games.misc
+
+(12 lines) More? [ynq] y
+
+In article <27603@bbn.COM> jmay@alexander.bbn.com.BBN.COM (Jason May) writes:
+
+>Would someone mind describing Actual?  It sounds marvelous,
+
+>but I've never heard of it before.  Is it freely redistributable?
+
+>Where can I get a copy of it?
+
+
+
+>From the kind of questions the original Actual poster asked, I don't believe
+
+that the posting was for real: I don't believe "Actual" actually exists.
+
+Because if it does, I will get a copy and play until I get fired and my dog
+
+runs away and my girlfriend dumps me for a migrant marshmallow picker.
+
+
+
+                                                Mark Stevans
+
+                                                Cynical Syndicate
+
+
+
+Article 252 of 254, Wed 21:28.
+
+Subject: Re: Need Quasi-Space and CyberTime libraries for Actual
+
+tle)
+
+(15 lines) More? [ynq] y
+
+In article <473@morgoth.UUCP> dmb@morgoth.UUCP (David M. Brown) writes:
+
+>
+
+>Can anyone tell mw how to get the new Quasi-Space and CyberTime libraries
+
+>for Actual?  I think I have version 6.6 ??
+
+     ^^^^^^
+
+Never heard of this game.  Is it commercial or PD.  A computer game?
+
+
+
+More info please!
+
+
+
+
+
+--
+
+-randy groves - Boeing Advanced Technology Center
+
+UUCP:   ..!uw-beaver!uw-june!bcsaic!randy     USNail: Boeing Computer Services
+
+CSNET:  randy@boeing.com                              PO Box 24346 M/S 7L-68
+
+VOICE:  (206)865-3424                                 Seattle, WA   98124
+
+
+
+^L
+
+
+
+Article 253 of 254, Fri 13:22.
+
+Subject: Re: Need Quasi-Space and CyberTime libraries for Actual
+
+RIAL RUBBER PROD)
+
+(29 lines) More? [ynq] y
+
+In article <473@morgoth.UUCP> dmb@morgoth.UUCP (David M. Brown) writes:
+
+>
+
+>Can anyone tell mw how to get the new Quasi-Space and CyberTime libraries
+
+>for Actual?  I think I have version 6.6 ??
+
+
+
+
+
+Well, I am a little reluctant to be doing this, because I know what's going
+
+to happen, but...  I'm the author of the Quasi-Space library for Actual.
+
+Sorry about the delay with the new version, but my Laws of Physics module
+
+broke when I added in the Matsuda constant.  Do you have 6.6 of Actual or
+
+6.6 of the QS library?  Because the current version of QS is 7.0.  I can
+
+send that to you if you give me your registration number.
+
+
+
+Version 7.0 of Actual should be out by the end of August.  It will include
+
+8.0 of the QS library, with any luck.
+
+
+
+Please, please, please don't send me mail about bugs in Actual.  Our
+
+customer support person can be reached at albemuth@gorgo.valis.com, but
+
+he does not read net mail frequently, because he can't figure out "mail".
+
+
+
+Good luck.
+
+
+
+-jeremy bornstein
+
+ staff programmer
+
+ valis actual harp prod
+
+ indus rial rubber prod
+
+ (617)-495-9025
+
+ 100 rotor blvd.
+
+ cambridge, ma 02138
+
+
+
+^L
+
+
+
+Article 254 of 254, Fri 14:17.
+
+Subject: Re: Actual
+
+From: fischer.pa@XEROX.COM (fischer.pa @ The Internet)
+
+(9 lines) More? [ynq] y
+
+I tried to send a return message to the person posting about the game "Actual"
+
+but there is no such user at the original sending host.
+
+
+
+This is a hoax gamelovers (not mine).
+
+
+
+Sorry,
+
+(ron)
+
+Gamemasters moderator
+
+[Coming soon... really]
+
+
+
+Last article.  [qfr] q
+
+Current location is rec.games.programmer.
+
+
+
+*--*  Qmodem Capture File  08/03/88 10:38:17  *--*
+
+Read news
+
+Do you want to skip old (already read) news? (y/n) n
+
+Do you want to use the visual interface? (y/n) n
+
+
+
+------------------------------
+
+Newsgroup rec.games.programmer
+
+------------------------------
+
+
+
+Article 242 of 257, Jul 27 01:23.
+
+Subject: Re: C-ROBOTS.... arc'ed?
+
+Keywords: HELP!
+
+From: gregr@ncoast.UUCP (Gregory Roberts @ Cleveland Public Access UN*X, Cleveland, Oh)
+
+(34 lines) More? [ynq] 255
+
+
+
+Article 255 of 257, Fri 22:00.
+
+Subject: Re: Need Quasi-Space and CyberTime libraries for Actual
+
+From: julian@uhccux.uhcc.hawaii.edu (Julian Cowley @ University of Hawaii at Manoa)
+
+(23 lines) More? [ynq] y
+
+I have been playing Actual with the old Cybertime library 
+
+version 6.5 for some time now.  It's really getting to be a 
+
+pain because my Hypertime Priority is stuck at a whopping 83%, 
+
+and I can't find the Gateway Guardian to insert a multiplexor 
+
+into the Celion preprocessor unit in order to bring it down to 
+
+a normal level.  At first I thought this was a Feature, but 
+
+now I realize that I'm just down a couple versions.  Anybody 
+
+care to mail me some updates?
+
+
+
+Btw, I would spend more time trying to finally reach the Optimizer
+
+Complex (I've been at it for more than two weeks straight now),
+
+but unfortunately my sysop has been entering through the NICE
+
+portal and has been tagging me for some ChronStop units which 
+
+I managed to nab while I was down in the Omaticron System.  
+
+Hee hee hee! Still, if anyone has got past this point, I'd 
+
+sure like to know.
+
+
+
+Thanks for the attention.
+
+
+
+Julian Cowley, U. of Hawaii at Manoa
+
+julian@uhccux.uhcc.hawaii.edu
+
+{uunet,ucbvax}!ucsd!nosc!uhccux!julian
+
+[7m--More--[mjulian@uhccux.bitnet
+
+
+
+^L
+
+[7m--More--[m [K
+
+Article 256 of 257, Fri 18:02.
+
+Subject: Re: Need Quasi-Space and CyberTime libraries for Actual
+
+From: jnh@ece-csc.UUCP (Joseph Nathan Hall @ North Carolina State University, Raleigh, NC)
+
+(28 lines) More? [ynq] y
+
+In article <5045@husc6.harvard.edu> jjb@husc4.UUCP (Jeremy J. Bornstein) writes:>In article <473@morgoth.UUCP> dmb@morgoth.UUCP (David M. Brown) writes:
+
+>>
+
+>>Can anyone tell mw how to get the new Quasi-Space and CyberTime libraries
+
+>>for Actual?  I think I have version 6.6 ??  
+
+>
+
+>Version 7.0 of Actual should be out by the end of August.  It will include
+
+>8.0 of the QS library, with any luck.
+
+>
+
+Version _7.0_?  What the hell happened to version 6.7???  And what the
+
+hell is valis doing with Actual?  I just got a letter about the 6.7 enhancement
+
+from SoftCom last week.  Did you buy them out???  What gives?
+
+
+
+The new PE is great (love those multiple windows!) but I've had the same
+
+problem with Bartering that someone else had mentioned, but I found that
+
+if you establish Underground Cities you can avoid some of the infiltration.
+
+But really, guys, there ought to be some way around having to do a whole round
+
+of Politics without having to hit "OK" forty or fifty times.  Maybe an
+
+improved macro handler or something.
+
+
+
+But--who is valis, anyway?   I'm not going to have to pay for 7.0, am I?
+
+Sheesh, not even a note in the mail!
+
+[7m--More--[m[K
+
+-- 
+
+v   v sssss|| joseph hall                      || 201-1D Hampton Lee Court
+
+ v v s   s || jnh@ece-csc.ncsu.edu (Internet)  || Cary, NC  27511
+
+  v   sss  || the opinions expressed herein are not necessarily those of my
+
+-----------|| employer, north carolina state university . . . . . . . . . . . 
+
+
+
+^L
+
+[7m--More--[m [K
+
+Article 257 of 257, Fri 15:09.
+
+Subject: Re: More questions about Actual
+
+Keywords: Actual version 6.6
+
+From: jwm@stdc.jhuapl.edu (Jim Meritt @ JHU-Applied Physics Laboratory)
+
+Newsgroups: rec.games.programmer,rec.games.misc
+
+(16 lines) More? [ynq] y
+
+In article <6135@pyr.gatech.EDU> joel@pyr.UUCP (Joel Rives) writes:
+
+}>jmay@alexander.bbn.com.BBN.COM (Jason May) (jmay@alexander.bbn.com.BBN.COM, <27603@bbn.COM>):
+
+}>Would someone mind describing Actual?  It sounds marvelous,
+
+}>but I've never heard of it before.  Is it freely redistributable?
+
+}>Where can I get a copy of it?
+
+}
+
+}Ditto!!!
+
+
+
+
+
+op.cit!
+
+
+
+
+
+Disclaimer: Individuals have opinions, organizations have policy.
+
+            Therefore, these opinions are mine and not any organizations!
+
+Q.E.D.
+
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+
+
+^L
+
+[7m--More--[m [K
+
+*--*  Qmodem Capture File  08/08/88 12:18: 8  *--*
+
+(9 lines) More? [ynq] n
+
+? for commands.
+
+(9 lines) More? [ynq] n
+
+
+
+Article 259 of 263, Jul 31 02:06.
+
+Subject: Actually for real!
+
+, CA.)
+
+Newsgroups: rec.games.programmer,rec.games.misc
+
+(25 lines) More? [ynq] y
+
+As I guessed earlier, Actual seems to be a hoax -- but it is a great hoax.  I
+
+know some of us might get a little peeved at those who pull our collective
+
+leg, but this was not only harmless, but downright inspired.  To paraphrase the
+
+original poster, alias "David M. Brown", I must compliment him on not only
+
+a very clever faux game, but a genuine net-work of art.
+
+
+
+After all, programming games is easy -- you just move your fingers on the old
+
+keyboard.  But thinking up such a stimulating and absorbing set of game
+
+concepts as he/she/them/it did is much more of a challenge, don't you think?
+
+Why, look how fast those Actual hint requests got our attention!  Why, we were
+
+on him like a poundful of playful puppies!
+
+
+
+What I'd like is for this hoax to kick off a veritable tsunami of supergame
+
+brainstorming for real.  With such a kick in the seat of our pants, some of us
+
+game writers could very well get motivated enough to actually actuate Actual!
+
+
+
+Come on now, we've got plenty of bright boys and girls out there -- I can hear
+
+you breeding!  All we need is to collect some more ideas, start some volunteers
+
+coding -- you college students don't have anything important to do -- and we
+
+could actually release Actual 1.0 in, say, 1st quarter 1989.
+
+
+
+Let the conceptualizing begin!
+
+
+
+                                                Mark Stevans
+
+                                                spar!navtech!mark
+
+
+
+^L
+
+
+
+Article 260 of 263, Jul 31 02:40.
+
+Subject: personal message to Actual poster
+
+, CA.)
+
+(13 lines) More? [ynq] y
+
+A brief personal message to the Actual poster: I notice you are a fan of the
+
+late science fiction author Philip K. Dick.  I am a member of the Philip K.
+
+Dick society, and have about a hundred different editions of his books.  As a
+
+matter of fact, I even have a copy of "A Handful of Darkness" that once
+
+belonged to Phil: he had written some notes in it and ripped out one of the
+
+stories -- I sent a xerox (TM) of the writing to the literary executor of his
+
+estate, who sent me back a letter confirming that the writing was indeed PKD's.
+
+
+
+Please drop me a line -- I'd love to discuss his works, many of which deal with
+
+hoaxes, as you no doubt know.
+
+
+
+                                                        Mark "Dickhead" Stevans
+
+                                                        spar!navtech!mark
+
+
+
+Article 261 of 263, Tue 13:50.
+
+Subject: Coleco ADAM Documentation
+
+Keywords: Coleco ADAM
+
+r, NY)
+
+
+
+(18 lines) More? [ynq] n
+
+
+
+Article 262 of 263, Aug  1 12:50.
+
+Subject: Actualization
+
+Keywords: Space gaming!
+
+ch)
+
+(59 lines) More? [ynq] y
+
+Though the actual details of the game "Actual" (pun most definately intended)
+
+are -- at best -- a bit vague, some of the realted concepts tossed about
+
+in connection with the supposed game are much less so. I agree, there is
+
+certainly plenty of fertile ground here for the imagination. Though I think
+
+that programs designed by committee are doomed to failure (or at best
+
+mediocrity), avid discussion of the various realated topics can only
+
+serve to aide those who do undertake implement the ideas.
+
+
+
+Here, let me toss out an idea that has been floating around in my mind
+
+recently. I have been mulling over the possibility of a space exploration
+
+and planetary development game in which there is a one-to-one mapping
+
+of solar systems to host machines (or more likely -- domains). Each domain
+
+would be responsible for maintaining the database of information about it's
+
+solar system and would coordinate with a Master Server somewhere concerning
+
+various shared data. I perceive at least two levels of play in such a game
+
+construct. At the most abstract level, which would be handled exclusively
+
+by the Master Server, one might include such things as interstelar travel
+
+and the perils found therein. Most definately, the Master Server should allow
+
+hooks for seperate and divergent technologies from various areas of the
+
+galaxy. The Master Server would also be required to impose limits and
+
+
+
+The Domain Servers could be locally developed programs that conform to
+
+a standard imposed by the Master Server. In this sense, they might be seen
+
+as clients, with respect to the Master Server. However, their functionality
+
+suggests that of a server. Various forms of client programs could be developed
+
+to make use of the database of information about the local solar system
+
+maintained by the Domain Server. The amount and depth of information that
+
+any particular Domain maintains is up to the site. There will be a minimal
+
+amount of information that will be maintained by the Master Server for each
+
+Solar System. Beyond that, it is up to the implementers at that site.
+
+
+
+that such a game system would be best implemented as one in which players
+
+control a number of entities, for which they issue orders that are processed
+
+on a regular basis either by the Master Server or the Domain Server depending
+
+upon which scale the entity exists. For instance, the Master Server might
+
+reasonably be expected to know only about those entites which can traverse
+
+deep space. This would include -- for the most part -- Interstellar space
+
+vehicles and solar systems. Players at this level of the game would be
+
+concerned largely with travel, exploration, fleet battles and attacks on
+
+enemy planets. One implementation of the local Domain Server might be fairly
+
+robust and include a wide variety of entities necissary for running a
+
+tactical diplomacy game, wherein the various factions vie for power and
+
+control of the various planetary resources available in that solar system.
+
+
+
+These are just a few ideas that i would like to pass around and open discussion
+
+on. If anyone has any comments or constructive criticisms, i welcome them.
+
+If there is anyone who would like to help me implement some of these ideas,
+
+i would definately like to talk to you.
+
+
+
+joel
+
+
+
+
+
+--
+
+                The thief
+
+                  Left it behind--
+
+                    The moon at the window.
+
+                                                -Ryokan
+
+
+
+^L
+
+
+
+Article 263 of 263, Mon 13:34.
+
+Subject: Actual ideas begin here
+
+, CA.)
+
+(78 lines) More? [ynq] y
+
+Forwarding this for Actual public comment -- this gentleman sounds like he's
+
+knowledgeable and ambitious enough to make his ideas work out in Actuality:
+
+
+
+>From spar!decwrl!ucbvax!ll-vlsi.arpa!davea Mon Aug  1 08:28:18 1988
+
+Return-Path: <spar!decwrl!ucbvax!ll-vlsi.arpa!davea>
+
+        id AA11072; Mon, 1 Aug 88 08:28:16 PDT
+
+Received: by navtech.com (3.2/SMI-3.2)
+
+        id AA14706; Mon, 1 Aug 88 08:27:56 PDT
+
+Received: By SPAR.SLB.COM
+
+        id AA05901; Mon, 1 Aug 88 08:27:17 PDT
+
+Received: from ucbvax.Berkeley.EDU by decwrl.dec.com (5.54.5/4.7.34)
+
+        id AA04607; Mon, 1 Aug 88 08:21:21 PDT
+
+Received: from [10.1.0.10] by ucbvax.berkeley.edu (5.59/1.28)
+
+        id AA04249; Mon, 1 Aug 88 08:18:04 PDT
+
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+
+        id AA05903; Mon, 1 Aug 88 08:18:15 EDT
+
+Date: Mon, 1 Aug 88 08:18:15 EDT
+
+From: Dave Allen <spar!decwrl!ucbvax!ll-vlsi.arpa!davea>
+
+Message-Id: <8808011218.AA05903@ll-vlsi.arpa>
+
+To: mark@navtech.com
+
+Subject: Actual !!
+
+Cc: davea@ll-vlsi.arpa
+
+Status: RO
+
+
+
+Mark,
+
+
+
+Really programming something like Actual sounds like an amazing
+
+idea.  I have been working on pieces of something like it for years.
+
+Alas, my net.node just got net access and our postnews does not seem
+
+to post beyond our node.  So, I thought I'd email this to you.
+
+If you think it's worthwhile, I'd appreciate it if you would repost
+
+to rec.games.programmer.
+
+
+
+A statement of what we are trying to do: Write a program that
+
+simulates the evolution of a large number of star systems,
+
+showing the development of intelligent life, invention of culture,
+
+and inter-relationships of interstellar civilizations.  Key points
+
+are the variety of lifeforms, differing rates and types of technological
+
+development, and a variety of interaction modes for alien contacts.
+
+The resulting program would be something you would sit back and
+
+watch, like the Scientific American game Life.  Each simulation
+
+timestep, the universe would get a little older.
+
+
+
+Before firing up the simulation, a two- or three- dimensional
+
+grid should be set up and filled with stars.  Some details on
+
+each star must be generated.  If we have a small universe or a
+
+huge amount of storage space, we can generate a lot of details
+
+on each star's planets, etc. beforehand; minimally, we just need
+
+to give the stars positions.
+
+
+
+At each timestep, we check to see if any new intelligent life
+
+forms (ILFs) appear, and if so we detail them.  We follow the
+
+cultural evolution of the existing ILFs.  If there are any starfaring
+
+ILFs we determine what new stars their sphere of influence reaches
+
+and detail those star systems.  If they contact an ILF they have not
+
+contacted before, detail the encounter.
+
+
+
+Some interesting possibilities - a very old culture that develops
+
+intellectually but not technologically, never leaving its planet,
+
+contacted by a young, expansionistic race.  A race that developed
+
+an obscenely high tech level and then died out, leaving artifacts
+
+for younger races to find.  Two races based on completely different
+
+biologies whose spheres of influence overlap for millenia before
+
+they each realize the other is intelligent.  And so on - the
+
+possibilities are endless, and one of the beautiful things about
+
+the program is that you can just watch it to find new, neat
+
+combinations nobody has already written SF books about.
+
+
+
+> Path: vlsi!ll-xn!ames!pasteur!ucbvax!decwrl!spar!navtech!mark
+
+This is what I got out of your posting - I recognize ucbvax so I'll
+
+try posting to decwrl!spar!navtech!mark@ucbvax.berkeley.edu.  Is
+
+there an internet node closer to you?
+
+
+
+Thanks in advance,
+
+Dave Allen: internet davea@LL-VLSI.arpa
+
+MIT Lincoln Laboratory, Lexington, MA
+
+(try ...ucbvax!ll-vlsi.arpa!davea ?)
+
+
+
+^L
+
+
+
+Last article.  [qfr]
+
+Current location is rec.games.programmer.
+
+
+
+*--*  Qmodem Capture File  08/11/88  9:42:47  *--*
+
+(24 lines) More? [ynq] n
+
+
+
+Article 265 of 265, Aug  2 21:16.
+
+Subject: Re: C-ROBOTS.... arc'ed?
+
+Keywords: HELP!
+
+da)
+
+(40 lines) More? [ynq] b
+
+
+
+Article 264 of 265, Aug  2 22:30.
+
+Subject: Re: Actual ideas begin here
+
+From: jwm@stdc.jhuapl.edu (Jim Meritt @ JHU-Applied Physics Laboratory)
+
+(24 lines) More? [ynq] y
+
+In article <181@navtech.uucp> mark@navtech.uucp (Mark Stevans) writes:
+
+}A statement of what we are trying to do: Write a program that
+
+}simulates the evolution of a large number of star systems,
+
+}showing the development of intelligent life, invention of culture,
+
+}and inter-relationships of interstellar civilizations.  Key points
+
+}are the variety of lifeforms, differing rates and types of technological
+
+}development, and a variety of interaction modes for alien contacts.
+
+}The resulting program would be something you would sit back and
+
+}watch, like the Scientific American game Life.  Each simulation
+
+}timestep, the universe would get a little older.
+
+
+
+
+
+2 suggestions.
+
+
+
+1. let me in on this: I've been working on the "how did system develop"
+
+for quite a while.... just never got around to coding it...
+
+
+
+2. use execution faster than real time   ;~)
+
+
+
+
+
+Disclaimer: Individuals have opinions, organizations have policy.
+
+            Therefore, these opinions are mine and not any organizations!
+
+Q.E.D.
+
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+
+
+^L
+
+
+
+Article 265 of 265, Aug  2 21:16.
+
+Subject: Re: C-ROBOTS.... arc'ed?
+
+Keywords: HELP!
+
+da)
+
+*--*  Qmodem Capture File  09/03/88  2: 2:38  *--*
+
+r	l>n>6x>>l>|>z>&
+
+>From aplcomm!aplcen!mimsy!oddjob!uwvax!dogie!uwmcsd1!ig!agate!saturn!ucscb.UCSC.EDU!sinster Wed Sep 14 08:59:35 EDT 1988
+Status: RO
+
+Article 317 of rec.games.programmer:
+Path: aplcomm!aplcen!mimsy!oddjob!uwvax!dogie!uwmcsd1!ig!agate!saturn!ucscb.UCSC.EDU!sinster
+>From: sinster@ucscb.UCSC.EDU (Lord Jerrin Talmont, Anti-Social Nature Freak)
+Newsgroups: rec.games.programmer
+Subject: An addition to Bruce Stephens' fractal technique
+Message-ID: <4815@saturn.ucsc.edu>
+Date: 13 Sep 88 04:53:37 GMT
+Sender: usenet@saturn.ucsc.edu
+Reply-To: sinster@ucscb.UCSC.EDU (Darren Senn)
+Organization: University of California, Santa Cruz; CATS
+Lines: 61
+
+In message <274@marque.mu.edu> bruces@marque.mu.edu (Bruce Stephens) writes
+>
+>        4. Choose the values at the midpoints of the lines in your
+>        mesh. The basis should be an average of the endpoint heights,
+>        then you add (random-0.5)*length, where random is a random
+>        number [0,1) and length is the length of the side that you're
+>        subdividing.
+>
+My basic method for generating fractal landscapes is just like yours with 
+one difference.  Instead of multiplying by the length of the line, I start
+my program with a z-range value.  On each iteration, I halve that and use
+it for the multiplier.  I also set the four corners to random values instead
+of fixing them at 0.  It produces much more interesting landscapes.
+
+You also mentioned using some method to "smooth" the surface.  One method
+I use that I lifted straight from Mandelbrot's "The Fractal Geometry of 
+Nature" follows:
+
+	After the landscape has been generated, and before it has been
+	drawn, cube each z value in the array (you can square it, but you
+	will lose the sign of the number) and divide by some large value
+	to bring these values back into reasonable ranges.
+
+This step tends to smooth out locations close to sea level (which I always
+set to zero), while making mountains more craggy, and sea valleys steeper.
+The modification is truly impressive...
+
+A method I generated on my own to erode the scenery is quite slow, but very
+realistic when you went through many iterations:
+
+	With each cell in the array, perform the following:
+	a)	Calculate the norm (perpendicular vector) to the cell.
+	b)	Find the cell in the array that is closest (on the plane)
+		to the direction that norm points in.
+	c)	Find the difference in heights between the two cells.  Divide
+		by some "constant of erosion."
+	d)	Record in a secondary array of the same size as the first, that
+		the first cell's height should be lowered by the result of (c),
+		and the second cell's height should be raised by the result
+		of (c).
+	When this has been done to each cell in turn, update each cell by
+	the values stored in the second array.  The whole procedure can be
+	repeated as much as is desired.  For added realism, you can use another
+	array of "cohesion" bands.  In step (c), the difference in heights 
+	is divided by the cohesion value for the height of that cell before
+	(or after) being divided by the erosion constant.  This way, some
+	heights will erode faster than others, reflecting a crude form
+	of stratification.  This stratification can be further improved by
+	using another two-dimensional array (of the same size as the first)
+	into which the original (pre-erosion) landscape is copied.  The 
+	height values in this copy are subtracted from the height of the
+	original cell before looking up the cohesion of that altitude.  This
+	permits the stratifications to be wrinkled, instead of simple plains
+	(which is never the case).
+
+I can continue to improve on the method (vegetation, stratification independent
+of the original terrain, etc.) but down this path leads madness (and a thesis).
+
+						Darren Senn
+						sinster@ucscb.UCSC.EDU
+						ucscb.UCSC.EDU!sinster
+
+
+>From aplcomm!aplcen!umd5!adm!cmcl2!nrl-cmf!ames!ll-xn!vlsi!davea Wed Sep 14 09:00:44 EDT 1988
+Status: RO
+
+Article 318 of rec.games.programmer:
+Path: aplcomm!aplcen!umd5!adm!cmcl2!nrl-cmf!ames!ll-xn!vlsi!davea
+>From: davea@vlsi.ll.mit.edu (Dave Allen)
+Newsgroups: rec.games.programmer,rec.games.frp
+Subject: Universe Simulator Summary
+Message-ID: <163@vlsi.ll.mit.edu>
+Date: 13 Sep 88 13:10:35 GMT
+Distribution: rec
+Organization: MIT Lincoln Laboratory, Lexington MA
+Lines: 42
+Xref: aplcomm rec.games.programmer:318 rec.games.frp:4234
+
+Summary of discussion on the unofficial "Universe Simulation" mailing list,
+Sept 8 - Sept 13:
+
+Josh Siegal has established an anonymous ftp account for our archives
+  at hc.dspo.gov (or dspo.dspo.gov or 192.12.184.4).  As of 8 Sept, the
+  directory pub/usml contains all the source code we have received as
+  well as copies of all the relevant messages.  Thanks Josh!
+Andy Sheppard (convex!sheppard@uunet.uu.net) mailed us some programs
+  that generate star systems using a mixture of ideas from the ICE SFRPG
+  "Future Law / Tech Law", Steve Jackson Games "GURPS Space" and his
+  own research.  It's written in C; here is one planet from a sample
+  system: 3.  radius 17.46 AU,  ecosphere planet; length of year 192.96 EU
+  length of day 36 hours; diameter 0.68 EU; surface gravity 0.60 G
+  density 0.80 EU (4.40),  composition low-iron; industrial metals plentiful
+  light metals plentiful; organics plentiful; small moons 1
+  axial tilt 12 degrees (minor seasonal effects)
+  terrain - mountainous/volcanic
+  atmosphere - plethora of toxic trace metals and gases
+Dave Allen (davea@vlsi.ll.mit.edu, hey that's me!) described some
+  attempts I'm making towards a tectonic simulator.  The goal is a
+  program which is fun to watch; you start it up and it does an animation
+  of a randomly-generated planet, showing how its continents drift.  I'd
+  like it to have a number of parameters so that it could be run for
+  planets like earth - parameters such as fraction of water, planet size,
+  and so on.  Right now there's no worthwhile code, and I'm in the
+  process of experimenting with a new algorithm and writing some
+  code to make rigid plates move on spheres without distortion.
+Eric Haines wrote to describe a prepackaged routine available through
+  the net to make fractal mountains.  It's a pre-packaged database
+  generator intended to benchmark ray tracing algorithms and machines.
+  To get it, send a one-line message to netlib@anl-mcs.arpa, saying
+  "Send Haines from Graphics".  That msg will be read by computer.
+Bruce Stephens (bruces@marque.mu.edu) summarized the algorithm
+  he uses to draw single fractal mountains.  Darren Senn
+(sinster@ucscb.ucsc.edu) suggested a smoothing method for
+  fractal mountains and described an iterative method for simulating
+  erosion by raising and lowering adjacent triangles in the mountain.
+
+Please contact Jim Meritt (jwm@stdc.jhuapl.edu) for information requests
+or to be added to / deleted from the list.
+
+Dave Allen: internet davea@vlsi.ll.mit.edu or @ll-vlsi.arpa
+
+
+>From aplcomm!aplcen!umd5!haven!rutgers!pyrnj!pyrdc!uunet!mcvax!ukc!dcl-cs!bath63!py_pad Wed Sep 14 09:11:16 EDT 1988
+Status: RO
+
+Article 4235 of rec.games.frp:
+Path: aplcomm!aplcen!umd5!haven!rutgers!pyrnj!pyrdc!uunet!mcvax!ukc!dcl-cs!bath63!py_pad
+>From: py_pad@ux63.bath.ac.uk (Dale)
+Newsgroups: rec.games.frp
+Subject: Re: Campaign writing.
+Keywords: I did, didn't you?
+Message-ID: <2939@bath63.ux63.bath.ac.uk>
+Date: 12 Sep 88 10:55:43 GMT
+References: <2557@mtuxo.att.com> <5255@pasteur.Berkeley.EDU> <2925@bath63.ux63.bath.ac.uk> <1802@aplcomm.jhuapl.edu>
+Reply-To: py_pad@ux63.bath.ac.uk (Dale)
+Organization: University of Bath, England
+Lines: 32
+
+In article <1802@aplcomm.jhuapl.edu> jwm@aplvax.UUCP (Jim Meritt) writes:
+>In article <2925@bath63.ux63.bath.ac.uk> py_pad@ux63.bath.ac.uk (Dale) writes:
+>}I find it easiest to set out the barest detail necessary and hope 
+>}the players can help me explore my own campaign universe.
+>
+>In your opinoin, what constitutes the "barest detail" necessary?
+>
+>I'm in the Universe Simulation group, and the question has come up to just
+>how fine this should grind things.  Sun - yes. Planet - yes. Air - yes.
+>Mountains - yes. Lifeforms - yes. ???? - ????
+>
+ A real toughie when it's sci-fi. I ran Traveller a *long* time ago and
+found it incredibly hard to come up with original ideas about more than a
+few planets.
+ Barest detail for a fantasy world is easier. I will give fact sheets to
+players according to their knowledge skills but all players will have
+some common knowledge (basic religion, economics, social structure). The
+point is, I find it easier to write a little and then have a campaign 
+questions and answers session (makes for a relaxed evening :-) before
+the campaign kicks off the following week.
+ Back to 'Universe Simulation', I would answer by saying it should really
+depend on the intended use. For our Tuesday group a little among friends
+is fine and the system seems to work. If the scope is to be further then
+I forsee *major* problems.
+ I would always go for the kind of detail which will give a good impression
+of the feel of the world, a style and atmosphere that players can get into.
+An example would be say architectural styles, music, social nuances...
+ I realise I'm being very vague but I hope this answers you some of the
+way,
+Paul (the other one)
+
+p.s.  I'd be very interested in how your group does things.
+
+
+>From cs2551af@charon.unm.edu Wed Sep 14 16:11:26 1988
+Return-Path: <cs2551af@charon.unm.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10299; Wed, 14 Sep 88 16:11:12 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA07974; Wed, 14 Sep 88 14:00:38 MDT
+Received: from charon.unm.edu by unmvax.unm.edu (5.59/1.9)
+	id AA25665; Wed, 14 Sep 88 13:58:42 MDT
+From: Brian Bowers <cs2551af@charon.unm.edu>
+Date: Wed, 14 Sep 88 14:00:39 MDT
+Message-Id: <18347.8809142000@charon.unm.edu>
+To: usml@hc.dspo.gov
+Subject: My Interest in the Mailing List
+Status: R
+
+
+	Since others have gotten the ball rolling (and Jim did request it)
+I guess I should let others know my interests.
+
+	I joined the mailing list to gain some ideas for the generation of
+maps, primarily for fantasy gaming.  By seeing what other people think, and
+commenting on it, I get a better picture of what I think.  This mailing list
+serves me as a place to put forward my (feeble) theories, and then get some
+response, letting me know where I need to strengthen my knowledge.  I have
+an admittedly weak background in anything to do with this list, but I don't
+expect to make some ground-breaking discovery.  (One course in Anthropology,
+some elementary school experience with predicting the weather, and an 
+interest in the way things work).
+
+	When Jim posted his list of people interested in certain sub-groups,
+he listed me in the climatology discussion.  While I am interested in that,
+I am slightly more interested in the discussion of the rise and fall of
+nations, beginning from 'hunter-gatherers.'  In a world with magic, what
+would the ramifications of a single spell be on a tribe of hunter-gatherers.
+(Low level of course.  Imagine a caveman with fireball capabilities:
+	Caveman 1:  We need a fire.
+	Caveman 2:  Yeah.  But how.
+Fireball Caveman :  Guys, watch this.
+	Fireball :  Whoosh.
+Charred Caveman 1:  Maybe a fire wasn't such a good idea.
+Charred Caveman 2:  Yeah, and HOW!!)
+
+	Well, that's enough for now.
+
+		Brian Bowers
+		cs2551af@charon.unm.edu
+
+
+>From siegel@hc.dspo.gov Wed Sep 14 16:13:30 1988
+Return-Path: <siegel@hc.dspo.gov>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10312; Wed, 14 Sep 88 16:13:14 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA08412; Wed, 14 Sep 88 14:18:36 MDT
+Date: Wed, 14 Sep 88 14:18:36 MDT
+From: siegel@hc.dspo.gov (josh Siegel)
+Message-Id: <8809142018.AA08412@hc.dspo.gov>
+X-Mailer: Mail User's Shell (6.3 6/25/88)
+To: jwm@stdc.jhuapl.edu
+Subject: Re: bounced message
+Status: R
+
+> 
+> From: jwm@stdc.jhuapl.edu (Jim Meritt)
+> To: siegel@hc.dspo.gov
+> Subject: Re: bounced message
+> 
+> If that is all that bounce from all that you have in the list, either your
+> are a lot better connected than I am (or am able to use) or am a LOT better
+> at this than I am (no suprise there, either....)
+> 
+> Jim
+> 
+> 
+
+
+that is all that has bounced so far...
+
+I am a node on milnet, on arpanet, and on NSFnet...
+
+This is also the second list I have maintained and am very used to
+dealing with internet addresses.  Still, I hope it will become easier
+as time goes on... I have been spending about 3 hours a day for the last
+3 days fixing messages and getting things to work.
+
+I just added:
+	caa@midgard.midgard.mn.org,
+	pomru@life.pawl.rpi.edu,
+	kagst@unix.cis.pittsburgh.edu,
+	cdr@amdcad.AMD.COM,
+	dasys1!newsome@uunet.UU.NET,
+	whjelmar@skat.usc.edu,
+	voder!polyslo!jeff@ucbvax.berkeley.edu
+
+to the list..
+
+Why don't you put me in your usml-request on your machineso I get the
+requests as soon as they come in.
+
+I also put in Universe10 and Universe11 as well as Actual and the 
+Shebs thing (what shuld I call it?) but I havn't removed the
+mail headers yet or looked at them.
+
+			--Josh Siegel
+
+
+                                                                                                                                                         

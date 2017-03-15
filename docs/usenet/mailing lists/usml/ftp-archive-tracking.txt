@@ -1,0 +1,54 @@
+USML Original ftp archive:
+% ftp hc.dspo.gov
+% ftp 192.12.184.4
+% ftp dspo.dspo.gov
+it is in the pub/usml directory.
+
+   It contains:
+
+-rw-rw-r--  1 root     wheel       41639 Sep  8 17:17 OtherSun.src
+-rw-rw-r--  1 root     wheel        5334 Sep  8 17:17 fractal.c
+-rw-rw-r--  1 root     wheel       60385 Sep  8 17:18 system.arc
+-rw-rw-r--  1 root     wheel       28499 Sep  8 17:18 traveller.src
+-rw-rw-r--  1 root     wheel       28241 Sep  8 17:21 universe1
+-rw-rw-r--  1 root     wheel       38380 Sep  8 17:21 universe2
+-rw-rw-r--  1 root     wheel       27108 Sep  8 17:19 universe3
+-rw-rw-r--  1 root     wheel       58656 Sep  8 17:19 universe4
+-rw-rw-r--  1 root     wheel       19669 Sep  8 17:19 universe5
+-rw-rw-r--  1 root     wheel       17853 Sep  8 17:20 universe6
+-rw-rw-r--  1 root     wheel       28485 Sep  8 17:20 universe7
+-rw-rw-r--  1 root     wheel       26256 Sep  8 17:20 universe8
+-rw-rw-r--  1 root     wheel       28505 Sep  8 17:21 universe9
+
+The first 4 are source code for random system generation routines and fractal
+landscapes.  The 9 universe files are past messages, rec.games.frp/programmer
+articles relevant,.....
+
+I also put in Universe10 and Universe11 as well as Actual and the
+Shebs thing (what shuld I call it?) but I havn't removed the
+mail headers yet or looked at them.
+
+
+USML Second ftp archive:
+Name:           Universal Simulation Mailing List (usml) ftp site
+Address:        topgun.agps.lanl.gov (192.12.184.4)
+Info Updated:   25-Feb-1991
+Notes:          Once upon a time, some net.people made a joke about writing a
+                program or two that simulated the Universe. Ho ho ho. Pretty
+                funny. But other people took them seriously and thus was born
+                the short lived mailing list called usml, and thus were written
+                a number of programs which simulated various parts of the
+                universe. There are subsector generators for Traveller, star
+                system generators using several methods, and plate tectonic
+                generators to generate random land masses (not very pretty).
+
+                Here are the contents of pub/usml:
+
+                Actual                  accrete.c               shebs
+                Archive                 accretion.amiga         siod.c
+                Digests                 accretion.src           starcul.shar
+                List                    archive                 starform
+                OtherSun.src            cellsim_1.5.tar.Z       system.arc
+                Psychohistory           fractal.c               traveller.tar
+                README                  plates.c                xc5.1-tar.Z
+                Universe                references

@@ -1,0 +1,782 @@
+From @RELAY.CS.NET:wirthlin@UVM.CSNET Fri Sep  2 11:04:14 1988
+Return-Path: <@RELAY.CS.NET:wirthlin@UVM.CSNET>
+Received: from RELAY.CS.NET by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA07367; Fri, 2 Sep 88 11:02:09 EDT
+Message-Id: <8809021502.AA07367@stdc.jhuapl.edu>
+Received: from relay2.cs.net by RELAY.CS.NET id ad15594; 2 Sep 88 10:25 EDT
+Received: from uvm by csnet-relay.csnet id ad06883; 2 Sep 88 10:12 EDT
+Received: by uvm.EDU (5.51/2.4D)
+	id AA06617; Fri, 2 Sep 88 09:09:01 EDT
+Date: Fri, 2 Sep 88 09:09:01 EDT
+From: Ralph Wirthlin <wirthlin%uvm.csnet@RELAY.CS.NET>
+To: jwm%stdc.jhuapl.edu@RELAY.CS.NET
+Subject: Re:  Universe Simulator
+Status: RO
+
+Thanks for replying.  Yes, I would appreciate an archive of what has already
+been discussed;  I missed most of the recent postings.
+	Excuse me if this has already been beat to death, but has anyone 
+in this discussion considered using fractals to generate terrain.
+The basic idea is to circle a sphere using random faults (10000 faults works
+rather nicely).  I've heard rumors that STARFLIGHT generates its planetary
+surfaces using this method (I've only seen the game, I don't actually have it)
+Of course, the disadvantage is the incredible amount of cpu time that this 
+requires.  This could be offset at the cost of flexibility by building a
+database of planetary surfaces.
+	Just throwing out some ideas.  If you have any suggestions for
+improvement, please don't hesitate to flame away.
+
+				Ralph
+
+
+
+From jwm Fri Sep  2 12:00:11 1988
+To: aplvax\!att.arpa\!cbnews.att.com\!elk, aplvax\!vax.bbn.com\!dredick,
+    cs2551af@charon, cthulhu@athena, davea@ll-vlsi.arpa, jfc@athena,
+    jl3j@andrew.cmu.edu, jyamato@cory, malloy@nprdc.arpa, mjs%mozart@research.att.com,
+    netxcom!ewiles@uunet.uu.net, oconnor@sccgate.scc.com, pearl@aramis.rutgers.edu,
+    sinster%ucscb.UCSC.EDU@ucscc.ucsc.edu, therat@ucscb@ucscc.ucsc.edu,
+    unido\!altmuc\!hnt@uunet.UU.NET, vax.bbn.com\!oak.bbn.com\!milliken,
+    wes@umix.cc.umich.edu, wirthlin%uvm.csnet@RELAY.CS.NET, yaj@ford-wdl1.arpa
+Subject: Universe Simulator Mailing List
+Status: RO
+
+
+A few more references I dug up....
+
+Extraterrestrial Zoology
+	R. A. Freitas, Analog July 81
+
+Xenobiology
+	R. A. Freitas, Analog Mar 81
+
+Xenopsychology
+	R. A. Freitas, Analog Apr 81
+
+Structure of the Lower Atmosphere of Venus
+	C. Sagan, Icarus 1, 151-169 (1962)
+
+The Energy Budget and Atmospheric Circulation on a synchronously
+Rotating Planet
+	Mintz, Icarus, 172-173 (1962)
+
+Formation of the Sun and Planets
+	A. G. W. Cameron, Icarus 1, 13-69 (1962)
+
+The Circulation of the Upper Atmosphere
+	R. E. Newell, Scientific American March 1964
+
+Life in Darwin's Universe
+	G. Bylinsky, Omni Sept 79
+
+Alfred Wegener and the Hypothesis of Continental Drift
+	A. Hallam, Scientific American Feb 1975
+
+The Lost Seas of Venus
+	W. J. Kaufmann, Science Digest Sept 1982
+
+Huminoids on Other Planets
+	R. Bieri, American Scientist, August, 52, 1964
+
+A Referee's Guide to Planet-Building
+	Journal of the Traveller's Aid Society #11
+
+
+From jwm Fri Sep  2 12:12:33 1988
+To: aplvax\!att.arpa\!cbnews.att.com\!elk, aplvax\!vax.bbn.com\!dredick,
+    cs2551af@charon, cthulhu@athena, davea@ll-vlsi.arpa, dcw@stdb,
+    jfc@athena, jl3j@andrew.cmu.edu, jyamato@cory, malloy@nprdc.arpa,
+    mjs%mozart@research.att.com, netxcom!ewiles@uunet.uu.net, oconnor@sccgate.scc.com,
+    pearl@aramis.rutgers.edu, sinster%ucscb.UCSC.EDU@ucscc.ucsc.edu,
+    therat@ucscb@ucscc.ucsc.edu, unido\!altmuc\!hnt@uunet.UU.NET, vax.bbn.com\!oak.bbn.com\!milliken,
+    wes@umix.cc.umich.edu, wirthlin%uvm.csnet@RELAY.CS.NET, yaj@ford-wdl1.arpa
+Subject: Universe Simulator Mailing List
+Status: RO
+
+How about everyone give some relevant experience, references, observations,
+whatever.  So far only a couple of us have given information, and a lot
+of people have asked for it.  Input, anyone?
+
+"Let there be light" (and stars, planets, air, people,...)
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+From jwm Fri Sep  2 14:04:28 1988
+To: aplvax\!att.arpa\!cbnews.att.com\!elk, aplvax\!vax.bbn.com\!dredick,
+    cs2551af@charon, cthulhu@athena, davea@ll-vlsi.arpa, dcw@stdb,
+    jfc@athena, jl3j@andrew.cmu.edu, jyamato@cory, malloy@nprdc.arpa,
+    mjs%mozart@research.att.com, netxcom!ewiles@uunet.uu.net, oconnor@sccgate.scc.com,
+    pearl@aramis.rutgers.edu, sinster%ucscb.UCSC.EDU@ucscc.ucsc.edu,
+    therat@ucscb@ucscc.ucsc.edu, unido\!altmuc\!hnt@uunet.UU.NET, vax.bbn.com\!oak.bbn.com\!milliken,
+    wes@umix.cc.umich.edu, wirthlin%uvm.csnet@RELAY.CS.NET, yaj@ford-wdl1.arpa
+Subject: Universe Simulation Mailing List
+Status: RO
+
+
+
+----- Begin Forwarded Message -----
+
+From @aplvax.jhuapl.edu:elk%cblpn%cbnews@att.arpa Fri Sep  2 13:56:58 1988
+Return-Path: <@aplvax.jhuapl.edu:elk%cblpn%cbnews@att.arpa>
+Received: from aplvax.jhuapl.edu by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA08219; Fri, 2 Sep 88 13:55:42 EDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA21061; Fri, 2 Sep 88 14:00:10 EDT
+From: cblpn!elk@cbnews.att.com
+Received: by cbnews.ATT.COM (smail2.5)
+	id AA23759; 2 Sep 88 13:48:54 EDT (Fri)
+Date: 2 Sep 1988 13:44-EST
+From: elk
+Subject: Fractal Landscape
+To: cbnews!att.arpa!aplvax.jhuapl.edu!jwm
+Message-Id: <88/09/02 1344.000@cblpn>
+In-Reply-To: jwm's message of Fri, 2 Sep 88 103335 EDT
+Origin: cblpn
+Status: R
+
+
+Included is a copy of my fractal program.  All it does it
+to take a flat grid.  Pick two points on that grid,
+draw a line between them.  THen pick a side of the line.
+Everythign on one side moves up, everything on the other
+moves down.  Repeat.  Then it prints themap out using some
+pretty arbitrary ranges I've set up for how high things
+are relative to each other.
+
+To use it you will need three routines which for ease of
+transmission I haven't included.  They are
+cls() [clear the screen].
+cursor(x,y) position the cursor at (x,y) on the screen
+rnd(a,b) [return a random integer between a and b inclusive]
+
+(pretty trivial stuff).
+
+Thanks,
+Ed
+
+<Source follows>
+
+----------------------------------------------------------------------------
+
+#include <stdio.h>
+
+/* 
+ * Generate fractal landscapes.
+ * MAP contains elevation.
+ *
+ * Basic algorithm: draw a line through the map.
+ *                  everything on one side moves up 1
+ *                  everything on the other moves down 1.
+ */
+ 
+
+int map[61][79];
+
+
+/*------------------------------------------* 
+ *                                          *
+ * Routine: fraqtl.                         *
+ *                                          *
+ * Purpose: Draw fractal landscape.         *
+ *                                          *
+ * Description: Pick two points (x1,y1),    *
+ *              (x2,y2).  Figure the eqn    *
+ *              for that line.  Now pick s, *
+ *              a random side of the line.  *
+ *              Everything on one side of   *
+ *              the line moves up one;      *
+ *              Everything on the other side*
+ *              moves down 1.               *
+ *                                          *
+ * Caveats: Disallows verticle lines, due to*
+ *          problems calculating slope.     *
+ *                                          *
+ *------------------------------------------*/
+void fraqtl(a,b)
+int a,b;			/* x size, y size */
+{
+	int     s,		/* s=1, side above line incremented;
+	  			   s=0, side below line incremented. */
+	        i,		/* loop counters */
+	        j,
+	        x1,		/* Point one */
+	        y1,
+	        x2,		/* Point two */
+	        y2,
+	        m,		/* slope of line connecting p1 and p2 */
+	        p,		/* y-intercept of line */
+	        l,		/* loop counter */
+	        n,		/* Number of iterations */
+	        t;		/* temporary variable */
+		
+
+/* 
+ * Get number of iterations.  The more you have the better the maps
+ */
+
+	printf ("Iterations: ");
+	scanf ("%d", &n);
+
+/* 
+ * reset map to start
+ */
+
+	for (i=0;i<=a;i++) {
+		for (j=0;j<=b;j++) {
+			map[i][j]=0;
+		}
+	}
+
+/* 
+ * Now do the real work
+ */
+
+	for (l = 0; l <= n; l++) {
+
+/* 
+ * Pick points a and b, disallowing vertical lines
+ */
+
+		x1=rnd(0,a);
+		y1=rnd(0,b);
+		y2=rnd(0,b);
+		x2=rnd(0,a);
+		while (x1 == x2) {
+			x2=rnd(0,a);
+		}
+
+/* 
+ * Calculate equation of line
+ */
+ 
+
+		m = (y2 - y1) / (x2 - x1);
+		p = y1 - (m * x1);
+
+/* 
+ * Pick a random side of the line
+ */
+		s = rnd (0, 1);
+
+/* 
+ * Now, loop through each coordinate on the map.
+ */
+ 
+		for (i = 0; i <= a; i++) {
+			for (j = 0; j <= b; j++) {
+
+/* 
+ * t= the value of the line equation at that point
+ */
+ 
+				t = (m * j) + p;
+/* 
+ * If s=1, increment stuff above the line and decrement stuff
+ * below.  Otherwise, do just the opposite.
+ */
+				if (s) {
+
+					if (i > t) {
+						map[i][j]++;
+					} else {
+						map[i][j]--;
+					}
+				} else {
+					if (i > t) {
+						map[i][j]--;
+					} else {
+						map[i][j]++;
+					}
+
+				}
+			}
+		}
+
+	}
+}
+
+
+
+/*------------------------------------------* 
+ *                                          *
+ * Routine: prfrct                          *
+ *                                          *
+ * Purpose: print fractal map               *
+ *                                          *
+ * Description: Loop through each point on  *
+ *              the map, give it a symbol   *
+ *              based on arbitrary height   *
+ *              ranges.                     *
+ *                                          *
+ * Caveats: height ranges are arbitrary and *
+ *          expressed as a fraction of max. *
+ *          Most always gens a coast, almost*
+ *          never the Himalayas             *
+ *                                          *
+ *------------------------------------------*/
+void prfrct(a,b)
+int a,b;
+{
+	int i,j,m;
+	
+	cls();			/* clear screen */
+	
+/* 
+ * Find maximum height on the map
+ */
+
+	m=0;
+	for (i=0;i<=a;i++) {
+		for (j=0;j<=b;j++) {
+			if (map[i][j]>m) m=map[i][j];
+		}
+	}
+
+/* 
+ * Now print border and map.
+ * '~' --- Oceans
+ * ' ' --- Coastal plains
+ * '*' --- Forrest lands
+ * '.' --- Highlands, hills
+ * '^' --- Mountains
+ */
+ 
+	for (i=0;i<=b+1;i++) putchar ('-');
+	printf("\n");	
+	
+	for (i=0;i<=a;i++) {
+		putchar('|');
+		for (j=0;j<=b;j++) {
+
+			if (map[i][j]<0) putchar('~');
+
+			if ((map[i][j]>=0)&&(map[i][j]<(m/2))) putchar(' ');
+
+			if ((map[i][j]>=(m/2))&&(map[i][j]<(m*2/3))) putchar('*');
+			if ((map[i][j]>=(m*2/3))&&(map[i][j]<(m*5/6))) putchar('.');
+			if ((map[i][j]>=(m*5/6))) putchar('^');
+		}
+	printf("|\n");
+	}
+	for (i=0;i<=b+1;i++) putchar ('-');
+	printf("\n");
+
+}
+
+/*------------------------------------------* 
+ *                                          *
+ * Routine: main                            *
+ *                                          *
+ * Purpose: Just build fractals forever     *
+ *                                          *
+ * Description:                             *
+ *                                          *
+ * Caveats:                                 *
+ *                                          *
+ *------------------------------------------*/
+main ()
+{
+	srand ();
+	while (1) {
+
+		fraqtl (60,76);
+		prfrct (60,76);
+	}
+
+}
+		
+	
+	
+
+		
+					
+
+----- End Forwarded Message -----
+
+
+"Let there be light" (and stars, planets, air, people,...)
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+
+From jwm Fri Sep  2 14:57:40 1988
+To: aplvax\!att.arpa\!cbnews.att.com\!elk, aplvax\!vax.bbn.com\!dredick,
+    cs2551af@charon, cthulhu@athena, davea@ll-vlsi.arpa, dcw@stdb,
+    jfc@athena, jl3j@andrew.cmu.edu, jyamato@cory, malloy@nprdc.arpa,
+    mjs%mozart@research.att.com, netxcom!ewiles@uunet.uu.net, oconnor@sccgate.scc.com,
+    pearl@aramis.rutgers.edu, sinster%ucscb.UCSC.EDU@ucscc.ucsc.edu,
+    therat@ucscb@ucscc.ucsc.edu, unido\!altmuc\!hnt@uunet.UU.NET, vax.bbn.com\!oak.bbn.com\!milliken,
+    wes@umix.cc.umich.edu, wirthlin%uvm.csnet@RELAY.CS.NET, yaj@ford-wdl1.arpa
+Subject: universe simulation mailing list 
+Status: RO
+
+
+
+----- Begin Forwarded Message -----
+
+From @aplvax.jhuapl.edu:jyamato@cory.berkeley.edu Fri Sep  2 14:55:17 1988
+Return-Path: <@aplvax.jhuapl.edu:jyamato@cory.berkeley.edu>
+Received: from aplvax.jhuapl.edu by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA08638; Fri, 2 Sep 88 14:53:32 EDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA21637; Fri, 2 Sep 88 14:53:52 EDT
+Received: by cory.Berkeley.EDU (5.59/1.28)
+	id AA14835; Fri, 2 Sep 88 11:49:45 PDT
+Date: Fri, 2 Sep 88 11:49:45 PDT
+From: jyamato@cory.berkeley.edu (YAMATO JON AYAO)
+Message-Id: <8809021849.AA14835@cory.Berkeley.EDU>
+To: jwm@aplvax.jhuapl.edu
+Subject: Universe (small scale)
+Status: R
+
+Here are my interests.  I'm afraid they're only tangentially related
+to the aims of this mailing list....
+
+Suppose that one has a landscape, either generated by simulation
+or drawn by hand.  What are the possible patterns of climate and
+weather?  Where will deserts, rain forests, plains naturally fall?
+How is this affected by latitude and other temperature considerations?
+
+Suppose that one has people on this landscape.  What are the patterns
+of population density to be expected?  That is, if there are x people
+in a useable land area of y, how large will the largest cities likely
+be?  The average towns?  How many people is too many for a given mode
+of life?
+
+At what size do small local units start aggregating into larger ones?
+I have "nations" in my campaign world where loose aggregates of city-states
+might be more reasonable, given low population densities.
+
+I'm not interested in simulating history as such.  For me, all the interest
+and use in history lies in the unique, unexpected human quirks.  Mass
+trends predicatable by psychohistory are background at best.
+
+Mary Kuhner
+
+
+
+----- End Forwarded Message -----
+
+"Let there be light" (and stars, planets, air, people,...)
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+
+
+
+From cs2551af@charon.unm.edu Fri Sep  2 16:03:13 1988
+Return-Path: <cs2551af@charon.unm.edu>
+Received: from unmvax.unm.edu by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10121; Fri, 2 Sep 88 16:00:15 EDT
+Received: from charon.unm.edu by unmvax.unm.edu (5.59/1.9)
+	id AA11802; Fri, 2 Sep 88 14:01:56 MDT
+From: Brian Bowers <cs2551af@charon.unm.edu>
+Date: Fri, 2 Sep 88 14:03:06 MDT
+Message-Id: <7270.8809022003@charon.unm.edu>
+To: jwm@stdc.jhuapl.edu
+Subject: Universe Simulation Mailing List
+Organization: University of New Mexico, Albuquerque, NM
+Cc: 
+Status: RO
+
+
+[much of Mary Kuhner's letter para-phrased to save space]
+
+[ general trends for weather (with deserts and forests being examples) ]
+
+Mountains, when coupled with winds can create some interesting weather
+patterns.  The leeward side of the mountain range will tend to be drier
+than the windward side.  Very high mountain ranges can border your
+deserts very nicely.  The windward side, being rained on quite frequently,
+can either become a jungle (tropical rain forest), a deciduous (sp?) forest
+(temperate weather), a coniferous forest (temperate to arctic), or a snowy
+waste (arctic).
+
+Also note that deserts may be found on the coast.  If you postulate that
+the level of the seas on your planet have dropped very slowly, great
+deposits of salt can be left along the coast.  Such salt deposits tend
+to ruin the land for life (although some animals might venture there
+occasionally to supplement the salt in their diet).  Plant life will be
+very scarce, and will tend toward those forms that are carnivorous
+(giant honeydews, venus fly traps, et al).
+
+[ possible expectations for population density ]
+
+Hunter-gatherers will tend to take up very large ranges.  Villages of
+not more than a score of people will tend to be the norm, with each village
+being one family unit.  Families will tend to be greatly extended, with all
+males of a child's father's generation being called father.  Polygynany will
+tend to also be the norm, with females being sold, traded, or given, to
+other males to extend the family.
+
+Agricultural societies will tend to be more numerous, although primitive
+agriculturalists will not be too much more numerous than hunter-gatherers.
+Big-men will begin to appear as rulers.  Big-men are more middle men for
+moving goods around than true rulers, but they do hold some power.  The
+primary crops will be on the order of yams, and other quickly perishable
+foods.
+
+As agriculture progresses, the big-men will be replaced by chiefs.  Chiefs
+will act as store-houses of grain (grain being more rot resistant than
+yams).  The chiefs will also act as war leaders, although they may have to
+bow at times to the wishes of the tribal medicine man.
+
+[ when will nations begin to appear ]
+
+Nations begin to form when the use of land becomes a priviledge rather than
+a right.  A chief might become so powerful that he can order his people to
+leave certain portions of land to him, or to work those lands purely for his
+own gain.  At such a time, the chief will have become a ruler of a nation.
+An army will very likely follow, so as to be able to protect the chief's 
+properties.  These armies will be paid from the store that the chief has
+accumulated, or is accumulating.
+
+City-states should be the first step to forming a nation, with larger nations
+developing as the rulers of city-states expand their influence by might of arms.
+The ruler of each city-state will be very proud of his/her accomplishment, and
+will be almost certainly contemptuous of his peers (some craftier rulers will
+play the innocent, openly admiring the accomplishment of another while plotting
+the overthrow of his "hero").
+
+
+With magic added in, anything is possible, but civilization will tend to grow
+in places where agriculture is dominant, with hunting reduced to a secondary
+role.  Frontier lands, and borders where wars are common will tend to revert
+to hunting-gathering, or will rely on more secure locations for provisions.
+
+Should an area be found to be rich in a commodity, whether that commodity be
+wood, gold, silver, iron, coal, or whatever, somebody will move there to
+exploit the abundance.  This does not necessarily mean that great cities will
+just suddenly pop up, but the seeds will be planted.  And if you should happen
+to have a river or two meet, one from an iron-rich province, and one from
+a coal-rich region ...
+
+>Mary Kuhner
+
+		Brian Bowers
+		cs2551af@charon.unm.edu
+
+
+From netxcom!ewiles@uunet.UU.NET Sat Sep  3 07:53:30 1988
+Return-Path: <netxcom!ewiles@uunet.UU.NET>
+Received: from uunet.UU.NET (192.12.141.129) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10734; Sat, 3 Sep 88 07:52:47 EDT
+Received: from netxcom.UUCP by uunet.UU.NET (5.59/1.14) with UUCP 
+	id AA10790; Sat, 3 Sep 88 04:43:39 EDT
+Received: by netxcom.UUCP (5.52/4.7)
+	id AA15092; Sat, 3 Sep 88 01:25:00 EDT
+From: netxcom!ewiles@uunet.UU.NET (Edwin Wiles)
+Message-Id: <8809030525.AA15092@netxcom.UUCP>
+To: uunet!stdc.jhuapl.edu!jwm@uunet.UU.NET (Jim Meritt)
+Date: Sat, 3 Sep 88 1:24:58 EDT
+Subject: Re: universe simulation mailing list 
+In-Reply-To: Message from "Jim Meritt" of Sep 2, 88 at 2:57 pm
+X-Mailer: Elm [version 1.5b]
+Status: RO
+
+> Subject: Universe (small scale)
+> 
+> Suppose that one has people on this landscape.  What are the patterns
+> of population density to be expected?
+
+Consider that humans tend to congregate either where easy transport is
+available (river mouths, river confluences, either side of a mountain
+pass, harbors, road intersections, etc...), or where raw resources are
+available (good farm land [low pop density, but you'll have a town for
+trading and staples for every X many acres], mines [which leads to ghost
+towns too], good fishing [generally from a safe harbor area], etc..)
+
+I know it's not much on numbers, but it'll point you in the general
+direction....
+
+> At what size do small local units start aggregating into larger ones?
+
+With agrarian societies, the small farm will be part of a loose agregate
+of farms which all center on a town which is no more than 1/4 of a day away
+by whatever is the normal mode of transportation.  You need 1/4th of a day
+to travel to the town for market, 1/2 of a day for market, and 1/4th to travel
+home.  So, the size of your basic 'agregate' depends on the level of
+technology available.
+
+If your only transport for the average joe is his feet, then the largest
+'basic agregate' will be no more than 6 miles radius.  Give him a horse,
+and you get maybe 12 miles.  A team with wagon, you get maybe 20 miles,
+more if it's possible to 'lay-over' at the destination.  A car with good
+roads? Maybe 100 miles radius.
+
+Larger agregates depend heavily on terain.  A flat plain surrounded by
+mountains will probably be under one 'overlord'.  (Call him whatever you
+want, he's the leader...)  Mountainous terrain will probably have more,
+smaller, units centered on valleys. etc....  Eventually, you reach the
+continent size.  The largest independent unit again depends on technology.
+
+If the best you have is feet.  The largest 'nation' will probably be no
+more than 100 miles radius, and basically linked by a common language.
+If you have modern tech, then you can probably cover a continent.
+
+> I have "nations" in my campaign world where loose aggregates of city-states
+> might be more reasonable, given low population densities.
+> 
+> I'm not interested in simulating history as such.  For me, all the interest
+> and use in history lies in the unique, unexpected human quirks.  Mass
+> trends predicatable by psychohistory are background at best.
+
+I think I would recommend the PBS series "The Day the Universe Changed".
+It should give you a good feeling for how individual human quirks can have
+a profound impact on the course of humanity at large.
+
+> Mary Kuhner
+
+	a) I hope it works.
+	b) I hope this message works.... :-)
+
+					Enjoy!
+
+--
+...!hadron\   "Who?... Me?... WHAT opinions?!?" | Edwin Wiles
+  ...!sundc\   Schedule: (n.) An ever changing	| NetExpress Comm., Inc.
+   ...!pyrdc\			  nightmare.	| 1953 Gallows Rd. Suite 300
+    ...!uunet!netxcom!ewiles			| Vienna, VA 22180
+
+From sinster%ucscb.UCSC.EDU@ucscc.UCSC.EDU Sat Sep  3 03:04:36 1988
+Return-Path: <sinster%ucscb.UCSC.EDU@ucscc.UCSC.EDU>
+Received: from ucscc.UCSC.EDU (128.114.130.3) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA10613; Sat, 3 Sep 88 03:04:13 EDT
+Received: from ucscb.UCSC.EDU by ucscc.UCSC.EDU (5.59/1.1)
+	id AA01378; Sat, 3 Sep 88 00:09:53 PDT
+Received: by ucscb.UCSC.EDU (4.12/4.7)
+	id AA25704; Sat, 3 Sep 88 00:06:16 pdt
+Date: Sat, 3 Sep 88 00:06:16 pdt
+From: sinster%ucscb.UCSC.EDU@ucscc.UCSC.EDU (Lord Jerrin Talmont, Anti-Social Nature Freak)
+Message-Id: <8809030706.AA25704@ucscb.UCSC.EDU>
+To: jwm@stdc.jhuapl.edu
+Subject: To be Forwarded to list:  Climate info. based on geography.
+Status: RO
+
+
+Well, here's what I've learned or have been able to figure out from just
+camping out:
+	1)	Clouds tend to form over bodies of water and large
+	concentrations of vegetation.
+	2)	Winds tend to blow from oceans to the land during the
+	day, and from land to the oceans at night (I do know the
+	scientific reason for this if anyone wants it).
+	3)	High mountains tend to cause clouds to pile up against
+	them, letting them all over as one big, dense cloud, instead of
+	the scattered clouds they would have been.  When they get on the
+	other side of the mountains, they tend to drop their load of rain,
+	causing flooding (if enough clouds piled up).
+	4)	Deserts expand over time.  The expansion progresses in
+	all directions, but quickest in the direction that the wind in
+	that area is most likely to blow.
+	5)	Over a particular piece of land, there will usually be
+	two layers of wind, each blowing in different directions.  The upper
+	layer will always be faster.  On Earth, the lower layer of wind
+	spirals clockwise out of high pressure zones, and counter-clockwise
+	into low pressure zones in the Northern hemisphere, and vice versa
+	in the Southern hemisphere (I may have this backwards).  The air
+	flowing into low pressure zones travels higher, cooling and forming
+	clouds, and then away from the low pressure zone, forming the upper
+	layer of wind.  In High pressure zones, the wind leaving is actually
+	wind from the upper layer which has  descended and reversed course.
+	6)	Valleys can trap, redirect, and strengthen winds that blow
+	up their lengths.  One example of this is the infamous Santa Ana
+	winds of Southern California autumns.  Around mid-September, winds
+	in Mexico blow northward over the deserts East of San Diego, and 
+	around Palm Springs, warming up as they go.  The then travel 
+	through the Imperial Valley (?) which funnels the wind into the
+	LA basin.  Viola!  Hot, fast winds...   This can happen anywhere
+	you have the geography for it.
+
+Well.   That's about it...
+
+							Darren
+
+
+From imagen!@decwrl.uucp:apolling!isaak Sat Sep  3 21:11:14 1988
+Return-Path: <imagen!@decwrl.uucp:apolling!isaak>
+Received: from decwrl.dec.com (128.45.9.1) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA11112; Sat, 3 Sep 88 21:10:35 EDT
+Received: by decwrl.dec.com (5.54.5/4.7.34)
+	id AA15957; Sat, 3 Sep 88 18:15:24 PDT
+Received: by imagen.uucp (5.51/Imagen-1.1)
+	id AA04349; Sat, 3 Sep 88 14:56:38 PDT
+Received: by decwrl.dec.com (5.54.5/4.7.34)
+	id AA10250; Sat, 3 Sep 88 14:21:04 PDT
+Received: by imagen.uucp (5.51/Imagen-1.1)
+	id AA04994; Wed, 31 Aug 88 18:36:25 PDT
+Received: by apolling (4.12/inc-1.3)
+	id AA00454; Wed, 31 Aug 88 18:33:49 pdt
+Date: Wed, 31 Aug 88 18:33:49 pdt
+From: imagen!@decwrl.uucp:apolling!isaak (Mark Isaak)
+Message-Id: <8809010133.AA00454@apolling>
+To: imagen!jwm%stdc.jhuapl.edu@decwrl.dec.com
+Subject: Factors affecting coastlines (re: simulator)
+Status: RO
+
+
+    One factor which affects the shape of the land (but which I don't know
+a whole lot about myself) is coral.  Any good geology reference should be
+able to tell you how coral atolls form around islands as the sea level
+gradually rises.  I don't know coral affects continental coastlines, but I
+seem to remember that it does to a fairly large extent.
+
+    You will probably also want to look into barrier islands--those long thin
+islands parallel to the shore such as you see off the coast of the Carolinas.
+Unfortunately, I don't remember how these are formed.  I think it's time for
+me to start studying geology again....
+
+    Relatively small features such as these probably don't need to be added
+to the tectonic simulation itself.  It's probably enough to wait until the
+continents are in place and then put them in where the conditions are right
+for them.  Of course, it all depends on how detailed a simulation you want.
+
+Mark Isaak	{decwrl,sun}!imagen!isaak  or  imagen!isaak@decwrl.dec.com
+
+
+From aplcomm!aplcen!mimsy!haven!uflorida!mailrus!purdue!decwrl!labrea!csli!institut Sun Aug 28 17:03:42 EDT 1988
+Status: RO
+
+Article 3974 of rec.games.frp:
+Path: aplcomm!aplcen!mimsy!haven!uflorida!mailrus!purdue!decwrl!labrea!csli!institut
+From: institut@csli.STANFORD.EDU (LSA Summer Institute Account)
+Newsgroups: rec.games.frp
+Subject: Re: Map-making techniques
+Message-ID: <5286@csli.STANFORD.EDU>
+Date: 26 Aug 88 19:35:12 GMT
+References: <1125@agora.UUCP< <1798@imagen.UUCP< <9927@dartvax.Dartmouth.EDU>
+Reply-To: institut@csli.UUCP (LSA Summer Institute Account)
+Organization: Center for the Study of Language and Information, Stanford U.
+Lines: 29
+
+This is not a flame of the technique.
+Rather, it is an opinion, mixed with a bit of advice for beginning DM's.
+
+You don't _really_ need to watch a computer spin the globe a few times
+to come up with a viable map.  Simply sketch out what *you* want to see
+on the map; it doesn't have to in scale or that accurate, if you don't
+want it to.  In-scale maps are only really good for long-distance travel,
+and you can just guesstimate these times, anyway.
+
+I prefer my method of taking an existing USGS map and sinking it.  Very
+realistic, easily something plate tectonics could come up with (after all,
+it did).  Most players won't realize what's going on, especially with the
+abysmal knowledge of geography most people have today.
+
+If you _do_ add something, and a player says "that doesn't make sense!", you
+can always say "the dwarves did it" or "well, that's what happens when a
+mage creates a volcano", or something.
+
+All that you really need to worry about is weather.  The absolute best
+preparation for this is a basic course in geography, but if necessary,
+you can plug your world into a computer program.  Random charts are
+OK, _if_ they make sense; don't have a blizzard one day and a heat wave
+the next.
+
+
+========================================================================
+Tom Wylie
+send email to wylie@score.stanford.edu,  NOT THE ADDRESS ABOVE!!!
+(this ain't my account, I just use it for bboards)
+I'm the only gamer on the staff, so any opinions can only be my own.
+
+
+
+                                                                                                                                                                                                                                                                  

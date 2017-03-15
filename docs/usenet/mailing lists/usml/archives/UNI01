@@ -1,0 +1,635 @@
+From @aplvax.jhuapl.edu:davea@ll-vlsi.arpa Wed Aug  3 09:07:05 1988
+Return-Path: <@aplvax.jhuapl.edu:davea@ll-vlsi.arpa>
+Received: from aplvax.jhuapl.edu by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA04112; Wed, 3 Aug 88 09:06:55 EDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA07825; Wed, 3 Aug 88 09:09:19 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA23791; Wed, 3 Aug 88 09:10:31 EDT
+Date: Wed, 3 Aug 88 09:10:31 EDT
+From: Dave Allen <davea@ll-vlsi.arpa>
+Message-Id: <8808031310.AA23791@ll-vlsi.arpa>
+To: jwm@aplvax.jhuapl.edu
+Subject: Actual
+Cc: davea@ll-vlsi.arpa
+Status: RO
+
+Jim,
+
+In article 151 of rec.games.programmer you wrote:
+>  From: jwm@stdc.jhuapl.edu (Jim Meritt)
+>  In article <181@navtech.uucp> mark@navtech.uucp (Mark Stevans) writes:
+>> A statement of what we are trying to do: Write a program that
+>> simulates the evolution of a large number of star systems ...
+> 
+>  1. let me in on this: I've been working on the "how did system develop"
+>  for quite a while.... just never got around to coding it...
+
+Glad to hear that you are interested in Actual.  I am too.
+Please read Marks's article again.  Mark did not write that, he
+posted it for me.  I have read-only news access at the moment.
+
+There are really three separate simulations involved here:  
+1)  Simulate the development of planetary systems and stars
+2)  Simulate the growth of a single intelligent race
+3)  Simulate the interaction of starfaring races with other races
+
+A lot of scientists have studied (1), notably Stephen Dole (_Habitable
+Planets for Man_), M.H.Hart (several papers on atmospheric and
+climatic evolution), and so on.  There are also a number of SF
+roleplaying games, eg _Traveller_, _Other Suns_ or _GURPS Space_ that
+take a die-rolling approach to (1).  
+
+I feel that the astrophysically "correct" simulations take too long when
+you want to generate a couple hundred systems.  On the other hand, the
+die-rolling star system generators are biased towards generating
+human-habitable planets and don't feel as "real" to me.  The work I
+have done, I admit, uses a die-rolling approach.  I have written
+some kind of program that generates star sectors, much like programs
+people have written for Trav.
+
+To my knowledge, nobody has studied (2) in the literature.  SFRPGs
+all have some method of generating alien races but they don't give
+you any feel for how the race developed.  I am working on a journal
+paper describing a simulator for cultural development.
+
+There are a huge number of examples of (3); almost every SF book has 
+one.  OK, not _almost every_, but there are a lot.  Almost every SF
+book I read has one.  The trick is that every example is generated
+by hand.  Some author sits down for a couple of hours / days / years
+and thinks out an interesting wrinkle nobody else has used.
+
+I'm pretty sure nobody has ever tried to do a simulation of (3).  If
+we do, one use for it will be to watch it until it generates a 
+really interesting universe, and then write a story set in that
+universe.  I have a program that handles contact between starfaring
+races in a really simple way, only about five different interactions
+(peace, war, one conquers the other, one teaches the other, one
+destroys the other).  I stopped working on it because I needed
+a lot more detail on (2) before I could go much further.
+
+So, what kinds of things have you worked on?  If we have a common
+interest maybe we can share our ideas on problems we've run into.
+Maybe we can take some ideas and program them independently, to
+get two different approaches.
+
+Hope to hear from you soon!
+Dave Allen: davea@ll-vlsi.arpa: MIT Lincoln Laboratory, Lexington, MA
+
+P.S. The mailer does not seem to recognize stdc.jhuapl.edu - I
+found your node number as aplvax.arpa, so this is to jwm@aplvax.arpa.
+
+From @aplvax.jhuapl.edu:davea@ll-vlsi.arpa Mon Aug 22 10:27:25 1988
+Return-Path: <@aplvax.jhuapl.edu:davea@ll-vlsi.arpa>
+Received: from aplvax.jhuapl.edu by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA07966; Mon, 22 Aug 88 10:27:10 EDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA01984; Mon, 22 Aug 88 10:31:41 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA05372; Mon, 22 Aug 88 10:31:36 EDT
+Date: Mon, 22 Aug 88 10:31:36 EDT
+From: Dave Allen <davea@ll-vlsi.arpa>
+Message-Id: <8808221431.AA05372@ll-vlsi.arpa>
+To: jwm@aplvax.jhuapl.edu
+Subject: Universe Simulator
+Status: RO
+
+Jim,
+I'm interested in getting some references from you, or maybe just details
+of how you made things work.  I'm not in the astrophysics field (instead,
+computer design) so I don't know a lot of the basic equations.
+
+> I lifted a condensate version of planetary creation to derive size and
+> probable core/crust composition.
+Is this the ACCRETE simulator that a lot of people use?  I forget who
+developed it - S. Dole, I think.  What information do you get re core/crust
+composition?  Does it take into account the metallicity of the dust
+(ie Pop II stars have low metal content)
+ 
+> I used star temp and the distance/mass of the planet to get probable
+> atmosphere composition & pressure (ev calculations, liquid water temp
+> range, dust, that type of stuff)
+Does this sort of computation give you Venus?  Hart has done a lot of work
+on an outgassing simulator that models the chemistry of interchanges
+between ocean, rocks, life and atmosphere.  I have a version I got from
+a friend that runs on an IBM PC in Basic.  What did you do with Dust?
+
+> I performed a few fits to the only system I knew to get random generators
+> for stuff like moons & rings.  Did use roch stuff for breakups.
+OK, here's a question.  What kinds of ranges of results did you get?
+I can not figure out why Jupiter has moons and Saturn has rings.
+Also, I can't figure out why Mars has a couple of rocks in orbit while
+Earth has Luna.  My best guess is that Luna is captured, as is
+Nereid of Neptune.
+
+I tried out this theory by modifying ACCRETE so that when planetesimals
+orbital ranges overlap one can capture the other.  The original says
+that they always collide.  This gave me good results, actually; the
+only problem is that I couldn't simulate the orbital interactions of
+the captured moon with other moons.  For example, I think Neptune has
+only one other moon, in a really eccentric orbit.  My theory says that
+when Nereid was captured Neptune had a moon system like Jupiter's, but
+Nereid disrupted their orbits and they collided with Neptune or
+Nereid.
+ 
+> Looked at traveler & universe for some surface conditions, though for
+> terrestrial-types there is a reasonable amount of climatology that
+> is not too numeric intensive.  You can use a process similiar to the
+> fractile landscapes on surfaces other than elevation.
+
+I'm afraid I didn't understand this.  I've played with fractal landscapes.
+
+The only climatology stuff I've seen is some papers in _Icarus_
+describing systems of differential equations taking _days_ of computer
+time to solve.  I'd really like to see something that could take
+distance from sun, length of year, length of day and axial tilt, and
+give you things like prevailing wind and climate patterns.  Can you
+give me any pointers?
+
+>> 2)  Simulate the growth of a single intelligent race
+> tough - evolution is interesting enough (have seen some interesting models)
+> but they are for stuff like trees.
+I'd really like to see some more about those!  Where could I look?
+
+>> 3)  Simulate the interaction of starfaring races with other races
+>> I'm pretty sure nobody has ever tried to do a simulation of (3). 
+> I have seen something sort of like this.  It was just for the solar system,
+> though, with developments of "spheres of influence" from projected/developed
+> centers.  graphics looked interesting.  Some elementary economic modelling
+> was thrown in.
+Again, I'd really like to hear more about these.
+
+I have three or four IBM PC Basic programs lying around which I could
+us-mail you if you're interested:
+1)   ACCRETE, the planetary accretion simulator, from Dole
+1a)  A modification of (1) to allow captured moons, by me
+1b)  Another modification of (1) which uses the same accretion engine
+     to produce reasonable moon systems - good matches for Jupiter
+     and Mars, also by me
+2)   Hart's atmosphere simulator
+
+> jwm@aplvax.jhuapl.edu or jwm@aplvax.arpa works fine.  I have an account there
+> and it has a .forward.  stdc is 128.244.176.18
+Hm, I can't find either stdc or 128.244.176.18 in my /etc/hosts.
+
+I hope we can continue this discussion - I'm very interested!
+
+Dave Allen: davea@ll-vlsi.arpa - MIT Lincoln Lab, Lexington, MA
+
+From davea@ll-vlsi.ARPA Mon Aug 22 14:35:24 1988
+Return-Path: <davea@ll-vlsi.ARPA>
+Received: from XN.LL.MIT.EDU (10.2.0.10) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA11146; Mon, 22 Aug 88 14:34:58 EDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Mon, 22 Aug 88 14:14:18 EDT
+Posted-Date: Mon, 22 Aug 88 14:13:11 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA07732; Mon, 22 Aug 88 14:13:11 EDT
+Date: Mon, 22 Aug 88 14:13:11 EDT
+From: Dave Allen <davea@ll-vlsi.ARPA>
+Message-Id: <8808221813.AA07732@ll-vlsi.arpa>
+To: jwm%stdc.jhuapl.edu@XN.LL.MIT.EDU
+Subject: Universe Simulator
+Status: RO
+
+Jim,
+
+>> I have three or four IBM PC Basic programs lying around which I could
+>> us-mail you if you're interested:
+> Yep.  I'm interested.  It might take a few days, but I'll dig around and
+> come up with the stuff I did.  (however much is still around.....)
+
+Send me your us-mail address and I'll send this off to you.  5" floppy, 
+the kind that holds 360K?  Or do you just want paper copies.  I'm afraid
+I can't e-mail them.
+
+> You can get climatology from the parameters you gave, but you have to throw in
+> things like distance from ocean (for habitable) in direction of prevailing
+> winds (planet-wide hadley cells for prevailing zones).  For microclimates
+> ("local weather") you sorta gotta cheat (statistical separation from 
+> predicted climate)  I think I have an article that has a basic program that
+> dies the planetwide climate from orbital characteristics someplace.  Or 
+> maybe the other way (climate to orbit).
+
+Anything you have on this, I'd really appreciate.  I have never been able
+to find a way to get started on this, and a meteorologist is definitely
+the right person to ask.
+
+My us-mail address is 
+Dave Allen
+19-B Dudley St
+Arlington, MA 02174
+
+Dave
+
+From jwm Mon Aug 22 10:43:50 1988
+To: davea@ll-vlsi.arpa
+Subject: Re:  Universe Simulator
+Status: RO
+
+>I have three or four IBM PC Basic programs lying around which I could
+>us-mail you if you're interested:
+>1)   ACCRETE, the planetary accretion simulator, from Dole
+>1a)  A modification of (1) to allow captured moons, by me
+>1b)  Another modification of (1) which uses the same accretion engine
+>     to produce reasonable moon systems - good matches for Jupiter
+>     and Mars, also by me
+>2)   Hart's atmosphere simulator
+
+Yep.  I'm interested.  It might take a few days, but I'll dig around and
+come up with the stuff I did.  (however much is still around.....)
+
+>> I lifted a condensate version of planetary creation to derive size and
+>> probable core/crust composition.
+>Is this the ACCRETE simulator that a lot of people use?
+
+Guess not, since I don't remember ever seeing it...
+
+>> I performed a few fits to the only system I knew to get random generators
+>> for stuff like moons & rings.  Did use roch stuff for breakups.
+>OK, here's a question.  What kinds of ranges of results did you get?
+>I can not figure out why Jupiter has moons and Saturn has rings.
+>Also, I can't figure out why Mars has a couple of rocks in orbit while
+>Earth has Luna.  My best guess is that Luna is captured, as is
+>Nereid of Neptune.
+
+I got the small moons & rings, but hadda cheat to get something like luna...
+
+>> Looked at traveler & universe for some surface conditions, though for
+>> terrestrial-types there is a reasonable amount of climatology that
+>> is not too numeric intensive.  You can use a process similiar to the
+>> fractile landscapes on surfaces other than elevation.
+>
+>I'm afraid I didn't understand this.  I've played with fractal landscapes.
+
+You know that "integrate over random hemisphere" for elevation?  The same
+trick, but use biased distributions on first pass for other characteristics
+(like mineral deposites, to yank one out of the air)
+
+>The only climatology stuff I've seen is some papers in _Icarus_
+>describing systems of differential equations taking _days_ of computer
+>time to solve.  I'd really like to see something that could take
+>distance from sun, length of year, length of day and axial tilt, and
+>give you things like prevailing wind and climate patterns.  Can you
+>give me any pointers?
+
+(was meterologist for USNR for a while)
+You can get climatology from the parameters you gave, but you have to throw in
+things like distance from ocean (for habitable) in direction of prevailing
+winds (planet-wide hadley cells for prevailing zones).  For microclimates
+("local weather") you sorta gotta cheat (statistical separation from 
+predicted climate)  I think I have an article that has a basic program that
+dies the planetwide climate from orbital characteristics someplace.  Or 
+maybe the other way (climate to orbit).
+
+REf 3 (interaction between races).  I'll have to dig.  I don't think I even
+marked that down, so I'll have to rethink it.
+
+>I hope we can continue this discussion - I'm very interested!
+Maybe an article in one of the travellers or such will spin out.
+
+(I had the most fun looking at exchanges between storage & computation
+that would allow the re-derivation of the same physical characteristics
+for the same place so I wouldn't have to calculate every meter of the
+blasted planet IN ADVANCE then store the entire thing, so I could
+revisit a site many times without finding it had changed.  Fun.
+My masters in OR/SA specialized in advanced modelling, so that is the
+way I went)
+
+>> jwm@aplvax.jhuapl.edu or jwm@aplvax.arpa works fine.  I have an account there
+>> and it has a .forward.  stdc is 128.244.176.18
+>Hm, I can't find either stdc or 128.244.176.18 in my /etc/hosts.
+
+Not overly suprising.  Unless you are root (or can talk root into editting it)
+guess I'm just an alias in .mailrc.  Ah well.....
+stdc is a SUN 3/50 in a local net at JHU APL
+
+Jim
+
+
+
+
+ 
+
+
+From jwm Mon Aug 22 14:40:07 1988
+To: davea@ll-vlsi.ARPA
+Subject: Re:  Universe Simulator
+Status: RO
+
+>Send me your us-mail address and I'll send this off to you.  5" floppy, 
+>the kind that holds 360K?  Or do you just want paper copies.  I'm afraid
+>I can't e-mail them.
+
+Paper is find - I am interested in HOW, not running them.
+
+	Jim Meritt
+	1016 Turney Avenue
+	Laurel, Md 20707
+
+>Anything you have on this, I'd really appreciate.  I have never been able
+>to find a way to get started on this, and a meteorologist is definitely
+>the right person to ask.
+
+Good place to start is college (early) geology books, chapter on climatology.
+Got a selection of stuff like "tide prediction" and such from meterology at
+home.  Bet most of the "Weather prediction" stuff will "run backwards"
+(a common trick I use) fairly well.
+I'll see what I can find....
+
+Jim
+
+
+From davea@ll-vlsi.ARPA Wed Aug 24 16:08:51 1988
+Return-Path: <davea@ll-vlsi.ARPA>
+Received: from XN.LL.MIT.EDU (10.2.0.10) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA23375; Wed, 24 Aug 88 16:08:06 EDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Wed, 24 Aug 88 15:59:51 EDT
+Posted-Date: Wed, 24 Aug 88 15:58:58 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA28340; Wed, 24 Aug 88 15:58:58 EDT
+Date: Wed, 24 Aug 88 15:58:58 EDT
+From: Dave Allen <davea@ll-vlsi.ARPA>
+Message-Id: <8808241958.AA28340@ll-vlsi.arpa>
+To: jwm%stdc.jhuapl.edu@XN.LL.MIT.EDU
+Subject: Universe Simulator, I guess
+Cc: davea@ll-vlsi.ARPA
+Status: RO
+
+Jim,
+
+This morning I us-mailed to you an envelope containing:
+
+1) a listing and sample run of an atmosphere generator based on the
+work of M.H.Hart.  The program isn't commented, but I attached the
+first page of the paper it's based on ... I'd suggest you get a copy of
+the whole paper.  If you can't find it, let me know and I'll xerox you
+one.
+
+2) a listing and sample run of the ACCRETE condensation simulator which I
+modified to allow captured moons and resonances.  I mentioned that the
+original forced collisions between overlapping planetesimals; I modified
+it to allow either captures (of Luna by Earth) or resonances, such as might
+explain the orbital overlap of Pluto and Neptune in addition to collisions.
+
+3) a listing and sample run of the scaled-down condensation simulator 
+which does a pretty good job on moons, although I never learned enough
+about Roche's law to put in rings for moons that are too close.
+
+>   Contact: traveller-request@dadla.la.tek.com  (James T. Perkins)
+>           ...!tektronix!dadla!traveller-request
+>   Purpose: This mailing list exists to discuss the TRAVELLER Science
+>   Fiction Role Playing Game, published by Game Designers' Workshop.
+
+I'd never heard of this; I'll subscribe to it soonly.  Thanks!
+
+I also got the cc of your msg re GMs Guide to Star Construction.
+
+On other fronts, a guy in rec.games.frp made a passing reference to
+a tectonic simulation - continental drift, mountains, archipelagoes, etc.
+I think it was just a way to do it by hand, but I'm trying to get some
+information on it.  It'd be neat.
+
+Hope to hear from you soon re climate generation & etc.
+
+Dave Allen: internet davea@vlsi.ll.mit.edu
+
+From aplcomm!aplcen!mimsy!eneevax!haven!umd5!ames!mailrus!cornell!uw-beaver!tektronix!percival!parsely!agora!qintar Thu Aug 25 09:43:51 EDT 1988
+Status: RO
+
+Article 3829 of rec.games.frp:
+Path: aplcomm!aplcen!mimsy!eneevax!haven!umd5!ames!mailrus!cornell!uw-beaver!tektronix!percival!parsely!agora!qintar
+From: qintar@agora.UUCP (Jim Seymour)
+Newsgroups: rec.games.frp
+Subject: Map-making techniques
+Message-ID: <1125@agora.UUCP>
+Date: 17 Aug 88 19:10:14 GMT
+Reply-To: qintar@agora.UUCP (Jim Seymour)
+Organization: Cipher Systems, Inc. (North Plains, Oregon)
+Lines: 26
+
+
+A question to all of you who have designed your own worlds:
+
+What techniques do people use for map-making?  Do you have detailed maps
+with terrain types, vegetation, and contour lines, or do you use simplistic
+maps with the locations of towns, villages, and roads only?
+
+I've been GM'ing since 1981 (the first four years with AD&D, more recently
+with Fantasy Hero) and have designed a world which I am rather proud of.
+However, I have never been very fond of the maps I made.  And so, in
+preparation for a new campaign I am contemplating, I decided to upgrade
+my maps.  My main inspiration has been the Harn and Ivinia packages from
+Columbia Games.  These regional modules are incredibly detailed, highly
+consistent, and the maps are *beautiful*.  I would love to have that
+amount of detail to my world, but have no idea where to begin!
+
+And so, the question is put to all of you:  How to design a world.
+I'm not interested in the magic as much as I am with the society and
+the geography.
+
+
+     -Jim Seymour                      ...tektronix!tessi!agora!qintar
+     =================================================================
+     Cipher Systems, Inc.                           Home:
+     P.O. Box 329                                   1308 S.E. Division
+     North Plains, OR  97133                        Portland, OR 97202
+
+
+From aplcomm!aplcen!mimsy!oddjob!ncar!ames!pasteur!ucbvax!decwrl!labrea!csli!institut Thu Aug 25 09:44:14 EDT 1988
+Status: RO
+
+Article 3850 of rec.games.frp:
+Path: aplcomm!aplcen!mimsy!oddjob!ncar!ames!pasteur!ucbvax!decwrl!labrea!csli!institut
+From: institut@csli.STANFORD.EDU (LSA Summer Institute Account)
+Newsgroups: rec.games.frp
+Subject: Re: Map-making techniques
+Message-ID: <5223@csli.STANFORD.EDU>
+Date: 21 Aug 88 04:33:11 GMT
+References: <1125@agora.UUCP>
+Reply-To: institut@csli.UUCP (LSA Summer Institute Account)
+Organization: Center for the Study of Language and Information, Stanford U.
+Lines: 22
+
+In article <1125@agora.UUCP> qintar@agora.UUCP (Jim Seymour) writes:
+>What techniques do people use for map-making?  Do you have detailed maps
+>with terrain types, vegetation, and contour lines, or do you use simplistic
+>maps with the locations of towns, villages, and roads only?
+
+A great method I was taught at GenCon:
+Take a map of the U.S., preferably one that can be marked on without anyone
+getting upset (you can get one from your local branch of the US Geological
+Survey).  Once you know how much land area you want your map to cover, isolate
+that much of the U.S.  (This example is of the U.S., but any map will do.
+Any scale, even.)  Pick out all of the contour lines of a given elevation,
+say the 500 line for a full-scale map of the U.S.  Sink everything beneath
+that by inking it over with blue.  What's left looks nothing like the U.S.,
+and maybe two hours were spent making it.
+
+Hope this helps.
+
+
+========================================================================
+Tom Wylie
+send email to wylie@score.stanford.edu,  NOT THE ADDRESS ABOVE!!!
+(this ain't my account, I just use it for bboards)
+I'm the only gamer on the staff, so any opinions can only be my own.
+
+
+From aplcomm!aplcen!mimsy!oddjob!uwvax!rutgers!ucsd!ucsdhub!esosun!seismo!uunet!hi-csc!slocum Thu Aug 25 09:45:12 EDT 1988
+Status: RO
+
+Article 3862 of rec.games.frp:
+Path: aplcomm!aplcen!mimsy!oddjob!uwvax!rutgers!ucsd!ucsdhub!esosun!seismo!uunet!hi-csc!slocum
+From: slocum@hi-csc.UUCP (Brett Slocum)
+Newsgroups: rec.games.frp
+Subject: Re: Map-making techniques
+Message-ID: <3e030dae.805@hi-csc.UUCP>
+Date: 22 Aug 88 14:43:00 GMT
+References: <1125@agora.UUCP>
+Reply-To: slocum@hi-csc.UUCP (Brett Slocum)
+Organization: csdd
+Lines: 76
+
+In article <1125@agora.UUCP> qintar@agora.UUCP (Jim Seymour) writes:
+>A question to all of you who have designed your own worlds:
+>
+>What techniques do people use for map-making?  Do you have detailed maps
+>with terrain types, vegetation, and contour lines, or do you use simplistic
+>maps with the locations of towns, villages, and roads only?
+>
+> . . . [paragraph deleted]
+>
+>And so, the question is put to all of you:  How to design a world.
+>I'm not interested in the magic as much as I am with the society and
+>the geography.
+
+Well, my first campaign that I did detailed maps for was an Island-based
+campaign.  I had a couple larger continents and a lot of small islands.
+I started with a fairly sparse maps with just coastlines and capitals
+and a few mountains, drawn in fat felt-tip markers.  I wasn't very
+satified with that so I next traced the features onto a new hex sheet,
+and redrew it with micro-ball pens.  Here I put forests, mountains, roads,
+cities, etc.  This map had a scale of about 50 miles to the hex.
+
+I then made blow-up maps of the major island where the campaign mainly 
+took place.  This pair of maps was about 12 miles/hex in scale, and showed
+the major castles, all towns over about 1000, all roads, swamps, major
+fief boundaries, mountains with contour lines, rivers, forests, etc.
+
+I also started a set of 3 mile/hex maps, but never finished them.  The ones
+I did finish were around the major cities.  These showed everything: bridges,
+all manor houses, shell keeps, villages over about 100, minor fief boundaries, 
+minor roads (trails), small woods, small lakes, etc.  
+
+The method I use for map-making is as follows: just start drawing coastline
+having some idea of whether you want a bunch of islands, a few small continents,
+or one large continent.  Make sure you squiggle enough to make it look like
+coastline.  Perhaps practice on a blank paper for a bit to get the effect
+you want.  
+
+Once the coastline is drawn, I next draw the mountains;  if you just draw
+the limit of each range and then put a dot where each peak is, you can
+fill in the contours later.  The mountains are usually in the center of
+the continents, with some others elsewhere.  These define the high spots
+of the continent.
+
+Next come the lakes; these define the local low-spots of the continent.
+There can be lakes near mountains as long as there is some reason why
+they haven't flowed away.  Next comes rivers.  They usually start in
+the mountains and flow toward the lakes and coastlines.  Here again,
+a steady hand is not necessarily an asset: rivers tend to meander a bit.
+
+Before drawing the forests, I decide on how densely populated the various
+areas are going to be and situate the cities.  This is because in heavily
+populated areas, the forests will have been cut for farmland.
+Cities of any size are almost always located near oceans or large rivers,
+since water travel is essential to early trade.  If on the ocean, they
+tend to be near somewhat protected bays or better yet, where rivers
+join the ocean.
+
+Now I place the forests, based on the cities and density.  Unless the
+area is not naturally forested (plains, for instance), everything that
+isn't heavily settled is forest.
+
+I also add a few swamps, too, near rivers, perhaps one end of a lake,
+or near the ocean (brine marsh).  Don't go overboard on swamps unless
+this is a very wet climate.
+
+Now, all this is assuming temperate climate zones.  I usually don't
+include deserts, artic regions, etc. (at least I don't usually map them).
+
+After all this, I work on the cultures and societies.  I'll leave
+that for another posting.
+
+
+-- 
+Brett Slocum   UUCP: ...uunet!hi-csc!slocum
+               Arpa: hi-csc!slocum@umn-cs.arpa
+"My name is Inigo Montoya. You killed my father. Prepare to die."
+
+
+From aplcomm!aplcen!mimsy!dftsrv!ames!pasteur!agate!ucbvax!decwrl!sun!imagen!isaak Thu Aug 25 09:49:09 EDT 1988
+Status: RO
+
+Article 3865 of rec.games.frp:
+Path: aplcomm!aplcen!mimsy!dftsrv!ames!pasteur!agate!ucbvax!decwrl!sun!imagen!isaak
+From: isaak@imagen.UUCP (Mark Isaak)
+Newsgroups: rec.games.frp
+Subject: Re: Map-making techniques
+Message-ID: <1798@imagen.UUCP>
+Date: 22 Aug 88 17:12:16 GMT
+References: <1125@agora.UUCP>
+Organization: Imagen Corp., Santa Clara CA
+Lines: 47
+
+in article <1125@agora.UUCP>, qintar@agora.UUCP (Jim Seymour) says:
+> What techniques do people use for map-making?
+
+    How much effort are you willing to put into it?  The more effort, the
+better the results.  Anyway, here are the steps I took.
+
+1)  Take a course in geography, or read a textbook, to learn plate tectonics.
+
+2)  Randomly divide your globe into 20 or so tectonic plates of various
+sizes.  Make about 1/4 of them continental plates and the rest ocean.
+Add half a dozen hot spots for flavor.
+
+3)  Give your plates random directions and velocities and let 'em rip.
+Keep track of the mountain ranges, trenches, archipelagos, etc. which are
+formed in the process.
+
+4)  After 100,000,000 year's worth of movement (or so), modify the directions
+and velocities and move the plates around some more.  Remember to erode the
+mountains which were made previously.  Repeat this process five or six times
+until you get a world you like.
+
+5)  Learn meteorology (or find someone who already knows it) and map out the
+weather patterns of your world.  Start by putting in ocean currents and trade
+winds, then put in dry areas at latitudes 30 degrees north and south (or was
+it 15 degrees?  I took the path of finding someone who already knows about
+it).  Figure out rain shadows, drainage patterns, and influences of hot and
+cold ocean currents.  From temperature and rainfall, determine vegetation.
+
+6)  Put major cities at the mouths of river, guarding strategic straits, and
+anywhere else you think you need a major city.  Try to figure out from the
+environmental conditions what the major industries in an area are.  This is
+tricky, and can probably be best done by comparison with analagous areas on
+Earth.
+
+7)  I don't know the best way to determine political boundaries.  Certainly
+seas, mountains, and major deserts should divide countries.  Perhaps you could
+just add unorganized communities to your world and let them fight it out for
+themselves.
+
+    If you get ambitious, you can add things like races, language families,
+local superstitions, etc.  This sounds like a lot of work, and it is, but in
+my opinion it is worth it not only for the detailed and realistic world you
+get, but also for what you learn about our own world in the process.
+
+-- 
+Mark Isaak    	{decwrl,sun}!imagen!isaak  or  imagen!isaak@decwrl.dec.com
+	    "Inquiry is fatal to certainty." - Will Durant
+
+
+
+                                                                                                                                                                            

@@ -1,0 +1,59 @@
+Article 308 of rec.games.programmer:
+Path: aplcomm!aplcen!umd5!haven!ames!ll-xn!vlsi!davea
+From: davea@vlsi.ll.mit.edu (Dave Allen)
+Newsgroups: rec.games.frp,rec.games.programmer
+Subject: Universe Simulation
+Message-ID: <157@vlsi.ll.mit.edu>
+Date: 7 Sep 88 17:05:49 GMT
+Distribution: rec
+Organization: MIT Lincoln Laboratory, Lexington MA
+Lines: 45
+Xref: aplcomm rec.games.frp:4136 rec.games.programmer:308
+
+
+Summary of discussion on the unofficial "Universe Simulation" mailing list,
+Aug 31 - Sept 7:
+
+Sean Malloy (malloy@nprdc.arpa) sent us a set of programs to generate star
+  systems from the SFRPG Other Suns.  There are four; three in Pascal and one
+  in C.  They generate one "hex" (1000 ly across) and fill it with stars
+  and planets according to the charts and tables in the game.
+There was some discussion about using fractal geometry to create terrain;
+  several people mentioned programs they had written to generate random terrain
+  using fractals.  Edwin King (elk@cbnews.att.com) gave us a working program
+  in C to generate rectangular pieces of terrain.
+Jim Meritt (jwm@stdc.jhuapl.edu) has posted about fifty journal references,
+  many from Scientific American, concerning scientific efforts to model
+  planet creation, atmospheric development and circulation, climate, development
+  of life, sociological and cultural development,
+Jim Meritt also dug up a set of programs to generate systems for Traveller,
+  originally posted to comp.sources.games.  Here is a quote from the README file:
+  "To generate complete listings of star systems (an allegedly complete
+  implementation of Single-Star Systems according to the rules in Book 6)
+  it is necessary to compile the files in sysgen (by typing make) and then
+  running the program st. Be warned this produces voluminous output."  The
+  programs look pretty complete and are written in C.
+Matt Burdick (burdick@hpindda.hp.com) has written a program in Turbo Pascal
+  based on a set of papers by Martin Fogg in Journal of the British Interplanetary
+  Society (JBIS).  The program uses astrophysical theories to simulate
+  the creation of a star system, with results that look much like our solar
+  system.  He posted (rec.games.programmer article 225) a sample output,
+  and it has a number of details about each planet like size, gravity,
+  est. surface temperature, albedo and so on.
+Andrew Folkins (mnetor!alberta!andrew@uunet.uu.net) has implemented Dole's
+  accretion simulator (upon which Fogg's simulator was based) in C on the Amiga.
+Mary Kuhner (jyamato@cory.berkeley.edu ?) brought up some questions related
+  to realistic patterns of weather and population density, and aggregation
+  of small political units into larger ones.
+Brian Bowers (cs2551af@charon.unm.edu) made some suggestions about weather
+  patterns and historical development of nations, and Edwin Wiles
+  (netxcom!ewiles@uunet.uu.net) made some more suggestions.  Darren Sinster
+  gave us a whole list of relationships between landscape and weather
+  patterns.
+
+Please contact Jim Meritt (jwm@stdc.jhuapl.edu) for information requests
+or to be added to / deleted from the list.
+
+Dave Allen: internet davea@ll-vlsi.arpa or @vlsi.ll.mit.edu
+
+

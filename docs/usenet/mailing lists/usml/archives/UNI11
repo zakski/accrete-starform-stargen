@@ -1,0 +1,483 @@
+>From aplcomm!aplcen!umd5!haven!ames!nrl-cmf!cmcl2!rutgers!gatech!nascom!cwf Fri Sep  9 09:24:17 EDT 1988
+Status: RO
+
+Article 312 of rec.games.programmer:
+Path: aplcomm!aplcen!umd5!haven!ames!nrl-cmf!cmcl2!rutgers!gatech!nascom!cwf
+>From: cwf@nascom.UUCP (Claude Farmer)
+Newsgroups: rec.games.programmer
+Subject: Universe Simulator
+Keywords: Universe Simulator, Traveller, Algorithms
+Message-ID: <166@nascom.UUCP>
+Date: 8 Sep 88 20:09:42 GMT
+Reply-To: cwf@nascom.UUCP (Claude Farmer)
+Organization: National Advanced Systems,  Atlanta, Ga.
+Lines: 97
+
+As I am planning on using all the information I gather here in computerizing
+a Traveller Universe, I would appreciate if anyone on the mailing list with
+PD code for planetary, stellar generation, dust density, moon systems and
+other miscellaneous information would mail it to me.  Also, programs that
+generate stellar maps and planetary info from different game systems is
+appreciated.  As far as Traveller goes, I am currently using only the world
+generation scheme and not the system generation scheme.  If we can somehow
+manage to get ye olde godling generator/simulator from a big bang system
+going, that is what would be ideal.
+
+The reason, I am asking for this is because I came in on the discussion
+late and have missed some stuff.  Also, our site does not archive postings
+or source files.
+
+I am working on an Amiga 1000 and if necessary will port the code I acquire
+to it and will mail to anyone who is interested.
+
+The main things I am interested in are as follows:
+
+
+Description of Universe Simulator - Dave Allen, r.g.p 165 (8 Aug)
+  Basically, it starts out with an empty universe full of dust.
+  Stars are born, live their life on the main sequence, and supernova.
+  Later stars have higher metallicity.  Each star is created with
+  planets, each having a temperature, atmosphere and (possibly) life.
+  Simulation uses die-rolling rather than astrophysical formulae,
+  is written in ~300 lines of Amiga Basic code, and runs in 6 minutes.
+Description of astrophysical-formula simulations, Jim Meritt, to Dave
+  Allen, 19 Aug 88.  Made up a random generator that pumped out stars
+  with a distribution similiar to a galactic arm.  Lifted a condensate
+  version of planetary creation to derive size and probable core/crust
+  composition.  Used the star mass and the distance/composition to get
+  planetary masses.  Used star temp and the distance/mass of the planet
+  to get probable atmosphere composition & pressure (ev calculations,
+  liquid water temp range, dust, that type of stuff).  Made random
+  generators for stuff like moons & rings.  For terrestrial-type surface
+  conditions, there is a reasonable amount of climatology that is not too
+  numeric intensive.
+Offer of working PC Basic programs, from Dave Allen, to Jim Meritt,
+  18 Aug 88.  A working condensation simulator, based on a paper by
+  Stephen Dole, that generates planetary systems given star mass
+  and initial dust density.  I've made two modified versions of these,
+  one to allow captured moons, and one to generate a moon system
+  given planet mass.  An atmosphere generator based on papers by M.H.
+  Hart which simulates the development of Earth's atmosphere with
+  parameters to generate the atmosphere of any terrestrial planet"
+Description of climatology system, from Jim Meritt, to Dave Allen, 
+  19 Aug 88.  You can get climatology from (distance from sun, length of
+  year and day, and axial tilt), but you have to throw in things like
+  distance from ocean (for habitable) in direction of prevailing winds
+  (planet-wide hadley cells for prevailing zones).  For microclimates
+  ("local weather") you sorta gotta cheat (statistical separation from
+  predicted climate)  I think I have an article that has a basic
+  program that dies the planetwide climate from orbital characteristics
+  someplace.  Or maybe the other way (climate to orbit).
+Description of universe simulator, from Stan Shebs, article 276 of r.g.p
+  (26 Aug 88).  He has a document describing the basics of a simulator
+  for a universe.  Getting the basic concepts right is pretty hard -
+  for instance how to do 3D models of planets, how to track EM radiation
+  at various frequencies, and how to handle energy/info transfer of
+  various sorts, without all of this requiring a building full of Class
+  VI machines to run reasonably.
+Sean Malloy (malloy@nprdc.arpa) sent us a set of programs to generate star
+  systems from the SFRPG Other Suns.  There are four; three in Pascal and one
+  in C.  They generate one "hex" (1000 ly across) and fill it with stars
+  and planets according to the charts and tables in the game.
+Jim Meritt (jwm@stdc.jhuapl.edu) has posted about fifty journal references, 
+  many from Scientific American, concerning scientific efforts to model
+  planet creation, atmospheric development and circulation, climate, development
+  of life, sociological and cultural development,
+Jim Meritt also dug up a set of programs to generate systems for Traveller,
+  originally posted to comp.sources.games.
+Matt Burdick (burdick@hpindda.hp.com) has written a program in Turbo Pascal
+  based on a set of papers by Martin Fogg in Journal of the British Interplanetary
+  Society (JBIS).  The program uses astrophysical theories to simulate
+  the creation of a star system, with results that look much like our solar
+  system.  He posted (rec.games.programmer article 225) a sample output,
+  and it has a number of details about each planet like size, gravity,
+  est. surface temperature, albedo and so on.
+Andrew Folkins (mnetor!alberta!andrew@uunet.uu.net) has implemented Dole's
+  accretion simulator (upon which Fogg's simulator was based) in C on the Amiga.
+
+Thanks in advance (Hopefully you can reach me by mail, when that looks like
+it is working, I'll refrain from posting these requests.)
+
+
+Standardly Disclaimingly Yours,
++-----------------------+----------------------------+------------------------+
+|                       |                            |                        |
+| Claude Farmer         | mail  : gatech!nascom!cwf  |     IF I WANTED THIS   |
+| Home : (404) 552-0324 | smail : cwf@nascom.nas.com |      SPACE BLANK, I    |
+|                       |                            |     WOULD HAVE LEFT    |
++-----------------------+----------------------------+     THIS SPACE BLANK!  |
+|                                                    |                        |
+| witty quote? I don't need no stinking witty quote! |      INTENTIONALLY!!!  |
+|                                                    |                        |
++----------------------------------------------------+------------------------+
+
+
+>From portal!cup.portal.com!Scott_R_Bauer@Sun.COM Fri Sep  9 09:28:38 1988
+Return-Path: <portal!cup.portal.com!Scott_R_Bauer@Sun.COM>
+Received: from Sun.COM (10.7.0.2) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA00787; Fri, 9 Sep 88 09:28:14 EDT
+Received: from sun.Sun.COM by Sun.COM (4.0/SMI-4.0)
+	id AA25758; Fri, 9 Sep 88 06:31:21 PDT
+Received: from portal.UUCP by sun.Sun.COM (4.0/SMI-4.0)
+	id AA25089; Fri, 9 Sep 88 06:35:08 PDT
+From: portal!cup.portal.com!Scott_R_Bauer@Sun.COM
+Received: from portal2.portal.com by portal.com (3.2/Portal 8)
+	id AA29488; Thu, 8 Sep 88 22:30:04 PDT
+Received: by portal2.portal.com (3.2/Portal 5.1 (sub))
+	id AA18232; Thu, 8 Sep 88 22:28:27 PDT
+To: jwm@stdc.jhuapl.edu
+Subject: Re: Universe Simulator
+Lines: 18
+Date: Thu Sep  8 22:28:24 1988
+Message-Id: <8809082228.1.133@cup.portal.com>
+X-Origin: The Portal System (TM)
+X-Possible-Reply-Path: Scott_R_Bauer@cup.portal.com
+X-Possible-Reply-Path: sun!portal!cup.portal.com!Scott_R_Bauer
+Status: RO
+
+Jim,
+
+I noticed that the current issue of SCIENCE has an interesting article
+on climate models (and how well they match actual climate patterns)
+which might be of interest in the universe simulating effort.
+
+Also...I don't know if you have access to back issues of ALARUMS & EXCURSIONS
+or not, but a couple of years ago one of its contributors was discussing
+a planetary generation program that he was working on. From what I recall
+of the discussion he had gotten at some of it running on a PC. [The name
+of the writer is Steve Gilham. I don't think he has any net access right now
+, but if you're interested you might try the snails -- 23 Trinity Close,
+Haslingfield, Cambs, CB3 7LS, UK. From my dim memories his work was based
+on Dole, though updated with his own work/study in astro-physics.]
+
+Scott Bauer
+sbauer@cup.portal.com
+...!sun!portal!sbauer
+
+>From aplcomm!aplcen!umd5!adm!cmcl2!nrl-cmf!mailrus!cornell!batcomputer!saponara Sat Sep 10 11:33:34 EDT 1988
+Status: RO
+
+Article 314 of rec.games.programmer:
+Path: aplcomm!aplcen!umd5!adm!cmcl2!nrl-cmf!mailrus!cornell!batcomputer!saponara
+>From: saponara@batcomputer.tn.cornell.edu (John Saponara)
+Newsgroups: rec.games.programmer
+Subject: Re: Reversi (really surface generation)
+Message-ID: <6265@batcomputer.tn.cornell.edu>
+Date: 9 Sep 88 13:26:25 GMT
+References: <268@marque.mu.edu> <153@vlsi.ll.mit.edu> <274@marque.mu.edu>
+Reply-To: saponara@tcgould.tn.cornell.edu (John Saponara)
+Organization: Cornell Theory Center, Cornell University, Ithaca NY
+Lines: 48
+
+In article <274@marque.mu.edu> StephensBru%msa.bristol.ac.uk@ukacrl.bitnet writes:
+>        4. Choose the values at the midpoints of the lines in your
+>        mesh. The basis should be an average of the endpoint heights,
+>        then you add (random-0.5)*length, where random is a random
+>        number [0,1) and length is the length of the side that you're
+>        subdividing.
+
+For this step I would use a normal (a.k.a. Gaussian) deviate, not just a
+random number.  This is the "standard" method, and it definitely looks more
+realistic.  For more info on Gaussian deviates, see "Numerical Recipes" or
+"Numerical Recipes in C".
+
+Also, if you want a prepackaged routine for making mountains, you might want
+to check out my SPD package.  Though used for testing ray tracers, it has
+code for a fractal mountain generator and a tree generator.  Attached is
+my boilerplate paragraph about the package.  Mark VandeWettering is also
+making the package available via ftp - check comp.graphics for details.
+
+All for now,
+
+Eric Haines, who is not John Saponara
+
+
+        The "Standard Procedural Database" package is a set of 6 database
+    generators, including the recursive tetrahedron, a fractal mountain, and
+    a tree grower.  For images produced by the databases and more information
+    on the concept, see the article in IEEE Computer Graphics & Applications,
+    November 1987, p. 3-5.  To get the package, send mail to Netlib (which has
+    a lot of other worthwhile free stuff) at `netlib@anl-mcs.arpa' or at
+    `research!netlib'.  Send the one line message `Send Haines from Graphics'
+    and the program which receives your message will send you a copy of the
+    package.  If you send the message (on a separate line) `Send Index' you'll
+    get the index and more information about Netlib in general.  Eric Grosse
+    and Jack Dongarra run Netlib.  I (Eric Haines) simply wrote the SPD package.
+
+	The NFF format is a very basic format that allows the specification
+    of the scene's geometry, lighting, and the viewpoint.  Polygons, polygonal
+    patches, spheres, cylinders, cones, and tori are presently supported.
+    It is meant to be minimal and simple, so that users can write a translator
+    program to convert this format into their own package-specific format.
+    Since the focus of the SPD package is on testing ray tracers, the format
+    is limited in many ways.  For example, matrices are not supported.  The
+    file contains raw geometric data and not much else (e.g. light source
+    intensities cannot be specified, as this parameter has no effect upon
+    how fast the scene can be ray-traced).
+
+	The newest version is 2.4 (check the mountain.c module to see if yours
+    is labeled as such).
+
+
+>From siegel@hc.dspo.gov Tue Sep 13 10:52:14 1988
+Return-Path: <siegel@hc.dspo.gov>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA03461; Tue, 13 Sep 88 10:52:00 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA17987; Tue, 13 Sep 88 08:52:33 MDT
+Date: Tue, 13 Sep 88 08:52:33 MDT
+From: siegel@hc.dspo.gov (josh Siegel)
+Message-Id: <8809131452.AA17987@hc.dspo.gov>
+X-Mailer: Mail User's Shell (6.3 6/25/88)
+To: usml@hc.dspo.gov
+Subject: Universal Simulations Mailing List
+Status: RO
+
+
+I seem to have sucessfully contacted everybody on the Universal
+Simulations Mailing List.  If you wish to mail to everybody, mailing
+to usml@hc.dspo.gov get will it passed on.
+
+Also, mailing to usml-request will get to me specificly.
+
+                        --Josh Siegel
+
+>From @aplvax.jhuapl.edu:jwm@stdc.jhuapl.edu Tue Sep 13 12:26:38 1988
+Return-Path: <@aplvax.jhuapl.edu:jwm@stdc.jhuapl.edu>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA04120; Tue, 13 Sep 88 12:26:15 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA19347; Tue, 13 Sep 88 10:27:15 MDT
+Received: by aplvax.jhuapl.edu (5.51/1.14)
+	id AA12395; Tue, 13 Sep 88 12:26:45 EDT
+Received: by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA04089; Tue, 13 Sep 88 12:20:55 EDT
+Date: Tue, 13 Sep 88 12:20:55 EDT
+From: jwm@stdc.jhuapl.edu (Jim Meritt)
+Message-Id: <8809131620.AA04089@stdc.jhuapl.edu>
+To: usml@hc.dspo.gov
+Subject: Universal Simulator Mailing List
+Status: RO
+
+It would be helpful if we had some idea what the different people are interested
+in.  There appear to be groups like planetary development a'la Dole, plate
+tectonics, climatology, biological development, geopolitical development,...
+I've tried to make "subgroups", but it's too hard to tell most - a lot of 
+requests and too few submissions.  I was interested in the planetary development
+initially, but it seems covered enough so I'm going to see what sense I can
+make out of climatology.  So far all I can tell might be interested in that is
+
+alias usml_weax jyamato@cory.Berkeley.EDU jfc@athena.mit.edu sinster%ucscb.UCSC.EDU@ucscc.ucsc.edu cs2551af@charon ellis@csd4.milw.wisc.edu jwm@aplvax.jhuapl.edu
+
+(I think....) 
+
+and I could use the information.  I have a BS in marine science, a MS in
+Operations Research/general Systems Analysis, was a meterologist for a year
+(sort of) with the Navy Reserve, and have a stack of references.  Help,
+anyone?
+
+Also, how about the references different people have?  I am maintaining a list,
+but 95% of it is stuff I found.  How about you others?
+
+the other folk I think I can tell are:
+
+physical / astronomical
+alias usml_astro davea@ll-vlsi.arpa jfc@athena  mnetor!alberta!andrew@uunet.uu.net malloy@nprdc.arpa aplvax\!sun.com\!convex\!sheppard duncanj@umd5.umd.edu alan@csl.sri.com burdick%hpindl1%sde.hp.com@RELAY.CS.NET att!homxc!smile
+
+fractal surfaces 
+alias usml_fractal davea@ll-vlsi.arpa sinster%ucscb.UCSC.EDU@ucscc.ucsc.edu aplvax\!att.arpa\!cbnews.att.com\!elk andru@SGI.COM 
+
+tectonics
+alias usml_tectonic davea@ll-vlsi.arpa therat@ucscb.ucsc.edu imagen!isaak@decwrl.dec.com andru@SGI.COM 
+
+geopolitics
+alias usml_poli jyamato@cory.Berkeley.EDU netxcom!ewiles@uunet.uu.net 8hum190@violet.Berkeley.EDU cs2551af@charon sethg@athena  jwm@aplvax.jhuapl.edu
+
+"Let there be light" (and stars, planets, air, people,...)
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+
+
+>From davea@ll-vlsi.arpa Tue Sep 13 13:27:20 1988
+Return-Path: <davea@ll-vlsi.arpa>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA04652; Tue, 13 Sep 88 13:26:56 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA20222; Tue, 13 Sep 88 11:29:22 MDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Tue, 13 Sep 88 13:27:47 EDT
+Posted-Date: Tue, 13 Sep 88 13:28:04 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA07853; Tue, 13 Sep 88 13:28:04 EDT
+Date: Tue, 13 Sep 88 13:28:04 EDT
+From: Dave Allen <davea@ll-vlsi.arpa>
+Message-Id: <8809131728.AA07853@ll-vlsi.arpa>
+To: usml%hc.dspo.gov@XN.LL.MIT.EDU
+Subject: Who Am I
+Status: R
+
+Jim Meritt suggested everybody say a few words about who they are and
+what they're interested in.  I think it's a good idea.
+
+My background is in Computer Science and role-playing games.  I've
+read a lot of journal articles on simulation of star systems and
+planetary systems.  I corresponded with a guy in England who had coded
+some programs (Dole's simulator and Hart's atmosphere simulator)
+and played with them.
+
+My main interest is in getting a program that generates a lot of detail
+about a large section of space, including populating them with
+interesting aliens.  This would be a background generator for a really
+neato computer role-playing game.
+
+Right now I am trying various ideas related to writing a tectonic
+simulator.  I want to generate real-looking world maps for hundreds
+of worlds.  Fractals don't make it for me because they're too random.
+Drawing them by hand isn't practical for hundreds of worlds.
+
+Dave Allen: internet davea@vlsi.ll.mit.edu
+
+>From alan@argon.csl.sri.com Tue Sep 13 13:51:45 1988
+Return-Path: <alan@argon.csl.sri.com>
+Received: from argon.csl.sri.com (192.12.33.31) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA04754; Tue, 13 Sep 88 13:48:15 EDT
+Received: by argon.csl.sri.com
+	(5.59d++/IDA-1.2.3-9) id AA00151; Tue, 13 Sep 88 10:51:08 PDT
+Date: Tue, 13 Sep 88 10:51:08 PDT
+From: Alan Whitehurst <alan@csl.sri.com>
+Message-Id: <8809131751.AA00151@argon.csl.sri.com>
+To: jwm@stdc.jhuapl.edu
+Cc: usml@hc.dspo.gov
+In-Reply-To: Jim Meritt's message of Tue, 13 Sep 88 12:20:55 EDT <8809131620.AA04089@stdc.jhuapl.edu>
+Subject: Universal Simulator Mailing List
+Status: R
+
+Jim,
+
+I am really not that interested in the astrnomical side of things; my
+interests are more in the area of planetary development (tectonics,
+fractal surfaces, climatology, and geopolitics.
+
+Alan
+
+
+>From davea@ll-vlsi.ARPA Tue Sep 13 13:55:36 1988
+Return-Path: <davea@ll-vlsi.ARPA>
+Received: from XN.LL.MIT.EDU (10.2.0.10) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA04783; Tue, 13 Sep 88 13:55:00 EDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Tue, 13 Sep 88 13:17:58 EDT
+Posted-Date: Tue, 13 Sep 88 13:18:13 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA07766; Tue, 13 Sep 88 13:18:13 EDT
+Date: Tue, 13 Sep 88 13:18:13 EDT
+From: Dave Allen <davea@ll-vlsi.ARPA>
+Message-Id: <8809131718.AA07766@ll-vlsi.arpa>
+To: jwm%stdc.jhuapl.edu@XN.LL.MIT.EDU
+Subject: Misc
+Cc: davea@ll-vlsi.ARPA
+Status: R
+
+Jim,
+
+I will incorporate your comments re the summary next time around.
+
+Re sub-mailing lists, I personally would like to be on all of them, and
+I think you would also.  I bet everybody would be interested in at
+least listening to all the sublists.  For this reason I suggest we 
+leave it the way it is, with just the one big list.
+
+> I don't suppose you have an array of the earth, do you?  I need the terrain
+> to test some of the climate model I have against the earth, since I only have
+> temperature, wind, current, photosynthesis levels, precipitation, ....
+> plots of one planet..... I THINK I have cellular algorithms worked out to
+> model most of this, but if I can't find it, guess I'll have to key in earth.
+> Thinking of 5 degree increments, ocean=0, land=1, mountains=2.  Comments?
+
+Sorry, I don't.  Problem with 5 degree increments is that your cells are 
+not the same size everywhere; at the equator they're wide, near the pole
+they are very narrow.  This is the problem I am running into with respect
+to the tectonic simulator.  Trying to keep a plate the same size as it
+wanders around is harder than I thought.
+
+Suggest you use the idea I suggested earlier, about keeping each cell the
+same size and having to figure out what cell is north or south.  I'm
+playing with variations on this idea; so far nothing I have satisfies me.
+I'll keep you up to date.
+
+Dave
+
+>From andru@rhialto.sgi.com Tue Sep 13 14:27:23 1988
+Return-Path: <andru@rhialto.sgi.com>
+Received: from hc.dspo.gov (26.1.0.90) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA04910; Tue, 13 Sep 88 14:27:07 EDT
+Received: by hc.dspo.gov (5.54/1.14)
+	id AA21459; Tue, 13 Sep 88 12:29:11 MDT
+Received: Tue, 13 Sep 88 11:24:49 PDT by ames.arc.nasa.gov (5.59/1.2)
+Received: from rhialto.sgi.com by sgi.sgi.com (5.52/880418.SGI)
+	(for usml@hc.dspo.gov) id AA03713; Tue, 13 Sep 88 11:27:39 PDT
+Received: by rhialto.sgi.com (5.52/880418.SGI)
+	(for usml@hc.dspo.gov) id AA00301; Tue, 13 Sep 88 11:28:59 PDT
+Date: Tue, 13 Sep 88 11:28:59 PDT
+From: andru@rhialto.sgi.com (Andrew Myers)
+Message-Id: <8809131828.AA00301@rhialto.sgi.com>
+To: usml@hc.dspo.gov
+Subject: Fractal Topology
+Status: R
+
+
+I think that the "correct" way to generate fractal topology on a square
+may be to do the FFT of a noise function which falls off as (fx^2+fy^2)^H,
+where H is the smoothness parameter (0<H<1). The various methods that
+have been described by others seem to all be of the H=1/2 variety, which
+generate landscapes of fractal dimension 2.5. Apparently real landscape
+varies between 2.1 and 2.3, so this is why the posted methods generate
+landscape which is too rough. Reference: Mandelbrot, 1977, _Fractals:
+Form, Chance, and Dimension_.
+
+Now, my next question: does anyone have a good FFT algorithm available?
+In this case, "good"="short, well written, in C or Pascal"
+rather than "complex and hyperfast, in FORTRAN". If so, please send it to me;
+I'd like to try this out.
+
+Andrew
+
+
+>From alan@argon.csl.sri.com Tue Sep 13 14:55:45 1988
+Return-Path: <alan@argon.csl.sri.com>
+Received: from argon.csl.sri.com (192.12.33.31) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA05032; Tue, 13 Sep 88 14:53:17 EDT
+Received: by argon.csl.sri.com
+	(5.59d++/IDA-1.2.3-9) id AA00204; Tue, 13 Sep 88 11:56:27 PDT
+Date: Tue, 13 Sep 88 11:56:27 PDT
+From: Alan Whitehurst <alan@csl.sri.com>
+Message-Id: <8809131856.AA00204@argon.csl.sri.com>
+To: jwm@stdc.jhuapl.edu
+In-Reply-To: Jim Meritt's message of Tue, 13 Sep 88 13:53:52 EDT <8809131753.AA04778@stdc.jhuapl.edu>
+Subject:  Universal Simulator Mailing List
+Status: R
+
+
+I think a key in this whole simulation topic is not to get too caught
+up with the "way things actually work"; but concentrate on techniques
+which will allow outcomes to be calculated which approximate the
+desired outcomes. This is just off the top of my head, but I once saw
+a simple explanation of the world climate that related it all to the
+thermodynamics of air masses.  It suggested that there were areas on
+the globe which naturally cooled air, and there were areas which
+naturally warmed air.  Where masses of warm, moisture-laden air meets
+colder air, it rains.  Where warm, dry air is rising adjacent to
+cooler concentration of air, the cool air is drawn in to replace it,
+creating frequent winds.  You get the idea.  It seems fairly
+straight-forward to predict where these areas of heating and cooling
+occur based on geographical features of the land and/or ocean.
+
+Is this a starting point?
+
+Alan
+
+
+
+
+"Let there be light" (and stars, planets, air, people,...)
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+:                                                                                                                                                                                                          

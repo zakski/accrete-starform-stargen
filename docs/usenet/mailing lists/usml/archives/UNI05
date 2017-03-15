@@ -1,0 +1,444 @@
+From jyamato@cory.Berkeley.EDU Tue Aug 30 13:51:35 1988
+Return-Path: <jyamato@cory.Berkeley.EDU>
+Received: from cory.Berkeley.EDU by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA14365; Tue, 30 Aug 88 13:50:46 EDT
+Received: by cory.Berkeley.EDU (5.59/1.28)
+	id AA13688; Tue, 30 Aug 88 10:55:15 PDT
+Date: Tue, 30 Aug 88 10:55:15 PDT
+From: jyamato@cory.Berkeley.EDU (YAMATO JON AYAO)
+Message-Id: <8808301755.AA13688@cory.Berkeley.EDU>
+To: jwm@stdc.jhuapl.edu, jyamato@cory.Berkeley.EDU
+Subject: Re: map making
+Status: RO
+
+My interest in galactic formation is practically nil--I'm really only
+interested in continent level and below.  I will also confess to a
+real disbelief in the use of computer simulation to produce cultures.
+However, I could be wrong, and some help with small-scale climatology
+would be great.  Count me in, then, at least in a small way.
+
+(At the moment, the major campaign areas have the climates of the three
+places I've lived for prolonged periods.  The party doesn't know it,
+but they just had a grand tour of the Chugach Mountains, just east of
+senic Anchorage, Alaska.  They found it a bit cold for their liking....)
+
+Mary Kuhner
+
+
+From smile%homxc%mtune%att@research.att.com Tue Aug 30 16:31:59 1988
+Return-Path: <smile%homxc%mtune%att@research.att.com>
+Received: from research.att.com (att.arpa) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA15483; Tue, 30 Aug 88 16:31:38 EDT
+Message-Id: <8808302031.AA15483@stdc.jhuapl.edu>
+From: smile@homxc.att.com
+Received: by att.ATT.COM (smail2.6  att-mt)
+	id AA00942; 30 Aug 88 16:06:20 EDT (Tue)
+Received: by mtune.ATT.COM (smail2.6)
+	id AA06389; 30 Aug 88 16:06:07 EDT (Tue)
+Message-Version: 2
+>To: /addr=mtune!rutgers!stdc.jhuapl.edu!jwm
+Date: Tue 30 Aug 1988 16:02 EDT
+End-Of-Header: 
+Email-Version: 2
+X-Postmark: edward.m.barlow attrd ho1d207 59482 2019494407 homxc!smile
+To: mtune!rutgers!stdc.jhuapl.edu!jwm
+Subject: mailing list
+Ua-Message-Id: <post.smile.Tue 30 Aug 1988 15:57 EDT>
+End-Of-Protocol: 
+Content-Length: 430
+Status: RO
+
+Ciao,
+Add Me To the mailing list!! Add Me!!
+
+Ed Barlow
+smile@homxc.att.com
+
+PS. i can also be reached at rutgers!mtune!homxc!smile if the att mail router 
+is unknown by your location.
+
+PPS. i have some experience - wrote conquer v3.  Did some wierd smoothing
+   in the conquer code so that a FLAT world would come out pretty good.
+   so, i might even have something to add to your efforts, once i figure
+   out what you are doing.  
+
+From aplcomm!aplcen!umd5!haven!rutgers!mit-eddie!ll-xn!vlsi!davea Wed Aug 31 10:05:02 EDT 1988
+Status: RO
+
+Article 286 of rec.games.programmer:
+Path: aplcomm!aplcen!umd5!haven!rutgers!mit-eddie!ll-xn!vlsi!davea
+From: davea@vlsi.ll.mit.edu (Dave Allen)
+Newsgroups: rec.games.programmer,rec.games.frp
+Subject: Universe Simulator
+Keywords: universe simulator
+Message-ID: <146@vlsi.ll.mit.edu>
+Date: 29 Aug 88 21:42:07 GMT
+Distribution: rec
+Organization: MIT Lincoln Laboratory, Lexington MA
+Lines: 100
+Xref: aplcomm rec.games.programmer:286 rec.games.frp:4012
+
+
+There has been some traffic on the net lately about a "Universe Simulator".
+This post is a summary and announcement of an informal mailing list.
+
+Jim Meritt has volunteered to host a mailing list and archive.  If
+you are interested in the topic, please email him and he will add
+your name to the list.  If you have a contribution, email it to him
+(preferred), or post it to rec.games.frp or .programmer.  If you
+email it, he will redistribute it to the list.
+
+The following people are on the list already:
+davea@vlsi.ll.mit.edu (Dave Allen, hey that's me)
+jwm@stdc.jhuapl.edu (Jim Meritt)
+dav@eleazar.dartmouth.edu (William David Haas)
+pearl@aramis.rutgers.edu (Stephen Pearl)
+spar!navtech!mark@decwrl.dec.com (Mark Stevans)
+dredick@vax.bbn.com (Don Redick)
+netxcom!ewiles@uunet.uu.net (Edwin Wiles)
+jl3j@andrew.cmu.edu (John Robert Leavitt)
+duncanj@umd5.umd.edu (James Duncan)
+If you're on this list but have no interest, we'd appreciate it
+if you could email Jim to tell him.
+
+I will post summaries of the discussion to both rec.games.frp and
+rec.games.programmer under the topic Universe Simulator.  Here is
+a summary of what has happened so far.
+
+ACTUAL hoax - "David M. Brown", r.g.p 126 (25 Jul), 130 (28 Jul)
+Call for discussion - Mark Stevans, r.g.p 146 (31 Jul)
+Statement of intent - Dave Allen, r.g.p (early Aug), posted
+  by Mark Stevans.  We are trying to write a program that 
+  simulates the evolution of a large number of star systems,
+  showing the development of intelligent life, invention of culture,
+  and inter-relationships of interstellar civilizations.  Key points
+  are the variety of lifeforms, differing rates and types of technological
+  development, and a variety of interaction modes for alien contacts.
+  The resulting program would be something you would sit back and
+  watch, like the Scientific American game Life.  Each simulation
+  timestep, the universe would get a little older.
+Description of Universe Simulator - Dave Allen, r.g.p 165 (8 Aug)
+  Basically, it starts out with an empty universe full of dust.
+  Stars are born, live their life on the main sequence, and supernova.
+  Later stars have higher metallicity.  Each star is created with
+  planets, each having a temperature, atmosphere and (possibly) life.
+  Simulation uses die-rolling rather than astrophysical formulae,
+  is written in ~300 lines of Amiga Basic code, and runs in 6 minutes.
+Breakdown of simulation levels in the Universe Simulator, Dave Allen, to
+  Jim Meritt.  There are really three separate simulations involved
+  here:  development of planetary systems and stars; growth of a single
+  intelligent race; interaction of starfaring races with other races.
+Description of astrophysical-formula simulations, Jim Meritt, to Dave
+  Allen, 19 Aug 88.  Made up a random generator that pumped out stars
+  with a distribution similiar to a galactic arm.  Lifted a condensate
+  version of planetary creation to derive size and probable core/crust
+  composition.  Used the star mass and the distance/composition to get
+  planetary masses.  Used star temp and the distance/mass of the planet
+  to get probable atmosphere composition & pressure (ev calculations,
+  liquid water temp range, dust, that type of stuff).  Made random
+  generators for stuff like moons & rings.  For terrestrial-type surface
+  conditions, there is a reasonable amount of climatology that is not too
+  numeric intensive.
+Offer of working PC Basic programs, from Dave Allen, to Jim Meritt,
+  18 Aug 88.  A working condensation simulator, based on a paper by
+  Stephen Dole, that generates planetary systems given star mass
+  and initial dust density.  I've made two modified versions of these,
+  one to allow captured moons, and one to generate a moon system
+  given planet mass.  An atmosphere generator based on papers by M.H.
+  Hart which simulates the development of Earth's atmosphere with
+  parameters to generate the atmosphere of any terrestrial planet"
+Description of climatology system, from Jim Meritt, to Dave Allen, 
+  19 Aug 88.  You can get climatology from (distance from sun, length of
+  year and day, and axial tilt), but you have to throw in things like
+  distance from ocean (for habitable) in direction of prevailing winds
+  (planet-wide hadley cells for prevailing zones).  For microclimates
+  ("local weather") you sorta gotta cheat (statistical separation from
+  predicted climate)  I think I have an article that has a basic
+  program that dies the planetwide climate from orbital characteristics
+  someplace.  Or maybe the other way (climate to orbit).
+Wish list for climatology program, from Dave Allen to Jim Meritt, 
+  26 Aug 88.  Suggests  raster map of a planet, 70 x 210 pixels.  Each
+  pixel is either land, mountain or ocean.  Derive temperature ranges
+  by season and time of day from known parameters.  Determine global
+  atmospheric circulation.  Determine rainfall for each pixel,
+  accounting for rain shadows.  Determine ocean currents, microclimates.
+Description of using tectonics to generate world maps, Mark Isaak, r.g.f
+  2284, 24 Aug 88.  Divide globe into 20 plates, some continent, most
+  ocean.  Give each plate a random direction and velocity; let them move.
+  Change the directions every once in a while.  Erode the mountains.
+More description of tectonics, Mark Isaak, to Dave Allen, 26 Aug 88.
+  (Describes a complete method for generating world maps by hand)
+List of references to simulations of politics, human behavior and
+  international relations, from Jim Meritt, to Dave Allen and Stephen
+  Pearl, 26 Aug 88.  (Not included)
+Description of universe simulator, from Stan Shebs, article 276 of r.g.p
+  (26 Aug 88).  He has a document describing the basics of a simulator
+  for a universe.  Getting the basic concepts right is pretty hard -
+  for instance how to do 3D models of planets, how to track EM radiation
+  at various frequencies, and how to handle energy/info transfer of
+  various sorts, without all of this requiring a building full of Class
+  VI machines to run reasonably.
+
+
+From c60c-3ax%WEB.Berkeley.EDU@lilac.berkeley.edu Wed Aug 31 20:08:54 1988
+Return-Path: <c60c-3ax%WEB.Berkeley.EDU@lilac.berkeley.edu>
+Received: from lilac.berkeley.edu (128.32.136.12) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA23289; Wed, 31 Aug 88 20:08:15 EDT
+Received: from web-3g.berkeley.edu
+	by lilac.berkeley.edu (5.54 (CFC 4.22.3)/1.16.18B)
+	id AA00115; Wed, 31 Aug 88 14:35:49 PDT
+Received: by web-3g.berkeley.edu (3.2/SMI-3.0DEV3.9MXl)
+	id AA04002; Wed, 31 Aug 88 14:37:45 PDT
+Date: Wed, 31 Aug 88 14:37:45 PDT
+From: c60c-3ax%WEB.Berkeley.EDU@lilac.berkeley.edu
+Message-Id: <8808312137.AA04002@web-3g.berkeley.edu>
+To: jwm@stdc.jhuapl.edu
+Subject: Universe Simulator
+Status: RO
+
+
+Please add me to your mailing list for the universe simulator item.  While I
+don't really have a lot of information that might be helpful, I am interested
+in finding out how to make my computer build a universe for me...
+
+However, I hope this isn't going to be too heavily scientifically oriented.
+I'd like tables and stuff; I don't want to see programs saying "Simulation of
+Hydrosphere of a Star" or things like that.  I want to be able to examine a
+planet orbiting a certain star and see that it's a tropical world, etc.; I
+don't want (immediately) complete breakdowns of core compositions and stuff,
+or stuff too technical to be used in games...
+
+Thanks --
+
+-- Conrad Wong
+c60c-3ax@wolf.Berkeley.EDU
+
+From jfc@ATHENA.MIT.EDU Thu Sep  1 02:44:26 1988
+Return-Path: <jfc@ATHENA.MIT.EDU>
+Received: from ATHENA (athena.mit.edu) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA23614; Thu, 1 Sep 88 02:43:30 EDT
+Received: by ATHENA.MIT.EDU (5.45/4.7) id AA19029; Thu, 1 Sep 88 02:43:07 EDT
+Received: by M66-080-1.MIT.EDU (5.45/4.7) id AA11664; Thu, 1 Sep 88 02:42:45 EDT
+Message-Id: <8809010642.AA11664@M66-080-1.MIT.EDU>
+To: jwm@stdc.jhuapl.edu
+Subject: Universe Simulator
+Date: Thu, 01 Sep 88 02:42:41 EDT
+From: John Carr <jfc@ATHENA.MIT.EDU>
+Status: RO
+
+
+I'd like to join this project.  I would prefer to work on physical rather
+than biological or political aspects.  Specifically, I consider myself
+qualified to program astrophysics and planetary science (formation and
+composition I can handle, I could make a good effort at meteorology, but
+I would not be good at plate tectonics or geology).
+
+  --John Carr
+
+From jwm Thu Sep  1 09:04:09 1988
+To: cs2551af@charon, cthulhu@athena, dav@eleazar, davea@ll-vlsi.arp, dredick@vax.bbn.com,
+    duncanj@umd5.umd, jfc@athena, jgrace@bbn.com, jkiparsk@csli.stanford.edu,
+    jl3j@andrew.cmu.edu, jyamato@cory, malloy@nprdc.arpa, mjs%ulysses@research.att.com,
+    netxcom!ewiles@uunet.uu.net, oconnor@sccgate.scc.com, pearl@aramis.rutgers.edu,
+    therat@ucscb@ucscc.ucsc.edu, unido\!altmuc\!hnt@uunet.UU.NET, vax.bbn.com\!oak.bbn.com\!milliken,
+    wes@umix.cc.umich.edu, yaj@ford-wdl1.arpa
+Subject: Universal Simulator
+Status: RO
+
+
+I took this off of the comp.sources.games in Jan 27.  Here is the README,
+for anyone who is interested.
+
+Usage of Traveller Programs
+===========================
+
+Create Two subdirectories sysgen & sysprint : Then unbundle the files.
+The directories will contain :
+
+sysgen:
+Makefile const.h glob.c glob.h init.c main.c planets.c print.c rnd.c sats.c st.c
+stuff.h sub.c support.c system.c types.h
+
+sysprint:
+Makefile mass stars.ps tr22 trconv trmult trmult.c ts
+
+To generate complete listings of star systems (an allegedly complete
+implementation of Single-Star Systems according to the rules in Book 6)
+it is necessary to compile the files in sysgen (by typing make) and then
+running the program st. Be warned this produces voluminous output.
+
+To generate a postscript file representing the star system, run st with
+the -m option. This produces a file which lists the major features in the
+system.
+
+The command trconv file in the sysprint directory will then
+produce a postscript file. Trading routes can be added to the system
+description file by the DM as required.
+
+Multiple systems can be printed using the trmult command. For example
+
+trmult 2 2 stars.ps file1 file2 file3 file4
+
+will place 4 systems on a piece of paper. But be warned: the order is not
+the most obvious imaginable.
+
+
+NOTE: the st command takes an argument which is an integer defining the
+system. This allows the st program to be run many times with predictable
+results.
+
+tr22 & mass are historical examples of using trmult.
+
+"Let there be light" (and stars, planets, air, people,...)
+jwm@aplvax.jhuapl.edu 128.244.65.5  (James W. Meritt)
+
+From davea@ll-vlsi.ARPA Thu Sep  1 09:14:16 1988
+Return-Path: <davea@ll-vlsi.ARPA>
+Received: from XN.LL.MIT.EDU (10.2.0.10) by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA00805; Thu, 1 Sep 88 09:13:43 EDT
+Received:  from LL-VLSI.ARPA by XN.LL.MIT.EDU; Thu, 1 Sep 88 09:08:20 EDT
+Posted-Date: Thu, 1 Sep 88 09:08:15 EDT
+Received: by ll-vlsi.arpa (5.51/3.2.sst.ll)
+	id AA22250; Thu, 1 Sep 88 09:08:15 EDT
+Date: Thu, 1 Sep 88 09:08:15 EDT
+From: Dave Allen <davea@ll-vlsi.ARPA>
+Message-Id: <8809011308.AA22250@ll-vlsi.arpa>
+To: jwm%stdc.jhuapl.edu@XN.LL.MIT.EDU
+Subject: Stuff
+Cc: davea@ll-vlsi.ARPA
+Status: RO
+
+Jim,
+Three things.  First, I got the stuff you us-mailed me; it looks pretty
+neat.  I will reverse-engineer it and post a summary of the relevant equations
+probably next week.  Second, here's a possible reference for you re atmosphere
+and ocean circulation:
+
+_Advances in Geophysics_, Academic Press, a yearly publication.  The 1983 volume
+(ISBN 0-12-018825-2, volume 25 in the series, edited by Barry Salzman) is
+entitled Theory of Climate.  Volume 28 A and B (ISBN 0-12-018828-8 and
+0-120018849-X, 1985, edited by Syukuro Manabe) is entitled Issues in
+Atmospheric and Oceanic Modelling.  My library has them under QC801.A283.
+I didn't read any of the contents, just the titles.  They _all_ looked useful.
+
+Third, here's some mail re Marty Shannon.  I haven't tried mailing him, though.
+> From: jwm@stdc.jhuapl.edu (Jim Meritt)
+> Subject: Marty Shannon 
+> I seem unable to get through to Marty via either mjs@mozart.att.com or
+> mjs%ulysses@research.att.com.  Can you help?
+
+> From davea Wed Aug 31 15:03:36 1988
+> Date: Wed, 31 Aug 88 15:03:31 EDT
+> To: postmaster%research.att.com@ll-xn.arpa
+> Subject: Address query
+> Hi.  I'm trying to get in touch with someone who gave his address as
+> user%ulysses@research.att.com or user@mozart.att.com.  Unfortunately,
+> my mailer does not seem to find either of those.  Can you tell me if
+> such a node really exists, and if so what other name I might try?
+ 
+> From: ches@att.arpa
+> Date: Wed, 31 Aug 88 20:43:45 EDT
+> Depends on your mailer.  Try one of:
+> 	user@ulysses.att.com
+> 	user%ulysses@att.arpa	(a synonym for research.att.com)
+> Let me know if neither works for you.
+> Bill Cheswick
+> postmaster@research.att.com
+> research!ches
+
+Dave
+
+From aplcomm!aplcen!umd5!haven!rutgers!mailrus!purdue!decwrl!sgi!andru Thu Sep  1 09:39:32 EDT 1988
+Status: RO
+
+Article 4040 of rec.games.frp:
+Path: aplcomm!aplcen!umd5!haven!rutgers!mailrus!purdue!decwrl!sgi!andru
+From: andru@rhialto.SGI.COM (Andrew Myers)
+Newsgroups: rec.games.frp
+Subject: Re: Mapping a World
+Summary: Better fractal algorithm
+Keywords: tectonics terrain features
+Message-ID: <20808@sgi.SGI.COM>
+Date: 31 Aug 88 02:53:52 GMT
+References: <147@vlsi.ll.mit.edu> <1010@cbnews.ATT.COM>
+Sender: daemon@sgi.SGI.COM
+Distribution: rec
+Organization: Silicon Graphics Inc, Mountain View, CA
+Lines: 42
+
+In article <1010@cbnews.ATT.COM>, elk@cbnews.ATT.COM (Edwin L. King) writes:
+> 
+> Take a square grid, say with boundaries marked (0,0) to (n,n).
+> Now, pick a point (n/2,n/2) and move that point some random
+> distance up or down from where it is now, adjusting all
+> of its neighbors accordingly (forming sort of a cone).
+> You now repeat this procedure on the four subgrids 
+> {(0,0),(n/2,n/2)},{(n/2,0),(n,n/2)},{(0,n/2),(n/2,n)},
+> {(n/2,n/2),(n,n)}.  and continue repeating each time further
+> subdividing the grid until your resolution runs out.  (Nicely
+> done recursively.)
+> 
+
+This actually doesn't generate the most realistic-looking map, because the
+ridges generated by the first "lift" tend to stick around to later stages.
+The effect is to have two large ridges (or valleys) which run horizontal and
+vertical to the map coordinates, and successively smaller ones on the sides.
+
+This effect can be hidden by increasing the relative importance of the
+successive smaller lifts, but only by making the terrain extremely rough.
+A better technique is described in one of Mandelbrot's books: pick a "random"
+line on your square grid (randomly oriented in position and angle); raise all
+the terrain to one side of your line by a small step. Repeat until well done,
+subtract the same amount from all points (usually half the number of repeti-
+tions). The terrain can also be run through a function to make it not all
+one mountain, such as a f(i,j) = f(i,j)^3 type function.
+
+This works even better on a sphere, where you pick a random hemisphere and
+increase its radius by a small step. Repeat. If you store all of your
+steps into a file separately, then you can zoom in on any particular section
+of the sphere to produce a map with increased accuracy. Sea level can be
+adjusted as desired to sink continents, etc.
+
+Granted, this is a bit compute-intensive, but it does generate nice worlds,
+and if you're going to generate your maps on a world, you might as well
+do it right! :->
+
+I remember now: Benoit Mandelbrot, _Fractals: Form, Chance, and Dimension_ ~1978
+
+Andrew
+--
+no.
+
+
+From oconnor@sccgate.scc.com Thu Sep  1 09:35:46 1988
+Return-Path: <oconnor@sccgate.scc.com>
+Received: from sccgate.scc.com by stdc.jhuapl.edu (3.2/SMI-3.2)
+	id AA01085; Thu, 1 Sep 88 09:35:27 EDT
+Received: by sccgate.scc.com (4.0/870914.1{Enger})
+	id AA11895; Thu, 1 Sep 88 09:40:19 EDT
+Date: Thu, 1 Sep 88 09:40:19 EDT
+From: oconnor@sccgate.scc.com (Michael J. O'Connor)
+Message-Id: <8809011340.AA11895@sccgate.scc.com>
+To: jwm@stdc.jhuapl.edu
+Subject: Re:  make it?
+Status: RO
+
+	I peeked at the universe4 file, and thought I'd mention
+why I'm interested in your topic.  A couple of weeks ago, I dug
+up some old (1982ish) listings of my attempt to automate the
+world generation in SPI's "Universe" RPG.  I decided to pick it up
+again and finish it, since now I have access to more graphics
+than I did then.  I found myself wanting more "realism" than was
+available using their tables and rules but was unsure of where to
+begin changing it.  My old astronomy texts weren't much help.  Then
+someone pointed out the news item describing your group.
+	As I mentioned, I haven't read all the data yet, so it's
+unclear to me whether you plan a group project or are just exchanging
+helpful hints.
+
+		Mike
+
+
+
+
+                                                                                                                                                                                                                                                                           
