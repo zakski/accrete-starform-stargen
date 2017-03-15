@@ -1,0 +1,17 @@
+The main paper that the accretion part of the simulation is based upon.
+
+reference-wise the bibtex file for this paper will be "accrete"
+
+don't bother trying to copy any text from the pdf - it will come out with garbage.
+
+Basic Assumptions:
+- 1 star of 1 solar mass and 1 solar luminosity (basically equivalent to our own star)
+- Planets can form between the radii 0.3 astronomical units (AU) and 50.0 AU.
+
+Major Limitations:
+- No way to recreate exact tests results; even with a seed listed in the sample run, the age of the computer hardware he used means that accurately recreating
+the pseudo-random number sequence is a tall order without the original software to hand. (internal random number generator of an IBM 7044 PC).
+
+- Collision calculations are less than accurate due to not taking into account any axial inclinations on the orbital plane.
+
+- No consideration given to the accretion of satellites.
