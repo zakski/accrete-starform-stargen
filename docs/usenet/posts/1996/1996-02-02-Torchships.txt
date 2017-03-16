@@ -1,0 +1,2245 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/MqgYTuIf13w
+TITLE: Torchships 
+
+----------------------------------------------------------------------------
+
+Friday, 2 February 1996 08:00:00 UTC - unknown:
+Could somebody explain (in not-too-technical terms) what a torchship is? I've 
+seen the term crop up a few times now, and it's never been obvious from the
+context.
+Ta,
+Mike C
+----------------------------------------------------------------------------
+
+Saturday, 3 February 1996 08:00:00 UTC - Wayne Throop:
+:: cm5...@bs47c.staffs.ac.uk <>
+:: Could somebody explain (in not-too-technical terms) what a torchship
+:: is? I've seen the term crop up a few times now, and it's never been
+:: obvious from the context. 
+: From: "Andrew C. Plotkin" <erky...@CMU.EDU <>>
+: I don't think there's a solid scientific concept behind the term.  It
+: means whatever the author feels like making it mean, like "hyperdrive". 
+
+The first time I'm aware of it being used is Heinlein juveniles,
+such as "Farmer in the Sky" or "Time for the Stars".  Was it in
+general use then or before then?  I had assumed Heinlein coined it
+for this use.
+
+: When I've seen it, I've generally gotten the impression of a ship
+: which moves by blasting a tremendous amount of power out the back. 
+: Well, that describes all rockets, so possibly the reaction, er,
+: "mass", is pure light.  Maybe from a total conversion reaction. 
+: Although I seem to recall somebody calling a fusion-drive ship a
+: torchship. 
+
+Heinlein used it for total-conversion reaction engines with extremely
+hot and dangerous exhaust which could maintain contstant boost of
+1g or more for extremely long periods of times (days or weeks at least
+and in some cases years).
+
+I think the "total conversion" can be replaced by most any mechanism of
+sufficient energy (such as fusion, antimatter anhiliation, artificial
+singularities, etc, etc), and thus the crucial factors that make a
+torchship a torchship are a very hot, dangerous exhaust (but probably
+short of a photon exhaust) and the capability for high acceleration for
+long periods of time. 
+
+(Just as, "hyperdrive" implies generic FTL by getting from A to B without
+traversing normal space between, and there are many variants such as
+Asimov-ian hyperdrive as in Foundation, Poul Anderson quantum hyperdrive
+as in the polesotechnic league, Niven hyperdrive complete with ESP
+navigation and "blind spot", and so on.)
+
+In fact, the terms hyperdrive and torchship haven't really been used
+much lately (at least, so it seems to me; I haven't seen 'em used lately).
+Both because of being replaced by other terms (such as wormholes, warps,
+and impulse, antigravity, antimatter, fusion, etc), and because lots of
+more recent SF just don't mention the concepts much, and just portray
+highly capable interplanetary ships without mentioning whether they are
+constant-acceleration, or even FTL, or whatnot. 
+
+--
+Wayne Throop   throopw%s...@dg-rtp.dg.com <>
+               thr...@aur.alcatel.com <>
+----------------------------------------------------------------------------
+
+Saturday, 3 February 1996 08:00:00 UTC - Andrew C. Plotkin:
+cm5...@bs47c.staffs.ac.uk <> (unknown) writes:
+> Could somebody explain (in not-too-technical terms) what a torchship is? I've 
+> seen the term crop up a few times now, and it's never been obvious from the
+> context.
+I don't think there's a solid scientific concept behind the term. It
+
+means whatever the author feels like making it mean, like
+"hyperdrive". 
+When I've seen it, I've generally gotten the impression of a ship
+
+which moves by blasting a tremendous amount of power out the back.
+Well, that describes all rockets, so possibly the reaction, er,
+"mass", is pure light. Maybe from a total conversion reaction.
+Although I seem to recall somebody calling a fusion-drive ship a
+torchship. 
+--Z
+
+"And Aholibamah bare Jeush, and Jaalam, and Korah: these were the borogoves..."
+----------------------------------------------------------------------------
+
+Monday, 5 February 1996 08:00:00 UTC - Erik Max Francis:
+Bronis Vidugiris wrote:
+> Usually it implies some sort of atomic-powered rocketship, IMO.
+> Fusion power is probably the most common, fission or anti-matter
+> are other possibilities.
+
+But then you mean it would be a fuel-feed ship with a hot exhaust.  Antimatter
+drives, after all, are not considered "atomic" or "nuclear drives."
+
+-- 
+Erik Max Francis, &tSftDotIotE. && m...@alcyone.darkside.com <> || m...@alcyone.com <>
+San Jose, California, U.S.A. && 37 20 07 N 121 53 38 W && the 4th R is respect
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- && 1love && folasade
+Omnia quia sunt, lumina sunt. && GIGO Omega Psi && http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+"Out from his breast/his soul went to seek/the doom of the just." -- _Beowulf_
+----------------------------------------------------------------------------
+
+Tuesday, 6 February 1996 08:00:00 UTC - Julian Treadwell:
+"Andrew C. Plotkin" <erky...@CMU.EDU <>> wrote:
+
+>cm5...@bs47c.staffs.ac.uk <> (unknown) writes:
+>> Could somebody explain (in not-too-technical terms) what a torchship is? I've 
+>> seen the term crop up a few times now, and it's never been obvious from the
+>> context.
+
+>I don't think there's a solid scientific concept behind the term. It
+>means whatever the author feels like making it mean, like
+>"hyperdrive". 
+My understanding was that it means a ship with such a large supply of
+fuel that it spends the whole of a trip under constant thrust, either
+accelerating or braking.  If such a magic fuel supply could ever be
+found, trips to nearby stars could take only a few relative months,
+and 99% of the speed of light could be reached in about a year
+(non-relative) at 1G thrust.  
+
+However,  this is only an impression I've picked up somewhere - I
+could be mistaken.
+----------------------------------------------------------------------------
+
+Wednesday, 7 February 1996 08:00:00 UTC - James Nicoll:
+In article <Pine.SV4.3.91.960207100830.16173B-100000@curly>,
+ <kko...@emory.edu <>> wrote:
+        [How to have a long day and volcanism on a moonless planet?]
+
+        Mars has little piddly moons and a roughly 24 hour day. Venus has
+a day millions of seconds long and no moons at all. I think you should be
+OK with what you have.
+
+>In case this makes a difference, my planet is (for the moment) 1.5 earth's 
+>volume and a little less dense, with same surface gravity, so the 
+>atmosphere is a little denser.  It's very earth-like, fine for humans to 
+>live in, lush, with familiar animals and an expansive rain forest biome and 
+>again, lots of volcanic activity.  The sun is 1.2 AU away with a 1.44 
+>luminosity.
+
+        How did it come to have familiar animals? Even a region which at one
+point had contact with what later became Eurasia and the Americas, Australia,
+has pretty unique beasties, and they share common ancestry with the species
+elsewhere.
+
+        I  take it the rain forest is but one of many types of biome?
+
+                                                                James Nicoll
+-- 
+" The moral, if you're a scholar don't pick up beautiful babes on deserted 
+lanes at night.  Real Moral, Chinese ghost stories have mostly been written 
+by scholars who have some pretty strange fantasies about women."
+                                                        Brian David Phillips  
+----------------------------------------------------------------------------
+
+Wednesday, 7 February 1996 08:00:00 UTC - the ROYster-Meister:
+On Wed, 7 Feb 1996, James Nicoll wrote:
+
+> In article <Pine.SV4.3.91.960207100830.16173B-100000@curly>,
+>  <kko...@emory.edu <>> wrote:
+> 
+>         [How to have a long day and volcanism on a moonless planet?]
+> 
+>         Mars has little piddly moons and a roughly 24 hour day. Venus has
+> a day millions of seconds long and no moons at all. I think you should be
+> OK with what you have.
+> 
+> >In case this makes a difference, my planet is (for the moment) 1.5 earth's 
+> >volume and a little less dense, with same surface gravity, so the 
+> >atmosphere is a little denser.  It's very earth-like, fine for humans to 
+> >live in, lush, with familiar animals and an expansive rain forest biome and 
+> >again, lots of volcanic activity.  The sun is 1.2 AU away with a 1.44 
+> >luminosity.
+> 
+>
+        This post reminded me of a question I meant to post a while 
+back.  Does anybody out there know of a good set of software for 
+simulating stellar systems?  I'd like to be able to put in planets with 
+various masses at various distances around a star, and play with the 
+system until it's stable.  I've read that there is such software, but no 
+name or source was given. 
+ ------------------------------------------------------------------------------
+     -- the ROYster-meister            +                 wilsonr@Peak.org --
+
+                        one of God's >peculiar< people
+
+
+     "But you are a chosen race, a royal priesthood, God's peculiar people."
+
+                          -- the Apostle Peter (KJV)
+ ------------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Thursday, 8 February 1996 08:00:00 UTC - Cliff L. Biffle:
+> Can anyone help me with my problem for a writing project?
+> 
+> The author of What if the Moon Didn't Exist says in the book that because of
+> less tidal drag to slow the rotation of a moonless earth, the rate of
+> rotation would be much faster (8 hour days instead of 24) and winds would be
+> extremely intense.
+This is true, in addition to increased Coriolis forces generating tornadoes, 
+cyclones, etc., and no tides (except solar tides)
+ 
+> If this is true, I might be in trouble.  I want my world to have a 26
+> hour day, generally earth-like winds, and no moon.  Is there any way this
+> can happen?  Perhaps an older planet will have slowed its rotation over
+> time?  But I also want there to be a lot of volcanic activity, and isn't
+> that characteristic of a younger planet?  Perhaps there was once a moon
+> but it exists no longer?  (In which case how would that have affected
+> the planet?)  Basically, can I make this work, and how?
+
+One simple solution to the "disappearing moon" approach is to have the moon 
+drop too close to the planet, and fragment, either impacting the planet 
+(causing great seas) or fragmenting further into a ring system. 
+
+
+> In case this makes a difference, my planet is (for the moment) 1.5 earth's
+> volume and a little less dense, with same surface gravity, so the
+> atmosphere is a little denser.  It's very earth-like, fine for humans to
+> live in, lush, with familiar animals and an expansive rain forest biome and
+> again, lots of volcanic activity.  The sun is 1.2 AU away with a 1.44
+> luminosity.
+***Remember not to make the rain forest biome _too_ expansive, or you risk 
+becoming unrealistic***
+
+Well, having a set planet-solar distance causes difficulties.  The same solar 
+tides, radiation, etc. could be achieved by using a weaker star and placing 
+the planet closer; also, reducing the distance between planet and star would 
+supply a plethora of solar tidal braking forces, to slow the planet (as you 
+wanted to occur).
+ 
+> I have a lot more questions, though this is the one pressing me right now.
+> Any and all help is appreciated.  Private e-mail is welcome.
+
+Well, there's my two solutions.  Quick summary:
+        1) Used to have a moon; did one of following:
+                a) Fragmented, impacted planet
+                b) Broke up into ring system
+                c) Was drawn off into other orbit by gravity
+        2) Closer to star, so tidal braking slows planet
+
+Hope I was of some help; feel free to throw any other questions you have at 
+me.  I'm a student, so I'm always around here somehwhere... :-)
+
+                              -Cliff L. Biffle
+
+---------------------------------------------------------------------
+Cliff L. Biffle                Arizona Resident
+Software Developer, Network Safety Corporation
+EMail: cbi...@safety.net <>   feed...@safety.net <>
+Fax: 585-7257                Phone: 585-4099
+5831 E. Dynamite Blvd, Cave Creek, AZ 85331
+----------------------------------------------------------------------------
+
+Thursday, 8 February 1996 08:00:00 UTC - Jeff Suzuki:
+Cliff L. Biffle (cbi...@safety.net <>) wrote:
+: > The author of What if the Moon Didn't Exist says in the book that
+
+because of : > less tidal drag to slow the rotation of a moonless
+earth, the rate of : > rotation would be much faster (8 hour days
+instead of 24) and winds would be : > extremely intense.
+
+: This is true, in addition to increased Coriolis forces generating tornadoes, 
+: cyclones, etc., and no tides (except solar tides)
+I'm not sure if the author meant this, but let me clarify a few
+things:  the Earth _would_ have a faster day without the Moon, but
+this does not mean that a moonless world would necessarily have a
+faster day.  Prime counterexample:  Venus.   Secondary counterexample:
+Mars, whose day is just a shade longer than ours, and whose two
+"moons" are hardly worthy of the name.
+
+General consensus (last time I looked) among astronomers is that the
+miserably thick atmosphere of Venus has more to do with its nearness
+to the sun than the lack of a Moon.
+
+: > If this is true, I might be in trouble.  I want my world to have a 26
+
+: > hour day, generally earth-like winds, and no moon.  Is there any way this
+: > can happen?
+Again, Mars is a fairly good example.  (The winds might be a problem,
+but the Martian surface is a lot more homogeneous than Earth's, which
+probably helps the winds build up to the ferocious extent they do.
+Also, Mars' atmosphere is so thin as to be practically non-existent:
+Venus, with a thick atmosphere, has almost no winds at all.)  
+
+: > but it exists no longer?  (In which case how would that have affected
+: > the planet?)
+
+Two words:  tidal wave.  No, make that TIDAL WAVE!!!!  (And literally.
+Anyone remember _The Legion of Space_?)
+----------------------------------------------------------------------------
+
+Thursday, 8 February 1996 08:00:00 UTC - Jeff Suzuki:
+the ROYster-Meister (wil...@PEAK.ORG <>) wrote:
+:         This post reminded me of a question I meant to post a while 
+
+: back.  Does anybody out there know of a good set of software for 
+: simulating stellar systems?  I'd like to be able to put in planets with 
+: various masses at various distances around a star, and play with the 
+: system until it's stable.  I've read that there is such software, but no 
+: name or source was given. 
+Such software may be becoming obsolete even as we speak.  It was
+"common wisdom" that large, Jupiter-like planets could only exist far
+from the central sun.  The recent discoveries of large, Jupiter-sized
+planets near to (## Ursa Majoris?) kinda blows this idea.  
+
+Jeffs
+----------------------------------------------------------------------------
+
+Thursday, 8 February 1996 08:00:00 UTC - the ROYster-Meister:
+>  
+> > If this is true, I might be in trouble.  I want my world to have a 26
+> > hour day, generally earth-like winds, and no moon.  Is there any way this
+> > can happen?  Perhaps an older planet will have slowed its rotation over
+> > time?  But I also want there to be a lot of volcanic activity, and isn't
+> > that characteristic of a younger planet?  Perhaps there was once a moon
+> > but it exists no longer?  (In which case how would that have affected
+> > the planet?)  Basically, can I make this work, and how?
+> 
+> One simple solution to the "disappearing moon" approach is to have the moon 
+> drop too close to the planet, and fragment, either impacting the planet 
+> (causing great seas) or fragmenting further into a ring system. 
+>
+        If we want a planet with no moon, just decree that it started 
+that way.  Just because our Earth would have a faster rotation right now 
+if it had never had a moon, doesn't mean that any planet would have a 
+faster rotation;  that all depends on initial conditions.  Various events 
+in the _distant_ past could give a planet any sort of spin (up to such 
+that would tear it apart, of course), even retrograde.
+        Or, for fun, start with a moon, bash the moon with something 
+large, and leave rings around the planet.
+
+ 
+> > In case this makes a difference, my planet is (for the moment) 1.5 earth's
+> > volume and a little less dense, with same surface gravity, so the
+> > atmosphere is a little denser.  It's very earth-like, fine for humans to
+> > live in, lush, with familiar animals and an expansive rain forest biome and
+> > again, lots of volcanic activity.  The sun is 1.2 AU away with a 1.44
+> > luminosity.
+> 
+> ***Remember not to make the rain forest biome _too_ expansive, or you risk 
+> becoming unrealistic***
+>
+        Really -- besides boring.  A planet with a single, continuous 
+biome?  Besides boring, it becomes unlikely -- there will always be an 
+energy deficit near the poles, if you don't want total deserts at the 
+equator -- tho, I suppose, leaving the equatorial zone free of land 
+masses might solve that difficulty, and give your planet lovely, huge 
+storms that would carry warm, moist air away to the north and south... 
+but then you've got nasty winds again, I think (should have taken another 
+meteorology course).
+ 
+ ------------------------------------------------------------------------------
+     -- the ROYster-meister            +                 wilsonr@Peak.org --
+
+                        one of God's >peculiar< people
+
+
+     "But you are a chosen race, a royal priesthood, God's peculiar people."
+
+                          -- the Apostle Peter (KJV)
+ ------------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Thursday, 8 February 1996 08:00:00 UTC - Erik Max Francis:
+the ROYster-Meister wrote:
+
+>         This post reminded me of a question I meant to post a while
+> back.  Does anybody out there know of a good set of software for
+> simulating stellar systems?  I'd like to be able to put in planets with
+> various masses at various distances around a star, and play with the
+> system until it's stable.  I've read that there is such software, but no
+> name or source was given.
+The only similar software that I've heard of (and probably what you refer,
+since it's often mentioned but rarely presented) is ACCRETE, which is a program
+which simulates the formation and collisions of protoplanetary bodies and, when
+finished, outputs a report of the different bodies.
+
+-- 
+Erik Max Francis, &tSftDotIotE. && m...@alcyone.darkside.com <> || m...@alcyone.com <>
+San Jose, California, U.S.A. && 37 20 07 N 121 53 38 W && the 4th R is respect
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- && 1love && folasade
+Omnia quia sunt, lumina sunt. && GIGO Omega Psi && http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+"Out from his breast/his soul went to seek/the doom of the just." -- _Beowulf_
+----------------------------------------------------------------------------
+
+Thursday, 8 February 1996 08:00:00 UTC - Bronis Vidugiris:
+In article <3116C258...@alcyone.com <>>,
+Erik Max Francis  <m...@alcyone.com <>> wrote:
+)Bronis Vidugiris wrote:
+)
+)> Usually it implies some sort of atomic-powered rocketship, IMO.
+)> Fusion power is probably the most common, fission or anti-matter
+)> are other possibilities.
+)
+)But then you mean it would be a fuel-feed ship with a hot exhaust.  Antimatter
+)drives, after all, are not considered "atomic" or "nuclear drives."
+Well, for lack of a better term, I would!  What would you suggest to
+include antimater, fission, and fusion under one big "umbrella"?
+----------------------------------------------------------------------------
+
+Friday, 9 February 1996 08:00:00 UTC - Leonard Erickson:
+Erik Max Francis <m...@alcyone.com <>> writes:
+
+> The only similar software that I've heard of (and probably what you refer,
+> since it's often mentioned but rarely presented) is ACCRETE, which is a progr
+> which simulates the formation and collisions of protoplanetary bodies and, wh
+> finished, outputs a report of the different bodies.
+So where can we get a copy of ACCRETE that'll run in a PC. Better yet,
+where can we get the source code?
+
+Also, does ACCRETE start with the star already formed or does it start
+with the condensing nebula? I don't know about anyone else, but what
+would be most useful to *me* would be something where you start with a
+contracting gas cloud of a given mass.
+
+
+
+Leonard Erickson                 (aka Shadow)
+ sha...@krypton.rain.com <>        (preferred)        
+leo...@qiclab.scn.rain.com <>        (last resort)
+----------------------------------------------------------------------------
+
+Saturday, 10 February 1996 08:00:00 UTC - Joel Hunter Crook:
+Erik Max Francis <m...@alcyone.com <>> wrote:
+>the ROYster-Meister wrote:
+
+
+>>         This post reminded me of a question I meant to post a while
+>> back.  Does anybody out there know of a good set of software for
+>> simulating stellar systems?  I'd like to be able to put in planets with
+>> various masses at various distances around a star, and play with the
+>> system until it's stable.  I've read that there is such software, but no
+>> name or source was given.
+>The only similar software that I've heard of (and probably what you refer,
+>since it's often mentioned but rarely presented) is ACCRETE, which is a program
+>which simulates the formation and collisions of protoplanetary bodies and, when
+
+>finished, outputs a report of the different bodies.
+No Actually there is a program called Gravity (version 2.0 is the last I'm aware
+of) for PC dos. Not sure where you might find it but I think I've got a copy
+around here somewhere. It allows you to play around with a sun and upto 15
+planets.
+
+As for Accrete, Where is that program available?
+Joel Hunter Crook
+
+jhcrook @ instanet.com <http://instanet.com> 
+http://www.instanet.com/~jhcrook/index.html <http://www.instanet.com/~jhcrook/index.html>
+================================================
+A Strong House is built upon a strong Foundation
+        What are your beliefs built upon?
+                        - The Book of Reminders
+----------------------------------------------------------------------------
+
+Saturday, 10 February 1996 08:00:00 UTC - Erik Max Francis:
+Leonard Erickson wrote:
+
+> So where can we get a copy of ACCRETE that'll run in a PC. Better yet,
+> where can we get the source code?
+Since this question gets asked so often and if I direct queries to email I
+usually get swamped, I'm attaching a PKZIP file that contains the ACCRETE
+program (actually a marginally modified version of it, which is all that I
+have left; all that has been changed is the output has been organized a little
+differently) to this message, so it will show up uuencoded.
+
+
+> Also, does ACCRETE start with the star already formed or does it start
+> with the condensing nebula?
+It starts with the star already formed.
+
+
+> I don't know about anyone else, but what
+> would be most useful to *me* would be something where you start with a
+> contracting gas cloud of a given mass.
+Well, you're more than welcome to do it.
+
+-- 
+Erik Max Francis, &tSftDotIotE. && m...@alcyone.darkside.com <> || m...@alcyone.com <>
+San Jose, California, U.S.A. && 37 20 07 N 121 53 38 W && the 4th R is respect
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- && 1love && folasade
+Omnia quia sunt, lumina sunt. && GIGO Omega Psi && http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+"Out from his breast/his soul went to seek/the doom of the just." -- _Beowulf_
+----------------------------------------------------------------------------
+
+Sunday, 11 February 1996 08:00:00 UTC - Edward V. Wright:
+In article <DMEzq...@novice.uwaterloo.ca <>>, jam...@coulomb.uwaterloo.ca <> 
+says...
+
+>        Mars has little piddly moons and a roughly 24 hour day. Venus has
+>a day millions of seconds long and no moons at all. I think you should be
+>OK with what you have.
+Venus is a special case. Its rotation was slowed by solar tides and its very 
+dense atmosphere. You can draw a graph of planetary mass vs. rotation speed 
+and except for a few freaks like Mercury, Venus, and Earth, there is an 
+almost perfect relationship. To get a planet with a 24-hour day, you need a 
+mass much smaller than Earth's or an external force such as tides to slow the 
+rotation.   
+
+One possible solution would be to have the planet closer to the star, so its 
+rotation is slowed by solar, rather than lunar, tides. 
+
+-- 
+The opinions expressed in this message are my own personal views 
+and do not reflect the official views of Microsoft Corporation.
+----------------------------------------------------------------------------
+
+Sunday, 11 February 1996 08:00:00 UTC - Edward V. Wright:
+In article <4fd6a1$s...@news.bu.edu <>>, je...@bu.edu <> says...
+
+>Secondary counterexample:
+>Mars, whose day is just a shade longer than ours, and whose two
+>"moons" are hardly worthy of the name.
+The moons of Mars are too small to affect its rotation. A 24-hour day is 
+about what you'd expect for a body the size of Mars in the absence of 
+tidal effects.
+
+
+
+
+-- 
+The opinions expressed in this message are my own personal views 
+and do not reflect the official views of Microsoft Corporation.
+----------------------------------------------------------------------------
+
+Sunday, 11 February 1996 08:00:00 UTC - Jon Leech:
+In article <97c3iD...@krypton.rain.com <>>,
+Leonard Erickson <sha...@krypton.rain.com <>> wrote:
+>So where can we get a copy of ACCRETE that'll run in a PC. Better yet,
+>where can we get the source code?
+        ftp://ftp.cs.unc.edu/pub/users/leech/acrete.c <ftp://ftp.cs.unc.edu/pub/users/leech/acrete.c>
+
+    This is a C++ conversion of Wales Larrison's BASIC version of the
+approach presented in Dole's paper, and cites the paper. Should run on any
+machine with a C++ compiler.
+    Jon
+    __@/
+----------------------------------------------------------------------------
+
+Sunday, 11 February 1996 08:00:00 UTC - Erik Max Francis:
+Leonard Erickson wrote:
+
+> So where can we get a copy of ACCRETE that'll run in a PC. Better yet,
+> where can we get the source code?
+It's around in one of the source archives.  Since when I originally responded
+to this message it was cancelled by good ol' Dick Depew, I'll make the public
+offer again:
+
+Email me at m...@alcyone.com <> and I'll send you a uuencoded form of the ACCRETE
+program, either in PKZIP form or a gzip'ed tar archive (you specify which).  If
+you don't know how to decode a uuencoded message or aren't familiar with either
+of these formats, you'll be on your own.
+
+
+> Also, does ACCRETE start with the star already formed or does it start
+> with the condensing nebula?
+
+It starts with the star already formed.
+
+I don't know about anyone else, but what
+> would be most useful to *me* would be something where you start with a
+> contracting gas cloud of a given mass.
+> 
+> Leonard Erickson                (aka Shadow)
+>  sha...@krypton.rain.com <>        (preferred)
+> leo...@qiclab.scn.rain.com <>     (last resort)
+Well, you're more than welcome to do it :-).
+
+-- 
+Erik Max Francis, &tSftDotIotE. && m...@alcyone.darkside.com <> || m...@alcyone.com <>
+San Jose, California, U.S.A. && 37 20 07 N 121 53 38 W && the 4th R is respect
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- && 1love && folasade
+Omnia quia sunt, lumina sunt. && GIGO Omega Psi && http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+"Out from his breast/his soul went to seek/the doom of the just." -- _Beowulf_
+----------------------------------------------------------------------------
+
+Monday, 12 February 1996 08:00:00 UTC - Jeff Suzuki:
+Edward V. Wright (edwr...@microsoft.com <>) wrote:
+: Venus is a special case. Its rotation was slowed by solar tides and its very 
+
+: dense atmosphere. You can draw a graph of planetary mass vs. rotation speed 
+: and except for a few freaks like Mercury, Venus, and Earth, there is an 
+: almost perfect relationship. To get a planet with a 24-hour day, you need a 
+: mass much smaller than Earth's or an external force such as tides to
+: slow the rotation.    
+Somehow, this isn't convincing, since by calling Mercury, Venus, and
+Earth a "few freaks" you're discarding thirty percent of your
+experimental data.  In fact, the mass-period relationship works only
+very roughly for the gas giants.  Jupiter is, what, three time the
+mass of Saturn yet its day is only 10% shorter?  (And Neptune is fifty
+times as massive as Mars, with roughly the same period?)  
+
+There _might_ be a mass-period relationship, but the evidence isn't
+convincing.
+
+Jeffs  
+----------------------------------------------------------------------------
+
+Monday, 12 February 1996 08:00:00 UTC - Edward V. Wright:
+In article <97c3iD...@krypton.rain.com <>>, sha...@krypton.rain.com <> 
+says...
+
+>Also, does ACCRETE start with the star already formed or does it start
+>with the condensing nebula? I don't know about anyone else, but what
+>would be most useful to *me* would be something where you start with a
+>contracting gas cloud of a given mass.
+A few years back, someone posted a message (on sci.astro, I think) saying 
+that he had ported the ACCRETE code from Fortran to C++ and was making it 
+available on the Internet. Unfortunately, I no longer have the original 
+message giving the location. I'd be interested in seeing the code also, 
+although it's probably obsolete by now. 
+
+
+-- 
+The opinions expressed in this message are my own personal views 
+and do not reflect the official views of Microsoft Corporation.
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Vicke Dovheden:
+In article <311EAACA...@alcyone.com <>>,
+Erik Max Francis <m...@alcyone.com <>> wrote:
+[snip]
+>
+>It's around in one of the source archives.  Since when I originally responded
+>to this message it was cancelled by good ol' Dick Depew, I'll make the public
+>offer again:
+Hmm, who is Dick Depew, and why did he cancel _your_ post?
+I thought that only the original poster could cancel a post?
+ 
+
+Vicke
+
+
+
+ vi...@df.lth.se <>
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Vicke Dovheden:
+In article <4fl5cs$4...@watt.cs.unc.edu <>>,
+le...@cs.unc.edu <> (Jon Leech) wrote:
+>In article <97c3iD...@krypton.rain.com <>>,
+
+>Leonard Erickson <sha...@krypton.rain.com <>> wrote:
+>>So where can we get a copy of ACCRETE that'll run in a PC. Better yet,
+>>where can we get the source code?
+>
+>        ftp://ftp.cs.unc.edu/pub/users/leech/acrete.c <ftp://ftp.cs.unc.edu/pub/users/leech/acrete.c>
+>
+>    This is a C++ conversion of Wales Larrison's BASIC version of the
+>approach presented in Dole's paper, and cites the paper. Should run on any
+>machine with a C++ compiler.
+>    Jon
+>    __@/
+Shit! (Ooops!) You, or anybody else, doesn't happen to have a version
+_without_ that "++" thingy at the end?
+
+Vicke
+
+
+ vi...@df.lth.se <>
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Steve Gilham:
+Jeff Suzuki (je...@bu.edu <>) wrote:
+> Such software may be becoming obsolete even as we speak.  It was
+> "common wisdom" that large, Jupiter-like planets could only exist far
+> from the central sun.  The recent discoveries of large, Jupiter-sized
+> planets near to (## Ursa Majoris?) kinda blows this idea.  
+The mass profile of the disk from which the planets accrete was
+hand-tuned by Dole to make things that looked like the Solar System.
+By tweaking the parameters, it is possible to make Jovians close in.
+
+
+-- st...@windsong.demon.co.uk <> (home) ---- PGP keys available on keyservers --
+Steve Gilham       |GDS Ltd.,Wellington Ho. |Lives of great men all remind us
+Software Specialist|East Road, Cambridge    |We may make our lives sublime
+steveg@            |CB1 1BH, UK             |And departing, leave behind us
+ uk.gdscorp.com <http://uk.gdscorp.com>    |Tel:(44)1223-300111x2904|Footprints in the sands of time.
+   Key fingerprint =  08 8A 67 70 6E 86 09 B4  38 0A BD C4 53 1C 88 99
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Erik Max Francis:
+Vicke Dovheden wrote:
+> Hmm, who is Dick Depew, and why did he cancel _your_ post?
+
+Because I had posted a binary in a non-binary group.  Technically it is
+cancellable.
+
+> I thought that only the original poster could cancel a post?
+
+That's the way things normally are, but in fact anybody can forge a cancel to
+a particular message.  The question is when that forging is justified.  There
+are only a few situations where that is thought to be the case:  1.  when you
+are posting off-topic on a private news hierarchy, 2.  spamming, and 3.
+binary posting in non-binary groups.
+
+-- 
+Erik Max Francis, &tSftDotIotE. && m...@alcyone.darkside.com <> || m...@alcyone.com <>
+San Jose, California, U.S.A. && 37 20 07 N 121 53 38 W && the 4th R is respect
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- && 1love && folasade
+Omnia quia sunt, lumina sunt. && GIGO Omega Psi && http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+"Out from his breast/his soul went to seek/the doom of the just." -- _Beowulf_
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Jon Leech:
+In article <4fq473$k...@topcat.uk.gdscorp.com <>>,
+Steve Gilham <ste...@uk.gdscorp.com <>> wrote:
+>Vicke Dovheden (vi...@df.lth.se <>) wrote:
+>> Shit! (Ooops!) You, or anybody else, doesn't happen to have a version
+>> _without_ that "++" thingy at the end?
+>
+>This is a C version which has been floating around the net, but is known
+>to be buggy (and I don't have a list of the known bugs).
+    Whether it's buggy or not, all codes based on the Dole model have the
+same problem: it's nearly 30 years old, and models of planetary formation
+have changed more than a little bit in the meantime. While for
+r.a.sf.science purposes any result that looks reasonable will probably do, a
+quick AltaVista search for "planetary formation" turns up dozens of
+interesting and recent references.
+
+        http://cesdis.gsfc.nasa.gov/hpccm/annual.reports/ess94contents/guest.ci/davis.html 
+<http://cesdis.gsfc.nasa.gov/hpccm/annual.reports/ess94contents/guest.ci/davis.html>
+
+    is one interesting example.
+
+    Jon
+    __@/
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Andrew Stephenson:
+In article <AD45BB9B9...@pell.df.lth.se <>>
+           vi...@df.lth.se <> "Vicke Dovheden" writes:
+> In article <311EAACA...@alcyone.com <>>,
+> Erik Max Francis <m...@alcyone.com <>> wrote:
+> [snip]
+> >
+> >It's around in one of the source archives.  Since when I
+> >originally responded to this message it was cancelled by good ol'
+> >Dick Depew, I'll make the public offer again:
+
+>
+> Hmm, who is Dick Depew, and why did he cancel _your_ post?
+> I thought that only the original poster could cancel a post?
+Don't you mean "how", not "why" ?  It was huge.  (Sorry, Erik,
+you meant well; but that monster really was over the top.)
+--
+Andrew Stephenson
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Steve Gilham:
+Jeff Suzuki (je...@bu.edu <>) wrote:
+> Somehow, this isn't convincing, since by calling Mercury, Venus, and
+> Earth a "few freaks" you're discarding thirty percent of your
+> experimental data.  In fact, the mass-period relationship works only
+They are the three bodies most subject to tidal dissipative effects,
+so you'd expect them to show anomalously low spin.
+
+> very roughly for the gas giants.  Jupiter is, what, three time the
+> mass of Saturn yet its day is only 10% shorter?  (And Neptune is fifty
+> times as massive as Mars, with roughly the same period?)  
+
+> There _might_ be a mass-period relationship, but the evidence isn't
+> convincing.
+
+The fit to angular momentum/unit mass as a function of mass (rather
+than just rate of rotation) is actually quite good for those planets
+without significant tidal effects (see e.g. Dole's _Habitable Planets
+for Man_)
+
+-- st...@windsong.demon.co.uk <> (home) ---- PGP keys available on keyservers --
+Steve Gilham       |GDS Ltd.,Wellington Ho. |Lives of great men all remind us
+Software Specialist|East Road, Cambridge    |We may make our lives sublime
+steveg@            |CB1 1BH, UK             |And departing, leave behind us
+ uk.gdscorp.com <http://uk.gdscorp.com>    |Tel:(44)1223-300111x2904|Footprints in the sands of time.
+   Key fingerprint =  08 8A 67 70 6E 86 09 B4  38 0A BD C4 53 1C 88 99
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Steve Gilham:
+Vicke Dovheden (vi...@df.lth.se <>) wrote:
+> Shit! (Ooops!) You, or anybody else, doesn't happen to have a version
+> _without_ that "++" thingy at the end?
+
+This is a C version which has been floating around the net, but is known
+to be buggy (and I don't have a list of the known bugs).
+# This is a shell archive.  Remove anything before this line,
+# then unpack it by saving it in a file and typing "sh file".
+#
+# Wrapped by Matt Burdick <burdick@hpindl1> on Wed Sep 14 17:56:49 1988
+#                Matt Burdick
+#                burdic...@hplabs.hp.com <>
+#
+# This archive contains:
+#        accrete.c        display.c        enviro.c        main.c                
+#        utils.c                const.h                structs.h        
+#
+
+LANG=""; export LANG
+
+echo x - accrete.c
+cat >accrete.c <<'@EOF'
+/*----------------------------------------------------------------------*/
+/*                           BIBLIOGRAPHY                               */
+/*  Dole, Stephen H.  "Formation of Planetary Systems by Aggregation:   */
+/*      a Computer Simulation"  October 1969,  Rand Corporation Paper   */
+/*        P-4226.                                                                */
+/*----------------------------------------------------------------------*/
+
+typedef struct dust_bands_record  *dust_pointer;
+typedef struct dust_bands_record {
+          double inner_edge;
+          double outer_edge;
+          int dust_present;
+          int gas_present;
+          dust_pointer next_band;
+     } dust_bands;
+
+/* A few variables global to the entire program:                */
+extern planet_pointer planet_head;
+
+/* Now for some variables global to the accretion process:      */
+int dust_left;
+double r_inner, r_outer, reduced_mass, dust_density, cloud_eccentricity;
+dust_pointer dust_head;
+
+
+void set_initial_conditions(inner_limit_of_dust, outer_limit_of_dust)
+double inner_limit_of_dust, outer_limit_of_dust;
+{
+     dust_head = (dust_bands *)malloc(sizeof(dust_bands));
+     planet_head = NULL;
+     dust_head->next_band = NULL;
+     dust_head->outer_edge = outer_limit_of_dust;
+     dust_head->inner_edge = inner_limit_of_dust;
+     dust_head->dust_present = TRUE;
+     dust_head->gas_present = TRUE;
+     dust_left = TRUE;
+     cloud_eccentricity = 0.2;
+}
+
+double stellar_dust_limit(stellar_mass_ratio)
+double stellar_mass_ratio; 
+{
+     return(200.0 * pow(stellar_mass_ratio,(1.0 / 3.0)));
+}
+
+double innermost_planet(stellar_mass_ratio)
+double stellar_mass_ratio; 
+{
+     return(0.3 * pow(stellar_mass_ratio,(1.0 / 3.0)));
+}
+
+double outermost_planet(stellar_mass_ratio)
+double stellar_mass_ratio; 
+{
+     return(50.0 * pow(stellar_mass_ratio,(1.0 / 3.0)));
+}
+
+double inner_effect_limit(a, e, mass)
+double a, e, mass;
+{
+     return (a * (1.0 - e) * (1.0 - mass) / (1.0 + cloud_eccentricity));
+}
+
+double outer_effect_limit(a, e, mass)
+double a, e, mass;
+{
+     return (a * (1.0 + e) * (1.0 + reduced_mass) / (1.0 - cloud_eccentricity));
+}
+
+int dust_available(inside_range, outside_range)
+double inside_range, outside_range;
+{
+     dust_pointer current_dust_band;
+     int dust_here;
+     
+     current_dust_band = dust_head;
+     while ((current_dust_band != NULL)
+            && (current_dust_band->outer_edge < inside_range))
+          current_dust_band = current_dust_band->next_band;
+     if (current_dust_band == NULL)
+          dust_here = FALSE;
+     else dust_here = current_dust_band->dust_present;
+     while ((current_dust_band != NULL)
+            && (current_dust_band->inner_edge < outside_range)) {
+               dust_here = dust_here || current_dust_band->dust_present;
+               current_dust_band = current_dust_band->next_band;
+          }
+     return(dust_here);
+}
+
+void update_dust_lanes(min, max, mass, crit_mass,
+                       body_inner_bound, body_outer_bound)
+double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
+{
+     int gas; 
+     dust_pointer node1, node2, node3;
+     
+     dust_left = FALSE;
+     if ((mass > crit_mass))
+          gas = FALSE;
+     else 
+          gas = TRUE;
+     node1 = dust_head;
+     while ((node1 != NULL))
+     {
+          if (((node1->inner_edge < min) && (node1->outer_edge > max)))
+          {
+               node2 = (dust_bands *)malloc(sizeof(dust_bands));
+               node2->inner_edge = min;
+               node2->outer_edge = max;
+               if ((node1->gas_present == TRUE))
+                    node2->gas_present = gas;
+               else 
+                    node2->gas_present = FALSE;
+               node2->dust_present = FALSE;
+               node3 = (dust_bands *)malloc(sizeof(dust_bands));
+               node3->inner_edge = max;
+               node3->outer_edge = node1->outer_edge;
+               node3->gas_present = node1->gas_present;
+               node3->dust_present = node1->dust_present;
+               node3->next_band = node1->next_band;
+               node1->next_band = node2;
+               node2->next_band = node3;
+               node1->outer_edge = min;
+               node1 = node3->next_band;
+          }
+          else 
+               if (((node1->inner_edge < max) && (node1->outer_edge > max)))
+               {
+                    node2 = (dust_bands *)malloc(sizeof(dust_bands));
+                    node2->next_band = node1->next_band;
+                    node2->dust_present = node1->dust_present;
+                    node2->gas_present = node1->gas_present;
+                    node2->outer_edge = node1->outer_edge;
+                    node2->inner_edge = max;
+                    node1->next_band = node2;
+                    node1->outer_edge = max;
+                    if ((node1->gas_present == TRUE))
+                         node1->gas_present = gas;
+                    else 
+                         node1->gas_present = FALSE;
+                    node1->dust_present = FALSE;
+                    node1 = node2->next_band;
+               }
+               else 
+                    if (((node1->inner_edge < min) && (node1->outer_edge > min)))
+                    {
+                         node2 = (dust_bands *)malloc(sizeof(dust_bands));
+                         node2->next_band = node1->next_band;
+                         node2->dust_present = FALSE;
+                         if ((node1->gas_present == TRUE))
+                              node2->gas_present = gas;
+                         else 
+                              node2->gas_present = FALSE;
+                         node2->outer_edge = node1->outer_edge;
+                         node2->inner_edge = min;
+                         node1->next_band = node2;
+                         node1->outer_edge = min;
+                         node1 = node2->next_band;
+                    }
+                    else 
+                         if (((node1->inner_edge >= min) && (node1->outer_edge <= max)))
+                         {
+                              if ((node1->gas_present == TRUE))
+                                   node1->gas_present = gas;
+                              node1->dust_present = FALSE;
+                              node1 = node1->next_band;
+                         }
+                         else 
+                              if (((node1->outer_edge < min) || (node1->inner_edge > max)))
+                                   node1 = node1->next_band;
+     }
+     node1 = dust_head;
+     while ((node1 != NULL))
+     {
+          if (((node1->dust_present)
+               && (((node1->outer_edge >= body_inner_bound)
+                    && (node1->inner_edge <= body_outer_bound)))))
+               dust_left = TRUE;
+          node2 = node1->next_band;
+          if ((node2 != NULL))
+          {
+               if (((node1->dust_present == node2->dust_present)
+                    && (node1->gas_present == node2->gas_present)))
+               {
+                    node1->outer_edge = node2->outer_edge;
+                    node1->next_band = node2->next_band;
+                    free(node2);
+               }
+          }
+          node1 = node1->next_band;
+     }
+}
+
+double collect_dust(last_mass, a, e, crit_mass, dust_band)
+double last_mass, a, e, crit_mass;
+dust_pointer dust_band;
+{
+     double mass_density, temp1, temp2, temp, temp_density, bandwidth, width, volume;
+     
+     temp = last_mass / (1.0 + last_mass);
+     reduced_mass = pow(temp,(1.0 / 4.0));
+     r_inner = inner_effect_limit(a, e, reduced_mass);
+     r_outer = outer_effect_limit(a, e, reduced_mass);
+     if ((r_inner < 0.0))
+          r_inner = 0.0;
+     if ((dust_band == NULL))
+          return(0.0);
+     else 
+     {
+          if ((dust_band->dust_present == FALSE))
+               temp_density = 0.0;
+          else 
+               temp_density = dust_density;
+          if (((last_mass < crit_mass) || (dust_band->gas_present == FALSE)))
+               mass_density = temp_density;
+          else 
+               mass_density = K * temp_density / (1.0 + sqrt(crit_mass / last_mass)
+                                                  * (K - 1.0));
+          if (((dust_band->outer_edge <= r_inner)
+               || (dust_band->inner_edge >= r_outer)))
+               return(collect_dust(last_mass,a,e,crit_mass, dust_band->next_band));
+          else
+          {
+               bandwidth = (r_outer - r_inner);
+               temp1 = r_outer - dust_band->outer_edge;
+               if (temp1 < 0.0)
+                    temp1 = 0.0;
+               width = bandwidth - temp1;
+               temp2 = dust_band->inner_edge - r_inner;
+               if (temp2 < 0.0)
+                    temp2 = 0.0;
+               width = width - temp2;
+               temp = 4.0 * PI * pow(a,2.0) * reduced_mass
+                    * (1.0 - e * (temp1 - temp2) / bandwidth);
+               volume = temp * width;
+               return(volume * mass_density
+                      + collect_dust(last_mass,a,e,crit_mass,
+                                     dust_band->next_band));
+          }
+     }
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   Orbital radius is in AU, eccentricity is unitless, and the stellar     */
+/*  luminosity ratio is with respect to the sun.  The value returned is the */
+/*  mass at which the planet begins to accrete gas as well as dust, and is  */
+/*  in units of solar masses.                                               */
+/*--------------------------------------------------------------------------*/
+
+double critical_limit(orbital_radius, eccentricity, stellar_luminosity_ratio)
+double orbital_radius, eccentricity, stellar_luminosity_ratio;
+{
+     double temp, perihelion_dist;
+     
+     perihelion_dist = (orbital_radius - orbital_radius * eccentricity);
+     temp = perihelion_dist * sqrt(stellar_luminosity_ratio);
+     return(B * pow(temp,-0.75));
+}
+
+
+
+void accrete_dust(seed_mass, a, e, crit_mass,
+                  body_inner_bound, body_outer_bound)
+double *seed_mass, a, e, crit_mass,
+     body_inner_bound, body_outer_bound;
+{
+     double perihelion_dist, new_mass, temp_mass;
+     
+     new_mass = (*seed_mass);
+     do
+     {
+          temp_mass = new_mass;
+          new_mass = collect_dust(new_mass,a,e,crit_mass,
+                                  dust_head);
+     }
+     while (!(((new_mass - temp_mass) < (0.0001 * temp_mass))));
+     (*seed_mass) = (*seed_mass) + new_mass;
+     update_dust_lanes(r_inner,r_outer,(*seed_mass),crit_mass,body_inner_bound,body_outer_bound);
+}
+
+
+
+void coalesce_planetesimals(a, e, mass, crit_mass,
+                            stellar_luminosity_ratio,
+                            body_inner_bound, body_outer_bound)
+double a, e, mass, crit_mass, stellar_luminosity_ratio,
+     body_inner_bound, body_outer_bound;
+{
+     planet_pointer node1, node2, node3;
+     int coalesced; 
+     double temp, dist1, dist2, a3;
+     
+     coalesced = FALSE;
+     node1 = planet_head;
+     while ((node1 != NULL))
+     {
+          node2 = node1;
+          temp = node1->a - a;
+          if ((temp > 0.0))
+          {
+               dist1 = (a * (1.0 + e) * (1.0 + reduced_mass)) - a;
+               /* x aphelion   */
+               reduced_mass = pow((node1->mass / (1.0 + node1->mass)),(1.0 / 4.0));
+               dist2 = node1->a
+                    - (node1->a * (1.0 - node1->e) * (1.0 - reduced_mass));
+          }
+          else 
+          {
+               dist1 = a - (a * (1.0 - e) * (1.0 - reduced_mass));
+               /* x perihelion */
+               reduced_mass = pow(node1->mass / (1.0 + node1->mass),(1.0 / 4.0));
+               dist2 = (node1->a * (1.0 + node1->e) * (1.0 + reduced_mass))
+                    - node1->a;
+          }
+          if (((fabs(temp) <= fabs(dist1)) || (fabs(temp) <= fabs(dist2))))
+          {
+#ifdef VERBOSE
+               printf("Collision between two planetesimals!\n");
+#endif
+               a3 = (node1->mass + mass) / ((node1->mass / node1->a) + (mass / a));
+               temp = node1->mass * sqrt(node1->a) * sqrt(1.0 - pow(node1->e,2.0));
+               temp = temp + (mass * sqrt(a) * sqrt(sqrt(1.0 - pow(e,2.0))));
+               temp = temp / ((node1->mass + mass) * sqrt(a3));
+               temp = 1.0 - pow(temp,2.0);
+               if (((temp < 0.0) || (temp >= 1.0)))
+                    temp = 0.0;
+               e = sqrt(temp);
+               temp = node1->mass + mass;
+               accrete_dust(&(temp),a3,e,stellar_luminosity_ratio,
+                            body_inner_bound,body_outer_bound);
+               node1->a = a3;
+               node1->e = e;
+               node1->mass = temp;
+               node1 = NULL;
+               coalesced = TRUE;
+          }
+          else 
+               node1 = node1->next_planet;
+     }
+     if (!(coalesced))
+     {
+          node3 = (planets *)malloc(sizeof(planets));
+          node3->a = a;
+          node3->e = e;
+          if ((mass >= crit_mass))
+               node3->gas_giant = TRUE;
+          else 
+               node3->gas_giant = FALSE;
+          node3->mass = mass;
+          if ((planet_head == NULL))
+          {
+               planet_head = node3;
+               node3->next_planet = NULL;
+          }
+          else 
+          {
+               node1 = planet_head;
+               if ((a < node1->a))
+               {
+                    node3->next_planet = node1;
+                    planet_head = node3;
+               }
+               else 
+                    if ((planet_head->next_planet == NULL))
+                    {
+                         planet_head->next_planet = node3;
+                         node3->next_planet = NULL;
+                    }
+                    else 
+                    {
+                         while (((node1 != NULL) && (node1->a < a)))
+                         {
+                              node2 = node1;
+                              node1 = node1->next_planet;
+                         }
+                         node3->next_planet = node1;
+                         node2->next_planet = node3;
+                    }
+          }
+     }
+}
+
+
+planet_pointer distribute_planetary_masses(stellar_mass_ratio,
+                                           stellar_luminosity_ratio, inner_dust, outer_dust)
+double stellar_mass_ratio, stellar_luminosity_ratio, inner_dust, outer_dust;
+{
+     double a, e, mass, crit_mass,
+     planetesimal_inner_bound, planetesimal_outer_bound;
+     
+     set_initial_conditions(inner_dust,outer_dust);
+     planetesimal_inner_bound = innermost_planet(stellar_mass_ratio);
+     planetesimal_outer_bound = outermost_planet(stellar_mass_ratio);
+     while (dust_left)
+     {
+          a = random_number(planetesimal_inner_bound,planetesimal_outer_bound);
+          e = random_eccentricity( );
+          mass = PROTOPLANET_MASS;
+#ifdef VERBOSE
+          printf("Checking %f AU.\n",a);
+#endif
+          if (dust_available(inner_effect_limit(a, e, mass),
+                             outer_effect_limit(a, e, mass))) {
+#ifdef VERBOSE
+                    printf(".. Injecting protoplanet.\n");
+#endif
+                    dust_density = DUST_DENSITY_COEFF * sqrt(stellar_mass_ratio)
+                         * exp(-ALPHA * pow(a,(1.0 / N)));
+                    crit_mass = critical_limit(a,e,stellar_luminosity_ratio);
+                    accrete_dust(&(mass),a,e,crit_mass,
+                                 planetesimal_inner_bound,
+                                 planetesimal_outer_bound);
+                    if ((mass != 0.0) && (mass != PROTOPLANET_MASS))
+                         coalesce_planetesimals(a,e,mass,crit_mass,
+                                                stellar_luminosity_ratio,
+                                                planetesimal_inner_bound,planetesimal_outer_bound);
+#ifdef VERBOSE
+                    else printf(".. failed due to large neighbor.\n");
+#endif
+               }
+#ifdef VERBOSE
+          else printf(".. failed.\n");
+#endif
+     }
+     return(planet_head);
+}
+
+
+
+planet_pointer distribute_moon_masses(planetary_mass, stellar_luminosity_ratio,
+                                      planet_eccentricity, inner_dust, outer_dust)
+double planetary_mass, stellar_luminosity_ratio, planet_eccentricity,
+     inner_dust, outer_dust;
+{
+     double a, e, mass, crit_mass,
+     planetesimal_inner_bound, planetesimal_outer_bound;
+     
+     return(NULL);
+}
+@EOF
+
+chmod 644 accrete.c
+
+echo x - display.c
+cat >display.c <<'@EOF'
+void display_system()
+{
+     planet_pointer node1; 
+     int counter; 
+     char word[(10)+1]; 
+     
+     printf("                         SYSTEM  CHARACTERISTICS\n");
+     printf("Mass of central star (in solar masses): %4.2lf\n", stellar_mass_ratio);
+     printf("Luminosity of central star (relative to the sun): %5.2lf\n",stellar_luminosity_ratio);
+     printf("Total main sequence lifetime (in million yrs): %10.3lf\n", (main_seq_life / 1.0E6));
+     printf("Current age of stellar system (in million yrs): %10.3lf\n",(age / 1.0E6));
+     printf("Radius of habitable ecosphere (AU): %3.3lf\n",r_ecosphere);
+     node1 = planet_head;
+     counter = 1;
+     while (node1 != NULL)
+     {
+          printf("Planet #%d:\n",counter);
+          if (node1->gas_giant)
+               printf("Gas giant...\n");
+          if (node1->resonant_period)
+               printf("In resonant period with primary.\n");
+          printf("   Distance from primary star (in A.U.): %7.3lf\n",node1->a);
+          printf("   Eccentricity of orbit: %5.3lf\n",node1->e);
+          printf("   Mass (in Earth masses): %7.3lf\n",node1->mass * EARTH_MASSES_PER_SOLAR_MASS);
+          printf("   Equatorial radius (in Km): %10.1lf\n",node1->radius);
+          printf("   Density (in g/cc): %6.3lf\n",node1->density);
+          printf("   Escape Velocity (in km/sec): %5.2lf\n",node1->escape_velocity / CM_PER_KM);
+          printf("   Smallest molecular weight retained: %5.2lf\n",node1->molecule_weight);
+          printf("   Surface acceleration (in cm/sec2): %6.2lf\n",node1->surface_accel);
+          if (!(node1->gas_giant))
+          {
+               printf("   Surface Gravity (in Earth gees): %5.2lf\n",node1->surface_grav);
+               printf("   Boiling point of water (celcius): %4.1lf\n",(node1->boil_point - KELVIN_CELCIUS_DIFFERENCE));
+               printf("   Surface Pressure (in atmospheres): %5.3lf",(node1->surface_pressure / 1000.0));
+               if ((node1->greenhouse_effect) && (node1->surface_pressure > 0.0))
+                    printf("     RUNAWAY GREENHOUSE EFFECT\n");
+               else 
+                    printf("\n");
+               printf("   Surface temperature (Celcius): %4.2lf\n",(node1->surface_temp - KELVIN_CELCIUS_DIFFERENCE));
+               printf("   Hydrosphere percentage: %6.2lf\n",(node1->hydrosphere * 100.0));
+               printf("   Cloud cover percentage: %6.2lf\n",(node1->cloud_cover * 100));
+               printf("   Ice cover percentage: %6.2lf\n",(node1->ice_cover * 100));
+          }
+          printf("   Axial tilt (in degrees): %d\n",node1->axial_tilt);
+          printf("   Planetary albedo: %4.3lf\n",node1->albedo);
+          printf("   Length of year (in days): %7.2lf\n",node1->orbital_period);
+          printf("   Length of day (in hours): %7.2lf\n",node1->day);
+          counter++;
+          node1 = node1->next_planet;
+     }
+}
+@EOF
+
+chmod 644 display.c
+
+echo x - enviro.c
+cat >enviro.c <<'@EOF'
+double luminosity(mass_ratio)
+double mass_ratio; 
+{
+     double n; 
+     
+     if (mass_ratio < 1.0)
+          n = 1.75 * (mass_ratio - 0.1) + 3.325;
+     else 
+          n = 0.5 * (2.0 - mass_ratio) + 4.4;
+     return(pow(mass_ratio,n));
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   This function, given the orbital radius of a planet in AU, returns     */
+/*   the orbital 'zone' of the particle.                                    */
+/*--------------------------------------------------------------------------*/
+
+int orbital_zone(orbital_radius)
+double orbital_radius; 
+{
+     if (orbital_radius < (4.0 * sqrt(stellar_luminosity_ratio)))
+          return(1);
+     else 
+     {
+          if ((orbital_radius >= (4.0 * sqrt(stellar_luminosity_ratio))) && (orbital_radius < (15.0 * sqrt(stellar_luminosity_ratio))))
+               return(2);
+          else 
+               return(3);
+     }
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   The mass is in units of solar masses, and the density is in units      */
+/*   of grams/cc.  The radius returned is in units of km.                   */
+/*--------------------------------------------------------------------------*/
+
+double volume_radius(mass, density)
+double mass, density;
+{
+     double volume; 
+     
+     mass = mass * SOLAR_MASS_IN_GRAMS;
+     volume = mass / density;
+     return(pow((3.0 * volume) / (4.0 * PI),(1.0 / 3.0)) / CM_PER_KM);
+}
+
+/*--------------------------------------------------------------------------*/
+/*    Returns the radius of the planet in kilometers.                       */
+/*   The mass passed in is in units of solar masses, the orbital radius     */
+/*   in A.U.                                                                */
+/*   This formula is listed as eq.9 in Fogg's article, although some typos  */
+/*   crop up in that eq.  See "The Internal Constitution of Planets", by    */
+/*   Dr. D. S. Kothari, Mon. Not. of the Royal Astronomical Society, vol 96 */
+/*   pp.833-843, 1936 for the derivation.  Specifically, this is Kothari's  */
+/*   eq.23, which appears on page 840.                                      */
+/*--------------------------------------------------------------------------*/
+
+double kothari_radius(mass, orbital_radius, giant, zone)
+double mass, orbital_radius;
+int giant, zone;
+{
+     double temp, temp2, atomic_weight, atomic_num;
+     
+     if (zone == 1)
+     {
+          if (giant)
+          {
+               atomic_weight = 9.5;
+               atomic_num = 4.5;
+          }
+          else 
+          {
+               atomic_weight = 15.0;
+               atomic_num = 8.0;
+          }
+     }
+     else 
+          if (zone == 2)
+          {
+               if (giant)
+               {
+                    atomic_weight = 2.47;
+                    atomic_num = 2.0;
+               }
+               else 
+               {
+                    atomic_weight = 10.0;
+                    atomic_num = 5.0;
+               }
+          }
+          else 
+          {
+               if (giant)
+               {
+                    atomic_weight = 7.0;
+                    atomic_num = 4.0;
+               }
+               else 
+               {
+                    atomic_weight = 10.0;
+                    atomic_num = 5.0;
+               }
+          }
+     temp = atomic_weight * atomic_num;
+     temp = (2.0 * BETA_20 * pow(SOLAR_MASS_IN_GRAMS,(1.0 / 3.0))) / (A1_20 * pow(temp,(1.0 / 3.0)));
+     temp2 = A2_20 * pow(atomic_weight,(4.0 / 3.0)) * pow(SOLAR_MASS_IN_GRAMS,(2.0 / 3.0));
+     temp2 = temp2 * pow(mass,(2.0 / 3.0));
+     temp2 = temp2 / (A1_20 * pow(atomic_num, 2.0));
+     temp2 = 1.0 + temp2;
+     temp = temp / temp2;
+     temp = (temp * pow(mass,(1.0 / 3.0))) / CM_PER_KM;
+     return(temp);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  The mass passed in is in units of solar masses, and the orbital radius  */
+/*  is in units of AU.  The density is returned in units of grams/cc.       */
+/*--------------------------------------------------------------------------*/
+
+double empirical_density(mass, orbital_radius, gas_giant)
+double mass, orbital_radius;
+int gas_giant;
+{
+     double temp; 
+     
+     temp = pow(mass * EARTH_MASSES_PER_SOLAR_MASS,(1.0 / 8.0));
+     temp = temp * pow(r_ecosphere / orbital_radius,(1.0 / 4.0));
+     if (gas_giant)
+          return(temp * 1.2);
+     else 
+          return(temp * 5.5);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  The mass passed in is in units of solar masses, and the equatorial      */
+/*  radius is in km.  The density is returned in units of grams/cc.         */
+/*--------------------------------------------------------------------------*/
+
+double volume_density(mass, equatorial_radius)
+double mass, equatorial_radius;
+{
+     double volume; 
+     
+     mass = mass * SOLAR_MASS_IN_GRAMS;
+     equatorial_radius = equatorial_radius * CM_PER_KM;
+     volume = (4.0 * PI * pow(equatorial_radius,3.0)) / 3.0;
+     return(mass / volume);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  The separation is in units of AU, and both masses are in units of solar */
+/*  masses.  The period returned is in terms of Earth days.                 */
+/*--------------------------------------------------------------------------*/
+
+double period(separation, small_mass, large_mass)
+double separation, small_mass, large_mass;
+{
+     double period_in_years; 
+     
+     period_in_years = sqrt(pow(separation,3.0) / (small_mass + large_mass));
+     return(period_in_years * DAYS_IN_A_YEAR);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   Fogg's information for this routine came from Dole "Habitable Planets  */
+/* for Man", Blaisdell Publishing Company, NY, 1964.  From this, he came    */
+/* up with his eq.12, which is the equation for the base_angular_velocity   */
+/* below.  Going a bit further, he found an equation for the change in      */
+/* angular velocity per time (dw/dt) from P. Goldreich and S. Soter's paper */
+/* "Q in the Solar System" in Icarus, vol 5, pp.375-389 (1966).  Comparing  */
+/* to the change in angular velocity for the Earth, we can come up with an  */
+/* approximation for our new planet (his eq.13) and take that into account. */
+/*--------------------------------------------------------------------------*/
+
+double day_length(mass, radius, orbital_period, eccentricity, giant)
+double mass, radius, orbital_period, eccentricity;
+int giant;
+{
+     double base_angular_velocity, planetary_mass_in_grams, k2, temp,
+     equatorial_radius_in_cm, change_in_angular_velocity, spin_resonance_period;
+     
+     spin_resonance = FALSE;
+     if (giant)
+          k2 = 0.24;
+     else 
+          k2 = 0.33;
+     planetary_mass_in_grams = mass * SOLAR_MASS_IN_GRAMS;
+     equatorial_radius_in_cm = radius * CM_PER_KM;
+     base_angular_velocity = sqrt(2.0 * J * (planetary_mass_in_grams) / (k2 * pow(equatorial_radius_in_cm, 2.0)));
+     /*   This next term describes how much a planet's rotation is slowed by    */
+     /*  it's moons.  Find out what dw/dt is after figuring out Goldreich and   */
+     /*  Soter's Q'.                                                            */
+     change_in_angular_velocity = 0.0;
+     temp = base_angular_velocity + (change_in_angular_velocity * age);
+     /*   'temp' is now the angular velocity. Now we change from rad/sec to     */
+     /*  hours/rotation.                                                           */
+     temp = 1.0 / ((temp / radians_per_rotation) * SECONDS_PER_HOUR);
+     if (temp >= orbital_period)
+     {
+          spin_resonance_period = ((1.0 - eccentricity) / (1.0 + eccentricity)) * orbital_period;
+          if (eccentricity > 0.1)
+          {
+               temp = spin_resonance_period;
+               spin_resonance = TRUE;
+          }
+          else 
+               temp = orbital_period;
+     }
+     return(temp);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   The orbital radius is expected in units of Astronomical Units (AU).    */
+/*   Inclination is returned in units of degrees.                           */
+/*--------------------------------------------------------------------------*/
+
+int inclination(orbital_radius)
+double orbital_radius; 
+{
+     int temp; 
+     
+     temp = (int)(pow(orbital_radius,0.2) * about(EARTH_AXIAL_TILT,0.4));
+     return(temp % 360);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   This function implements the escape velocity calculation.  Note that   */
+/*  it appears that Fogg's eq.15 is incorrect.                              */
+/*  The mass is in units of solar mass, the radius in kilometers, and the   */
+/*  velocity returned is in cm/sec.                                         */
+/*--------------------------------------------------------------------------*/
+
+double escape_vel(mass, radius)
+double mass, radius;
+{
+     double mass_in_grams, radius_in_cm;
+     
+     mass_in_grams = mass * SOLAR_MASS_IN_GRAMS;
+     radius_in_cm = radius * CM_PER_KM;
+     return(sqrt(2.0 * GRAV_CONSTANT * mass_in_grams / radius_in_cm));
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  This is Fogg's eq.16.  The molecular weight (usually assumed to be N2)  */
+/*  is used as the basis of the Root Mean Square velocity of the molecule   */
+/*  or atom.  The velocity returned is in cm/sec.                           */
+/*--------------------------------------------------------------------------*/
+
+double rms_vel(molecular_weight, orbital_radius)
+double molecular_weight, orbital_radius;
+{
+     double exospheric_temp; 
+     
+     exospheric_temp = EARTH_EXOSPHERE_TEMP / pow(orbital_radius, 2.0);
+     return(sqrt((3.0 * MOLAR_GAS_CONST * exospheric_temp) / molecular_weight) * CM_PER_METER);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   This function returns the smallest molecular weight retained by the    */
+/*  body, which is useful for determining the atmosphere composition.       */
+/*  Orbital radius is in A.U.(ie: in units of the earth's orbital radius),  *)
+    (*  mass is in units of solar masses, and equatorial radius is in units of  */
+/*  kilometers.                                                             */
+/*--------------------------------------------------------------------------*/
+
+double molecule_limit(orbital_radius, mass, equatorial_radius)
+double orbital_radius, mass, equatorial_radius;
+{
+     double numerator, denominator1, denominator2, escape_velocity, temp;
+     
+     escape_velocity = escape_vel(mass,equatorial_radius);
+     return((3.0 * pow(GAS_RETENTION_THRESHOLD * CM_PER_METER, 2.0) * MOLAR_GAS_CONST * EARTH_EXOSPHERE_TEMP) / pow(escape_velocity, 2.0));
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   This function calculates the surface acceleration of a planet.  The    */
+/*  mass is in units of solar masses, the radius in terms of km, and the    */
+/*  acceleration is returned in units of cm/sec2.                           */
+/*--------------------------------------------------------------------------*/
+
+double acceleration(mass, radius)
+double mass, radius;
+{
+     return(GRAV_CONSTANT * (mass * SOLAR_MASS_IN_GRAMS) / pow(radius * CM_PER_KM, 2.0));
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   This function calculates the surface gravity of a planet.  The         */
+/*  acceleration is in units of cm/sec2, and the gravity is returned in     */
+/*  units of Earth gravities.                                               */
+/*--------------------------------------------------------------------------*/
+
+double gravity(acceleration)
+double acceleration; 
+{
+     return(acceleration / EARTH_ACCELERATION);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  Note that if the orbital radius of the planet is greater than or equal  */
+/*  to R_inner, 99% of it's volatiles are assumed to have been deposited in */
+/*  surface reservoirs (otherwise, it suffers from the greenhouse effect).  */
+/*--------------------------------------------------------------------------*/
+
+int greenhouse(zone, orbital_radius, greenhouse_radius)
+int zone; 
+double orbital_radius, greenhouse_radius;
+{
+     if ((orbital_radius < greenhouse_radius) && (zone == 1))
+          return(TRUE);
+     else 
+          return(FALSE);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  This implements Fogg's eq.17.  The 'inventory' returned is unitless.    */
+/*--------------------------------------------------------------------------*/
+
+double vol_inventory(mass, escape_vel, rms_vel, stellar_mass, zone, greenhouse_effect)
+double mass, escape_vel, rms_vel, stellar_mass;
+int zone, greenhouse_effect;
+{
+     double velocity_ratio, proportion_const, temp1, temp2, mass_in_earth_units;
+     
+     velocity_ratio = escape_vel / rms_vel;
+     if (velocity_ratio >= GAS_RETENTION_THRESHOLD)
+     {
+          switch (zone) {
+               case 1:
+                    proportion_const = 100000.0;
+                    break;
+               case 2:
+                    proportion_const = 75000.0;
+                    break;
+               case 3:
+                    proportion_const = 250.0;
+                    break;
+               default:
+                    printf("Error: orbital zone not initialized correctly!\n");
+                    break;
+               }
+          mass_in_earth_units = mass * EARTH_MASSES_PER_SOLAR_MASS;
+          temp1 = (proportion_const * mass_in_earth_units) / stellar_mass;
+          temp2 = about(temp1,0.2);
+          if (greenhouse_effect)
+               return(temp2);
+          else 
+               return(temp2 / 100.0);
+     }
+     else 
+          return(0.0);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  This implements Fogg's eq.18.  The pressure returned is in units of     */
+/*  millibars (mb).  The gravity is in units of Earth gravities, the radius */
+/*  in units of kilometers.                                                 */
+/*--------------------------------------------------------------------------*/
+
+double pressure(volatile_gas_inventory, equatorial_radius, gravity)
+double volatile_gas_inventory, equatorial_radius, gravity;
+{
+     equatorial_radius = EARTH_RADIUS_IN_KM / equatorial_radius;
+     return(volatile_gas_inventory * gravity / pow(equatorial_radius, 2.0));
+}
+
+/*--------------------------------------------------------------------------*/
+/*   This function returns the boiling point of water in an atmosphere of   */
+/*   pressure 'surface_pressure', given in millibars.  The boiling point is */
+/*   returned in units of Kelvin.  This is Fogg's eq.21.                    */
+/*--------------------------------------------------------------------------*/
+
+double boiling_point(surface_pressure)
+double surface_pressure; 
+{
+     double surface_pressure_in_bars; 
+     
+     surface_pressure_in_bars = surface_pressure / MILLIBARS_PER_BAR;
+     return(1.0 / (log(surface_pressure_in_bars) / -5050.5 + 1.0 / 373.0));
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   This function is Fogg's eq.22.  Given the volatile gas inventory and   */
+/*   planetary radius of a planet (in Km), this function returns the        */
+/*   fraction of the planet covered with water.                             */
+/*   I have changed the function very slightly:  the fraction of Earth's    */
+/*   surface covered by water is 71%, not 75% as Fogg used.                 */
+/*--------------------------------------------------------------------------*/
+
+double hydrosphere_fraction(volatile_gas_inventory, planetary_radius)
+double volatile_gas_inventory, planetary_radius;
+{
+     double temp; 
+     
+     temp = (0.71 * volatile_gas_inventory / 1000.0) * pow(EARTH_RADIUS_IN_KM / planetary_radius, 2.0);
+     if (temp >= 1.0)
+          return(1.0);
+     else 
+          return(temp);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   Given the surface temperature of a planet (in Kelvin), this function   */
+/*   returns the fraction of cloud cover available.  This is Fogg's eq.23.  */
+/*   See Hart in "Icarus" (vol 33, pp23 - 39, 1978) for an explanation.     */
+/*   This equation is Hart's eq.3.                                          */
+/*   I have modified it slightly using constants and relationships from     */
+/*   Glass's book "Introduction to Planetary Geology", p.46.                */
+/*   The 'CLOUD_COVERAGE_FACTOR' is the amount of surface area on Earth     */
+/*   covered by one Kg. of cloud.                                            */
+/*--------------------------------------------------------------------------*/
+
+double cloud_fraction(surface_temp, smallest_MW_retained, equatorial_radius, hydrosphere_fraction)
+double surface_temp, smallest_MW_retained, equatorial_radius,
+     hydrosphere_fraction;
+{
+     double water_vapor_in_kg, fraction, surface_area, hydrosphere_mass;
+     
+     if (smallest_MW_retained > WATER_VAPOR)
+          return(0.0);
+     else 
+     {
+          surface_area = 4.0 * PI * pow(equatorial_radius, 2.0);
+          hydrosphere_mass = hydrosphere_fraction * surface_area * EARTH_WATER_MASS_PER_AREA;
+          water_vapor_in_kg = (0.00000001 * hydrosphere_mass) * exp(Q2_36 * (surface_temp - 288.0));
+          fraction = CLOUD_COVERAGE_FACTOR * water_vapor_in_kg / surface_area;
+          if (fraction >= 1.0)
+               return(1.0);
+          else 
+               return(fraction);
+     }
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   Given the surface temperature of a planet (in Kelvin), this function   */
+/*   returns the fraction of the planet's surface covered by ice.  This is  */
+/*   Fogg's eq.24.  See Hart[24] in Icarus vol.33, p.28 for an explanation. */
+/*   I have changed a constant from 70 to 90 in order to bring it more in   */
+/*   line with the fraction of the Earth's surface covered with ice, which  */
+/*   is approximatly .016 (=1.6%).                                          */
+/*--------------------------------------------------------------------------*/
+
+double ice_fraction(hydrosphere_fraction, surface_temp)
+double hydrosphere_fraction, surface_temp;
+{
+     double temp; 
+     
+     if (surface_temp > 328.0) 
+          surface_temp = 328.0;
+     temp = pow(((328.0 - surface_temp) / 90.0),5.0);
+     if (temp > (1.5 * hydrosphere_fraction))
+          temp = (1.5 * hydrosphere_fraction);
+     if (temp >= 1.0)
+          return(1.0);
+     else 
+          return(temp);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  This is Fogg's eq.19.  The ecosphere radius is given in AU, the orbital */
+/*  radius in AU, and the temperature returned is in Kelvin.                    */
+/*--------------------------------------------------------------------------*/
+
+double eff_temp(ecosphere_radius, orbital_radius, albedo)
+double ecosphere_radius, orbital_radius, albedo;
+{
+     return(sqrt(ecosphere_radius / orbital_radius) * pow((1.0 - albedo) / 0.7,0.25) * EARTH_EFFECTIVE_TEMP);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*  This is Fogg's eq.20, and is also Hart's eq.20 in his "Evolution of     */
+/*  Earth's Atmosphere" article.  The effective temperature given is in     */
+/*  units of Kelvin, as is the rise in temperature produced by the          */
+/*  greenhouse effect, which is returned.                                   */
+/*--------------------------------------------------------------------------*/
+
+double green_rise(optical_depth, effective_temp, surface_pressure)
+double optical_depth, effective_temp, surface_pressure;
+{
+     double convection_factor; 
+     
+     convection_factor = EARTH_CONVECTION_FACTOR * pow((surface_pressure / EARTH_SURF_PRES_IN_MILLIBARS),0.25);
+     return(pow((1.0 + 0.75 * optical_depth),0.25) - 1.0) * effective_temp * convection_factor;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   The surface temperature passed in is in units of Kelvin.               */
+/*   The cloud adjustment is the fraction of cloud cover obscuring each     */
+/*   of the three major components of albedo that lie below the clouds.     */
+/*--------------------------------------------------------------------------*/
+
+double planet_albedo(water_fraction, cloud_fraction, ice_fraction, surface_pressure)
+double water_fraction, cloud_fraction, ice_fraction, surface_pressure;
+{
+     double rock_fraction, cloud_adjustment, components, cloud_contribution,
+     rock_contribution, water_contribution, ice_contribution;
+     
+     rock_fraction = 1.0 - water_fraction - ice_fraction;
+     components = 0.0;
+     if (water_fraction > 0.0)
+          components = components + 1.0;
+     if (ice_fraction > 0.0)
+          components = components + 1.0;
+     if (rock_fraction > 0.0)
+          components = components + 1.0;
+     cloud_adjustment = cloud_fraction / components;
+     if (rock_fraction >= cloud_adjustment)
+          rock_fraction = rock_fraction - cloud_adjustment;
+     else 
+          rock_fraction = 0.0;
+     if (water_fraction > cloud_adjustment)
+          water_fraction = water_fraction - cloud_adjustment;
+     else 
+          water_fraction = 0.0;
+     if (ice_fraction > cloud_adjustment)
+          ice_fraction = ice_fraction - cloud_adjustment;
+     else 
+          ice_fraction = 0.0;
+     cloud_contribution = cloud_fraction * about(CLOUD_ALBEDO,0.2);
+     if (surface_pressure == 0.0)
+          rock_contribution = rock_fraction * about(AIRLESS_ROCKY_ALBEDO,0.3);
+     else 
+          rock_contribution = rock_fraction * about(ROCKY_ALBEDO,0.1);
+     water_contribution = water_fraction * about(WATER_ALBEDO,0.2);
+     if (surface_pressure == 0.0)
+          ice_contribution = ice_fraction * about(AIRLESS_ICE_ALBEDO,0.4);
+     else 
+          ice_contribution = ice_fraction * about(ICE_ALBEDO,0.1);
+     return(cloud_contribution + rock_contribution + water_contribution + ice_contribution);
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*   This function returns the dimensionless quantity of optical depth,     */
+/*   which is useful in determining the amount of greenhouse effect on a    */
+/*   planet.                                                                */
+/*--------------------------------------------------------------------------*/
+
+double opacity(molecular_weight, surface_pressure)
+double molecular_weight, surface_pressure;
+{
+     double optical_depth; 
+     
+     optical_depth = 0.0;
+     if ((molecular_weight >= 0.0) && (molecular_weight < 10.0))
+          optical_depth = optical_depth + 3.0;
+     if ((molecular_weight >= 10.0) && (molecular_weight < 20.0))
+          optical_depth = optical_depth + 2.34;
+     if ((molecular_weight >= 20.0) && (molecular_weight < 30.0))
+          optical_depth = optical_depth + 1.0;
+     if ((molecular_weight >= 30.0) && (molecular_weight < 45.0))
+          optical_depth = optical_depth + 0.15;
+     if ((molecular_weight >= 45.0) && (molecular_weight < 100.0))
+          optical_depth = optical_depth + 0.05;
+     if (surface_pressure >= (70.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+          optical_depth = optical_depth * 8.333;
+     else 
+          if (surface_pressure >= (50.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+               optical_depth = optical_depth * 6.666;
+          else 
+               if (surface_pressure >= (30.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+                    optical_depth = optical_depth * 3.333;
+               else 
+                    if (surface_pressure >= (10.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+                         optical
+----------------------------------------------------------------------------
+
+Tuesday, 13 February 1996 08:00:00 UTC - Leonard Erickson:
+Erik Max Francis <m...@alcyone.com <>> writes:
+> Leonard Erickson wrote:
+> 
+> > So where can we get a copy of ACCRETE that'll run in a PC. Better yet,
+> > where can we get the source code?
+
+> 
+> It's around in one of the source archives.  Since when I originally responded
+> to this message it was cancelled by good ol' Dick Depew, I'll make the public
+> offer again:
+For once, I'm *glad* that my software doesn't support cancels... :-)
+
+I got the program. I'll be trying to translate it to a more "friendly"
+language later.
+
+
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Wednesday, 14 February 1996 08:00:00 UTC - David Lowe:
+ste...@uk.gdscorp.com <> (Steve Gilham) wrote:
+>Jeff Suzuki (je...@bu.edu <>) wrote:
+>> Such software may be becoming obsolete even as we speak.  It was
+>> "common wisdom" that large, Jupiter-like planets could only exist far
+>> from the central sun.  The recent discoveries of large, Jupiter-sized
+>> planets near to (## Ursa Majoris?) kinda blows this idea.  
+>
+>The mass profile of the disk from which the planets accrete was
+>hand-tuned by Dole to make things that looked like the Solar System.
+>By tweaking the parameters, it is possible to make Jovians close in.
+>
+I though there was supposed to have been a build-up of water ice at the
+----------------------------------------------------------------------------
+
+Wednesday, 14 February 1996 08:00:00 UTC - Edward V. Wright:
+In article <4fo02p$7...@news.bu.edu <>>, je...@bu.edu <> says...
+
+>Somehow, this isn't convincing, since by calling Mercury, Venus, and
+>Earth a "few freaks" you're discarding thirty percent of your
+>experimental data.  
+Mercury is close enough to the Sun for its rotation to be locked by 
+3:2 tidal resonance.  Venus is also fairly close to the Sun and, more 
+importantly, has a massive atmosphere for a terrestrial planet.  Earth 
+has an exceptionally large Moon for a body of its size. So all are 
+special cases.
+
+
+
+>In fact, the mass-period relationship works only
+>very roughly for the gas giants.  Jupiter is, what, three time the
+>mass of Saturn yet its day is only 10% shorter?  
+I never said it was a linear relationship.  For the exact formula and an 
+accompanying chart, see Stephen Dole's "Habitable Planets for Man."
+
+
+-- 
+The opinions expressed in this message are my own personal views 
+and do not reflect the official views of Microsoft Corporation.
+----------------------------------------------------------------------------
+
+Wednesday, 14 February 1996 08:00:00 UTC - Erik Max Francis:
+Vicke Dovheden wrote:
+> Well, I've now understood that the mere size of the file makes some
+> people uneasy, and likewise for the binary nature of the "monster".
+> 
+> But, as you probably notice, I do ask "how", albeit in an indirect way.
+> I wonder if I can do the same when I see something that doesn't suit
+> my tastes?
+
+You can if it's something which goes against established and well-understood
+rules for conducting yourself on Usenet.  You can, for instance, cancel
+off-topic binaries and spam if you like (but you'd better know what the
+definition of spam is).
+
+I actually thought that it was just the source, which is quite small.
+Unfortunately, it included the DJGPP-compiled binaries (including the object
+files), which made it huge.
+
+-- 
+Erik Max Francis, &tSftDotIotE. && m...@alcyone.darkside.com <> || m...@alcyone.com <>
+San Jose, California, U.S.A. && 37 20 07 N 121 53 38 W && the 4th R is respect
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- && 1love && folasade
+Omnia quia sunt, lumina sunt. && GIGO Omega Psi && http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+"Out from his breast/his soul went to seek/the doom of the just." -- _Beowulf_
+----------------------------------------------------------------------------
+
+Wednesday, 14 February 1996 08:00:00 UTC - Vicke Dovheden:
+In article <824231...@deltrak.demon.co.uk <>>,
+Andrew Stephenson <am...@deltrak.demon.co.uk <>> wrote:
+
+>In article <AD45BB9B9...@pell.df.lth.se <>>
+>           vi...@df.lth.se <> "Vicke Dovheden" writes:
+>
+>> In article <311EAACA...@alcyone.com <>>,
+>> Erik Max Francis <m...@alcyone.com <>> wrote:
+>> [snip]
+>> >
+>> >It's around in one of the source archives.  Since when I
+>> >originally responded to this message it was cancelled by good ol'
+>> >Dick Depew, I'll make the public offer again:
+>>
+>> Hmm, who is Dick Depew, and why did he cancel _your_ post?
+>> I thought that only the original poster could cancel a post?
+>
+>Don't you mean "how", not "why" ?  It was huge.  (Sorry, Erik,
+>you meant well; but that monster really was over the top.)
+>--
+>Andrew Stephenson
+Well, I've now understood that the mere size of the file makes some
+
+people uneasy, and likewise for the binary nature of the "monster".
+
+But, as you probably notice, I do ask "how", albeit in an indirect way.
+I wonder if I can do the same when I see something that doesn't suit
+my tastes?
+Vicke
+
+
+ vi...@df.lth.se <>
+----------------------------------------------------------------------------
+
+Thursday, 15 February 1996 08:00:00 UTC - Ian Burrell:
+In article <311EAACA...@alcyone.com <>>,
+Erik Max Francis  <m...@alcyone.com <>> wrote:
+>Leonard Erickson wrote:
+>
+>> So where can we get a copy of ACCRETE that'll run in a PC. Better yet,
+>> where can we get the source code?
+>
+>It's around in one of the source archives.  Since when I originally responded
+>to this message it was cancelled by good ol' Dick Depew, I'll make the public
+>offer again:
+>
+>Email me at m...@alcyone.com <> and I'll send you a uuencoded form of the ACCRETE
+>program, either in PKZIP form or a gzip'ed tar archive (you specify which).  If
+>you don't know how to decode a uuencoded message or aren't familiar with either
+>of these formats, you'll be on your own.
+>
+
+With all this discussion, I remembered that I have some old versions
+of the accrete program on my hard disk.  And since they aren't doing
+anyone else any good there, I put them on the Web. Check out
+<URL:http://www-leland.stanford.edu/~iburrell/create/accrete.html <http://www-leland.stanford.edu/~iburrell/create/accrete.html>>.
+It contains source code for all the variants I could find, but if
+anyone knows more, please email me.
+
+
+ - Ian
+
+
+-- 
+          -- Ian Burrell == ibur...@leland.stanford.edu <> **
+           <URL:http://www-leland.stanford.edu/~iburrell/ <http://www-leland.stanford.edu/~iburrell/>>
+If everything is coming your way then you're in the wrong lane.
+-- 
+          -- Ian Burrell == ibur...@leland.stanford.edu <> **
+           <URL:http://www-leland.stanford.edu/~iburrell/ <http://www-leland.stanford.edu/~iburrell/>>
+Murphy's Original Law: If there are two or more ways to do something, and
+    one of those ways can result in a catastrophe, someone will do it.
+----------------------------------------------------------------------------
+
+Thursday, 15 February 1996 08:00:00 UTC - Steve Gilham:
+David Lowe (dl...@ua1vm.ua.edu <>) wrote:
+> ste...@uk.gdscorp.com <> (Steve Gilham) wrote:
+> >The mass profile of the disk from which the planets accrete was
+> >hand-tuned by Dole to make things that looked like the Solar System.
+> >By tweaking the parameters, it is possible to make Jovians close in.
+> >
+> I thought that there was supposed to have been a build-up of ice at
+> roughly Jupiter's distance from the early Sun because that was the 
+> closest to the sun that ice could be stable.  As I remember, this "ice 
+> ring" was supposed to have been the basis for Jupiter.
+
+Remember, ACRETE dates from about 1969.  The state-of-the-art at the
+time was represented as a 2-component disk - dust (assumed rocky), and
+gas (hydrogen+other volatiles).  If there was enough dust in the
+annulus swept out by a planetesimal that it could capture gas a jovian
+would result. 
+
+-- st...@windsong.demon.co.uk <> (home) ---- PGP keys available on keyservers --
+Steve Gilham       |GDS Ltd.,Wellington Ho. |Lives of great men all remind us
+Software Specialist|East Road, Cambridge    |We may make our lives sublime
+steveg@            |CB1 1BH, UK             |And departing, leave behind us
+ uk.gdscorp.com <http://uk.gdscorp.com>    |Tel:(44)1223-300111x2904|Footprints in the sands of time.
+   Key fingerprint =  08 8A 67 70 6E 86 09 B4  38 0A BD C4 53 1C 88 99
+----------------------------------------------------------------------------
+
+Saturday, 17 February 1996 08:00:00 UTC - Jeff Suzuki:
+Jeff Suzuki (je...@bu.edu <>) wrote:
+: Somehow, this isn't convincing, since by calling Mercury, Venus, and
+
+: Earth a "few freaks" you're discarding thirty percent of your
+: experimental data.  In fact, the mass-period relationship works only
+: very roughly for the gas giants.  Jupiter is, what, three time the
+: mass of Saturn yet its day is only 10% shorter?  (And Neptune is fifty
+: times as massive as Mars, with roughly the same period?)  
+Well, that's what I get for doing this from memory (so I blew the
+figure for Neptune badly, but I did remember the Jupiter-Saturn
+figures...I suppose this goes to show you what people pay attention
+to).  I'm at home now, and provide the following table.  Mass is in
+Earth masses:
+
+Planet        Mass         Day
+Jupiter        317         9 h 50m
+Saturn         95        10 h 40m
+Uranus         15        17 h 14m
+Neptune         17        16 h 03m
+Mars          0.1        24 h 37m
+
+Among these five, you're looking at a _very_ rough match between mass
+and period it's not linear, and not exponential.  (I don't have a
+calculator handy, so I won't swear it's not logarithmic or hyperbolic)
+Earth, Venus, and Mercury blow it completely (and again, that's a
+third of your experimental data).
+
+Jeffs
+----------------------------------------------------------------------------
+
+Tuesday, 20 February 1996 08:00:00 UTC - Edward V. Wright:
+In article <4g5f8u$7...@news.bu.edu <>>, je...@bu.edu <> says...
+
+>Among these five, you're looking at a _very_ rough match between mass
+>and period it's not linear, and not exponential.  (I don't have a
+>calculator handy, so I won't swear it's not logarithmic or hyperbolic)
+>Earth, Venus, and Mercury blow it completely (and again, that's a
+>third of your experimental data).
+Here is the function from the Starform computer code that computes this 
+value. The code, by burdic...@hplabs.hp.com <>, is available at 
+http://www-leland.stanford.edu/~iburrell/create/accrete.html <http://www-leland.stanford.edu/~iburrell/create/accrete.html>. It is based 
+on a paper by Martyn J. Fogg, "Extra-Solar Planetary Systems: A 
+Microcomputer Simulation" in Journal of the British Interplanetary 
+Society, Vol 38, pp. 501 - 514, 1985. My copy of Dole's "Habitable 
+Planets for Man," is at home, so I can't give you his original equation 
+right at the moment.
+
+I've tried to reformat this to fit into 80 columns. Hope I didn't mess 
+things up too badly.
+
+
+/*---------------------------------------------------------------------*/
+
+/* Fogg's information for this routine came from Dole "Habitable Planets  
+/* for Man", Blaisdell Publishing Company, NY, 1964.  From this, he came   
+/* up with his eq.12, which is the equation for the /* 
+/* 'base_angular_velocity' below.  He then used an equation for the
+/* change in angular velocity per time (dw/dt) from P. Goldreich and
+/* S. Soter's paper "Q in the Solar System" in Icarus, vol 5, pp.375-389
+/* (1966).  Using as a comparison the change in angular velocity for 
+/* the Earth, Fogg has come up with an approximation for our new
+/* planet (his eq.13) and take that into account. */
+/* This is used to find 'change_in_angular_velocity' below.                 
+*/
+/*                                                                            
+*/
+/* Input parameters are mass (in solar masses), radius (in Km), orbital*/
+/* period (in days), orbital radius (in AU), density (in g/cc),        */
+/* eccentricity, and whether it is a gas giant or not.                       */
+/* The length of the day is returned in units of hours.                       */
+/*----------------------------------------------------------------------*
+/
+double day_length(mass, radius, eccentricity, density,
+                  orb_radius, orb_period, giant)
+double mass, radius, eccentricity, density, orb_radius, orb_period;
+
+int giant;
+{
+     double base_angular_velocity, planetary_mass_in_grams, k2, 
+ang_velocity,
+        equatorial_radius_in_cm, change_in_angular_velocity,
+        spin_resonance_factor, year_in_hours, day_in_hours;
+     int stopped = FALSE;
+     
+     resonance = FALSE;
+     if (giant)
+          k2 = 0.24;
+     else 
+          k2 = 0.33;
+     planetary_mass_in_grams = mass * SOLAR_MASS_IN_GRAMS;
+     equatorial_radius_in_cm = radius * CM_PER_KM;
+     year_in_hours = orb_period * 24.0;
+     base_angular_velocity = sqrt(2.0 * J * (planetary_mass_in_grams) /
+                                  (k2 * pow2(equatorial_radius_in_cm)));
+/*  This next calculation determines how much the planet's rotation is      
+*/
+/*  slowed by the presence of the star.                                            
+*/
+     change_in_angular_velocity = CHANGE_IN_EARTH_ANG_VEL *
+                                  (density / EARTH_DENSITY) *
+                                  (equatorial_radius_in_cm /
+                                  EARTH_RADIUS) *
+                                  (EARTH_MASS_IN_GRAMS /
+                                  planetary_mass_in_grams) *
+                                  pow(stell_mass_ratio, 2.0) *
+                                  (1.0 / pow(orb_radius, 6.0));
+     ang_velocity = base_angular_velocity + 
+                    (change_in_angular_velocity * age);
+/* Now we change from rad/sec to hours/rotation.                            
+*/
+     if (ang_velocity <= 0.0)
+        stopped = TRUE;
+     else day_in_hours = RADIANS_PER_ROTATION / 
+                         (SECONDS_PER_HOUR * ang_velocity);
+     if ((day_in_hours >= year_in_hours) || stopped)
+     {
+          if (eccentricity > 0.1)
+          {
+            spin_resonance_factor = (1.0 - eccentricity) / 
+                                    (1.0 + eccentricity);
+            resonance = TRUE;
+            return(spin_resonance_factor * year_in_hours);
+          }
+          else 
+            return(year_in_hours);
+     }
+     return(day_in_hours);
+}
+-- 
+The opinions expressed in this message are my own personal views 
+and do not reflect the official views of Microsoft Corporation.
+----------------------------------------------------------------------------
+
+Tuesday, 20 February 1996 08:00:00 UTC - Jeff Suzuki:
+Edward V. Wright (edwr...@microsoft.com <>) wrote:
+: In article <4fo02p$7...@news.bu.edu <>>, je...@bu.edu <> says...
+
+: >Somehow, this isn't convincing, since by calling Mercury, Venus, and
+: >Earth a "few freaks" you're discarding thirty percent of your
+: >experimental data.  
+: Mercury is close enough to the Sun for its rotation to be locked by 
+
+: 3:2 tidal resonance.  Venus is also fairly close to the Sun and, more 
+: importantly, has a massive atmosphere for a terrestrial planet.  Earth 
+: has an exceptionally large Moon for a body of its size. So all are 
+: special cases.
+And Jupiter is by far the largest body in the solar system, and Saturn
+has a broad ring system, and Uranus is tilted at 98 degrees to the
+plane of its orbit, and Pluto is...well, Pluto.  These, too, are
+special cases.  It's not sporting to say "Special case" when a datum
+conflicts with an hypothesis and "No, it's not relevant" when the
+datum supports it.
+
+The point is that by eliminating 33% of your available data as
+"special cases", you raise serious questions as to the validity of
+your conclusions.  Or put another way:  by throwing out 33% of your
+data, you are, in effect, saying that mass determines rotation,
+_provided_ there are no other operative factors...which is almost like
+saying that mass has nothing to do with rotational period.
+
+Jeffs

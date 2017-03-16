@@ -1,0 +1,56 @@
+URL: https://groups.google.com/forum/#!topic/alt.sci.planetary/Iu4qtXd-DRM
+TITLE: Looking for software derived from ACCRETE 
+
+----------------------------------------------------------------------------
+
+Friday, 1 March 1996 08:00:00 UTC - Joel Hunter Crook:
+I'm looking for programs which are derived from ACCRETE. ACCRETE was a planetary
+system accretion simulation program developed at RAND Corp. during the late '60s
+by Stephen Dole. 
+I recently discovered a web address which has pascal and c variations of ACCRETE
+but with modifications based on a paper by M. Fogg wrote and published in ICARUS
+in 1989. Unfortunately I don't quite understand the reasons for the changes. The
+source code I have has annotations but no explanations.
+        Does anybody here know if Fogg's program / source code is available? Are there
+any other similar programs / source code available?
+Thanks,
+
+Joel Hunter Crook
+
+jhcrook @ instanet.com <http://instanet.com> 
+http://www.instanet.com/~jhcrook/index.html <http://www.instanet.com/~jhcrook/index.html>
+================================================
+A Strong House is built upon a strong Foundation
+        What are your beliefs built upon?
+                        - The Book of Reminders
+----------------------------------------------------------------------------
+
+Friday, 1 March 1996 08:00:00 UTC - Stephen D. Schaper:
+In article <4h6490$t...@gandalf.instanet.com <>>, jhc...@instanet.com <> (Joel
+Hunter Crook) wrote:
+
+>I'm looking for programs which are derived from ACCRETE. ACCRETE was a
+planetary
+>system accretion simulation program developed at RAND Corp. during the
+late '60s
+>by Stephen Dole. 
+>I recently discovered a web address which has pascal and c variations of
+ACCRETE
+>but with modifications based on a paper by M. Fogg wrote and published in
+ICARUS
+>in 1989. Unfortunately I don't quite understand the reasons for the
+changes. The
+>source code I have has annotations but no explanations.
+>        Does anybody here know if Fogg's program / source code is
+available? Are there
+>any other similar programs / source code available?
+>Thanks,
+>
+>
+>Joel Hunter Crook  
+ 
+I would like to add my second to this, especially a Macintosh form. I've
+got code, but while I'm trying to port it, I really am not nearly far
+enough along in programming knowledge to do this.
+-- 
+To get random signatures put text files into a folder called ³Random Signatures² into your Preferences folder.

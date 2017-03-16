@@ -1,0 +1,201 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/sssLoJ-dIPQ
+TITLE: The old Accrete Program (software) 
+
+----------------------------------------------------------------------------
+
+Monday, 15 April 1996 08:00:00 UTC+1 - Das Miller:
+I recently got hold of the source code for Accrete (it supposedly makes a
+realistic-looking list of planets for a solar system).  I've updated some
+of the syntax and converted it into a Windows program so it's more
+pleasant to work with.  I'm thinking about jazzing it up some (minimal
+graphics, a few user options, maybe teach it some new tricks) and
+releasing it as freeware but before I do:  
+   Do the real astronomers & astrophysicists consider the Accrete
+algorithm to be interesting or stupid? 
+   Is there a more-respected algorithm out there?
+   Did someone already *do* this stuff?
+   Any feature requests?
+-----------------------------------------------------------------------
+Mark S. Miller         dasm...@aol.com <>
+-----------------------------------------------------------------------
+"One measure of the quality of your life is the amount of
+time you spend doing things you don't want to do for 
+people you don't like."
+----------------------------------------------------------------------------
+
+Monday, 15 April 1996 08:00:00 UTC+1 - Amara Graps:
+dasm...@aol.com <> (Das Miller) writes:
+
+
+>I recently got hold of the source code for Accrete (it supposedly makes a
+>realistic-looking list of planets for a solar system).  I've updated some
+>of the syntax and converted it into a Windows program so it's more
+>pleasant to work with.  I'm thinking about jazzing it up some (minimal
+>graphics, a few user options, maybe teach it some new tricks) and
+>releasing it as freeware but before I do:  
+>   Do the real astronomers & astrophysicists consider the Accrete
+>algorithm to be interesting or stupid? 
+Can you say more about the "Accrete algorithm"? What is the physics
+involved? What does the user input?
+
+More specifically, I would want to know:
+
+- Has the interstellar cloud already collapsed?
+
+- Does this program treat the accretion disk as a fluid?
+
+- What equations are used?
+(There should be ones for momentum, conservation of energy, conservation
+of mass)
+
+- What is the geometry of the disk (axially symmetric? etc.) ?
+
+- How do you specify the clumps (planets)? 
+
+- How is the central star (proto-star) treated? (A protostar,
+say in T-Tauri phase, or something else?)
+
+- How does the gas in the disk escape? (stellar winds?)
+
+- How are the gas giant formed formed? How are the terrestrial planets
+formed?
+
+To be taken seriously, or thought of as "realistic," I would want some
+majority of these elements in the program.
+
+Amara
+
+-- 
+
+*************************************************************************
+Amara Graps                         email: agr...@netcom.com <>
+Computational Physics               vita:  finger agr...@best.com <>
+Multiplex Answers                   URL:   http://www.amara.com/ <http://www.amara.com/>
+*************************************************************************
+"There is no reason anyone would want a computer in their home."
+-Ken Olson, founder of Digital Equipment Corp., 1977.
+----------------------------------------------------------------------------
+
+Wednesday, 17 April 1996 08:00:00 UTC+1 - Das Miller:
+From agr...@netcom.com <> (Amara Graps) in <agrapsDp...@netcom.com <>>
+>dasm...@aol.com <> (Das Miller) writes:
+
+
+>>I recently got hold of the source code for Accrete (it supposedly makes
+a
+>>realistic-looking list of planets for a solar system).  I've updated
+some
+>>of the syntax and converted it into a Windows program so it's more
+>>pleasant to work with.  I'm thinking about jazzing it up some (minimal
+>>graphics, a few user options, maybe teach it some new tricks) and
+>>releasing it as freeware but before I do:  
+>>   Do the real astronomers & astrophysicists consider the Accrete
+>>algorithm to be interesting or stupid? 
+
+>Can you say more about the "Accrete algorithm"? What is the physics
+>involved? What does the user input?
+Well, right now, there's NO user input - it randomly assigns a few
+parameters.  That's the first thing I'd like to change.
+
+
+>More specifically, I would want to know:
+<big snip of things that I don't have specific answers for, unfortunately>
+I've got the source code, but I don't have an explanation of the
+algorithm.  According to the comments in the code, it's from "Formation of
+Planetary Systems by Aggregation:  a Computer Simulation" by Stephen H.
+Dole,  October 1969, 'Rand Corporation Paper'
+
+Without trying wade through the algorithm, it *does* seem to be based on
+the collapse of a big cloud of dust (the word "Dust" occurs in the source
+code a LOT) into fewer, larger planetesimals.  If I'm able to puzzle out
+answers to some of your more specific questions, I'll do a follow-up post.
+
+
+>To be taken seriously, or thought of as "realistic," I would want some
+>majority of these elements in the program.
+I'm certainly willing to settle for 'realistic' 
+
+Thanks for responding
+
+-----------------------------------------------------------------------
+Mark S. Miller         dasm...@aol.com <>
+-----------------------------------------------------------------------
+"One measure of the quality of your life is the amount of
+time you spend doing things you don't want to do for 
+people you don't like."
+----------------------------------------------------------------------------
+
+Tuesday, 23 April 1996 08:00:00 UTC+1 - Frank Henriquez:
+In article <4l3rgn$h...@newsbf02.news.aol.com <>>, dasm...@aol.com <> (Das
+Miller) wrote:
+
+>I've got the source code, but I don't have an explanation of the
+>algorithm.  According to the comments in the code, it's from "Formation of
+>Planetary Systems by Aggregation:  a Computer Simulation" by Stephen H.
+>Dole,  October 1969, 'Rand Corporation Paper'
+Stephen Dole wrote a book called "Habitable Planets For Man" back in the
+70's. He also published at least one article in Icarus about software
+simulation of planetary formation. Followup articles expanded on the
+program (which I think WAS also called Accrete), with authors like Sagan
+and Kaula. If you have a well stocked University library nearby, you may
+be able to find the original articles.
+
+Martyn Fogg also expanded on the code in a series of articles in The
+Journal of the British Interplanetary Society (JBIS)
+
+.
+>>To be taken seriously, or thought of as "realistic," I would want some
+>>majority of these elements in the program.
+>
+>I'm certainly willing to settle for 'realistic'
+I'm willing to settle for better than a WAG.
+
+Frank
+
+-- 
+Frank Henriquez                       UCLA Astronomy Department
+fr...@bnkl01.astro.ucla.edu <>        
+----------------------------------------------------------------------------
+
+Friday, 26 April 1996 08:00:00 UTC+1 - Christopher Michael Jones:
+Frank Henriquez (fr...@bnkl01.astro.ucla.edu <>) wrote:
+: In article <4l3rgn$h...@newsbf02.news.aol.com <>>, dasm...@aol.com <> (Das
+: Miller) wrote:
+
+: >I've got the source code, but I don't have an explanation of the
+: >algorithm.  According to the comments in the code, it's from "Formation of
+: >Planetary Systems by Aggregation:  a Computer Simulation" by Stephen H.
+: >Dole,  October 1969, 'Rand Corporation Paper'
+I would like the source code for that program.  Would you be willing to 
+give it to me.
+----------------------------------------------------------------------------
+
+Sunday, 28 April 1996 08:00:00 UTC+1 - Frank Henriquez:
+In article <4lrh93$3...@platform.uoregon.edu <>>, cjo...@gladstone.uoregon.edu <>
+(Christopher Michael Jones) wrote:
+
+>I would like the source code for that program.  Would you be willing to 
+>give it to me. 
+Here are two Web pages with the source code and executables:
+
+An excellent Web page:
+
+http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html>
+
+The Accrete Home Page:
+
+http://www-leland.stanford.edu/~iburrell/create/accrete.html <http://www-leland.stanford.edu/~iburrell/create/accrete.html>
+
+BTW - Here's a great learning opportunity; instead of asking, waiting  -
+and depending on - other people's kindness in supplying you software and
+information,  Visit Alta Vista (http://altavista.digital.com/ <http://altavista.digital.com/>) and learn
+how to use it. It took me *less than 30 seconds* to find the above sites.
+My search string was very simple: "accrete" AND "source code". You never
+know what you'll find when you look for things on your own...
+
+Frank
+
+
+-- 
+Frank Henriquez                  UCLA Astronomy Department
+fr...@ucla.edu <>        -or-       fr...@bnkl01.astro.ucla.edu <>
