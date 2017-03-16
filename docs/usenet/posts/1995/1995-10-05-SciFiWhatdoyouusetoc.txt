@@ -1,0 +1,355 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp.misc/_a4YfDQNydU
+TITLE: [SciFi] What do you use to create stellar systems? 
+
+----------------------------------------------------------------------------
+
+Thursday, 5 October 1995 08:00:00 UTC+1 - Brian & Lori Henderson:
+ste...@uk.gdscorp.com <> (Steve Gilham) wrote:
+>If I were to run that sort of a game, then I'd probably either use the
+>program I wrote based on Dole's ACRETE program (which I've posted a
+>couple of times, in BASIC and C++ versions), or failing that the 
+>Trav2300 tables aren't too bad. (I'd fall back to those for things
+>like number of moons not provided by the program, anyway); and finally
+>the mapping system from _Universe_ (SPI's SF RPG, generally justly
+>forgotten) 
+
+Actually, if you wanted very realistic solar systems, the tables
+provided in Other Suns are very good and my computerized generation
+program is based on them.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FFFFFF N    N  OOO  RRRR   DDDD
+% Brian Henderson  %%    RIME:  687    % F      NN   N O   O R   R  D   D
+% Internet: Brian.H...@ectech.com <> % FFF    N  N N O   O RRRR   D   D
+%           BHendrsn@kirk.microsys,net % F      N   NN O   O R  R   D   D
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F      N    N  OOO  R   R  DDDD
+             Stay Alert - Trust No One - Keep Your Laser Handy!
+                        "Order the fries, Earthling!"
+----------------------------------------------------------------------------
+
+Thursday, 5 October 1995 08:00:00 UTC+1 - Tom Salyers:
+In a previous article, smas...@union4.su.swin.edu.au <> (Douglas Jackson) says:
+>    Okay peoples, just a quick question as to what you use to create 
+>solar systems for use in your SFRPG of choice. 
+
+ Large quantities of hydrogen with some heavier elements for flavoring, why?
+
+-- 
+Tom Salyers                "Now is the Windows of our disk contents
+IRCnick: Aqualung           made glorious SimEarth by this Sun of Zork."
+Denver, CO                                    ---Richard v3.0
+----------------------------------------------------------------------------
+
+Friday, 6 October 1995 08:00:00 UTC+1 - Larry Smith:
+In article <4513dq$i...@news.ysu.edu <>>, at...@yfn.ysu.edu <> (Tom Salyers) writes:
+
+>In a previous article, smas...@union4.su.swin.edu.au <> (Douglas Jackson) says:
+
+ >>    Okay peoples, just a quick question as to what you use to create 
+ >>solar systems for use in your SFRPG of choice. 
+
+ > Large quantities of hydrogen with some heavier elements for flavoring, why?
+Aha!  Another Actual 1.0 player!  With God=off in his config
+file, too.  Heretic!
+
+
+-- 
+Larry Smith - My opinions only.  Killfile slac...@aol.com <> & tau...@ni.net <>
+The attempt to justify an evil deed has perhaps more pernicious consequences
+than the evil deed itself. The justification of a past crime is the planting
+and cultivation of future crimes. - Eric Hoffer  Digital Unix: 64 bit _now_.
+----------------------------------------------------------------------------
+
+Monday, 9 October 1995 08:00:00 UTC+1 - Luc Maillet:
+lar...@enemax.zk3.dec.com <> (Larry Smith) wrote:
+>
+>In article <4513dq$i...@news.ysu.edu <>>, at...@yfn.ysu.edu <> (Tom Salyers) writes:
+>
+>>In a previous article, smas...@union4.su.swin.edu.au <> (Douglas Jackson) says:
+>
+> >>    Okay peoples, just a quick question as to what you use to create 
+> >>solar systems for use in your SFRPG of choice. 
+>
+>Aha!  Another Actual 1.0 player!  With God=off in his config
+>file, too.  Heretic!
+Well, let's have a look at my config...
+
+datafile = ~/World_Builder_s_Handbook.supp
+variant = yes
+personal_input = yes
+
+Whilch means that I use Megatraveller and the WBH as a basis, and then do what
+I want with the results. So there IS a god, but no one can be sure... :-)
+-- 
+        
+ /    _ 
+(__(/(  
+        (E-mail : Luc.M...@supaero.fr <>)
+----------------------------------------------------------------------------
+
+Tuesday, 10 October 1995 08:00:00 UTC+1 - J.W.Thomas:
+In article <45ao18$f...@news.cict.fr <>>, Luc Maillet  <maillet> wrote:
+>lar...@enemax.zk3.dec.com <> (Larry Smith) wrote:
+>>
+>>In article <4513dq$i...@news.ysu.edu <>>, at...@yfn.ysu.edu <> (Tom Salyers) writes
+>>
+>>>In a previous article, smas...@union4.su.swin.edu.au <> (Douglas Jackson) says
+>>
+>> >>    Okay peoples, just a quick question as to what you use to create 
+>> >>solar systems for use in your SFRPG of choice. 
+>>
+>Whilch means that I use Megatraveller and the WBH as a basis, and then do what
+>I want with the results. So there IS a god, but no one can be sure... :-)
+>-- 
+Personally i use a giant ball of plasma, using a simple hydrogen fusion system 
+and a stellar cascade of matter being thrown out from it, with the lighter 
+elements more plentyful on the outer planets/asteroids.
+=)
+Sun
+Hot heavy planets
+Earth likes
+asteroid belts around here
+Gas Giants
+more asteroid belts here
+small light cold worlds
+  
+And Moons aplenty.(GM call)
+Depending on the star, you alter the number of each type of planet (D4-1 is ok)
+  
+  Quick and simple.
+Then use a GM call to alter the worlds at will (for the earth likes, any tables
+for PC homeworlds works ok)
+
+This works quick and easy, with minimum tables and rolling.
+Then the Jokers come along and set up the Chain Stars and really confuse the 
+PC's <grin>  
+----------------------------------------------------------------------------
+
+Tuesday, 10 October 1995 08:00:00 UTC+1 - Carl D. Cravens:
+On 10 Oct 1995 13:10:09 +0100, cm5...@ccub.wlv.ac.uk <> (J.W.Thomas) wrote:
+>Personally i use a giant ball of plasma, using a simple hydrogen fusion system
+>and a stellar cascade of matter being thrown out from it, with the lighter
+>elements more plentyful on the outer planets/asteroids.
+Hum. Where'd you learn to make star systems?  I start with a cloud of
+highly dispersed cloud of matter (a nebula) and then start condensing it
+into a disk.  For a more detailed explaination, see a modern astronomy
+book.
+
+
+--
+Carl (rave...@southwind.net <>)
+* I don't have TIME to be charming...
+----------------------------------------------------------------------------
+
+Wednesday, 11 October 1995 08:00:00 UTC+1 - Leif Magnar Kj|nn|y:
+Me, I use a combination of GURPS Space, plus some additional data from 2300AD,
+plus some formulae I've cooked up on my own based on a few undergrad physics
+courses.  That's for when I want really detailed systems, and since I do'em
+by hand this is really only good for a few systems at a time; when I have to
+write up a large amount of systems I do a much more cursory treatment 
+(basically just deciding whether there's anything very interesting there, such
+as habitable worlds and suchlike; I can always make up more details later if
+I need them).       
+-- 
+Leif Kj{\o}nn{\o}y: Math geek, bibliophile, BAAWA/secular humanist, gamer.
+   "I know there are people in this world who do not love their fellow 
+         human beings, and I HATE people like that!" (Tom Lehrer)
+----------------------------------------------------------------------------
+
+Wednesday, 11 October 1995 08:00:00 UTC+1 - Stephan Zielinski:
+Brian & Lori Henderson (BHen...@kirk.microsys.net <>) wrote:
+: Actually, if you wanted very realistic solar systems, the tables
+: provided in Other Suns are very good and my computerized generation
+: program is based on them.
+Is it publicly available, or proprietary?
+
+-- 
+Stephan "Ah, I remember my first random starmap generator; I was Way
+Cool because I didn't have to buy the Spinward Marches supplement or
+the Solomani Rim supplement-- and then I did, anyway, because all the
+other materials referred to them" Zielinski
+----------------------------------------------------------------------------
+
+Wednesday, 11 October 1995 08:00:00 UTC+1 - Nomad of Norad (David C. Hall):
+In article <a57cb$d373...@kirk.microsys.net <>> BHen...@kirk.microsys.net <> (Brian & Lori Henderson) writes:
+> ste...@uk.gdscorp.com <> (Steve Gilham) wrote:
+>
+> >If I were to run that sort of a game, then I'd probably either use the
+> >program I wrote based on Dole's ACRETE program (which I've posted a
+> >couple of times, in BASIC and C++ versions), or failing that the
+> >Trav2300 tables aren't too bad. (I'd fall back to those for things
+> >like number of moons not provided by the program, anyway); and finally
+> >the mapping system from _Universe_ (SPI's SF RPG, generally justly
+> >forgotten)
+>
+> Actually, if you wanted very realistic solar systems, the tables
+> provided in Other Suns are very good and my computerized generation
+> program is based on them.
+>
+Speaking of Amiga programs (as the guy who started this thread did), in
+addition, you might also try World Construction Set.  It doesn't create
+solar systems, though.  It creates PLANETS!  It lets you realistically
+landscape a whole planet, oceans, continents and all.  You can zoom in
+and have complete cities!  Focus on a particular building, even.  You
+also add trees and vegetation, and frost, and such.
+
+It doesn't actually create ecosystems, it just creates the "look" of the
+planet.  You CAN however show your players a picture, or an animation, and
+say, "This is the planet Floogg-hharnneem!"  :-)
+
+I've been meaning to get my hands on this program (it's shareware, BTW,
+or maybe it's licenseware...) but don't have the capacity at the moment,
+and am a little short on funds...  :-/
+
+The price is US$199.
+
+
+> %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FFFFFF N    N  OOO  RRRR   DDDD
+> % Brian Henderson  %%    RIME:  687    % F      NN   N O   O R   R  D   D
+> % Internet: Brian.H...@ectech.com <> % FFF    N  N N O   O RRRR   D   D
+> %           BHendrsn@kirk.microsys,net % F      N   NN O   O R  R   D   D
+> %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F      N    N  OOO  R   R  DDDD
+>              Stay Alert - Trust No One - Keep Your Laser Handy!
+>                         "Order the fries, Earthling!"
+>
+>
+--
+Nomad of Norad (David C. Hall)   |"You're watching the scenery channel.
+tlvx!wopr!no...@sinkhole.unf.edu <> | All scenery, all day."
+tlvx!no...@sinkhole.unf.edu <>      | --Cable announcer, "Back to the Future II"
+----------------------------------------------------------------------------
+
+Monday, 16 October 1995 08:00:00 UTC+1 - Guy Hoyle:
+non@wopr.UUCP (Nomad of Norad (David C. Hall)) wrote:
+
+>In article <a57cb$d373...@kirk.microsys.net <>> BHen...@kirk.microsys.net <> (Brian & Lori Henderson) writes:
+>> ste...@uk.gdscorp.com <> (Steve Gilham) wrote:
+>>
+>> >If I were to run that sort of a game, then I'd probably either use the
+>> >program I wrote based on Dole's ACRETE program (which I've posted a
+>> >couple of times, in BASIC and C++ versions), or failing that the
+>> >Trav2300 tables aren't too bad. (I'd fall back to those for things
+>> >like number of moons not provided by the program, anyway); and finally
+>> >the mapping system from _Universe_ (SPI's SF RPG, generally justly
+>> >forgotten)
+>>
+If there are any programs for this kind of thing floating around out
+there, could someone please post them or their locations? Thanks!
+
+
+Guy Hoyle
+(guy,ho...@chrysalis.org <>)
+----------------------------------------------------------------------------
+
+Wednesday, 18 October 1995 08:00:00 UTC+1 - Douglas Jackson:
+Guy Hoyle wrote the following on Mon, 16 Oct 1995 18:09:54 GMT:
+: non@wopr.UUCP (Nomad of Norad (David C. Hall)) wrote:
+: >> >If I were to run that sort of a game, then I'd probably either use the
+
+: >> >program I wrote based on Dole's ACRETE program (which I've posted a
+: >> >couple of times, in BASIC and C++ versions), or failing that the
+: >> >Trav2300 tables aren't too bad. (I'd fall back to those for things
+: >> >like number of moons not provided by the program, anyway); and finally
+: >> >the mapping system from _Universe_ (SPI's SF RPG, generally justly
+: >> >forgotten)
+: >>
+
+: If there are any programs for this kind of thing floating around out
+: there, could someone please post them or their locations? Thanks!
+    The program I use when in a hurry is SSG (Solar System Generator).  
+It runs on the Amiga and can be found in most, if not all, of the 
+archives.  Look in the game/role or game/misc directories for SSGv11.lha
+(I think I got the version number right...)
+    The program uses the GURPS space method of generating solar system 
+and the documentation is almost toally nil.  The generation is 
+_completely_ random, so expect a hell of a lot of systems with no 
+naturally habatable planets at all.  (Oh, and a lot of moons too.... :)
+
+Non Servium,
+   Doug.
+
+P.S - I think it comes with the C source code as well.
+
+--
+    _.--Email: smashcat@union4.su.swin.edu.au--944682@bud.cc.swin.edu.au.--.
+ _ // I will not be pushed, filed, stamped, indexed, briefed, debriefed    |
+ \X/   or numbered!  My life is my own. - No.6 to No.2, "The Prisoner"     |
+ `--------*Dogs crawl under fences.  Software crawls under Windows*--------'
+     As always, my university has no idea at all of what I'm posting....
+----------------------------------------------------------------------------
+
+Friday, 20 October 1995 08:00:00 UTC+1 - Nomad of Norad (David C. Hall):
+In article <45r1ma$8...@ixnews7.ix.netcom.com <>> she...@ix.netcom.com <> (Shelby Michlin ) writes:
+> In <nomad.06kd@wopr.UUCP> non@wopr.UUCP (Nomad of Norad (David C. Hall)) writes:
+> >
+> >In article <a57cb$d373...@kirk.microsys.net <>>
+> BHen...@kirk.microsys.net <> (Brian & Lori Henderson) writes:
+> >> ste...@uk.gdscorp.com <> (Steve Gilham) wrote:
+> <snip>
+> >Speaking of Amiga programs (as the guy who started this thread did), in
+> >addition, you might also try World Construction Set.  It doesn't create
+> >solar systems, though.  It creates PLANETS!  It lets you realistically
+> >landscape a whole planet, oceans, continents and all.  You can zoom in
+> >and have complete cities!  Focus on a particular building, even.  You
+> >also add trees and vegetation, and frost, and such.
+> >
+> >It doesn't actually create ecosystems, it just creates the "look" of the
+> >planet.  You CAN however show your players a picture, or an animation, and
+> >say, "This is the planet Floogg-hharnneem!"  :-)
+Actually, it DOES let you create the EFFECTS of an ecosystem (i.e. trees
+and other vegetation, snow, rivers, etc.) but it's all a matter of, "ok,
+I want some trees over there, and some snowcaps over here...."  I don't
+think they've implemented clouds yet, but they're working on it.
+
+Course, what I'D eventually like to get my hands on is a program that will
+let me plug in the parameters for an environment, and have it simulate the
+way the planet would work, something where I could say, "Ok, I want a planet
+with this proportion of water in the atmosphere, with this thickness of the
+atmosphere, with this landmass-to-ocean ratio, and this distance from a
+G-class star..." and have it tell me exactly what kind of weather I'd get
+there, and then let me tinker with the model until the environment there
+was like I wanted.
+
+But that's beyond this discussion, anyway...  :-)
+
+Actually, it's probably beyond the ability of todays home computers, too.
+-*>sigh<*-
+
+
+> >
+> >I've been meaning to get my hands on this program (it's shareware, BTW,
+> >or maybe it's licenseware...) but don't have the capacity at the moment,
+> >and am a little short on funds...  :-/
+> >
+> >The price is US$199.
+>
+> Only for the Amiga? Please say it isn't so, I have a pc! I want this
+> program; if there's a version I can use, where can I get it?
+So far as I know, only an Amiga version exists.  However, if there WAS a
+PC version, it would probably cost a bunch more, simply because PC users,
+by definition, tend to tolerate insane prices for their software.
+
+(Ducking!)
+
+Mind you, you should be able to get an Amiga for a reasonable price, used.
+I'd recommend one of the more recent models, though, like a 1200 or a 4000,
+because they have better graphics than the older models.  Or you can get a
+2000 or 3000 and plug in a 24bit card like the Toccata.
+
+For further details, I'd go to comp.sys.amiga.* and ask around, especially
+on the .marketplace sub.
+
+Mind you, some programs which originated on the Amiga have migrated to the
+PC, Distant Suns, for instance, or VistaPro, so it IS possible that World
+Construction Set might eventually migrate, too.
+
+Time will tell.
+
+We now return you to our regularly scheduled newsgroup.  :-)
+
+>
+> Shelby
+
+--
+Nomad of Norad (David C. Hall)   |"You're watching the scenery channel.
+tlvx!wopr!no...@sinkhole.unf.edu <> | All scenery, all day."
+tlvx!no...@sinkhole.unf.edu <>      | --Cable announcer, "Back to the Future II"

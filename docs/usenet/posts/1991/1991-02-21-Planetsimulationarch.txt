@@ -1,0 +1,38 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp/3w7wChsSue8
+TITLE: Planet simulation archive 
+
+----------------------------------------------------------------------------
+
+Thursday, 21 February 1991 18:22:22 UTC - Dave Allen:
+Nicolai Shapero (Nicolai...@f524.n102.z1.fidonet.org <>) wrote:
+> I've been playing with a package in C that came from someone off of
+> the usenet (I believe) that is a microcomputer implementation
+> with modifications of Stephen Dole's ACCRETE program.  If I
+> recall correctly, I got my copy from Sean
+> Malloy (@nprdc ?).
+> 
+> Sean, are you out there?  Maybe you could make that UNIVERSE
+> program available for ftp somehow?  (I don't think people could
+> get it from me on FidoNet very easily.)
+I can do better than that... there already EXISTS an FTP site which
+has that program, and many other related ones.  Look there; there's a
+lot of good stuff.
+
+The site is topgun.agps.lanl.gov <http://topgun.agps.lanl.gov> (192.12.184.4).  I don't really know
+where it is, or who owns it; I do not own it, and I have no authority over
+it.  Here is the contents of pub/usml:
+
+Actual                  accrete.c               shebs
+Archive                 accretion.amiga         siod.c
+Digests                 accretion.src           starcul.shar
+List                    archive                 starform
+OtherSun.src            cellsim_1.5.tar.Z       system.arc
+Psychohistory           fractal.c               traveller.tar
+README                  plates.c                xc5.1-tar.Z
+Universe                references
+
+The program Nicolai is describing, I believe, is accrete.c.  Both Sean and
+I wrote some of the files in that archive, about two years ago.
+
+Good luck!
+- Dave Allen: al...@viewlogic.com <>, Viewlogic Systems, Marlboro, MA

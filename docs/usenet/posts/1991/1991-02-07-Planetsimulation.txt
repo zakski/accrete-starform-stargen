@@ -1,0 +1,52 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp/3DlHjTIBRdw
+TITLE: Planet simulation 
+
+----------------------------------------------------------------------------
+
+Thursday, 7 February 1991 14:26:45 UTC - Nicolai Shapero:
+I've been playing with a package in C that came from someone off of
+the usenet (I believe) that is a microcomputer implementation
+with modifications of Stephen Dole's ACCRETE program.  If I
+recall correctly, I got my copy from Sean
+Malloy (@nprdc ?).
+Sean, are you out there?  Maybe you could make that UNIVERSE
+program available for ftp somehow?  (I don't think people could
+get it from me on FidoNet very easily.)
+
+In theory, this is a reasonably scientifically accurate simulation
+of planetary accretion dynamics.  It will produce a star system
+in roughly 15 seconds on a 20 MHz 386 (with no math coprocessor)
+when compiled under Borland's Turbo C version 2.0 optimized for
+speed.  Worth looking at, IMNSHO.
+
+-- Nicolai Shapero, the Mad Russian Sysop of StormGate Aerie
+ 
+
+
+
+--  
+Nicolai Shapero
+Internet: Nicolai...@f524.n102.z1.fidonet.org <>
+Compuserve: >internet:Nic...@f524.n102.z1.fidonet.org <>
+--------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Wednesday, 20 February 1991 23:14:57 UTC - Walter Milliken:
+In article <2482.2...@ofa123.fidonet.org <>>, Nicolai.Shapero@f524 (Nicolai Shapero) writes:
+>I've been playing with a package in C that came from someone off of
+>the usenet (I believe) that is a microcomputer implementation
+>with modifications of Stephen Dole's ACCRETE program.  If I
+>recall correctly, I got my copy from Sean
+>Malloy (@nprdc ?).
+There was a mailing list a couple years back about universe
+simulation, which included a bunch of programs for various purposes.
+The ACCRETE program or one of its variants was one of them.  I still
+have copies of some of the programs.  If someone wants to set up an
+FTP site (I can't, for company policy reasons), I'd be happy to pass
+them on.
+
+Before a million people ask for copies -- no, I won't mail them to
+individuals.  I already have enough trouble trying to keep up with
+GURPS Digest add requests without taking on any more hopeless tasks.
+
+---Walter

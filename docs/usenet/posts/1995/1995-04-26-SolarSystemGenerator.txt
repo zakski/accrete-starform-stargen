@@ -1,0 +1,151 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp.misc/cs5SgztiToQ
+TITLE: Solar System Generator? 
+
+----------------------------------------------------------------------------
+
+Wednesday, 26 April 1995 08:00:00 UTC+1 - Michael H. Start:
+        I am looking for a program that will automatically generate solar
+systems and their planets.  I would like something that will accept data on
+the star and then do the rest for me.  Currently I use Traveller 2300
+rules, and a program that automated this would be great.  Are their any ftp
+sites where I might find such a program?
+Mike Start
+mst...@nova.gmi.edu <>
+----------------------------------------------------------------------------
+
+Thursday, 27 April 1995 08:00:00 UTC+1 - Ken Walton:
+In article <3nki89$2...@zip.eecs.umich.edu <>>- show quoted text -
+           mst...@gmi.edu <> "Michael H. Start" writes:
+
+- show quoted text ->         I am looking for a program that will automatically generate solar
+> systems and their planets.  I would like something that will accept data on
+> the star and then do the rest for me.  Currently I use Traveller 2300
+> rules, and a program that automated this would be great.  Are their any ftp
+> sites where I might find such a program?
+Stargen for GURPS Space generates entire sectors at the drop of a hat. 
+Unfortunately, you can't type in the star type, but you could generate a sector 
+and then find a star that fitted the bill. You can find it at ftp.io.com <http://ftp.io.com>, 
+(somewhere in the SJGgames directory, I think). 
+
+----
+Ken Walton
+=========================================================================
+="The Earth is degenerating these days. Bribery and corruption abound.  =
+=Children no longer mind their parents, every man wants to write a book,=
+=and it is evident that the end of the world is fast approaching."      =
+=                              - Assyrian Stone Tablet, c.2800BC        =
+=========================================================================
+----------------------------------------------------------------------------
+
+Friday, 28 April 1995 08:00:00 UTC+1 - Andrew Philip Fabbro:
+Quoth Michael H. Start:
+:         I am looking for a program that will automatically generate solar
+: systems and their planets.  
+I believe I've seen such a thing written by ro...@universe.org <>. 
+Unfortunately, e-mail to that address bounces.  My memory is hazy, but I
+seem to remember reviews indicating that the original program was buggy 
+anyway.
+
+
+
+Andrew Fabbro       afa...@umich.edu <>      http://www.umich.edu/~afabbro/ <http://www.umich.edu/~afabbro/> 
+"When in Bologna will a Fabbro rise again?"  -- Dante's _Purgatorio_, XIV
+----------------------------------------------------------------------------
+
+Friday, 28 April 1995 08:00:00 UTC+1 - Justin Mohareb:
+In a previous posting, Michael H. Start (mst...@gmi.edu <>) writes:
+>         I am looking for a program that will automatically generate solar
+> systems and their planets.  I would like something that will accept data on
+> the star and then do the rest for me.  Currently I use Traveller 2300
+> rules, and a program that automated this would be great.  Are their any ftp
+> sites where I might find such a program?
+> 
+Well, there's a commercial program called "Astrologicus" (IIRC).  I don't
+know much about it, but  you might inquire to Skesis.  He's got a copy,
+and is quite taken with it.
+
+JJ Mohareb
+
+--
+Justin Mohareb, bd...@freenet.carleton.ca <>: Internet Editor for the
+Algonquin Times, Media Liason for Can*Con (write for  info!). Short furry
+guy with an attitude, and too many titles. *:)
+----------------------------------------------------------------------------
+
+Friday, 28 April 1995 08:00:00 UTC+1 - Mr. Tines:
+-----BEGIN PGP SIGNED MESSAGE-----
+In article <3nki89$2...@zip.eecs.umich.edu <>>
+
+           mst...@gmi.edu <> "Michael H. Start" writes:
+
+>         I am looking for a program that will automatically generate solar
+> systems and their planets.  I would like something that will accept data on
+> the star and then do the rest for me.  Currently I use Traveller 2300
+> rules, and a program that automated this would be great.  Are their any ftp
+> sites where I might find such a program?
+There were a couple posted on sci.astro in the last few months that implement 
+the classic simulation by Stephen Dole (as published in the journal Icarus in 
+the late sixties); these take a star and grow the planets by accretion from 
+the circumstellar gas and dust. I have a version which is written in C++, but 
+is *very* no-frills, but I've also seen a sophisticated (& buggy) C version and 
+a similarly bare-bones (and slightly buggy) Basic version.
+
+You could try hunting these in the usual news archive sites (look for titles 
+with "Acrete" or "Dole" in the subject field), I know they're out there, but 
+haven't hunted them down - even to find out when James changed his .sig :).
+I could e-mail the C++ source, if that's any use to you; I would offer the 
+binary for Windows, but it's just over 1Mb, and most of that's just to generate 
+a DOS-box for the program to run in (a limitation of the Visual C++ Standard 
+compiler, I'm afraid), so would require a chain of mails, even compressed and 
+ASCII-armoured.
+
+-----BEGIN PGP SIGNATURE-----
+Version: 2.6ui
+
+iQCVAgUBL6FE4ooUd45Z7dNFAQG2wQP+NyJlRo7XK8RN0WATmxRRtV+kCqehSpNx
+r4YbLa5JzmZhpg8c2j18F4+LiOGbD3v0wR/zB+j8a+3QKX/zQs0qNfcr8MoWPhJW
+06qEVVofHvblp4/vlzK/eqhT+axZRydCYasmb+9p1cr7qQoPuAxlisDpUXedHxBA
+zEf1lbFoqJY=
+=suSm
+-----END PGP SIGNATURE-----
+
+--
+ _______  PGP fingerprint: BC 01 55 27 B4 93 7C 9B  3C 54 D1 B7 24 8C 08 BC
+/_  __(_)__  ___ ___
+ / / / / _ \/ -_|_-<                      "So. Who is the real Mr. Tines?"
+/_/ /_/_//_/\__/___/@windsong.demon.co.uk <http://windsong.demon.co.uk>          (PGP preferred on principle)
+----------------------------------------------------------------------------
+
+Friday, 5 May 1995 08:00:00 UTC+1 - Skeksis:
+In article <3nki89$2...@zip.eecs.umich.edu <>> mst...@gmi.edu <> (Michael H. Start) writes:
+
+>        I am looking for a program that will automatically generate solar
+>systems and their planets.  I would like something that will accept data on
+>the star and then do the rest for me.  Currently I use Traveller 2300
+>rules, and a program that automated this would be great.  Are their any ftp
+>sites where I might find such a program?
+Mike,
+
+     Then you want Astrologicus by Logicrucible!  The programs have their 
+flaws such as a tendancy to make all habitable planets Earth-size, but they 
+are very useful for just the sort of thing you are looknig to do.  In fact, 
+the stats system they use to determine galaxy-wide factors such as population 
+density, tech levels, and so forth are directly taken from Traveller.  If you 
+are interested and want more details let me know via EMail and I will give you 
+everything I know about the two program (Astrologicus and Terralogicus)
+
+Skeksis
+----------------------------------------------------------------------------
+
+Friday, 5 May 1995 08:00:00 UTC+1 - Skeksis:
+In article <D7r9G...@freenet.carleton.ca <>> bd...@FreeNet.Carleton.CA <> (Justin Mohareb) writes:
+
+>Well, there's a commercial program called "Astrologicus" (IIRC).  I don't
+>know much about it, but  you might inquire to Skesis.  He's got a copy,
+>and is quite taken with it.
+Justin,
+
+   You called???  ;)  Or should I say....  "My name...you posted it...nowe you 
+must come with me, experience my pleaures..."  ???  ;) ;) ;)
+
+Skeksis

@@ -1,0 +1,37 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/AzT3tDgqQw0
+TITLE: Searching for ACCREET. 
+
+----------------------------------------------------------------------------
+
+Sunday, 22 January 1995 19:44:50 UTC - Robert W. Rapplean:
+I'm trying to find source code for the ACREET program (or whatever the 
+spelling is) that coalesces planetary systems from dust clouds.  Just 
+assuming I can't find a version for the IBM pc, I'm willing to re-write 
+it for the IBM in C.  Can anyone help find this for me?  Please E-mail 
+because I don't always have time to check through the pileup of messages 
+on this group.
+Rob Rapplean
+king...@crl.com <>
+----------------------------------------------------------------------------
+
+Saturday, 4 February 1995 15:11:55 UTC - Waddell:
+I would also like a copy of such code.  Could someone steer me to a source
+where it can be downloaded?
+Thanks,
+
+Allen Waddell
+wad...@aol.com <>
+----------------------------------------------------------------------------
+
+Sunday, 5 February 1995 05:00:07 UTC - Christopher Neufeld:
+In article <3h05fr$2...@newsbf02.news.aol.com <>>, Waddell <wad...@aol.com <>> wrote:
+>I would also like a copy of such code.  Could someone steer me to a source
+>where it can be downloaded?
+>
+   I've just made a copy available from FTP here:
+ftp://caliban.physics.utoronto.ca/pub/accrete.tar.Z <ftp://caliban.physics.utoronto.ca/pub/accrete.tar.Z>
+
+-- 
+ Christopher Neufeld....Just a graduate student   neu...@physics.utoronto.ca <>
+ Home page:  http://caliban.physics.utoronto.ca/neufeld/Intro.html <http://caliban.physics.utoronto.ca/neufeld/Intro.html>
+ "Don't edit reality for the sake of simplicity"

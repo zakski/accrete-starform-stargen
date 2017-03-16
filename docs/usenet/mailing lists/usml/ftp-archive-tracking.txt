@@ -1,4 +1,5 @@
 USML Original ftp archive:
+First Appearance: Thu, 8 Sep 88
 % ftp hc.dspo.gov
 % ftp 192.12.184.4
 % ftp dspo.dspo.gov
@@ -30,9 +31,12 @@ mail headers yet or looked at them.
 
 
 USML Second ftp archive:
+First Appearance: Thursday, 21 February 1991
+Last Appearance: Monday, 16 December 1991 05:18:04 UTC
+Defunct By: Friday, 17 January 1992 20:31:53 UTC
+
 Name:           Universal Simulation Mailing List (usml) ftp site
 Address:        topgun.agps.lanl.gov (192.12.184.4)
-Info Updated:   25-Feb-1991
 Notes:          Once upon a time, some net.people made a joke about writing a
                 program or two that simulated the Universe. Ho ho ho. Pretty
                 funny. But other people took them seriously and thus was born
@@ -52,3 +56,62 @@ Notes:          Once upon a time, some net.people made a joke about writing a
                 Psychohistory           fractal.c               traveller.tar
                 README                  plates.c                xc5.1-tar.Z
                 Universe                references
+
+USML Third ftp archive:
+First Appearance: Tuesday, 21 September 1993
+Address:        wuarchive.wustl.edu
+Notes:          Once upon a time, some net.people made a joke about writing a
+                program or two that simulated the Universe. Ho ho ho. Pretty
+                funny. But other people took them seriously and thus was born
+                the short lived mailing list called usml, and thus were written
+                a number of programs which simulated various parts of the
+                universe. There are subsector generators for Traveller, star
+                system generators using several methods, and plate tectonic
+                generators to generate random land masses (not very pretty).
+
+                Here are the contents of pub/usml:
+
+  Actual.  A log containing some information on "Actual".
+  OtherSun.src by Sean Malloy. A program to generate a "hex" containing
+    about 1000 stars and generate planets for the stars using the Other
+    Suns SFRPG rules.  Written in C.
+  Psychohistory.  A log containing a long discussion on various newsgroups
+    about psychohistory.
+  accrete.c and accretion.src, by Matt Burdick.  A program incorporating
+    many astrophysical formulae to generate stars and planets by accretion.
+    Matt has done a lot of research in journals to come up with the
+    relationships; the program is very complete.  Accrete.c is in C
+    while accretion.src is the same thing in Turbo Pascal.
+  empire.0.9.2:
+    The current version of empire from Berkeley.
+  fractal.c, by Ed King.  A program to generate rectangular pieces of terrain
+    using a fractal algorithm.
+  plates.c, A program to implement a set of plate tectonic algorithms by
+    Mark Isaak
+  references, by Jim Meritt.  Contains about a hundred journal references
+    in every branch of science related to simulation of natural
+    phenomena.
+  shebs, by Stan Shebs.  A 13-page document describing a philosophy for
+    simulation of a universe once it is created.
+  siod.c, sources to siod (scheme in one defun).  siod is a subset
+    of scheme written in C by George Carrette (g...@bu-it.bu.edu <>)
+  system.arc, by Andy Sheppard.  A program to generate star systems and
+    planets using rules from Future Law / Tech Law and GURPS Space, plus
+    a lot of Andy's own research and ideas.  Written in C.
+  traveller.src, from comp.sources.games in 1987.  A complete program,
+    written in C, that generates a sector using all the rules from Traveller
+    Book 6, Scouts.
+  xc5.1-tar.Z - Current version of Xconq written by Stan Shebs.
+
+  Volume1:  Contains the archives of conversations up to Sept 22, 1988.
+            This is when I standardized my digest format... Also includes
+            stuff from moderator before me.
+  starform:
+    This program is based on an article by Martyn Fogg in the Journal of the
+    British Interplanetary Society (JBIS) called 'Extrasolar Planetary Systems:
+    a Microcomputer Simulation'.  In it, he described how to generate various
+    sun-like solar systems randomly.
+
+Accrete ftp archive site:
+First Appearance: Sunday, 5 February 1995 05:00:07 UTC
+Address:        ftp://caliban.physics.utoronto.ca/pub/accrete.tar.Z

@@ -1,0 +1,34 @@
+URL: https://groups.google.com/forum/#!topic/comp.lang.pascal/jOigQjhuXrY
+TITLE: ACCRETE 
+
+----------------------------------------------------------------------------
+
+Wednesday, 2 February 1994 02:36:39 UTC - Brent Josep Lehman:
+Does anyone have the program ACCRETE in Turbo Pascal 7.0 code, or something
+compatible enough to run in Turbo Pascal 7.0, or something already
+executable on a PC?  I've seen the thing about four times in C and just
+can't seem to get the thing to port anywhere.  If I have to, I'll learn
+C, or write the thing myself in Pascal, but I want to explore all avenues
+before resorting to that.  It seems everyone has it but me! <sniff>
+Thanks much to anyone who can help,
+Brent Lehman
+ble...@bonnie.ics.uci.edu <>
+
+P.S. Or something executable on a Unix-based system? or executable on a Mac?
+or on an Amiga? or an Atari 5200? or an HP Calculator? (Not necessarily in
+that order)
+----------------------------------------------------------------------------
+
+Friday, 4 February 1994 23:14:00 UTC - Jeff Schoner:
+-=> Brent Josep Lehman wrote about ACCRETE to All on 02-01-94  19:36 <=-
+ BJL> Does anyone have the program ACCRETE in Turbo Pascal 7.0 code, or
+ BJL> something compatible enough to run in Turbo Pascal 7.0, or something
+ BJL> already executable on a PC?  I've seen the thing about four times in C
+ BJL> and just can't seem to get the thing to port anywhere.  If I have to,
+ BJL> I'll learn C, or write the thing myself in Pascal, but I want to
+ BJL> explore all avenues before resorting to that.  It seems everyone has it
+
+What is this ACCRETE program?
+
+... BBS_ID  DISCOVRY       C:\bwave\tagfiles.bw <http://tagfiles.bw> Random
+___ Blue Wave/QWK v2.12

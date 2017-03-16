@@ -1,0 +1,68 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.design/F4laFK3A9Ws
+TITLE: Accrete and Actual 
+
+----------------------------------------------------------------------------
+
+Wednesday, 28 July 1993 02:11:32 UTC+1 - Ian Matthew Burrell:
+I am looking for the source code for a program called Accrete. It
+simulates the creation of planetary system through accretion.  I heard
+that it was part of a suite of programs involved in something called
+the Actual hoax a few months ago.  I am looking for any FTP location
+where this program or any other similiar simulators and/or generators
+are archived.  I also heard that the Actual programs were archived on
+simtel20, but I searched there and couldn't find them.
+ - Ian
+
+ibur...@leland.stanford.edu <>
+
+
+
+
+
+
+
+
+-- 
+************************************------------------------------------
+Ian Burrell                         ibur...@leland.stanford.edu <>
+In the country of the blind, the one eyed man is king.
+------------------------------------************************************
+----------------------------------------------------------------------------
+
+Wednesday, 28 July 1993 16:56:08 UTC+1 - Dave Allen:
+Ian Burrel (ibur...@leland.stanford.edu <>) wrote:
+> Newsgroups: alt.sources.wanted,comp.sources.wanted,rec.games.design
+> Subject: Accrete and Actual
+
+> I am looking for the source code for a program called Accrete. It
+> simulates the creation of planetary system through accretion.  I heard
+> that it was part of a suite of programs involved in something called
+> the Actual hoax a few months ago.  I am looking for any FTP location
+> where this program or any other similiar simulators and/or generators
+> are archived.  I also heard that the Actual programs were archived on
+> simtel20, but I searched there and couldn't find them.
+Let me know if you find any.  The "actual" hoax was in 1988, a little longer
+than a few months ago.  For a long time, the Universal Simulation Mailing
+List, which sprang from the Actual hoax and inspired the posting of Accrete,
+was archived on topgun.agps.lanl.gov <http://topgun.agps.lanl.gov> [192.12.184.4] pub/usml but has been
+gone for a while.
+
+I don't have any of that stuff on line anymore, but it was a very interesting
+year of discussion.
+
+You might be interested in something I wrote at that time:  here's a quote
+from the README.
+
+> This is version 1 of a scientific planet generator (as opposed to a
+> die-rolling planet generator).  It is written in C and runs in graphics
+> mode under Xwindows, or in text-only mode under UN*X.  There are three
+> programs:
+>  - tec: a continental drift simulator
+>  - clim: a climate generator
+>  - globe: computes and displays a rotating planet
+
+You can get it from anyplace that archives comp.sources.misc, volume 18.
+My favorite place is to ftp from ftp.uu.net <http://ftp.uu.net>, directory
+usenet/comp.sources.misc/volume18/planet.
+
+- Dave Allen: al...@viewlogic.com <>

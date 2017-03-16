@@ -1,0 +1,244 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/qmIrrLh_BLI
+TITLE: High-grav atmospheres... 
+
+----------------------------------------------------------------------------
+
+Saturday, 1 October 1994 13:26:04 UTC+1 - Robert W. Rapplean:
+I'm involved in some recreational alien creation, and have run into a 
+question that I'm not certain I know the answer to.  If a planet has 1.5 
+to 2 times earth gravity, assuming virutally identical conditions, what 
+is the atmospheric density like.  Does it increase linearly, 
+logrithmically, cubically, square cubed, or what?  Logic suggests a 
+near-linear increase, based on the weight of a cone of 
+air above a particular square foot, but I've heard conflicting views on 
+this.  Help!
+Rob Rapplean
+king...@crl.com <>
+----------------------------------------------------------------------------
+
+Saturday, 1 October 1994 16:50:36 UTC+1 - Neelakantan Krishnaswami:
+- show quoted text -In article <36jkgs$i...@crl6.crl.com <>>, king...@crl.com <> (Robert W. Rapplean) writes:
+|> I'm involved in some recreational alien creation, and have run into a 
+|> question that I'm not certain I know the answer to.  If a planet has 1.5 
+|> to 2 times earth gravity, assuming virutally identical conditions, what 
+|> is the atmospheric density like.  Does it increase linearly, 
+|> logrithmically, cubically, square cubed, or what?  Logic suggests a 
+|> near-linear increase, based on the weight of a cone of 
+|> air above a particular square foot, but I've heard conflicting views on 
+|> this.  Help!
+
+Perhaps you mean air pressure, rather than air density? The weight of a column
+of air over a square foot gives a pressure, not a density. There is a *big*
+difference, but both could be useful in inventing an alien life form. Please
+clarify.
+
+Neel
+----------------------------------------------------------------------------
+
+Saturday, 1 October 1994 17:31:18 UTC+1 - Anders Sandberg:
+Robert W. Rapplean wrote:
+>What is the atmospheric density like.  Does it increase linearly, 
+
+>logrithmically, cubically, square cubed, or what?  Logic suggests a 
+I think I remember that atmospheric pressure scales linearly with
+gravity from the rules for creating planets in the roleplaying game
+2300 AD. Since this game is very hard sf (at least when it comes to
+physics), I think it is reasonable. I also vaguely remember from
+reading the source-code to ACCRETE or something similar that a 
+roughly linear formula was used to calculate surface pressure.
+
+When it comes to density the case is more complex. 2300 AD uses the
+measure MMW, Minimum Retained Molecular Weight, to calculate which
+gasses will remain in the atmosphere. This depends on gravity and
+also on temperature, but determines the density of the atmosphere. 
+Maybe somebody has the formula?
+--
+-----------------------------------------------------------------------
+Anders Sandberg                                                Towards Ascension!
+nv91...@hemul.nada.kth.se <>   http://www.nada.kth.se/~nv91-asa/main.html <http://www.nada.kth.se/~nv91-asa/main.html>
+GCS/M/S/O d++ -p+ c++++ !l u+ e++ m++ s+/+ n--- h+/* f+ g+ w++ t+ r+ !y
+
+
+-- 
+-----------------------------------------------------------------------
+Anders Sandberg                                                Towards Ascension!
+nv91...@hemul.nada.kth.se <>   http://www.nada.kth.se/~nv91-asa/main.html <http://www.nada.kth.se/~nv91-asa/main.html>
+GCS/M/S/O d++ -p+ c++++ !l u+ e++ m++ s+/+ n--- h+/* f+ g+ w++ t+ r+ !y
+----------------------------------------------------------------------------
+
+Saturday, 1 October 1994 19:13:20 UTC+1 - E. Hildaur Neilsen x8378:
+- show quoted text -
+>I'm involved in some recreational alien creation, and have run into a 
+>question that I'm not certain I know the answer to.  If a planet has 1.5 
+>to 2 times earth gravity, assuming virutally identical conditions, what 
+>is the atmospheric density like.  Does it increase linearly, 
+>logrithmically, cubically, square cubed, or what?  Logic suggests a 
+>near-linear increase, based on the weight of a cone of 
+>air above a particular square foot, but I've heard conflicting views on 
+>this.  Help!
+>
+>Rob Rapplean
+>king...@crl.com <>
+>
+This depends on is you change the net mass of the atmosphere at the same
+time you change the mass of the planet. Lets assume your planet has the
+same density as the Earth, but twice the mass. To find g of your planet
+you first need the radius. Let rho be the density. 
+        rho = M_earth / ( (4/3) Pi R_earth^3)
+
+        M_planet = 2 M_earth = rho V_planet = rho (4/3) Pi R_planet^3
+
+                 = M_earth ( R_planet/ R_earth )^3
+
+        R_earth * (M_planet/M_earth)^(1/3) = R_planet
+
+        R_planet = 2^(1/3) R_earth
+
+Okay, so now we get g_planet
+
+        g_planet = G M_planet / (R_planet^2)
+
+                 = 2 G M_earth / ( 2^(2/3) R_earth^2)
+
+                 = 2^(1/3) g_earth
+
+The pressure at the surface must supply enough force to support the
+atmosphere above it. If we assume that almost all of the atmosphere is
+very close to the surface of the planet (this is true in the case of the
+Earth) then this force must be
+
+        F = M_total_atmosphere g_planet
+
+          = P_planet * A
+
+Where A is the surface area of the planet, A = 4 Pi R_planet^2, so
+
+        M_total_atmosphere g_planet = P_planet * 4 Pi R_planet^2 
+
+and        P_planet = M_total_atmosphere g_earth / (4 Pi 2^(1/3) R_earth^2)
+
+where one of the 2^(1/3)'s have canceled. I'm not sure how one should go
+about getting M_total_atmosphere.  You may be able to get it by playing around
+with the law of atmospheres and ideal gas stuff, but I need to go do 
+something constructive. I don't know how accurate this would be anyway-
+I think what M_total_atmosphere turns out to be depends on a lot of other
+stuff (such has the temperation, both current and past, of the planet) that
+is really uncertain. I'm pretty sure you could put an upper bound on it, but
+I see no reason why a even a very large planet need have much of an atmosphere
+at all, if something happened to it. 
+
+                        -Hil
+
+---
+*******************************************************************************
+* E. Hildaur Neilsen, Jr. |"I have made this letter longer than usual because *
+* nei...@eta.pha.jhu.edu <> | I lack the time to make it shorter."              *
+* Bloomberg 105, x8378    |                -Blaise Pascal                        *
+*******************************************************************************
+----------------------------------------------------------------------------
+
+Monday, 3 October 1994 17:14:45 UTC+1 - R.C.D. Baker:
+In article <NV91-ASA.9...@dront.nada.kth.se <>> nv91...@dront.nada.kth.se <> (Anders Sandberg) writes:
+>From: nv91...@dront.nada.kth.se <> (Anders Sandberg)
+>Subject: Re: High-grav atmospheres...
+>Date: 01 Oct 1994 16:31:18 GMT
+>Robert W. Rapplean wrote:
+ 
+
+
+>I think I remember that atmospheric pressure scales linearly with
+>gravity from the rules for creating planets in the roleplaying game
+>2300 AD. Since this game is very hard sf (at least when it comes to
+>physics), I think it is reasonable.
+2300 AD is not really all that accurate with even simple physics. Somewhere 
+early in the Aurore Sourcebook they have the boiling point of water increasing 
+with decreased pressure (and this is not just a typo). If they can make 
+mistakes like that then I wouldn`t trust them with anything more complicated.
+
+On the subject of atmospheric pressure variation with gravity, it is not going 
+to be a simple law. After all Venus and the Earth have fairly similar masses, 
+but Venus has much higher atmospheric pressure.
+
+Richard
+----------------------------------------------------------------------------
+
+Tuesday, 4 October 1994 11:56:17 UTC+1 - Anders Sandberg:
+R.C.D. Baker wrote:
+>2300 AD is not really all that accurate with even simple physics. Somewhere 
+>early in the Aurore Sourcebook they have the boiling point of water increasing 
+>with decreased pressure (and this is not just a typo). If they can make 
+>mistakes like that then I wouldn`t trust them with anything more complicated.
+Of course I did not suggest to use the game as a physics book, but the
+planetary creation rules seems to give rather good results with a minimum
+of trouble, and doesn't look that wrong. But I agree, there are many bugs
+elsewhere in the game (just look at the economics!). 
+
+--
+-----------------------------------------------------------------------
+Anders Sandberg                                                Towards Ascension!
+nv91...@hemul.nada.kth.se <>   http://www.nada.kth.se/~nv91-asa/main.html <http://www.nada.kth.se/~nv91-asa/main.html>
+GCS/M/S/O d++ -p+ c++++ !l u+ e++ m++ s+/+ n--- h+/* f+ g+ w++ t+ r+ !y
+
+-- 
+-----------------------------------------------------------------------
+Anders Sandberg                                                Towards Ascension!
+nv91...@hemul.nada.kth.se <>   http://www.nada.kth.se/~nv91-asa/main.html <http://www.nada.kth.se/~nv91-asa/main.html>
+GCS/M/S/O d++ -p+ c++++ !l u+ e++ m++ s+/+ n--- h+/* f+ g+ w++ t+ r+ !y
+----------------------------------------------------------------------------
+
+Wednesday, 5 October 1994 02:49:54 UTC+1 - Craig William Jackson:
+Robert W. Rapplean (king...@crl.com <>) wrote:
+: I'm involved in some recreational alien creation, and have run into a 
+- show quoted text -: question that I'm not certain I know the answer to.  If a planet has 1.5 
+: to 2 times earth gravity, assuming virutally identical conditions, what 
+: is the atmospheric density like.  Does it increase linearly, 
+: logrithmically, cubically, square cubed, or what?  Logic suggests a 
+: near-linear increase, based on the weight of a cone of 
+: air above a particular square foot, but I've heard conflicting views on 
+: this.  Help!
+: Rob Rapplean
+: king...@crl.com <>
+----------------------------------------------------------------------------
+
+Thursday, 6 October 1994 12:00:10 UTC+1 - Tim Poston:
+Robert W. Rapplean (king...@crl.com <>) wrote:
+: I'm involved in some recreational alien creation, and have run into a 
+- show quoted text -: question that I'm not certain I know the answer to.  If a planet has 1.5 
+: to 2 times earth gravity, assuming virutally identical conditions, what 
+: is the atmospheric density like.  Does it increase linearly, 
+: logrithmically, cubically, square cubed, or what?  Logic suggests a 
+: near-linear increase, based on the weight of a cone of 
+: air above a particular square foot, but I've heard conflicting views on 
+: this.  Help!
+Venus has similar size and surface gravity to Earth,
+but the atmosphere is much denser, because there's simply more of it.
+A planet's gravity determines how squashed at the bottom of the gravity well
+the air is, and whether/how fast it will leak into space,
+but the pressure-per-square-inch is the total weight of
+air above one square inch.  (That's not quite local g times the
+total mass, as g decreases as you go up, but except for really
+thick atmospheres like Jupiter, forget that.)
+So the big factors are how much gas the planet has collected,
+from collisions with frozen gas comets, outgassing by volcanoes,
+bacteria turning solids/liquids into molecules small enough to
+be gas (or the reverse switch), and how much it has lost by
+condensation and leakage into space.  For an Earth size planet
+you can assume that hydrogen and helium have wandered off,
+unless you have a continuing or recent input, but for other gases...
+you need to model the planetology and ecology in some detail.
+(No oxygen, probably, without life to barf it into the air
+all the time.)
+
+BTW, your 1.5 to 2 times Earth gravity doesn't determine escape
+velocity, which is what fixes leakage rates.  A tiny dense planet
+can have strong surface gravity which diminishes much faster per
+kilometer upward than for a big low density planet of the same mass,
+so it will lose air much faster.
+
+
+Tim
+
+___________________________________________________________________
+Tim Poston    Institute of Systems Science, Nat. Univ. of Singapore
+  Religious reasons do not excuse violence: they accuse religion.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

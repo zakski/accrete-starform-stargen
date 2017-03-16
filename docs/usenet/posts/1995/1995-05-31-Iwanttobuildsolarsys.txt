@@ -1,0 +1,188 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/MAo1QCj1hwo
+TITLE: I want to build solar systems at home! 
+
+----------------------------------------------------------------------------
+
+Wednesday, 31 May 1995 08:00:00 UTC+1 - Dave Hardenbrook:
+In "Cosmos", Carl Sagan talks about and shows sample
+output of a program called ACRETE which simulates the
+growth and accretion of planetesimals in the solar nebula
+and generates hypothetical planetary systems.  The program
+is described in much greater detail by Sagan and
+Richard Isaacman of Cornell University in an article
+which appeared in volume 31, page 510-533 of the planetary
+Journal ICARUS in 1977.  For my personal enlightenment,
+I have tried to reconstruct the program from this article
+but I'm afraid that I just don't have the necessary
+physics background.  Does anyone know where I can possibly
+obtain the source code (preferably in C or C++) or the
+executable (preferably for the Amiga) of this program
+or another like it that generates scientifically
+plausible hypothetical solar systems?
+ 
+                    -- Dave (Dav...@delphi.com <>)
+ 
+----------------------------------------------------------------------------
+
+Thursday, 1 June 1995 08:00:00 UTC+1 - Jonathan Silverlight:
+There was a thread on this topic in March which included a C++
+program from Steve Gilham ( st...@windsong.demon.co.uk <> ). Not
+having a C compiler I tried the BASIC program he supplied which
+worked fine.
+- show quoted text - 
+In article <hA4esps...@delphi.com <>>, Dave Hardenbrook (dav...@delphi.com <>) writes:
+>In "Cosmos", Carl Sagan talks about and shows sample
+>output of a program called ACRETE which simulates the
+>growth and accretion of planetesimals in the solar nebula
+>and generates hypothetical planetary systems.  The program
+>is described in much greater detail by Sagan and
+>Richard Isaacman of Cornell University in an article
+>which appeared in volume 31, page 510-533 of the planetary
+>Journal ICARUS in 1977.  For my personal enlightenment,
+>I have tried to reconstruct the program from this article
+>but I'm afraid that I just don't have the necessary
+>physics background.  Does anyone know where I can possibly
+>obtain the source code (preferably in C or C++) or the
+>executable (preferably for the Amiga) of this program
+>or another like it that generates scientifically
+>plausible hypothetical solar systems?
+>
+>                    -- Dave (Dav...@delphi.com <>)
+>
+>
+Jonathan Silverlight           Internet: jsi...@portugal.win-uk.net <>
+5 Portugal Road,
+Woking,
+Surrey GU21 5HB
+UK
+(+44) 01483 721464
+----------------------------------------------------------------------------
+
+Friday, 2 June 1995 08:00:00 UTC+1 - Erik Max Francist:
+Dave Hardenbrook <dav...@delphi.com <>> writes:
+
+> Does anyone know where I can possibly
+> obtain the source code (preferably in C or C++) or the
+> executable (preferably for the Amiga) of this program
+> or another like it that generates scientifically
+> plausible hypothetical solar systems?
+You should be able to find it lying around on an ftp site somewhere; do
+an archie search for it and you should be able to come up with something.
+If you can't, email me, and I'll send the source to you (it's in C).
+
+To get an idea of what the program comes up with, here's the sample
+output of a given run of the star and the first three inner planets;
+the particular run showed here had a total of twelve planets.
+
+(I've modified the form of the output slightly from the original program
+to be a little more consistent, but the information displayed is
+unmodified).
+
+-----
+
+SYSTEM CHARACTERISTICS
+Mass of central star [solar]: 0.80
+Luminosity of central star [solar]: 0.36
+Total main sequence lifetime [Gy]: 22.41
+Current age of stellar system [Gy]: 3.81
+Radius of habitable ecosphere [au]: 0.60
+
+Planet 1:
+    Semimajor axis [au]: 0.38
+    Orbital eccentricity: 0.10
+    Mass [earth]: 0.01
+    Equatorial radius [km]: 1318
+    Average density [g/cm^3]: 5.25
+    Escape velocity from surface [km/s]: 2.3
+    Smallest molecular weight retained [u]: 155.7
+    Surface gravity [gee]: 0.20
+    Boiling point of water [K]: 0
+    Surface pressure [atm]: 0.0
+    Surface temperature [K]: 341.1
+    Hydrosphere coverage [%]: 0.0
+    Cloud coverage [%]: 0.0
+    Ice coverage [%]: 0.0
+    Axial tilt [deg]: 22
+    Planetary albedo: 0.07
+    Length of year [earth]: 0.3
+    Length of day [earth]: 1.4
+Planet 2:
+    Semimajor axis [au]: 0.65
+    Orbital eccentricity: 0.33
+    Mass [earth]: 1.36
+    Equatorial radius [km]: 7080
+    Average density [g/cm^3]: 5.48
+    Escape velocity from surface [km/s]: 12.4
+    Smallest molecular weight retained [u]: 5.2
+    Surface gravity [gee]: 1.10
+    Boiling point of water [K]: 398
+    Surface pressure [atm]: 2.3
+    Surface temperature [K]: 283.4
+    Hydrosphere coverage [%]: 97.6
+    Cloud coverage [%]: 51.3
+    Ice coverage [%]: 2.9
+    Axial tilt [deg]: 21
+    Planetary albedo: 0.35
+    Length of year [earth]: 0.6
+    Length of day [earth]: 0.6
+Planet 3:
+    Semimajor axis [au]: 1.42
+    Orbital eccentricity: 0.05
+    Mass [earth]: 1.03
+    Equatorial radius [km]: 6470
+    Average density [g/cm^3]: 5.44
+    Escape velocity from surface [km/s]: 11.3
+    Smallest molecular weight retained [u]: 6.2
+    Surface gravity [gee]: 1.00
+    Boiling point of water [K]: 377
+    Surface pressure [atm]: 1.1
+    Surface temperature [K]: 144.3
+    Hydrosphere coverage [%]: 0.0
+    Cloud coverage [%]: 0.0
+    Ice coverage [%]: 100.0
+    Axial tilt [deg]: 23
+    Planetary albedo: 0.77
+    Length of year [earth]: 1.9
+    Length of day [earth]: 0.6
+
+
+Erik Max Francis, &tSftDotIotE ...!uuwest!alcyone!max m...@alcyone.darkside.com <>
+San Jose, CA  ...  GIGO, Psi, Universe  ...  ICBM: 37 20 07 N  121 53 38 W  _
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- ftmfbs kmmfa mc2 / \
+Omnia quia sunt, lumina sunt.  ("All things that are, are lights.")   -><- \_/
+----------------------------------------------------------------------------
+
+Wednesday, 7 June 1995 08:00:00 UTC+1 - Jim Rittenhouse:
+I've been doing a whole number of ARCHIE searches around for ACCRETE and can't 
+ find it out there...help?
+
+Jim Rittenhouse
+
+'Scurvy knave!  I am none of his flirt-gills; I am none of his skains-mates.'
+
+ROMEO AND JULIET II, iv
+
+"Ye sons of fire, read my HURLO-THROMBO
+ Turn it betwixt your finger and thumbo
+ And being quite undone, be struck quite dumbo!"
+
+-Samuel Johnson
+----------------------------------------------------------------------------
+
+Thursday, 8 June 1995 08:00:00 UTC+1 -Steve Gilham:
+Jim Rittenhouse (jrit...@mcs.com <>) wrote:
+> I've been doing a whole number of ARCHIE searches around for ACCRETE and can't 
+>  find it out there...help?
+This may be because the original progam had a Fortrannish 6-character
+name, ACRETE.  I have C source of a version that's been floating around
+the 'net for a while, which is large and fancy, but allegedly buggy;
+and two versions C++ & BASIC of a simpler, cruder implementation of
+Dole's accretion kernel of my own devising.
+
+--
+-- st...@windsong.demon.co.uk <> (home) ---- PGP keys available on keyservers --
+Steve Gilham       |GDS Ltd.,Wellington Ho. |Lives of great men all remind us
+Software Specialist|East Road, Cambridge    |We may make our lives sublime
+steveg@            |CB1 1BH, UK             |And departing, leave behind us
+ uk.gdscorp.com <http://uk.gdscorp.com>    |Tel:(44)1223-300111x2904|Footprints in the sands of time.
+   Key fingerprint =  08 8A 67 70 6E 86 09 B4  38 0A BD C4 53 1C 88 99

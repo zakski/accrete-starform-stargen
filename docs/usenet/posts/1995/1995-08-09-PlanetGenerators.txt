@@ -1,0 +1,68 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/4g-oTMowQjk
+TITLE: Planet Generators? 
+
+----------------------------------------------------------------------------
+
+Wednesday, 9 August 1995 08:00:00 UTC+1 - Steve Dang:
+I know this is a FAQ, but...
+Hi, I'm looking for any resources (source/algorithms) pertaining to
+generating planets/star systems.  Any pointers to online resources
+would help a lot.
+
+Oh, I did find one piece of code at:
+ftp.uu.net <http://ftp.uu.net> /usenet/comp.sources/misc/volume18/planet
+This is David Allen's planetary generator source (clim, tec, globe).
+Very interesting stuff, but was made for Unix/X.  I read that there
+were several ports made of this to the PC.
+
+I'm busy porting it myself too, but would like to know if there is
+anyone else working on a similar project.
+
+Thanks,
+
+------------------------------------------------------------------------
+                               Steve Dang
+                       E-MAIL: va...@primenet.com <>
+                  WWW: http://www.primenet.com/~valis <http://www.primenet.com/~valis>
+
+       "Matter is plastic in the face of the Mind." -- Phil Dick
+------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Thursday, 10 August 1995 08:00:00 UTC+1 - Steve Dang:
+va...@primenet.com <> (Steve Dang) wrote:
+>Oh, I did find one piece of code at:
+>ftp.uu.net <http://ftp.uu.net> /usenet/comp.sources/misc/volume18/planet
+>This is David Allen's planetary generator source (clim, tec, globe).
+>Very interesting stuff, but was made for Unix/X.  I read that there
+>were several ports made of this to the PC.
+(I know, I'm quoting myself but...)
+
+What's happened to that old Universe Simulation Mailing List?  I heard
+that there was a program called STARFORM that was posted there.  So I
+did an ARCHIE search for it and found:
+
+ftp.clark.net <http://ftp.clark.net> /packages/universe/old/starform.src
+
+HOWEVER, it's not there anymore!
+
+Does anyone still have this source?  Or has the USML been logged
+somewhere?
+
+Thanks for any info!
+
+------------------------------------------------------------------------
+                               Steve Dang
+                       E-MAIL: va...@primenet.com <>
+                  WWW: http://www.primenet.com/~valis <http://www.primenet.com/~valis>
+
+       "Matter is plastic in the face of the Mind." -- Phil Dick
+------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Thursday, 10 August 1995 08:00:00 UTC+1 - sl...@cc.usu.edu:
+I also would be interested in any types of sources on these types of
+programs...
+                                        thanks, 
+
+                                                wReam...

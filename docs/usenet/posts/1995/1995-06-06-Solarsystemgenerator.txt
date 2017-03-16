@@ -1,0 +1,490 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/O7piLyyhZT0
+TITLE: Solar system generator algorithm needed. 
+
+----------------------------------------------------------------------------
+
+Tuesday, 6 June 1995 08:00:00 UTC+1 - Seppo Kalevi Halonen:
+I've been desperately trying to write a sort-of space conquer game, but 
+now I have come to a dead end. I need some code that creates realistic 
+solar systems rather randomly. This far, my attempts have been futile...
+Any help is appreciated...
+-- Smilodon  --
+
+-- 
+I am Smilodon.           * Email   : smil...@niksula.hut.fi <>
+ Saber-toothed.          * Address : --
+  Born to maul, to kill. * Phone   : --
+*************************************************************************
+----------------------------------------------------------------------------
+
+Tuesday, 6 June 1995 08:00:00 UTC+1 - John Robert Williams:
+Seppo Kalevi Halonen (shal...@delta.hut.fi <>) wrote:
+> I've been desperately trying to write a sort-of space conquer game, but 
+> now I have come to a dead end. I need some code that creates realistic 
+> solar systems rather randomly. This far, my attempts have been futile...
+> Any help is appreciated...
+Well, firest of all you should only consider distance from the sun when 
+creating the system (if you don't like circular orbits you can fix that 
+later). You should probably create all planets somewhat equally, but have 
+any that are withing a certain distance become terrestrial, since the 
+heat would prevent them from being gas giants. As far as intial creation 
+of the planets, maybe make an array of about 1000 or so numbers, and fill 
+it in somewhat randomly. These will represent dentsity of gass. Run a 
+quick gravity simulation so that especially dense points in the gas will 
+collapse to from planets. This is all just speculation BTW, but it's an 
+interesting problem and I think I'll give it a little more thought later 
+to see what I can come up with.
+
+--
+John Williams  <jo...@jove.acs.unt.edu <>>
+In the land of the dark, the Ship of the Sun is driven by the Grateful
+Dead.
+                -- Egyptian Book of the Dead
+----------------------------------------------------------------------------
+
+Wednesday, 7 June 1995 08:00:00 UTC+1 - Dave Menconi:
+In <shalonen....@snakemail.hut.fi <>> shal...@delta.hut.fi <> (Seppo Kalevi
+Halonen) writes: 
+>
+>I've been desperately trying to write a sort-of space conquer game, but 
+>now I have come to a dead end. I need some code that creates realistic 
+>solar systems rather randomly. This far, my attempts have been futile...
+>Any help is appreciated...
+>
+>-- Smilodon  --
+>
+>-- 
+>I am Smilodon.           * Email   : smil...@niksula.hut.fi <>
+> Saber-toothed.          * Address : --
+>  Born to maul, to kill. * Phone   : --
+>**********************************************************************
+**
+The key question is "how realistic"? Or perhaps the more specific,
+"define realistic". If you want the system to be realistic enough to
+really have planets in stable orbits around a sun -- well I wish you
+luck. I think there are a number of astronomers who would be interested
+in such a program. 
+
+So tell us how realistic you need it.
+
+Dave Menconi
+Computer Game Developer
+----------------------------------------------------------------------------
+
+Wednesday, 7 June 1995 08:00:00 UTC+1 - Thomas Schruefer:
+: Seppo Kalevi Halonen (shal...@delta.hut.fi <>) wrote:
+: > I've been desperately trying to write a sort-of space conquer game, but 
+: > now I have come to a dead end. I need some code that creates realistic 
+: > solar systems rather randomly. This far, my attempts have been futile...
+: > Any help is appreciated...
+You mite try this web page :
+
+http://sunsite.unc.edu/lunar/sdhp.html <http://sunsite.unc.edu/lunar/sdhp.html>
+
+This is the "Starship Design Home Page".
+
+I remember seeing something in there about generating solar systems based 
+on the size of the star. It had source code in C & basic.
+
+
+
+
+
+
+*-------------------------------------------------------------------------*
+Thomas Schruefer                                      schr...@umd5.umd.edu <>
+            Howard County Public School System, Maryland U.S.A.
+----------------------------------------------------------------------------
+
+Wednesday, 7 June 1995 08:00:00 UTC+1 - dtulloh:
+Seppo Kalevi Halonen (shal...@delta.hut.fi <>) wrote:
+: I've been desperately trying to write a sort-of space conquer game, but 
+: now I have come to a dead end. I need some code that creates realistic 
+: solar systems rather randomly. This far, my attempts have been futile...
+: Any help is appreciated...
+Check out GURPS Space.  This book has some excellent system
+generation tables.
+
+Dan
+----------------------------------------------------------------------------
+
+Thursday, 8 June 1995 08:00:00 UTC+1 - Andrew Folkins:
+In <3r5lf3$l...@harbinger.cc.monash.edu.au <>>, ren...@cs.monash.edu.au <> (Robert Paige Rendell) writes:
+>jo...@jove.acs.unt.edu <> (John Robert Williams) writes:
+>
+>} Seppo Kalevi Halonen (shal...@delta.hut.fi <>) wrote:
+>} > I've been desperately trying to write a sort-of space conquer game, but 
+>} > now I have come to a dead end. I need some code that creates realistic 
+>} > solar systems rather randomly. This far, my attempts have been futile...
+>} > Any help is appreciated...
+I'd suggest dig through the back issues of the Journal of the British
+Interplanetary Society for a series of articles by Martin Fogg dealing
+with generating realistic solar systems and the physical parameters of 
+any generated planets.  You might also look at Dole's article in Icarus,
+Volume 13 (1978) which simulates the accretion of planets in a disk of
+gas and dust.  
+
+I did something similar a few years back, and one of the toughest parts
+was coming up with a reasonable way to generate stars, then get good
+values for their mass and luminosity.  One tip I can give you: you don't
+want to use an entirely random mechanism for generating stars and solar 
+systems because 98% of the systems you generate will be red or white dwarfs.
+Contrary to popular conception, stars like the Sun are pretty rare (it's in
+the top 10% by mass), habitable planets like Earth even more so.
+
+>I vaguely remember that Kepler came up with a relationship between the
+>different distances of planets in a solar system that worked ok for most of
+>the planets here.  Unfortunately, I can't recall any exact details -
+>something like each successive planet was roughly three times furthur from
+>the sun than its predecessor... you might want to hunt it down...
+
+You're thinking of the Titius-Bode relationship: Add 4 to (0, 3, 6, 12, 24, 
+..), divide by 10, and you get roughly the distance from each planet from
+the Sun in A.U.  For example, Mars is 4+12 = 16/10 = 1.6 AU accoring to
+this relationship, it's actually 1.52 (on average.)  It works tolerably
+well out to about Uranus.  In general, it's one of those "isn't that neat"
+relationships, there's no current ideas on if or how it relates to the
+process of planetary formation.
+ 
+--
+Andrew Folkins   afol...@gpu.srv.ualberta.ca <>  afol...@bix.com <>
+                 http://www.ualberta.ca/~afolkins <http://www.ualberta.ca/~afolkins>
+
+"Science is to computer science as hydrodynamics is to plumbing."
+   - Stan Kelly-Bootle, _Computer Language_, Oct 90
+----------------------------------------------------------------------------
+
+Thursday, 8 June 1995 08:00:00 UTC+1 - Carl Burke:
+> In <shalonen....@snakemail.hut.fi <>> shal...@delta.hut.fi <> (Seppo Kalevi
+> Halonen) writes: 
+> >
+> >I've been desperately trying to write a sort-of space conquer game, but 
+> >now I have come to a dead end. I need some code that creates realistic 
+> >solar systems rather randomly. This far, my attempts have been futile...
+> >Any help is appreciated...
+> >
+The old Universe Simulation Mailing List had a program called 'starform'
+that simulated planetary accretion from gas and dust.  It runs fairly
+fast on modern machines, particularly with modifications.  I have
+a couple of versions, since I had ported it from the original C to
+Modula-2 (which I was using at the time), then back to C++ and Windows
+(with some displays).  It will calculate planetary temperatures,
+ice/cloud/water coverage percentages, a lot of stuff.  It doesn't
+do moons yet, though.
+
+You can also use Bode's Law to generate planets; I think I have code
+to do that as well.
+
+Now the big question -- how can I get it to you? Posting is not a
+good idea (code's too long), and some e-mail gateways could truncate
+the files.  Perhaps uploading to x2ftp.oulu.fi <http://x2ftp.oulu.fi> is the answer...
+Let's let this percolate through the list for a day or so and see
+what answers come up.  I can't send the code anywhere until tomorrow
+(Fri Jun 9) anyway.
+
+--
+
+Carl Burke
+----------------------------------------------------------------------------
+
+Thursday, 8 June 1995 08:00:00 UTC+1 - Robert Paige Rendell:
+jo...@jove.acs.unt.edu <> (John Robert Williams) writes:
+
+} Seppo Kalevi Halonen (shal...@delta.hut.fi <>) wrote:
+} > I've been desperately trying to write a sort-of space conquer game, but 
+} > now I have come to a dead end. I need some code that creates realistic 
+} > solar systems rather randomly. This far, my attempts have been futile...
+} > Any help is appreciated...
+} Well, firest of all you should only consider distance from the sun when 
+
+} creating the system (if you don't like circular orbits you can fix that 
+} later).
+I vaguely remember that Kepler came up with a relationship between the
+
+different distances of planets in a solar system that worked ok for most of
+the planets here.  Unfortunately, I can't recall any exact details -
+something like each successive planet was roughly three times furthur from
+the sun than its predecessor... you might want to hunt it down...
+--
+Robert Rendell                                                    \((/
+ren...@molly.cs.monash.edu.au <>                                    ~oo~
+        What do you know about Tweetle beetles?  Well...          /))\
+----------------------------------------------------------------------------
+
+Thursday, 8 June 1995 08:00:00 UTC+1 - Timothy Cain:
+dtu...@acca.nmsu.edu <> (dtulloh) writes:
+>Seppo Kalevi Halonen (shal...@delta.hut.fi <>) wrote:
+>: I've been desperately trying to write a sort-of space conquer game, but 
+>: now I have come to a dead end. I need some code that creates realistic 
+>: solar systems rather randomly. This far, my attempts have been futile...
+>: Any help is appreciated...
+>Check out GURPS Space.  This book has some excellent system
+>generation tables.
+
+Yes, I second this. Chapter 10 has a complete set of rules for
+generating systems according to a modified Bode's law for planetary
+distances. I've implemented all of that chapter (and chapter 11 too)
+in a licensed freeware program called the GURPS Star System
+Generator. You can ftp it from ftp.netcom.com <http://ftp.netcom.com> in the /pub/ca/cain
+directory. There is an IBM PC version called stargen.zip, and a Mac
+version called macstar.hqx.
+
+Take a look and see if the systems it generates are realistic enough
+for you.
+
+Tim.
+-- 
+------------------------------------------------------------------------
+Timothy Cain                        |                         Programmer
+ca...@netcom.com <>                     |                        Philosopher
+------------------------------------------------------------------------
+All opinions expressed here are solely my own. Please do not misconstrue
+anything written above as official Interplay policy.
+------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Saturday, 10 June 1995 08:00:00 UTC+1 - Seppo Kalevi Halonen:
+dmen...@ix.netcom.com <> (Dave Menconi ) writes:
+
+>The key question is "how realistic"? Or perhaps the more specific,
+>"define realistic". If you want the system to be realistic enough to
+>really have planets in stable orbits around a sun -- well I wish you
+>luck. I think there are a number of astronomers who would be interested
+>in such a program. 
+
+>So tell us how realistic you need it.
+
+>Dave Menconi
+>Computer Game Developer
+The answer is simple. Realistic enough for a computer game, ages 12 and up.
+
+-- 
+I am Smilodon.           * Email   : smil...@niksula.hut.fi <>
+ Saber-toothed.          * Address : --
+  Born to maul, to kill. * Phone   : --
+*************************************************************************
+----------------------------------------------------------------------------
+
+Monday, 12 June 1995 08:00:00 UTC+1 - Dave:
+shal...@delta.hut.fi <> (Seppo Kalevi Halonen) wrote:
+ 
+> The answer is simple. Realistic enough for a computer game, ages 12 and up.
+
+I saw the post on creating a random solar system and decided to try 
+it out. I started to try to create orbits by using force equations 
+and finite element analysis.  This was complicated and didn't work 
+to well (unless you like to have planets crash into the star all 
+the time).  I then switched to the method used in the code below.
+  The basic theory in outlined below. I am assuming you know nothing.
+.:) The Theory and program description is long as it can be 
+complicated. Just though I'd warn you...
+
+THEORY:
+Planets orbits can be basically described as ellipses.  The sun
+ being at one of the foci (not the origin).  If you ignore the 
+effects of planets on planets, these ellipses will be constant 
+(the actual effect of planets on planets is usually small, unless 
+they are close to each other). 
+Thus we can draw a planets orbit using ellispes.  
+
+Simple Ellipse Equations:    x^2/a^2 + y^2/b^2 = 1
+                           a = Major Axis (Width)
+                           b = Minor Axis (Height) (usually a > b)
+              the foci are at c = +/- sqrt(a^2 - b^2) 
+                          (which is why a > b is usually used)
+
+Parametric Equation (the one I will use):
+                x = a cos(theta)        
+                y = b sin(theta)
+                theta = some angle, 0 <= theta < 2PI
+          foci c = as above...
+
+                
+Now, someone way back when (you know who...) developed a theory 
+which stated that the area of the arc described by a planet in a 
+given time is constant, independant of the planet's position. I 
+could solve it...but I'm not going too.
+
+ie: the area of an arc (pie slice) = A = (r^2)*theta/2
+        where r = radius of arc
+          theta = arc angular size (how much arc)
+
+therefore we have: A1 = (r1^2) * theta1 / 2 = Arc #1 area
+                   A2 = (r2^2) * theta2 / 2 = Arc #2 area
+              and A1 = A2 by the above theory
+
+      the angles theta1 and theta2 have been described by the planet
+      in equal times.
+
+Ok...are we confused yet...either way...read on...It only gets
+ worse (just thinking that the original way I was going to do it 
+would be much harder to understand...and much longer).
+
+Putting it all together (at least we'll try to):
+     So, we can draw ellipses, of different sizes, to be orbits of 
+planets.  But the relative speed of the planets would be wrong...
+and thus it wouldn't look right.  A planet should move slowly 
+while it is away from the star, and quickly when it is closer. 
+ If we used the parametric ellipse equation to draw our orbits,
+ and used "theta += dtheta" to find the next planet position, 
+we would only see a slight increase in speed when the planet 
+was closer to the star. We can use the arc area equation to 
+fix this. We will find an initial Arc Area in a certain time
+ period (based on the planets speed (planets[].speed) and the
+ program speed (planet_speed), and the major axis distance (a,
+ planets[].a)).  This is done in lines 52-53 in the program.
+What you see is just:  AREA = (a^2) * THETA / 2, the arc area 
+equation THETA is arctan (speed/distance), where distance = a 
+in this case (just 'simple' trig if you see it)
+
+Now, when we want to find the next planet THETA, we know the 
+arc area of the current THETA must be the previously found 
+AREA (planets[].area) as it is constant (due to the 
+aforementioned theory).  We can find the distance from the 
+star to the planet (foci to current point distance). Now we 
+can use the arc area equation to find the next THETA, ie 
+(lines 80-85 in program):
+
+        THETA += 2 * AREA / R^2, where AREA = planet[].area, 
+calculated before, and R = foci to current planet position
+
+There...done.  We now know the next planet position.  Just do 
+the same thing next time...and so on.. Now we have planets 
+that move in as planets, at about the same speed.  The only 
+other thing to mention about the program is theta_offset.  
+Without this, we could only create ellipses along the x-y axis,
+ and all ellipses would be wider than they are high.  What 
+theta_offset does is it rotates the ellipse (just plain old
+ 2-D rotation) so more general planets can be displayed 
+(gives ya more variety).  This rotation takes place in lines 69-72.
+
+I think it looks pretty good, with good speed to (if you optimize
+ it).  The next best way is to solve F=MA, F=G M1 M2/R^2, and 
+F = M V^2/R using finite analysis.  Not easy, or too quick...
+although it is possible.  The program below just gives a quick
+ example of what it looks like.  To create a random system, 
+just create planets[] with random a's, b's , theta_offsets, 
+and speeds.  Find any which hit each other...and eliminate 
+them.  Viola.  Add other things like planet radius, color, 
+etc...maybe make it into a class and add some recursion (for 
+planet's moons...) and you got one cool solar system model...
+  If you do use it...I'd like to see the end product.....  
+All this can be complicated if you hate math...so email me 
+if there are any questions/mistakes....
+
+
+PROGRAM NOTES:
+- this is not optimized in any way...it works..thus I leave it alone
+- no error checking of any sort (who uses error handling anyways...)
+- it is currently set up to work in 640x480x16 VGA mode...
+- change the const planet_speed or rem out the delay(10) 
+line  to change the planets speed...
+- sorry about the multiple code lines...some of the calculations
+ were long, and I know some news readers cut long lines off...
+- programed in Turbo C/C++ v3.0...although I'm sure it'll work
+ with other compilers no prob...
+- I pasted this into NOTEBOOK (ugh) and it may have 'wrapped' some 
+lines and messed it up...I hope not...and then I pasted it into 
+NETSCAPE and screwed it up even more...<sigh> hope its still all there
+although the lines #'s will be a bit off...
+***====Cut HEre....program begins below
+/* Program: SOLAR.C
+   Programmed By: Me...of course...
+   Date: June 12/1995 I think
+   Desciption: Displays a simple solar system. Uses the theory that
+               the arc area a planets describes in a given time is
+               independant of its orbital position.                         */
+#include <stdlib.h>
+#include <math.h>
+#include <graphics.h>
+#include <conio.h>
+#include <stdio.h>
+#include <dos.h>
+
+const double x_offset = 320, y_offset = 250;        // Set screen origin...
+const double num_planets = 5;           // Set number of planets to draw
+const double planet_speed = 0.2;        // Define speed of display...
+                // Define the planet type
+struct planet_type {
+  float a;                // 'X'-Radius NOTE: a _MUST_ be bigger than b
+  float b;                // 'Y'-Radius
+  float x, y;                // Current Planet Coordinates
+  float foci_offset;        // X-Coordinate of Foci
+  float theta;                // Current Angle the Planet is At...
+  float theta_offset;        // How much planet ellipse is rotated...
+  float speed;                // Planets tangential speed...
+  float area;                // Area variable for calculating correct speed
+
+ } *planet_ptr, planets[10] =
+  // a             b     x  y foci theta theta_offset speed area
+ { 060.90, 055.00, 0, 0,  0,   0,      0.0,     2.35,  0, // Mercury
+   109.00, 108.10, 0, 0,  0,   0,      0.0,     1.75,  0, // Venus
+   151.00, 149.00, 0, 0,  0,   0,      0.0,     1.50,  0, // Earth
+   229.00, 228.00, 0, 0,  0,   0,      0.0,     1.20,  0, // Mars
+   200.00, 110.00, 0, 0,  0,   0,      0.4,     2.00,  0};// an Asteriod...
+ // These should be about the correct relative
+ // values, I got them from a Table...
+
+int main (void) {
+  int gmode = 2, gdriver = 9;   // Variables needed for graphic init.
+  int count = 0;        // Loop counter
+  float x, y;        // Some more temp. variables to speed things up...
+
+  initgraph(&gdriver, &gmode, "");    // Initialize graphic mode
+                                      // Just forget about error checking...
+
+  setcolor (YELLOW);                // Draw the sun...
+  setfillstyle (1, YELLOW);
+  fillellipse(x_offset,  y_offset, 10, 10);
+                                        // Set up area variable...
+  for (count = 0; count < num_planets; count++) { // and foci variable...
+    planets[count].area = atan(planet_speed * planets[count].speed
+                          /planets[count].a) * pow (planets[count].a, 2) / 2;
+    planets[count].foci_offset = sqrt (pow (planets[count].a, 2) -
+                          pow (planets[count].b, 2));  }
+                     // Notice a > b, or else it will 'crash'
+  do { // Main display loop...
+    setcolor (GREEN);                // Set planet colors
+    setfillstyle (1, GREEN);
+
+    for (count = 0; count < num_planets; count++) {
+      planet_ptr = &planets[count];  // Do this for speed...I think
+      x = planet_ptr->a * cos(planet_ptr->theta) - 
+         planet_ptr->foci_offset;
+      y = planet_ptr->b * sin(planet_ptr->theta);   
+                    // Calculate new  Planet Coordinates
+                                // Rotate the planets orbit....
+      planet_ptr->y = cos(planet_ptr->theta_offset)*y -
+                        sin(planet_ptr->theta_offset)*x;
+      planet_ptr->x = cos(planet_ptr->theta_offset)*x +
+                        sin(planet_ptr->theta_offset)*y;
+                                // Draw the planet...
+      fillellipse (planet_ptr->x + x_offset, planet_ptr->y + 
+                   y_offset, 5, 5);
+
+    planet_ptr->theta += 2*planet_ptr->area/(pow(planet_ptr->
+                         foci_offset, 2) +
+            pow (planet_ptr->a * cos(planet_ptr->theta), 2) +
+           pow(planet_ptr->b * sin(planet_ptr->theta), 2) -
+           2 * planet_ptr->foci_offset * cos planet_ptr->theta)* 
+           sqrt (pow (planet_ptr->a * cos(planet_ptr->theta), 2)+ 
+           pow(planet_ptr->b * sin(planet_ptr->theta), 2)));
+
+                        // To prevent overflows from occuring
+      if (planet_ptr->theta > 1e4*M_PI) planet_ptr->theta = 0;
+     } // End of for (count = 0; count < num_planets...)
+
+    setcolor (BLACK);                // Set colors to erase planet
+    setfillstyle (1, BLACK);
+    delay (10);  // Wait a bit...
+
+    for (count = 0; count < num_planets; count++) 
+               // Now erase each planet...
+      fillellipse (planets[count].x + x_offset, planets[count].y +
+                   y_offset, 5, 5);
+  } while (!kbhit());        // Keep going until a key is pressed
+
+  closegraph();        // End graphic mode
+  return (0); }        // End program....
+****Done...Cut here...
+I hope this works and helps you....

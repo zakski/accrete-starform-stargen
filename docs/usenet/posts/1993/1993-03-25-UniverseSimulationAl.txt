@@ -1,0 +1,34 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/ZBHcyM1c5YU
+TITLE: Universe Simulation Alogrithms 
+
+----------------------------------------------------------------------------
+
+Thursday, 25 March 1993 03:08:25 UTC - Timothy M. Stark:
+Hi,
+     I am looking for many alogrithms that are related to universe generation
+for simulation or virtual reality. Many years ago, I found them somewhere
+within Internet. Today they were gone completely. I tried to archie them 
+but no luck. I have a listing of needed alogrithms:
+
+      Acrete alogrithm - star system development - binary, solar system
+                         with different colors of star. Also planet
+                         development. That is using physic laws.
+      Landscape - land development with cayons, rivers, lakes, etc.
+                  with plantic movement, etc.. 
+      Climate - development from tundra to tropical with weathers, etc.
+      Vegatation and Animals - development for plants, etc..
+      Resources - minerals, etc.
+
+      That is my idea for the great universe adventure game like Star Trek, etc.
+I need complete listings to do research. :) Or which newsrgroups are the best
+for that?
+
+      If so, I will appericate that. Thanks you!!
+
+-- Tim Stark
+
+-- 
+Timothy Stark               Digex:  tst...@access.digex.com <> (Preferred)
+837 North Van Dorn St       Portal: Timothy...@cup.portal.com <>
+Alexandria, Va. 22304-2723  TDD: (703) 212-9731 Pager: (703) 702-4078
+"Washington, DC is the most deaf population!! -- Gallaudet University"

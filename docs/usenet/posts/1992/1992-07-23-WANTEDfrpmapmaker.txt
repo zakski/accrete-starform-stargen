@@ -1,0 +1,202 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp.misc/1Kk-kkD7T3g
+TITLE: WANTED: frp map maker 
+
+----------------------------------------------------------------------------
+
+Thursday, 23 July 1992 20:21:11 UTC+1 - Bradley B Kohn:
+  I was wondering in anyone out there uses a computer program to create
+detailed maps for frps. I am trying to find one that works in a hex map
+format and can also be exapnded to show terrain, cities, etc. Any ideas
+would be appreciated, and if anyone knows of anything for an IBM-PC I
+would appreciate the info.
+     Thanks in advance,
+     Bradley Kohn
+     bb...@cunixa.cc.columbia.edu <>
+----------------------------------------------------------------------------
+
+Friday, 24 July 1992 13:41:39 UTC+1 - Andrew G Hummell:
+In article <1992Jul23.1...@news.columbia.edu <>> bb...@cunixa.cc.columbia.edu <> (Bradley B Kohn) writes:
+>
+>   I was wondering in anyone out there uses a computer program to create
+>detailed maps for frps. I am trying to find one that works in a hex map
+>format and can also be exapnded to show terrain, cities, etc. Any ideas
+>would be appreciated, and if anyone knows of anything for an IBM-PC I
+>would appreciate the info.
+There is a set of Windows programs for doing just that.  They are called
+Hexview and Hexmap (and can be found on various ftp sites, like
+oak.oakland.edu <http://oak.oakland.edu> -- I think).  They are shareware, however, you will have
+to register them before you get the full capabilities.  They can still
+be used, but it takes a lot more work.  I can't vouch for the fully enabled
+versions, since I haven't the room in my budget to register them yet.
+
+Hope this helps.
+Andy
+-- 
+-------------------------------------------------------------------------------
+  "I'm not insane...just a reasonable facsimile."  | Hum...@unix.cis.pitt.edu <>
+  "Character is what you are in the dark."         | Andy Hummell ...that's me 
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Friday, 24 July 1992 17:43:38 UTC+1 - Alec Habig:
+A wargame for the PC, "Universal Milatary Simulator", has good map making
+facilities.  There's a new version of this out, but I've only seen the old one.
+Check it out - it's also a fun game in its own right.
+        Alec
+----------------------------------------------------------------------------
+
+Friday, 24 July 1992 21:21:07 UTC+1 - elk:
+Just for giggles (and so I can hear about something tha *I* can use
+:), whilst we are talking about hex-map making programs:
+Has anyone seen or heard of such a beast for UNIX?  (LIke maybe even
+for X?)
+
+
+--
++------------------------+  How long 'til my soul gets it right?
+|Ed King                 |  Has any human being ever lived that kind
+|e...@cblpo.att.com <>       |      of life?
+|                        |  ...except for Gallileo....King of Insight
++------------------------+            -- Indigo Girls
+----------------------------------------------------------------------------
+
+Sunday, 26 July 1992 18:26:57 UTC+1 - Michael Polis:
+I would have posted this earlier, but I was sure somone else would mention it.
+The universal simulation mailing list archive has a couple of terrain
+generating programs, fractal.c and plates.c.  Both generate terrain on a
+square grid, but if you shift every other column up 1/2 square, you should
+get a reasonable hex map.  Fractal.c generates nicer looking results.
+
+This is the entry from the RPG ftp sites post (from the the last time I saved
+the post).
+-----
+Name:           Universal Simulation Mailing List (usml) ftp site
+Address:        topgun.agps.lanl.gov <http://topgun.agps.lanl.gov> (192.12.184.4)
+Status:         Apparently Defunct
+Info Updated:   12-Feb-1992
+Notes:          Once upon a time, some net.people made a joke about writing a
+                program or two that simulated the Universe. Ho ho ho. Pretty
+                funny. But other people took them seriously and thus was born
+                the short lived mailing list called usml, and thus were written                a number of programs which simulated various parts of the
+                universe. There are subsector generators for Traveller, star
+                system generators using several methods, and plate tectonic
+                generators to generate random land masses (not very pretty).
+
+                Here are the contents of pub/usml:
+
+                Actual                  accrete.c               shebs
+                Archive                 accretion.amiga         siod.c
+                Digests                 accretion.src           starcul.shar
+                List                    archive                 starform
+                OtherSun.src            cellsim_1.5.tar.Z       system.arc
+                Psychohistory           fractal.c               traveller.tar
+                README                  plates.c                xc5.1-tar.Z
+                Universe                references
+----
+----------------------------------------------------------------------------
+
+Monday, 27 July 1992 16:29:54 UTC+1 - kieran:
+In article <1992Jul26.1...@cs.cmu.edu <>> 
+       mf...@CS.CMU.EDU <> (Michael Polis) writes:
+
+>I would have posted this earlier, but I was sure somone else would mention it.
+>
+>The universal simulation mailing list archive has a couple of terrain
+>generating programs, fractal.c and plates.c.  Both generate terrain on a
+>square grid, but if you shift every other column up 1/2 square, you should
+>get a reasonable hex map.  Fractal.c generates nicer looking results.
+>
+>This is the entry from the RPG ftp sites post (from the the last time I saved
+>the post).
+>-----
+>Name:           Universal Simulation Mailing List (usml) ftp site
+>Address:        topgun.agps.lanl.gov <http://topgun.agps.lanl.gov> (192.12.184.4)
+>Status:         Apparently Defunct
+    Note that the status is "Apparently Defunct".  I tried to ftp there
+this weekend and could not get through.  Is there another archive that 
+has this material?
+
+    Could the keeper of the FAQ check to see whether the archives listed
+there are in fact still running?
+
+                 Kieran Mullen
+
+                 kie...@cmatter.physics.indiana.edu <>
+----------------------------------------------------------------------------
+
+Tuesday, 28 July 1992 19:53:59 UTC+1 - William A. Calderwood:
+- show quoted text ->In article <1992Jul23.1...@news.columbia.edu <>> bb...@cunixa.cc.columbia.edu <> (Bradley B Kohn) writes:
+>>
+>>   I was wondering in anyone out there uses a computer program to create
+>>detailed maps for frps. I am trying to find one that works in a hex map
+>>format and can also be exapnded to show terrain, cities, etc. Any ideas
+>>would be appreciated, and if anyone knows of anything for an IBM-PC I
+>>would appreciate the info.
+>
+>There is a set of Windows programs for doing just that.  They are called
+>Hexview and Hexmap (and can be found on various ftp sites, like
+>oak.oakland.edu <http://oak.oakland.edu> -- I think).  They are shareware, however, you will have
+>to register them before you get the full capabilities.  They can still
+>be used, but it takes a lot more work.  I can't vouch for the fully enabled
+>versions, since I haven't the room in my budget to register them yet.
+
+- show quoted text ->Hope this helps.
+>Andy
+>-- 
+>-------------------------------------------------------------------------------
+>  "I'm not insane...just a reasonable facsimile."  | Hum...@unix.cis.pitt.edu <>
+>  "Character is what you are in the dark."         | Andy Hummell ...that's me 
+>-------------------------------------------------------------------------------
+>
+I've not been able to locate either or these window's programs on any
+of the 11 or so archives listed in the FAQ nor on oak.oakland.edu <http://oak.oakland.edu> nor
+on wuarchive.wustl.edu <http://wuarchive.wustl.edu> .
+
+Has any one else been able to find them if so could you post the
+location or submit them to rec.games.frp.archives.
+
+Or could Andy uuencode them and mail them to me :)
+
+Thanks,
+Bill,
+wcal...@nmsu.edu <>
+----------------------------------------------------------------------------
+
+Wednesday, 29 July 1992 13:28:35 UTC+1 - Andrew G Hummell:
+In my post last week concerning Hexmap and Hexview, I erroneously listed
+the wrong ftp site.  The correct site is ftp.cica.indiana.edu <http://ftp.cica.indiana.edu> in the
+pub/pc/win3/misc directory.  The full filenames are: HEXMAP10.ZIP and
+HEXVIEW3.ZIP- show quoted text -
+                                                        Andy
+-- 
+-------------------------------------------------------------------------------
+  "I'm not insane...just a reasonable facsimile."  | Hum...@unix.cis.pitt.edu <>
+  "Character is what you are in the dark."         | Andy Hummell ...that's me 
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Sunday, 2 August 1992 23:44:34 UTC+1 - Kryst the Philosopher:
+wcal...@nmsu.edu <> (William A. Calderwood)
+>>In article <1992Jul23.1...@news.columbia.edu <>> bb...@cunixa.cc.columbia.edu <> (Bradley B Kohn) writes:
+>>>
+>>>   I was wondering in anyone out there uses a computer program to create
+>>>detailed maps for frps. I am trying to find one that works in a hex map
+>>>format and can also be exapnded to show terrain, cities, etc. Any ideas
+>>>would be appreciated, and if anyone knows of anything for an IBM-PC I
+>>>would appreciate the info.
+>>
+>>There is a set of Windows programs for doing just that.  They are called
+>>Hexview and Hexmap (and can be found on various ftp sites, like
+>>oak.oakland.edu <http://oak.oakland.edu> -- I think).  They are shareware, however, you will have
+>>to register them before you get the full capabilities.  They can still
+>>be used, but it takes a lot more work.  I can't vouch for the fully enabled
+>>versions, since I haven't the room in my budget to register them yet.
+>I've not been able to locate either or these window's programs on any
+
+>of the 11 or so archives listed in the FAQ nor on oak.oakland.edu <http://oak.oakland.edu> nor
+>on wuarchive.wustl.edu <http://wuarchive.wustl.edu> .
+>
+>Has any one else been able to find them if so could you post the
+>location or submit them to rec.games.frp.archives.
+        I found them, but they have numbered hex's that Ido not want.
+I would like to have a simple program that would draw hex's on a page.

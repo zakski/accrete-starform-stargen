@@ -1,0 +1,17 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/UEWm7y2NmVU
+TITLE: ACCRETE 
+
+----------------------------------------------------------------------------
+
+Tuesday, 6 December 1994 17:37:09 UTC - Callum Robert Finlayson:
+I've heard of a computer program called ACCRETE which can be used to
+model the formation of planetary systems, does anyone know if this is
+pd (if so where can I ftp it from ?) or commercial (if so where can I
+buy a copy). Thanks.
+Callum
+
+--
+Have faith in self and those you love,               Callum Finlayson
+Set free imprisoned Peace's dove;                     Astrophysics II
+The truth is ne'er quite as it seems,           University College London
+Believe in the magic of your dreams.                 zca...@ucl.ac.uk <>

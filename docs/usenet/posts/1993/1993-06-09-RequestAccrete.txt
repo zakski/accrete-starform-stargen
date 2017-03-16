@@ -1,0 +1,20 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp.misc/MGCmZXRMWOo
+TITLE: Request: Accrete? 
+
+----------------------------------------------------------------------------
+
+Wednesday, 9 June 1993 22:36:26 UTC+1 - Bryan Feir:
+  Recently, someone posted a copy of 'accrete', the planetary system
+accretion simulator, to this newsgroup.  I saved it off, and ran it,
+and discovered one major problem: it doesn't handle moons.
+   I do recall hearing about a version of it that did handle moons
+properly, and have been looking around for it.  Archie just turned up
+a version of accrete on punisher.caltech, which unfortunately is in
+the Apple ][ specific .bsq format.  Does anyone out there have source
+code for the most recent version of accrete, or can tell me where to
+find it?
+---------------------------+---------------------------------------------------
+Bryan Feir           VE7GBF|"You also ask, 'How fares my love across the sea?'
+br...@sgl.ists.ca <>          | Intermediate, I presume.  She would hardly travel
+                           | steerage."               -- Stephen Leacock
+---------------------------+---------------------------------------------------

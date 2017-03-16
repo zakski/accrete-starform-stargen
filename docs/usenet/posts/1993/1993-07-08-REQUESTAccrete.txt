@@ -1,0 +1,20 @@
+URL: https://groups.google.com/forum/#!topic/comp.sources.wanted/Ndpnma5zLQ4
+TITLE: REQUEST: Accrete 
+
+----------------------------------------------------------------------------
+
+Thursday, 8 July 1993 20:15:57 UTC+1 - Bryan Feir:
+  I acquired a copy of C source to the program 'accrete' a while back.
+This is a program which simulates the formation of a solar system from
+dust and planetesimals.  However, this version does not handle moons
+at all; just the main planets.
+   I've run an archie search for more recent versions, and the only
+source I could find was in the .bsq format, which as I recall is apple
+specific.
+   Does anyone have access to a version that can actually handle the
+extra complexity of moons?
+---------------------------+---------------------------------------------------
+Bryan Feir           VE7GBF|"Every man has somewhere in the back of his head
+br...@sgl.ists.ca <>          | the wreck of a thing which he calls his
+                           | education."              -- Stephen Leacock
+---------------------------+---------------------------------------------------

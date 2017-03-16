@@ -1,0 +1,51 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/QKvECuPZthI
+TITLE: Dole's "Accrete" program 
+
+----------------------------------------------------------------------------
+
+Sunday, 19 February 1995 23:51:31 UTC - Soenke Behrens:
+Hi,
+some of you may remember S. Dole's program "Accrete", which simulated 
+formation of a solar system by accretion, written in 1969. Though extremely 
+simple, it still yielded amazingly accurate results (or so the article I 
+read says).
+
+What I am after is an incarnation of this program, preferably the original 
+Pascal source. Or Dole's contact address. Or anything, really. It sounds 
+nifty, but where would one find it?
+
+Thanks a lot
+
+Soenke
+
+-- 
+Standard disclaimer: My opinions are my own, not those of my employer
+----------------------------------------------------------------------------
+
+Sunday, 12 March 1995 00:23:17 UTC - Soenke Behrens:
+Sbeh...@contech.demon.co.uk <> (Soenke Behrens):
+> Well, if this is the same code that I already have, then it's
+> buggy. Some small bugs (typos, - instead of /, and that sort of
+> thing), and some major bugs. Easy to check: Run it. If it produces
+> ridiculously large gas giants most of the time, it is the buggy
+> version.
+If so, please send any bug reports (code changes are even better) to
+me (bur...@openmail.corp.hp.com <>) and I'll fix up my version.  I think
+any weird results are probably the outcome of some twiddling when I
+was trying to generalize the solar system accretion.  I was hoping to
+apply it recursively to produce moons for each of the planets.  I did
+have some luck, but the outcome is very dependent on what parameters
+you choose for the initial dust and gas cloud density.  Does your
+version have the -m (generate moons) option?
+
+I tried responding to this thread before, but it doesn't seem like my
+reply made it out.  I hope this one does.
+
+If anyone is interested, I can make my original Pascal and more recent
+C source briefly available for ftp.  I can't leave the stuff on the
+server long, but let me know if you can't use ftp.
+
+                                                -Matt
+-- 
+Matt Burdick                  |   Hewlett-Packard
+bur...@openmail.corp.hp.com <>  |   Network Test Division

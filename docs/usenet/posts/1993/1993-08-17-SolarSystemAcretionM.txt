@@ -1,0 +1,22 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/Xh56GM5HcWo
+TITLE: Solar System Acretion Models 
+
+----------------------------------------------------------------------------
+
+Tuesday, 17 August 1993 10:00:00 UTC+1 - David M. Swain:
+I am looking for a solar system builder ( sounds gandiose doesn't it ). But
+I understand that there is a basic program called ACRETE that evolves a 
+system from a number of planetesimals. Does anyone know where I can obtain a copy
+of this ( with source code if possible ) or conversely any other program
+which performs a similar function and runs on a PC or has the source code
+so that I can recompile/modify it accordingly.
+Thanks a million
+
+David M. Swain
+
+-- 
+David M. Swain                      |   "Once is happenstance,                "
+23 Partridge Way                    |   "Twice is circumstance,               "
+Cirencester, Glos                   |   "But the third time it's enemy action "
+England, +44 (0)285-885263          |
+Internet: da...@regulus.demon.co.uk <> |   Auric Goldfinger

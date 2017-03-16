@@ -1,0 +1,44 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0
+TITLE: Accretion programs? 
+
+----------------------------------------------------------------------------
+
+Wednesday, 11 March 1992 21:37:42 UTC - Kelly Alexander:
+        Has anyone either used or written an accretion program that will take
+some initial conditions, and then generate a solar system from them?
+        If so, what is the output like?  Does it show things like planet #1,
+orbits X miles from the star, at Y kps, with mass Z, etc?  Do they show the
+compositions of the planets?
+        Any information on these questions, or where I could find such a
+program would be greatly appreciated.  
+        Thanks in advance.
+
+-----------------------------------------------------------------------------
+Kelly Scott Alexander                  Internet: ale...@prism.cs.orst.edu <>  
+Oregon State - Computer Science        Locals...@research.cs.orst.edu <>
+-----------------------------------------------------------------------------
+            "cc: -- permission denied"  only at Oregon State!
+----------------------------------------------------------------------------
+
+Thursday, 12 March 1992 17:23:38 UTC - Jon Leech:
+In article <alexa...@prism.cs.orst.edu <>>, ale...@prism.cs.orst.edu <> (Kelly Alexander) writes:
+>        Has anyone either used or written an accretion program that will take
+> some initial conditions, and then generate a solar system from them?
+>        If so, what is the output like?  Does it show things like planet #1,
+> orbits X miles from the star, at Y kps, with mass Z, etc?  Do they show the
+> compositions of the planets?
+>        Any information on these questions, or where I could find such a
+> program would be greatly appreciated.
+>        Thanks in advance.
+    I converted (into C++) one written by Wales Larrison, based on
+Dole's 1970 paper. You can get it by anonymous FTP from
+ftp.cs.unc.edu:pub/acrete.c. It generates a radius and type (rocky or
+gas giant). I wouldn't think of it as more than a toy, though. Surely
+much research in planetary formation has happened since then.
+
+    Don't ask me to email copies if you're not on the Internet; read
+the FAQ to find out how to use an email FTP server.
+--
+    Jon Leech (le...@cs.unc.edu <>)    __@/
+    ``One never knows... Deacon now wants to conduct population
+      explosion tests *underground*.'' - Molester Mole

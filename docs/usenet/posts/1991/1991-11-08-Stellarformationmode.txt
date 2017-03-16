@@ -1,0 +1,108 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/5OOZeJYJJak
+TITLE: Stellar formation models 
+
+----------------------------------------------------------------------------
+
+Friday, 8 November 1991 03:40:03 UTC - Peter Cooper:
+I'm currently looking for a stellar formation model for use in a game
+I've been thinking about writing for some time.
+I did a citation search, and wasn't able to find very much with any sort
+of 'meat' -- more like articles explaining anomalies with the T-Tauri
+stars.  I was hoping that someone could point me towards a good article
+or three on current theory and models.  (I've read the 1969 article by
+S. Dole in _Icarus_, and found it really useful, and have developed a
+planetary accretion simulator based on his work -- surely there's
+something as approachable in the current literature?)
+
+Thanks
+
+Peter
+-- 
+email:        com...@uniwa.uwa.oz.au <>        snail:        Peter Cooper, box 22
+fax:        +61 9 380 1041                        c/- Guild of Undergraduates
+phone:        +61 9 380 3901                        University of Western Australia
+Constable Egg says: "Don't cook rice with a nuclear device!"
+----------------------------------------------------------------------------
+
+Tuesday, 12 November 1991 03:17:58 UTC - GUY GARNETT:
+- show quoted text -In article <1991Nov8.0...@uniwa.uwa.oz.au <>> com...@uniwa.uwa.oz.au <> (Peter Cooper) writes:
+>I'm currently looking for a stellar formation model for use in a game
+>I've been thinking about writing for some time.
+>
+>I did a citation search, and wasn't able to find very much with any sort
+>of 'meat' -- more like articles explaining anomalies with the T-Tauri
+>stars.  I was hoping that someone could point me towards a good article
+>or three on current theory and models.  (I've read the 1969 article by
+>S. Dole in _Icarus_, and found it really useful, and have developed a
+>planetary accretion simulator based on his work -- surely there's
+>something as approachable in the current literature?)
+>
+>Thanks
+>
+>Peter
+>-- 
+>email:        com...@uniwa.uwa.oz.au <>        snail:        Peter Cooper, box 22
+>fax:        +61 9 380 1041                        c/- Guild of Undergraduates
+>phone:        +61 9 380 3901                        University of Western Australia
+>Constable Egg says: "Don't cook rice with a nuclear device!"
+
+I'm afraid that I can't really help much; although I did a good bit of
+my own research for a star-system generator for a science-fiction
+game.  My best resource happened to be a friendly Astronomy Ph.D.
+
+What exactly are you trying to model?  I can give you pointers to
+books that will tell you a little about star formation, stellar
+densities, and stellar types.  As far as planetary systems go, to
+quote Dr Dean "you can draw almost any curve through one data point".
+
+I didn't worry too much about the mechanics of planetary formation,
+but assumed that *MOST* stars had a planetary system similar to our
+own (planets get smaller towards the inner and outer edges; gas giants
+in the outer system, mudballs in the inner system, asteriod belts in
+between).
+
+Wildstar
+
+ .signature: syntax error in line 1, ")" unexpected.
+-- 
+The Next Challenge - Public Access Unix in Northern Va. - Washington D.C.
+703-239-8993  or  703-764-0527  To log in for trial and account info.
+----------------------------------------------------------------------------
+
+Friday, 15 November 1991 18:55:03 UTC - Ian Brown:
+In article <973@tnc.UUCP> m0154@tnc.UUCP (GUY GARNETT) writes:
+>I didn't worry too much about the mechanics of planetary formation,
+>but assumed that *MOST* stars had a planetary system similar to our
+>own (planets get smaller towards the inner and outer edges; gas giants
+>in the outer system, mudballs in the inner system, asteriod belts in
+>between).
+I have a copy of a planetary system generator originally written by Matt
+Burdick from an article by Martyn Fogg.  I implemented a fairly simplistic
+star generator for it, but I wouldn't mind having more information about
+star formation for it.  Also, if anyone wants a copy of the code, I'd be glad
+to try to get it out to them.
+----------------------------------------------------------------------------
+
+Thursday, 21 November 1991 16:43:49 UTC - Matt Burdick:
+> I have a copy of a planetary system generator originally written by
+> Matt Burdick from an article by Martyn Fogg.  I implemented a fairly
+> simplistic star generator for it, but I wouldn't mind having more
+> information about star formation for it.
+A few months ago, I added code for determining initial star type based
+on realistic stellar distributions.  That is, most stars are class M
+main-sequence stars.  It also generates multiple-star systems.
+Unfortunately, due to a disk accident I lost my latest revision, but I
+should have the code back up to where it was previously by next week
+sometime.  If anyone is interested, send me mail at:
+
+    bur...@hpspd.spd.hp.com <>
+
+I don't want anyone making money off it (except me, of course :-), so
+it's copyrighted but freely available.  I hope to test it on PC's, HP
+workstations, Sun workstations, and Ultrix before I send it out.  If
+anyone has other machines they'd like to test it on, I'll send them an
+early copy and they can try it out.
+
+-- 
+Matt Burdick                |   Hewlett-Packard
+bur...@hpspd.spd.hp.com <>    |   Intelligent Networks Operation

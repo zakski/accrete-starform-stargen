@@ -1,0 +1,38 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/W6DcRCj6H_w
+TITLE: Solar System Generator (Simulated, That Is) Wanted 
+
+----------------------------------------------------------------------------
+
+Tuesday, 23 March 1993 13:45:54 UTC - Mark Gellis:
+I remember reading in Cosmos, years ago, that some people had developed
+a solar system generator that would randomly create solar systems--i.e.,
+the number, mass, and orbital distance of the planets in that system.
+I think it was called ACCRETE, but I'm not sure.  I have tinkered with   
+programs like this but I have never come up with one I was satisfied
+with.  Does anyone know where ACCRETE, or a better version of it, that
+can be run on a PC (DOS or Windows), or at least a program like it, can
+be found and downloaded via ftp on the internet or purchased?  Thanks
+in advance.
+Mark  
+f...@mentor.cc.purdue.edu <>
+
+
+ 
+----------------------------------------------------------------------------
+
+Tuesday, 23 March 1993 22:43:43 UTC - Timothy M. Stark:
+f...@mentor.cc.purdue.edu <> (Mark Gellis) writes:
+
+>I think it was called ACCRETE, but I'm not sure.  I have tinkered with   
+                       ^^^^^^^
+Hi,  I am looking for Universe generators like landscape, climates, etc...
+Does anyone have any information about that for ftp, etc?? If so, I 
+will appericate that. Thanks you!!
+
+-- Tim Stark
+
+-- 
+Timothy Stark               Digex:  tst...@access.digex.com <> (Preferred)
+837 North Van Dorn St       Portal: Timothy...@cup.portal.com <>
+Alexandria, Va. 22304-2723  TDD: (703) 212-9731 Pager: (703) 702-4078
+"Washington, DC is the most deaf population!! -- Gallaudet University"

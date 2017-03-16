@@ -1,0 +1,46 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/C2Q6lxtzni4
+TITLE: UPDATE: Planet Generators 
+
+----------------------------------------------------------------------------
+
+Monday, 14 August 1995 08:00:00 UTC+1 - Steve Dang:
+Ok, here's what I've found so far:
+- ftp.uu.net <http://ftp.uu.net> /comp.sources.misc/volume10/tec
+        This package contains source code for David Allen's Continental Drift
+Simulator.  Includes ports to: Sun, Unix, Amiga, PC.  I tested the PC
+version (Turbo C), and it compiles/works fine.
+
+- ftp.uu.net <http://ftp.uu.net> /comp.sources.misc/volume18/planet
+        This package is an update to the above.  Now includes Clim, a climate
+generator, and Globe, an X program to animate the maps.  Also includes
+an update to Tec.  However, this doesn't compile on PC's.
+
+- ftp.clark.net <http://ftp.clark.net> /packages/universe/old/starform.src
+        This was posted to the now defunct(?) Universe Simulator Mailing List.
+NOTE: this file is no longer there.  My archie search found this, but
+I guess the catalog(?) it used is outdated.  However, I'm in the
+process of getting this from someone who has it.
+
+- http://www.fourmilab.ch/terranova <http://www.fourmilab.ch/terranova>
+        Every day, a new planet is generated, and you can view it here.  The
+source for this is available (UNIX).  There should be a link for this
+in the author's (John Walker) home page -- it's called ppmforge.
+
+
+I'm sure there are plenty other (re)sources out there on this subject.
+Care to add to it?
+
+I'm hesitant to add all of this stuff to my home page, since my
+provider will start charging me after so many megs have been accessed
+through my home page.  We'll see...
+
+
+Enjoy
+
+------------------------------------------------------------------------
+                               Steve Dang
+                       E-MAIL: va...@primenet.com <>
+                  WWW: http://www.primenet.com/~valis <http://www.primenet.com/~valis>
+
+       "Matter is plastic in the face of the Mind." -- Phil Dick
+------------------------------------------------------------------------

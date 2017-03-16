@@ -1,0 +1,421 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU
+TITLE: Dole's "Accrete" program 
+
+----------------------------------------------------------------------------
+
+Thursday, 2 March 1995 03:59:23 UTC - Alfred A. Aburto:
+In article <P14...@A2W.maus.de <>> Ian_T...@a2w.maus.de <> (Ian Taylor) writes:
+>Recently some kind person posted a copy of the accrete/starform source
+>code. In the readme file it appears that the program was written by:
+>burdic...@hplabs.hp.com <> based on the work of S. Dole. After quite a
+>struggle I finally got it to run for a few minutes until it crashed
+>with a "pow: DOMAIN error" message. Not a planet in sight :(
+>
+>The code is a conversion into C from the original written in Pascal
+>that was described in the paper:
+>
+>    "Extra-Solar Planetary Systems: A Microcomputer Simulation"
+>    Martyn J. Fogg,  Journal of the British Interplanetary Society
+>    Vol 38, pp. 501 - 514, 1985
+>
+>As this was ten years ago and Dole's original paper is dated 1969, is there
+>a more recent reference for work in this field?
+> 
+>To compound matters I have lost the email address of the person who posted
+>the program - perhaps he or someone else could let me know the address.
+>
+>Anyone managed to make planets with Starform?
+>
+>                          Ian_T...@a2w.maus.de <>
+
+The program was posted by Philip Hodder (hod...@geop.ubc.ca <>).
+I compiled the program on a SPARCstation 2 using gcc 2.5.6.
+It compiled without error. An example run is given below:
+
+Al Aburto
+abu...@marlin.nosc.mil <>
+
+----------------------------------------------------------------
+Accrete - V3.1; seed= 16822
+                         SYSTEM  CHARACTERISTICS
+Stellar mass: 0.76 solar masses
+Stellar luminosity: 0.29
+Age: 4.767 billion years  (21.431 billion left on main sequence)
+Habitable ecosphere radius: 0.538 AU
+
+Planets present at:
+1          0.275          AU
+2          0.347          AU
+3          0.484          AU
+4          0.547          AU
+5          0.921          AU
+6          1.263          AU
+7          2.598          AU
+8          3.862          AU
+9          6.368          AU
+10          8.996          AU
+11         19.135          AU
+12         35.471          AU
+13         44.409          AU
+
+
+
+Planet 1        
+Planet is tidally locked with one face to star.
+   Distance from primary star:        0.275        AU
+   Mass:                        0.087        Earth masses
+   Surface gravity:                0.43        Earth gees
+   Surface pressure:                0.000        Earth atmospheres
+   Surface temperature:                110.66        degrees Celcius
+   Equatorial radius:                2868.6        Km
+   Density:                        5.282        grams/cc
+   Eccentricity of orbit:        0.094
+   Escape Velocity:                4.93        Km/sec
+   Molecular weight retained:        32.67 and above
+   Surface acceleration:        423.50        cm/sec2
+   Axial tilt:                        22        degrees
+   Planetary albedo:                0.064
+   Length of year:                60.41        days
+   Length of day:                1449.85        hours
+   Boiling point of water:        -273.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        0.00
+
+
+Planet 2        
+Planet's rotation is in a resonant spin lock with the star
+   Distance from primary star:        0.347        AU
+   Mass:                        0.002        Earth masses
+   Surface gravity:                0.13        Earth gees
+   Surface pressure:                0.000        Earth atmospheres
+   Surface temperature:                67.22        degrees Celcius
+   Equatorial radius:                847.9        Km
+   Density:                        5.249        grams/cc
+   Eccentricity of orbit:        0.121
+   Escape Velocity:                1.45        Km/sec
+   Molecular weight retained:        376.33 and above
+   Surface acceleration:        124.39        cm/sec2
+   Axial tilt:                        19        degrees
+   Planetary albedo:                0.076
+   Length of year:                85.80        days
+   Length of day:                1614.71        hours
+   Boiling point of water:        -273.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        0.00
+
+
+Planet 3        
+Planet is tidally locked with one face to star.
+   Distance from primary star:        0.484        AU
+   Mass:                        0.017        Earth masses
+   Surface gravity:                0.25        Earth gees
+   Surface pressure:                0.000        Earth atmospheres
+   Surface temperature:                15.37        degrees Celcius
+   Equatorial radius:                1674.5        Km
+   Density:                        5.258        grams/cc
+   Eccentricity of orbit:        0.009
+   Escape Velocity:                2.87        Km/sec
+   Molecular weight retained:        96.32 and above
+   Surface acceleration:        246.09        cm/sec2
+   Axial tilt:                        22        degrees
+   Planetary albedo:                0.074
+   Length of year:                141.15        days
+   Length of day:                3387.52        hours
+   Boiling point of water:        -273.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        0.00
+
+
+Planet 4        
+Planet is tidally locked with one face to star.
+   Distance from primary star:        0.547        AU
+   Mass:                        0.327        Earth masses
+   Surface gravity:                0.67        Earth gees
+   Surface pressure:                0.000        Earth atmospheres
+   Surface temperature:                -2.35        degrees Celcius
+   Equatorial radius:                4437.5        Km
+   Density:                        5.334        grams/cc
+   Eccentricity of orbit:        0.032
+   Escape Velocity:                7.66        Km/sec
+   Molecular weight retained:        13.52 and above
+   Surface acceleration:        661.53        cm/sec2
+   Axial tilt:                        18        degrees
+   Planetary albedo:                0.080
+   Length of year:                169.87        days
+   Length of day:                4076.95        hours
+   Boiling point of water:        -273.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        0.00
+
+
+Planet 5        
+   Distance from primary star:        0.921        AU
+   Mass:                        0.128        Earth masses
+   Surface gravity:                0.49        Earth gees
+   Surface pressure:                0.000        Earth atmospheres
+   Surface temperature:                -62.64        degrees Celcius
+   Equatorial radius:                3259.0        Km
+   Density:                        5.293        grams/cc
+   Eccentricity of orbit:        0.022
+   Escape Velocity:                5.61        Km/sec
+   Molecular weight retained:        25.26 and above
+   Surface acceleration:        482.11        cm/sec2
+   Axial tilt:                        14        degrees
+   Planetary albedo:                0.050
+   Length of year:                370.72        days
+   Length of day:                30.26        hours
+   Boiling point of water:        -273.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        0.00
+
+
+Planet 6        
+   Distance from primary star:        1.263        AU
+   Mass:                        3.186        Earth masses
+   Surface gravity:                1.50        Earth gees
+   Surface pressure:                14.482        Earth atmospheres
+   Surface temperature:                -86.47        degrees Celcius
+   Equatorial radius:                9297.0        Km
+   Density:                        5.657        grams/cc
+   Eccentricity of orbit:        0.159
+   Escape Velocity:                16.53        Km/sec
+   Molecular weight retained:        2.90 and above
+   Surface acceleration:        1469.76        cm/sec2
+   Axial tilt:                        31        degrees
+   Planetary albedo:                0.747
+   Length of year:                595.71        days
+   Length of day:                12.54        hours
+   Boiling point of water:        191.7        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.06
+   Ice cover percentage:        100.00
+
+
+Planet 7        
+   Distance from primary star:        2.598        AU
+   Mass:                        1.576        Earth masses
+   Surface gravity:                0.66        Earth gees
+   Surface pressure:                2.830        Earth atmospheres
+   Surface temperature:                -153.37        degrees Celcius
+   Equatorial radius:                9861.3        Km
+   Density:                        2.345        grams/cc
+   Eccentricity of orbit:        0.221
+   Escape Velocity:                11.29        Km/sec
+   Molecular weight retained:        6.23 and above
+   Surface acceleration:        646.31        cm/sec2
+   Axial tilt:                        25        degrees
+   Planetary albedo:                0.607
+   Length of year:                1757.03        days
+   Length of day:                18.85        hours
+   Boiling point of water:        131.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        80.05
+
+
+Planet 8        *gas giant*
+   Distance from primary star:        3.862        AU
+   Mass:                        97.225        Earth masses
+   Equatorial radius:                47444.1        Km
+   Density:                        1.299        grams/cc
+   Eccentricity of orbit:        0.045
+   Escape Velocity:                40.43        Km/sec
+   Molecular weight retained:        0.49 and above
+   Surface acceleration:        1722.48        cm/sec2
+   Axial tilt:                        34        degrees
+   Planetary albedo:                0.506
+   Length of year:                3183.40        days
+   Length of day:                9.85        hours
+
+
+Planet 9        
+   Distance from primary star:        6.368        AU
+   Mass:                        0.723        Earth masses
+   Surface gravity:                0.50        Earth gees
+   Surface pressure:                0.465        Earth atmospheres
+   Surface temperature:                -195.78        degrees Celcius
+   Equatorial radius:                7677.6        Km
+   Density:                        2.280        grams/cc
+   Eccentricity of orbit:        0.021
+   Escape Velocity:                8.67        Km/sec
+   Molecular weight retained:        10.57 and above
+   Surface acceleration:        489.15        cm/sec2
+   Axial tilt:                        46        degrees
+   Planetary albedo:                0.441
+   Length of year:                6741.24        days
+   Length of day:                21.67        hours
+   Boiling point of water:        80.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        47.25
+
+
+Planet 10        *gas giant*
+   Distance from primary star:        8.996        AU
+   Mass:                        45.452        Earth masses
+   Equatorial radius:                40782.2        Km
+   Density:                        0.956        grams/cc
+   Eccentricity of orbit:        0.045
+   Escape Velocity:                29.81        Km/sec
+   Molecular weight retained:        0.89 and above
+   Surface acceleration:        1089.82        cm/sec2
+   Axial tilt:                        44        degrees
+   Planetary albedo:                0.477
+   Length of year:                11318.47        days
+   Length of day:                12.38        hours
+
+
+Planet 11        *gas giant*
+   Distance from primary star:        19.135        AU
+   Mass:                        138.075        Earth masses
+   Equatorial radius:                60052.5        Km
+   Density:                        0.910        grams/cc
+   Eccentricity of orbit:        0.213
+   Escape Velocity:                42.82        Km/sec
+   Molecular weight retained:        0.43 and above
+   Surface acceleration:        1526.83        cm/sec2
+   Axial tilt:                        47        degrees
+   Planetary albedo:                0.540
+   Length of year:                35105.91        days
+   Length of day:                10.46        hours
+
+
+Planet 12        
+   Distance from primary star:        35.471        AU
+   Mass:                        0.135        Earth masses
+   Surface gravity:                0.28        Earth gees
+   Surface pressure:                0.000        Earth atmospheres
+   Surface temperature:                -239.93        degrees Celcius
+   Equatorial radius:                4434.2        Km
+   Density:                        2.216        grams/cc
+   Eccentricity of orbit:        0.032
+   Escape Velocity:                4.94        Km/sec
+   Molecular weight retained:        32.59 and above
+   Surface acceleration:        274.65        cm/sec2
+   Axial tilt:                        61        degrees
+   Planetary albedo:                0.143
+   Length of year:                88628.17        days
+   Length of day:                28.92        hours
+   Boiling point of water:        -56.0        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        0.10
+
+
+Planet 13        
+   Distance from primary star:        44.409        AU
+   Mass:                        0.179        Earth masses
+   Surface gravity:                0.31        Earth gees
+   Surface pressure:                0.000        Earth atmospheres
+   Surface temperature:                -243.43        degrees Celcius
+   Equatorial radius:                4857.4        Km
+   Density:                        2.222        grams/cc
+   Eccentricity of orbit:        0.013
+   Escape Velocity:                5.41        Km/sec
+   Molecular weight retained:        27.08 and above
+   Surface acceleration:        301.70        cm/sec2
+   Axial tilt:                        64        degrees
+   Planetary albedo:                0.160
+   Length of year:                124154.09        days
+   Length of day:                27.59        hours
+   Boiling point of water:        -49.9        degrees Celcius
+   Hydrosphere percentage:        0.00
+   Cloud cover percentage:        0.00
+   Ice cover percentage:        0.12
+----------------------------------------------------------------------------
+
+Thursday, 2 March 1995 13:28:26 UTC - Ronald Florence:
+Philip Hodder writes:
+   That would probably be me! I have got it to compile and run using "cc" under
+   SunOS 4.x (I just recompiled it to check). I noticed that it won't compile
+   using "gcc", contrary to my previous post! 
+
+It will compile with gcc with the following change:
+
+*** /usr/local/src/accrete/display.c.orig        Fri Feb 24 09:31:00 1995
+--- /usr/local/src/accrete/display.c        Thu Mar  2 08:25:15 1995
+***************
+*** 263,276 ****
+          printf("%s\n", CP);
+  }
+  
+! void display_systemtem(system)
+! system_pointer system;
+  {
+          if (flag_graphics)
+!                 chart_systemtem(system);
+          else if (flag_lisp)
+!                 lisp_describe_systemtem(system);
+          else
+!                 text_describe_systemtem(system);
+  }
+  
+--- 263,276 ----
+          printf("%s\n", CP);
+  }
+  
+! void display_system(sys)
+! sys_pointer sys;
+  {
+          if (flag_graphics)
+!                 chart_system(sys);
+          else if (flag_lisp)
+!                 lisp_describe_system(sys);
+          else
+!                 text_describe_system(sys);
+  }
+--
+
+                                Ronald Florence
+----------------------------------------------------------------------------
+
+Thursday, 9 March 1995 17:21:25 UTC - Matt Burdick:
+In article <P14...@A2W.maus.de <>> Ian_T...@a2w.maus.de <> (Ian Taylor) writes:
+>Recently some kind person posted a copy of the accrete/starform source
+>code. In the readme file it appears that the program was written by:
+>burdic...@hplabs.hp.com <> based on the work of S. Dole. After quite a
+>struggle I finally got it to run for a few minutes until it crashed
+>with a "pow: DOMAIN error" message. Not a planet in sight :(
+>
+>The code is a conversion into C from the original written in Pascal
+>that was described in the paper:
+>
+>    "Extra-Solar Planetary Systems: A Microcomputer Simulation"
+>    Martyn J. Fogg,  Journal of the British Interplanetary Society
+>    Vol 38, pp. 501 - 514, 1985
+Actually, I'm not sure what language Martyn Fogg wrote his
+implementation in.  I wrote my first version in Turbo Pascal (back
+when it was hot).  Since then, I've used it as a sample program when I
+try to learn a new language.  A few years after the pascal version, I
+rewrote it in C.  Recently, I tried rewriting it again in C++.
+However, I'm sorta sick of rewriting it, so I quit before I had it
+working again.  BTW, see my .sig at the bottom for a good email
+address for me.
+
+
+Alfred A. Aburto (abu...@nosc.mil <>) wrote:
+> The program was posted by Philip Hodder (hod...@geop.ubc.ca <>).
+> I compiled the program on a SPARCstation 2 using gcc 2.5.6.
+> It compiled without error. An example run is given below:
+>
+> ----------------------------------------------------------------
+> Accrete - V3.1; seed= 16822
+I'm up to version 3.6 in my own source files.  I'm not sure what the
+differences between 3.1 and 3.6 is, though.  I'd be happy to make the
+source available via anonymous ftp.  Let me know if this would work
+for you.
+
+Usually, I don't read this newsgroup (although I will for the next
+week or so), so email is your best bet for contacting me.  I only
+picked up on this conversation because I run a search program looking
+for "starform" in likely groups.
+
+                                                -Matt
+-- 
+Matt Burdick                  |   Hewlett-Packard
+bur...@openmail.corp.hp.com <>  |   Network Test Division

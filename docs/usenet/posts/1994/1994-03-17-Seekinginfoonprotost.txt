@@ -1,0 +1,50 @@
+URL: https://groups.google.com/forum/#!topic/alt.sci.planetary/ZS5Z737UOBE
+TITLE: Seeking info on protostellar nebulae & protoplanetary accretion disks 
+
+----------------------------------------------------------------------------
+
+Thursday, 17 March 1994 23:18:16 UTC - Brent Josep Lehman:
+Hi, I got this program ACCRETE which simulates the formation of planets in
+accretion disks.  It uses a number of parameters concerning the initial
+conditions in the accretion disks, and changes in these parameters can
+greatly affect the resulting system's morphology.
+     - It uses the equation, rho=A*e^(-a*r^(1/3)) where rho is the
+        density, e is the natural logarithmic constant, A and a are
+        other constants, and r is distance from the star.  As you can
+        see, A acts a scaling coefficient, and a determines the amount
+        of "dropoff" of density as r increases; i.e., how quickly rho
+        approaches 0 as r approaches infinity.  Oh, yeah.  Density of
+        what, you may ask?  Density of the gas/dust mixture in the
+        disk.  The program produces solar systems like our own when
+        A is .0015 to .002 and a is 5.  Can anyone suggest what values
+        A and a may take on in disks around other types of stars, say
+        type M or F, relative to Sol?
+
+    - It also uses a constant K, which is the gas/dust ratio in the
+        disk. Stephen Dole and Carl Sagan seem to agree that the value
+        for our star was about 50.  Can anyone tell me what K might for
+        other types of stars?
+
+    - The orbital eccentricity of the particles in the disk is also
+        taken in
+        (oops) taken into account.  Sagan says the value for our star
+        may have been about 0.2, and the program produces Sol-like
+        solar systems for this value.  Might this value change with
+        different types of stars?  How?
+
+    - The program randomly generates eccentricities for the planetesimals
+        it generates using the equation, 1-(1-Y)^0.077.  I don't know
+        why it doesn't use 1-Y^0.077, which is mathematically equivalent,
+        but anyway, Y is a random number between 0 and 1.  This equation
+        produces a frequency distribution which seems to match our own
+        solar system.  Would that number 0.077 change with other types
+        of stars? How?
+
+      Oops, 1-Y^0.077 produces the same range of values with the same
+        frequency distribution. That's what I meant to say.
+
+The program, as it stands, doens
+
+(oops) doesn't consider these variables.  I would really like to consider
+them to see what other morpholgies come about when you enter in data that
+reflects a different kind of star.  Can anyone help or direct me?

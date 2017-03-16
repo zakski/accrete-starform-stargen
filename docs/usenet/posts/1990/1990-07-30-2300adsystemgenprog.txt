@@ -1,0 +1,256 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp/uRaCg-xv6Ac
+TITLE: 2300ad system gen prog 
+
+----------------------------------------------------------------------------
+
+Monday, 30 July 1990 16:35:00 UTC+1 - choi...@primerd.prime.com:
+The following is the current state of my 2300ad system generator, a combination
+of the World Builder's Guid, the Director's guide, and Mr. Burdick's STARFORM
+program.
+The output just below is a result of the command options '-c 1 -dbg',
+which means 1 companion, debug mode.  I have used debug mode just to show
+how the program determines the placement of asteroid belts and rings.
+
+SYSTEM 2300                               A Stellar System Generator for 2300ad
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter primary's statistics (in the form of 'G2 V')
+g2 v
+
+Enter companion 1's statistics (as above) and orbital class:
+     0: Normal  1: Unseen Companion  2: Spectrascopic Binary  3: Distant
+m4 vi 1
+
+8 worlds to be made...
+World at 0.18au merges with world at 0.19au!
+World at 27.55au merges with world at 28.42au!
+9 worlds to be made...
+World at 1.36au merges with world at 1.35au!
+World at 2.23au spirals out...and is shattered by roche effect of world at 2.62!
+   0 moons to be made...
+   3 moons to be made...
+   Moon at 2192km within roche limit
+   Moon at 8249km within roche limit
+   2 moons to be made...
+   Moon at 448km within roche limit
+   Moon at 645km within roche limit
+   1 moons to be made...
+   Moon at 539km within roche limit
+   -1 moons to be made...
+   -2 moons to be made...
+   -1 moons to be made...
+   2 moons to be made...
+   Moon at 2507km within roche limit
+   -1 moons to be made...
+   1 moons to be made...
+   Moon at 1274km within roche limit
+   0 moons to be made...
+   -2 moons to be made...
+   2 moons to be made...
+   Moon at 76813km within roche limit
+
+===============================================================================
+The star system produced is therefore:
+===============================================================================
+### Primary G2 V
+### Mass:        1.00 std     Luminosity:   0.994000 std
+### FTL Limit:   2.46 AU
+
+-------------------------------------------------------------------------------
+=== Desert (0.19 AU, 29.79 day orbit)
+    Diameter:   15080 km   Mass: 1.55675 std   Gravity: 1.11427 std
+    Discharge Orbit:   17629 km     FTL Distance/Time: 8.65 hours
+    Inclination: 45.90   Rotation: 34.32 hours
+    Orbital Eccentricity: 0.00277
+    Minimum Molecular Weight: 11
+    Atmospheric Pressure    : 605.58 millibars
+    Ave Temperature : 413c
+
+        *** No Moons or Rings ***
+
+-------------------------------------------------------------------------------
+=== Desert (0.24 AU, 44.09 day orbit)
+    Diameter:   20020 km   Mass: 1.62200 std   Gravity: 0.65871 std
+    Discharge Orbit:   15681 km     FTL Distance/Time: 8.44 hours
+    Inclination: 1.40   Rotation: 29.09 hours
+    Orbital Eccentricity: 0.07166
+    Minimum Molecular Weight: 12
+    Atmospheric Pressure    : 604.40 millibars
+    Ave Temperature : 329c
+
+
+       0.18r  Ring (extends out to 0.26r)
+       0.78r  Ring (extends out to 0.87r)
+       3.23r  Chunk  (12.59 hours)    ecc 0.10127
+              431km (0.00004 std), 0.03394g    FTL= 8.44 hours
+              Ave Temp 281c
+
+-------------------------------------------------------------------------------
+=== Rock Ball (0.53 AU, 140.29 day orbit)
+    Diameter:    5980 km   Mass: 0.07275 std   Gravity: 0.33113 std
+    Discharge Orbit:    2450 km     FTL Distance/Time: 7.36 hours
+    Inclination: 36.64   Rotation: 14.89 hours
+    Orbital Eccentricity: 0.14927
+    Minimum Molecular Weight: 56
+    Ave Temperature : 104c
+
+       0.15r  Ring (extends out to 0.15r)
+       0.21r  Ring (extends out to 0.22r)
+
+-------------------------------------------------------------------------------
+=== Rock Ball (0.74 AU, 232.67 day orbit)
+    Diameter:    4120 km   Mass: 0.01448 std   Gravity: 0.13887 std
+    Discharge Orbit:     367 km     FTL Distance/Time: 6.55 hours
+    Inclination: 33.93   Rotation: 18.35 hours
+    Orbital Eccentricity: 0.04441
+    Minimum Molecular Weight: 164
+    Ave Temperature : 45c
+
+       0.26r  Ring (extends out to 0.26r)
+
+-------------------------------------------------------------------------------
+=== Ice Ball (2.37 AU, 3.64 year orbit)
+    Diameter:    3980 km   Mass: 0.00155 std   Gravity: 0.01597 std
+    Discharge Orbit: None           FTL Distance/Time: 21.45 minutes
+    Inclination: 0.00   Rotation: None (tidally locked)
+    Orbital Eccentricity: 0.06091
+    Minimum Molecular Weight: 827
+    Ave Temperature : -116c , -129c at min
+    Ave Ice Cover   : 99.2%
+
+        *** No Moons or Rings ***
+
+-------------------------------------------------------------------------------
+=== Desert (28.42 AU, 151.50 year orbit)
+    Diameter:    6070 km   Mass: 0.09950 std   Gravity: 0.43958 std
+    Discharge Orbit:    3328 km     FTL Distance/Time: 57.75 seconds
+    Inclination: 0.00   Rotation: None (tidally locked)
+    Orbital Eccentricity: 0.06584
+    Minimum Molecular Weight: 5
+    Atmospheric Pressure    : 9.39 millibars
+    Ave Temperature : -221c
+
+        *** No Moons or Rings ***
+
+
+===============================================================================
+### Companion M4 VI
+### Mass:        0.11      Luminosity:   0.003800
+### FTL Limit:   0.82 AU
+### Orbit:      77.44 AU
+
+-------------------------------------------------------------------------------
+=== Rock Ball (0.05 AU, 12.57 day orbit)
+    Diameter:    2990 km   Mass: 0.01463 std   Gravity: 0.26634 std
+    Discharge Orbit:     944 km     FTL Distance/Time: 2.91 hours
+    Inclination: 6.91   Rotation: 23.17 hours
+    Orbital Eccentricity: 0.01258
+    Minimum Molecular Weight: 112
+    Ave Temperature : 28c
+
+        *** No Moons or Rings ***
+
+-------------------------------------------------------------------------------
+=== Desert (0.13 AU, 49.72 day orbit)
+    Diameter:   12990 km   Mass: 0.64841 std   Gravity: 0.62547 std
+    Discharge Orbit:    9748 km     FTL Distance/Time: 2.62 hours
+    Inclination: 5.83   Rotation: 29.87 hours
+    Orbital Eccentricity: 0.02939
+    Minimum Molecular Weight: 6
+    Atmospheric Pressure    : 10.71 millibars
+    Ave Temperature : -109c , -102c at min
+    Ave Ice Cover   : 72.1%
+
+       0.35r  Ring (extends out to 0.42r)
+       4.09r  Ice Ball  (14.84 hours)    ecc 0.02490
+              1596km (0.00078 std), 0.04997g    FTL= 2.62 hours
+              Inclination 33.26, Rotation 17.00 hours
+              Ave Temp -106c , Ave Ice 94.6%
+
+-------------------------------------------------------------------------------
+=== Ice Ball (0.46 AU, 347.92 day orbit)
+    Diameter:    5680 km   Mass: 0.02981 std   Gravity: 0.15042 std
+    Discharge Orbit:     643 km     FTL Distance/Time: 1.34 hours
+    Inclination: 28.67   Rotation: 17.24 hours
+    Orbital Eccentricity: 0.03256
+    Minimum Molecular Weight: 34
+    Ave Temperature : -185c
+    Ave Ice Cover   : 94.7%
+
+        *** No Moons or Rings ***
+
+-------------------------------------------------------------------------------
+=== Rock Ball (0.66 AU, 1.60 year orbit)
+    Diameter:    1700 km   Mass: 0.00145 std   Gravity: 0.08186 std
+    Discharge Orbit: None           FTL Distance/Time: 36.44 minutes
+    Inclination: 31.34   Rotation: 21.17 hours
+    Orbital Eccentricity: 0.02250
+    Minimum Molecular Weight: 179
+    Ave Temperature : -189c
+
+       1.29r  Ring (extends out to 1.71r)
+
+-------------------------------------------------------------------------------
+=== Gas Giant (1.35 AU, 4.71 year orbit)
+    Diameter:  104450 km   Mass: 415.79442 std   Gravity: 6.20347 std
+    Discharge Orbit:  359110 km     FTL Distance/Time: 1.04 hours
+    Inclination: 35.33   Rotation: 37.08 hours
+    Orbital Eccentricity: 0.04987
+    Minimum Molecular Weight: 0
+
+        *** No Moons or Rings ***
+
+-------------------------------------------------------------------------------
+=== Ice Ball (1.60 AU, 6.10 year orbit)
+    Diameter:    4100 km   Mass: 0.01019 std   Gravity: 0.09871 std
+    Discharge Orbit: None           FTL Distance/Time: 18.48 seconds
+    Inclination: 25.69   Rotation: 29.07 hours
+    Orbital Eccentricity: 0.01921
+    Minimum Molecular Weight: 40
+    Ave Temperature : -224c
+    Ave Ice Cover   : 81.8%
+
+        *** No Moons or Rings ***
+
+-------------------------------------------------------------------------------
+=== Asteroid Belt (2.18au to 2.29au)
+    FTL Distance/Time: Instantaneous
+
+-------------------------------------------------------------------------------
+=== Gas Giant (2.62 AU, 11.77 year orbit)
+    Diameter:  305600 km   Mass: 6754.22284 std   Gravity: 11.77177 std
+    Discharge Orbit: 1505046 km     FTL Distance/Time: 4.18 hours
+    Inclination: 29.07   Rotation: 25.04 hours
+    Orbital Eccentricity: 0.05188
+    Minimum Molecular Weight: 0
+
+       0.43r  Ring (extends out to 0.57r)
+       5.92r  Rock Ball  (1.21 days)    ecc 0.10520
+              1498km (0.00176 std), 0.12745g    FTL= 4.16 hours
+              Inclination 38.50, Rotation 21.00 hours
+              Ave Temp -228c
+
+===============================================================================
+Notes:
+
+   Moon and ring orbits are in terms of planetary radii from the surface.
+   The FTL ratings are effective times to the stutterwarp 0.0001g gradient for
+   a  Warp Efficiency 1.0 drive -- divide the times by WE for actual time.
+
+The program is written in C.  I and compiling and running it on my mainframe at
+work, but it SHOULD world under any standard C compiler on a PC.
+
+Some things that are not in yet, but I am thinking of adding:
+   Postscript display similar to those used in "INVASION".
+   I do not check to see if Moons affect the atmosphere density of the planet itself.
+      I am not sure if this theory is correct.
+
+   
+   If anyone is interested in a copy of the source when I get done with it, 
+drop me a note.
+
+-============================================================================-
+ Burton Choinski                                       choi...@env.prime.com <>
+   Prime Computer, Inc.                                  (617) 879-2960 x3233
+   Framingham, Ma.  01701
+ Disclaimer:  Down! Down! Down! Out! Out! Out! Mine! Mine! Mine!
+-============================================================================-

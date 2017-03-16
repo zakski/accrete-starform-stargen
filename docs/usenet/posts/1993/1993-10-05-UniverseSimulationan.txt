@@ -1,0 +1,101 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/2OHba8Oiu1I
+TITLE: Universe Simulation and Terrain Generation 
+
+----------------------------------------------------------------------------
+
+Tuesday, 5 October 1993 16:48:35 UTC+1 - Dave Allen:
+Hi all.
+The topic of Universe Simulation has come up again, and the topic of terrain
+generation has come up again.  Here is a list of publicly available software
+which you can get to do planet creation, terrain generation, and many other
+neat things.
+
+Name          Format        Author         Description
+
+accrete.c     C source      Matt Burdick   Planetary accretion program
+fractal.c     C source      Ed King        Fractal landscape generator
+othersun.src  shar/Pascal   Sean Malloy    Star map generator for Other Suns
+planet        shar/C        Dave Allen     Tectonic/climate simulator
+                                           (see comp.sources.misc volume 18)
+plates.c      C source      Mark Isaak     Tectonic simulator
+starcul       shar/Basic    Dave Allen     Star/culture generator
+starform      shar/C        Matt Burdick   Star generator with real science
+system.arc    shar/C        Andy Shepard   Star generator for Future Law / GURPS
+tec           shar/C        Dave Allen     Tectonic simulator
+                                           (see comp.sources.misc volume 10)
+traveller     shar/C        Phill Everson  Star generator for Traveller
+                                           (see comp.sources.misc volume 2)
+
+You can get most of these files from wuarchive.wustl.edu <http://wuarchive.wustl.edu> in the directory
+pub/msdos_uploads/misc/USML.  The rest, as indicated, you can get from
+any site which archives comp.sources.misc, such as ftp.uu.net <http://ftp.uu.net> (directory
+usenet/comp.sources.misc).
+
+Following is an extract from the README file of the "tec" program.  Enjoy!
+- Dave Allen: al...@viewlogic.com <>
+
+TEC draws a map of some imaginary world and puts one big continent on it.
+The program then graphically simulates the breakup of this supercontinent by
+rifts and the drifting of the continents.  Mountains are built by
+subsuming and by continental collision, and are reduced by erosion.  As
+more time passes, the continents tend to drift back into a supercontinent
+and split up again, forming what some authors call a "supercontinent cycle."
+
+The program produces a map of an imaginary world which contains realistic
+looking mountain ranges and continents which sometimes look like they fit
+together (like South America and Africa on Earth).
+
+Here is a sample output.  0 is ocean, 1 is land, and 2 is mountains.
+
+000000000000000000000000000000000000222222221110000000000000000000000000
+000000000000001111110000000000000001222111111100000000000000000000000000
+000000000000011111111000000000000011211111111000000000000000000000000000
+000000000001111111111111000000000111111111110000001110000000000000000000
+000000000011111111111111100000000111111111100000011100000000000000000000
+000000000011111111111111110000001111111111000000011110000000000000000000
+000000000111111111111111111000011111111100000000111110000000000000000000
+000000000111111111111111111100111111111000000001111110000000000000000000
+000000000111111111111111111001111111110000000011111111000000000000000000
+000000000111111111111111111111111111100000000111111111000000000000000000
+000000000111111111111111111111111110000000011111111111000000000000000000
+000000000111111111111111111111111100000000111111111111000000000000000000
+000000000111111111112211111222110000000001111111111110000000000000000000
+000000000111111111122222221111100000000011111221111111000000000000000000
+000000000111111111122222111000000000001111122212221111100000000000000000
+000000000011111111112222100000000000011112222212111111100000000000000000
+000000000011111111111121000000000011111222222211111111110000000000000000
+000000000011111111111010000000000111112222222211111111111000000000000000
+000000000011111111100000000001111111222221112111111111111100000000000000
+000000000011111111000000000112211222222211122111111111111111000000000000
+000000000011111111000000001211111222221111111111111111111110000000000000
+000000000000001110000000011111122222111111111111111111111110000000000000
+000000000000000000000000111111222221111111111111111111100000000000000000
+000000000000000000000001111212222111111111111101111111000000000000000000
+000000000000000000000001222122221111111111111001111111000000000000000000
+000000000000000000000001222222111111111111111101111110000000000000000000
+000000000000000000000001222111111111111111111100110000000000000000000000
+000000000000000000000001211111111111111111111000000000000000000000000000
+000000000000000000000001111111111111111111111000000000000000000000000000
+000000000000000000000000111111111111111111110000000000000000000000000000
+000000000000000000000000111111111111111100000000000000000000000000000000
+000000000000000000000000111111111111111000000000000000000000000000000000
+000000000000000000000000011011111111100000000000000000000000000000000000
+000000000000000000000000000011111111000000000000000000000000000000000000
+000000000000000000000000000000110000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000
+----------------------------------------------------------------------------
+
+Tuesday, 5 October 1993 20:03:49 UTC+1 - Greg Oberfield:
+I am attempting to restart the Universe Simulation mail group.  I!ll keep
+everyone
+updated as to the progress -- should be just a day or two before everything is
+ready to go.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Confucious Say:                       %                             %
+%  God is REAL (unless declared INTEGER) % Greg Oberfield              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Internet: ogi...@apple.com <> %
+% All words are my own and do not        % AOL: AFC Oglvie             %
+% necessarily reflect the views of Apple % CIS: 75200,154              %
+% Computer, Inc.                         %                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

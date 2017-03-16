@@ -1,0 +1,2451 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.design/xp8edV1wyIE
+TITLE: Accrete source 
+
+----------------------------------------------------------------------------
+
+Wednesday, 28 July 1993 20:56:04 UTC+1 - Sean Malloy:
+In article <1993Jul28....@leland.Stanford.EDU <>> ibur...@leland.Stanford.EDU <> <Ian Matthew Burrell> writes:
+>I am looking for the source code for a program called Accrete. It
+>simulates the creation of planetary system through accretion.  I heard
+>that it was part of a suite of programs involved in something called
+>the Actual hoax a few months ago.  I am looking for any FTP location
+>where this program or any other similiar simulators and/or generators
+>are archived.  I also heard that the Actual programs were archived on
+>simtel20, but I searched there and couldn't find them.
+Well, Dave Allen may not have it on line, but I kept a copy of accrete
+around to play with . . .
+
+-- 
+random sig #58:
+Sean Malloy                                 | 
+Navy Personnel Research & Development Center| I am not a trained killer.
+San Diego, CA 92152-7250                    | I _lead_ trained killers.
+mal...@nprdc.navy.mil <>                       | 
+----8<--------8<--------8<--------8<--------8<--------8<--------8<--------8<----
+#! /bin/sh
+# This is a shell archive, meaning:
+# 1. Remove everything above the #! /bin/sh line.
+# 2. Save the resulting text in a file.
+# 3. Execute the file with /bin/sh (not csh) to create the files:
+#        README
+#        config.h
+#        const.h
+#        structs.h
+#        accrete.c
+#        display.c
+#        enviro.c
+#        starform.c
+#        utils.c
+#        Makefile
+#        starform.mak
+# This archive created: Wed Jul 28 12:51:44 1993
+export PATH; PATH=/bin:$PATH
+echo shar: extracting "'README'" '(9908 characters)'
+if test -f 'README'
+then
+        echo shar: will not over-write existing file "'README'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'README'
+        XThis program is based on an article by Martyn Fogg in the Journal of the
+        XBritish Interplanetary Society (JBIS) called 'Extrasolar Planetary Systems:
+        Xa Microcomputer Simulation'.  In it, he described how to generate various
+        Xsun-like solar systems randomly.  Since he did a good job of listing
+        Xreferences, I decided to implement it in Turbo Pascal on my PC.
+        X
+        XLater, I translated it to C for portability, and the result is what you see
+        Xin front of you.  Because of my need to run this on an IBM-PC, there are two
+        Xmakefiles included with the program: 'Makefile' (for unix systems), and
+        X'starform.mak' for MS-DOS systems.  To create the executable on a unix
+        Xsystem, type in 'make' alone; type 'make starform.mak' if you are on
+        Xan MS-DOS machine and using Microsoft C.
+        X
+        XThanks go to Sean Malloy (malloy@nprdc.arpa) for his help with the random
+        Xnumber routines and for testing it on other machines and to Marty Shannon
+        X(m...@mozart.att.com) for the lisp-style output format.
+        X
+        XAs a warning, don't be surprised if the program take a while to run.  Here
+        Xare some sample run times:
+        X        2-5 seconds user time on my HP9000/350
+        X        5-30 seconds on a Sun-3/60
+        X        5-8 seconds on an 8087-equipped 10MHz IBM-XT
+        X        4 minutes on an 8 MHz IBM-PC
+        X        7 minutes on a normal IBM-PC
+        X
+        XIf you don't have verbose mode on, no output will appear until all of the
+        Xcalculations are done, so don't be surprised if it doesn't appear to do
+        Xanything for a while.
+        X
+        XEnjoy, and if you find any glaring inconsistancies or interesting pieces to
+        Xadd to the simulation, let me know and I'll include it in any other
+        Xdistributions I send out.
+        X
+        XNow for some references.  These are not the only good references on this
+        Xsubject; only the most interesting of many that were listed in Fogg's
+        Xarticle in vol 38 of JBIS:
+        X
+        XFor a good description of the entire program:
+        X        "Extra-Solar Planetary Systems: A Microcomputer Simulation"
+        X        Martyn J. Fogg,  Journal of the British Interplanetary Society
+        X        Vol 38, pp. 501 - 514, 1985
+        X
+        XFor the surface temperature/albedo iterative loop:
+        X        "The Evolution of the Atmosphere of the Earth"
+        X        Michael H. Hart, Icarus, Vol 33, pp. 23 - 39, 1978
+        X
+        XFor the determination of the radius of a terrestrial planet:
+        X        "The Internal Constitution of the Planets"
+        X        D. S. Kothari, Ph.D. , Mon. Not. Roy. Astr. Soc.
+        X        Vol 96, pp. 833 - 843, 1936
+        X
+        XFor the planetary mass accretion algorithm:
+        X        "Formation of Planetary Systems by Aggregation: A Computer Simulation"
+        X        S. H. Dole, RAND paper no. P-4226, 1969
+        X
+        XFor the day length calculation:
+        X        "Q in the Solar System"
+        X        P. Goldreich and S. Soter, Icarus, Vol 5, pp. 375 - 389, 1966
+        X
+        X
+        X----------------------------------------------------------------------
+        X I can be reached at the email address burdic...@hplabs.hp.com
+        X----------------------------------------------------------------------
+        XHere is a sample solar system:
+        X
+        X
+        XAccrete - V3.1; seed= 5
+        X                         SYSTEM  CHARACTERISTICS
+        XStellar mass: 1.00 solar masses
+        XStellar luminosity: 0.99
+        XAge: 4.429 billion years  (5.628 billion left on main sequence)
+        XHabitable ecosphere radius: 0.996 AU
+        X
+        XPlanets present at:
+        X1          0.341          AU
+        X2          0.505          AU
+        X3          0.877          AU
+        X4          1.047          AU
+        X5          1.793          AU
+        X6          2.956          AU
+        X7          5.160          AU
+        X8          8.852          AU
+        X9         13.121          AU
+        X10         28.450          AU
+        X11         46.864          AU
+        X
+        X
+        X
+        XPlanet 1
+        XPlanet is tidally locked with one face to star.
+        X   Distance from primary star:        0.341        AU
+        X   Mass:                        0.220        Earth masses
+        X   Surface gravity:                0.59        Earth gees
+        X   Surface pressure:                0.000        Earth atmospheres
+        X   Surface temperature:                193.31        degrees Celcius
+        X   Equatorial radius:                3893.8        Km
+        X   Density:                        5.314        grams/cc
+        X   Eccentricity of orbit:        0.092
+        X   Escape Velocity:                6.71        Km/sec
+        X   Molecular weight retained:        17.63 and above
+        X   Surface acceleration:        578.24        cm/sec2
+        X   Axial tilt:                        22        degrees
+        X   Planetary albedo:                0.081
+        X   Length of year:                72.89        days
+        X   Length of day:                1749.33        hours
+        X   Boiling point of water:        -273.0        degrees Celcius
+        X   Hydrosphere percentage:        0.00
+        X   Cloud cover percentage:        0.00
+        X   Ice cover percentage:        0.00
+        X
+        X
+        XPlanet 2
+        XPlanet is tidally locked with one face to star.
+        X   Distance from primary star:        0.505        AU
+        X   Mass:                        0.202        Earth masses
+        X   Surface gravity:                0.57        Earth gees
+        X   Surface pressure:                0.000        Earth atmospheres
+        X   Surface temperature:                112.78        degrees Celcius
+        X   Equatorial radius:                3786.9        Km
+        X   Density:                        5.310        grams/cc
+        X   Eccentricity of orbit:        0.091
+        X   Escape Velocity:                6.52        Km/sec
+        X   Molecular weight retained:        18.65 and above
+        X   Surface acceleration:        561.97        cm/sec2
+        X   Axial tilt:                        28        degrees
+        X   Planetary albedo:                0.060
+        X   Length of year:                130.99        days
+        X   Length of day:                3143.70        hours
+        X   Boiling point of water:        -273.0        degrees Celcius
+        X   Hydrosphere percentage:        0.00
+        X   Cloud cover percentage:        0.00
+        X   Ice cover percentage:        0.00
+        X
+        X
+        XPlanet 3
+        X   Distance from primary star:        0.877        AU
+        X   Mass:                        0.165        Earth masses
+        X   Surface gravity:                0.53        Earth gees
+        X   Surface pressure:                2.702        Earth atmospheres        GREENHOUSE EFFECT
+        X   Surface temperature:                45.57        degrees Celcius
+        X   Equatorial radius:                3541.1        Km
+        X   Density:                        5.302        grams/cc
+        X   Eccentricity of orbit:        0.015
+        X   Escape Velocity:                6.10        Km/sec
+        X   Molecular weight retained:        21.36 and above
+        X   Surface acceleration:        524.69        cm/sec2
+        X   Axial tilt:                        29        degrees
+        X   Planetary albedo:                0.038
+        X   Length of year:                300.44        days
+        X   Length of day:                40.82        hours
+        X   Boiling point of water:        129.5        degrees Celcius
+        X   Hydrosphere percentage:        100.00
+        X   Cloud cover percentage:        0.00
+        X   Ice cover percentage:        0.00
+        X
+        X
+        XPlanet 4
+        X   Distance from primary star:        1.047        AU
+        X   Mass:                        1.515        Earth masses
+        X   Surface gravity:                1.15        Earth gees
+        X   Surface pressure:                1.889        Earth atmospheres
+        X   Surface temperature:                19.01        degrees Celcius
+        X   Equatorial radius:                7328.1        Km
+        X   Density:                        5.494        grams/cc
+        X   Eccentricity of orbit:        0.017
+        X   Escape Velocity:                12.84        Km/sec
+        X   Molecular weight retained:        4.81 and above
+        X   Surface acceleration:        1125.13        cm/sec2
+        X   Axial tilt:                        22        degrees
+        X   Planetary albedo:                0.297
+        X   Length of year:                391.74        days
+        X   Length of day:                14.68        hours
+        X   Boiling point of water:        118.4        degrees Celcius
+        X   Hydrosphere percentage:        67.12
+        X   Cloud cover percentage:        61.38
+        X   Ice cover percentage:        1.06
+        X
+        X
+        XPlanet 5        *gas giant*
+        X   Distance from primary star:        1.793        AU
+        X   Mass:                        6.262        Earth masses
+        X   Equatorial radius:                18997.9        Km
+        X   Density:                        1.303        grams/cc
+        X   Eccentricity of orbit:        0.002
+        X   Escape Velocity:                16.21        Km/sec
+        X   Molecular weight retained:        3.02 and above
+        X   Surface acceleration:        691.87        cm/sec2
+        X   Axial tilt:                        29        degrees
+        X   Planetary albedo:                0.500
+        X   Length of year:                877.67        days
+        X   Length of day:                15.54        hours
+        X
+        X
+        XPlanet 6
+        X   Distance from primary star:        2.956        AU
+        X   Mass:                        0.453        Earth masses
+        X   Surface gravity:                0.75        Earth gees
+        X   Surface pressure:                0.207        Earth atmospheres
+        X   Surface temperature:                -136.53        degrees Celcius
+        X   Equatorial radius:                4941.6        Km
+        X   Density:                        5.356        grams/cc
+        X   Eccentricity of orbit:        0.140
+        X   Escape Velocity:                8.55        Km/sec
+        X   Molecular weight retained:        10.86 and above
+        X   Surface acceleration:        739.66        cm/sec2
+        X   Axial tilt:                        18        degrees
+        X   Planetary albedo:                0.634
+        X   Length of year:                1857.62        days
+        X   Length of day:                17.62        hours
+        X   Boiling point of water:        61.1        degrees Celcius
+        X   Hydrosphere percentage:        0.00
+        X   Cloud cover percentage:        0.00
+        X   Ice cover percentage:        81.12
+        X
+        X
+        XPlanet 7        *gas giant*
+        X   Distance from primary star:        5.160        AU
+        X   Mass:                        69.313        Earth masses
+        X   Equatorial radius:                41830.7        Km
+        X   Density:                        1.351        grams/cc
+        X   Eccentricity of orbit:        0.299
+        X   Escape Velocity:                36.35        Km/sec
+        X   Molecular weight retained:        0.60 and above
+        X   Surface acceleration:        1579.66        cm/sec2
+        X   Axial tilt:                        42        degrees
+        X   Planetary albedo:                0.512
+        X   Length of year:                4284.26        days
+        X   Length of day:                10.28        hours
+        X
+        X
+        XPlanet 8        *gas giant*
+        X   Distance from primary star:        8.852        AU
+        X   Mass:                        11.727        Earth masses
+        X   Equatorial radius:                26059.7        Km
+        X   Density:                        0.946        grams/cc
+        X   Eccentricity of orbit:        0.182
+        X   Escape Velocity:                18.95        Km/sec
+        X   Molecular weight retained:        2.21 and above
+        X   Surface acceleration:        688.64        cm/sec2
+        X   Axial tilt:                        47        degrees
+        X   Planetary albedo:                0.509
+        X   Length of year:                9626.17        days
+        X   Length of day:                15.57        hours
+        X
+        X
+        XPlanet 9        *gas giant*
+        X   Distance from primary star:        13.121        AU
+        X   Mass:                        557.816        Earth masses
+        X   Equatorial radius:                83066.4        Km
+        X   Density:                        1.389        grams/cc
+        X   Eccentricity of orbit:        0.083
+        X   Escape Velocity:                73.18        Km/sec
+        X   Molecular weight retained:        0.15 and above
+        X   Surface acceleration:        3223.89        cm/sec2
+        X   Axial tilt:                        33        degrees
+        X   Planetary albedo:                0.454
+        X   Length of year:                17357.91        days
+        X   Length of day:                7.20        hours
+        X
+        X
+        XPlanet 10
+        X   Distance from primary star:        28.450        AU
+        X   Mass:                        0.372        Earth masses
+        X   Surface gravity:                0.40        Earth gees
+        X   Surface pressure:                0.000        Earth atmospheres
+        X   Surface temperature:                -222.05        degrees Celcius
+        X   Equatorial radius:                6182.7        Km
+        X   Density:                        2.246        grams/cc
+        X   Eccentricity of orbit:        0.000
+        X   Escape Velocity:                6.93        Km/sec
+        X   Molecular weight retained:        16.54 and above
+        X   Surface acceleration:        388.05        cm/sec2
+        X   Axial tilt:                        57        degrees
+        X   Planetary albedo:                0.149
+        X   Length of year:                55468.32        days
+        X   Length of day:                24.33        hours
+        X   Boiling point of water:        -38.3        degrees Celcius
+        X   Hydrosphere percentage:        0.00
+        X   Cloud cover percentage:        0.00
+        X   Ice cover percentage:        0.10
+        X
+        X
+        XPlanet 11
+        X   Distance from primary star:        46.864        AU
+        X   Mass:                        0.283        Earth masses
+        X   Surface gravity:                0.36        Earth gees
+        X   Surface pressure:                0.000        Earth atmospheres
+        X   Surface temperature:                -233.50        degrees Celcius
+        X   Equatorial radius:                5653.0        Km
+        X   Density:                        2.236        grams/cc
+        X   Eccentricity of orbit:        0.047
+        X   Escape Velocity:                6.32        Km/sec
+        X   Molecular weight retained:        19.88 and above
+        X   Surface acceleration:        353.22        cm/sec2
+        X   Axial tilt:                        54        degrees
+        X   Planetary albedo:                0.157
+        X   Length of year:                117268.25        days
+        X   Length of day:                25.50        hours
+        X   Boiling point of water:        -45.5        degrees Celcius
+        X   Hydrosphere percentage:        0.00
+        X   Cloud cover percentage:        0.00
+        X   Ice cover percentage:        0.08
+        X
+        X
+SHAR_EOF
+if test 9908 -ne "`wc -c < 'README'`"
+then
+        echo shar: error transmitting "'README'" '(should have been 9908 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'config.h'" '(478 characters)'
+if test -f 'config.h'
+then
+        echo shar: will not over-write existing file "'config.h'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'config.h'
+        X/*
+        X * For machines on which the rand() function returns a long int (32 bits).
+        X * Suns, for instance:
+        X */
+        X#define LONG_RAND
+        X
+        X/*
+        X * For Berkeley-based C compilers.  Many Berkeley-ish machines, such as Suns,
+        X * HP-UX machines, and Apollos are compatible enough with SYSV that this flag
+        X * is not needed.  If your machine has '/usr/include/strings.h' rather than
+        X * 'string.h', you need this defined.
+        X */
+        X/*#define BSD*/
+        X
+        X
+        X/*
+        X * This flags does not work yet:
+        X */
+        X/*#define MOONS*/
+        X
+SHAR_EOF
+if test 478 -ne "`wc -c < 'config.h'`"
+then
+        echo shar: error transmitting "'config.h'" '(should have been 478 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'const.h'" '(4468 characters)'
+if test -f 'const.h'
+then
+        echo shar: will not over-write existing file "'const.h'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'const.h'
+        X#ifdef LONG_RAND
+        X#define RAND_MAX        (2147483647.0)
+        X#else
+        X#define RAND_MAX        (32767.0)
+        X#endif
+        X
+        X#define PI                      (3.1415926536)
+        X#define        RADIANS_PER_ROTATION        (2.0 * PI)
+        X#define TRUE                    (1)
+        X#define FALSE                   (0)
+        X#define ECCENTRICITY_COEFF      (0.077)                /* Dole's was 0.077         */
+        X#define        PROTOPLANET_MASS        (1.0E-15)        /* Units of solar masses    */
+        X#define CHANGE_IN_EARTH_ANG_VEL (-1.3E-15)        /* Units of radians/sec/year*/
+        X#define SOLAR_MASS_IN_GRAMS        (1.989E33)        /* Units of grams           */
+        X#define EARTH_MASS_IN_GRAMS        (5.977E27)        /* Units of grams           */
+        X#define EARTH_RADIUS                (6.378E8)        /* Units of cm                    */
+        X#define EARTH_DENSITY                (5.52)                /* Units of g/cc            */
+        X#define KM_EARTH_RADIUS                (6378.0)        /* Units of km              */
+        X#define EARTH_ACCELERATION        (981.0)                /* Units of cm/sec2         */
+        X#define EARTH_AXIAL_TILT        (23.4)                /* Units of degrees         */
+        X#define EARTH_EXOSPHERE_TEMP        (1273.0)        /* Units of degrees Kelvin  */
+        X#define SUN_MASS_IN_EARTH_MASSES (332775.64)
+        X#define EARTH_EFFECTIVE_TEMP        (255.0)                /* Units of degrees Kelvin  */
+        X#define EARTH_ALBEDO                (0.3)
+        X#define        CLOUD_COVERAGE_FACTOR        (1.839E-8)        /* Km2/kg                   */
+        X#define EARTH_WATER_MASS_PER_AREA        (3.83E15)/* grams per square km     */
+        X#define        EARTH_SURF_PRES_IN_MILLIBARS         (1000.0)
+        X#define EARTH_CONVECTION_FACTOR        (0.43)                /* from Hart, eq.20         */
+        X#define FREEZING_POINT_OF_WATER        (273.0)                /* Units of degrees Kelvin  */
+        X#define DAYS_IN_A_YEAR                (365.256)        /* Earth days per Earth year*/
+        X/*         gas_retention_threshold = 6.0;*/        /* ratio of esc vel to RMS vel */
+        X#define GAS_RETENTION_THRESHOLD        (5.0)                /* ratio of esc vel to RMS vel */
+        X#define GAS_GIANT_ALBEDO        (0.5)                /* albedo of a gas giant    */
+        X#define CLOUD_ALBEDO                (0.52)
+        X#define ROCKY_AIRLESS_ALBEDO        (0.07)
+        X#define ROCKY_ALBEDO                (0.15)
+        X#define WATER_ALBEDO                (0.04)
+        X#define AIRLESS_ICE_ALBEDO        (0.5)
+        X#define ICE_ALBEDO                (0.7)
+        X#define SECONDS_PER_HOUR        (3600.0)
+        X#define CM_PER_AU                (1.495978707E13)/* number of cm in an AU    */
+        X#define CM_PER_KM                (1.0E5)                /* number of cm in a km     */
+        X#define KM_PER_AU               (CM_PER_AU / CM_PER_KM)
+        X#define CM_PER_METER                (100.0)
+        X#define MILLIBARS_PER_BAR        (1000.0)
+        X#define KELVIN_CELCIUS_DIFFERENCE        (273.0)
+        X#define GRAV_CONSTANT                (6.672E-8)        /* units of dyne cm2/gram2  */
+        X#define GREENHOUSE_EFFECT_CONST        (0.93)                /* affects inner radius..   */
+        X#define MOLAR_GAS_CONST                (8314.41)        /* units: g*m2/(sec2*K*mol) */
+        X#define K                        (50.0)                /* K = gas/dust ratio       */
+        X#define B                        (1.2E-5)        /* Used in Crit_mass calc   */
+        X#define DUST_DENSITY_COEFF        (2.0E-3)        /* A in Dole's paper        */
+        X#define        ALPHA                        (5.0)                /* Used in density calcs    */
+        X#define        N                        (3.0)                /* Used in density calcs    */
+        X#define J                        (1.46E-19)        /* Used in day-length calcs (cm2/sec2 g) */
+        X#define INCREDIBLY_LARGE_NUMBER        (9.9999E37)
+        X
+        X
+        X/*  Now for a few molecular weights (used for RMS velocity calcs):     */
+        X/*  This table is from Dole's book "Habitable Planets for Man", p. 38  */
+        X
+        X#define ATOMIC_HYDROGEN                (1.0)        /* H   */
+        X#define MOL_HYDROGEN                (2.0)        /* H2  */
+        X#define HELIUM                        (4.0)        /* He  */
+        X#define ATOMIC_NITROGEN                (14.0)        /* N   */
+        X#define ATOMIC_OXYGEN                (16.0)        /* O   */
+        X#define METHANE                        (16.0)        /* CH4 */
+        X#define AMMONIA                        (17.0)        /* NH3 */
+        X#define WATER_VAPOR                (18.0)        /* H2O */
+        X#define NEON                        (20.2)        /* Ne  */
+        X#define MOL_NITROGEN                (28.0)        /* N2  */
+        X#define CARBON_MONOXIDE                (28.0)        /* CO  */
+        X#define NITRIC_OXIDE                (30.0)        /* NO  */
+        X#define MOL_OXYGEN                (32.0)        /* O2  */
+        X#define HYDROGEN_SULPHIDE        (34.1)        /* H2S */
+        X#define ARGON                        (39.9)        /* Ar  */
+        X#define CARBON_DIOXIDE                (44.0)        /* CO2 */
+        X#define NITROUS_OXIDE                (44.0)        /* N2O */
+        X#define NITROGEN_DIOXIDE        (46.0)        /* NO2 */
+        X#define OZONE                        (48.0)        /* O3  */
+        X#define SULPH_DIOXIDE                (64.1)        /* SO2 */
+        X#define SULPH_TRIOXIDE                (80.1)        /* SO3 */
+        X#define KRYPTON                        (83.8)        /* Kr  */
+        X#define XENON                        (131.3)        /* Xe  */
+        X
+        X/*  The following defines are used in the kothari_radius function in        */
+        X/*  file enviro.c.                                                        */
+        X#define        A1_20                        (6.485E12)        /* All units are in cgs system.  */
+        X#define A2_20                        (4.0032E-8)        /*   ie: cm, g, dynes, etc.      */
+        X#define BETA_20                        (5.71E12)
+        X
+        X
+        X/*   The following defines are used in determining the fraction of a planet  */
+        X/*  covered with clouds in function cloud_fraction in file enviro.c.             */
+        X#define        Q1_36                        (1.258E19)        /* grams    */
+        X#define Q2_36                        (0.0698)        /* 1/Kelvin */
+        X
+        X/* macros: */
+        X#define        pow2(a)        ((a) * (a))
+        X#define        pow3(a)        ((a) * (a) * (a))
+        X#define        pow1_4(a)        sqrt(sqrt(a))
+        X
+SHAR_EOF
+if test 4468 -ne "`wc -c < 'const.h'`"
+then
+        echo shar: error transmitting "'const.h'" '(should have been 4468 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'structs.h'" '(2100 characters)'
+if test -f 'structs.h'
+then
+        echo shar: will not over-write existing file "'structs.h'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'structs.h'
+        Xtypedef struct dust_record  *dust_pointer;
+        Xtypedef struct planets_record  *planet_pointer;
+        Xtypedef struct sys_record *sys_pointer;
+        X
+        Xtypedef struct sys_record {
+        X    double age;
+        X    double stell_mass_ratio;
+        X    double stell_luminosity_ratio;
+        X    double main_seq_life;
+        X    double r_ecosphere;
+        X    double r_greenhouse;
+        X    planet_pointer inner_planet;
+        X} system;
+        X
+        Xtypedef struct planets_record {
+        X    double a;                        /* semi-major axis of the orbit (in AU)*/
+        X    double e;                        /* eccentricity of the orbit             */
+        X    double mass;                /* mass (in solar masses)             */
+        X    int gas_giant;                /* TRUE if the planet is a gas giant */
+        X    int orbit_zone;             /* the 'zone' of the planet          */
+        X    double radius;                /* equatorial radius (in km)             */
+        X    double density;                /* density (in g/cc)                     */
+        X    double orb_period;           /* length of the local year (days)   */
+        X    double day;                        /* length of the local day (hours)   */
+        X    int resonant_period;        /* TRUE if in resonant rotation   */
+        X    int axial_tilt;                /* units of degrees                     */
+        X    double esc_velocity;        /* units of cm/sec                     */
+        X    double surf_accel;          /* units of cm/sec2                     */
+        X    double surf_grav;           /* units of Earth gravities             */
+        X    double rms_velocity;        /* units of cm/sec                     */
+        X    double molec_weight;        /* smallest molecular weight retained*/
+        X    double volatile_gas_inventory;
+        X    double surf_pressure;        /* units of millibars (mb)             */
+        X    int greenhouse_effect;        /* runaway greenhouse effect?        */
+        X    double boil_point;                /* the boiling point of water (Kelvin)*/
+        X    double albedo;                /* albedo of the planet                     */
+        X    double surf_temp;           /* surface temperature in Kelvin     */
+        X    double hydrosphere;                /* fraction of surface covered             */
+        X    double cloud_cover;                /* fraction of surface covered             */
+        X    double ice_cover;                /* fraction of surface covered             */
+        X#ifdef MOONS
+        X    planet_pointer first_moon;
+        X#endif
+        X    planet_pointer next_planet;
+        X    } planets;
+        X
+        X
+        Xtypedef struct dust_record {
+        X          double inner_edge;
+        X          double outer_edge;
+        X          int dust_present;
+        X          int gas_present;
+        X          dust_pointer next_band;
+        X     } dust;
+        X
+SHAR_EOF
+if test 2100 -ne "`wc -c < 'structs.h'`"
+then
+        echo shar: error transmitting "'structs.h'" '(should have been 2100 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'accrete.c'" '(15613 characters)'
+if test -f 'accrete.c'
+then
+        echo shar: will not over-write existing file "'accrete.c'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'accrete.c'
+        X/*----------------------------------------------------------------------*/
+        X/*                           BIBLIOGRAPHY                               */
+        X/*  Dole, Stephen H.  "Formation of Planetary Systems by Aggregation:   */
+        X/*      a Computer Simulation"  October 1969,  Rand Corporation Paper   */
+        X/*        P-4226.                                                                */
+        X/*----------------------------------------------------------------------*/
+        X
+        X#include        <stdio.h>
+        X#include        <math.h>
+        X#include        <errno.h>
+        X#include        "const.h"
+        X#include        "structs.h"
+        X#include        "config.h"
+        X
+        X/* externals from C library not elsewhere declared: */
+        Xextern char *malloc();
+        Xextern void free();
+        X
+        Xextern double random_number();
+        Xextern double random_eccentricity();
+        Xextern int flag_verbose, flag_lisp;
+        X
+        X/* A few variables global to the entire program:                */
+        Xplanet_pointer planet_head;
+        X
+        X/* Now for some variables global to the accretion process:      */
+        Xint dust_left;
+        Xdouble r_inner, r_outer, reduced_mass, dust_density, cloud_eccentricity;
+        Xdust_pointer dust_head;
+        X
+        X
+        Xvoid set_initial_conditions(inner_limit_of_dust, outer_limit_of_dust)
+        Xdouble inner_limit_of_dust, outer_limit_of_dust;
+        X{
+        X     if ((dust_head = (dust *)malloc((unsigned)sizeof(dust))) == NULL) {
+        X             perror("malloc'ing head of dust list");
+        X             exit(1);
+        X     }
+        X     planet_head = NULL;
+        X     dust_head->next_band = NULL;
+        X     dust_head->outer_edge = outer_limit_of_dust;
+        X     dust_head->inner_edge = inner_limit_of_dust;
+        X     dust_head->dust_present = TRUE;
+        X     dust_head->gas_present = TRUE;
+        X     dust_left = TRUE;
+        X     cloud_eccentricity = 0.2;
+        X}
+        X
+        Xdouble stell_dust_limit(stell_mass_ratio)
+        Xdouble stell_mass_ratio;
+        X{
+        X       return(200.0 * pow(stell_mass_ratio,(1.0 / 3.0)));
+        X}
+        X
+        Xdouble moon_dust_limit(planet_mass_ratio, dist_from_primary)
+        Xdouble planet_mass_ratio, dist_from_primary;
+        X{
+        Xdouble primary_influence;
+        X
+        X        if (dist_from_primary > 5.0)
+        X                primary_influence = 5.0;
+        X        else
+        X                primary_influence = dist_from_primary;
+        X        return(0.4 * primary_influence * pow(planet_mass_ratio,(1.0 / 2.0)));
+        X/*       return(200.0 * pow(planet_mass_ratio,(1.0 / 3.0)));*/
+        X}
+        X
+        Xdouble nearest_planet(stell_mass_ratio)
+        Xdouble stell_mass_ratio;
+        X{
+        X     return(0.3 * pow(stell_mass_ratio,(1.0 / 3.0)));
+        X}
+        X
+        Xdouble farthest_planet(stell_mass_ratio)
+        Xdouble stell_mass_ratio;
+        X{
+        X     return(50.0 * pow(stell_mass_ratio,(1.0 / 3.0)));
+        X}
+        X
+        Xdouble inner_effect_limit(a, e, mass)
+        Xdouble a, e, mass;
+        X{
+        X     return (a * (1.0 - e) * (1.0 - mass) / (1.0 + cloud_eccentricity));
+        X}
+        X
+        Xdouble outer_effect_limit(a, e, mass)
+        Xdouble a, e, mass;
+        X{
+        X     return (a * (1.0 + e) * (1.0 + mass) / (1.0 - cloud_eccentricity));
+        X}
+        X
+        Xint dust_available(inside_range, outside_range)
+        Xdouble inside_range, outside_range;
+        X{
+        X     dust_pointer current_dust_band;
+        X     int dust_here;
+        Xchar c;
+        X
+        X     current_dust_band = dust_head;
+        X     while ((current_dust_band != NULL)
+        X            && (current_dust_band->outer_edge < inside_range))
+        X          current_dust_band = current_dust_band->next_band;
+        X     if (current_dust_band == NULL)
+        X          dust_here = FALSE;
+        X     else dust_here = current_dust_band->dust_present;
+        X     while ((current_dust_band != NULL)
+        X            && (current_dust_band->inner_edge < outside_range)) {
+        X               dust_here = dust_here || current_dust_band->dust_present;
+        X               current_dust_band = current_dust_band->next_band;
+        X          }
+        X     return(dust_here);
+        X}
+        X
+        Xvoid update_dust_lanes(min, max, mass, crit_mass,
+        X                       body_inner_bound, body_outer_bound)
+        Xdouble min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
+        X{
+        X     int gas;
+        X     dust_pointer node1, node2, node3;
+        X
+        X     dust_left = FALSE;
+        X     if ((mass > crit_mass))
+        X          gas = FALSE;
+        X     else
+        X          gas = TRUE;
+        X     node1 = dust_head;
+        X     while ((node1 != NULL))
+        X     {
+        X          if (((node1->inner_edge < min) && (node1->outer_edge > max)))
+        X          {
+        X               if ((node2 = (dust *)malloc((unsigned)sizeof(dust))) == NULL) {
+        X                       perror("malloc'ing new dust band");
+        X                       exit(1);
+        X               }
+        X               node2->inner_edge = min;
+        X               node2->outer_edge = max;
+        X               if ((node1->gas_present == TRUE))
+        X                    node2->gas_present = gas;
+        X               else
+        X                    node2->gas_present = FALSE;
+        X               node2->dust_present = FALSE;
+        X               if ((node3 = (dust *)malloc((unsigned)sizeof(dust))) == NULL) {
+        X                       perror("malloc'ing new dust band");
+        X                       exit(1);
+        X               }
+        X               node3->inner_edge = max;
+        X               node3->outer_edge = node1->outer_edge;
+        X               node3->gas_present = node1->gas_present;
+        X               node3->dust_present = node1->dust_present;
+        X               node3->next_band = node1->next_band;
+        X               node1->next_band = node2;
+        X               node2->next_band = node3;
+        X               node1->outer_edge = min;
+        X               node1 = node3->next_band;
+        X          }
+        X          else
+        X               if (((node1->inner_edge < max) && (node1->outer_edge > max)))
+        X               {
+        X                    if ((node2 = (dust *)malloc((unsigned)sizeof(dust))) == NULL) {
+        X                            perror("malloc'ing new dust band");
+        X                            exit(1);
+        X                    }
+        X                    node2->next_band = node1->next_band;
+        X                    node2->dust_present = node1->dust_present;
+        X                    node2->gas_present = node1->gas_present;
+        X                    node2->outer_edge = node1->outer_edge;
+        X                    node2->inner_edge = max;
+        X                    node1->next_band = node2;
+        X                    node1->outer_edge = max;
+        X                    if ((node1->gas_present == TRUE))
+        X                         node1->gas_present = gas;
+        X                    else
+        X                         node1->gas_present = FALSE;
+        X                    node1->dust_present = FALSE;
+        X                    node1 = node2->next_band;
+        X               }
+        X               else
+        X                    if (((node1->inner_edge < min) && (node1->outer_edge > min)))
+        X                    {
+        X                         if ((node2 = (dust *)malloc((unsigned)sizeof(dust))) == NULL) {
+        X                                 perror("malloc'ing new dust band");
+        X                                 exit(1);
+        X                         }
+        X                         node2->next_band = node1->next_band;
+        X                         node2->dust_present = FALSE;
+        X                         if ((node1->gas_present == TRUE))
+        X                              node2->gas_present = gas;
+        X                         else
+        X                              node2->gas_present = FALSE;
+        X                         node2->outer_edge = node1->outer_edge;
+        X                         node2->inner_edge = min;
+        X                         node1->next_band = node2;
+        X                         node1->outer_edge = min;
+        X                         node1 = node2->next_band;
+        X                    }
+        X                    else
+        X                         if (((node1->inner_edge >= min) && (node1->outer_edge <= max)))
+        X                         {
+        X                              if ((node1->gas_present == TRUE))
+        X                                   node1->gas_present = gas;
+        X                              node1->dust_present = FALSE;
+        X                              node1 = node1->next_band;
+        X                         }
+        X                         else
+        X                              if (((node1->outer_edge < min) || (node1->inner_edge > max)))
+        X                                   node1 = node1->next_band;
+        X     }
+        X     node1 = dust_head;
+        X     while ((node1 != NULL))
+        X     {
+        X          if (((node1->dust_present)
+        X               && (((node1->outer_edge >= body_inner_bound)
+        X                    && (node1->inner_edge <= body_outer_bound)))))
+        X               dust_left = TRUE;
+        X          node2 = node1->next_band;
+        X          if ((node2 != NULL))
+        X          {
+        X               if (((node1->dust_present == node2->dust_present)
+        X                    && (node1->gas_present == node2->gas_present)))
+        X               {
+        X                    node1->outer_edge = node2->outer_edge;
+        X                    node1->next_band = node2->next_band;
+        X                    free(node2);
+        X               }
+        X          }
+        X          node1 = node1->next_band;
+        X     }
+        X}
+        X
+        Xdouble collect_dust(last_mass, a, e, crit_mass, dust_band)
+        Xdouble last_mass, a, e, crit_mass;
+        Xdust_pointer dust_band;
+        X{
+        X     double mass_density, temp1, temp2, temp, temp_density, bandwidth, width, volume;
+        X
+        X     temp = last_mass / (1.0 + last_mass);
+        X     reduced_mass = pow(temp,(1.0 / 4.0));
+        X     r_inner = inner_effect_limit(a, e, reduced_mass);
+        X     r_outer = outer_effect_limit(a, e, reduced_mass);
+        X     if ((r_inner < 0.0))
+        X          r_inner = 0.0;
+        X     if ((dust_band == NULL))
+        X          return(0.0);
+        X     else
+        X     {
+        X          if ((dust_band->dust_present == FALSE))
+        X               temp_density = 0.0;
+        X          else
+        X               temp_density = dust_density;
+        X          if (((last_mass < crit_mass) || (dust_band->gas_present == FALSE)))
+        X               mass_density = temp_density;
+        X          else
+        X               mass_density = K * temp_density / (1.0 + sqrt(crit_mass / last_mass)
+        X                                                  * (K - 1.0));
+        X          if (((dust_band->outer_edge <= r_inner)
+        X               || (dust_band->inner_edge >= r_outer)))
+        X               return(collect_dust(last_mass,a,e,crit_mass, dust_band->next_band));
+        X          else
+        X          {
+        X               bandwidth = (r_outer - r_inner);
+        X               temp1 = r_outer - dust_band->outer_edge;
+        X               if (temp1 < 0.0)
+        X                    temp1 = 0.0;
+        X               width = bandwidth - temp1;
+        X               temp2 = dust_band->inner_edge - r_inner;
+        X               if (temp2 < 0.0)
+        X                    temp2 = 0.0;
+        X               width = width - temp2;
+        X               temp = 4.0 * PI * pow(a,2.0) * reduced_mass
+        X                    * (1.0 - e * (temp1 - temp2) / bandwidth);
+        X               volume = temp * width;
+        X               return(volume * mass_density
+        X                      + collect_dust(last_mass,a,e,crit_mass,
+        X                                     dust_band->next_band));
+        X          }
+        X     }
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   Orbital radius is in AU, eccentricity is unitless, and the stellar     */
+        X/*  luminosity ratio is with respect to the sun.  The value returned is the */
+        X/*  mass at which the planet begins to accrete gas as well as dust, and is  */
+        X/*  in units of solar masses.                                               */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble critical_limit(orb_radius, eccentricity, stell_luminosity_ratio)
+        Xdouble orb_radius, eccentricity, stell_luminosity_ratio;
+        X{
+        X     double temp, perihelion_dist;
+        X
+        X     perihelion_dist = (orb_radius - orb_radius * eccentricity);
+        X     temp = perihelion_dist * sqrt(stell_luminosity_ratio);
+        X     return(B * pow(temp,-0.75));
+        X}
+        X
+        X
+        X
+        Xvoid accrete_dust(seed_mass, a, e, crit_mass,
+        X                  body_inner_bound, body_outer_bound)
+        Xdouble *seed_mass, a, e, crit_mass,
+        X     body_inner_bound, body_outer_bound;
+        X{
+        X     double new_mass, temp_mass;
+        X
+        X     new_mass = (*seed_mass);
+        X     do
+        X     {
+        X          temp_mass = new_mass;
+        X          new_mass = collect_dust(new_mass,a,e,crit_mass,
+        X                                  dust_head);
+        X     }
+        X     while (!(((new_mass - temp_mass) < (0.0001 * temp_mass))));
+        X     (*seed_mass) = (*seed_mass) + new_mass;
+        X     update_dust_lanes(r_inner,r_outer,(*seed_mass),crit_mass,body_inner_bound,body_outer_bound);
+        X}
+        X
+        X
+        X
+        Xvoid coalesce_planetesimals(a, e, mass, crit_mass,
+        X                            stell_luminosity_ratio,
+        X                            body_inner_bound, body_outer_bound)
+        Xdouble a, e, mass, crit_mass, stell_luminosity_ratio,
+        X     body_inner_bound, body_outer_bound;
+        X{
+        X     planet_pointer node1, node2, node3;
+        X     int finished;
+        X     double temp, dist1, dist2, a3;
+        X
+        X     finished = FALSE;
+        X     node1 = planet_head;
+        X     while ((node1 != NULL))
+        X     {
+        X          node2 = node1;
+        X          temp = node1->a - a;
+        X          if ((temp > 0.0))
+        X          {
+        X               dist1 = (a * (1.0 + e) * (1.0 + reduced_mass)) - a;
+        X               /* x aphelion   */
+        X               reduced_mass = pow((node1->mass / (1.0 + node1->mass)),(1.0 / 4.0));
+        X               dist2 = node1->a
+        X                    - (node1->a * (1.0 - node1->e) * (1.0 - reduced_mass));
+        X          }
+        X          else
+        X          {
+        X               dist1 = a - (a * (1.0 - e) * (1.0 - reduced_mass));
+        X               /* x perihelion */
+        X               reduced_mass = pow(node1->mass / (1.0 + node1->mass),(1.0 / 4.0));
+        X               dist2 = (node1->a * (1.0 + node1->e) * (1.0 + reduced_mass))
+        X                    - node1->a;
+        X          }
+        X          if (((fabs(temp) <= fabs(dist1)) || (fabs(temp) <= fabs(dist2))))
+        X          {
+        X               if (flag_verbose)
+        X                       if (flag_lisp)
+        X                               printf(";Collision between two planetesimals!\n");
+        X                       else
+        X                               printf("Collision between two planetesimals!\n");
+        X               a3 = (node1->mass + mass) / ((node1->mass / node1->a) + (mass / a));
+        X               temp = node1->mass * sqrt(node1->a) * sqrt(1.0 - pow(node1->e,2.0));
+        X               temp = temp + (mass * sqrt(a) * sqrt(sqrt(1.0 - pow(e,2.0))));
+        X               temp = temp / ((node1->mass + mass) * sqrt(a3));
+        X               temp = 1.0 - pow(temp,2.0);
+        X               if (((temp < 0.0) || (temp >= 1.0)))
+        X                    temp = 0.0;
+        X               e = sqrt(temp);
+        X               temp = node1->mass + mass;
+        X               accrete_dust(&(temp),a3,e,stell_luminosity_ratio,
+        X                            body_inner_bound,body_outer_bound);
+        X               node1->a = a3;
+        X               node1->e = e;
+        X               node1->mass = temp;
+        X               node1 = NULL;
+        X               finished = TRUE;
+        X          }
+        X          else
+        X               node1 = node1->next_planet;
+        X     }
+        X     if (!(finished))
+        X     {
+        X          if ((node3 = (planets *)malloc((unsigned)sizeof(planets))) == NULL) {
+        X                  perror("malloc'ing a new planet");
+        X                  exit(1);
+        X          }
+        X          node3->a = a;
+        X          node3->e = e;
+        X          if ((mass >= crit_mass))
+        X               node3->gas_giant = TRUE;
+        X          else
+        X               node3->gas_giant = FALSE;
+        X          node3->mass = mass;
+        X          if ((planet_head == NULL))
+        X          {
+        X               planet_head = node3;
+        X               node3->next_planet = NULL;
+        X          }
+        X          else
+        X          {
+        X               node1 = planet_head;
+        X               if ((a < node1->a))
+        X               {
+        X                    node3->next_planet = node1;
+        X                    planet_head = node3;
+        X               }
+        X               else
+        X                    if ((planet_head->next_planet == NULL))
+        X                    {
+        X                         planet_head->next_planet = node3;
+        X                         node3->next_planet = NULL;
+        X                    }
+        X                    else
+        X                    {
+        X                         while (((node1 != NULL) && (node1->a < a)))
+        X                         {
+        X                              node2 = node1;
+        X                              node1 = node1->next_planet;
+        X                         }
+        X                         node3->next_planet = node1;
+        X                         node2->next_planet = node3;
+        X                    }
+        X          }
+        X     }
+        X}
+        X
+        X
+        Xplanet_pointer dist_planetary_masses(stell_mass_ratio,
+        X                           stell_luminosity_ratio, inner_dust, outer_dust)
+        Xdouble stell_mass_ratio, stell_luminosity_ratio, inner_dust, outer_dust;
+        X{
+        X     double a, e, mass, crit_mass,
+        X     planet_inner_bound, planet_outer_bound;
+        X
+        X     set_initial_conditions(inner_dust,outer_dust);
+        X     planet_inner_bound = nearest_planet(stell_mass_ratio);
+        X     planet_outer_bound = farthest_planet(stell_mass_ratio);
+        X     while (dust_left)
+        X     {
+        X          a = random_number(planet_inner_bound,planet_outer_bound);
+        X          e = random_eccentricity( );
+        X          mass = PROTOPLANET_MASS;
+        X          if (flag_verbose)
+        X                  if (flag_lisp)
+        X                          printf(";Checking %lg AU.\n",a);
+        X                  else
+        X                          printf("Checking %lg AU.\n",a);
+        X          if (dust_available(inner_effect_limit(a, e, mass),
+        X                             outer_effect_limit(a, e, mass))) {
+        X                  if (flag_verbose)
+        X                          if (flag_lisp)
+        X                                  printf(";.. Injecting protoplanet.\n");
+        X                          else
+        X                                  printf(".. Injecting protoplanet.\n");
+        X                    dust_density = DUST_DENSITY_COEFF * sqrt(stell_mass_ratio)
+        X                         * exp(-ALPHA * pow(a,(1.0 / N)));
+        X                    crit_mass = critical_limit(a,e,stell_luminosity_ratio);
+        X                    accrete_dust(&(mass),a,e,crit_mass,
+        X                                 planet_inner_bound,
+        X                                 planet_outer_bound);
+        X                    if ((mass != 0.0) && (mass != PROTOPLANET_MASS))
+        X                         coalesce_planetesimals(a,e,mass,crit_mass,
+        X                                                stell_luminosity_ratio,
+        X                                                planet_inner_bound,planet_outer_bound);
+        X                    else if (flag_verbose)
+        X                            if (flag_lisp)
+        X                                    printf(";.. failed due to large neighbor.\n");
+        X                            else
+        X                                    printf(".. failed due to large neighbor.\n");
+        X               }
+        X          else if (flag_verbose)
+        X                  if (flag_lisp)
+        X                          printf(";.. failed.\n");
+        X                  else
+        X                          printf(".. failed.\n");
+        X     }
+        X     return(planet_head);
+        X}
+        X
+        X
+        X#ifdef MOONS
+        Xplanet_pointer dist_moon_masses(planetary_mass, stell_luminosity_ratio,
+        X                                      inner_dust, outer_dust)
+        Xdouble planetary_mass, stell_luminosity_ratio,
+        X        inner_dust, outer_dust;
+        X{
+        X     double a, e, mass, crit_mass,
+        X     planet_inner_bound, planet_outer_bound;
+        X
+        X     set_initial_conditions(inner_dust,outer_dust);
+        X     planet_inner_bound = nearest_planet(planetary_mass);
+        X     planet_outer_bound = farthest_planet(planetary_mass);
+        X     while (dust_left)
+        X     {
+        X          a = random_number(planet_inner_bound,planet_outer_bound);
+        X          e = random_eccentricity( );
+        X          mass = PROTOPLANET_MASS;
+        X          if (dust_available(inner_effect_limit(a, e, mass),
+        X                             outer_effect_limit(a, e, mass))) {
+        X                    dust_density = DUST_DENSITY_COEFF * sqrt(planetary_mass)
+        X                         * exp(-ALPHA * pow(a,(1.0 / N)));
+        X                    crit_mass = critical_limit(a,e,stell_luminosity_ratio);
+        X                    accrete_dust(&(mass),a,e,crit_mass,
+        X                                 planet_inner_bound,
+        X                                 planet_outer_bound);
+        X                    if ((mass != 0.0) && (mass != PROTOPLANET_MASS))
+        X                         coalesce_planetesimals(a,e,mass,crit_mass,
+        X                                                stell_luminosity_ratio,
+        X                                                planet_inner_bound,planet_outer_bound);
+        X               }
+        X     }
+        X     return(planet_head);
+        X}
+        X#endif
+        X
+SHAR_EOF
+if test 15613 -ne "`wc -c < 'accrete.c'`"
+then
+        echo shar: error transmitting "'accrete.c'" '(should have been 15613 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'display.c'" '(8670 characters)'
+if test -f 'display.c'
+then
+        echo shar: will not over-write existing file "'display.c'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'display.c'
+        X#include        <stdio.h>
+        X#include        <math.h>
+        X
+        X#ifdef BSD
+        X#include        <strings.h>
+        X#else
+        X#include        <string.h>
+        X#endif
+        X
+        X#ifdef MSDOS
+        X#include        <stddef.h>
+        X#include        <malloc.h>
+        X#include        <stdlib.h>
+        X#include        <float.h>
+        X#endif
+        X
+        X#include        "structs.h"
+        X#include        "const.h"
+        X#include        "config.h"
+        X
+        X#define        MAX_EXP_DIGS        3
+        X#define        MAX_MAN_DIGS        20
+        X
+        Xextern int flag_graphics, flag_lisp;
+        X
+        X#ifdef MOONS
+        Xextern int flag_moons;
+        X#endif
+        X
+        Xchar OP[] = "(";
+        Xchar CP[] = ")";
+        X
+        X
+        Xchar *engineer_notation(d, p)
+        Xdouble d;
+        Xint p;
+        X{
+        X        static char mansign;
+        X        static char expsign;
+        X        static char output[1+MAX_MAN_DIGS+1+1+MAX_EXP_DIGS+1];
+        X        double mantissa;
+        X        int exponent;
+        X
+        X        mansign = '+';
+        X        expsign = '+';
+        X        if (p > MAX_MAN_DIGS)
+        X                p = MAX_MAN_DIGS;
+        X        if (p < 3)
+        X                p = 3;
+        X        --p;
+        X        if (d < 0.0)
+        X        {
+        X                mansign = '-';
+        X                d = -d;
+        X        }
+        X        if (d == 0.0)
+        X        {
+        X                exponent = 0;
+        X                mantissa = 0;
+        X        }
+        X        else
+        X        {
+        X                exponent = log10(d);
+        X                if (exponent == 0 && d < 1.0)        /* log10 sometimes lies */
+        X                {
+        X                        --exponent;
+        X                        --p;
+        X                }
+        X                if (exponent < 0)
+        X                {
+        X                        expsign = '-';
+        X                        --exponent;
+        X                }
+        X                mantissa = d / pow(10.0, (double) exponent);
+        X                if (exponent < 0)
+        X                        exponent = -exponent;
+        X                while ((exponent % 3) != 0)
+        X                {
+        X                        mantissa *= 10.0;
+        X                        p--;
+        X                        if (expsign == '-')
+        X                                ++exponent;
+        X                        else
+        X                                --exponent;
+        X                }
+        X        }
+        X        sprintf(output, "%c%*.*lfe%c%*.*d", mansign, p, p, mantissa,
+        X                expsign, MAX_EXP_DIGS, MAX_EXP_DIGS, exponent);
+        X        return (output);
+        X}
+        X
+        Xvoid chart_system(sys)
+        Xsys_pointer sys;
+        X{
+        X}
+        X
+        Xvoid text_describe_system(sys)
+        Xsys_pointer sys;
+        X{
+        X     planet_pointer node1;
+        X#ifdef MOONS
+        X     planet_pointer node2;
+        X#endif
+        X     int counter1, counter2;
+        X
+        X     printf("                         SYSTEM  CHARACTERISTICS\n");
+        X     printf("Stellar mass: %4.2lf solar masses\n", sys->stell_mass_ratio);
+        X     printf("Stellar luminosity: %4.2lf\n",sys->stell_luminosity_ratio);
+        X     printf("Age: %5.3lf billion years  (%5.3lf billion left on main sequence)\n",
+        X             (sys->age /1.0E9),(sys->main_seq_life - sys->age) / 1.0E9);
+        X     printf("Habitable ecosphere radius: %3.3lf AU\n",sys->r_ecosphere);
+        X     printf("\n");
+        X     printf("Planets present at:\n");
+        X     for (node1=sys->inner_planet, counter1=1;
+        X          node1 != NULL;
+        X          node1=node1->next_planet, counter1++)
+        X     {
+        X        printf("%d\t%7.3lf \t AU\n", counter1, node1->a);
+        X     }
+        X     printf("\n\n\n");
+        X     for (node1=sys->inner_planet, counter1=1;
+        X          node1 != NULL;
+        X          node1=node1->next_planet, counter1++)
+        X     {
+        X          printf("Planet %d\t",counter1);
+        X          if (node1->gas_giant)
+        X               printf("*gas giant*\n");
+        X          else printf("\n");
+        X          if ((int)node1->day == (int)(node1->orb_period * 24.0))
+        X               printf("Planet is tidally locked with one face to star.\n");
+        X          if (node1->resonant_period)
+        X               printf("Planet's rotation is in a resonant spin lock with the star\n");
+        X          printf("   Distance from primary star:\t%5.3lf\tAU\n",node1->a);
+        X          printf("   Mass:\t\t\t%5.3lf\tEarth masses\n",node1->mass * SUN_MASS_IN_EARTH_MASSES);
+        X          if (!(node1->gas_giant))
+        X          {
+        X               printf("   Surface gravity:\t\t%4.2lf\tEarth gees\n",node1->surf_grav);
+        X               printf("   Surface pressure:\t\t%5.3lf\tEarth atmospheres",(node1->surf_pressure / 1000.0));
+        X               if ((node1->greenhouse_effect) && (node1->surf_pressure > 0.0))
+        X                    printf("\tGREENHOUSE EFFECT\n");
+        X               else
+        X                    printf("\n");
+        X               printf("   Surface temperature:\t\t%4.2lf\tdegrees Celcius\n",(node1->surf_temp - KELVIN_CELCIUS_DIFFERENCE));
+        X          }
+        X          printf("   Equatorial radius:\t\t%3.1lf\tKm\n",node1->radius);
+        X          printf("   Density:\t\t\t%5.3lf\tgrams/cc\n",node1->density);
+        X          printf("   Eccentricity of orbit:\t%5.3lf\n",node1->e);
+        X          printf("   Escape Velocity:\t\t%4.2lf\tKm/sec\n",node1->esc_velocity / CM_PER_KM);
+        X          printf("   Molecular weight retained:\t%4.2lf and above\n",node1->molec_weight);
+        X          printf("   Surface acceleration:\t%4.2lf\tcm/sec2\n",node1->surf_accel);
+        X          printf("   Axial tilt:\t\t\t%d\tdegrees\n",node1->axial_tilt);
+        X          printf("   Planetary albedo:\t\t%5.3lf\n",node1->albedo);
+        X          printf("   Length of year:\t\t%4.2lf\tdays\n",node1->orb_period);
+        X          printf("   Length of day:\t\t%4.2lf\thours\n",node1->day);
+        X          if (!(node1->gas_giant))
+        X          {
+        X               printf("   Boiling point of water:\t%3.1lf\tdegrees Celcius\n",(node1->boil_point - KELVIN_CELCIUS_DIFFERENCE));
+        X               printf("   Hydrosphere percentage:\t%4.2lf\n",(node1->hydrosphere * 100.0));
+        X               printf("   Cloud cover percentage:\t%4.2lf\n",(node1->cloud_cover * 100));
+        X               printf("   Ice cover percentage:\t%4.2lf\n",(node1->ice_cover * 100));
+        X          }
+        X#ifdef MOONS
+        X          if (flag_moons) {
+        X                  printf("\tMOONS:\n");
+        X                  printf("\t#\tmass\tdistance from planet\n");
+        X                  printf("\t--------------------------------------\n");
+        X                  for (node2=node1->first_moon, counter2=1;
+        X                       node2 != NULL;
+        X                       node2=node2->next_planet, counter2++)
+        X                  {
+        X                          printf("\t%d\t%5.3lf\t%7.3lf AU\n", counter2, (node2->mass*SOLAR_MASS_IN_GRAMS/EARTH_MASS_IN_GRAMS), node2->a);
+        X                  }
+        X          }
+        X#endif
+        X          printf("\n\n");
+        X     }
+        X}
+        X
+        Xvoid lisp_describe_system(sys)
+        Xsys_pointer sys;
+        X{
+        X        planet_pointer node1;
+        X        int counter;
+        X
+        X        printf("%splanetary-system\n", OP);
+        X        printf(" %ssun\n", OP);
+        X        printf("  %smass %s%s ; kg\n",
+        X                OP,
+        X                engineer_notation(sys->stell_mass_ratio * SOLAR_MASS_IN_GRAMS / 1000.0, 6),
+        X                CP);
+        X        printf("  %sluminosity %s%s ; * SOL luminosity\n",
+        X                OP, engineer_notation(sys->stell_luminosity_ratio, 6), CP);
+        X        printf("  %slifetime %s%s ; years\n",
+        X                OP, engineer_notation(sys->main_seq_life, 6), CP);
+        X        printf("  %scurrent-age %s%s ; years\n",
+        X                OP, engineer_notation(sys->age, 6), CP);
+        X        printf("  %secosphere-radius %s%s ; km\n",
+        X                OP, engineer_notation(sys->r_ecosphere * KM_PER_AU, 6), CP);
+        X        printf(" %s\n", CP);
+        X        for (node1=sys->inner_planet, counter=1;
+        X             node1 != NULL;
+        X             node1=node1->next_planet, counter++)
+        X        {
+        X                printf(" %splanet ; #%d\n",
+        X                        OP, counter);
+        X                printf("  ; boolean:\n");
+        X                printf("  %sis-gas-giant %d%s\n", OP, node1->gas_giant, CP);
+        X                printf("  ; orbital statistics:\n");
+        X                printf("  %smean-orbit-radius %s%s ; km\n",
+        X                        OP, engineer_notation(node1->a * KM_PER_AU, 6), CP);
+        X                printf("  %sorbit-eccentricity %s%s\n",
+        X                        OP, engineer_notation(node1->e, 6), CP);
+        X                printf("  %saxial-tilt %d%s ; degrees\n",
+        X                        OP, node1->axial_tilt, CP);
+        X                printf("  %sorbital-period %s%s ; Earth days\n",
+        X                        OP, engineer_notation(node1->orb_period, 6), CP);
+        X                printf("  %srotation-period %s%s ; Earth hours\n",
+        X                        OP, engineer_notation(node1->day, 6), CP);
+        X                printf("  %sis-resonant %d%s\n", OP, node1->resonant_period, CP);
+        X                printf("  ; planetary measurements:\n");
+        X                printf("  %smass %s%s ; kg\n",
+        X                        OP, engineer_notation(node1->mass * SOLAR_MASS_IN_GRAMS / 1000.0, 6), CP);
+        X                printf("  %sequatorial-radius %s%s ; km\n",
+        X                        OP, engineer_notation(node1->radius, 6), CP);
+        X                printf("  %sdensity %s%s ; g/cm3\n",
+        X                        OP, engineer_notation(node1->density, 6), CP);
+        X                printf("  ; planetary environment:\n");
+        X                printf("  %sescape-velocity %s%s ; km/sec\n",
+        X                        OP, engineer_notation(node1->esc_velocity / CM_PER_KM, 6), CP);
+        X                printf("  %smin-molecular-weight-retained %s%s\n",
+        X                        OP, engineer_notation(node1->molec_weight, 3), CP);
+        X                printf("  %ssurface-acceleration %s%s ; cm/sec2\n",
+        X                        OP, engineer_notation(node1->surf_accel, 6), CP);
+        X                if (!node1->gas_giant)
+        X                {
+        X                        printf("  %ssurface-gravity %s%s ; Earth gees\n",
+        X                                OP, engineer_notation(node1->surf_grav, 3), CP);
+        X                        printf("  %sh2o-boils %s%s ; degrees celcius\n",
+        X                                OP,
+        X                                engineer_notation(node1->boil_point - KELVIN_CELCIUS_DIFFERENCE, 3),
+        X                                CP);
+        X                        printf("  %ssurface-pressure %s%s ; Earth atmospheres\n",
+        X                                OP, engineer_notation(node1->surf_pressure / 1000.0, 3), CP);
+        X                        if (node1->greenhouse_effect && node1->surf_pressure > 0.0)
+        X                                printf("  %sgreenhouse 1%s\n", OP, CP);
+        X                        else
+        X                                printf("  %sgreenhouse 0%s\n", OP, CP);
+        X                        printf("  %ssurface-temperature %s%s ; degrees celcius\n",
+        X                                OP,
+        X                                engineer_notation(node1->surf_temp - KELVIN_CELCIUS_DIFFERENCE, 3),
+        X                                CP);
+        X                        printf("  %shydrosphere %s%s\n",
+        X                                OP, engineer_notation(node1->hydrosphere, 3), CP);
+        X                        printf("  %scloud-cover %s%s\n",
+        X                                OP, engineer_notation(node1->cloud_cover, 3), CP);
+        X                        printf("  %sice-cover %s%s\n",
+        X                                OP, engineer_notation(node1->ice_cover, 3), CP);
+        X                }
+        X                printf("  %salbedo %s%s\n",
+        X                        OP, engineer_notation(node1->albedo, 3), CP);
+        X                printf(" %s\n", CP);
+        X        }
+        X        printf("%s\n", CP);
+        X}
+        X
+        Xvoid display_system(system)
+        Xsys_pointer system;
+        X{
+        X        if (flag_graphics)
+        X                chart_system(system);
+        X        else if (flag_lisp)
+        X                lisp_describe_system(system);
+        X        else
+        X                text_describe_system(system);
+        X}
+        X
+SHAR_EOF
+if test 8670 -ne "`wc -c < 'display.c'`"
+then
+        echo shar: error transmitting "'display.c'" '(should have been 8670 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'enviro.c'" '(25380 characters)'
+if test -f 'enviro.c'
+then
+        echo shar: will not over-write existing file "'enviro.c'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'enviro.c'
+        X#include        <math.h>
+        X#include        "const.h"
+        X#include        "structs.h"
+        X#include        "config.h"
+        X
+        Xextern double about();
+        X
+        Xextern int resonance;
+        X
+        Xdouble luminosity(mass_ratio)
+        Xdouble mass_ratio;
+        X{
+        X     double n;
+        X
+        X     if (mass_ratio < 1.0)
+        X          n = 1.75 * (mass_ratio - 0.1) + 3.325;
+        X     else
+        X          n = 0.5 * (2.0 - mass_ratio) + 4.4;
+        X     return(pow(mass_ratio,n));
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function, given the orbital radius of a planet in AU, returns     */
+        X/*   the orbital 'zone' of the particle.                                    */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xint orb_zone(orb_radius, stell_luminosity_ratio)
+        Xdouble orb_radius, stell_luminosity_ratio;
+        X{
+        X     if (orb_radius < (4.0 * sqrt(stell_luminosity_ratio)))
+        X          return(1);
+        X     else
+        X     {
+        X          if ((orb_radius >= (4.0 * sqrt(stell_luminosity_ratio))) && (orb_radius < (15.0 * sqrt(stell_luminosity_ratio))))
+        X               return(2);
+        X          else
+        X               return(3);
+        X     }
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   The mass is in units of solar masses, and the density is in units      */
+        X/*   of grams/cc.  The radius returned is in units of km.                   */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble volume_radius(mass, density)
+        Xdouble mass, density;
+        X{
+        X     double volume;
+        X
+        X     mass = mass * SOLAR_MASS_IN_GRAMS;
+        X     volume = mass / density;
+        X     return(pow((3.0 * volume) / (4.0 * PI),(1.0 / 3.0)) / CM_PER_KM);
+        X}
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   Returns the radius of the planet in kilometers.                            */
+        X/*   The mass passed in is in units of solar masses.                            */
+        X/*   This formula is listed as eq.9 in Fogg's article, although some typos  */
+        X/*   crop up in that eq.  See "The Internal Constitution of Planets", by    */
+        X/*   Dr. D. S. Kothari, Mon. Not. of the Royal Astronomical Society, vol 96 */
+        X/*   pp.833-843, 1936 for the derivation.  Specifically, this is Kothari's  */
+        X/*   eq.23, which appears on page 840.                                      */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble kothari_radius(mass, giant, zone)
+        Xdouble mass;
+        Xint giant, zone;
+        X{
+        X     double temp, temp2, atomic_weight, atomic_num;
+        X
+        X     if (zone == 1)
+        X     {
+        X          if (giant)
+        X          {
+        X               atomic_weight = 9.5;
+        X               atomic_num = 4.5;
+        X          }
+        X          else
+        X          {
+        X               atomic_weight = 15.0;
+        X               atomic_num = 8.0;
+        X          }
+        X     }
+        X     else
+        X          if (zone == 2)
+        X          {
+        X               if (giant)
+        X               {
+        X                    atomic_weight = 2.47;
+        X                    atomic_num = 2.0;
+        X               }
+        X               else
+        X               {
+        X                    atomic_weight = 10.0;
+        X                    atomic_num = 5.0;
+        X               }
+        X          }
+        X          else
+        X          {
+        X               if (giant)
+        X               {
+        X                    atomic_weight = 7.0;
+        X                    atomic_num = 4.0;
+        X               }
+        X               else
+        X               {
+        X                    atomic_weight = 10.0;
+        X                    atomic_num = 5.0;
+        X               }
+        X          }
+        X     temp = atomic_weight * atomic_num;
+        X     temp = (2.0 * BETA_20 * pow(SOLAR_MASS_IN_GRAMS,(1.0 / 3.0))) / (A1_20 * pow(temp,(1.0 / 3.0)));
+        X     temp2 = A2_20 * pow(atomic_weight,(4.0 / 3.0)) * pow(SOLAR_MASS_IN_GRAMS,(2.0 / 3.0));
+        X     temp2 = temp2 * pow(mass,(2.0 / 3.0));
+        X     temp2 = temp2 / (A1_20 * pow2(atomic_num));
+        X     temp2 = 1.0 + temp2;
+        X     temp = temp / temp2;
+        X     temp = (temp * pow(mass,(1.0 / 3.0))) / CM_PER_KM;
+        X     return(temp);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  The mass passed in is in units of solar masses, and the orbital radius  */
+        X/*  is in units of AU.  The density is returned in units of grams/cc.       */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble empirical_density(mass, orb_radius, gas_giant, r_ecosphere)
+        Xdouble mass, orb_radius, r_ecosphere;
+        Xint gas_giant;
+        X{
+        X     double temp;
+        X
+        X     temp = pow(mass * SUN_MASS_IN_EARTH_MASSES,(1.0 / 8.0));
+        X     temp = temp * pow1_4(r_ecosphere / orb_radius);
+        X     if (gas_giant)
+        X          return(temp * 1.2);
+        X     else
+        X          return(temp * 5.5);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  The mass passed in is in units of solar masses, and the equatorial      */
+        X/*  radius is in km.  The density is returned in units of grams/cc.         */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble volume_density(mass, equat_radius)
+        Xdouble mass, equat_radius;
+        X{
+        X     double volume;
+        X
+        X     mass = mass * SOLAR_MASS_IN_GRAMS;
+        X     equat_radius = equat_radius * CM_PER_KM;
+        X     volume = (4.0 * PI * pow3(equat_radius)) / 3.0;
+        X     return(mass / volume);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  The separation is in units of AU, and both masses are in units of solar */
+        X/*  masses.  The period returned is in terms of Earth days.                 */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble period(separation, small_mass, large_mass)
+        Xdouble separation, small_mass, large_mass;
+        X{
+        X     double period_in_years;
+        X
+        X     period_in_years = sqrt(pow3(separation) / (small_mass + large_mass));
+        X     return(period_in_years * DAYS_IN_A_YEAR);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   Fogg's information for this routine came from Dole "Habitable Planets  */
+        X/* for Man", Blaisdell Publishing Company, NY, 1964.  From this, he came    */
+        X/* up with his eq.12, which is the equation for the 'base_angular_velocity' */
+        X/* below.  He then used an equation for the change in angular velocity per  */
+        X/* time (dw/dt) from P. Goldreich and S. Soter's paper "Q in the Solar      */
+        X/* System" in Icarus, vol 5, pp.375-389 (1966).  Using as a comparison the  */
+        X/* change in angular velocity for the Earth, Fogg has come up with an            */
+        X/* approximation for our new planet (his eq.13) and take that into account. */
+        X/* This is used to find 'change_in_angular_velocity' below.                 */
+        X/*                                                                            */
+        X/*   Input parameters are mass (in solar masses), radius (in Km), orbital   */
+        X/* period (in days), orbital radius (in AU), density (in g/cc),                    */
+        X/* eccentricity, and whether it is a gas giant or not.                            */
+        X/*   The length of the day is returned in units of hours.                    */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble day_length(mass, radius, eccentricity, density,
+        X                  orb_radius, orb_period, giant, stell_mass_ratio, age)
+        Xdouble mass, radius, eccentricity, density, orb_radius, orb_period, stell_mass_ratio, age;
+        Xint giant;
+        X{
+        X     double base_angular_velocity, planetary_mass_in_grams, k2, ang_velocity,
+        X        equatorial_radius_in_cm, change_in_angular_velocity,
+        X        spin_resonance_factor, year_in_hours, day_in_hours;
+        X     int stopped = FALSE;
+        X
+        X     resonance = FALSE;
+        X     if (giant)
+        X          k2 = 0.24;
+        X     else
+        X          k2 = 0.33;
+        X     planetary_mass_in_grams = mass * SOLAR_MASS_IN_GRAMS;
+        X     equatorial_radius_in_cm = radius * CM_PER_KM;
+        X     year_in_hours = orb_period * 24.0;
+        X     base_angular_velocity = sqrt(2.0 * J * (planetary_mass_in_grams) /
+        X                                  (k2 * pow2(equatorial_radius_in_cm)));
+        X/*  This next calculation determines how much the planet's rotation is      */
+        X/*  slowed by the presence of the star.                                            */
+        X     change_in_angular_velocity = CHANGE_IN_EARTH_ANG_VEL *
+        X                                  (density / EARTH_DENSITY) *
+        X                                  (equatorial_radius_in_cm / EARTH_RADIUS) *
+        X                                  (EARTH_MASS_IN_GRAMS / planetary_mass_in_grams) *
+        X                                  pow(stell_mass_ratio, 2.0) *
+        X                                  (1.0 / pow(orb_radius, 6.0));
+        X     ang_velocity = base_angular_velocity + (change_in_angular_velocity * age);
+        X/* Now we change from rad/sec to hours/rotation.                            */
+        X     if (ang_velocity <= 0.0)
+        X        stopped = TRUE;
+        X     else day_in_hours = RADIANS_PER_ROTATION / (SECONDS_PER_HOUR * ang_velocity);
+        X     if ((day_in_hours >= year_in_hours) || stopped)
+        X     {
+        X          if (eccentricity > 0.1)
+        X          {
+        X            spin_resonance_factor = (1.0 - eccentricity) / (1.0 + eccentricity);
+        X            resonance = TRUE;
+        X            return(spin_resonance_factor * year_in_hours);
+        X          }
+        X          else
+        X            return(year_in_hours);
+        X     }
+        X     return(day_in_hours);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   The orbital radius is expected in units of Astronomical Units (AU).    */
+        X/*   Inclination is returned in units of degrees.                           */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xint inclination(orb_radius)
+        Xdouble orb_radius;
+        X{
+        X     int temp;
+        X
+        X     temp = (int)(pow(orb_radius,0.2) * about(EARTH_AXIAL_TILT,0.4));
+        X     return(temp % 360);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function implements the escape velocity calculation.  Note that   */
+        X/*  it appears that Fogg's eq.15 is incorrect.                              */
+        X/*  The mass is in units of solar mass, the radius in kilometers, and the   */
+        X/*  velocity returned is in cm/sec.                                         */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble escape_vel(mass, radius)
+        Xdouble mass, radius;
+        X{
+        X     double mass_in_grams, radius_in_cm;
+        X
+        X     mass_in_grams = mass * SOLAR_MASS_IN_GRAMS;
+        X     radius_in_cm = radius * CM_PER_KM;
+        X     return(sqrt(2.0 * GRAV_CONSTANT * mass_in_grams / radius_in_cm));
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  This is Fogg's eq.16.  The molecular weight (usually assumed to be N2)  */
+        X/*  is used as the basis of the Root Mean Square (RMS) velocity of the            */
+        X/*  molecule or atom.  The velocity returned is in cm/sec.                    */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble rms_vel(molecular_weight, orb_radius)
+        Xdouble molecular_weight, orb_radius;
+        X{
+        X     double exospheric_temp;
+        X
+        X     exospheric_temp = EARTH_EXOSPHERE_TEMP / pow2(orb_radius);
+        X     return(sqrt((3.0 * MOLAR_GAS_CONST * exospheric_temp) / molecular_weight)
+        X                 * CM_PER_METER);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function returns the smallest molecular weight retained by the    */
+        X/*  body, which is useful for determining the atmosphere composition.       */
+        X/*  Orbital radius is in A.U.(ie: in units of the earth's orbital radius),  */
+        X/*  mass is in units of solar masses, and equatorial radius is in units of  */
+        X/*  kilometers.                                                             */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble molecule_limit(mass, equat_radius)
+        Xdouble mass, equat_radius;
+        X{
+        X     double esc_velocity;
+        X
+        X     esc_velocity = escape_vel(mass,equat_radius);
+        X     return((3.0 * pow2(GAS_RETENTION_THRESHOLD * CM_PER_METER) * MOLAR_GAS_CONST * EARTH_EXOSPHERE_TEMP) / pow2(esc_velocity));
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function calculates the surface acceleration of a planet.  The    */
+        X/*  mass is in units of solar masses, the radius in terms of km, and the    */
+        X/*  acceleration is returned in units of cm/sec2.                           */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble accel(mass, radius)
+        Xdouble mass, radius;
+        X{
+        X     return(GRAV_CONSTANT * (mass * SOLAR_MASS_IN_GRAMS) /
+        X                            pow2(radius * CM_PER_KM));
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function calculates the surface gravity of a planet.  The         */
+        X/*  acceleration is in units of cm/sec2, and the gravity is returned in     */
+        X/*  units of Earth gravities.                                               */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble gravity(acceleration)
+        Xdouble acceleration;
+        X{
+        X     return(acceleration / EARTH_ACCELERATION);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  Note that if the orbital radius of the planet is greater than or equal  */
+        X/*  to R_inner, 99% of it's volatiles are assumed to have been deposited in */
+        X/*  surface reservoirs (otherwise, it suffers from the greenhouse effect).  */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xint grnhouse(zone, orb_radius, r_greenhouse)
+        Xint zone;
+        Xdouble orb_radius, r_greenhouse;
+        X{
+        X     if ((orb_radius < r_greenhouse) && (zone == 1))
+        X          return(TRUE);
+        X     else
+        X          return(FALSE);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  This implements Fogg's eq.17.  The 'inventory' returned is unitless.    */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble vol_inventory(mass, esc_velocity, rms_velocity, stellar_mass, zone, greenhouse_effect)
+        Xdouble mass, esc_velocity, rms_velocity, stellar_mass;
+        Xint zone, greenhouse_effect;
+        X{
+        X     double velocity_ratio, proportion_const, temp1, temp2, earth_units;
+        X
+        X     velocity_ratio = esc_velocity / rms_velocity;
+        X     if (velocity_ratio >= GAS_RETENTION_THRESHOLD)
+        X     {
+        X          switch (zone) {
+        X               case 1:
+        X                    proportion_const = 100000.0;
+        X                    break;
+        X               case 2:
+        X                    proportion_const = 75000.0;
+        X                    break;
+        X               case 3:
+        X                    proportion_const = 250.0;
+        X                    break;
+        X               default:
+        X                    printf("Error: orbital zone not initialized correctly!\n");
+        X                    break;
+        X               }
+        X          earth_units = mass * SUN_MASS_IN_EARTH_MASSES;
+        X          temp1 = (proportion_const * earth_units) / stellar_mass;
+        X          temp2 = about(temp1,0.2);
+        X          if (greenhouse_effect)
+        X               return(temp2);
+        X          else
+        X               return(temp2 / 100.0);
+        X     }
+        X     else
+        X          return(0.0);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  This implements Fogg's eq.18.  The pressure returned is in units of     */
+        X/*  millibars (mb).  The gravity is in units of Earth gravities, the radius */
+        X/*  in units of kilometers.                                                 */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble pressure(volatile_gas_inventory, equat_radius, grav)
+        Xdouble volatile_gas_inventory, equat_radius, grav;
+        X{
+        X     equat_radius = KM_EARTH_RADIUS / equat_radius;
+        X     return(volatile_gas_inventory * grav / pow2(equat_radius));
+        X}
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function returns the boiling point of water in an atmosphere of   */
+        X/*   pressure 'surf_pressure', given in millibars.  The boiling point is    */
+        X/*   returned in units of Kelvin.  This is Fogg's eq.21.                    */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble boiling_point(surf_pressure)
+        Xdouble surf_pressure;
+        X{
+        X     double surface_pressure_in_bars;
+        X
+        X     surface_pressure_in_bars = surf_pressure / MILLIBARS_PER_BAR;
+        X     return(1.0 / (log(surface_pressure_in_bars) / -5050.5 + 1.0 / 373.0));
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function is Fogg's eq.22.  Given the volatile gas inventory and   */
+        X/*   planetary radius of a planet (in Km), this function returns the        */
+        X/*   fraction of the planet covered with water.                             */
+        X/*   I have changed the function very slightly:  the fraction of Earth's    */
+        X/*   surface covered by water is 71%, not 75% as Fogg used.                 */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble hydro_fraction(volatile_gas_inventory, planet_radius)
+        Xdouble volatile_gas_inventory, planet_radius;
+        X{
+        X     double temp;
+        X
+        X     temp = (0.71 * volatile_gas_inventory / 1000.0) * pow2(KM_EARTH_RADIUS / planet_radius);
+        X     if (temp >= 1.0)
+        X          return(1.0);
+        X     else
+        X          return(temp);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   Given the surface temperature of a planet (in Kelvin), this function   */
+        X/*   returns the fraction of cloud cover available.  This is Fogg's eq.23.  */
+        X/*   See Hart in "Icarus" (vol 33, pp23 - 39, 1978) for an explanation.     */
+        X/*   This equation is Hart's eq.3.                                          */
+        X/*   I have modified it slightly using constants and relationships from     */
+        X/*   Glass's book "Introduction to Planetary Geology", p.46.                */
+        X/*   The 'CLOUD_COVERAGE_FACTOR' is the amount of surface area on Earth     */
+        X/*   covered by one Kg. of cloud.                                            */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble cloud_fraction(surf_temp, smallest_MW_retained, equat_radius, hyd_fraction)
+        Xdouble surf_temp, smallest_MW_retained, equat_radius,
+        X     hyd_fraction;
+        X{
+        X     double water_vapor_in_kg, fraction, surf_area, hydro_mass;
+        X
+        X     if (smallest_MW_retained > WATER_VAPOR)
+        X          return(0.0);
+        X     else
+        X     {
+        X          surf_area = 4.0 * PI * pow2(equat_radius);
+        X          hydro_mass = hyd_fraction * surf_area * EARTH_WATER_MASS_PER_AREA;
+        X          water_vapor_in_kg = (0.00000001 * hydro_mass) * exp(Q2_36 * (surf_temp - 288.0));
+        X          fraction = CLOUD_COVERAGE_FACTOR * water_vapor_in_kg / surf_area;
+        X          if (fraction >= 1.0)
+        X               return(1.0);
+        X          else
+        X               return(fraction);
+        X     }
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   Given the surface temperature of a planet (in Kelvin), this function   */
+        X/*   returns the fraction of the planet's surface covered by ice.  This is  */
+        X/*   Fogg's eq.24.  See Hart[24] in Icarus vol.33, p.28 for an explanation. */
+        X/*   I have changed a constant from 70 to 90 in order to bring it more in   */
+        X/*   line with the fraction of the Earth's surface covered with ice, which  */
+        X/*   is approximatly .016 (=1.6%).                                          */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble ice_fraction(hyd_fraction, surf_temp)
+        Xdouble hyd_fraction, surf_temp;
+        X{
+        X     double temp;
+        X
+        X     if (surf_temp > 328.0)
+        X          surf_temp = 328.0;
+        X     temp = pow(((328.0 - surf_temp) / 90.0),5.0);
+        X     if (temp > (1.5 * hyd_fraction))
+        X          temp = (1.5 * hyd_fraction);
+        X     if (temp >= 1.0)
+        X          return(1.0);
+        X     else
+        X          return(temp);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  This is Fogg's eq.19.  The ecosphere radius is given in AU, the orbital */
+        X/*  radius in AU, and the temperature returned is in Kelvin.                    */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble eff_temp(ecosphere_radius, orb_radius, albedo)
+        Xdouble ecosphere_radius, orb_radius, albedo;
+        X{
+        X     return(sqrt(ecosphere_radius / orb_radius)
+        X            * pow1_4((1.0 - albedo) / 0.7)
+        X            * EARTH_EFFECTIVE_TEMP);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*  This is Fogg's eq.20, and is also Hart's eq.20 in his "Evolution of     */
+        X/*  Earth's Atmosphere" article.  The effective temperature given is in     */
+        X/*  units of Kelvin, as is the rise in temperature produced by the          */
+        X/*  greenhouse effect, which is returned.                                   */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble green_rise(optical_depth, effective_temp, surf_pressure)
+        Xdouble optical_depth, effective_temp, surf_pressure;
+        X{
+        X     double convection_factor;
+        X
+        X     convection_factor = EARTH_CONVECTION_FACTOR * pow1_4(surf_pressure / EARTH_SURF_PRES_IN_MILLIBARS);
+        X     return(pow1_4(1.0 + 0.75 * optical_depth) - 1.0) * effective_temp * convection_factor;
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   The surface temperature passed in is in units of Kelvin.               */
+        X/*   The cloud adjustment is the fraction of cloud cover obscuring each     */
+        X/*   of the three major components of albedo that lie below the clouds.     */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble planet_albedo(water_fraction, cld_fraction, ice_frc, surf_pressure)
+        Xdouble water_fraction, cld_fraction, ice_frc, surf_pressure;
+        X{
+        X     double rock_fraction, cloud_adjustment, components, cloud_part,
+        X     rock_part, water_part, ice_part;
+        X
+        X     rock_fraction = 1.0 - water_fraction - ice_frc;
+        X     components = 0.0;
+        X     if (water_fraction > 0.0)
+        X          components = components + 1.0;
+        X     if (ice_frc > 0.0)
+        X          components = components + 1.0;
+        X     if (rock_fraction > 0.0)
+        X          components = components + 1.0;
+        X     cloud_adjustment = cld_fraction / components;
+        X     if (rock_fraction >= cloud_adjustment)
+        X          rock_fraction = rock_fraction - cloud_adjustment;
+        X     else
+        X          rock_fraction = 0.0;
+        X     if (water_fraction > cloud_adjustment)
+        X          water_fraction = water_fraction - cloud_adjustment;
+        X     else
+        X          water_fraction = 0.0;
+        X     if (ice_frc > cloud_adjustment)
+        X          ice_frc = ice_frc - cloud_adjustment;
+        X     else
+        X          ice_frc = 0.0;
+        X     cloud_part = cld_fraction * about(CLOUD_ALBEDO,0.2);
+        X     if (surf_pressure == 0.0)
+        X          rock_part = rock_fraction * about(ROCKY_AIRLESS_ALBEDO,0.3);
+        X     else
+        X          rock_part = rock_fraction * about(ROCKY_ALBEDO,0.1);
+        X     water_part = water_fraction * about(WATER_ALBEDO,0.2);
+        X     if (surf_pressure == 0.0)
+        X          ice_part = ice_frc * about(AIRLESS_ICE_ALBEDO,0.4);
+        X     else
+        X          ice_part = ice_frc * about(ICE_ALBEDO,0.1);
+        X     return(cloud_part + rock_part + water_part + ice_part);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   This function returns the dimensionless quantity of optical depth,     */
+        X/*   which is useful in determining the amount of greenhouse effect on a    */
+        X/*   planet.                                                                */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xdouble opacity(molecular_weight, surf_pressure)
+        Xdouble molecular_weight, surf_pressure;
+        X{
+        X     double optical_depth;
+        X
+        X     optical_depth = 0.0;
+        X     if ((molecular_weight >= 0.0) && (molecular_weight < 10.0))
+        X          optical_depth = optical_depth + 3.0;
+        X     if ((molecular_weight >= 10.0) && (molecular_weight < 20.0))
+        X          optical_depth = optical_depth + 2.34;
+        X     if ((molecular_weight >= 20.0) && (molecular_weight < 30.0))
+        X          optical_depth = optical_depth + 1.0;
+        X     if ((molecular_weight >= 30.0) && (molecular_weight < 45.0))
+        X          optical_depth = optical_depth + 0.15;
+        X     if ((molecular_weight >= 45.0) && (molecular_weight < 100.0))
+        X          optical_depth = optical_depth + 0.05;
+        X     if (surf_pressure >= (70.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+        X          optical_depth = optical_depth * 8.333;
+        X     else
+        X          if (surf_pressure >= (50.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+        X               optical_depth = optical_depth * 6.666;
+        X          else
+        X               if (surf_pressure >= (30.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+        X                    optical_depth = optical_depth * 3.333;
+        X               else
+        X                    if (surf_pressure >= (10.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+        X                         optical_depth = optical_depth * 2.0;
+        X                    else
+        X                         if (surf_pressure >= (5.0 * EARTH_SURF_PRES_IN_MILLIBARS))
+        X                              optical_depth = optical_depth * 1.5;
+        X     return(optical_depth);
+        X}
+        X
+        X
+        X/*--------------------------------------------------------------------------*/
+        X/*   The temperature calculated is in degrees Kelvin.                       */
+        X/*   Quantities already known which are used in these calculations:         */
+        X/*         planet->molec_weight                                                    */
+        X/*         planet->surf_pressure                                                    */
+        X/*       R_ecosphere                                                        */
+        X/*         planet->a                                                            */
+        X/*         planet->volatile_gas_inventory                                            */
+        X/*         planet->radius                                                            */
+        X/*         planet->boil_point                                                    */
+        X/*--------------------------------------------------------------------------*/
+        X
+        Xvoid iterate_surface_temp(planet, r_ecosphere)
+        Xdouble r_ecosphere;
+        Xplanet_pointer *planet;
+        X{
+        X     double surf1_temp, effective_temp, greenhs_rise, previous_temp,
+        X     optical_depth, albedo, water, clouds, ice;
+        X
+        X     optical_depth = opacity((*planet)->molec_weight,(*planet)->surf_pressure);
+        X     effective_temp = eff_temp(r_ecosphere,(*planet)->a,EARTH_ALBEDO);
+        X     greenhs_rise = green_rise(optical_depth,effective_temp,(*planet)->surf_pressure);
+        X     surf1_temp = effective_temp + greenhs_rise;
+        X     previous_temp = surf1_temp - 5.0;                /* force the while loop the first time */
+        X     while ((fabs(surf1_temp - previous_temp) > 1.0)) {
+        X               previous_temp = surf1_temp;
+        X               water = hydro_fraction((*planet)->volatile_gas_inventory,(*planet)->radius);
+        X               clouds = cloud_fraction(surf1_temp,(*planet)->molec_weight,(*planet)->radius,water);
+        X               ice = ice_fraction(water,surf1_temp);
+        X               if ((surf1_temp >= (*planet)->boil_point) || (surf1_temp <= FREEZING_POINT_OF_WATER))
+        X                    water = 0.0;
+        X               albedo = planet_albedo(water,clouds,ice,(*planet)->surf_pressure);
+        X               optical_depth = opacity((*planet)->molec_weight,(*planet)->surf_pressure);
+        X               effective_temp = eff_temp(r_ecosphere,(*planet)->a,albedo);
+        X               greenhs_rise = green_rise(optical_depth,effective_temp,(*planet)->surf_pressure);
+        X               surf1_temp = effective_temp + greenhs_rise;
+        X          }
+        X     (*planet)->hydrosphere = water;
+        X     (*planet)->cloud_cover = clouds;
+        X     (*planet)->ice_cover = ice;
+        X     (*planet)->albedo = albedo;
+        X     (*planet)->surf_temp = surf1_temp;
+        X}
+        X
+SHAR_EOF
+if test 25380 -ne "`wc -c < 'enviro.c'`"
+then
+        echo shar: error transmitting "'enviro.c'" '(should have been 25380 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'starform.c'" '(6551 characters)'
+if test -f 'starform.c'
+then
+        echo shar: will not over-write existing file "'starform.c'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'starform.c'
+        X#include        <stdio.h>
+        X#include        <math.h>
+        X#include        <sys/types.h>
+        X#include        <sys/timeb.h>
+        X
+        X#ifdef MSDOS
+        X#include        <stddef.h>
+        X#include        <malloc.h>
+        X#include        <stdlib.h>
+        X#include        <float.h>
+        X#endif
+        X
+        X#include        "const.h"
+        X#include        "structs.h"
+        X#include        "config.h"
+        X
+        X/*  These are all of the global variables used during accretion:  */
+        Xsystem sys;
+        X
+        Xunsigned flag_seed=FALSE;
+        Xunsigned flag_verbose=FALSE;
+        X
+        Xint flag_lisp = FALSE;
+        Xint flag_graphics = FALSE;
+        Xint resonance;
+        X
+        X#ifdef MOONS
+        Xint flag_moons = FALSE;
+        X#endif
+        X
+        X/* externals from C library not elsewhere declared: */
+        Xextern void srand();
+        X
+        Xextern double random_number();
+        Xextern double luminosity();
+        Xextern double stell_dust_limit();
+        Xextern double moon_dust_limit();
+        Xextern planet_pointer dist_planetary_masses();
+        Xextern int orb_zone();
+        Xextern double empirical_density();
+        Xextern double volume_density();
+        Xextern double volume_radius();
+        Xextern double kothari_radius();
+        Xextern double period();
+        Xextern double day_length();
+        Xextern int inclination();
+        Xextern double escape_vel();
+        Xextern double accel();
+        Xextern double rms_vel();
+        Xextern double molecule_limit();
+        Xextern double about();
+        Xextern int grnhouse();
+        Xextern double gravity();
+        Xextern double vol_inventory();
+        Xextern double pressure();
+        Xextern double boiling_point();
+        X
+        X#ifdef MOONS
+        Xextern planet_pointer dist_moon_masses();
+        X#endif
+        X
+        X
+        Xvoid init()
+        X{
+        X        struct timeb grap;
+        X        unsigned seed;
+        X
+        X        if (flag_seed)
+        X                seed = flag_seed;
+        X        else {
+        X                ftime(&grap);
+        X                seed = (unsigned)((grap.time%100000)+grap.millitm);
+        X        }
+        X        (void)srand(seed);
+        X        if (flag_lisp)
+        X                printf("(Accrete %s) ; seed: %u\n", "3.1", seed);
+        X        else
+        X                printf("Accrete - V%s; seed= %u\n", "3.1", seed);
+        X}
+        X
+        Xvoid generate_stellar_system()
+        X{
+        X     planet_pointer planet;
+        X     double dust_limit;
+        X
+        X#ifdef MOONS
+        X        planet_pointer moon;
+        X#endif
+        X
+        X     sys.stell_mass_ratio = random_number(0.6,1.3);
+        X     sys.stell_luminosity_ratio = luminosity(sys.stell_mass_ratio);
+        X     dust_limit = stell_dust_limit(sys.stell_mass_ratio);
+        X     sys.inner_planet = dist_planetary_masses(sys.stell_mass_ratio,sys.stell_luminosity_ratio,0.0,dust_limit);
+        X     sys.main_seq_life = 1.0E10 * (sys.stell_mass_ratio / sys.stell_luminosity_ratio);
+        X     if ((sys.main_seq_life >= 6.0E9))
+        X          sys.age = random_number(1.0E9,6.0E9);
+        X     else
+        X          sys.age = random_number(1.0E9,sys.main_seq_life);
+        X     sys.r_ecosphere = sqrt(sys.stell_luminosity_ratio);
+        X     sys.r_greenhouse = sys.r_ecosphere * GREENHOUSE_EFFECT_CONST;
+        X     for (planet=sys.inner_planet; planet != NULL; planet = planet->next_planet)
+        X     {
+        X#ifdef MOONS
+        X          if (flag_moons) {
+        X                  dust_limit = moon_dust_limit(planet->mass, planet->a);
+        X                  planet->first_moon = dist_moon_masses (planet->mass,
+        X                            sys.stell_luminosity_ratio,
+        X                            0.0, dust_limit);
+        X          }
+        X#endif
+        X          planet->orbit_zone = orb_zone(planet->a, sys.stell_luminosity_ratio);
+        X          if (planet->gas_giant)
+        X          {
+        X               planet->density = empirical_density(planet->mass,planet->a,planet->gas_giant, sys.r_ecosphere);
+        X               planet->radius = volume_radius(planet->mass,planet->density);
+        X          }
+        X          else
+        X          {
+        X               planet->radius = kothari_radius(planet->mass,planet->gas_giant,planet->orbit_zone);
+        X               planet->density = volume_density(planet->mass,planet->radius);
+        X          }
+        X          planet->orb_period = period(planet->a,planet->mass,sys.stell_mass_ratio);
+        X          planet->day = day_length(planet->mass,planet->radius,planet->e,
+        X                                   planet->density, planet->a,
+        X                                   planet->orb_period,planet->gas_giant,
+        X                                   sys.stell_mass_ratio, sys.age);
+        X          planet->resonant_period = resonance;
+        X          planet->axial_tilt = inclination(planet->a);
+        X          planet->esc_velocity = escape_vel(planet->mass,planet->radius);
+        X          planet->surf_accel = accel(planet->mass,planet->radius);
+        X          planet->rms_velocity = rms_vel(MOL_NITROGEN,planet->a);
+        X          planet->molec_weight = molecule_limit(planet->mass,planet->radius);
+        X          if ((planet->gas_giant))
+        X          {
+        X               planet->surf_grav = INCREDIBLY_LARGE_NUMBER;
+        X               planet->greenhouse_effect = FALSE;
+        X               planet->volatile_gas_inventory = INCREDIBLY_LARGE_NUMBER;
+        X               planet->surf_pressure = INCREDIBLY_LARGE_NUMBER;
+        X               planet->boil_point = INCREDIBLY_LARGE_NUMBER;
+        X               planet->hydrosphere = INCREDIBLY_LARGE_NUMBER;
+        X               planet->albedo = about(GAS_GIANT_ALBEDO,0.1);
+        X               planet->surf_temp = INCREDIBLY_LARGE_NUMBER;
+        X          }
+        X          else
+        X          {
+        X               planet->surf_grav = gravity(planet->surf_accel);
+        X               planet->greenhouse_effect = grnhouse(planet->orbit_zone,planet->a,sys.r_greenhouse);
+        X               planet->volatile_gas_inventory = vol_inventory(planet->mass,planet->esc_velocity,planet->rms_velocity,sys.stell_mass_ratio,planet->orbit_zone,planet->greenhouse_effect);
+        X               planet->surf_pressure = pressure(planet->volatile_gas_inventory,planet->radius,planet->surf_grav);
+        X               if ((planet->surf_pressure == 0.0))
+        X                    planet->boil_point = 0.0;
+        X               else
+        X                    planet->boil_point = boiling_point(planet->surf_pressure);
+        X               iterate_surface_temp(&(planet), sys.r_ecosphere);
+        X          }
+        X#ifdef MOONS
+        X     for (moon=planet->first_moon; moon != NULL; moon = moon->next_planet)
+        X     {
+        X     }
+        X#endif
+        X   }
+        X}
+        X
+        Xvoid
+        Xusage (progname)
+        Xchar *progname;
+        X{
+        X
+        X#ifdef MOONS
+        X        fprintf(stderr, "%s: Usage: %s [-l] [-g] [-m] [-s#] [-v#]\n",
+        X                progname, progname);
+        X#else
+        X        fprintf(stderr, "%s: Usage: %s [-l] [-g] [-s#] [-v#]\n",
+        X                progname, progname);
+        X#endif
+        X        fprintf(stderr, "\t -l = output lisp format\n");
+        X        fprintf(stderr, "\t -g = output graphics format (unimplemented right now)\n");
+        X#ifdef MOONS
+        X        fprintf(stderr, "\t -m = generate moons for each planet\n");
+        X#endif
+        X        fprintf(stderr, "\t -s# = use # as the seed for the random number generator\n");
+        X        fprintf(stderr, "\t -v# = set the verbosity level to # (default is 0)\n");
+        X        exit (1);
+        X}
+        X
+        Xmain (argc, argv)
+        Xint argc;
+        Xchar *argv[];
+        X{
+        X        char *c, *progname;
+        X        int skip;
+        X
+        X        progname = argv[0];
+        X        while (--argc > 0) {
+        X                if ((*++argv)[0] != '-')
+        X                        usage(progname);
+        X                for (c = argv[0]+1, skip=FALSE; (*c != '\0') && (!(skip)); c++)
+        X                        switch (*c)
+        X                        {
+        X                        case 'l':        /* set lisp output */
+        X                                ++flag_lisp;
+        X                                break;
+        X                        case 'g':        /* display graphically */
+        X                                ++flag_graphics;
+        X                                break;
+        X#ifdef MOONS
+        X                        case 'm':        /* generate moons for planets */
+        X                                ++flag_moons;
+        X                                break;
+        X#endif
+        X                        case 's':        /* set random seed */
+        X                                flag_seed = (unsigned) atoi(&(*++c));
+        X                                skip = TRUE;
+        X                                break;
+        X                        case 'v':        /* increment verbosity */
+        X                                flag_verbose = (unsigned) atoi(&(*++c));
+        X                                skip = TRUE;
+        X                                break;
+        X                        default:
+        X                        case '?':
+        X                                usage(progname);
+        X                        }
+        X        }
+        X        init();
+        X        generate_stellar_system();
+        X        display_system(&sys);
+        X        return(0);
+        X}
+        X
+SHAR_EOF
+if test 6551 -ne "`wc -c < 'starform.c'`"
+then
+        echo shar: error transmitting "'starform.c'" '(should have been 6551 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'utils.c'" '(1075 characters)'
+if test -f 'utils.c'
+then
+        echo shar: will not over-write existing file "'utils.c'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'utils.c'
+        X#include        <math.h>
+        X#include        "config.h"
+        X#include        "const.h"
+        X
+        X/*----------------------------------------------------------------------*/
+        X/*  This function returns a random real number between the specified    */
+        X/* inner and outer bounds.                                              */
+        X/*----------------------------------------------------------------------*/
+        X
+        Xdouble random_number(inner, outer)
+        Xdouble inner, outer;
+        X{
+        X     double range;
+        X
+        X     range = outer - inner;
+        X     return((((double)rand()) / (double)(RAND_MAX)) * range + inner);
+        X}
+        X
+        X
+        X/*----------------------------------------------------------------------*/
+        X/*   This function returns a value within a certain variation of the    */
+        X/*   exact value given it in 'value'.                                   */
+        X/*----------------------------------------------------------------------*/
+        X
+        Xdouble about(value, variation)
+        Xdouble value, variation;
+        X{
+        X     return(value + (value * random_number(-variation,variation)));
+        X}
+        X
+        Xdouble random_eccentricity()
+        X{
+        X     return(1.0 - pow(random_number(0.0, 1.0),ECCENTRICITY_COEFF));
+        X}
+SHAR_EOF
+if test 1075 -ne "`wc -c < 'utils.c'`"
+then
+        echo shar: error transmitting "'utils.c'" '(should have been 1075 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'Makefile'" '(585 characters)'
+if test -f 'Makefile'
+then
+        echo shar: will not over-write existing file "'Makefile'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'Makefile'
+        X# Makefile for "starform", a star system and planet generator
+        XCC = /bin/cc
+        XCFLAGS = -O
+        XOBJS = starform.o accrete.o enviro.o display.o utils.o
+        XLIBS = -lm
+        XSHARFILES = README starform.mak Makefile starform.c accrete.c enviro.c display.c utils.c const.h structs.h config.h
+        X
+        X
+        X.c:
+        X        $(CC) $(CFLAGS) -c $@.c
+        X
+        Xstarform: $(OBJS)
+        X        $(CC) $(CFLAGS) -o starform $(OBJS) $(LIBS)
+        X        @echo "starform made "
+        X
+        Xclean:
+        X        rm -f *.o *.ln *.x
+        X
+        Xclobber:
+        X        rm -f *.o *.ln *.x starform
+        X
+        Xlint:
+        X        lint -abch starform.c accrete.c enviro.c display.c utils.c
+        X
+        Xshar: $(SHARFILES)
+        X        shar -abcCs $(SHARFILES) >starform.shar
+        X
+SHAR_EOF
+echo shar: 1 control character may be missing from "'Makefile'"
+if test 585 -ne "`wc -c < 'Makefile'`"
+then
+        echo shar: error transmitting "'Makefile'" '(should have been 585 characters)'
+fi
+fi # end of overwriting check
+echo shar: extracting "'starform.mak'" '(912 characters)'
+if test -f 'starform.mak'
+then
+        echo shar: will not over-write existing file "'starform.mak'"
+else
+sed 's/^        X//' << \SHAR_EOF > 'starform.mak'
+        X# This is a makefile for the Microsoft QuickC version of "starform",
+        X# a star system and planet generator
+        X
+        X# To make a version for debugging or tracing, uncomment this line:
+        X#CFLAGS = /Zi
+        X
+        X# To make a normal optimized version, uncomment this line:
+        XCFLAGS = /Ox
+        X
+        X# To make a codeview-debuggable executable, uncomment this line:
+        X#LINKFLAGS = /CODEVIEW
+        X
+        X# This line should always be uncommented:
+        XOBJS = accrete.obj enviro.obj display.obj utils.obj
+        X
+        X
+        Xaccrete.obj: accrete.c const.h structs.h config.h
+        X        qcl /c $(CFLAGS) accrete.c
+        X
+        Xenviro.obj: enviro.c const.h structs.h config.h
+        X        qcl /c $(CFLAGS) enviro.c
+        X
+        Xdisplay.obj: display.c const.h structs.h config.h
+        X        qcl /c $(CFLAGS) display.c
+        X
+        Xutils.obj: utils.c const.h config.h
+        X        qcl /c $(CFLAGS) utils.c config.h
+        X
+        Xstarform.obj: starform.c const.h structs.h config.h
+        X        qcl /c $(CFLAGS) starform.c
+        X
+        Xstarform.exe: starform.obj $(OBJS)
+        X        link $(LINKFLAGS) starform.obj $(OBJS);
+        X
+SHAR_EOF
+if test 912 -ne "`wc -c < 'starform.mak'`"
+then
+        echo shar: error transmitting "'starform.mak'" '(should have been 912 characters)'
+fi
+fi # end of overwriting check
+#        End of shell archive
+exit 0
+----------------------------------------------------------------------------
+
+Wednesday, 28 July 1993 23:13:36 UTC+1 - Marc-alex Vezina, Ianus Pub.:
+When sending the Dream Pod 9 writer's guidelines to those who requested
+it, a few bounced and came back. If you are interested in receiving them
+or asked for them and didn't get them, just Email to this address:
+kgn...@cs.concordia.ca <> (Marc A. Vezina)
+
+Sorry for the waste of bandwidth. :)
+
++---------------------+---------------------------------+
+| Marc A. Vezina      |`Business is a combination of war|
+|---------------------| and sport.'                     |
+| Editor, Dream Pod 9 |          -The Jovian Chronicles |
++---------------------+---------------------------------+

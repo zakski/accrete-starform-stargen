@@ -1,0 +1,58 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.design/ElOOYuy_wSM
+TITLE: Solar system generator? 
+
+----------------------------------------------------------------------------
+
+Friday, 25 February 1994 16:31:34 UTC - Daniel Myers:
+Howdy,
+A while back I came across a unix program that generated random solar
+systems.  Alas, I managed to stupidly erase it from my account and
+cannot recall where to find it.  I believe the name was something like
+"system" or "stellar" or maybe "accrete".
+
+Anyone out there know anything of the sort?
+
+Thanx, 
+
+- DM
+----------------------------------------------------------------------------
+
+Saturday, 26 February 1994 21:43:01 UTC - Ian Matthew Burrell:
+Daniel Myers (my...@usceast.cs.scarolina.edu <>) wrote:
+: Howdy,
+
+
+- show quoted text -: A while back I came across a unix program that generated random solar
+: systems.  Alas, I managed to stupidly erase it from my account and
+: cannot recall where to find it.  I believe the name was something like
+: "system" or "stellar" or maybe "accrete".
+
+- show quoted text -: Anyone out there know anything of the sort?
+: Thanx, 
+
+: - DM
+
+
+Sure do.   The program was originally called accrete and was written
+up in some journals.  I basically simualted the formation of the
+planets by accretion of dust and gas.  Gave fairly "realistic"
+results.  Someone ported it to C and added some other features that
+determined the climate and some other attributes.  This was either
+called starform or system.  
+
+I have a copy somewhere around here (I hope it didn't get fried in the
+hard disk crash).  I have been trying to update and reorganize the
+code and port it to Windows.  If you desire, I could try and mail it
+to you.  There is also a mailing list (universe) that deals with this
+subject.  Send mail to universe...@news.clark.net <> or
+list...@news.clark.net <>.  There is also an associated ftp site,
+ftp.clark.net <http://ftp.clark.net>.  Good hunting.
+
+ - Ian
+
+
+--
+************************************------------------------------------
+Ian Burrell                         ibur...@leland.stanford.edu <>
+No matter how much you know, you will never know enough.
+------------------------------------************************************

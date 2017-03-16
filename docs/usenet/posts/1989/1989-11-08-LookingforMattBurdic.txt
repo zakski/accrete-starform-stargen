@@ -1,0 +1,24 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/3IU-pYKUOb8
+TITLE: Looking for Matt Burdick 
+
+----------------------------------------------------------------------------
+
+Wednesday, 8 November 1989 17:44:31 UTC - Darryl Okahata:
+In rec.games.programmer, inb@creare.creare.UUCP (Ian Brown) writes:
+> I'm looking for Matt Burdick (his address used to be
+> burdick@hpindl1%hp-sde.sde.hp.com <http://hp-sde.sde.hp.com>), but that no longer seems to work.  I
+> got a copy of his 'starform' program quite a while back and wanted to
+> talk with him about it.
+
+     I don't know him, but his mail address is still valid.  However,
+you have the "%" and "@" characters reversed.  Try:
+
+        burdick...@hp-sde.sde.hp.com <>
+
+     -- Darryl Okahata
+        UUCP: {hplabs!, hpcea!, hpfcla!} hpnmd!darrylo
+        Internet: darryl...@hpcea.HP.COM <>
+
+DISCLAIMER: this message is the author's personal opinion and does not
+constitute the support, opinion or policy of Hewlett-Packard or of the
+little green men that have been following him all day.

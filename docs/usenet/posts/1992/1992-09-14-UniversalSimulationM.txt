@@ -1,0 +1,59 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp.misc/pcQvnBxdhrg
+TITLE: Universal Simulation Mailing List FTP site 
+
+----------------------------------------------------------------------------
+
+Monday, 14 September 1992 20:55:35 UTC+1 - Eric Chris Garrison:
+I found the following on the FTP site list.  It says it is defunct,
+and I *really* would like to get ahold of all of the files listed
+for that FTP site.  Is there a way to get it (is there another site,
+does anyone who got stuff from there still have some of the stuff)???
+Any information/leads would be greatly appreciated.
+
+thanks,
+
+Eric
+
+
+Name:           Universal Simulation Mailing List (usml) ftp site
+Address:        topgun.agps.lanl.gov <http://topgun.agps.lanl.gov> (192.12.184.4)
+Status:         Apparently Defunct
+Info Updated:   12-Feb-1992
+Notes:          Once upon a time, some net.people made a joke about writing a
+                program or two that simulated the Universe. Ho ho ho.  Pretty
+                funny. But other people took them seriously and thus was born
+                the short lived mailing list called usml, and thus were written
+                a number of programs which simulated various parts of the
+                universe. There are subsector generators for Traveller, star
+                system generators using several methods, and plate tectonic
+                generators to generate random land masses (not very pretty).
+
+                Here are the contents of pub/usml:
+
+                Actual                  accrete.c               shebs
+                Archive                 accretion.amiga         siod.c
+                Digests                 accretion.src           starcul.shar
+                List                    archive                 starform
+                OtherSun.src            cellsim_1.5.tar.Z       system.arc
+                Psychohistory           fractal.c               traveller.tar
+                README                  plates.c                xc5.1-tar.Z
+                Universe                references
+-- 
+Eric Chris Garrison                              UCS Support Center
+er...@ucs.indiana.edu <>                              Indiana University
+----------------------------------------------------------------------------
+
+Tuesday, 15 September 1992 17:02:56 UTC+1 - Michael Polis:
+In article <BuL3C...@usenet.ucs.indiana.edu <>>, er...@bronze.ucs.indiana.edu <> (Eric Chris Garrison) writes:
+|> I found the following on the FTP site list.  It says it is defunct,
+|> and I *really* would like to get ahold of all of the files listed
+|> for that FTP site.  Is there a way to get it (is there another site,
+|> does anyone who got stuff from there still have some of the stuff)???
+|> 
+|> Any information/leads would be greatly appreciated.
+Well, the ftp site is timing out, and "archie usml" doesn't list anything,
+so it looks like the archive is gone.  If anyone is interested in
+reconstructing the archie, I have two of the files, fractal.c and plates.c,
+which both generate terrain.  Plates.c has been hacked on to make the output
+look better (without much success).
+Mike Polis                m...@maps.cs.cmu.edu <>
