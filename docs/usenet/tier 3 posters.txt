@@ -1,0 +1,454 @@
+Darryl Okahata
+newsgroup: rec.games.programmer
+First Archived Msg: Wednesday, 8 November 1989 17:44:31 UTC
+
+background:
+Helped point Ian Brown in the direction of Matt Burdick, who wrote starform
+
+Peter Cooper
+newsgroup: rec.games.programmer
+First Archived Msg: Friday, 8 November 1991 03:40:03 UTC
+
+background:
+was looking for a stellar formation model for use in a game
+
+Guy Garnett
+newsgroup: rec.games.programmer
+First Archived Msg: Tuesday, 12 November 1991 03:17:58 UTC
+
+background:
+did a good bit of his own research for a star-system generator for a science-fiction game.
+
+Kelly Alexander
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 11 March 1992 21:37:42 UTC
+
+background:
+was looking for an accretion program variation that will take some initial conditions, and then generate a solar system from them
+
+Bradley B Kohn
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 23 July 1992 20:21:11 UTC+1
+
+background:
+was looking a computer program to create detailed maps for frps.
+
+Andrew G Hummell
+newsgroup: rec.games.frp.misc
+First Archived Msg: Friday, 24 July 1992 13:41:39 UTC+1
+
+background:
+Responded to Bradley B Kohn
+
+Alec Habig
+newsgroup: rec.games.frp.misc
+First Archived Msg: Friday, 24 July 1992 17:43:38 UTC+1
+
+background:
+Responded to Bradley B Kohn
+
+Ed King
+newsgroup: rec.games.frp.misc
+First Archived Msg: Friday, 24 July 1992 21:21:07 UTC+1
+
+background:
+Responded to Bradley B Kohn
+
+William A. Calderwood
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 28 July 1992 19:53:59 UTC+1
+
+background:
+Interested in Andrew G Hummell's response to Bradley B Kohn
+
+Arild Toerum
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 8 May 1993 16:22:10 UTC+1
+
+background:
+looking for a list a number of relatively proximate stars which may possibly have habitable planets
+
+Matt G Gabin
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 8 May 1993 19:03:55 UTC+1
+
+background:
+Responded to Arild Toerum
+
+Chris Johnson
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 10 May 1993 10:02:02 UTC+1
+
+background:
+Responded to Arild Toerum
+
+David K Fraser
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 10 May 1993 12:02:06 UTC+1
+
+background:
+Responded to Chris Johnson & Arild Toerum
+
+Del Cotter
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 10 May 1993 13:41:12 UTC+1
+Last Archived Msg: Friday, 14 May 1993 23:40:23 UTC+1
+
+background:
+Responded to Arild Toerum
+Responded to John Redford
+
+Joseph Hall
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 12 May 1993 04:51:38 UTC+1
+
+background:
+Responded to Chris Johnson & Arild Toerum
+
+Dave Garnett
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 12 May 1993 11:43:22 UTC+1
+
+background:
+Responded to Joseph Hall
+
+Robert Hearn
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 12 May 1993 19:49:53 UTC+1
+
+background:
+Responded to Arild Toerum
+
+John Redford
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 13 May 1993 22:16:04 UTC+1
+
+background:
+Responded to Del Cotter
+
+Bruce Scott  
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 15 May 1993 15:04:52 UTC+1
+Last Archived Msg: Tuesday, 18 May 1993 13:49:45 UTC+1
+
+background:
+Responded to Arild Toerum
+Responded to Paul F. Dietz
+
+James Davis Nicoll
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 15 May 1993 15:56:52 UTC+1
+Last Archived Msg: Wednesday, 7 February 1996 08:00:00 UTC
+
+background:
+Responded to Arild Toerum
+Responded to Paul F. Dietz
+Responded to Mike C
+
+Paul F. Dietz
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 16 May 1993 00:15:03 UTC+1
+Last Archived Msg: Tuesday, 18 May 1993 01:49:26 UTC+1
+
+background:
+Responded to James Davis Nicoll
+
+Ross Smith
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 16 May 1993 01:40:59 UTC+1
+
+background:
+Responded to Chris Johnson
+
+S. Arrowsmith
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 18 May 1993 16:08:36 UTC+1
+
+background:
+Responded to James Davis Nicoll
+
+Travis Corcoran
+newsgroup: rec.arts.sf.science
+First Archived Msg: Friday, 14 May 1993 19:18:56 UTC+1
+Last Archived Msg: Monday, 17 May 1993 11:45:26 UTC+1
+
+background:
+Responded to Arild Toerum
+
+Neelakantan Krishnaswami
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 1 October 1994 16:50:36 UTC+1
+
+background:
+Responded to Robert W. Rapplean
+
+Anders Sandberg
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 1 October 1994 17:31:18 UTC+1
+Last Archived Msg: Tuesday, 4 October 1994 11:56:17 UTC+1
+
+background:
+Responded to Robert W. Rapplean
+Has knowledge of Accrete.
+Responded to Richard Baker
+
+E. Hildaur Neilsen, Jr.
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 1 October 1994 19:13:20 UTC+1
+
+background:
+Responded to Anders Sandberg
+
+Richard Baker
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 3 October 1994 17:14:45 UTC+1
+
+background:
+Responded to Anders Sandberg
+
+Craig William Jackson
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 5 October 1994 02:49:54 UTC+1
+
+background:
+Responded to Robert W. Rapplean
+
+Tim Poston
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 6 October 1994 12:00:10 UTC+1
+
+background:
+Responded to Robert W. Rapplean
+
+Michael H. Start
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 26 April 1995 08:00:00 UTC+1
+
+background:
+interested in planetary generators
+
+Ken Walton
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 27 April 1995 08:00:00 UTC+1
+
+background:
+Responded to Michael H. Start
+Suggested Stargen for GURPS Space
+
+Andrew Philip Fabbro
+newsgroup: rec.games.frp.misc
+First Archived Msg: Friday, 28 April 1995 08:00:00 UTC+1
+
+background:
+Responded to Michael H. Start
+
+Justin Mohareb
+newsgroup: rec.games.frp.misc
+First Archived Msg: FFriday, 28 April 1995 08:00:00 UTC+1
+
+background:
+Responded to Michael H. Start
+
+Skeksis
+newsgroup: rec.games.frp.misc
+First Archived Msg: Friday, 5 May 1995 08:00:00 UTC+1
+
+background:
+Responded to Michael H. Start
+
+Dave Hardenbrook
+newsgroup: sci.astro
+First Archived Msg: Friday, 5 May 1995 08:00:00 UTC+1
+
+background:
+interested in accrete (the Carl Sagan Version)
+
+Jonathan Silverlight
+newsgroup: sci.astro
+First Archived Msg: Thursday, 1 June 1995 08:00:00 UTC+1
+
+background:
+had Steve Gilham's copy
+
+Seppo Kalevi Halonen
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 6 June 1995 08:00:00 UTC+1
+Last Archived Msg: Saturday, 10 June 1995 08:00:00 UTC+1
+
+background:
+interested in solar system generator algorithm
+
+John Robert Williams
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 6 June 1995 08:00:00 UTC+1
+
+background:
+Responded to Seppo Kalevi Halonen
+
+Dave Menconi
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 7 June 1995 08:00:00 UTC+1
+
+background:
+Responded to Seppo Kalevi Halonen
+
+Thomas Schruefer
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 7 June 1995 08:00:00 UTC+1
+
+background:
+Responded to Seppo Kalevi Halonen
+suggested a website
+
+dtulloh
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 7 June 1995 08:00:00 UTC+1
+
+background:
+Responded to Seppo Kalevi Halonen
+
+Robert Paige Rendell
+newsgroup: sci.astro
+First Archived Msg: Thursday, 8 June 1995 08:00:00 UTC+1
+
+background:
+Responded to Seppo Kalevi Halonen
+
+Timothy Cain
+newsgroup: sci.astro
+First Archived Msg: Thursday, 8 June 1995 08:00:00 UTC+1
+
+background:
+Responded to Seppo Kalevi Halonen
+
+Dave
+newsgroup: sci.astro
+First Archived Msg: Monday, 12 June 1995 08:00:00 UTC+1
+
+background:
+Responded to Seppo Kalevi Halonen
+
+Tom Salyers
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 5 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+Luc Maillet
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 9 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+J.W.Thomas
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 10 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+Carl D. Cravens
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 10 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+Leif Kj{\o}nn{\o}y
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 11 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+Stephan Zielinski
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 11 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+David C. Hall
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 11 October 1995 08:00:00 UTC+1
+Last Archived Msg: Friday, 20 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+Guy Hoyle
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 16 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+
+Mike C
+newsgroup: rec.arts.sf.science
+First Archived Msg: Friday, 2 February 1996 08:00:00 UTC
+
+background:
+looking for info on torchships
+
+Wayne Throop
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 3 February 1996 08:00:00 UTC
+
+background:
+Responded to Mike C
+
+Andrew C. Plotkin
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 3 February 1996 08:00:00 UTC
+
+background:
+Responded to Mike C
+
+Julian Treadwell
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 6 February 1996 08:00:00 UTC
+
+background:
+Responded to Mike C
+
+the ROYster-Meister
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 7 February 1996 08:00:00 UTC
+Last Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
+
+background:
+Responded to Mike C
+
+Cliff L. Biffle
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
+
+background:
+Responded to Mike C
+
+Jeff Suzuki
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
+Last Archived Msg: Tuesday, 20 February 1996 08:00:00 UTC
+
+background:
+Responded to Cliff L. Biffle
+Responded to the ROYster-Meister
+Responded to Edward V. Wright
+
+Bronis Vidugiris
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
+
+background:
+Responded to Mike C
+
+Andrew Stephenson
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 13 February 1996 08:00:00 UTC
+
+background:
+responded to Erik Max Francis
+

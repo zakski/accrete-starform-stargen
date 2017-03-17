@@ -1,0 +1,323 @@
+Ian Brown
+newsgroup: rec.games.programmer
+First Referenced: Wednesday, 8 November 1989 17:44:31 UTC
+First Archived Msg: Friday, 15 November 1991 18:55:03 UTC
+
+background:
+Had a copy of the starform program
+Wanted to get in touch with Burdick
+
+Nicolai Shapero
+newsgroup: rec.games.frp
+First Archived Msg: Thursday, 7 February 1991 14:26:45 UTC
+
+background:
+wrote Other Suns RPG
+Had a copy of the accrete/starform program (got from Sean Malloy)
+
+Walter Milliken
+newsgroup: rec.games.frp
+First Archived Msg: Wednesday, 20 February 1991 23:14:57 UTC
+
+background:
+author of usernet GURPS digest
+aware of usml
+had copy of accrete?
+
+Michael Polis
+newsgroup: rec.games.frp.misc
+First Archived Msg: Sunday, 26 July 1992 18:26:57 UTC+1
+Last Archived Msg: Tuesday, 15 September 1992 17:02:56 UTC+1
+
+background:
+Aware of / Interested in usml ftp site
+Responded to Bradley B Kohn
+
+Kieran Mullen
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 27 July 1992 16:29:54 UTC+1
+
+background:
+Aware of / Interested in usml ftp site
+Responded to Bradley B Kohn
+
+Eric Chris Garrison
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 14 September 1992 20:55:35 UTC+1
+
+background:
+Aware of / Interested in usml ftp site
+
+Mark Gellis
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 23 March 1993 13:45:54 UTC
+
+background:
+looking for accrete
+
+Timothy M. Stark / Tim Stark
+newsgroup: sci.astro, rec.games.programmer
+First Archived Msg: Tuesday, 23 March 1993 22:43:43 UTC
+Last Archived Msg: Tuesday, 21 September 1993 01:25:03 UTC+1
+
+background:
+looking for Universe generators (like accrete or the stuff in usml)
+interested in usml ftp site data.
+planned to put usml ftp cache on his anonymous ftp site
+
+Stuart C. Squibb
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 15 May 1993 10:27:05 UTC+1
+
+background:
+interested in planet generation simulators
+
+Bryan Feir
+newsgroup: rec.games.frp.misc, comp.sources.wanted
+First Archived Msg: Wednesday, 9 June 1993 22:36:26 UTC+1
+Last Archived Msg: Thursday, 8 July 1993 20:15:57 UTC+1
+
+background:
+Found a version of accrete on punisher.caltech
+Had same version that ste...@arc.ug.eds.com had
+Was Looking for most recent version / moon handling version
+
+David M. Swain
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 17 August 1993 10:00:00 UTC+1
+
+background:
+Was looking for the source code for Accrete
+
+Ralph Wirthlin
+newsgroup: rec.games.programmer
+First Archived Msg: Monday, 20 September 1993 20:08:26 UTC+1
+
+background:
+Acquired usml ftp site data.
+
+Geoff Thomas
+newsgroup: rec.games.programmer
+First Archived Msg: Tuesday, 21 September 1993 01:25:03 UTC+1
+Last Archived Msg: Saturday, 25 September 1993 07:13:35 UTC+1
+
+background:
+interested in usml ftp site data.
+
+Greg Oberfield
+newsgroup: rec.games.programmer
+First Archived Msg: Tuesday, 21 September 1993 01:25:03 UTC+1
+
+background:
+interested in usml ftp site data.
+interested in restarting usml mailing list
+
+Brent Josep Lehman
+newsgroup: comp.lang.pascal, alt.sci.planetary
+First Archived Msg: Wednesday, 2 February 1994 02:36:39 UTC
+Last Archived Msg: Thursday, 17 March 1994 23:18:16 UTC
+
+background:
+interested in accrete written in pascal
+acquired a copy of accrete
+experimenting with variables
+
+Jeff Schoner
+newsgroup: comp.lang.pascal
+First Archived Msg: Friday, 4 February 1994 23:14:00 UTC
+
+background:
+interested in accrete written in pascal
+
+Daniel Myers
+newsgroup: rec.games.design
+First Archived Msg: Friday, 25 February 1994 16:31:34 UTC
+
+background:
+interested in accrete
+
+Allen Waddell
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 4 June 1994 16:03:02 UTC+1
+Last Archived Msg: Saturday, 4 February 1995 15:11:55 UTC
+
+background:
+interested in accrete (looking from June '94 to Feb '95 at least)
+
+Robert W. Rapplean
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 1 October 1994 13:26:04 UTC+1
+Last Archived Msg: Sunday, 22 January 1995 19:44:50 UTC
+
+background:
+interested in high gravity worlds
+interested in accrete
+
+Callum Robert Finlayson
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 6 December 1994 17:37:09 UTC
+
+background:
+interested in accrete
+
+Christopher Neufeld
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 5 February 1995 05:00:07 UTC
+
+background:
+had possession of an accrete copy and uploaded it to ftpupon a request
+
+Soenke Behrens
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 19 February 1995 23:51:31 UTC
+
+background:
+interested in accrete
+has a copy?
+
+Alfred A. Aburto
+newsgroup: sci.astro
+First Archived Msg: Thursday, 2 March 1995 03:59:23 UTC
+
+background:
+has a copy (posted by Philip Hodder?)
+
+Ronald Florence
+newsgroup: sci.astro
+First Archived Msg: Thursday, 2 March 1995 13:28:26 UTC
+
+background:
+has a copy (posted by Philip Hodder?)
+posted a fix to code?
+
+Mr. Tines
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 27 April 1995 08:00:00 UTC+1
+
+background:
+Responded to Michael H. Start
+Suggested Acrete
+
+Jim Rittenhouse
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 7 June 1995 08:00:00 UTC+1
+
+background:
+interested in accrete
+
+sl...@cc.usu.edu
+newsgroup: rec.games.programmer
+First Archived Msg: Thursday, 10 August 1995 08:00:00 UTC+1
+
+background:
+interested in accrete /usml
+
+Brian & Lori Henderson
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 5 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+mention Other Suns as alternative to accrete (pretty sure Shapero ussed accrete in some cpacity though)
+
+Larry Smith
+newsgroup: rec.games.frp.misc
+First Archived Msg: Friday, 6 October 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+posssibly has a copy of accrete based on other intel
+
+Douglas Jackson
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 18 October 1995 08:00:00 UTC+1
+Last Archived Msg: Thursday, 8 June 1995 08:00:00 UTC+1
+
+background:
+talking about stellar system generation
+mentions SSG (Solar System Generator) based on GURPS
+
+Ling Lo
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 22 October 1995 08:00:00 UTC+1
+
+background:
+looking for an accrete program
+
+Leonard Erickson
+newsgroup: rec.arts.sf.science
+First Archived Msg: Friday, 9 February 1996 08:00:00 UTC
+Last Archived Msg: Tuesday, 13 February 1996 08:00:00 UTC
+
+background:
+interested in accrete
+plans to port accrete
+
+Joel Hunter Crook
+newsgroup: rec.arts.sf.science, alt.sci.planetary
+First Archived Msg: Saturday, 10 February 1996 08:00:00 UTC
+Last Archived Msg: Friday, 1 March 1996 08:00:00 UTC
+
+background:
+interested in accrete
+
+Edward V. Wright
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 11 February 1996 08:00:00 UTC
+Last Archived Msg: Tuesday, 20 February 1996 08:00:00 UTC
+
+background:
+interested in accrete
+
+Vicke Dovheden
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 13 February 1996 08:00:00 UTC
+Last Archived Msg: Wednesday, 14 February 1996 08:00:00 UTC
+
+background:
+responded to Erik Max Francis
+interested in accrete
+
+David Lowe
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 14 February 1996 08:00:00 UTC
+
+background:
+interested in accrete
+
+Stephen D. Schaper
+newsgroup: alt.sci.planetary
+First Archived Msg: Friday, 1 March 1996 08:00:00 UTC
+
+background:
+interested in accrete
+
+Das Miller
+newsgroup: sci.astro
+First Archived Msg: Monday, 15 April 1996 08:00:00 UTC+1
+Last Archived Msg: Wednesday, 17 April 1996 08:00:00 UTC+1
+
+background:
+interested in accrete
+
+Amara Graps
+newsgroup: sci.astro
+First Archived Msg: Monday, 15 April 1996 08:00:00 UTC+1
+
+background:
+interested in accrete
+
+Frank Henriquez
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 23 April 1996 08:00:00 UTC+1
+Last Archived Msg: Sunday, 28 April 1996 08:00:00 UTC+1
+
+background:
+interested in accrete
+
+Christopher Michael Jones
+newsgroup: sci.astro
+First Archived Msg: Friday, 26 April 1996 08:00:00 UTC+1
+
+background:
+interested in accrete
