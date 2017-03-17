@@ -92,11 +92,12 @@ Responded to Chris Johnson & Arild Toerum
 Del Cotter
 newsgroup: rec.arts.sf.science
 First Archived Msg: Monday, 10 May 1993 13:41:12 UTC+1
-Last Archived Msg: Friday, 14 May 1993 23:40:23 UTC+1
+Last Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
 Responded to John Redford
+Responded to Jim Davies
 
 Joseph Hall
 newsgroup: rec.arts.sf.science
@@ -138,12 +139,13 @@ Responded to Paul F. Dietz
 James Davis Nicoll
 newsgroup: rec.arts.sf.science
 First Archived Msg: Saturday, 15 May 1993 15:56:52 UTC+1
-Last Archived Msg: Wednesday, 7 February 1996 08:00:00 UTC
+Last Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
 Responded to Paul F. Dietz
 Responded to Mike C
+Responded to Lyan
 
 Paul F. Dietz
 newsgroup: rec.arts.sf.science
@@ -452,3 +454,366 @@ First Archived Msg: Tuesday, 13 February 1996 08:00:00 UTC
 background:
 responded to Erik Max Francis
 
+Barbara A Cohen
+newsgroup: sci.astro
+First Archived Msg: Monday, 6 May 1996 08:00:00 UTC+1
+
+background:
+interested in habitable planets
+
+Gordon Clarke
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 8 May 1996 08:00:00 UTC+1
+Last Archived Msg: Friday, 10 May 1996 08:00:00 UTC+1
+
+background:
+responded to Barbara A Cohen
+responded to Stephen D. Schaper
+
+Chris Carrier
+newsgroup: sci.astro
+First Archived Msg: Friday, 10 May 1996 08:00:00 UTC+1
+
+background:
+responded to Barbara A Cohen
+
+Peter Weis
+newsgroup: sci.astro
+First Archived Msg: Sunday, 12 May 1996 08:00:00 UTC+1
+
+background:
+responded to Barbara A Cohen
+
+Ray Tomes
+newsgroup: sci.astro
+First Archived Msg: Monday, 13 May 1996 08:00:00 UTC+1
+
+background:
+responded to Barbara A Cohen
+
+Mark Duffett
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 14 May 1996 08:00:00 UTC+1
+
+background:
+responded to Mike Hammond
+
+Mickey Lane
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 15 May 1996 08:00:00 UTC+1
+
+background:
+responded to Barbara A Cohen
+
+Bill Owen
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 15 May 1996 08:00:00 UTC+1
+
+background:
+responded to Mickey Lane
+
+Tim Patterson
+newsgroup: sci.astro
+First Archived Msg: Thursday, 16 May 1996 08:00:00 UTC+1
+
+background:
+responded to Mickey Lane
+
+Paul Schlyter
+newsgroup: sci.astro
+First Archived Msg: Friday, 17 May 1996 08:00:00 UTC+1
+Last Archived Msg: Monday, 20 May 1996 08:00:00 UTC+1
+
+background:
+responded to Tim Patterson
+responded to Duane Sand
+
+Doug Schiffer
+newsgroup: sci.astro
+First Archived Msg: Friday, 17 May 1996 08:00:00 UTC+1
+
+background:
+responded to Mickey Lane
+
+Duane Sand
+newsgroup: sci.astro
+First Archived Msg:  Saturday, 18 May 1996 08:00:00 UTC+1
+Last Archived Msg: Sunday, 19 May 1996 08:00:00 UTC+1
+
+background:
+responded to Paul Schlyter
+
+Hairy One Kenobi
+newsgroup: sci.astro
+First Archived Msg: Sunday, 19 May 1996 08:00:00 UTC+1
+
+background:
+responded to Gordon Clarke
+
+Chris Marriott
+newsgroup: sci.astro
+First Archived Msg: Sunday, 19 May 1996 08:00:00 UTC+1
+
+background:
+responded to Hairy One Kenobi
+
+K.HAIGH-HUTCHINSON
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 21 May 1996 08:00:00 UTC+1
+
+background:
+responded to Barbara A Cohen
+
+Eric Williams
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 21 May 1996 08:00:00 UTC+1
+
+background:
+responded to Hairy One Kenobi
+
+Craig Berry
+newsgroup: sci.astro, rec.arts.sf.science
+First Archived Msg: Tuesday, 21 May 1996 08:00:00 UTC+1
+Last Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+
+background:
+responded to K.HAIGH-HUTCHINSON
+responded to Dan Goodman
+responded to Tommy the Terrorist
+responded to Steven Thomas
+responded to Julie A.Pascal
+responded to Jim Davies
+responded to John D. Gwinner
+
+Steve Willner
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 22 May 1996 08:00:00 UTC+1
+
+background:
+responded to Duane Sand
+
+Andreas Ekholm
+newsgroup: sci.astro
+First Archived Msg: Wednesday, 22 May 1996 08:00:00 UTC+1
+
+background:
+responded to Duane Sand
+
+Jedidiah Whitten
+newsgroup: sci.astro
+First Archived Msg: Thursday, 23 May 1996 08:00:00 UTC+1
+Last Archived Msg: Tuesday, 28 May 1996 08:00:00 UTC+1
+
+background:
+responded to K.HAIGH-HUTCHINSON
+
+Dave Tholen
+newsgroup: sci.astro
+First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
+
+background:
+responded to Paul Schlyter
+
+John Oliver
+newsgroup: sci.astro
+First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
+
+background:
+responded to K.HAIGH-HUTCHINSON
+
+Dan Goodman
+newsgroup: rec.arts.sf.science
+First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
+Last Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
+
+background:
+responded to Lyan
+responded to Matthew Melmon
+
+Mike Bagneski
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
+
+background:
+responded to Dan Goodman
+
+Tommy the Terrorist
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
+Last Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
+
+background:
+responded to Craig Berry
+responded to Andy Lanagan
+
+Eric Edwards
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
+
+background:
+responded to Lyan
+
+Gary L. Krepps
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+
+background:
+responded to Dan Goodman
+
+Lyan
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+
+background:
+responded to Dan Goodman
+
+Steven Thomas
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+
+background:
+responded to Lyan
+
+Peter Kwangjun Suk
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+Last Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+
+background:
+responded to Lyan
+
+Matthew Melmon
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
+
+background:
+responded to Peter Kwangjun Suk
+responded to Tommy the Terrorist
+
+Julie A.Pascal
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+Last Archived Msg: Thursday, 6 February 1997 08:00:00 UTC
+
+background:
+responded to Steven Thomas
+responded to Henry Spencer
+responded to Del Cotter
+
+Jim Davies
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+Last Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+
+background:
+responded to Craig Berry
+
+Stephen Dedman
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+
+background:
+responded to Eric Edwards
+
+Prof.Faus
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+
+background:
+responded to Matthew Melmon
+
+Julian Flood
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+
+background:
+responded to Eric Edwards
+
+William Burns
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
+
+background:
+responded to Julie A.Pascal
+
+Twisted STISter / Phil Plait
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
+
+background:
+responded to Julie A.Pascal
+
+Ed Chart
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
+
+background:
+responded to Eric Edwards
+
+Mike Stringer
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
+
+background:
+responded to James Nicoll
+
+Steve Patterson
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
+
+background:
+responded to Jim Davies
+
+Henry Spencer
+newsgroup: rec.arts.sf.science
+First Archived Msg: Friday, 31 January 1997 08:00:00 UTC
+Last Archived Msg: Tuesday, 11 February 1997 08:00:00 UTC
+
+background:
+responded to Matthew Melmon
+
+Andy Lanagan
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 3 February 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
+
+background:
+responded to Lyan
+
+Stevens R. Miller
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 3 February 1997 08:00:00 UTC
+Last Archived Msg: Saturday, 8 February 1997 08:00:00 UTC
+
+background:
+responded to Andy Lanagan
+
+Fly Boy
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
+
+background:
+responded to Andy Lanagan
+
+
+Lance Purple
+newsgroup: rec.arts.sf.science
+First Archived Msg:Tuesday, 4 February 1997 08:00:00 UTC
+
+background:
+responded to Tommy the Terrorist
+
+Harvey White
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+
+background:
+responded to Stevens R. Miller
+
+Cyber Linguist
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 12 February 1997 08:00:00 UTC
+
+background:
+responded to Stevens R. Miller

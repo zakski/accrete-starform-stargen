@@ -1,0 +1,2136 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/54dZMGm8ZYM
+TITLE: Fictional planet--weather and climate questions. 
+
+----------------------------------------------------------------------------
+
+Saturday, 25 January 1997 08:00:00 UTC - Dan Goodman:
+In article <01bc0a69$229400e0$d72674cf@default>,
+Lyan <ly...@worldnet.att.net <>> wrote:
+>I'm hoping someone can help me out a bit.  I am trying to flesh out a
+>fictitious world that  has one side constantly facing the star, and another
+>side constantly dark.  This planet is mostly water (85% or better), has
+>continental landmasses smaller than those of earth, and a fair amount of
+>volcanic activity.
+>
+>I am hoping to arrange its proximity to the star such that the planet is
+>warmer than earth overall, at least on the side that is exposed to the
+>light of the star.  I'd like the tropics to extend to most of what would
+>equate to North America, for example.
+>
+>If anyone has enough scientific background to help me with a rough and
+>ready description of this world, please feel free to e-mail me.  Fair
+>warning--each question you answer may spawn another question.
+>
+One thing which occurs to me is, you'll get some interesting weather as
+the cold air on one side interacts with warm air on the other.  Not to
+mention water on the light side interacting with ice on the other.
+Would there be enough photosynthesis to keep oxygen in the atmosphere
+anywhere near Earth's current level?
+
+You're also going to get some wide divergences in evolution.  I suspect
+that the equivalents of insects and of vertebrates would develop
+separately in the light and in the dark.  So you might have two
+intelligent species, about the same in intelligence, strength, etc. -- but
+less closely related to each other than humans are related to spiders.
+--
+Dan Goodman
+dsg...@visi.com <>
+http://www.visi.com/~dsgood/index.html <http://www.visi.com/~dsgood/index.html>
+Whatever you wish for me, may you have twice as much.
+----------------------------------------------------------------------------
+
+Saturday, 25 January 1997 08:00:00 UTC - Craig Berry:
+Dan Goodman (dsg...@visi.com <>) wrote:
+: In article <01bc0a69$229400e0$d72674cf@default>,
+: Lyan <ly...@worldnet.att.net <>> wrote:
+: >I'm hoping someone can help me out a bit.  I am trying to flesh out a
+: >fictitious world that  has one side constantly facing the star, and another
+: >side constantly dark.  This planet is mostly water (85% or better), has
+: >continental landmasses smaller than those of earth, and a fair amount of
+: >volcanic activity.
+: >
+: >I am hoping to arrange its proximity to the star such that the planet is
+: >warmer than earth overall, at least on the side that is exposed to the
+: >light of the star.  I'd like the tropics to extend to most of what would
+: >equate to North America, for example.
+:
+: One thing which occurs to me is, you'll get some interesting weather as
+: the cold air on one side interacts with warm air on the other.  Not to
+: mention water on the light side interacting with ice on the other.
+The major problem with a habitable one-face world is the "cold trap" 
+effect...there's a nasty tendency for the night side to get so cold that 
+all the water, or even all the *atmosphere*, freezes out there 
+permanently, rather decreasing the habitability.
+
+To get around this, you need one or both of (a) small size, and (b) dense 
+atmosphere.  Small size means that heat is more readily transported to 
+the center of the night side, and thick atmosphere transports heat 
+better.  Because a thick atmosphere implies strongish gravity, you 
+probably want a small but rather dense world -- which would tend to imply 
+in turn a high-metal-content, large-core world, and also lots of 
+radioactives to keep that core and mantle hot, which ties in well with 
+the vulcanism requirement.
+
+So, let's say at a guess you want a world about 60% Earth's diameter, but 
+dense enough to give a surface gravity of .8 gee, and a surface 
+atmospheric pressure of 1.4 bars.  This is all wild hand-waving, of 
+course, but it should be good enough.
+
+In this model, air would heat at the subsolar region (the center of the 
+dayside, and rise.  It would then flow at high altitude away from the 
+subsolar point, cooling by radiation into space and by heat exchange with 
+the next circulation cell, finally falling again about 60 degrees away 
+from the subsolar point, and flowing back toward it on the surface.  
+This whole cell would be very dry; water would tend to collect in the 
+second and third cells, below.
+
+The most interesting cell is the "twilight band," between 60 and 120 
+degrees from the subsolar point.  Here, air picking up heat from the star 
+and from the first cell rises and flows onto the nightside at high 
+altitude, lsoing moisture as it rises and cools.  This would make for a 
+rainy tropical belt about 30 degrees dayward of the day/night line 
+("terminator").  The dry air would drop 30 degrees nighward of the 
+terminator, then flow back onto the day side as a cold wind, warming and 
+picking up moisture from oceans along the terminator and dayward.
+
+The last cell extends for 60 degrees around the antisolar point (the 
+center of nightside), and is very cold and stagnant.  It's a large ice 
+cap, which is in equilibrium with cell 2...it freezes and thaws at the 
+margins at equal rates (though with ebbs and flows over short scales of 
+time).  Heat exchange with cell 2 keeps it from sliding into "cold trap" 
+mode.
+
+: Would there be enough photosynthesis to keep oxygen in the atmosphere
+
+: anywhere near Earth's current level?
+Why wouldn't there be?  Lots of sunlight, after all.
+
+: You're also going to get some wide divergences in evolution.  I suspect
+
+: that the equivalents of insects and of vertebrates would develop
+: separately in the light and in the dark.  So you might have two
+: intelligent species, about the same in intelligence, strength, etc. -- but
+: less closely related to each other than humans are related to spiders.
+Not sure about that.  Obviously, there'd be absolutely no plants on the
+nightside, so any life there would have to be either transient, or the
+equivalent of deep-sea ecosystems on earth -- living off either
+chemosynthesis from the vulcanism, or material filtering in from
+better-lit regions.  Both modes of life are pretty specialized, occupied 
+by only a very limited number of species, and not the sort of thing that 
+traditionally leads to intelligence.  Could be wrong, though...
+
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Sunday, 26 January 1997 08:00:00 UTC - Nyrath the nearly wise:
+: In article <01bc0a69$229400e0$d72674cf@default>,
+: Lyan <ly...@worldnet.att.net <>> wrote:
+: >I'm hoping someone can help me out a bit.  I am trying to flesh out a
+: >fictitious world that  has one side constantly facing the star, and another
+: >side constantly dark. 
+Sorry, I cannot help you. I suggest you get a copy of
+WORLD-BUILDING: A WRITER'S GUIDE TO CONSTRUCTING STAR SYSTEMS
+AND LIFE-SUPPORTING PLANETS by Stephen L. Gillett
+ISBM 0-89879-707-1
+
+I got my copy from http://www.amazon.com <http://www.amazon.com>
+----------------------------------------------------------------------------
+
+Sunday, 26 January 1997 08:00:00 UTC - Mike Bagneski:
+On 25 Jan 1997 06:11:58 GMT, cbe...@cinenet.net <> (Craig Berry) wrote:
+
+>Dan Goodman (dsg...@visi.com <>) wrote:
+>: In article <01bc0a69$229400e0$d72674cf@default>,
+>:
+>: One thing which occurs to me is, you'll get some interesting weather as
+>: the cold air on one side interacts with warm air on the other.  Not to
+>: mention water on the light side interacting with ice on the other.
+>
+>The major problem with a habitable one-face world is the "cold trap" 
+>effect...there's a nasty tendency for the night side to get so cold that 
+>all the water, or even all the *atmosphere*, freezes out there 
+>permanently, rather decreasing the habitability.
+Okay, I could see a situation here where there could be this one
+great, planet-sized convection system, with air rising on the hot
+side, flowing up and outward and around to the cold side, where it
+would sink, and flow back at ground level toward the day side.  We
+don't have enough spin here to churn the atmoshere as on earth, so
+maybe the pattern would be stable.  This could give us one heck of a
+"world wind", especially at the terminator, where there would be a
+constant hurricane force wind at the surface blowing from the night
+side toward the day side.
+
+Perhaps there would also be a similar convection current in the
+extensive ocean system.  
+
+These two things may make for a planet with less temperature
+differences then an airless world, like Mercury.
+
+
+Mb / ***
+  / C3==#
+mbag...@sprynet.com <>
+http://home.sprynet.com/sprynet/mbagneski/index.htm <http://home.sprynet.com/sprynet/mbagneski/index.htm>
+----------------------------------------------------------------------------
+
+Sunday, 26 January 1997 08:00:00 UTC - Tommy the Terrorist:
+In article <5cc87e$r07$1...@marina.cinenet.net <>> Craig Berry,
+cbe...@cinenet.net <> writes:
+>Not sure about that.  Obviously, there'd be absolutely no plants on the
+>nightside, so any life there would have to be either transient, or the
+>equivalent of deep-sea ecosystems on earth -- living off either
+>chemosynthesis from the vulcanism, or material filtering in from
+>better-lit regions.  Both modes of life are pretty specialized, occupied 
+>by only a very limited number of species, and not the sort of thing that 
+>traditionally leads to intelligence.  Could be wrong, though...
+Hmmm... you suggested a dense world with lots of radioactives.  Even on
+Earth, there has been at least one case (old Scientific American, late
+1980's) in which a "natural fission reactor" was formed by sedimentation
+of uranium in a stream bed, and actually reached the point of going
+critical!  (this was a *long* time ago, when isotopic ratios were
+different...)
+
+So you can imagine that on a world with a lot more uranium, living
+organisms would become resistant to radiation (presumably by means of
+sturdy genetic molecules and good repair mechanisms for them).  The next
+step would be developing an ability to concentrate uranium.  This in
+itself would allow minor heat production, allowing a small but crucial
+expansion of range into the cold side, creating a special niche from
+which all further cold-side organisms could evolve.
+
+For the next step I'll assume they have something like an electric eel. 
+In other words, an animal that can produce an electric current by means
+of having many layers of cells stacked up, each of which pushes charged
+ions through a membrane on one side, but acts more or less open on the
+other.  Now, mutate the channel so that it no longer moves something like
+chloride, but instead moves uranate.  The uranium ions should have enough
+of an isotopic effect that this allows the organism to conceivably
+develop a good isotopic separation.
+
+So now we have this nifty precursor to all dark-side life.  It takes in
+uranium from the oceans (which we'll assume are replenished by
+weathering; there will be an equilibrium between number of organisms and
+concentration of uranium ions).  It heats itself with a near critical
+mass of U-235.  It probably does best on the dark side because it can't
+go *too* close to critical without frying even its studly DNA substitute,
+so it needs to have a good "cold sink" for generating energy (between its
+heated uranium mass and the outside world).  It will probably develop
+sophisticated methods of radiation shielding - most likely by using
+U-238, a heavy element which it already has in its body.  But this leads
+to a "breeder reactor" - and a whole plutonium ecosystem based on this
+primary producer!
+
+However, predation might have some limits.  If a male and female of this
+species take up a lifestyle in which they remain closely paired, then
+they have a "defense" against all manner of predators - they put their
+little heads together and twiddle the cells with the U-238 in them so
+that they go forward-to-back with holes between, instead of lining up
+straight.  This allows the radiation from the U-235 masses to send them
+critical (dissipating the U-238 layer further), causing the whole area to
+go up in something that might be only a fizzle yield - unless there's
+some benefit for it to evolve further...
+
+This is hell on the predators.
+
+Such organisms might likewise become the terror of the light side.  Their
+larval forms might "recapitulate ontogeny" and have a lifestyle that
+requires them to live in the planktonic region of the sunlit side.  So
+the adults would drift in the cold currents at the bottom of the ocean,
+mating, living in their internal heat, lying almost dormant, until the
+current finally brings them up to the surface, where the heat starts to
+threaten their safety.  Then, they instinctively release their eggs to
+the current, allowing them time to spread, before they use the power of a
+thermonuclear explosion to scatter their seed across the oceans, remove
+potential predators, and create plenty of dead organic matter for their
+offspring to eat.
+----------------------------------------------------------------------------
+
+Sunday, 26 January 1997 08:00:00 UTC - Craig Berry:
+Re the one-face world nightside ecology question...
+Tommy the Terrorist (may...@super.zippo.com <>) wrote:
+: Hmmm... you suggested a dense world with lots of radioactives.  Even on
+
+: Earth, there has been at least one case (old Scientific American, late
+: 1980's) in which a "natural fission reactor" was formed by sedimentation
+: of uranium in a stream bed, and actually reached the point of going
+: critical!  (this was a *long* time ago, when isotopic ratios were
+: different...)
+Called the Seaborg Event, I believe, after the physicist who investigated 
+it...in Africa as I recall, and it occurred about 2-3 billion years ago 
+if memory serves.  Just goes to show how weird things can get on an 
+active planet like ours...
+
+[Fascinating radioactive ecology proposal snipped]
+
+*Very* intriguing.  There was a science fiction story, author forgotten, 
+title something like "The Trelph is a Solitary Creature" with a similar 
+theme...anybody have the details?
+
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Sunday, 26 January 1997 08:00:00 UTC - Eric Edwards:
+In article <5cc21d$l...@darla.visi.com <>>, Dan Goodman writes:
+
+> In article <01bc0a69$229400e0$d72674cf@default>,
+> Lyan <ly...@worldnet.att.net <>> wrote:
+> >I'm hoping someone can help me out a bit.  I am trying to flesh out a
+> >fictitious world that  has one side constantly facing the star, and another
+> >side constantly dark.  This planet is mostly water (85% or better), has
+> >continental landmasses smaller than those of earth, and a fair amount of
+> >volcanic activity.
+[snip]
+
+> You're also going to get some wide divergences in evolution.  I suspect
+> that the equivalents of insects and of vertebrates would develop
+> separately in the light and in the dark.  So you might have two
+> intelligent species, about the same in intelligence, strength, etc. -- but
+> less closely related to each other than humans are related to spiders.
+Without light, and hense, without photosyntheis there wouldn't be much of
+a food chain on the dark side.  Probably the only active life would be
+arround volcanic vents.  
+
+Evolution would be a bit warped.  Continental drift would gradualy
+bring continents from the light side to the dark and back again.  Isolated
+continents would suffer mass extinctions as they went over to the dark
+side.
+
+It gets more interesting if you propose that the planet isn't completely
+tidally locked.  An effective rotational period of 1000 years would give a
+definate advantage to those critters would can fly or swim.
+
+The star itself would probably be a red dwarf in order to allow the planet
+to get close enough for tidal locking but still not be too hot for life.
+----------------------------------------------------------------------------
+
+Monday, 27 January 1997 08:00:00 UTC - Gary L. Krepps:
+On 25 Jan 1997 04:26:21 GMT, dsg...@visi.com <> (Dan Goodman) wrote:
+Well, ordinarily I'd expect water to freeze out on the dark side,
+gradually, until there was just a large ice mass there, and glaciers
+ringing the terminator, gradually dumping some water into daylight.
+
+Of course, with more volcanism you'd probably have a stronger
+greenhouse effect than with Earth, which would ameliorate that to some
+extent.
+
+That's my professional ecological opinion.  However, since my
+profession is computer programmer... you might want to take it with a
+grain of salt.
+----------------------------------------------------------------------------
+
+Monday, 27 January 1997 08:00:00 UTC - Lyan:
+Thanks.  At least you are thinking along the same lines I am.  So far, my
+concept seems generally plausible.
+Lyan
+
+Gary L. Krepps <kre...@puffin.dsr.com <>> wrote in article
+<32ece084...@news.adnc.com <>>...
+- show quoted text -
+> On 25 Jan 1997 04:26:21 GMT, dsg...@visi.com <> (Dan Goodman) wrote:
+> 
+> Well, ordinarily I'd expect water to freeze out on the dark side,
+> gradually, until there was just a large ice mass there, and glaciers
+> ringing the terminator, gradually dumping some water into daylight.
+> 
+> Of course, with more volcanism you'd probably have a stronger
+> greenhouse effect than with Earth, which would ameliorate that to some
+> extent.
+> 
+> That's my professional ecological opinion.  However, since my
+> profession is computer programmer... you might want to take it with a
+> grain of salt.
+>
+----------------------------------------------------------------------------
+
+Monday, 27 January 1997 08:00:00 UTC - Steven Thomas:
+Does the planet rotate about an axis parallel to the orbital plane?
+Steve Thomas
+----------------------------------------------------------------------------
+
+Monday, 27 January 1997 08:00:00 UTC - Peter Kwangjun Suk:
+- show quoted text -
+In article <32ebf35f...@news.sprynet.com <>>, mbag...@sprynet.com <> wrote:
+
+- show quoted text -> On 25 Jan 1997 06:11:58 GMT, cbe...@cinenet.net <> (Craig Berry) wrote:
+> 
+> >Dan Goodman (dsg...@visi.com <>) wrote:
+> >: In article <01bc0a69$229400e0$d72674cf@default>,
+> >:
+> >: One thing which occurs to me is, you'll get some interesting weather as
+> >: the cold air on one side interacts with warm air on the other.  Not to
+> >: mention water on the light side interacting with ice on the other.
+> >
+> >The major problem with a habitable one-face world is the "cold trap" 
+> >effect...there's a nasty tendency for the night side to get so cold that 
+> >all the water, or even all the *atmosphere*, freezes out there 
+> >permanently, rather decreasing the habitability.
+> 
+> Okay, I could see a situation here where there could be this one
+> great, planet-sized convection system, with air rising on the hot
+> side, flowing up and outward and around to the cold side, where it
+> would sink, and flow back at ground level toward the day side.  We
+> don't have enough spin here to churn the atmoshere as on earth, so
+> maybe the pattern would be stable.  This could give us one heck of a
+> "world wind", especially at the terminator, where there would be a
+> constant hurricane force wind at the surface blowing from the night
+> side toward the day side.
+> 
+> Perhaps there would also be a similar convection current in the
+> extensive ocean system.  
+> 
+> These two things may make for a planet with less temperature
+> differences then an airless world, like Mercury.
+These winds would still deposit huge amounts of ice as precipitation on
+the far side.  Perhaps, if the far side only consisted of ocean, and there
+were currents sufficiently vigorous to break up the ice and move it back
+into the sun, you could avoid a cold trap.  If there are significant
+continental land masses on the far side, then you are in trouble.  
+
+--PKS
+
+-- 
+There's neither heaven nor hell
+  Save that we grant ourselves.
+There's neither fairness nor justice
+  Save what we grant each other.
+
+Peter Kwangjun Suk <s...@pobox.com <>>
+Musician, Computer Science Graduate Student
+[finger s...@pobox.com <> for PGP public key]
+----------------------------------------------------------------------------
+
+Monday, 27 January 1997 08:00:00 UTC - Matthew Melmon:
+In article <suk-270197...@cola44.scsn.net <>>, s...@pobox.com <> (Peter
+Kwangjun Suk) wrote:
+ 
+> These winds would still deposit huge amounts of ice as precipitation on
+> the far side.  Perhaps, if the far side only consisted of ocean, and there
+> were currents sufficiently vigorous to break up the ice and move it back
+> into the sun, you could avoid a cold trap.  If there are significant
+> continental land masses on the far side, then you are in trouble.  
+Wouldn't the accumulation of heat on the facing side of the planet 
+be just as unpleasant, or can that be ameliorated more easily than
+the cold by "moving" the planet further and further away from the
+star?
+----------------------------------------------------------------------------
+
+Monday, 27 January 1997 08:00:00 UTC - Julie A.Pascal:
+Craig Berry wrote:
+> 
+> Steven Thomas (STHO...@FORD.COM <>) wrote:
+> : Does the planet rotate about an axis parallel to the orbital plane?
+> 
+> I'm guessing you mean 'perpendicular' -- parallel would create a case
+> like Uranus, rotation "tipped over" so that the poles alternately face
+> the star on either side of the planet's orbit.
+Would it be possible for a planet to rotate on it's axis _and_ have
+the same pole face the sun all year?
+
+
+> 
+> ---------------------------------------------------------------------
+>    |   Craig Berry - cbe...@cinenet.net <>
+>  --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+>    |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>
+>        "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Monday, 27 January 1997 08:00:00 UTC - Jim Davies:
+cbe...@cinenet.net <> (Craig Berry) wrote:
+
+>Tommy the Terrorist (may...@super.zippo.com <>) wrote:
+
+>[Fascinating radioactive ecology proposal snipped]
+Where does that man get his ideas?
+
+
+>*Very* intriguing.  There was a science fiction story, author forgotten, 
+>title something like "The Trelph is a Solitary Creature" with a similar 
+>theme...anybody have the details?
+It's in Robert L Forward's 'Indistunguishable from Magic', IIRC.
+
+
+
+>---------------------------------------------------------------------
+>   |   Craig Berry - cbe...@cinenet.net <>
+> --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+>   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+>       "Every man and every woman is a star."
+
+Dr Jim Davies
+----------------------------------------------
+But if ifs were buts and buts were ifs,
+we'd all be something or other.
+----------------------------------------------------------------------------
+
+Tuesday, 28 January 1997 08:00:00 UTC - Stephen Dedman:
+er...@wolf359.exile.org <> (Eric Edwards) writes:
+
+- show quoted text ->In article <5cc21d$l...@darla.visi.com <>>, Dan Goodman writes:
+
+- show quoted text ->> In article <01bc0a69$229400e0$d72674cf@default>,
+>> Lyan <ly...@worldnet.att.net <>> wrote:
+>> >I'm hoping someone can help me out a bit.  I am trying to flesh out a
+>> >fictitious world that  has one side constantly facing the star, and another
+>> >side constantly dark.  This planet is mostly water (85% or better), has
+>> >continental landmasses smaller than those of earth, and a fair amount of
+>> >volcanic activity.
+
+- show quoted text ->[snip]
+>> You're also going to get some wide divergences in evolution.  I suspect
+>> that the equivalents of insects and of vertebrates would develop
+>> separately in the light and in the dark.  So you might have two
+>> intelligent species, about the same in intelligence, strength, etc. -- but
+>> less closely related to each other than humans are related to spiders.
+
+- show quoted text ->Without light, and hense, without photosyntheis there wouldn't be much of
+>a food chain on the dark side.  Probably the only active life would be
+>arround volcanic vents.  
+
+- show quoted text ->Evolution would be a bit warped.  Continental drift would gradualy
+>bring continents from the light side to the dark and back again.  Isolated
+>continents would suffer mass extinctions as they went over to the dark
+>side.
+
+- show quoted text ->It gets more interesting if you propose that the planet isn't completely
+>tidally locked.  An effective rotational period of 1000 years would give a
+>definate advantage to those critters would can fly or swim.
+
+- show quoted text ->The star itself would probably be a red dwarf in order to allow the planet
+>to get close enough for tidal locking but still not be too hot for life.
+Can anyone give me a short answer what the prevailing winds would be like
+on a tide-locked world with an approximately earth-normal atmosphere (if
+such a thing is possible?)? 
+
+- Stephen Dedman
+www.midnight.com.au/eidolon/03_dedma/sd_home.htm <http://www.midnight.com.au/eidolon/03_dedma/sd_home.htm>
+----------------------------------------------------------------------------
+
+Tuesday, 28 January 1997 08:00:00 UTC - Prof.Faust:
+- show quoted text -
+Matthew Melmon wrote:
+> 
+> In article <suk-270197...@cola44.scsn.net <>>, s...@pobox.com <> (Peter
+> Kwangjun Suk) wrote:
+> 
+> > These winds would still deposit huge amounts of ice as precipitation on
+> > the far side.  Perhaps, if the far side only consisted of ocean, and there
+> > were currents sufficiently vigorous to break up the ice and move it back
+> > into the sun, you could avoid a cold trap.  If there are significant
+> > continental land masses on the far side, then you are in trouble.
+> 
+> Wouldn't the accumulation of heat on the facing side of the planet
+> be just as unpleasant, or can that be ameliorated more easily than
+> the cold by "moving" the planet further and further away from the
+> star?
+
+
+>>>>> Try findinig a copy of Larry Nivens short story "One Face", in which he deals with the concept of a planet that keeps one hemisphere always facing the 
+sun, and one always away.  He explains things in fairly basic english, and mentions 'one-faced' worlds in a couple of other short stories as well....
+                                mg (Prof. Faust II)
+----------------------------------------------------------------------------
+
+Tuesday, 28 January 1997 08:00:00 UTC - Peter Kwangjun Suk:
+In article <mattm-27019...@melmma1.apple.com <>>, ma...@apple.com <>
+(Matthew Melmon) wrote:
+
+> In article <suk-270197...@cola44.scsn.net <>>, s...@pobox.com <> (Peter
+> Kwangjun Suk) wrote:
+>  
+> > These winds would still deposit huge amounts of ice as precipitation on
+> > the far side.  Perhaps, if the far side only consisted of ocean, and there
+> > were currents sufficiently vigorous to break up the ice and move it back
+> > into the sun, you could avoid a cold trap.  If there are significant
+> > continental land masses on the far side, then you are in trouble.  
+> 
+> Wouldn't the accumulation of heat on the facing side of the planet 
+> be just as unpleasant, or can that be ameliorated more easily than
+> the cold by "moving" the planet further and further away from the
+> star?
+Convection would move heat to the far side where it could be radiated
+away.  Water freezing releases large amounts of latent heat.  
+
+--PKS
+
+-- 
+There's neither heaven nor hell
+  Save that we grant ourselves.
+There's neither fairness nor justice
+  Save what we grant each other.
+
+Peter Kwangjun Suk <s...@pobox.com <>>
+Musician, Computer Science Graduate Student
+[finger s...@pobox.com <> for PGP public key]
+----------------------------------------------------------------------------
+
+Tuesday, 28 January 1997 08:00:00 UTC - Julian Flood:
+In article <mPzTz*U...@wolf359.exile.org <>>, er...@wolf359.exile.org <> (Eric
+Edwards) wrote:
+> Without light, and hense, without photosyntheis there wouldn't be much of
+> a food chain on the dark side.  Probably the only active life would be
+> arround volcanic vents.
+The first life on the ash fields of Mt St Helens was insect, dropping in
+from the aerial plankton. If the drive for mobility were high then mobile
+forms would evolve - floating plants, floating forests, flying and floating
+beasts and plankton, feeding in the light, drifting on the great curents of
+air into the dark and out again. Would it freeze up when trapped in the cold
+though? Different phases of life, like elvers and eels? Would it carry heat
+with it into the cold? Predators sucking out the energy needed to survive in
+the cold...
+  When is this due out? I want a copy.
+
+-- 
+Don't hurry me...  I'm from Suffolk.
+----------------------------------------------------------------------------
+
+Tuesday, 28 January 1997 08:00:00 UTC - Craig Berry:
+Steven Thomas (STHO...@FORD.COM <>) wrote:
+: Does the planet rotate about an axis parallel to the orbital plane?
+
+I'm guessing you mean 'perpendicular' -- parallel would create a case 
+like Uranus, rotation "tipped over" so that the poles alternately face 
+the star on either side of the planet's orbit.
+---------------------------------------------------------------------
+
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Tuesday, 28 January 1997 08:00:00 UTC - Matthew Melmon:
+In article <suk-280197...@cola47.scsn.net <>>, s...@pobox.com <> (Peter
+Kwangjun Suk) wrote:
+
+> In article <mattm-27019...@melmma1.apple.com <>>, ma...@apple.com <>
+> (Matthew Melmon) wrote:
+> 
+> > Wouldn't the accumulation of heat on the facing side of the planet 
+> > be just as unpleasant, or can that be ameliorated more easily than
+> > the cold by "moving" the planet further and further away from the
+> > star?
+> 
+> Convection would move heat to the far side where it could be radiated
+> away.  Water freezing releases large amounts of latent heat.  
+Yes, but.  Rock surfaces will absorb and store quite a bit
+more heat than an (increasingly thin) atmosphere will be 
+able to convect away.  Imagine walking across a beach on
+a hot afternoon that never ended.  How much of Mercury's
+surface temperature is the result of being that close to
+the Sun, and how much (for the facing side) is the result
+of never getting a sunset?
+----------------------------------------------------------------------------
+
+Tuesday, 28 January 1997 08:00:00 UTC - Jim Davies:
+If the planet's orbit is very eccentric, you'll get seasons in the
+twilight zones. The planet will be rotating at a constant speed but
+won't have a constant angular velocity around the star, so the east
+and west sides will be exposed at different points in the orbit.
+Of course if it's very eccentric, you'll get seasons anyway.
+
+What about a moon? If it's big enough, it'll cause tides which will
+stir up the oceans, ice layer and magma. Given a high albedo, it could
+even reflect a significant amount of heat and light back onto the dark
+side, maybe enough for photosynthesis.
+
+Dr Jim Davies
+----------------------------------------------
+But if ifs were buts and buts were ifs,
+we'd all be something or other.
+----------------------------------------------------------------------------
+
+Wednesday, 29 January 1997 08:00:00 UTC - William Burns:
+"Julie A.Pascal" <ju...@pascal.org <>> wrote:
+
+>Craig Berry wrote:
+>> 
+>> Steven Thomas (STHO...@FORD.COM <>) wrote:
+>> : Does the planet rotate about an axis parallel to the orbital plane?
+>> 
+>> I'm guessing you mean 'perpendicular' -- parallel would create a case
+>> like Uranus, rotation "tipped over" so that the poles alternately face
+>> the star on either side of the planet's orbit.
+>Would it be possible for a planet to rotate on it's axis _and_ have
+
+>the same pole face the sun all year?
+The pole would have to be facing the sun, which would require a rather
+drastic change in the planets orientation, probably involving a huge
+comet strike in its past.
+
+--William
+
+A man said to the universe,
+"Sir, I exist!"
+"However," replied the universe,
+"The fact has not created in me
+A sense of obligation." (Stephen Crane)
+----------------------------------------------------------------------------
+
+Wednesday, 29 January 1997 08:00:00 UTC - Frank Palmer:
+: Would it be possible for a planet to rotate on it's axis _and_ have
+
+: the same pole face the sun all year?
+Not if you mean that the axis of rotation passes through the poles.  (I have 
+been using another meaning for pole on this thread.)
+
+Think "gyroscope."  The rotating planet will have each pole pointing in the 
+same direction at all times.
+
+
+--
+flpa...@ripco.com <>
+Frank Palmer
+Then they wouldn't be frequently asked.  Now would they?
+----------------------------------------------------------------------------
+
+Wednesday, 29 January 1997 08:00:00 UTC - Erik Max Francis:
+Julie A.Pascal wrote:
+
+> Would it be possible for a planet to rotate on it's axis _and_ have
+> the same pole face the sun all year?
+No, unless something is continually applying a massive torque to the
+planet.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Wednesday, 29 January 1997 08:00:00 UTC - Twisted STISter:
+In article <32ED14...@pascal.org <>>, Julie A.Pascal <ju...@pascal.org <>> wrote:
+>Craig Berry wrote:
+>> 
+>> Steven Thomas (STHO...@FORD.COM <>) wrote:
+>> : Does the planet rotate about an axis parallel to the orbital plane?
+>> 
+>> I'm guessing you mean 'perpendicular' -- parallel would create a case
+>> like Uranus, rotation "tipped over" so that the poles alternately face
+>> the star on either side of the planet's orbit.
+>
+>Would it be possible for a planet to rotate on it's axis _and_ have
+>the same pole face the sun all year?
+I don't think so. It would have to rotate around two axes: the spin
+axis you mention, and a second one perpendicular to that that keeps
+it rotating at the same rate it revolves around the star. 
+
+The problem with this is that even the smallest asymmetry in the planet
+would cause this double rotation to put a big torque on the planet, and
+the rotation axes would tumble. Hmmm... or does it? This is a harder
+question than I thought. A gyroscope will tumble if you apply a force
+to rotate the spin axis. Will this also occur if the object is freely
+rotating in space? In other words, if you have a spinning object and
+let it roate around a second axis, will it tumble?
+
+Anyway, the chances of this configuration are very small. The Moon shows
+one face to us because tides have coupled with its spin to slow it down.
+If the axis is not perpendicular to the orbit than this won't happen. Tides
+will apply a torque to the satellite, and you get weird motions again.
+
+I have a description of tides and tidal evolution on my homepage:
+
+http://www.astro.virginia.edu/~pcp2g/tides.html <http://www.astro.virginia.edu/~pcp2g/tides.html>
+
+That might help you!
+
+
+
+
+-- 
+* Phil Plait, Pee Aytch Dee       pc...@virginia.edu <> 
+* My home page-- http://www.astro.virginia.edu/~pcp2g/home.html <http://www.astro.virginia.edu/~pcp2g/home.html>
+*      -->  Humor, supernovae, Bad Astronomy, Mad Science
+*           and my daughter Zoe.
+----------------------------------------------------------------------------
+
+Wednesday, 29 January 1997 08:00:00 UTC - Craig Berry:
+Julie A.Pascal (ju...@pascal.org <>) wrote:
+: 
+: Would it be possible for a planet to rotate on it's axis _and_ have
+: the same pole face the sun all year?
+Not really.  A rotating object tends to keep its spin axis in one
+direction; that's what makes gyroscopes so useful.  For the pole of a
+rotating planet to stay pointed at the sun, you'd need to apply a
+continuous torque to the planet to drag the pole around (super-precession,
+sort of).  I don't think you could get enough torque to do this outside
+the Roche limit, for any significant planetary rotation rate. 
+
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Wednesday, 29 January 1997 08:00:00 UTC - James Nicoll:
+        All that ice on the cold face is going to push whatever land
+is under it down. IMS, the center of Antarctica is below sea level
+because ofthis, and North America is still  rebounding from the last
+glaciation. Don't know if that will significant effects on the climate,
+beyond submerging small continents.
+
+                                                        James Nicoll
+--
+----------------------------------------------------------------------------
+
+Wednesday, 29 January 1997 08:00:00 UTC - Ed Chart:
+Eric Edwards (er...@wolf359.exile.org <>) wrote:
+: In article <5cc21d$l...@darla.visi.com <>>, Dan Goodman writes:
+: > In article <01bc0a69$229400e0$d72674cf@default>,
+: > Lyan <ly...@worldnet.att.net <>> wrote:
+: > >I'm hoping someone can help me out a bit.  I am trying to flesh out a
+: > >fictitious world that  has one side constantly facing the star, and another
+: > >side constantly dark.  This planet is mostly water (85% or better), has
+: > >continental landmasses smaller than those of earth, and a fair amount of
+: > >volcanic activity.
+
+        Several possible physical conditions come to mind:
+
+        You would have a differential distrabution of heavy elements 
+ on the sun facing side.  The result of a magma interior being pulled 
+preferentailly to one side due to the unidirectional tidal(gravitational) 
+effect. Note the effect on the Moon..where the locking process caused the 
+luner core to develope closer to the earth facing side.  Also note the 
+degree of magma (mare) formation due to this effect.  
+        The crust on the sun facing side will also be thinner due to this 
+same effect.  The convective currents within the mantel would rip through 
+this thinner layer and begin pushing the crust away from the sun side to 
+the dark side.  (Picture the rifting sequence occureing in the Mid Atlantic 
+trench.) At the Dark side you might get plate and contental collision 
+occuring as these components now are forced back together. 
+        The sun side of this planet would be far more likely to have volcanos
+, and rifting sequences occuring.  The dark side would have exhibit 
+contential collision, and associated earthquakes and faulting.  A good 
+example would be the Himalayas (India/Asia collision)...and the west 
+coast of North America (California to B.C.)
+        From a Climate perspective ..differentail high pressure zones on 
+the sun side...
+
+        Anyway...just regional geophantasy...don't ask me to put money on
+it. (ha ha ha)
+
+              
+        
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - Mike Stringer:
+- show quoted text -
+James Nicoll wrote:
+> 
+>         All that ice on the cold face is going to push whatever land
+> is under it down. IMS, the center of Antarctica is below sea level
+> because ofthis, and North America is still  rebounding from the last
+> glaciation. Don't know if that will significant effects on the climate,
+> beyond submerging small continents.
+> 
+>                                                         James Nicoll
+> --
+The ice build up and crust displacement wont help your planet stay one
+face to the sun in certain polar alignments.
+-- 
+*******************
+Mike Stringer
+                    Life is not a spectator Sport!!!
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - Steve Patterson:
+In article <5cocjp$2...@power2.power.net.uk <>>, j...@moose.powernet.co.uk <> (Jim Davies) says:
+>
+>What about a moon? If it's big enough, it'll cause tides which will
+>stir up the oceans, ice layer and magma. Given a high albedo, it could
+>even reflect a significant amount of heat and light back onto the dark
+>side, maybe enough for photosynthesis.
+Ah, but if that moon is big enough for significant tides, won't it be too
+big to leave a planet in a synchronous rotation?  Won't the gravitational
+attraction exerted by the moon break the pattern that would make a world
+a "one-face" planet?  (Damn, I'm frustrated that I let my math go, and
+can't figure it out for myself anymore...)
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Note:  My "from:" address has been altered to foil mailbots.
+       Please use the corrected address appearing below.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Steven J. Patterson                      spatt...@wwdc.com <>
+W.O.R.L.D.'S....S..L..O..W..E..S..T....W...R...I...T...E...R
+"Men may move mountains, but ideas move men."
+                         -- M.N. Vorkosigan, per L.M. Bujold
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - Craig Berry:
+[re the one-face world issue]
+Jim Davies (j...@moose.powernet.co.uk <>) wrote:
+: What about a moon? If it's big enough, it'll cause tides which will
+
+: stir up the oceans, ice layer and magma. Given a high albedo, it could
+: even reflect a significant amount of heat and light back onto the dark
+: side, maybe enough for photosynthesis.
+If the moon is big enough to stir up tides and/or reflect that much 
+light, then our one-face world will lock to the moon's revolution period, 
+not to its own revolution period around the star.  Though this would 
+likely give it a long (perhaps weeks long) day/night cycle, it wouldn't 
+have permanent day and night sides anymore.
+
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - Erik Max Francis:
+William Burns wrote:
+> The pole would have to be facing the sun, which would require a rather
+> drastic change in the planets orientation, probably involving a huge
+> comet strike in its past.
+
+Uranus is already like this; it has a tilt of over 90 degrees.
+
+But for the pole to _constantly_ point through the star, you'd need a
+constant and massive torque being applied to the planet.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - Del Cotter:
+On Tue, 28 Jan 1997, in rec.arts.sf.science
+Jim Davies <j...@moose.powernet.co.uk <>> wrote
+>If the planet's orbit is very eccentric, you'll get seasons in the
+>twilight zones. The planet will be rotating at a constant speed but
+>won't have a constant angular velocity around the star, so the east
+>and west sides will be exposed at different points in the orbit.
+
+If it's very eccentric you won't get a 1:1 spin-orbit coupling.  What
+produces this effect is tidal braking, which is *very* sensitive to
+proximity.  At high eccentricities, the planet is braked to a halt with
+respect to the star at *periastron*, rather than the mean star.
+
+For certain values of eccentricity, this can lead to lower symmetries of
+spin-orbit coupling: for instance, an eccentricity of 0.2 gets you a 3:2
+resonance.  That's Mercury.
+
+>Of course if it's very eccentric, you'll get seasons anyway.
+
+Right :-)
+
+-- 
+                   Del Cotter    d...@branta.demon.co.uk <>
+         The US Tour   Sat 23rd August - Sun 14th September 1997
+ Houston Austin SanAntonio Phoenix Flagstaff GrandCanyon LakeMead LasVegas 
+DeathValley Yosemite NapaValley SanFrancisco  TouristTipsGratefullyReceived
+----------------------------------------------------------------------------
+
+Friday, 31 January 1997 08:00:00 UTC - Henry Spencer:
+In article <mattm-28019...@melmma1.apple.com <>>,
+Matthew Melmon <ma...@apple.com <>> wrote:
+>...How much of Mercury's
+>surface temperature is the result of being that close to
+>the Sun, and how much (for the facing side) is the result
+>of never getting a sunset?
+Entirely the former.  Folks, it's been known for over 30 years that
+Mercury does *not* keep one face to the Sun:  its rotation period is 59
+days, while its year is 88.  The optical observers were fooled by some
+coincidences, but the first radar observations cleared up the error.
+
+(No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+that a planet in an elliptical orbit like Mercury's tends to end up in
+a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+-- 
+"We don't care.  We don't have to.  You'll buy     |       Henry Spencer
+whatever we ship, so why bother?  We're Microsoft."|   he...@zoo.toronto.edu <>
+----------------------------------------------------------------------------
+
+Friday, 31 January 1997 08:00:00 UTC - Henry Spencer:
+In article <32EDBA...@passport.ca <>>, Prof.Faust <her...@passport.ca <>> wrote:
+> Try findinig a copy of Larry Nivens short story "One Face", in which 
+> he deals with the concept of a planet that keeps one hemisphere always 
+> facing the sun, and one always away.  He explains things in fairly basic 
+> english, and mentions 'one-faced' worlds in a couple of other short 
+> stories as well...
+A note of caution:  one should not use Niven's stories as a source of
+scientific information.  While he tries to do his homework, once in a
+while he goofs.  More seriously, he has written several stories based
+on the hot theory of the moment (or the weird theory of the moment),
+and they have not aged well scientifically.
+
+-- 
+"We don't care.  We don't have to.  You'll buy     |       Henry Spencer
+whatever we ship, so why bother?  We're Microsoft."|   he...@zoo.toronto.edu <>
+----------------------------------------------------------------------------
+
+Friday, 31 January 1997 08:00:00 UTC - Julie A.Pascal:
+Henry Spencer wrote:
+> 
+> In article <mattm-28019...@melmma1.apple.com <>>,
+> Matthew Melmon <ma...@apple.com <>> wrote:
+> >...How much of Mercury's
+> >surface temperature is the result of being that close to
+> >the Sun, and how much (for the facing side) is the result
+> >of never getting a sunset?
+> 
+> Entirely the former.  Folks, it's been known for over 30 years that
+> Mercury does *not* keep one face to the Sun:  its rotation period is 59
+> days, while its year is 88.  The optical observers were fooled by some
+> coincidences, but the first radar observations cleared up the error.
+> 
+> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+> that a planet in an elliptical orbit like Mercury's tends to end up in
+> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+A very long day, very long night, might be just as interesting
+a science fiction setting.  What if we moved Mercury out a way
+(made it bigger, etc.) gave our new planet a 3:2 rotation:orbit
+lock.  365 day year (for instance), 240 day "day" (off the top
+of my head, and I'm _bad_ for mental math)...
+
+And an elliptical orbit?  I suppose the side of the planet in
+night and day while closest or farthest from the sun would
+alternate on some reasonably determinable schedule.
+
+The geological activity and weather for a 1:1 locked planet
+seemed to be quite severe (from what you'all have been saying.)
+What about a 3:2 locked planet large enough to have atmosphere
+and significant liquid oceans? (A reasonable distance from the
+sun, of course.)
+
+
+j.pascal
+
+> --
+> "We don't care.  We don't have to.  You'll buy     |       Henry Spencer
+> whatever we ship, so why bother?  We're Microsoft."|   he...@zoo.toronto.edu <>
+----------------------------------------------------------------------------
+
+Saturday, 1 February 1997 08:00:00 UTC - John D. Gwinner:
+Erik:
+
+> > Would it be possible for a planet to rotate on it's axis _and_ have
+> > the same pole face the sun all year?
+> 
+> No, unless something is continually applying a massive torque to the
+> planet.
+What about something like Forward's "Rocheworld"?  It would have the torque
+of the tidal forces working on it, wouldn't it?
+
+I'm interested as I'm (gut level, haven't done the math yet) thinking that
+smaller 'brown' stars might have habital planets located VERY close to the
+primary,  I'm interested in qualitative effects of tidal forces.  Can't
+remember, but I think Accrete (not that it's scientifically accurate any
+more) will predict when a planet becomes tidally locked.  I'm just
+wondering what would happen if a planet was close enough for this to occur,
+BUT started with a highly inclined orbit (like Uranus).
+
+Although I imagine that Uranus must have some pretty fierce winds and
+strange ice structures itself, although I doubt it gets much heating from
+the sun (mostly internal, I believe).
+
+                == John ==
+----------------------------------------------------------------------------
+
+Saturday, 1 February 1997 08:00:00 UTC - Erik Max Francis:
+John D. Gwinner wrote:
+
+> What about something like Forward's "Rocheworld"?  It would have the
+> torque
+> of the tidal forces working on it, wouldn't it?
+I haven't read "Rocheworld."  There are ways of inventing weird situations
+where you could get constant torques that just _happen_ to keep the body's
+second-order rotation in sync with its orbit, but now it's getting a little
+silly . . .
+
+
+> I'm interested as I'm (gut level, haven't done the math yet) thinking
+> that
+> smaller 'brown' stars might have habital planets located VERY close to
+> the
+> primary,  I'm interested in qualitative effects of tidal forces.  Can't
+> remember, but I think Accrete (not that it's scientifically accurate any
+> more) will predict when a planet becomes tidally locked.  I'm just
+> wondering what would happen if a planet was close enough for this to
+> occur,
+> BUT started with a highly inclined orbit (like Uranus).
+Tidal forces tend to slow a body's rotation relative to its primary, not
+change that body's rotating axis.  That would require far too much torque.
+
+The restoring torque that occurs because of tidal slowing is due to
+equatorial bulges.  The Earth, for instance, is not a perfect sphere; so
+the bulge on the sunward side gets pulled harder than that on the rearward
+side, inducing a torque.
+
+The more inclined the rotation axis of the body, the less this torque is.
+It's a maximum for an axis perpendicular to the plane of its orbit.
+
+
+> Although I imagine that Uranus must have some pretty fierce winds and
+> strange ice structures itself, although I doubt it gets much heating from
+> the sun (mostly internal, I believe).
+Strange ice structures, in a jovian world?  :-)
+
+_Voyager II_'s flyby of Uranus wasn't terribly interesting, but Neptune's
+was amazing.  Planetary astronomers were expecting Neptune to be even more
+drab and lonely than Uranus, but they found shattered worlds, active
+geysers, and unbelievably strong winds.  No one considered that the lower
+temperature meant less friction.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Saturday, 1 February 1997 08:00:00 UTC - John D. Gwinner:
+Erik:
+
+> I haven't read "Rocheworld."  There are ways of inventing weird
+situations
+> where you could get constant torques that just _happen_ to keep the
+body's
+> second-order rotation in sync with its orbit, but now it's getting a
+little
+> silly . . .
+I don't have the book on the shelf, but it's an egg shaped moon the size
+(roughly) of earth in orbit around a Jovian, *I think*.  I believe that the
+'point' was pointed at the jovian in some kind of tidal lock, but boy, I
+could be wrong.  
+
+
+> Tidal forces tend to slow a body's rotation relative to its primary, not
+> change that body's rotating axis.  That would require far too much
+torque.
+Makes sense.  Of course, a small M type star could have VERY old planets
+around it, giving plenty of time for tidal effects to work.  Guess I'll
+have to work out some figures, but it's probably far easier to ignore the
+idea.
+
+
+> Strange ice structures, in a jovian world?  :-)
+Well, we didn't say what kind of ice <G>.
+I wasn't typing or thinking very clearly ... I guess what I meant was a
+'terrestrial' planet with Uranus's tilt in a close orbit would have some
+pretty weird ice formations.  Seasonal glaciers, etc.   Each pole would be
+in sunlight about half the time, and without a really thick atmosphere like
+Venus, I think you'd get extremes of temperature.  The polar ice caps would
+be pretty thick during 'winter' and would probably melt right off during
+summer.  That would be an incredibly active place to be.  Imagine the winds
+.. 
+
+Of course, we've got a good tilt and it isn't THAT bad.
+
+
+> 
+> _Voyager II_'s flyby of Uranus wasn't terribly interesting, but Neptune's
+> was amazing.  Planetary astronomers were expecting Neptune to be even
+more
+> drab and lonely than Uranus, but they found shattered worlds, active
+> geysers, and unbelievably strong winds.  No one considered that the lower
+> temperature meant less friction.
+Interesting about the friction.  At a rough guess then, if you were to
+categorize, it sounds like anything the temperature of Neptune is going to
+be boring, anything the temp of Uranus or Jupiter might be *very*
+interesting, at least if you like wind <G>
+
+                == John ==
+----------------------------------------------------------------------------
+
+Sunday, 2 February 1997 08:00:00 UTC - Erik Max Francis:
+John D. Gwinner wrote:
+
+> I don't have the book on the shelf, but it's an egg shaped moon the size
+> (roughly) of earth in orbit around a Jovian, *I think*.  I believe that
+> the
+> 'point' was pointed at the jovian in some kind of tidal lock, but boy, I
+> could be wrong.
+This sounds vaguely like Niven's Jinx, except for an end being in tidal
+lock.
+
+
+> Interesting about the friction.  At a rough guess then, if you were to
+> categorize, it sounds like anything the temperature of Neptune is going
+> to
+> be boring, anything the temp of Uranus or Jupiter might be *very*
+> interesting, at least if you like wind <G>
+But it's Neptune that turned out to be interesting, and it's Uranus that
+was a disappointment.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Sunday, 2 February 1997 08:00:00 UTC - Nyrath the nearly wise:
+Erik Max Francis (m...@alcyone.com <>) wrote:
+: John D. Gwinner wrote:
+: 
+: > I don't have the book on the shelf, but it's an egg shaped moon the size
+: > (roughly) of earth in orbit around a Jovian, *I think*.  I believe that
+: > the
+: > 'point' was pointed at the jovian in some kind of tidal lock, but boy, I
+: > could be wrong.
+: 
+: This sounds vaguely like Niven's Jinx, except for an end being in tidal
+: lock.
+NO, NO, NO!!!
+Rocheworld was *much* stranger than that.
+
+I don't have the book in front of me so I can't give you any
+details, but the astrophysics were impeccably worked out.
+
+Rocheworld was a double planet, with a separation something
+like 500 *miles*. There was actually an atmospheric bridge
+between the two. Tides molded them into egg shapes, with the
+pointy ends aimed at each other.
+ There was another periodic phenomenon that I'll neglect to
+mention in the interest of spoiler protection.
+
+
++----------------------------------------------------------------------------+
+| WINCHELL CHUNG                   http://www.clark.net/pub/nyrath/home.html <http://www.clark.net/pub/nyrath/home.html> |
+| Nyrath the nearly wise                                    nyr...@clark.net <> |
++---_---+---------------------[ SURREAL SAGE SEZ: ]--------------------------+
+|  /_\  | Up doo-doo pulsar without a gravity generator.                     |
+| <(*)> |                                                                    |
+|/_/|\_\|                                                                    |
+| //|\\ |                                                                    |
++///|\\\+--------------------------------------------------------------------+
+----------------------------------------------------------------------------
+
+Monday, 3 February 1997 08:00:00 UTC - John D. Gwinner:
+Erik Max Francis <m...@alcyone.com <>> wrote in article
+<32F4E893...@alcyone.com <>>...
+> But it's Neptune that turned out to be interesting, and it's Uranus that
+> was a disappointment.
+Whoops, I think I got that backwards :-(
+
+I saw an interesting thing at Siggraph talking about using vertical scaling
+to make mountains like Mons Olympus look very dramatic, whereas in real
+life it's actually kind of flat (high, but not a 'peak').  The short film
+also talked about using false color in pictures of Saturn (you knew there
+would be a point to this).  I think of this issue when I display Gas giants
+... Uranus and Saturn actually look kind of bland, is my recollection. 
+I've actually had sort of a hard time finding hard data on this; a lot of
+astro photography taken from 'serious' observatories uses false color to
+bring out data.
+
+                == John ==
+----------------------------------------------------------------------------
+
+Monday, 3 February 1997 08:00:00 UTC - Andy Lanagan (R):
+The Tidally Locked Earth sounds interesting. What sort of story is to take place
+there? Is there a civilization? At what level of development?
+A few comments:
+
+* There almost certainly *will* be a land mass at each "pole" - Sunward and
+  Darkward. The planet must settle with long axis straight up and down, as
+  far as mass is concerned.
+
+* Winds and ocean currents at the surface will be moving in opposite directions:
+  Sunward and Darkward respectively. Whitecaps at the terminator. This
+  tendency toward rough seas may be attenuated somewhat by the fact that that
+  is also the location of the greatest "cross section".
+
+* A civilization evolving in the termerate zone (30 to 45 degree latitude?)
+  is going to have the devil of a time keeping track of time, or even developing
+  the concept of "days", "years", etc. The sun is going to be in the same
+  place *all* the time. How shall durations be measured? What determines when
+  the "day" starts/ends?
+
+* Sailing ships will enjoy a steady supply of wind, and currents heading
+  Darkward will eliminate the need for tacking back-and-forth into the wind.
+  Ships *will* need to be hydrodynamic in design, in order to be able to sail
+  up-current. If the civilization gets technically advanced enough to build
+  submarines, then they will cruise near the surface to go Darkward, and
+  submerge below the thermal layer to head Sunward.
+
+* Navigation will present a formidable problem. Latitude is easy - just measure
+  the angle of the sun. But how do you know your longitude, even if your
+  civilization did develop a concept of time and invented a mechanical clock?
+----------------------------------------------------------------------------
+
+Monday, 3 February 1997 08:00:00 UTC - Stevens R. Miller:
+Andy Lanagan (R) wrote:
+
+> * Navigation will present a formidable problem. Latitude is easy - just measure
+>   the angle of the sun. But how do you know your longitude, even if your
+>   civilization did develop a concept of time and invented a mechanical clock?
+This would be an approximate method only, but:  If the planet's
+sun rotates and has sunspots, one could track the path of a spot
+and measure the angle between that path and the horizon.
+
+-- 
+WEB PAGE: FINDING A NEW YORK LAWYER | Freedom from fear and want.
+http://www.users.interport.net/~lex <http://www.users.interport.net/~lex> | Freedom of speech and religion.
+----------------------------------------------------------------------------
+
+Monday, 3 February 1997 08:00:00 UTC - John D. Gwinner:
+Andy:
+
+> * Winds and ocean currents at the surface will be moving in opposite
+directions:
+I've got a question about that.  There's a return cycle isn't there?  Or
+does all the air and water pile up on one side <G>.  I guess what I'm
+asking is would the wind vary due to altitude as you hint?  If so, how ...
+what's the cycle?  If not, I just can't see it lasting really long,
+although I guess turbulence and chaos would have an effect.
+
+Long term, however, it's a fairly static world, so I would think (again,
+LONG term, say millions or billions of years) that a lot of the effects
+would level out, and approach some kind of steady state effect.  Or would
+they?
+
+                == John ==
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Tommy the Terrorist:
+In article <5d5i0p$2o...@eccws1.dearborn.ford.com <>> Andy Lanagan,
+alan...@pt8331.pto.ford.com <> writes:
+>* A civilization evolving in the termerate zone (30 to 45 degree latitude?)
+>  is going to have the devil of a time keeping track of time, or even developing
+>  the concept of "days", "years", etc. The sun is going to be in the same
+>  place *all* the time. How shall durations be measured? What determines when
+>  the "day" starts/ends?
+This is an interesting problem, but I think they'd get around it.  There
+should still be plenty of pseudoperiodic phenomena relevant to their
+lives - the time required for a certain type of plant to grow, the
+menstrual cycle, the time it takes one of their relative's corpses to
+decay.  Whatever they choose, it will be less relevant than our own time,
+since there really are fewer time-related effects.
+
+What's more interesting, however, is what this would do to *plants*!  We
+look at our trees and grasses and take them for granted, but they're
+cunningly designed to intercept as much sun with as little material as
+they can, given that the sun moves and they respond to it.  By contrast,
+a non-moving sun stresses entirely different strategies - the plant never
+needs to make any reaction to changing sunlight, but should be as big and
+rigid a plate of photosynthetic material pointed at the sun as is
+possible.  But the plate has to stick out past all the others, so there
+may be stalks going up to a tilted upper plate.  Since the shade beneath
+layers and layers of plate would be nearly absolute, plant evolution
+should stress expansion by existing large individuals, rather than
+trusting to seeds except for heavily disrupted areas.
+
+The weird part about all that is that since the surface would mostly be
+dark, under the plates, but the parts exposed to the sun are (whatever
+color, let's assume "green" for staidness), a person orbiting the planet
+from above would see the temperate hemisphere as a dark greenish mass,
+until he crossed almost directly sunward from the planet, at which point
+it would all flash brilliant green for just a moment.
+
+If the whole surface is covered with tilted plates poking far up into the
+air, it seems possible that this may actually affect wind and weather
+patterns, simply because the wind should flow more smoothly and freely if
+it moves toward the dark side, but with more turbulence the other way. 
+And since you'd expect the prevailing wind to naturally be the cold air
+from the dark side, heating up and returning far above, this tendency
+would oppose that wind flow.  If I really wanted to get far-fetched, I
+could argue that the resistance would increase from super-giant plants
+until the wind flow was so hindered that convection was slowed, heat
+accumulated, and mass fires broke out, at which point the situation would
+return to normal.  This would generate "seasons"... but I bet those
+plants would have to be just *ridiculous* in order to interfere with the
+wind that much!
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Craig Berry:
+John D. Gwinner (gwi...@northnet.org <>) wrote:
+: Andy:
+: 
+: > * Winds and ocean currents at the surface will be moving in opposite
+: directions:
+: 
+: I've got a question about that.  There's a return cycle isn't there?  Or
+: does all the air and water pile up on one side <G>.  I guess what I'm
+: asking is would the wind vary due to altitude as you hint?  If so, how ...
+: what's the cycle?  If not, I just can't see it lasting really long,
+: although I guess turbulence and chaos would have an effect.
+The flow in any fluid spanning dark and light sides will be:
+
+- Light -> Dark at high altitude/low depth (farther 'above' planet)
+- Dark -> Light at low altitude/high depth (less far 'above' planet)
+
+This is because fluid is heated by the star on lightside, rises, and 
+flows away 'higher' (since it's hot, and thus less dense), then cools on 
+darkside and sinks, flowing back 'lower' (it's cool, and thus denser) to 
+complete the mass transfer balance you're worried about.  This very 
+process happens in modified form in six great convection cells on Earth, 
+three each in northern and southern hemispheres.  The band of deserts 
+around the world at 30 degrees north/south are where air heated over the 
+equator, which rises, cools, and dumps its moisture there, drops back to 
+the surface and begins flowing back toward the equator again.
+
+: Long term, however, it's a fairly static world, so I would think (again,
+
+: LONG term, say millions or billions of years) that a lot of the effects
+: would level out, and approach some kind of steady state effect.  Or would
+: they?
+Not as long as the atmosphere and oceans don't freeze out on the darkside 
+(see earlier posts on this thread).  You have a heat engine; the star 
+pumps energy onto lightside, and interstellar space sucks energy off of 
+darkside.  The continuous air/ocean circulation is driven by this energy 
+flow; it's the most efficient way to transport the heat.
+
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Fly Boy:
+On 3 Feb 1997 20:32:25 GMT, alan...@pt8331.pto.ford.com <> (Andy Lanagan
+(R)) wrote:
+(snip)
+
+>
+>* Navigation will present a formidable problem. Latitude is easy - just measure
+>  the angle of the sun. But how do you know your longitude, even if your
+>  civilization did develop a concept of time and invented a mechanical clock?
+Do you measure latitude towards sun closest surface point ?
+Remember: the rotation axis is perpendicular to the orbit's plane.
+Equador is coplanar with the orbit's plane.
+isoazimutal lines cross the equator sow how can you tell latitude from
+sun angle ? Only works on mid-day meridian.
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Lance Purple:
+- show quoted text -
+Tommy the Terrorist  <may...@super.zippo.com <>> wrote:
+>What's more interesting, however, is what this would do to *plants*!  We
+>look at our trees and grasses and take them for granted, but they're
+>cunningly designed to intercept as much sun with as little material as
+>they can, given that the sun moves and they respond to it.  By contrast,
+>a non-moving sun stresses entirely different strategies - the plant never
+>needs to make any reaction to changing sunlight, but should be as big and
+>rigid a plate of photosynthetic material pointed at the sun as is
+>possible.  But the plate has to stick out past all the others, so there
+>may be stalks going up to a tilted upper plate.  Since the shade beneath
+>layers and layers of plate would be nearly absolute, plant evolution
+>should stress expansion by existing large individuals, rather than
+>trusting to seeds except for heavily disrupted areas.
+>
+>The weird part about all that is that since the surface would mostly be
+>dark, under the plates, but the parts exposed to the sun are (whatever
+>color, let's assume "green" for staidness), a person orbiting the planet
+>from above would see the temperate hemisphere as a dark greenish mass,
+>until he crossed almost directly sunward from the planet, at which point
+>it would all flash brilliant green for just a moment.
+>
+>If the whole surface is covered with tilted plates poking far up into the
+>air, it seems possible that this may actually affect wind and weather
+>patterns, simply because the wind should flow more smoothly and freely if
+>it moves toward the dark side, but with more turbulence the other way. 
+>And since you'd expect the prevailing wind to naturally be the cold air
+>from the dark side, heating up and returning far above, this tendency
+>would oppose that wind flow.  If I really wanted to get far-fetched, I
+>could argue that the resistance would increase from super-giant plants
+>until the wind flow was so hindered that convection was slowed, heat
+>accumulated, and mass fires broke out, at which point the situation would
+>return to normal.  This would generate "seasons"... but I bet those
+>plants would have to be just *ridiculous* in order to interfere with the
+>wind that much!
+Another strategy might be to have windmill-trees that exploit the
+constant winds near the terminator.
+
+Or OTEC-weed that circulates liquid across the temperature gradient.
+Big dark heat-collector shrubs on the sunlit side, then buried roots
+to exchange liquid with big pale radiator shrubs on the dark side.
+
+.----------------------------.
+| lpurple at netcom dot com  |
+'----------------------------'
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Matthew Melmon:
+In article <5d610a$f...@clark.zippo.com <>>, Tommy the Terrorist
+<may...@super.zippo.com <>> wrote:
+
+> What's more interesting, however, is what this would do to *plants*!  We
+> look at our trees and grasses and take them for granted, but they're
+> cunningly designed to intercept as much sun with as little material as
+> they can, given that the sun moves and they respond to it.  By contrast,
+> a non-moving sun stresses entirely different strategies - the plant never
+> needs to make any reaction to changing sunlight, but should be as big and
+> rigid a plate of photosynthetic material pointed at the sun as is
+> possible.  But the plate has to stick out past all the others, so there
+> may be stalks going up to a tilted upper plate.  Since the shade beneath
+> layers and layers of plate would be nearly absolute, plant evolution
+> should stress expansion by existing large individuals, rather than
+> trusting to seeds except for heavily disrupted areas.
+It still seems to me that the facing side of the planet is
+going to get much too hot for life.  Even if it hovered around
+the same temperature as one of Earth's daytime deserts, plants
+in that environment do not adopt the strategy you suggest.
+The cactus and the Joshua tree seem more interested presenting
+long, pointy limbs to the sun, so as not to overheat.  
+
+Big leafy "platforms" are more of a strategy for jungle plants
+below the canopy.  They need to collect as much light as 
+possible.  If you put a leafy plant in direct sunlight, it
+burns to a crisp.
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Christopher Neufeld:
+In article <01bc109a$7eaa28a0$295ee8cd@sal9000>,
+John D. Gwinner <gwi...@northnet.org <>> wrote:
+>Erik:
+>
+>> I haven't read "Rocheworld."  There are ways of inventing weird
+>situations
+>> where you could get constant torques that just _happen_ to keep the
+>body's
+>> second-order rotation in sync with its orbit, but now it's getting a
+>little
+>> silly . . .
+>
+>I don't have the book on the shelf, but it's an egg shaped moon the size
+>(roughly) of earth in orbit around a Jovian, *I think*.  I believe that the
+>'point' was pointed at the jovian in some kind of tidal lock, but boy, I
+>could be wrong.  
+>
+   Not really very close. Rocheworld, as described, consists of two
+almost equal-sized planets in a very tight orbit, tidally locked to each
+other. Rotation is in the ecliptic plane, so the pole does not point at
+the sun.
+   If you want to keep one pole pointing at the sun, you pretty much have
+to cheat. You can put the object in orbit about a fairly dark source, a
+Jupiter-sized gas ball. Put this whole thing in a very long orbit around
+a very bright sun, with its orbital plane perpendicular to that of the
+gas ball around the sun, and for several years at a stretch the pole
+will be pointing more or less at the sun. Or, put the planet in orbit
+around a dark object, put this collection on the edge of a dirty nebula,
+and put a whole lot of bright nearby stars around the whole thing. The
+nebula blocks light coming at the planet from one direction.
+-- 
+ Christopher Neufeld - Not a graduate student   neu...@physics.utoronto.ca <>
+ Home page:  http://caliban.physics.utoronto.ca/neufeld/Intro.html <http://caliban.physics.utoronto.ca/neufeld/Intro.html>
+ "Don't edit reality for the sake of simplicity"
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Julie A.Pascal:
+Del Cotter wrote:
+> 
+> On Tue, 4 Feb 1997, in rec.arts.sf.science
+> Tommy the Terrorist <may...@super.zippo.com <>> wrote about habitable
+> solar-tide-locked planets:
+> 
+> >What's more interesting, however, is what this would do to *plants*!  We
+> >look at our trees and grasses and take them for granted, but they're
+> >cunningly designed to intercept as much sun with as little material as
+> >they can, given that the sun moves and they respond to it.  By contrast,
+> >a non-moving sun stresses entirely different strategies - the plant never
+> >needs to make any reaction to changing sunlight, but should be as big and
+> >rigid a plate of photosynthetic material pointed at the sun as is
+> >possible.
+> 
+> The Big Leaf school of sfictional botany has been popular mainly because
+> it makes the plants look suitably unearthly, but in this case it's not
+> the sun that makes Earth's plants grow little leaves; it's the
+> atmosphere.
+> 
+> Leaves are mainly designed to gather the CO2 needed for photosynthesis
+> from the air, and to do this they need as thin a boundary layer as
+> possible.  The boundary layer thickness is roughly proportional to the
+> square root of leaf size, so small leaves can gather CO2 faster than big
+> leaves [1].
+> 
+> There are reasons for the exceptions :-)
+Earth plantlife needs night.  How much can we extrapolate
+from Earth plants to plants growing in eternal sun?
+
+
+j.pascal
+----------------------------------------------------------------------------
+
+Wednesday, 5 February 1997 08:00:00 UTC - Dan Goodman:
+In article <mattm-04029...@melmma1.apple.com <>>,
+Matthew Melmon <ma...@apple.com <>> wrote:
+>In article <5d610a$f...@clark.zippo.com <>>, Tommy the Terrorist
+><may...@super.zippo.com <>> wrote:
+>
+>> What's more interesting, however, is what this would do to *plants*!  We
+>> look at our trees and grasses and take them for granted, but they're
+>> cunningly designed to intercept as much sun with as little material as
+>> they can, given that the sun moves and they respond to it.  By contrast,
+>> a non-moving sun stresses entirely different strategies - the plant never
+>> needs to make any reaction to changing sunlight, but should be as big and
+>> rigid a plate of photosynthetic material pointed at the sun as is
+>> possible.  But the plate has to stick out past all the others, so there
+>> may be stalks going up to a tilted upper plate.  Since the shade beneath
+>> layers and layers of plate would be nearly absolute, plant evolution
+>> should stress expansion by existing large individuals, rather than
+>> trusting to seeds except for heavily disrupted areas.
+>
+>It still seems to me that the facing side of the planet is
+>going to get much too hot for life.  Even if it hovered around
+>the same temperature as one of Earth's daytime deserts, plants
+>in that environment do not adopt the strategy you suggest.
+Check on relatively recent reports of VERY hot places on (and in the crust
+of) Earth which have life.
+
+Begins to look as if life evolved on Earth at temperatures that would fry
+most animal or plant life now existing.
+--
+Dan Goodman
+dsg...@visi.com <>
+http://www.visi.com/~dsgood/index.html <http://www.visi.com/~dsgood/index.html>
+Whatever you wish for me, may you have twice as much.
+----------------------------------------------------------------------------
+
+Wednesday, 5 February 1997 08:00:00 UTC - Andy Lanagan (R):
+> Do you measure latitude towards sun closest surface point ?
+> Remember: the rotation axis is perpendicular to the orbit's plane.
+If I understand correctly, the answer is Yes. I am considering the place
+where the sun is directly overhead to be 90 degrees Sunward, the terminator
+as zero degrees, and the center of Darkside as 90 degrees Darkward. It seemed
+more convenient than to use the axis of rotation.
+----------------------------------------------------------------------------
+
+Wednesday, 5 February 1997 08:00:00 UTC - Matthew Melmon:
+In article <5d8kfg$6...@darla.visi.com <>>, dsg...@visi.com <> (Dan Goodman) wrote:
+
+> >It still seems to me that the facing side of the planet is
+> >going to get much too hot for life.  Even if it hovered around
+> >the same temperature as one of Earth's daytime deserts, plants
+> >in that environment do not adopt the strategy you suggest.
+> 
+> Check on relatively recent reports of VERY hot places on (and in the crust
+> of) Earth which have life.
+> 
+> Begins to look as if life evolved on Earth at temperatures that would fry
+> most animal or plant life now existing.
+Well, certainly thermal vents at the bottom of the ocean would
+be very inhospitable to many of the Earth's life forms.  I am
+not saying that life couldn't evolve on a hot planet (though
+complex molecules do get busted apart by excessive heat, do
+they not?  I would think that "higher forms" of life would
+be unlikely to evolve on such a planet, even if it could
+support them if they arrived from somewhere else).  It just
+seems to me that plantlife would not be big and leafy, but
+rather scrawny, like a desert cactus or shrub.
+----------------------------------------------------------------------------
+
+Wednesday, 5 February 1997 08:00:00 UTC - Del Cotter:
+On Tue, 4 Feb 1997, in rec.arts.sf.science
+Tommy the Terrorist <may...@super.zippo.com <>> wrote about habitable
+solar-tide-locked planets:
+
+>What's more interesting, however, is what this would do to *plants*!  We
+>look at our trees and grasses and take them for granted, but they're
+>cunningly designed to intercept as much sun with as little material as
+>they can, given that the sun moves and they respond to it.  By contrast,
+>a non-moving sun stresses entirely different strategies - the plant never
+>needs to make any reaction to changing sunlight, but should be as big and
+>rigid a plate of photosynthetic material pointed at the sun as is
+>possible.  
+The Big Leaf school of sfictional botany has been popular mainly because
+
+it makes the plants look suitably unearthly, but in this case it's not
+the sun that makes Earth's plants grow little leaves; it's the
+atmosphere.
+
+Leaves are mainly designed to gather the CO2 needed for photosynthesis
+from the air, and to do this they need as thin a boundary layer as
+possible.  The boundary layer thickness is roughly proportional to the
+square root of leaf size, so small leaves can gather CO2 faster than big
+leaves [1].
+
+There are reasons for the exceptions :-)
+-- 
+                   Del Cotter    d...@branta.demon.co.uk <>
+[1] Steven Vogel "Life in Moving Fluids: the Physical Biology of Flow"
+Princeton University Press, (2nd edition, 1996)
+----------------------------------------------------------------------------
+
+Thursday, 6 February 1997 08:00:00 UTC - Julie A.Pascal:
+Leonard Erickson wrote:
+> 
+> "Julie A.Pascal" <ju...@pascal.org <>> writes:
+> 
+> >> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+> >> that a planet in an elliptical orbit like Mercury's tends to end up in
+> >> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+> >
+> > A very long day, very long night, might be just as interesting
+> > a science fiction setting.  What if we moved Mercury out a way
+> > (made it bigger, etc.) gave our new planet a 3:2 rotation:orbit
+> > lock.  365 day year (for instance), 240 day "day" (off the top
+> > of my head, and I'm _bad_ for mental math)...
+> >
+> > And an elliptical orbit?  I suppose the side of the planet in
+> > night and day while closest or farthest from the sun would
+> > alternate on some reasonably determinable schedule.
+> 
+> Every *other* orbit the same point has noon at perihelion. Call the
+> point closest to the sun at perihelion this orbit pole A. Next orbit at
+> perhelion, it will be the *farthest point (ie instead of noon it'll be
+> midnight). And the point directly *opposite* will be closest (Pole B).
+> 
+> orbit   pole A  Pole B
+> -----   ------  --------
+> 1       noon    midnite
+> 2       midnite noon
+> 3       noon    midnite
+> 4       midnite noon
+> ....
+> 
+> Get the picture?
+I think so.  So every other "noon" would be extra warm
+because of the eliptical orbit.  Provided you lived at
+a point on the surface that lined up with perihelion.
+
+The more habitable regions might be those that don't
+line up with the sun at perihelion (or the point where
+the planet is furthest from the sun, whatever that is
+called.  I used to know.)
+
+j.pascal
+----------------------------------------------------------------------------
+
+Friday, 7 February 1997 08:00:00 UTC - Leonard Erickson:
+alan...@pt8331.pto.ford.com <> (Andy Lanagan (R)) writes:
+
+> * Navigation will present a formidable problem. Latitude is easy -
+>   just measure the angle of the sun. But how do you know your
+>   longitude, even if your civilization did develop a concept of time
+>   and invented a mechanical clock?
+They'll have some weird ideas. But I suspect that the fact that the
+world is round will be discovered a *lot* earlier. That's the only way
+to make sun angle measurements match with distance from noon.
+
+I don't think it's possible for a locked planet to have stable
+satellites. So they won't have a moon to observe.
+
+The law of gravity will be a *very* late discovery (a *correct*
+version, that is). The question of "what keeps the sun up" may not ever
+*occur* to them.
+
+Focault's pendulum rotates once a *year*, so that's out. 
+
+-- 
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Friday, 7 February 1997 08:00:00 UTC - Leonard Erickson:
+ded...@newton.dialix.com.au <> (Stephen Dedman) writes:
+> Can anyone give me a short answer what the prevailing winds would be like
+> on a tide-locked world with an approximately earth-normal atmosphere (if
+> such a thing is possible?)? 
+
+Easy. The ground on dayside is warm, getting warmer as you approach the
+center of dayside. Hot air rises. So replacement air will have to come
+from darkside. The basic circulatory pattern will be air at high
+altitude flowing towards nightside and air at low altitudes flowing
+towards dayside. This sort of thing tries to happen on Earth (for
+slightly different reasons). But a tidally locked world will have
+negligible Coriolis forces acting upon the wind patterns. So they'll be
+radial from the center of dayside to the center of nightside and vice
+versa. 
+
+This will tend to move moisture to nightside, where it will give off
+heat as it condenses into rain & snow. This will help moderate the
+climate of nightside. 
+
+I can't say if there'd be enough keep nightside from getting *really*
+cold, but I suspect that given enough moisture it wouldn't get much
+worse than the south pole on earth. 
+
+You'd get *massive* glacial buildup on nightside, but with enough
+water, the glaciers would flow into dayside (and the rain on them
+nearer the terminator would help). 
+
+-- 
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Friday, 7 February 1997 08:00:00 UTC - Leonard Erickson:
+"Julie A.Pascal" <ju...@pascal.org <>> writes:
+
+>> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+>> that a planet in an elliptical orbit like Mercury's tends to end up in
+>> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+>
+> A very long day, very long night, might be just as interesting
+> a science fiction setting.  What if we moved Mercury out a way
+> (made it bigger, etc.) gave our new planet a 3:2 rotation:orbit
+> lock.  365 day year (for instance), 240 day "day" (off the top
+> of my head, and I'm _bad_ for mental math)...
+>
+> And an elliptical orbit?  I suppose the side of the planet in
+> night and day while closest or farthest from the sun would
+> alternate on some reasonably determinable schedule.
+
+Every *other* orbit the same point has noon at perihelion. Call the
+point closest to the sun at perihelion this orbit pole A. Next orbit at
+perhelion, it will be the *farthest point (ie instead of noon it'll be
+midnight). And the point directly *opposite* will be closest (Pole B).
+
+orbit        pole A        Pole B
+-----        ------        --------
+1        noon        midnite
+2        midnite        noon
+3        noon        midnite
+4        midnite        noon
+....
+Get the picture?
+
+-- 
+
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Saturday, 8 February 1997 08:00:00 UTC - Leonard Erickson:
+"Julie A.Pascal" <ju...@pascal.org <>> writes:
+
+- show quoted text -> Leonard Erickson wrote:
+>> 
+>> "Julie A.Pascal" <ju...@pascal.org <>> writes:
+>> 
+>> >> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+>> >> that a planet in an elliptical orbit like Mercury's tends to end up in
+>> >> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+>> >
+>> > A very long day, very long night, might be just as interesting
+>> > a science fiction setting.  What if we moved Mercury out a way
+>> > (made it bigger, etc.) gave our new planet a 3:2 rotation:orbit
+>> > lock.  365 day year (for instance), 240 day "day" (off the top
+>> > of my head, and I'm _bad_ for mental math)...
+>> >
+>> > And an elliptical orbit?  I suppose the side of the planet in
+>> > night and day while closest or farthest from the sun would
+>> > alternate on some reasonably determinable schedule.
+>> 
+>> Every *other* orbit the same point has noon at perihelion. Call the
+>> point closest to the sun at perihelion this orbit pole A. Next orbit at
+>> perhelion, it will be the *farthest point (ie instead of noon it'll be
+>> midnight). And the point directly *opposite* will be closest (Pole B).
+>> 
+>> orbit   pole A  Pole B
+>> -----   ------  --------
+>> 1       noon    midnite
+>> 2       midnite noon
+>> 3       noon    midnite
+>> 4       midnite noon
+>> ....
+>> 
+>> Get the picture?
+>
+> I think so.  So every other "noon" would be extra warm
+> because of the eliptical orbit.  Provided you lived at
+> a point on the surface that lined up with perihelion.
+I goofed a bit. The planet has 1.5 "days" per "year". So it works like
+this: 
+
+day        orbit        pole A        Pole B
+---        -----        ------        --------
+0        0        noon        midnite
+0.5        1/3        midnite        noon
+1        2/3        noon        midnite
+1.5        1        midnite        noon
+2        1 1/3        noon        midnite
+2.5        1 2/3        midnite        noon
+3        2        noon        midnite                <--- See where the 3:2 comes from?
+3.5        2 1/3        midnite        noon
+4        2 2/3        noon        midnite
+4.5        3        midnite        noon
+5        3 1/3        noon        midnite
+5.5        3 2/3        midnite        noon
+....
+
+So it's every *third* noon that's hot. 
+
+-- 
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Saturday, 8 February 1997 08:00:00 UTC - Del Cotter:
+On Sat, 8 Feb 1997, in rec.arts.sf.science
+Leonard Erickson <sha...@krypton.rain.com <>> wrote
+
+>I goofed a bit. The planet has 1.5 "days" per "year". So it works like
+>this: 
+>
+>day    orbit   pole A  Pole B
+>---    -----   ------  --------
+>0      0       noon    midnite
+>0.5    1/3     midnite noon
+>1      2/3     noon    midnite
+>1.5    1       midnite noon
+>2      1 1/3   noon    midnite
+>2.5    1 2/3   midnite noon
+>3      2       noon    midnite         <--- See where the 3:2 comes from?
+>....
+
+>
+>So it's every *third* noon that's hot. 
+Nope, this is where you goofed, Leonard.  You were right first time,
+since where there are three turns per orbit, there are two orbits per
+day.
+
+It's a 3:2 *spin*:orbit coupling, and a turn is not a day.  For example,
+Earth spins once every 23 hours and 56 minutes, but the sun rises once
+every 24 hours.  For the same reason, the minute hand goes round the
+clock in 1 hour, but only crosses the hour hand after 1 hour and 5.45
+minutes :-)
+-- 
+                   Del Cotter    d...@branta.demon.co.uk <>
+         The US Tour   Sat 23rd August - Sun 14th September 1997
+ Houston Austin SanAntonio Phoenix Flagstaff GrandCanyon LakeMead LasVegas 
+DeathValley Yosemite NapaValley SanFrancisco  TouristTipsGratefullyReceived
+----------------------------------------------------------------------------
+
+Saturday, 8 February 1997 08:00:00 UTC - Stevens R. Miller:
+> "Julie A.Pascal" <ju...@pascal.org <>> writes:
+> 
+> >> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+> >> that a planet in an elliptical orbit like Mercury's tends to end up in
+> >> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+Why does the moon, which has an elliptical orbit, keep a 1:1
+lock?  In fact, what orbiting celestial body doesn't have an
+elliptical orbit?
+
+-- 
+WEB PAGE: FINDING A NEW YORK LAWYER | Freedom from fear and want.
+http://www.users.interport.net/~lex <http://www.users.interport.net/~lex> | Freedom of speech and religion.
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Harvey White:
+On Sat, 08 Feb 1997 17:50:33 -0500, "Stevens R. Miller"
+<l...@interport.net <>> wrote:
+
+>
+>Why does the moon, which has an elliptical orbit, keep a 1:1
+>lock?  In fact, what orbiting celestial body doesn't have an
+>elliptical orbit?
+>
+Without knowing the exact figures, and the amount of tidal locking
+(has to do with mass ratio and distances, I think), you need to
+compare the distances and masses of the earth/moon system with the
+mercury/sun system.  The axes and differences in orbital distortion
+are different.  
+I suspect that it's due to the 1) sun being far more massive in
+comparison.  2) Mercury being much closer in proportion, and 3)
+Mercury's orbit being much more eliptical.  
+
+Then again, I haven't researched it at all, and don't know enough
+orbital dynamics to tell.  I'll have to figure out some sort of
+triggers if I'm going to program parts of it, though.
+
+Harvey
+
+
+*** 
+  I just read minds,
+  I don't explain them
+***
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Craig Berry:
+Stevens R. Miller (l...@interport.net <>) wrote:
+: > "Julie A.Pascal" <ju...@pascal.org <>> writes:
+: > 
+: > >> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+: > >> that a planet in an elliptical orbit like Mercury's tends to end up in
+: > >> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+: 
+: Why does the moon, which has an elliptical orbit, keep a 1:1
+: lock?  In fact, what orbiting celestial body doesn't have an
+: elliptical orbit?
+They're all elliptical, true, but Mercury's is highly elliptical -- 
+eccentricity higher than 0.2, as I recall, second highest among the Solar 
+System's planets (behind Pluto).  It's a high-eccentricity, low-radius 
+orbit that leads to 3:2 locking.
+
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Del Cotter:
+On Sat, 8 Feb 1997, in rec.arts.sf.science
+"Stevens R. Miller" <l...@interport.net <>> wrote
+>> >> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+
+>> >> that a planet in an elliptical orbit like Mercury's tends to end up in
+>> >> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+>
+>Why does the moon, which has an elliptical orbit, keep a 1:1
+>lock?  In fact, what orbiting celestial body doesn't have an
+>elliptical orbit?
+An elliptical orbit *like Mercury's*, ie. eccentricity in the region of
+0.2.  The Moon's eccentricity is close to zero, hence a 1:1 lock.
+
+The requirement for resonance is that the central star should stand
+still in the sky *at periastron*, where the tidal forces are strongest.
+So, for instance, a planet with an orbital eccentricity of 0.33 would
+likely have a 1:2 spin-orbit resonance (and hence a day exactly as long
+as the year!).
+
+For more fascinating thought on fictional planets, read Stephen Gillet's
+excellent "World-Building" [1] (note, though, that his suggestion of a
+*retrograde* 3:2 lock won't work, for obvious reasons).
+
+-- 
+        Del Cotter                 d...@branta.demon.co.uk <>
+[1] Stephen L Gillett "World-Building", Writer's Digest Books (1996)
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Peter Kwangjun Suk:
+In article <970207.042052...@krypton.rain.com <>>,
+sha...@krypton.rain.com <> (Leonard Erickson) wrote:
+
+> ded...@newton.dialix.com.au <> (Stephen Dedman) writes:
+> 
+> > Can anyone give me a short answer what the prevailing winds would be like
+> > on a tide-locked world with an approximately earth-normal atmosphere (if
+> > such a thing is possible?)? 
+> 
+[deleted]
+> 
+> You'd get *massive* glacial buildup on nightside, but with enough
+> water, the glaciers would flow into dayside (and the rain on them
+> nearer the terminator would help). 
+Perhaps the glaciers would get massive enough that they'd have an
+influence on tectonic activity.  Any continents that peeked out would be
+instantly weighed down by truly massive glaciers.  Perhaps some glaciers
+would get so massive that their ice would press down the underlying plate
+enough to start getting subducted.  This would release massive amounts of
+steam and cool the underlying magma in the process, thus thickening the
+crust at that point and bringing the release of steam to a halt.  What
+influence would this have on weather patterns?  This could end up being a
+cycle.  Perhaps every 10 million years or so, cold, damp air will pour out
+of the dark side to bring moisture to lands near the terminator.  
+
+This planet might be a great setting for a Norse-flavored sci-fi/fantasy
+hybrid. You have the lands of darkness and ice, and the regions of light. 
+Life might well have evolved differently on the dark and light sides.  Add
+a colony of humans whose civilization has crumbled, and you got a smashing
+great sword & sorcery/space opry!  (But hopefully with better science than
+the Pern books.)
+
+One thing for sure, for there to be life on this world, there'd have to be
+a *lot* of water.  
+
+--PKS
+
+-- 
+There's neither heaven nor hell
+  Save that we grant ourselves.
+There's neither fairness nor justice
+  Save what we grant each other.
+
+Peter Kwangjun Suk <s...@pobox.com <>>
+Musician, Computer Science Graduate Student
+[finger s...@pobox.com <> for PGP public key]
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Erik Max Francis:
+Stevens R. Miller wrote:
+
+> Why does the moon, which has an elliptical orbit, keep a 1:1
+> lock?  In fact, what orbiting celestial body doesn't have an
+> elliptical orbit?
+Because of tides; they impart an active restoring force that tends to make
+a body's revolution period match its rotation period.
+
+Now, naturally, they can't match instantaneously all throughout the orbit,
+since the Moon's orbit is elliptical.  But the periods match.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Tuesday, 11 February 1997 08:00:00 UTC - Henry Spencer:
+In article <32FD03...@interport.net <>>,
+Stevens R. Miller <l...@interport.net <>> wrote:
+>> >> (No, it is not an accident that 59 is 2/3 of 88.  It's now understood
+>> >> that a planet in an elliptical orbit like Mercury's tends to end up in
+>> >> a 3:2 rotation:orbit lock rather than a 1:1 lock.)
+>
+>Why does the moon, which has an elliptical orbit, keep a 1:1 lock?
+Because it matters *how* elliptical the orbit is.  Although the
+eccentricity of the Moon's orbit can't be entirely ignored -- for example,
+it's a nasty complication for some applications of the Lagrange points --
+it is relatively small and does not mess up the basic 1:1 tidal lock found
+in circular and near-circular orbits.  Mercury's eccentricity, on the 
+other hand, is large enough to make a real difference.
+-- 
+Committees do harm merely by existing.             |       Henry Spencer
+                           -- Freeman Dyson        |   he...@zoo.toronto.edu <>
+----------------------------------------------------------------------------
+
+Wednesday, 12 February 1997 08:00:00 UTC - Cyber Linguist:
+In article <32FE3A01...@alcyone.com <>> Erik Max Francis <m...@alcyone.com <>> writes:
+>Stevens R. Miller wrote:
+>
+>> Why does the moon, which has an elliptical orbit, keep a 1:1
+>> lock?  In fact, what orbiting celestial body doesn't have an
+>> elliptical orbit?
+>
+>Because of tides; they impart an active restoring force that tends to make
+>a body's revolution period match its rotation period.
+>
+>Now, naturally, they can't match instantaneously all throughout the orbit,
+>since the Moon's orbit is elliptical.  But the periods match.
+This is why the moon "wobbles" in its orbit, I believe -- we can actually
+see about 53% of the Moon's surface from Earth at the right times in its
+orbit due to the wobbling...
+
+
+-- 
+      Eric Carr <carr @ cs.odu.edu <http://cs.odu.edu>>   |        http://www.cs.odu.edu/~carr <http://www.cs.odu.edu/~carr>
+----------------------------------------------------------------------------
+GAT d- s+:+ g++ a24 w C+++ US++ P L+ 3 E--- N+++ K- W M-- V-- t+ 5 R+(*) G++
+tv-- b++++ D--- B---- e>++ O++ PS+ PE- Y+ PGP X- DI++ h+ r-- n---- !y>+
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Erik Max Francis:
+Cyber Linguist wrote:
+
+> This is why the moon "wobbles" in its orbit, I believe -- we can actually
+> see about 53% of the Moon's surface from Earth at the right times in its
+> orbit due to the wobbling...
+That's correct.  The process is called libration.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)

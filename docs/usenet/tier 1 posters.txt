@@ -37,7 +37,7 @@ author of an accrete version (ported to C++ from code written by Wales Larrison)
 Erik Max Francis / Erik Max Francist?
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 9 May 1993 20:23:42 UTC+1
-Last Archived Msg: Wednesday, 14 February 1996 08:00:00 UTC
+Last Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
@@ -47,6 +47,10 @@ modified his code to print info better?
 Responded to Mike C
 Erik Max Francist?
 have his version of the code
+Responded to Peter Weis
+Responded to Julie A.Pascal
+Responded to William Burns
+Responded to John D. Gwinner
 
 ste...@arc.ug.eds.com
 newsgroup: rec.arts.sf.science

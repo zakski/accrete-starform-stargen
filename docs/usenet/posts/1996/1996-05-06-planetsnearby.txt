@@ -1,0 +1,1512 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/rFOuYsEnaKw
+TITLE: planets nearby? 
+
+----------------------------------------------------------------------------
+
+Monday, 6 May 1996 08:00:00 UTC+1 - Barbara A Cohen:
+My boyfriend's brother is starting to write a sci-fi novel
+and is looking for about 10 "best bet" nearby star systems
+that might have earth-like planets, their distance from
+Earth, spectral type, etc etc.  to locate colonies there.
+I found only about 3 in a list of the 30 nearest stars, going 
+only with G's and F's and singles only.  Anyone know where
+to find others?  I suggested that he make some into mining
+colonies, but he really wants the technologically habitible ones.
+Thanks for any help!
+
+
+--
+              Barbara Cohen
+   Cosmochemical Cocktail Mixer, PhD to be
+   ---------------------------------------
+Johnny was a chemist, a chemist he is no more
+   For what he thought was H2O was H2SO4.
+----------------------------------------------------------------------------
+
+Wednesday, 8 May 1996 08:00:00 UTC+1 - Gordon Clarke:
+In article <4mljjm$1k...@news.ccit.arizona.edu <>>, bco...@lpl.arizona.edu <> says...
+
+>and is looking for about 10 "best bet" nearby star systems
+>that might have earth-like planets, their distance from
+>Earth, spectral type, etc etc.  to locate colonies there.
+>I found only about 3 in a list of the 30 nearest stars, going 
+>only with G's and F's and singles only.  Anyone know where
+Hmm. Your criteria is very narrow, you may have to consider multiple star 
+systems to get your 10. I read that out to 40ly from the Sun there is only a 
+very small percentage that are single star systems (5-9%).
+
+Also what do mean by nearby star systems? 50ly out? 100ly out?
+
+As an example of nearby systems (including multiple systems) that match your F 
+or G spec. Some u may have already. Which ones do u have?
+
+  Name                  Distance (LY)   Type    Habitable       Biocompatible
+
+  Alpha Centauri A         4.38         G2V        7.8%             44%
+  Tau Ceti                11.95         G8V        1.5%             35%
+  Delta Pavonis           18.64         G5         5.1%             39%
+  Eta Cassiopeiae A       19.19         G0V        3.9%             38%
+  82 Eridani              20.9          G5         4.4%             38%
+  Beta Hydri              21.3          G1         7.5%             35%
+ 
+Star Systems that have detected planets are:
+  47Ursa Maj              42.4          G0V
+  HD114762                78.9          F9V
+  70 Virginis             32.6          G2.5Va
+  51 Pegasi               44.0          G5V
+
+As u can see not many F type stars & not many singles. Does this help?
+
+-- 
+Cheers...Gordon
+----------------------+---------------------------------------------------+
+Gordon Clarke         | Women know about their kids football game, best   |
+gc...@seqeb.gov.au <>    | friends, romances, favourite foods, fears & hopes |
+Brisbane, Qld.        | Men are vaguely aware of some short people        |
+Australia             | walking around the home.                          |
+----------------------+---------------------------------------------------+
+----------------------------------------------------------------------------
+
+Wednesday, 8 May 1996 08:00:00 UTC+1 - Stephen D. Schaper:
+In article <Dr2Gr...@un.seqeb.gov.au <>>, gc...@seqeb.gov.au <> (Gordon
+Clarke) wrote:
+
+
+> Star Systems that have detected planets are:
+>   47Ursa Maj              42.4          G0V
+>   HD114762                78.9          F9V
+>   70 Virginis             32.6          G2.5Va
+>   51 Pegasi               44.0          G5V
+> 
+> As u can see not many F type stars & not many singles. Does this help?
+ 
+Why leave out K and non-flare M class stars?
+ 
+Also there is at least three more confirmed systems besides those you
+mentioned and our own. You list one HD, I don't know if that is 55 Cancri
+or not, there is also another HD (may be Lalande 21185). And there are the
+two pulsar systems (obviously not habitable, of course).
+-- 
+Impeach President Clark!
+--Brought to you by the Committee for a Free Mars.
+----------------------------------------------------------------------------
+
+Friday, 10 May 1996 08:00:00 UTC+1 - Chris Carrier
+I don't see why you couldn't have a habitable planet around either Alpha 
+Centauri A or B.  With a separation of 1-2 billion miles, I don't see the
+other star's gravity significantly affecting the orbit of a habitable planet
+around one of them.  
+----------------------------------------------------------------------------
+
+Friday, 10 May 1996 08:00:00 UTC+1 - Gordon Clarke:
+In article <sschaper-080...@slip15.rnet.com <>>, ssch...@minor.rnet.com <> 
+says...
+>
+>In article <Dr2Gr...@un.seqeb.gov.au <>>, gc...@seqeb.gov.au <> (Gordon
+>Clarke) wrote:
+>> Star Systems that have detected planets are:
+>>   47Ursa Maj              42.4          G0V
+>>   HD114762                78.9          F9V
+>>   70 Virginis             32.6          G2.5Va
+>>   51 Pegasi               44.0          G5V
+>> 
+>> As u can see not many F type stars & not many singles. Does this help?
+> 
+>Why leave out K and non-flare M class stars?
+Because the person only asked for F & G type stars
+
+
+>Also there is at least three more confirmed systems besides those you
+>mentioned and our own. You list one HD, I don't know if that is 55 Cancri
+>or not, there is also another HD (may be Lalande 21185). And there are the
+>two pulsar systems (obviously not habitable, of course).
+Well the Pulsars were left out for the same reason as the K & non-flare M class 
+stars.
+
+The HD 114762 isn't 55 Cancri which I did miss. So here is its data in the same 
+format:
+   55 Cancri                  42.4                G8V
+
+-- 
+Cheers...Gordon
+----------------------+---------------------------------------------------+
+Gordon Clarke         | Women know about their kids football game, best   |
+gc...@seqeb.gov.au <>    | friends, romances, favourite foods, fears & hopes |
+Brisbane, Qld.        | Men are vaguely aware of some short people        |
+Australia             | walking around the home.                          |
+----------------------+---------------------------------------------------+
+----------------------------------------------------------------------------
+
+Saturday, 11 May 1996 08:00:00 UTC+1 - Peter Yard:
+In article <4mujhb$f9i$1...@mhadf.production.compuserve.com <>> Chris Carrier <72157.3334@CompuServe.COM> writes:
+>From: Chris Carrier <72157.3334@CompuServe.COM>
+>Subject: Re: planets nearby?
+>Date: 10 May 1996 05:17:31 GMT
+
+- show quoted text ->I don't see why you couldn't have a habitable planet around either Alpha 
+>Centauri A or B.  With a separation of 1-2 billion miles, I don't see the
+>other star's gravity significantly affecting the orbit of a habitable planet
+>around one of them.  
+What about the likelihood of planet formation in a system like Alpha Centauri 
+?  Or are all bets off following the discovery of 51 Pegasi ?  <g>
+
+Peter Yard
+----------------------------------------------------------------------------
+
+Sunday, 12 May 1996 08:00:00 UTC+1 - Peter Weis:
+In article <4mljjm$1k...@news.ccit.arizona.edu <>>, bco...@lpl.arizona.edu <> (Barbara A Cohen) says:
+>
+>My boyfriend's brother is starting to write a sci-fi novel
+>and is looking for about 10 "best bet" nearby star systems
+>that might have earth-like planets,
+Hi, Barbara;
+
+   Don't rule out multiple star systems. Our own solar system is a
+beautiful model for multiple star systems. When we raise our own solar
+system one order of magnitude - where our planets would be suns, and the
+moons of our solar systems would be planets - with a central massive sun,
+we do have a beautiful model of a multiple star system. After all, our 
+solar systems teems with moons in stable long-term orbits - all of which
+have been formed within the gravitational flux and flow of our solar 
+system (there are just far too many moons to have been formed by
+collisions or catastrophes).
+   So the dynamics of formation are exactly the same. There is just more
+matter involved, which is no problem astronomically.
+
+   This would not only make very exiting science fiction, but would have
+profound consequences for the perceptions of the 'locals'. Think of what
+the perceptions and beliefs (regarding creation) of these locals would be
+due to the many sunrises, sunsets, multihued shadows and multihued colours of their
+of their worlds. And if they are technologically advanced, they would know
+of many inhabitable planets within their own solar system. Their views of
+the cosmos, and of the nature of Life would be quite different from ours.
+
+   Many years ago, my view that our solar system is a beautiful model for
+multiple star systems was published in "The Sciences" as a (very
+truncated) reader's reply to an article. Since then, the idea that multi-
+ple star systems can have planets in stable orbits has become almost
+commonplace.  
+
+peter;
+
+---------------
+   A cosmologist by natural inclination only - ever since I was born, I
+   have been leaning in the general direction of the universe.
+ a        
+
+worlds. c who live in a
+system with multiple suns, . 
+
+
+
+ 
+ninewhere  
+        
+----------------------------------------------------------------------------
+
+Sunday, 12 May 1996 08:00:00 UTC+1 - Erik Max Francis:
+peter weis wrote:
+
+>    Don't rule out multiple star systems. Our own solar system is a
+> beautiful model for multiple star systems. When we raise our own solar
+> system one order of magnitude - where our planets would be suns, and the
+> moons of our solar systems would be planets - with a central massive sun,
+> we do have a beautiful model of a multiple star system.
+Which would change the entire mechanics of our solar system.
+
+
+> After all, our
+> solar systems teems with moons in stable long-term orbits - all of which
+> have been formed within the gravitational flux and flow of our solar
+> system (there are just far too many moons to have been formed by
+> collisions or catastrophes).
+Even the largest of the planets, Jupiter, is fully 100 times less massive than
+the smallest main sequence stars.  That's two orders of magnitude.  I'd say
+that makes it not a very good comparison.  Increase Jupiter's mass by a factor
+of 100, and, shall we say, the orbits of its moons and the other planets will
+be affected.
+
+-- 
+Erik Max Francis &tSftDotIotE && http://www.alcyone.com/max <http://www.alcyone.com/max> && m...@alcyone.com <>
+San Jose, California, U.S.A. && 37 20 07 N 121 53 38 W && the 4th R is respect
+H.3`S,3,P,3$S,#$Q,C`Q,3,P,3$S,#$Q,3`Q,3,P,C$Q,#(Q.#`-"C`- && 1love && folasade
+Omnia quia sunt, lumina sunt. && Dominion, GIGO, GOOGOL, Omega, Psi, Strategem
+"Out from his breast/his soul went to seek/the doom of the just." -- _Beowulf_
+----------------------------------------------------------------------------
+
+Monday, 13 May 1996 08:00:00 UTC+1 - Mike Hammond:
+Barbara A Cohen (bco...@lpl.arizona.edu <>) wrote:
+: My boyfriend's brother is starting to write a sci-fi novel
+: and is looking for about 10 "best bet" nearby star systems
+: that might have earth-like planets, their distance from
+: Earth, spectral type, etc etc.  to locate colonies there.
+Ok. Here's a list of 46 stars within a radius of 54ly that are single or
+part of WIDE multiple star systems. They are have no known irregularities
+or variabilities:
+
+Tau Ceti                G8V                11.8ly
+82 Eridani                G5V                20.2ly
+Zeta Tucanae                G2V                23.3ly
+107 Piscium                K1V                24.3ly
+Beta Comae Berenices        G0V                27.2ly
+61 Virginis                G5V                28.3ly
+Alpha Mensae                G5V                28.3ly
+Gliese 75                K0V                28.6ly
+Beta Canum Venaticorum  G0V                29.9ly
+Chi Orionis                G0V                32ly
+54 Piscium                K0V                34ly
+Zeta1 Reticuli                G2V                37ly
+Zeta2 Reticuli                G2V                37ly
+Gliese 86                K0V                "
+Mu Arae                        G5V                "
+Gliese 67                G2V                38ly
+Gliese 668.1                G9V                40ly
+Gliese 302                G8V                41ly
+Gliese 309                K0V                "
+Kappa Fornacis                G1V                42ly
+58 Eridani                G1V                "
+Zeta Doradus                F8V                44ly
+55 Cancri                G8V                "
+47 Ursae Majoris        G0V                "
+Gliese 364                G0V                45ly
+Gliese 599A                G6V                "
+Nu Phoenicis                F8V                "
+Gliese 95                G5V                "
+Gliese 796                G8V                47ly
+20 Leo Minoris                G4V                "
+39 Tauri                G1V                "
+Gliese 290                G8V                "
+Gliese 59.2                G2V                48ly
+Psi Aurigae                G0V                49ly
+Gliese 722                G4V                "
+Gliese 788                G5V                "
+Nu2 Lupi                G2V                50ly
+14 Herculis                K1V                "
+Pi Ursae Majoris        G0V                51ly
+Phi2 Ceti                F8V                "
+Gliese 641                G8V                52ly
+Gliese 97.2                K0V                "
+Gliese 541.1                G8V                53ly
+109 Piscium                G4V                "
+Gliese 651                G8V                "
+Gliese 59                G8V                "
+
+K0V & K1V stars are added to the list as they were included as acceptable
+candidates by the Dole Study. 
+
+
+Cardinal Fang  mham...@access.digex.net <>  +<:)>
+------------------------------------------------
+Old Irish Saying: "Kwitchyerbellyachin!"
+++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------
+
+Monday, 13 May 1996 08:00:00 UTC+1 - Ray Tomes:
+pw...@direct.ca <> (peter weis) wrote:
+
+>bco...@lpl.arizona.edu <> (Barbara A Cohen) says:
+
+>>My boyfriend's brother is starting to write a sci-fi novel
+>>and is looking for about 10 "best bet" nearby star systems
+>>that might have earth-like planets,
+>   Don't rule out multiple star systems. Our own solar system is a
+
+>beautiful model for multiple star systems. When we raise our own solar
+>system one order of magnitude - where our planets would be suns, and the
+>moons of our solar systems would be planets - with a central massive sun,
+>we do have a beautiful model of a multiple star system. After all, our 
+>solar systems teems with moons in stable long-term orbits - all of which
+>have been formed within the gravitational flux and flow of our solar 
+>system (there are just far too many moons to have been formed by
+>collisions or catastrophes).
+This is an interesting line of reasoning and made me have a rethink
+about the relative distances involved.  In our solar system the most
+distant moon from a planet is 1/33 as far from Jupiter as Jupiter is
+from the sun.  [There might be newly found moons since my old list.]
+
+However it also appears that the larger the planet the nearer to 1 this
+ratio can be, as for Saturn it is 1/110 and for Earth 1/389 and Mars
+1/9700.  Uranus and Neptune would need further undiscovered moons to fit
+the trend well as they fall between Earth and Mars at present.  I don't
+have the distance of Pluto's moon handy but am sure that its ratio would
+be beyond Mars in the list.
+
+It certainly looks as though binary stars could have planets at up to
+about 1/10th of the distance between them.  That means that a 50 year
+orbital period binary star system could have planets at up to about
+earth distance.
+
+Incidentally the furthest possible moon for each planet seems to follow
+an inverse square law based on the mass ratio to the sun.  That is, it
+can be at up to a distance at which the gravity of the planet and the
+sun are equal.
+
+-- Ray Tomes -- rto...@kcbbs.gen.nz <> -- Harmonics Theory --
+http://www.vive.com/connect/universe/rt-home.htm <http://www.vive.com/connect/universe/rt-home.htm>
+----------------------------------------------------------------------------
+
+Tuesday, 14 May 1996 08:00:00 UTC+1 - Mark Duffett:
+Mike Hammond wrote:
+> Ok. Here's a list of 46 stars within a radius of 54ly that are single or
+> part of WIDE multiple star systems. They are have no known irregularities
+> or variabilities:
+> 
+> Tau Ceti                G8V             11.8ly
+> 82 Eridani              G5V             20.2ly
+> Zeta Tucanae            G2V             23.3ly
+> 107 Piscium             K1V             24.3ly
+> Beta Comae Berenices    G0V             27.2ly
+> 61 Virginis             G5V             28.3ly
+> Alpha Mensae            G5V             28.3ly
+> Gliese 75               K0V             28.6ly
+> Beta Canum Venaticorum  G0V             29.9ly
+> Chi Orionis             G0V             32ly
+> 54 Piscium              K0V             34ly
+(more distant stars snipped) 
+
+Why doesn't Alpha Centauri get a guernsey in the above list?  Isn't 80AU 
+far enough apart for a binary pair?  I also seem to remember Epsilon 
+Eridani being used as a likely life-supporting system by many sf authors, 
+but it doesn't appear to have made the list either.
+
+Where did you get the data from, BTW?  I've been keeping an half an eye 
+out for such info for quite a while now without finding anything more 
+accessible than the (hard-copy) 'Sky Catalog 2000.0' by ...can't remember.
+
+Cheers
+
+Mark
+----------------------------------------------------------------------------
+
+Tuesday, 14 May 1996 08:00:00 UTC+1 - Mark Duffett:
+- show quoted text -
+Mike Hammond wrote:
+> Ok. Here's a list of 46 stars within a radius of 54ly that are single or
+> part of WIDE multiple star systems. They are have no known irregularities
+> or variabilities:
+> 
+> Tau Ceti                G8V             11.8ly
+> 82 Eridani              G5V             20.2ly
+> Zeta Tucanae            G2V             23.3ly
+> 107 Piscium             K1V             24.3ly
+> Beta Comae Berenices    G0V             27.2ly
+> 61 Virginis             G5V             28.3ly
+> Alpha Mensae            G5V             28.3ly
+> Gliese 75               K0V             28.6ly
+> Beta Canum Venaticorum  G0V             29.9ly
+> Chi Orionis             G0V             32ly
+> 54 Piscium              K0V             34ly
+(more distant stars snipped) 
+
+Why doesn't Alpha Centauri get a guernsey in the above list?  Isn't 80AU 
+far enough apart for a binary pair?  I also seem to remember Epsilon 
+Eridani being used as a likely life-supporting system by many sf authors, 
+but it doesn't appear to have made the list either.
+
+Where did you get the data from, BTW?  I've been keeping an half an eye 
+out for such info for quite a while now without finding anything more 
+accessible than the (hard-copy) 'Sky Catalog 2000.0' by ...can't remember.
+
+Cheers
+
+Mark
+----------------------------------------------------------------------------
+
+Wednesday, 15 May 1996 08:00:00 UTC+1 - Mickey Lane:
+gc...@seqeb.gov.au <> (Gordon Clarke) wrote:
+>  Alpha Centauri A         4.38         G2V        7.8%             44%
+in response to a question about close stars.
+What's the probability of discovering a star 2 or 3 ly from here?
+----------------------------------------------------------------------------
+
+Wednesday, 15 May 1996 08:00:00 UTC+1 - Bill Owen:
+In article <4nd4bn$k...@arl-news-svc-2.compuserve.com <>>, ml...@csi.compuserve.com <> (Mickey Lane) writes:
+> What's the probability of discovering a star 2 or 3 ly from here?
+Pretty slim, unless it was either a) *extremely* faint or b) has almost the
+same space velocity as the sun.  Nearby stars usually stick out on account of
+their high proper motion if nothing else.  There have been plenty of proper
+motion studies over the years -- you take a plate, wait a few decades, take
+another plate of the same region, and blink them to see what has moved.
+
+-- Bill Owen, w...@wansor.jpl.nasa.gov <>
+----------------------------------------------------------------------------
+
+Thursday, 16 May 1996 08:00:00 UTC+1 - Tim Patterson:
+- show quoted text -
+Bill Owen wrote:
+> 
+> In article <4nd4bn$k...@arl-news-svc-2.compuserve.com <>>, ml...@csi.compuserve.com <> (Mickey Lane) writes:
+> > What's the probability of discovering a star 2 or 3 ly from here?
+> 
+> Pretty slim, unless it was either a) *extremely* faint or b) has almost the
+> same space velocity as the sun.  Nearby stars usually stick out on account of
+> their high proper motion if nothing else.  There have been plenty of proper
+> motion studies over the years -- you take a plate, wait a few decades, take
+> another plate of the same region, and blink them to see what has moved.
+> 
+> -- Bill Owen, w...@wansor.jpl.nasa.gov <>
+
+That would work for luminous stars, but what about a star that isn't
+generating, like a small black hole or cold neutron star. Could we
+detect them at 2 - 3 light years?
+----------------------------------------------------------------------------
+
+Friday, 17 May 1996 08:00:00 UTC+1 - Paul Schlyter:
+In article <4ndfum$1...@netline-fddi.jpl.nasa.gov <>>,
+Bill Owen <w...@wansor.jpl.nasa.gov <>> wrote:
+ 
+> In article <4nd4bn$k...@arl-news-svc-2.compuserve.com <>>, ml...@csi.compuserve.com <> (Mickey Lane) writes:
+>> What's the probability of discovering a star 2 or 3 ly from here?
+> 
+> Pretty slim, unless it was either a) *extremely* faint or b) has almost the
+> same space velocity as the sun.
+ 
+b) would be the case for a companion star to the Sun, i.e. a star
+orbiting the Sun.  Of course such a star would have to be very faint
+to have avoided detection so far - it would have to be intrinsically
+several times fainter than e.g. Proxima Centauri.
+ 
+-- 
+----------------------------------------------------------------
+Paul Schlyter,  Swedish Amateur Astronomer's Society (SAAF)
+Grev Turegatan 40,  S-114 38 Stockholm,  SWEDEN
+e-mail:  pau...@saaf.se <>        p...@home.ausys.se <>
+----------------------------------------------------------------------------
+
+Friday, 17 May 1996 08:00:00 UTC+1 - Doug Schiffer:
+ml...@csi.compuserve.com <> (Mickey Lane) wrote:
+>gc...@seqeb.gov.au <> (Gordon Clarke) wrote:
+>>  Alpha Centauri A         4.38         G2V        7.8%             44%
+>in response to a question about close stars.
+>
+>What's the probability of discovering a star 2 or 3 ly from here?
+Small to very small.  Such a star would have to be very dim, and have a
+tiny, tiny proper motion.   Otherwise, it would have been detected by 
+now.
+----------------------------------------------------------------------------
+
+Saturday, 18 May 1996 08:00:00 UTC+1 - Paul Schlyter
+In article <4njp9g$9...@dfw-ixnews8.ix.netcom.com <>>,
+Duane Sand <d.s...@ix.netcom.com <>> wrote:
+ 
+> pau...@electra.saaf.se <> (Paul Schlyter) writes: 
+>>
+>>Bill Owen <w...@wansor.jpl.nasa.gov <>> wrote:
+>> 
+>>>ml...@csi.compuserve.com <> (Mickey Lane) writes:
+>>>> What's the probability of discovering a star 2 or 3 ly from here?
+>>> 
+>>> Pretty slim, unless it was either a) *extremely* faint or 
+>>> b) has almost the same space velocity as the sun.
+>> 
+>>b) would be the case for a companion star to the Sun, i.e. a star
+>>orbiting the Sun. ...
+> 
+> Nope. 
+> What Bill meant by (b) was that the visible object has not shown any
+> parallax apparent motion relative to very distant stars, thruout the
+> decades that we've been accumulating detailed photo records of the
+> night sky.
+ 
+Such a star would, by necessity, be in orbit around the Sun.  Read on...
+ 
+> A hypothetical "companion star" in mutual orbit around the center of
+> gravity shared by our sun and that companion would show noticable
+> angular movement against the background star field.
+ 
+Not necessarily.  If that companion star is 1 l.y. away, it would
+have a period of approximately 15 million years (assuming it's a
+dwarf star with a mass smaller than about 0.1 solar masses).
+Assuming a near-circular orbit, its orbital motion would then be
+smaller than 0.1 arcsec/year, i.e. a few arc seconds over several
+decades.  If the star moved in a high-eccentricity orbit, and if it
+was close to its aphelion, the orbital motion could be much smaller
+still.  This is small enough that it possibly could be overlooked, in
+particular if the companion would be really faint.  And it's much
+smaller than the proper motions of the most nearby stars, which are a
+few arcsec/year or more.
+ 
+Just think about it.  Consider for instance a meteor and an earth
+satellite -- which one move fastest across the sky?  The meteor of
+course -- it moves up to 70 km/s when encountering the Earth, while
+the satellite moves only 8 km/s.  If the satellite moved at 70km/s
+it would quickly leave the Earth (and the solar system too btw).
+ 
+Likewise, a star orbiting the Sun at 1 l.y. distance must move slower
+than a star passing by at 1 l.y. distance.
+ 
+> To not show any apparent motion over decades, the two suns would
+> have to be travelling (as a group or by coincidence) in exactly
+> parallel directions and speeds, with no mutual orbiting.
+ 
+If so, they would soon start to orbit each other, or (possible but
+very unlikely) fall right towards each other -- the latter case is
+really an orbit too, since it's the extreme case of a
+high-eccentricity elliptical orbit.
+ 
+> That's not a stable configuration, so it is unlikely to be happening
+> just at the time we began looking.
+ 
+Yes, but we need not assume such an extreme case.  A high-eccentricity
+orbit with the companion close to the aphelion would exhibit similar
+behaviour.  Even a companion in a circular orbit at 1 l.y. would have a
+"proper motion" small enough that it might have been overlooked.
+ 
+> The ultraprecise doppler measurements being accumulated by Marcy et al,
+> if continued for centuries, could perhaps eventually reveal any
+> nonlinear motions of our sun caused by gravitational interactions with
+> dark neighbors.
+ 
+Ok, let's get back to this around A.D. 2300.... :-)- show quoted text -
+ 
+-- 
+----------------------------------------------------------------
+Paul Schlyter,  Swedish Amateur Astronomer's Society (SAAF)
+Grev Turegatan 40,  S-114 38 Stockholm,  SWEDEN
+e-mail:  pau...@saaf.se <>        p...@home.ausys.se <>
+----------------------------------------------------------------------------
+
+Saturday, 18 May 1996 08:00:00 UTC+1 - Duane Sand:
+pau...@electra.saaf.se <> (Paul Schlyter) writes: 
+>
+>Bill Owen <w...@wansor.jpl.nasa.gov <>> wrote:
+> 
+>>ml...@csi.compuserve.com <> (Mickey Lane) writes:
+>>> What's the probability of discovering a star 2 or 3 ly from here?
+>> 
+>> Pretty slim, unless it was either a) *extremely* faint or 
+>> b) has almost the same space velocity as the sun.
+> 
+>b) would be the case for a companion star to the Sun, i.e. a star
+>orbiting the Sun. ...
+
+Nope. 
+What Bill meant by (b) was that the visible object has not shown any
+parallax apparent motion relative to very distant stars, thruout the
+decades that we've been accumulating detailed photo records of the
+night sky.  
+A hypothetical "companion star" in mutual orbit around the center of
+
+gravity shared by our sun and that companion would show noticable
+angular movement against the background star field.  To not show any
+apparent motion over decades, the two suns would have to be travelling
+(as a group or by coincidence) in exactly parallel directions and
+speeds, with no mutual orbiting.  That's not a stable configuration, so
+it is unlikely to be happening just at the time we began looking.
+The ultraprecise doppler measurements being accumulated by Marcy et al,
+
+if continued for centuries, could perhaps eventually reveal any
+nonlinear motions of our sun caused by gravitational interactions with
+dark neighbors.
+----------------------------------------------------------------------------
+
+Sunday, 19 May 1996 08:00:00 UTC+1 - Duane Sand:
+pau...@electra.saaf.se <> (Paul Schlyter) writes: 
+>
+>Duane Sand <d.s...@ix.netcom.com <>> wrote:
+>> What Bill meant by (b) was that the visible object has not shown any
+>> parallax apparent motion relative to very distant stars, thruout the
+>> decades that we've been accumulating detailed photo records of the
+>> night sky.
+> 
+>Such a star would, by necessity, be in orbit around the Sun.  Read
+>on...
+> 
+>> A hypothetical "companion star" in mutual orbit around the center of
+>> gravity shared by our sun and that companion would show noticable
+>> angular movement against the background star field.
+> 
+>Not necessarily.  If that companion star is 1 l.y. away, it would
+>have a period of approximately 15 million years (assuming it's a
+>dwarf star with a mass smaller than about 0.1 solar masses).
+>Assuming a near-circular orbit, its orbital motion would then be
+>smaller than 0.1 arcsec/year, i.e. a few arc seconds over several
+>decades.  If the star moved in a high-eccentricity orbit, and if it
+>was close to its aphelion, the orbital motion could be much smaller
+>still.  This is small enough that it possibly could be overlooked
+Good point.  15 M years!!
+I accept your argument that dim distant companions would likely be
+undetected.
+
+But I don't yet buy your argument below that anything without apparent
+angular motion is by definition in orbit around us.
+
+
+
+>And it's much smaller than the proper motions of the most nearby
+stars, >which are a few arcsec/year or more.
+I wonder how this compares to the parallax motions caused by Earth's
+orbit?
+
+
+> 
+>Just think about it.  Consider for instance a meteor and an earth
+>satellite -- which one move fastest across the sky?  The meteor of
+>course -- it moves up to 70 km/s when encountering the Earth, while
+>the satellite moves only 8 km/s.  If the satellite moved at 70km/s
+>it would quickly leave the Earth (and the solar system too btw).
+> 
+>Likewise, a star orbiting the Sun at 1 l.y. distance must move slower
+>than a star passing by at 1 l.y. distance.
+Not if it is now travelling mostly towards us or away from us.
+A death star that heads directly towards our sun would show zero
+apparent angular motion per year against the distant star fields, for
+all but the final centuries of the slow-motion collision.
+
+
+> 
+>> To not show any apparent motion over decades, the two suns would
+>> have to be travelling (as a group or by coincidence) in exactly
+>> parallel directions and speeds, with no mutual orbiting.
+> 
+>If so, they would soon start to orbit each other, or (possible but
+>very unlikely) fall right towards each other -- the latter case is
+>really an orbit too, since it's the extreme case of a
+>high-eccentricity elliptical orbit.
+To me, orbits imply capture and repetition, not one-time interactions
+or chaotic random churning of dozens of stars.
+
+Getting back to your main point, I think you are saying
+1) There could be some undiscovered very dim close neighbors. and
+2) If it's much lower mass than our visible neighbors, and is closer
+   to us than to those visible neighbors, then it's likely in
+   some slow long-lived orbit around us. and
+3) The resulting very slow motion would make it as hard or harder to
+   spot than the dim slow cometary junk in the presumed Kuiper(?)
+   cloud.
+----------------------------------------------------------------------------
+
+Sunday, 19 May 1996 08:00:00 UTC+1 - Hairy One Kenobi:
+gc...@seqeb.gov.au <> (Gordon Clarke) wrote:
+>Star Systems that have detected planets are:
+>  47Ursa Maj              42.4          G0V
+>  HD114762                78.9          F9V
+>  70 Virginis             32.6          G2.5Va
+>  51 Pegasi               44.0          G5V
+This is a new one on me. Last I heard, the only star with a likelihood of
+aberration indicating planets was Barnard's Star. This was recently rejected
+when someone got around to calculating that the abboration was but a few percent
+of the error margin.
+
+As goes nearby stellar systems for SF purposes, you have to either assume the
+Centuri pair, or stipulate an extremely long voyage. In which case, either
+invent a "hyperspace drive", or think of something original and create a
+consistant universe of your own. Why feel pressured into accepting a cliche?
+--
+and as if by magic, the shopkeeper appeared.
+"What did you expect, a f**king Walrus!?", he cried.
+----------------------------------------------------------------------------
+
+Sunday, 19 May 1996 08:00:00 UTC+1 - Chris Marriott:
+In article <4nnvt9$k...@hoima.i-way.co.uk <>>, Hairy One Kenobi
+<ha...@patrol.i-way.co.uk <>> writes
+>gc...@seqeb.gov.au <> (Gordon Clarke) wrote:
+>>Star Systems that have detected planets are:
+>>  47Ursa Maj              42.4          G0V
+>>  HD114762                78.9          F9V
+>>  70 Virginis             32.6          G2.5Va
+>>  51 Pegasi               44.0          G5V
+>
+>This is a new one on me. Last I heard, the only star with a likelihood of
+>aberration indicating planets was Barnard's Star. This was recently rejected
+>when someone got around to calculating that the abboration was but a few percent
+>of the error margin.
+Have you been totally isolated from the rest of the world for the last
+year? These detections of planetary systems have been BIG news in the
+astronomical community - I can't believe you've managed to miss them!
+
+Chris
+
+--------------------------------------------------------------------------
+ Chris Marriott, Warrington, UK      | Author of SkyMap v3 award-winning 
+ ch...@chrism.demon.co.uk <>            | shareware Win31/Win95 planetarium.
+            For full info, see http://www.execpc.com/~skymap <http://www.execpc.com/~skymap>  
+      Author member of Association of Shareware Professionals (ASP) 
+--------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Monday, 20 May 1996 08:00:00 UTC+1 - Paul Schlyter:
+In article <4nm76n$r...@dfw-ixnews4.ix.netcom.com <>>,- show quoted text -
+Duane Sand <d.s...@ix.netcom.com <>> wrote:
+ 
+> pau...@electra.saaf.se <> (Paul Schlyter) writes: 
+>>
+>>Duane Sand <d.s...@ix.netcom.com <>> wrote:
+>>> What Bill meant by (b) was that the visible object has not shown any
+>>> parallax apparent motion relative to very distant stars, thruout the
+>>> decades that we've been accumulating detailed photo records of the
+>>> night sky.
+>> 
+>>Such a star would, by necessity, be in orbit around the Sun.  Read
+>>on...
+>> 
+>>> A hypothetical "companion star" in mutual orbit around the center of
+>>> gravity shared by our sun and that companion would show noticable
+>>> angular movement against the background star field.
+>> 
+>>Not necessarily.  If that companion star is 1 l.y. away, it would
+>>have a period of approximately 15 million years (assuming it's a
+>>dwarf star with a mass smaller than about 0.1 solar masses).
+>>Assuming a near-circular orbit, its orbital motion would then be
+>>smaller than 0.1 arcsec/year, i.e. a few arc seconds over several
+>>decades.  If the star moved in a high-eccentricity orbit, and if it
+>>was close to its aphelion, the orbital motion could be much smaller
+>>still.  This is small enough that it possibly could be overlooked
+> 
+> Good point.  15 M years!!
+> I accept your argument that dim distant companions would likely be
+> undetected.
+> 
+> But I don't yet buy your argument below that anything without apparent
+> angular motion is by definition in orbit around us.
+ 
+Of course it's not enough that the star has small apparent angular
+motion -- it must _also_ be nearby, and its radial velocity may not
+be too large, and these effects must combine in such a way that the
+star's space velocity relative to the Sun is smaller than the escape
+velocity from the Sun at that distance.
+ 
+Finally, the probability that other nearby stars perturbs this star
+so that it escapes from the Sun must be small -- therefore a star at,
+say, 1000 lightyears distance cannot be said to "orbit the Sun" even
+if its current space velocity relative the Sun would be smaller than
+the escape velocity from the Sun at 1000 lightyears distance, because
+there are many other stars in between.  But at a distance of 1
+lightyear there will be no other stars in between (at least no
+_known_ stars...).
+ 
+ 
+>>And it's much smaller than the proper motions of the most nearby
+>> stars, which are a few arcsec/year or more.
+> 
+> I wonder how this compares to the parallax motions caused by Earth's
+> orbit?
+ 
+The parallax at 3.26 lightyears distance is 1 arc second.  However the
+parallax is periodic -- it does not add up as the decades pass by, as the
+proper motion does.
+ 
+(I wonder if Dave Tholen now will try to hit me on my head with
+something, because I'm talking about the proper motion of a
+hypothetical object orbiting the Sun at a distance of 1 light
+year.... :-)
+ 
+>>Just think about it.  Consider for instance a meteor and an earth
+>>satellite -- which one move fastest across the sky?  The meteor of
+>>course -- it moves up to 70 km/s when encountering the Earth, while
+>>the satellite moves only 8 km/s.  If the satellite moved at 70km/s
+>>it would quickly leave the Earth (and the solar system too btw).
+>> 
+>>Likewise, a star orbiting the Sun at 1 l.y. distance must move slower
+>>than a star passing by at 1 l.y. distance.
+> 
+> Not if it is now travelling mostly towards us or away from us.
+> A death star that heads directly towards our sun would show zero
+> apparent angular motion per year against the distant star fields, for
+> all but the final centuries of the slow-motion collision.
+ 
+True -- I assumed perpendicular or near perpendicular motion here.
+While possible of course, a motion almost nearly towards us is still
+not likely though.
+ 
+>>> To not show any apparent motion over decades, the two suns would
+>>> have to be travelling (as a group or by coincidence) in exactly
+>>> parallel directions and speeds, with no mutual orbiting.
+>> 
+>>If so, they would soon start to orbit each other, or (possible but
+>>very unlikely) fall right towards each other -- the latter case is
+>>really an orbit too, since it's the extreme case of a
+>>high-eccentricity elliptical orbit.
+> 
+> To me, orbits imply capture and repetition, not one-time interactions
+> or chaotic random churning of dozens of stars.
+ 
+I'm not discussing any eventual capture mechanism here (such a
+mechanism would by necessity involve some third body).  I was merely
+pointing out that a nearby star with a small enough velocity relative
+to the Sun by necessity would be orbiting the Sun, i.e. it would
+already be captured.
+ 
+> Getting back to your main point, I think you are saying
+> 1) There could be some undiscovered very dim close neighbors. and
+> 2) If it's much lower mass than our visible neighbors, and is closer
+>    to us than to those visible neighbors, then it's likely in
+>    some slow long-lived orbit around us. and
+> 3) The resulting very slow motion would make it as hard or harder to
+>    spot than the dim slow cometary junk in the presumed Kuiper(?)
+>    cloud.
+ 
+And
+ 
+4) A star orbiting the Sun is likely to have a smaller proper motion
+(= apparent angular velocity on the sky) than a star not orbiting the
+Sun, at the same distance.  Therefore the well-known criterion for
+finding nearby stars ("stars with large proper motion are likely
+nearby") does not work well for any eventual stars orbiting the
+Sun at, say, 1 lightyear distance.
+ 
+-------------------------------------------------------------------------
+ 
+However, the chances that such a nearby, undoscovered, star really
+exists is very low.  If we put, say, Proxima Centauri, at a distance
+of 1 light-year, it would shine at 11th magnitude, and its parallax
+of 3.3 arc seconds would very likely already have been detected.  To
+avoid detection, such a star would have to be much fainter, which
+means it would need to be much cooler -- but then it would still
+shine brightly in the far infrared, and be easily detectable by one
+of those infrared satellites that have scanned the sky -- but AFAIK
+they've revealed no nearby cool object.- show quoted text -
+ 
+-- 
+----------------------------------------------------------------
+Paul Schlyter,  Swedish Amateur Astronomer's Society (SAAF)
+Grev Turegatan 40,  S-114 38 Stockholm,  SWEDEN
+e-mail:  pau...@saaf.se <>        p...@home.ausys.se <>
+----------------------------------------------------------------------------
+
+Tuesday, 21 May 1996 08:00:00 UTC+1 - K.HAIGH-HUTCHINSON:
+I envision a political entity like the USA with planets instead of states
+and a FTL drive. 
+Oh how original. But still, even though it has been done before, it is
+either that or an Empire which also has been done before. 
+
+What I want is to map out my 'Universe'.
+
+I really could do with a list of stars and their distances from Earth and 
+some indication of their relationship to each other. ie if star A is X
+light years from Earth and star B is Y, is Star B x+y light years from
+star A or abs(x-y) or sqrt(a*a+b*b)
+
+Is there such a thing? 
+
+Once I have that I can then fill in some blanks on travel times and speeds.
+
+I could just make the whole thing up, but if there is a reference
+available that I could use as a guide line I would like to use it.
+
+Is it feasible to say it takes 6months to cross my federation from one
+side to the other, yet it takes a couple of days to reach Alpha
+Centauri? Should the trip to Centauri be reduced to a few minutes? Or
+the travel time across end to end drastically increased? Even if I
+use an exponential scale?
+
+How big an area of space do I need to feasibly build a society of 200
+planets and 300 colonies? Thus requiring a few hundred stars? Of course, I
+will have to ignore the probability of stars having planets supporting
+life as we know it. I am going to go for, if a star exists, then (red
+giants and white dwarfs excepting), it has planets like our system does.
+
+Or do I have so many stars to choose from in a realistic radius that I can
+afford to be more picky? If so, I will need some more info to aid my
+selection. 
+
+Any pointers to appropriate reference books for complete ignoramuses would
+be very gratefully appreciated. 
+
+I don't want this to be another ho-hum space-cowboy thing. I want to do
+the job properly.
+
+ Thanks.
+----------------------------------------------------------------------------
+
+Tuesday, 21 May 1996 08:00:00 UTC+1 - Eric Williams:
+Hairy One Kenobi wrote:
+> 
+> gc...@seqeb.gov.au <> (Gordon Clarke) wrote:
+> >Star Systems that have detected planets are:
+> >  47Ursa Maj              42.4          G0V
+> >  HD114762                78.9          F9V
+> >  70 Virginis             32.6          G2.5Va
+> >  51 Pegasi               44.0          G5V
+> 
+> This is a new one on me. Last I heard, the only star with a likelihood of
+> aberration indicating planets was Barnard's Star. This was recently rejected
+> when someone got around to calculating that the abboration was but a few percent
+> of the error margin.
+> 
+Wow Hairy One,
+You need to join the world. Check out my website on the discovery of 
+these planets. These discoveries were on the front page of every major 
+newspaper in the world, many major magazines, the subject of an hour 
+long BBC documentary, talked about for months on this newsgroup. 
+(sci.astro), and all over scientific publications. Where ya been? ;)
+
+
+-- 
+Eric Williams - planet hunter
+fal...@sfsu.edu <>
+http://cannon.sfsu.edu/~williams <http://cannon.sfsu.edu/~williams>
+
+**********************************************************
+Check out my page on our discovery of extrasolar planets:
+
+http://cannon.sfsu.edu/~williams/planetsearch/planetsearch.html <http://cannon.sfsu.edu/~williams/planetsearch/planetsearch.html>
+
+As usual, I only speak for myself not the students, faculty, or 
+scientists I work with.
+*********************************************************
+----------------------------------------------------------------------------
+
+Tuesday, 21 May 1996 08:00:00 UTC+1 -  	Craig Berry:
+K.HAIGH-HUTCHINSON (K.Haigh-H...@bradford.ac.uk <>) wrote:
+: I envision a political entity like the USA with planets instead of states
+: and a FTL drive. 
+: 
+: Oh how original. But still, even though it has been done before, it is
+: either that or an Empire which also has been done before. 
+How about an anarcho-syndicalist distributed libertarian mercantile 
+pseudo-collective? :)
+
+: What I want is to map out my 'Universe'.
+: 
+: I really could do with a list of stars and their distances from Earth and 
+: some indication of their relationship to each other. ie if star A is X
+: light years from Earth and star B is Y, is Star B x+y light years from
+: star A or abs(x-y) or sqrt(a*a+b*b)
+: 
+: Is there such a thing? 
+
+First, check out the 3D Starmaps page, at
+
+   http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html>
+
+It has more info on nearby stars and how to map them than you can 
+imagine.  This site is great!  Wish I'd done it. :)
+
+Secondly, though, just remember good old-fashioned Pythagorean rule:  For 
+two stars separated by X, Y, and Z distances dx, dy, and dz, their 
+distance is:
+
+  d = sqrt(dx^2 + dy^2 + dz^2)
+
+: Is it feasible to say it takes 6months to cross my federation from one
+: side to the other, yet it takes a couple of days to reach Alpha
+: Centauri? Should the trip to Centauri be reduced to a few minutes? Or
+: the travel time across end to end drastically increased? Even if I
+: use an exponential scale?
+
+If you use nonconstant drive velocities (e.g., accelerating/decelerating 
+ships), I'll leave the math to you.  For a constant-speed drive, though, 
+scaling things is pretty easy.  Pick a reference time for the trip to 
+ACen -- call it a week (7 days).  Since ACen is about 4.3 ly away, that 
+means that your drive covers 4.3ly/7days, or (about) 0.6 ly/day.  Now, 
+since d = vt, to find the width of your six-months-to-cross Federation, 
+we plug in v and t:  (0.6ly/day) * (180 days) = 108 ly.  Pretty 
+reasonable size, given your requirements below, *if* you back off and 
+make earthlike worlds reasonably rare.  If practically every system has a 
+habitable world in it, you'll want to shrink your federation, and hence 
+bump up the ACen travel time a bit -- play with the numbers 'til you're 
+happy. :)
+
+: How big an area of space do I need to feasibly build a society of 200
+: planets and 300 colonies? Thus requiring a few hundred stars? Of course, I
+: will have to ignore the probability of stars having planets supporting
+: life as we know it. I am going to go for, if a star exists, then (red
+: giants and white dwarfs excepting), it has planets like our system does.
+
+Given those rules, you could probably make it work with a 30-ly radius 
+sphere, 60 ly side-to-side.  Certainly your sphere will have radius 
+greater than 20 and less than about 50 ly.  Once you have a star map, you 
+can expand or contract to suit.  Be aware that as you move further from 
+Sol, our existing maps will miss more and more dim red stars -- so feel 
+free to salt a few of 'em in, should your plot require it.
+
+There are no red giants anywhere close to Sol, by the way, so don't worry 
+about those.  Lots of white dwarfs, though.
+
+: Or do I have so many stars to choose from in a realistic radius that I can
+: afford to be more picky? If so, I will need some more info to aid my
+: selection. 
+
+If you do go for pickiness, I recommend these general rules for prime 
+earthlike-planet possibilities:
+
+  Stellar type G or K, with F and M marginal possiblities.
+  Single star, or very distant binary.
+
+Right away these two rules cut about 80% of nearby stars out of 
+contention.  There's another thread running in sci.astro about the stars 
+that remain.
+
+By the way, feel free to put unexpected earthlike worlds in unusual 
+places -- if you can explain it, at least to your own satisfaction.  
+Larry Niven is an author who's quite good at doing this.  And don't 
+overdo it -- one or two "special cases" are cool, too many strain 
+credibility.
+
+: I don't want this to be another ho-hum space-cowboy thing. I want to do
+: the job properly.
+
+Well, my (non-cowboy) hat is off to you.  Feel free to post or email if 
+you'd care to discuss this further.
+
+---------------------------------------------------------------------
+      Craig Berry - cbe...@cinenet.net <>
+   |    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+ --*--  Member, CyberDesigns Team:  http://www.cyber-designs.com/ <http://www.cyber-designs.com/>
+   |    Member, HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+      "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Wednesday, 22 May 1996 08:00:00 UTC+1 -Steve Willner:
+In article <4nm76n$r...@dfw-ixnews4.ix.netcom.com <>>,
+d.s...@ix.netcom.com <>(Duane Sand) writes: 
+> But I don't yet buy your argument below that anything without apparent
+> angular motion is by definition in orbit around us.
+It isn't guaranteed, but it's sure the way to bet.  Orbital speed at
+1 light year from the Sun is about 0.1 km/s.  An object traveling
+faster directly toward the Sun covers the distance in less than 3
+million years.  At more typical stellar speeds of a few km/s, the
+travel time is only a few hundred thousand years.  Thus even if a
+non-orbiting star comes directly toward the Sun, the time it spends
+in the Sun's vicinity is very short.  There may now be a nearby, dim
+star moving directly toward or away from the Sun, but it isn't very
+likely.
+
+-- 
+Steve Willner            Phone 617-495-7123     swil...@cfa.harvard.edu <>
+Cambridge, MA 02138 USA                
+----------------------------------------------------------------------------
+
+Wednesday, 22 May 1996 08:00:00 UTC+1 - Andreas Ekholm:
+On 21 May 1996, K.HAIGH-HUTCHINSON wrote:
+
+> I envision a political entity like the USA with planets instead of states
+> and a FTL drive.
+>
+> Oh how original. But still, even though it has been done before, it is
+> either that or an Empire which also has been done before.
+>
+> What I want is to map out my 'Universe'.
+>
+> I really could do with a list of stars and their distances from Earth and
+> some indication of their relationship to each other. ie if star A is X
+> light years from Earth and star B is Y, is Star B x+y light years from
+> star A or abs(x-y) or sqrt(a*a+b*b)
+>
+> Is there such a thing?
+Try the URL http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html> , I think you'll
+find a lot of useful stuff there.
+
+> Once I have that I can then fill in some blanks on travel times and speeds.
+>
+> I could just make the whole thing up, but if there is a reference
+> available that I could use as a guide line I would like to use it.
+
+>
+> Is it feasible to say it takes 6months to cross my federation from one
+> side to the other, yet it takes a couple of days to reach Alpha
+> Centauri? Should the trip to Centauri be reduced to a few minutes? Or
+> the travel time across end to end drastically increased? Even if I
+> use an exponential scale?
+That depends on what type of FTL-drive you envision, regular in-real-space
+FTL or hyperspace jumping. If you use hyperspace, the travel time will be
+constant no matter how far the star is, assuming the jump is instantaneous.
+But if it isn't, there will still be a large reduction in the increase in
+travel time with distance, how large depending on how much time you wish to
+spend in hyperspace. On the other hand, if you use in-real-space FTL, the
+whole thing will depend on how large your federation is, and how fast your
+space ships are. E.g., for a travel time to Alpha Centauri of, say, three
+days, you will need to travel at a mean speed of 500 times the speed of
+light. In that case, if it takes 6 months to cross the entire federation, it
+will be some 250 light years across. So this question is in many ways
+connected to the one below.
+
+
+> How big an area of space do I need to feasibly build a society of 200
+> planets and 300 colonies? Thus requiring a few hundred stars? Of course, I
+> will have to ignore the probability of stars having planets supporting
+> life as we know it. I am going to go for, if a star exists, then (red
+> giants and white dwarfs excepting), it has planets like our system does.
+>
+> Or do I have so many stars to choose from in a realistic radius that I can
+> afford to be more picky? If so, I will need some more info to aid my
+> selection.
+This question I leave to someone else to answer, but I think that with the
+above mentioned diameter of your federation (250 ly), you should have more
+than enough stars to be somewhat picky.
+
+> Any pointers to appropriate reference books for complete ignoramuses would
+> be very gratefully appreciated.
+
+>
+> I don't want this to be another ho-hum space-cowboy thing. I want to do
+> the job properly.
+>
+>  Thanks.
+>
+Andreas Ekholm
+
+------------------------------------------------------
+Everything is physics, but physics is not everything.
+- Andreas Bill, not so famous comedian
+------------------------------------------------------
+----------------------------------------------------------------------------
+
+Thursday, 23 May 1996 08:00:00 UTC+1 - Peter Yard:
+In article <4ntj5k$4...@marina.cinenet.net <>> cbe...@cinenet.net <> (Craig Berry) writes:
+>From: cbe...@cinenet.net <> (Craig Berry)
+>Subject: Re: planets nearby? Please help wannabe author
+>Date: 21 May 1996 23:21:24 GMT
+>: How big an area of space do I need to feasibly build a society of 200
+
+>: planets and 300 colonies? Thus requiring a few hundred stars? Of course, I
+>: will have to ignore the probability of stars having planets supporting
+>: life as we know it. I am going to go for, if a star exists, then (red
+>: giants and white dwarfs excepting), it has planets like our system does.
+>Given those rules, you could probably make it work with a 30-ly radius 
+
+>sphere, 60 ly side-to-side.  Certainly your sphere will have radius 
+>greater than 20 and less than about 50 ly.  Once you have a star map, you 
+But since the number of stars increases as the cube of the distance then 
+adding a 'mere' 10 light years to the 30 light year radius will increase the 
+number of stars by a factor of 2.4 .
+
+He could also then grab a copy of Accrete and play with it for hours and hours 
+and hours .... as I obviously have <g>.   The interesting thing about Accrete 
+is that it shows you how different (and rare) a world can be and still be 
+called "habitable" and the thing that next makes you wonder is that given the 
+differences then any life is going to be very different.  Hours of fun on a 
+wet weekend.  But invaluable to a science fiction writer I would think.
+
+Peter Yard
+----------------------------------------------------------------------------
+
+Thursday, 23 May 1996 08:00:00 UTC+1 - Jedidiah Whitten:
+K.HAIGH-HUTCHINSON (K.Haigh-H...@bradford.ac.uk <>) wrote:
+: How big an area of space do I need to feasibly build a society of 200
+: planets and 300 colonies? Thus requiring a few hundred stars? Of course, I
+: will have to ignore the probability of stars having planets supporting
+: life as we know it. I am going to go for, if a star exists, then (red
+: giants and white dwarfs excepting), it has planets like our system does.
+You don't necessarily have to ignore the probability of a planet 
+supporting life, just make some educated guesses.  Let's assume that only 
+the stars between spectral types F5 and K5 have a high probability of 
+supporting life (those higher than F5 are short lived, those lower than 
+K5 don't put out much energy).  These are about 15-20% of all stars; 
+let's be liberal and say 20% because there are probably some stars 
+outside this range with habitable planets.  Now of these stars, about 
+half will be in multiple star systems that are unsuitable for 
+life-bearing planets.  Not all multiple-star systems are unsuitable, but 
+most are.  So say 10% of all star systems are in the right spectral type, 
+and are either single or widely-spaced multiple stars (40 Eridani, for 
+example, is orbited by 2 dwarf stars at a very large distance and so 
+could support a planetary system easily).
+
+Now of these 10%, of course, not all will happen to have a planet at the 
+right distance from the star.  Let's assume that half of them do.  This 
+is not a very well-supported assumption, but it's at least plausible; in 
+our system Mars and Earth are both at the right distance from the Sun to 
+support life.  Mars is just too small, although with terraforming it 
+probably could support life, and we'll assume that the people in your 
+story will be terraforming suitable worlds if they don't have life already.  
+Anyway, we now have 5 habitable planets per 100 stars, as a reasonable 
+guess.  So if you want 200 habitable planets, you need a volume of space 
+containing 4000 stars.  (Of course, for every habitable planet you'll 
+probably have several planets that could be colonized with pressure 
+domes).  If stars are spaced about 5 light-years apart on 
+average, that's a density of .008 stars per cubic light-year (someone 
+may be able to give you a better estimate for the stellar density of our 
+region of space)... so for 4000 stars we need 4000/.008 = 500,000 cubic 
+light-years, which is a spherical region of space with radius 50 
+light-years or so.  If your spaceships could cross this space (100 
+light-year diameter) in about 6 months, they would have an average speed 
+of about .6 light-years/day or 200 c.  You could go from Earth to Pluto 
+in about a minute at that speed, and to Alpha Centauri in a little under 
+8 days.
+
+You might want to consider the names of some prominent planetary systems 
+in your Universe, taking into account which familiar stars are likely to 
+have planets and are in your 50 ly radius.  The newly-discovered planets 
+at 51 Peg, 70 Vir, 47 Uma, and 55? Can are all more-or-less within that 
+radius, and while they may not have habitable planets they are odd 
+planetary systems and might be studied by reasarch missions.  Maybe one 
+of them has a habitable moon.  Alpha Centauri probably doesn't have 
+planets, habitable or otherwise, since A and B are so close to each 
+other, but they may have significant asteroid belts and be a center of 
+mining for that reason.  Sirius, Fomalhaut, Procyon, Vega and Altair are 
+bright stars within 50 light-year, but they are probably too young to 
+have habitable planets (you could always terraform one).  Epsilon Indi, 
+40 Eridani, Tau Ceti, and Eta Cassiopeiae, are nearby Sunlike stars.  
+Epsilon Eridani is too but it looks about 1 billion years old, so you'll 
+need to terraform a planet there.  The majority of habitable planets 
+will be orbiting G- and K-type stars barely visible from Earth, if at 
+all.  The Sun would be barely visible to the naked eye from 50 
+light-years (about magnitude 5.2), and it's one of the brighter Sunlike 
+stars.
+
+There aren't many spectacular features within 50 light-years of the Sun.  
+The Hyades is the closest open star cluster, at about 130 light-years, so 
+it would definitely be within the range of scientific expeditions.  The 
+closest red supergiant star is Betelgeuse at about 500 light-years, so 
+maybe some long-range probes could be sent to study it.  I would 
+recommend the book _The Guide to the Galaxy_ by Nigel Henbest and Heather 
+Cooper for more information.  Also try my program, 3D-Star, which is 
+available at my homepage (see my .sig for the URL).
+
+-- 
+------------------------------------------
+| Jedidiah Whitten                       |
+| jswh...@ucdavis.edu <>                  |
+| http://wwwcsif.cs.ucdavis.edu/~whitten <http://wwwcsif.cs.ucdavis.edu/~whitten> |
+------------------------------------------
+----------------------------------------------------------------------------
+
+Friday, 24 May 1996 08:00:00 UTC+1 - Dean Gilbert:
+py...@gil.com.au <> (Peter Yard) wrote:
+
+
+>He could also then grab a copy of Accrete and play with it for hours and hours 
+>and hours .... as I obviously have <g>.   The interesting thing about Accrete 
+>is that it shows you how different (and rare) a world can be and still be 
+>called "habitable" and the thing that next makes you wonder is that given the 
+>differences then any life is going to be very different.  Hours of fun on a 
+>wet weekend.  But invaluable to a science fiction writer I would think.
+Where can one get a copy of Accrete?
+----------------------------------------------------------------------------
+
+Friday, 24 May 1996 08:00:00 UTC+1 - Dave Tholen:
+Paul Schlyter writes:
+> (I wonder if Dave Tholen now will try to hit me on my head with
+> something, because I'm talking about the proper motion of a
+> hypothetical object orbiting the Sun at a distance of 1 light
+> year.... :-)
+
+Why should I?  Is there some sort of connection between this situation
+and your earlier erroneous comments about the proper motions of asteroids?
+
+And why bother wondering, when you'll presumably never know the answer,
+given your intent to kill file me?  And all that, simply because you
+couldn't accept my correction to your error.
+----------------------------------------------------------------------------
+
+Friday, 24 May 1996 08:00:00 UTC+1 - John Oliver:
+K.HAIGH-HUTCHINSON wrote:
+> 
+> I envision a political entity like the USA with planets instead of states
+> and a FTL drive.
+> 
+> Oh how original. But still, even though it has been done before, it is
+> either that or an Empire which also has been done before.
+> 
+> What I want is to map out my 'Universe'.
+> 
+> I really could do with a list of stars and their distances from Earth and
+> some indication of their relationship to each other. ie if star A is X
+> light years from Earth and star B is Y, is Star B x+y light years from
+> star A or abs(x-y) or sqrt(a*a+b*b)
+> 
+> Is there such a thing?
+> 
+> Once I have that I can then fill in some blanks on travel times and speeds.
+> 
+> I could just make the whole thing up, but if there is a reference
+> available that I could use as a guide line I would like to use it.
+> 
+> Is it feasible to say it takes 6months to cross my federation from one
+> side to the other, yet it takes a couple of days to reach Alpha
+> Centauri? Should the trip to Centauri be reduced to a few minutes? Or
+> the travel time across end to end drastically increased? Even if I
+> use an exponential scale?
+> 
+> How big an area of space do I need to feasibly build a society of 200
+> planets and 300 colonies? Thus requiring a few hundred stars? Of course, I
+> will have to ignore the probability of stars having planets supporting
+> life as we know it. I am going to go for, if a star exists, then (red
+> giants and white dwarfs excepting), it has planets like our system does.
+> 
+> Or do I have so many stars to choose from in a realistic radius that I can
+> afford to be more picky? If so, I will need some more info to aid my
+> selection.
+> 
+> Any pointers to appropriate reference books for complete ignoramuses would
+> be very gratefully appreciated.
+> 
+> I don't want this to be another ho-hum space-cowboy thing. I want to do
+> the job properly.
+> 
+>  Thanks.
+Most Intro Ast texts have a list of nearby stars with RA, Declination, 
+and distance or see the Brightest Stars and Nearest Stars lists in the 
+Observers Handbook of the Royal Ast Soc Canada ... (see booksellers ads 
+in Sky & Telescope or Astronomy).  RA, Dec are spherical coordinates ... 
+distance is the radius vector from the Earth.  Read up on Sphreical trig 
+in any high school trig or solid geometry text.
+-- 
+John P. Oliver http://www.astro.ufl.edu/~oliver/ <http://www.astro.ufl.edu/~oliver/>  
+mailto:oli...@astro.ufl.edu <>
+Just the FAQ ma'am, just the Unofficial Netscape UFAQ at 
+http://www.astro.ufl.edu/~oliver/faq/ <http://www.astro.ufl.edu/~oliver/faq/>
+----------------------------------------------------------------------------
+
+Sunday, 26 May 1996 08:00:00 UTC+1 - Peter Yard:
+In article <4o2b9f$t...@kryten.awinc.com <>> dlgi...@commpass.awinc.com <> (Dean Gilbert) writes:
+>From: dlgi...@commpass.awinc.com <> (Dean Gilbert)
+>Subject: Re: planets nearby? Please help wannabe author
+>Date: Fri, 24 May 1996 06:34:59 GMT
+>py...@gil.com.au <> (Peter Yard) wrote:
+
+
+- show quoted text -
+>>He could also then grab a copy of Accrete and play with it for hours and hours 
+>>and hours .... as I obviously have <g>.   The interesting thing about Accrete 
+>>is that it shows you how different (and rare) a world can be and still be 
+>>called "habitable" and the thing that next makes you wonder is that given the 
+>>differences then any life is going to be very different.  Hours of fun on a 
+>>wet weekend.  But invaluable to a science fiction writer I would think.
+
+- show quoted text ->Where can one get a copy of Accrete?
+The source code was posted here once.  There was no executable, though I got 
+it to compile under BC4.5.  There are some bugs in it relating to invalid 
+parameters to 'pow' functions so that occassionally it generates an error.  
+
+The output of Accrete is a text report of a solar system which can be 
+redirected to a text file, and you can build up a collection by using the 
+dos/unix '>>' append redirection.  Only sunlike solar systems are generated. 
+
+Viable solar systems are a bit rare about 1 in 5  I would guess, depending on 
+your definition of viable.  Occassionally, you even come across a world that 
+seems very Earthlike, but that is a rarity.  Most interesting is that a 
+few solar systems support more than one habitable world, though wildly 
+different.
+
+If you want the executable I can email it to you with or without the source. 
+Just send me an email saying what you want.  Or perhaps someone will post it 
+here.
+
+
+Peter Yard
+----------------------------------------------------------------------------
+
+Sunday, 26 May 1996 08:00:00 UTC+1 - Mike Hammond:
+Mark Duffett (M.Du...@geol.utas.edu.au <>) wrote:
+: Mike Hammond wrote:
+: > Ok. Here's a list of 46 stars within a radius of 54ly that are single or
+: > part of WIDE multiple star systems. They are have no known irregularities
+: > or variabilities:
+: > 
+: > Tau Ceti                G8V             11.8ly
+: > 82 Eridani              G5V             20.2ly
+: > Zeta Tucanae            G2V             23.3ly
+: > 107 Piscium             K1V             24.3ly
+: > Beta Comae Berenices    G0V             27.2ly
+: > 61 Virginis             G5V             28.3ly
+: > Alpha Mensae            G5V             28.3ly
+: > Gliese 75               K0V             28.6ly
+: > Beta Canum Venaticorum  G0V             29.9ly
+: > Chi Orionis             G0V             32ly
+: > 54 Piscium              K0V             34ly
+: 
+: (more distant stars snipped) 
+: 
+: Why doesn't Alpha Centauri get a guernsey in the above list?  Isn't 80AU 
+: far enough apart for a binary pair?
+80 AU? According to my records, the B-component seperation varies between
+11 to 35 au. I have no problem with A Centauri, but some of my sources do.
+
+:  I also seem to remember Epsilon 
+: Eridani being used as a likely life-supporting system by many sf authors, 
+: but it doesn't appear to have made the list either.
+
+Epsilon Eridani, to my understanding, is thought to be younger that a
+billion years old, judging by its extremely active surface. Probably not
+long enough for intelligent life to have arisen (unless, of course, it
+gets colonized).
+
+Also, the cooler the star, the closer the planet, and the greater the drag
+on the planet's rotation. The Dole Study determined that stars cooler than
+K1 might tide lock any planet close enough to be in the star's life zone.
+The tide lock problem could be ignored if the planet in question orbited a
+a suitably nearby gas giant.
+ 
+: Where did you get the data from, BTW?  I've been keeping an half an eye 
+: out for such info for quite a while now without finding anything more 
+: accessible than the (hard-copy) 'Sky Catalog 2000.0' by ...can't remember.
+
+That particular list I obtained from:
+
+"The Zeta Reticuli Incident" by Terence Dickinson. It can be had from
+UFORI (Stanton Friedman) for $4. Whether you feel the present UFO
+situation is truth or pure bunk, this pamphlet has a few nice articles 
+on nearby stars (the only reason I picked up the thing).
+
+Send to: 
+
+UFORI, P.O. Box 3584, Sta. B., Fredericton, New Brunswick, Canada E3A
+5J8
+
+(Burnham's Celestial Handbooks are a good source for star system details).
+
+-- 
+Cardinal Fang   mham...@access.digex.net <>  +<:)>
+**************************************************************************
+"Ever notice how people always find Jesus after they've painted their
+entire lives into a corner? Nobody ever finds Jesus on Prom Night, do
+they?" ----- D. Miller
+----------------------------------------------------------------------------
+
+Sunday, 26 May 1996 08:00:00 UTC+1 - Mike Hammond:
+Peter Yard (py...@gil.com.au <>) wrote:
+: 
+: He could also then grab a copy of Accrete and play with it for hours 
+: and hours 
+: and hours .... as I obviously have <g>. The interesting thing about 
+: Accrete 
+: is that it shows you how different (and rare) a world can be and still be 
+: called "habitable" and the thing that next makes you wonder is that given the 
+: differences then any life is going to be very different.  Hours of fun on a 
+: wet weekend.  But invaluable to a science fiction writer I would think.
+Is there a version of that program out there where you can enter the
+values for a star's mass or luminosity? For DOS or Windoze possibly?
+
+-- 
+Cardinal Fang   mham...@access.digex.net <>  +<:)>
+**************************************************************************
+"Ever notice how people always find Jesus after they've painted their
+entire lives into a corner? Nobody ever finds Jesus on Prom Night, do
+they?" ----- D. Miller
+----------------------------------------------------------------------------
+
+Tuesday, 28 May 1996 08:00:00 UTC+1 - Jedidiah Whitten:
+Mike Hammond (mham...@access2.digex.net <>) wrote:
+: 
+: 80 AU? According to my records, the B-component seperation varies between
+: 11 to 35 au. I have no problem with A Centauri, but some of my sources do.
+He was thinking of the period of Alpha Centauri's orbit, 80 years.  Even 
+with a closest approach of 11 AU there still exists stable orbits within 
+2 AU or so, good enough for Earthlike planets.  The problem is that even 
+with the possibility of stable orbits, planets still might not have been 
+able to form there.  If you place a planet within the asteroid belt it 
+will stay in orbit, but Jupiter's gravity was enough to keep a planet 
+from forming there in the first place.  So probably all that Alpha Cent A 
+and B have are large asteroid belts.
+
+-- 
+------------------------------------------
+| Jedidiah Whitten                       |
+| jswh...@ucdavis.edu <>                  |
+| http://wwwcsif.cs.ucdavis.edu/~whitten <http://wwwcsif.cs.ucdavis.edu/~whitten> |
+------------------------------------------
+----------------------------------------------------------------------------
+
+Wednesday, 29 May 1996 08:00:00 UTC+1 - Stephen D. Schaper:
+In article <4oechl$o...@mark.ucdavis.edu <>>, ez04...@boris.ucdavis.edu <>
+(Jedidiah Whitten) wrote:
+
+> He was thinking of the period of Alpha Centauri's orbit, 80 years.  Even 
+> with a closest approach of 11 AU there still exists (sic) stable orbits
+within 
+> 2 AU or so, good enough for Earthlike planets.  The problem is that even 
+> with the possibility of stable orbits, planets still might not have been 
+> able to form there.  If you place a planet within the asteroid belt it 
+> will stay in orbit, but Jupiter's gravity was enough to keep a planet 
+> from forming there in the first place.  So probably all that Alpha Cent A 
+> and B have are large asteroid belts.
+ 
+ Which, of course, are ideal for O'Neilu-style colonization.
+ 
+ Yet, Jupiter has large moons. Might AKB have planets close in? A cooler
+star, would any of these be in the habitability zone?
+-- 
+Impeach President Clark!
+--Brought to you by the Committee for a Free Mars.

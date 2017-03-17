@@ -163,9 +163,10 @@ interested in accrete
 Christopher Neufeld
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 5 February 1995 05:00:07 UTC
+Last Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
 
 background:
-had possession of an accrete copy and uploaded it to ftpupon a request
+had possession of an accrete copy and uploaded it to ftp upon a request
 
 Soenke Behrens
 newsgroup: rec.arts.sf.science
@@ -247,7 +248,7 @@ looking for an accrete program
 Leonard Erickson
 newsgroup: rec.arts.sf.science
 First Archived Msg: Friday, 9 February 1996 08:00:00 UTC
-Last Archived Msg: Tuesday, 13 February 1996 08:00:00 UTC
+Last Archived Msg: Saturday, 8 February 1997 08:00:00 UTC
 
 background:
 interested in accrete
@@ -288,9 +289,12 @@ interested in accrete
 Stephen D. Schaper
 newsgroup: alt.sci.planetary
 First Archived Msg: Friday, 1 March 1996 08:00:00 UTC
+Last Archived Msg: Wednesday, 29 May 1996 08:00:00 UTC+1
 
 background:
 interested in accrete
+responded to Gordon Clarke
+responded to Jedidiah Whitten
 
 Das Miller
 newsgroup: sci.astro
@@ -321,3 +325,50 @@ First Archived Msg: Friday, 26 April 1996 08:00:00 UTC+1
 
 background:
 interested in accrete
+
+Peter Yard
+newsgroup: sci.astro
+First Archived Msg: Saturday, 11 May 1996 08:00:00 UTC+1
+Last Archived Msg: Thursday, 23 May 1996 08:00:00 UTC+1
+
+background:
+responded to Chris Carrier
+responded to Craig Berry
+responded to Dean Gilbert
+has copy of accrete
+
+Dean Gilbert
+newsgroup: sci.astro
+First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
+
+background:
+interested in accrete
+
+Mike Hammond
+newsgroup: sci.astro
+First Archived Msg: Monday, 13 May 1996 08:00:00 UTC+1
+Last Archived Msg: Sunday, 26 May 1996 08:00:00 UTC+1
+
+background:
+responded to Barbara A Cohen
+responded to Mark Duffett
+interested in accrete
+
+Nyrath
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
+Last Archived Msg: Sunday, 2 February 1997 08:00:00 UTC
+
+background:
+responded to Lyan
+pretty sure has a few accrete variants cached
+
+John D. Gwinner
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 1 February 1997 08:00:00 UTC
+Last Archived Msg: Monday, 3 February 1997 08:00:00 UTC
+
+background:
+has knowledge of accrete
+Responded to Erik Max Francis
+responded to Andy Lanagan
