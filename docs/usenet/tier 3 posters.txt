@@ -92,7 +92,7 @@ Responded to Chris Johnson & Arild Toerum
 Del Cotter
 newsgroup: rec.arts.sf.science
 First Archived Msg: Monday, 10 May 1993 13:41:12 UTC+1
-Last Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+Last Archived Msg: Friday, 21 February 1997 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
@@ -139,13 +139,14 @@ Responded to Paul F. Dietz
 James Davis Nicoll
 newsgroup: rec.arts.sf.science
 First Archived Msg: Saturday, 15 May 1993 15:56:52 UTC+1
-Last Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
+Last Archived Msg: Thursday, 6 February 1997 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
 Responded to Paul F. Dietz
 Responded to Mike C
 Responded to Lyan
+responded to Brian Davis
 
 Paul F. Dietz
 newsgroup: rec.arts.sf.science
@@ -158,6 +159,7 @@ Responded to James Davis Nicoll
 Ross Smith
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 16 May 1993 01:40:59 UTC+1
+Last Archived Msg: Monday, 17 February 1997 08:00:00 UTC
 
 background:
 Responded to Chris Johnson
@@ -187,7 +189,7 @@ Responded to Robert W. Rapplean
 Anders Sandberg
 newsgroup: rec.arts.sf.science
 First Archived Msg: Saturday, 1 October 1994 17:31:18 UTC+1
-Last Archived Msg: Tuesday, 4 October 1994 11:56:17 UTC+1
+Last Archived Msg: Sunday, 16 February 1997 08:00:00 UTC
 
 background:
 Responded to Robert W. Rapplean
@@ -574,7 +576,7 @@ responded to Hairy One Kenobi
 Craig Berry
 newsgroup: sci.astro, rec.arts.sf.science
 First Archived Msg: Tuesday, 21 May 1996 08:00:00 UTC+1
-Last Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 19 February 1997 08:00:00 UTC
 
 background:
 responded to K.HAIGH-HUTCHINSON
@@ -656,6 +658,7 @@ responded to Lyan
 Gary L. Krepps
 newsgroup: rec.arts.sf.science
 First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 26 February 1997 08:00:00 UTC
 
 background:
 responded to Dan Goodman
@@ -817,3 +820,177 @@ First Archived Msg: Wednesday, 12 February 1997 08:00:00 UTC
 
 background:
 responded to Stevens R. Miller
+
+Cyber Linguist
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 12 February 1997 08:00:00 UTC
+
+background:
+responded to Stevens R. Miller
+
+
+RMC
+newsgroup: rec.games.programmer
+First Archived Msg: Wednesday, 12 February 1997 08:00:00 UTC
+
+background:
+responded to Stevens R. Miller
+
+
+RMC
+newsgroup: rec.games.programmer
+First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
+
+background:
+responded to Robert Gasch
+
+GrimmWare
+newsgroup: rec.games.programmer
+First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
+
+background:
+responded to Robert Gasch
+
+Edward Margel
+newsgroup: rec.games.programmer
+First Archived Msg: Sunday, 2 February 1997 08:00:00 UTC
+
+background:
+responded to Robert Gasch
+
+Brian Davis
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
+Last Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
+
+background:
+ask if star wars could happen
+
+Mike Huskey
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Chris Lawson
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
+Last Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Beth and Richard Treitel
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 6 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Andrew Crisp
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 8 February 1997 08:00:00 UTC
+Last Archived Msg: Friday, 14 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Barry Bocaner
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+BLAINE GORDON MANYLUK
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+Last Archived Msg: Saturday, 22 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Roger Smith
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+John Burton
+newsgroup: rec.arts.sf.science
+First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Stefan E. Jones
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Bill Dugan
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 15 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Tapio Erola
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 17 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+B. Vermo
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 17 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Brian Trosko
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 17 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Alistair Young
+newsgroup: rec.arts.sf.science
+First Archived Msg: Wednesday, 19 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+William Timmins
+newsgroup: rec.arts.sf.science
+First Archived Msg: Thursday, 20 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+L. Shelton Bumgarner
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 22 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Justin Fang
+newsgroup: rec.arts.sf.science
+First Archived Msg: Monday, 24 February 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis
+
+Stig The Intrepid
+newsgroup: rec.arts.sf.science
+First Archived Msg: Friday, 7 March 1997 08:00:00 UTC
+
+background:
+responded to Brian Davis

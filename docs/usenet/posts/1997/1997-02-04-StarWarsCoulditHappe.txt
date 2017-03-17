@@ -1,0 +1,1946 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/loH7bA8A5u0
+TITLE: Star Wars: Could it Happen? 
+
+----------------------------------------------------------------------------
+
+Tuesday, 4 February 1997 08:00:00 UTC - Brian Davis:
+In an article, mik...@mindspring.com <> wrote:
+> OK, I've seen Star Wars again at the theater after twenty years, and
+> while it is obviously not hard science fiction, I can't help but
+> wonder about the scene where the Death Star blows up an entire planet
+> in a matter of seconds.
+
+   Well, speed-of-light limitation is a good place to start. Earth radius
+is 6378 km, meaning travel time for a photon across it (can't get much
+faster than that, if we want to leave *any* conventional physics intact)
+would be about 0.04 seconds - near enough to instantaneous to the eye.
+   Real shockwaves in rock travel at much lower speeds, generally only km
+per second. Assuming a really hypervelocity shock (say 1000 km/sec, very
+unrealistic), it would take almost 13 seconds for the effect of the beam
+to be felt on the far side of the planet - certainly *not* instant
+destruction.
+   So, probably wouldn't happen. Not too much of a suprise.
+   As for the energy, let's underestimate it. How much energy would it
+take to seperate the Earth into 2 pieces, with both drifting away from
+each other, never to be seen again? I get around 9.3 * 10^31 J (using the
+potential energy of two masses, each 1/2 an Earth mass, seperated by 1
+Earth radius - a rough estimate), or about 2.2 * 10^16 Mt. Still too big a
+number? Using E=mc^2, that's 10^15 kg (a chunk of rock about 7 km on a
+side). Another way to put it is that it's about 1/10 of the annual output
+of the Sun. Not bad, for a station only the size of a moon ;-).
+   OK, so it's a little unrealistic there too. Oh well. The model was
+probably slightly easier to detonate.
+
+                                          -Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 5 February 1997 08:00:00 UTC - Mike Huskey:
+OK, I've seen Star Wars again at the theater after twenty years, and
+while it is obviously not hard science fiction, I can't help but
+wonder about the scene where the Death Star blows up an entire planet
+in a matter of seconds.
+How about some technical analysis from those of you who are more
+mathematically literate than myself.
+What kind of energy would it take to make a planet explode in a matter
+of seconds, if it is even possible? Assume that the planet is like
+Earth if it will make your calculations easier.
+----------------------------------------------------------------------------
+
+Wednesday, 5 February 1997 08:00:00 UTC - Chris Lawson:
+mik...@mindspring.com <> (Mike Huskey) wrote:
+
+- show quoted text -
+>OK, I've seen Star Wars again at the theater after twenty years, and
+>while it is obviously not hard science fiction, I can't help but
+>wonder about the scene where the Death Star blows up an entire planet
+>in a matter of seconds.
+>How about some technical analysis from those of you who are more
+>mathematically literate than myself.
+
+- show quoted text ->What kind of energy would it take to make a planet explode in a matter
+>of seconds, if it is even possible? Assume that the planet is like
+>Earth if it will make your calculations easier.
+Forget it. Star Wars is really a fairy tale set in space. It's hugely
+entertaining, but it doesn't make the slightest pretence at scientific
+literacy. The reason why no-one picks on it here is because of that
+lack of pretence. Star Trek, OTOH, tries very hard to sound like it's
+using real science, but it's conning the audience, which is why it is
+routinely pilloried for its science on this newsgroup.
+
+regards,
+Chris
+_____________________
+Chris Lawson
+cl...@ozemail.com.au <>
+----------------------------------------------------------------------------
+
+Wednesday, 5 February 1997 08:00:00 UTC - John D. Gwinner:
+Brian Davis <da...@miphys.physics.lsa.umich.edu <>> wrote in article
+<davis-04029...@pm010-17.dialip.mich.net <>>...
+> In an article, mik...@mindspring.com <> wrote:
+> 
+> > OK, I've seen Star Wars again at the theater after twenty years, and
+> > while it is obviously not hard science fiction, I can't help but
+> > wonder about the scene where the Death Star blows up an entire planet
+> > in a matter of seconds.
+> 
+....
+Good analysis.
+
+
+>Using E=mc^2, that's 10^15 kg (a chunk of rock about 7 km on a
+>side). Another way to put it is that it's about 1/10 of the annual output
+>of the Sun. Not bad, for a station only the size of a moon ;-).
+Don't forget clark's law <G>.
+
+In any event, what about a stream of Antimatter directed at the Planet?  It
+could tear a hole through the planet through mutual destruction and shock
+waves, and then the later beam could have a higher density or a 3Km
+'pellet' that would be inserted inside the center.  
+
+Bet it would be impressive.
+
+Related question:
+
+How do you Nova a star?  How about a large Stasis field inserted into the
+center?
+
+                == John ==
+   
+----------------------------------------------------------------------------
+
+Thursday, 6 February 1997 08:00:00 UTC - Nyrath the nearly wise:
+Mike Huskey (mik...@mindspring.com <>) wrote:
+: 
+: What kind of energy would it take to make a planet explode in a matter
+: of seconds?
+According to Sean Barrett, the amount of energy to completely disrupt
+a uniform spherical body is:
+
+E = 0.6G(M^2)/R
+
+where:
+E = energy in joules
+G = Newton's gravitational constant = 6.673 x 10^-11 N (m^2)/(kg^2)
+M = mass of the planet in kilograms
+R = radius of the planet in meters
+x^2 = square of x
+
+Example: Earth's mass is 5.974 x 10^24 kgs, radius is 6,378,000 
+meters.
+E = 2.24 x 10^32 joules, which is about the energy 
+in 2.73 million million tons of matter/antimatter mix.
+
+That's a *lot* of energy.
+
+This is based on the calculation of how much energy would be
+required to move each atom from the earth's gravitional field
+to infinity.
+
+Note that the energy must be efficiently applied, simply
+bombarding the surface with millions of teratons of nuclear
+devices wouldn't work. (it would churn the entire planet,
+but that's not what the Death Star did).
+
++----------------------------------------------------------------------------+
+| WINCHELL CHUNG                   http://www.clark.net/pub/nyrath/home.html <http://www.clark.net/pub/nyrath/home.html> |
+| Nyrath the nearly wise                                    nyr...@clark.net <> |
++---_---+---------------------[ SURREAL SAGE SEZ: ]--------------------------+
+|  /_\  | Nothing is too wonderful to be true if it be consistent with the   |
+| <(*)> | laws of nature.                                                    |
+|/_/|\_\|                                                                    |
+| //|\\ |                                                                    |
++///|\\\+--------------------------------------------------------------------+
+----------------------------------------------------------------------------
+
+Thursday, 6 February 1997 08:00:00 UTC - Beth and Richard Treitel:
+To my surprise and delight, da...@miphys.physics.lsa.umich.edu <> (Brian
+Davis) wrote:
+
+>   As for the energy, let's underestimate it. How much energy would it
+>take to seperate the Earth into 2 pieces, with both drifting away from
+>each other, never to be seen again? I get around 9.3 * 10^31 J (using the
+>potential energy of two masses, each 1/2 an Earth mass, seperated by 1
+>Earth radius - a rough estimate), or about 2.2 * 10^16 Mt. Still too big a
+>number? Using E=mc^2, that's 10^15 kg (a chunk of rock about 7 km on a
+>side). Another way to put it is that it's about 1/10 of the annual output
+>of the Sun. Not bad, for a station only the size of a moon ;-).
+#+nitpick
+The answer, assuming uniform density, is something like 2.2 * 10^32 J;
+the formula is
+ (3 * M^2 * G) / (5 * R)
+or
+ 3 * M * g * R / 5
+IIRC where G is Newton's constant and g is the gravity at the planet's
+surface.  (It's much too early in the morning for me to get these
+things exactly right, but someone will correct me, I have no doubt).
+Since the Earth is not uniformly dense, I'd expect the true number to
+be a little higher.
+#-nitpick
+
+- Richard
+------
+A sufficiently incompetent ScF author is indistinguishable from magic.
+                       see also:
+What is (and isn't) ScF?   ==>  http://www.wco.com/~treitel/sf.html <http://www.wco.com/~treitel/sf.html>
+----------------------------------------------------------------------------
+
+Thursday, 6 February 1997 08:00:00 UTC - James Nicoll:
+In article <5dbgeh$d...@clarknet.clark.net <>>,
+Nyrath the nearly wise <nyr...@clark.net <>> wrote:
+>Mike Huskey (mik...@mindspring.com <>) wrote:
+>: 
+>: What kind of energy would it take to make a planet explode in a matter
+>: of seconds?
+>
+>According to Sean Barrett, the amount of energy to completely disrupt
+>a uniform spherical body is:
+>
+>E = 0.6G(M^2)/R
+>
+>where:
+>E = energy in joules
+>G = Newton's gravitational constant = 6.673 x 10^-11 N (m^2)/(kg^2)
+>M = mass of the planet in kilograms
+>R = radius of the planet in meters
+>x^2 = square of x
+>
+>Example: Earth's mass is 5.974 x 10^24 kgs, radius is 6,378,000 
+>meters.
+>E = 2.24 x 10^32 joules, which is about the energy 
+>in 2.73 million million tons of matter/antimatter mix.
+>
+>That's a *lot* of energy.
+        About a week's output for the Sun. One wonders how
+they handled the waste heat in an object the size of a moon:
+If it'll dust an Earth sized planet, even 1% leakage should
+toast the DS easily. There were not huge radiators, so either
+the process is very very efficient or the energy production
+is inside the target, not the DS.
+
+        If it were a Greg Bear story, the DS would work by flipping
+the dipswitches on the laws of nature, so gravity turned off for a moment
+and angular momentum ripped the planet apart (This does not match what
+we saw). If it were a Future History story, it would exploit that
+loophole in CoE that slipstick Libby found. For Banks, it is clearly
+gridfire.
+
+                                                        James Nicoll
+
+        
+--
+----------------------------------------------------------------------------
+
+Friday, 7 February 1997 08:00:00 UTC - BZvi:
+If you ask me, a more plausible "planet killer" would be the one used by
+the Shadows in Babylon 5 recently.  
+A planet is surrounded by a thick cloud of millions of drone ships, each
+firing a nuclear missle deep into the planet's crust. Each warhead
+explodes underground and disintegrates the surrounding mantle and crust.
+Slowly, the planet is disintegrated from within.
+
+Granted, it's not as quick or dramatic as the superlaser on the Death
+Star, but its a much more plausible way to destroy a planet-sized mass.
+----------------------------------------------------------------------------
+
+Friday, 7 February 1997 08:00:00 UTC - Chris Lawson:
+jam...@ece.uwaterloo.ca <> (James Nicoll) wrote:
+
+>        About a week's output for the Sun. One wonders how
+>they handled the waste heat in an object the size of a moon:
+>If it'll dust an Earth sized planet, even 1% leakage should
+>toast the DS easily. There were not huge radiators, so either
+>the process is very very efficient or the energy production
+>is inside the target, not the DS.
+So that's the weak spot Luke Skywalker hit! It was the heat disposal
+system. Suddenly the Death Star had yottajoules of energy with nowhere
+to go. Kaboom! :-)
+
+
+>        If it were a Greg Bear story, the DS would work by flipping
+>the dipswitches on the laws of nature, so gravity turned off for a moment
+>and angular momentum ripped the planet apart (This does not match what
+>we saw). If it were a Future History story, it would exploit that
+>loophole in CoE that slipstick Libby found. For Banks, it is clearly
+>gridfire.
+And if it was Star Trek, the femtocrystals would destabilise causing a
+quasi-eon flux in the fabric of space-time.
+
+regards,
+Chris
+
+_____________________
+Chris Lawson
+cl...@ozemail.com.au <>
+----------------------------------------------------------------------------
+
+Friday, 7 February 1997 08:00:00 UTC - Erik Max Francis:
+Mike Huskey wrote:
+
+> What kind of energy would it take to make a planet explode in a matter
+> of seconds, if it is even possible? Assume that the planet is like
+> Earth if it will make your calculations easier.
+The amount of energy required to completely gravitationally disrupt a body
+-- that is, give each little bit of mass escape velocity from every other
+little bit of mass -- is called the gravitational binding energy, and for a
+uniform, spherical mass, is 
+
+    U = (3/5) G M^2/R.
+
+With the assumption that the Earth is uniform (incorrect, but sufficient to
+get an order-of-magnitude estimate), with M = 5.97 x 10^24 kg and R = 6.37
+x 10^6 m, U is 2.24 x 10^32 J.  By comparison, the Sun's luminosity is
+about 4 x 10^26 W; the gravitational binding energy of the Earth is equal
+to about a week of the Sun's total energy output.
+
+Now to make it happen in "a matter of seconds" you need to apply even more
+energy.  The only real limitation there is the speed of light.  (Any waves
+travelling through the body itself are going to be shockwaves, not sound
+waves.)
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Saturday, 8 February 1997 08:00:00 UTC - Andrew Crisp:
+- show quoted text -
+BZvi wrote:
+> 
+> If you ask me, a more plausible "planet killer" would be the one used by
+> the Shadows in Babylon 5 recently.
+> 
+> A planet is surrounded by a thick cloud of millions of drone ships, each
+> firing a nuclear missle deep into the planet's crust. Each warhead
+> explodes underground and disintegrates the surrounding mantle and crust.
+> Slowly, the planet is disintegrated from within.
+> 
+> Granted, it's not as quick or dramatic as the superlaser on the Death
+> Star, but its a much more plausible way to destroy a planet-sized mass.
+Quick?  No.  Dramatic?  Very.  
+
+-- 
+Andrew B. Crisp
+JET 2
+NBCC Moncton
+Part-Time Science Fiction writer
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Barry Bocaner:
+Chris Lawson (cl...@ozemail.com.au <>) wrote:
+: And if it was Star Trek, the femtocrystals would destabilise causing a
+: quasi-eon flux in the fabric of space-time.
+Oohh... it might just work if we could somehow re-tune the main deflector
+dish!
+
+--
+--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Barry J. Bocaner     _________/|
+<ba...@gslink.com <>>  (___|_____\|__________   
+                              _|__________)-
+"If you listen to a piece of classical music it's a piece of music, but if
+you listen to a pop song from 1954 it sounds like a pop song from 1954.
+How much of the music that's being written today will be worth listening
+to in ten years, except for nostalgia?"    -Geddy Lee
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - bla...@freenet.edmonton.ab.ca:
+BZvi (bz...@aol.com <>) wrote:
+: If you ask me, a more plausible "planet killer" would be the one used by
+: the Shadows in Babylon 5 recently.  
+
+: A planet is surrounded by a thick cloud of millions of drone ships, each
+: firing a nuclear missle deep into the planet's crust. Each warhead
+: explodes underground and disintegrates the surrounding mantle and crust.
+: Slowly, the planet is disintegrated from within.
+
+: Granted, it's not as quick or dramatic as the superlaser on the Death
+: Star, but its a much more plausible way to destroy a planet-sized mass.
+Why bother even trying to destroy a whole planet in the first place, when
+you can just destroy the surface or just the biosphere.  It can be done
+with even present-day nuclear technology.
+
+=====================                ====================================
+BLAINE GORDON MANYLUK                email: bla...@freenet.edmonton.ab.ca <>
+EDMONTON, AB
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Roger Smith:
+In article <19970207040...@ladder01.news.aol.com <>>, BZvi
+<bz...@aol.com <>> wrote
+>If you ask me, a more plausible "planet killer" would be the one used by
+>the Shadows in Babylon 5 recently.  
+>
+        I Do wish you had used a spoiler space at this point, over here
+in the UK I amongst many others have been trying to avoid finding out
+what is going to happen in the new season untill it starts over here.
+        Now I will be wondering which planet and who the killers are
+(and NO I don't want anyone to tell me) for ages.
+-- 
+aRJay
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - Erik Max Francis:
+bla...@freenet.edmonton.ab.ca <> wrote:
+
+> Why bother even trying to destroy a whole planet in the first place, when
+> you can just destroy the surface or just the biosphere.  It can be done
+> with even present-day nuclear technology.
+As long as you have a _lot_ of nukes.  A global thermonuclear war would
+collapse human civilization, but the biosphere would certainly survive.  It
+wouldn't even be comparable to mass extinctions in the past which have
+happened naturally.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Sunday, 9 February 1997 08:00:00 UTC - John Burton:
+In article <5dj53j$2...@news1.mnsinc.com <>>,
+barry@I_should_put_my_domain_in_etc_NNTP_INEWS_DOMAIN (Barry
+Boc<5dj53j$2...@news1.mnsinc.com <>> wrote:
+> Chris Lawson (cl...@ozemail.com.au <>) wrote:
+> : And if it was Star Trek, the femtocrystals would destabilise causing a
+> : quasi-eon flux in the fabric of space-time.
+> 
+> Oohh... it might just work if we could somehow re-tune the main deflector
+> dish!
+But if that fails, you could always try reversing the polarity.
+
+-- 
+  _________________________________________________________________________
+ /                                                                         \
+ \ Stress is like nuclear waste, if you bottle it up, and hide it away, it /
+ /  will leak out and cause serious problems!    jbu...@argonet.co.uk <>     \
+ \___________________________________________/        /\ |=)|\/|   \_______/
+                                             \ Strong/~~\| \|  |ed /
+----------------------------------------------------------------------------
+
+Monday, 10 February 1997 08:00:00 UTC - Andrew Crisp:
+John D. Gwinner wrote:
+> 
+> Related question:
+> 
+> How do you Nova a star?  How about a large Stasis field inserted into the
+> center?
+If I could control the star's gravity, I'd increase it a hundredfold for
+a second (or less).  Suddenly you'd have a lot more mass fusing in the
+core than you would ordinarily...
+
+The effect would depend on how much energy is released in the manuever. 
+(WARNING: although I have studied physics for a couple of years, I am
+not  an expert.  Astrophysicists are welcome to criticize)  Not enough
+extra mass and you get increased flare activity; too much and you get a
+supernova, effectively destroying the star (while a nova would leave the
+star intact...)
+
+On a military perspective, increased flare activity could toast ships
+near the star in question or (if the flares are large enough), fry
+sections of close planets; however, you'd have to hope that the enemy
+was located were the flare hit ;)
+
+A supernova would blast everything in the system, and _might_ leave one
+or two planets shriveled but intact, if they were far enough away.  But
+with the star destroyed, you would not be able to settle them once the
+lava cooled...
+
+Best bet is a nova; the planets are left intact, and the outer planets
+may even be unscathed.  Any colonies, homeworlds, and ships within a
+certain radius would be destroyed; ships and nonselfsufficient colonies
+would then be cut off from resupply and could be starved out or blown up
+at leasure.  And if you waited a few centuries, the radiation on the
+inner planets would die down enough to resettle (you'd need to terraform
+the planets, though).
+
+
+-- 
+Andrew B. Crisp
+JET 2
+NBCC Moncton
+Part-Time Science Fiction writer
+"Good morning gentlemen.  This is your wake-up call." -- Capt. John
+Sheridan.
+----------------------------------------------------------------------------
+
+Monday, 10 February 1997 08:00:00 UTC - Erik Max Francis:
+Andrew Crisp wrote:
+
+> If I could control the star's gravity, I'd increase it a hundredfold for
+> a second (or less).  Suddenly you'd have a lot more mass fusing in the
+> core than you would ordinarily...
+This is true.  It would result in increased mass ejection after a period of
+about a million years, but other than that it wouldn't amount to much.
+
+
+> The effect would depend on how much energy is released in the manuever.
+> (WARNING: although I have studied physics for a couple of years, I am
+> not  an expert.  Astrophysicists are welcome to criticize)  Not enough
+> extra mass and you get increased flare activity; too much and you get a
+> supernova, effectively destroying the star (while a nova would leave the
+> star intact...)
+Increased flare activity, yes.  Periods of mass ejection, perhaps.  But
+supernova, no.  A supernova occurs when a depleted iron core collapses to
+form a neutron star; the neutron star's rebound after its formation (after
+it reaches "maximum scrunch," if it's not black-hole-progenitor mass it
+rebonds) forces the already infalling envelope to erupt outward.
+
+You won't get a supernova without this neutron star formation, and for that
+you need a massive supergiant, which has fused the nuclear fuel in its core
+to fulfillment, so you have (essentially) nothing left to fuse but Fe.
+
+And about the delay:  It takes on the order of a million years (give or
+take a factor of ten) for a photon generated by fusion in the Sun's core to
+escape through the random walk to the surface and be seen outside the star. 
+Strange, but true.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Tuesday, 11 February 1997 08:00:00 UTC - Chris Lawson:
+Andrew Crisp <mo03...@nbcc.nb.ca <>> wrote:
+
+>Best bet is a nova; the planets are left intact, and the outer planets
+>may even be unscathed.  Any colonies, homeworlds, and ships within a
+>certain radius would be destroyed; ships and nonselfsufficient colonies
+>would then be cut off from resupply and could be starved out or blown up
+>at leasure.  And if you waited a few centuries, the radiation on the
+>inner planets would die down enough to resettle (you'd need to terraform
+>the planets, though).
+There has been some recent specualtion that mass extinctions might be
+caused by nearby (ie within 20-30 ly iirc) novas irradiating the solar
+system with neutrinos. You might find your nova-bomb is more
+destructive than you think, including damage to neighboring star
+systems.
+
+regards,
+Chris
+
+_____________________
+Chris Lawson
+cl...@ozemail.com.au <>
+----------------------------------------------------------------------------
+
+Tuesday, 11 February 1997 08:00:00 UTC - Andrew Crisp:
+Erik Max Francis wrote:
+> 
+> Andrew Crisp wrote:
+> 
+> > If I could control the star's gravity, I'd increase it a hundredfold for
+> > a second (or less).  Suddenly you'd have a lot more mass fusing in the
+> > core than you would ordinarily...
+> 
+> This is true.  It would result in increased mass ejection after a period of
+> about a million years, but other than that it wouldn't amount to much.
+> 
+> Increased flare activity, yes.  Periods of mass ejection, perhaps.  But
+> supernova, no.  A supernova occurs when a depleted iron core collapses to
+> form a neutron star; the neutron star's rebound after its formation (after
+> it reaches "maximum scrunch," if it's not black-hole-progenitor mass it
+> rebonds) forces the already infalling envelope to erupt outward.
+> 
+> You won't get a supernova without this neutron star formation, and for that
+> you need a massive supergiant, which has fused the nuclear fuel in its core
+> to fulfillment, so you have (essentially) nothing left to fuse but Fe.
+> 
+> And about the delay:  It takes on the order of a million years (give or
+> take a factor of ten) for a photon generated by fusion in the Sun's core to
+> escape through the random walk to the surface and be seen outside the star.
+> Strange, but true.
+> 
+Thanks a lot, it's great to talk to an expert.  But since flare activity
+would be the only real benefit, then it makes tinkering with stars a
+poor option from a military standpoint. >sigh<
+
+I'd also like to extend thanks to Chris Lawson for talking about the
+_magnitude_ of novas, to the point of damaging nearby systems (or at
+least their ecologies).  Of course, if one had FTL travel (the only
+thing which would make interstellar war feasable), and the right
+technology, one could protect the extra planets from "post-war" damage
+when the radiation comes flying by two to twenty years later...
+
+-- 
+Andrew B. Crisp
+JET 2
+NBCC Moncton
+Part-Time Science Fiction writer
+----------------------------------------------------------------------------
+
+Tuesday, 11 February 1997 08:00:00 UTC - Erik Max Francis:
+Andrew Crisp wrote:
+
+> Thanks a lot, it's great to talk to an expert.
+Well, I wouldn't call myself an _expert_, but I won't disagree with you too
+strongly on that point . . . :-)
+
+
+> But since flare activity
+> would be the only real benefit, then it makes tinkering with stars a
+> poor option from a military standpoint. >sigh<
+Sigh?  I'd think it was a good thing.  I wouldn't want anyone destroying
+the star that warmed my homeworld during a war . . .
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Wednesday, 12 February 1997 08:00:00 UTC - Nyrath the nearly wise:
+Andrew Crisp (mo03...@nbcc.nb.ca <>) wrote:
+: Of course, if one had FTL travel (the only
+: thing which would make interstellar war feasable), <snip>
+Wouldn't that depend on how determined the agressor was?
+In Larry Niven's A WORLD OUT OF TIME, he describes an
+interstellar battle fleet arriving STL "like a Portugese Man
+Of War" ( battleships attached to the rim of a laser launched
+lightsail ), and "like a hornet's nest" ( battleships housed
+in a large Bussard Ramjet carrier ).
+
+
+
++----------------------------------------------------------------------------+
+| WINCHELL CHUNG                   http://www.clark.net/pub/nyrath/home.html <http://www.clark.net/pub/nyrath/home.html> |
+| Nyrath the nearly wise                                    nyr...@clark.net <> |
++---_---+---------------------[ SURREAL SAGE SEZ: ]--------------------------+
+|  /_\  | My foolish parents taught me to read and write.                    |
+| <(*)> |                                                                    |
+|/_/|\_\|                                                                    |
+| //|\\ |                                                                    |
++///|\\\+--------------------------------------------------------------------+
+----------------------------------------------------------------------------
+
+Wednesday, 12 February 1997 08:00:00 UTC - Chris Lawson:
+nyr...@clark.net <> (Nyrath the nearly wise) wrote:
+
+>Andrew Crisp (mo03...@nbcc.nb.ca <>) wrote:
+>: Of course, if one had FTL travel (the only
+>: thing which would make interstellar war feasable), <snip>
+
+>Wouldn't that depend on how determined the agressor was?
+>In Larry Niven's A WORLD OUT OF TIME, he describes an
+>interstellar battle fleet arriving STL "like a Portugese Man
+>Of War" ( battleships attached to the rim of a laser launched
+>lightsail ), and "like a hornet's nest" ( battleships housed
+>in a large Bussard Ramjet carrier ).
+And also in PROTECTOR, where interstellar war is made possible by the
+long lifetimes of the Protectors and by their ability to tolerate
+mind-numbing environments for thousands of years.
+
+regards,
+Chris
+
+_____________________
+Chris Lawson
+cl...@ozemail.com.au <>
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Brian Davis:
+In an article, Erik Max Francis wrote:
+[talking about a nova]
+
+> This is true.  It would result in increased mass ejection after a period of
+> about a million years, but other than that it wouldn't amount to much.
+[and later]
+
+> And about the delay:  It takes on the order of a million years (give or
+> take a factor of ten) for a photon generated by fusion in the Sun's core to
+> escape through the random walk to the surface and be seen outside the star. 
+> Strange, but true.
+   While this is true, it may or may not have a bearing on your original
+point about time delays. Shock propagation can far exceed thermal
+diffusion of photons out of the core. This is certainly true for a
+supernova; the neutrinos are followed only a short time later (ms to min?
+Certainly not years) by the optical image of the star exploding. What
+about for a more conventional nova? Are those shock-driven, or only
+thermally driven?
+                                                -Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Chris Lawson:
+Andrew Crisp <mo03...@nbcc.nb.ca <>> wrote:
+
+>I'd also like to extend thanks to Chris Lawson for talking about the
+>_magnitude_ of novas, to the point of damaging nearby systems (or at
+>least their ecologies).  Of course, if one had FTL travel (the only
+>thing which would make interstellar war feasable), and the right
+>technology, one could protect the extra planets from "post-war" damage
+>when the radiation comes flying by two to twenty years later...
+You're a very polite poster. Who invited you here? :-)
+
+Anyway, thanks for the recognition, but I obviously didn;t quite get
+my message across. The problem isn't the magnitude of novas per se -
+no-one's gonna get fried from the normal EM radiation from a nova
+unless they're *very* close. What I was describing was the postulated
+neutrino bombardment of nearby worlds. Traditionally neutrinos have
+been ignored as a radiation source because they interact so weakly
+with normal matter that no-one thought they could possibly be as
+damaging as, say,  X-rays.
+
+However, some theorists have postulated that neutrino radiation from
+nearby novas makes up for this weak interaction by sheer weight of
+numbers, ie there are so *many* neutrinos, that they still cause  a
+significant radiation load, thus triggering a mass extinction.
+
+This is a loooong way from a widely-accepted explanation of mass
+exctinctions. I merely raised it as a possible problem with detonating
+enemy stars - it may well sterilise your own nearby systems.
+
+And BTW, having FTL travel is no help in itself - what you really need
+is some form of planetary shielding against neutrinos. I think the
+term for this is "unobtainium", and you can see a perfect example of
+unobtainium being used for the specific purpose of neutrino shielding
+in Niven's RINGWORLD.
+
+regards,
+Chris
+
+_____________________
+Chris Lawson
+cl...@ozemail.com.au <>
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Erik Max Francis:
+Chris Lawson wrote:
+> However, some theorists have postulated that neutrino radiation from
+> nearby novas makes up for this weak interaction by sheer weight of
+> numbers, ie there are so *many* neutrinos, that they still cause  a
+> significant radiation load, thus triggering a mass extinction.
+
+This is for supernovae, not novae.  Novae will create neutrinos, sure --
+novae are just built up hydrogen on the surface of white dwarfs reaching
+fusion temperatures and detonating -- but nothing like the amount that
+supernovae create; the vast majority of the energy of a supernovae is
+released in the form of neutrinos -- and you know how impressive the
+electromagnetic portion of the portion is.  In actuality the
+electromagnetic portion is more of a secondary burp.
+
+However, the neutrino flux from an impending supernova (the neutrino burst
+will reach you before you see anything wrong with the star) is only lethal
+to something on the order of 10 au.  Definitely insystem.
+
+> This is a loooong way from a widely-accepted explanation of mass
+> exctinctions. I merely raised it as a possible problem with detonating
+> enemy stars - it may well sterilise your own nearby systems.
+
+I've never heard anyone suggest this as a mass extinction explanation; do
+you have references?  It's terribly clear that the neutrino flux is nowhere
+near strong enough.  Not by a long shot.
+
+> And BTW, having FTL travel is no help in itself - what you really need
+> is some form of planetary shielding against neutrinos. I think the
+> term for this is "unobtainium", and you can see a perfect example of
+> unobtainium being used for the specific purpose of neutrino shielding
+> in Niven's RINGWORLD.
+
+If you're talking about Niven's speculations about the Ringworld surviving
+the Core explosion, he was wrong.  Not only is there significant gap, but
+the galactic magnetic field will divert charged particles every which way.
+The Ringworld will not survive.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Erik Max Francis:
+- show quoted text -
+Chris Lawson wrote:
+> However, some theorists have postulated that neutrino radiation from
+> nearby novas makes up for this weak interaction by sheer weight of
+> numbers, ie there are so *many* neutrinos, that they still cause  a
+> significant radiation load, thus triggering a mass extinction.
+
+This is for supernovae, not novae.  Novae will create neutrinos, sure --
+novae are just built up hydrogen on the surface of white dwarfs reaching
+fusion temperatures and detonating -- but nothing like the amount that
+supernovae create; the vast majority of the energy of a supernovae is
+released in the form of neutrinos -- and you know how impressive the
+electromagnetic portion of the portion is.  In actuality the
+electromagnetic portion is more of a secondary burp.
+
+However, the neutrino flux from an impending supernova (the neutrino burst
+will reach you before you see anything wrong with the star) is only lethal
+to something on the order of 10 au.  Definitely insystem.
+
+> This is a loooong way from a widely-accepted explanation of mass
+> exctinctions. I merely raised it as a possible problem with detonating
+> enemy stars - it may well sterilise your own nearby systems.
+
+I've never heard anyone suggest this as a mass extinction explanation; do
+you have references?  It's terribly clear that the neutrino flux is nowhere
+near strong enough.  Not by a long shot.
+
+> And BTW, having FTL travel is no help in itself - what you really need
+> is some form of planetary shielding against neutrinos. I think the
+> term for this is "unobtainium", and you can see a perfect example of
+> unobtainium being used for the specific purpose of neutrino shielding
+> in Niven's RINGWORLD.
+
+If you're talking about Niven's speculations about the Ringworld surviving
+the Core explosion, he was wrong.  Not only is there significant gap, but
+the galactic magnetic field will divert charged particles every which way.
+The Ringworld will not survive.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Andrew Crisp:
+Chris Lawson wrote:
+> 
+> This is a loooong way from a widely-accepted explanation of mass
+> exctinctions. I merely raised it as a possible problem with detonating
+> enemy stars - it may well sterilise your own nearby systems.
+> 
+> And BTW, having FTL travel is no help in itself - what you really need
+> is some form of planetary shielding against neutrinos. I think the
+> term for this is "unobtainium", and you can see a perfect example of
+> unobtainium being used for the specific purpose of neutrino shielding
+> in Niven's RINGWORLD.
+> 
+A good point.  _My_ point about FTL is that it gives you the "early
+warning" and "quick getaway" capability; after all, blasting a star and
+escaping (or signalling) to a friendly system at or below the speed of
+light means that you (and the friendly system) cannot protect yourself
+from the nova/supernova fury...
+Another case of Mutual Assured Destruction :)
+
+On another (related) topic, I've recently read some commentary on the
+Kardashev scale for grading advanced civilizations.  As I recall, it's:
+
+K1 -- Civilization energy output equals energy output of a planet
+K2 -- Civilization energy output equals energy output of a star
+K3 -- Civilization energy output equals energy output of a galaxy
+
+This scale seems fairly vague, as most proposed interstellar
+civilizations would fall somewhere in between 1 and 2 or 2 and 3 (BTW,
+what would a K3 civilization look like?).  Case in point, would a
+Ringworld (which utilizes only a portion of its sun's energy), be a K2
+civilization?
+
+Are there more accurate (accepted) scales of measuring technological
+development?  I'm working on a scale called "Modified Kardashev";
+keeping the standard classes, but adding decimals to indicate
+intermediate steps. Example: K0 would be nontechnological societies,
+K1.5 would be a society capable of interstellar travel (either STL or
+"cheap" FTL such as the Star Trek warp drive) and terraforming, and K2.5
+would be capable of stellar modification.  Comments?  Critiscm? 
+Suggestions? 
+
+-- 
+Andrew B. Crisp
+JET 2
+NBCC Moncton
+Part-Time Science Fiction writer
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Stefan E. Jones:
+>On another (related) topic, I've recently read some commentary on the
+>Kardashev scale for grading advanced civilizations.  As I recall, it's:
+
+>K1 -- Civilization energy output equals energy output of a planet
+>K2 -- Civilization energy output equals energy output of a star
+>K3 -- Civilization energy output equals energy output of a galaxy
+This scale was intended as a gauge of how much energy the civilization
+could put into radio communication.
+
+It's an intriguing but very fuzzy scale.
+
+What sort of star are they talking about, for example? A M8 red subdwarf?
+A F2 yellow-white star?
+
+How many stars are in the galaxy the scale mentions?
+
+There's a lot of play there, and as mentioned there's a lot of room
+(D'oh!) between 2 and 3! I suppose 2.1 = 10 stars, 2.2 = 100, . . . ,
+2.9 = 1,000,000,000 would work, with 3 ~= 10,000,000,000 stars. Ten
+billion is not quite a galaxy's worth, but once you hit that many
+systems . . .yeesh.
+
+Really, developing a one-size-fits all taxonomy for civilizations
+out yonder would be tough. You'd need all sorts of weights and measures.
+
+--Stefan Jones
+
+-- 
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+       S...@aol.com <> ~ sjo...@andrew.cmu.edu <> ~ ste...@io.com <>
+               http://www.ini.cmu.edu/~sjones/ <http://www.ini.cmu.edu/~sjones/>
+       CHARGES APPLIED FOR UNSOLICITED COMMERCIAL EMAIL!  
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Erik Max Francis:
+Brian Davis wrote:
+>    While this is true, it may or may not have a bearing on your original
+> point about time delays. Shock propagation can far exceed thermal
+> diffusion of photons out of the core.
+
+This is true, but it depends on exactly what is happening in the Core.
+
+> This is certainly true for a
+> supernova; the neutrinos are followed only a short time later (ms to min?
+> Certainly not years) by the optical image of the star exploding.
+
+True.  The lag is on the order of hours.
+
+> What
+> about for a more conventional nova? Are those shock-driven, or only
+> thermally driven?
+
+Conventional novae involve the surfaces of white dwarfs, so I don't think
+it's irrelevant.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Erik Max Francis:
+Andrew Crisp wrote:
+
+> On another (related) topic, I've recently read some commentary on the
+> Kardashev scale for grading advanced civilizations.  As I recall, it's:
+> 
+> K1 -- Civilization energy output equals energy output of a planet
+> K2 -- Civilization energy output equals energy output of a star
+> K3 -- Civilization energy output equals energy output of a galaxy
+Pretty much, although the Kardashev scale involves the power output
+available to the civilization for utilization.  Type I civilizations
+involve power comparable to that of the insolation of the Earth from the
+Sun.
+
+To one significant figure, the powers involved are:
+
+        I        4 x 10^17 W
+        II        4 x 10^26 W
+        III        4 x 10^37 W
+
+A type II civilization has 10^9 times more power available to it than a
+type I, and a type III has 10^11 times more power available to it than a
+type II.
+
+
+> This scale seems fairly vague, as most proposed interstellar
+> civilizations would fall somewhere in between 1 and 2 or 2 and 3 (BTW,
+> what would a K3 civilization look like?).
+Good question.  These definitions are, of course, abstract, and only
+introduced for the sake of classifying possible discoveries.
+
+
+> Case in point, would a
+> Ringworld (which utilizes only a portion of its sun's energy), be a K2
+> civilization?
+The Ringworld derives its power from its shadow squares.  Assuming that the
+entire collective area of the squares can be used for available power
+(ignore efficiency losses; it was built by Pak, after all :-), and
+according to the data in the Ringworld roleplaying game, they occlude 6.0%*
+of its sun's output, which given as 3.6 x 10^26 W, gives 2.1 x 10^25 W.
+This puts it at just below a type II civilization.
+
+
+> Are there more accurate (accepted) scales of measuring technological
+> development?
+I haven't heard of any, although these kinds of classifications are so
+abstract there's not much use in revising them further.
+
+
+> I'm working on a scale called "Modified Kardashev";
+> keeping the standard classes, but adding decimals to indicate
+> intermediate steps. Example: K0 would be nontechnological societies,
+> K1.5 would be a society capable of interstellar travel (either STL or
+> "cheap" FTL such as the Star Trek warp drive) and terraforming, and K2.5
+> would be capable of stellar modification.  Comments?  Critiscm?
+> Suggestions?
+My idea is to use a logarithmic scale, similarly concretified as in the
+stellar magnitude scale**.  The divisions between type I and type II, and
+type II and type III in the Kardashev scale are not logarithmically equal;
+let's make them so by choosing our scale as 10^10 (the geometric mean of
+10^9 and 10^11).  Furthermore, let's choose a "civilization magnitude" (not
+calling it a Kardashev scale anymore, since they differ now) of M = 2 at P
+(power available) = 3.827 x 10^26 W, defining the system based on the
+luminosity of the Sun.
+
+From this, we find that our function M(P) is 
+
+    M = 0.0434 ln P - 0.658
+
+Our civilization, according to the _1994 World Almanac_, consumed 346
+quadrillion (US) btu in 1993; this is 3.65 x 10^20 J.  Averaged over 1 y,
+the power is 11.6 TW.  (Think about that when people talk about terawatt
+lasers.)
+
+In this system, our civilzation qualifies as a civilization of magnitude
+0.647.  Not too bad.
+
+-----
+* The data sheet gives the size of each square, the number of squares, and
+the average spacing.  It separately gives the insolation portion of the
+squares as 5.5%.  Using this data to calculate the circumference of the
+shadow square ring and thus its radius, and using everything to determine
+the relative areas, I get a 6.0% insolation percentage.  If I, however,
+mistakenly pretend there are 20 gaps (20 squares means 19 gaps, not 20),
+then I arrive at their 5.5% figure.  Oops on them.
+
+** Originally the magnitude scale was non-mathematical, with six divisions.
+First-magnitude stars were the brightest, and sixth-magnitude were dimmest,
+just at the limit of visibility.  Some comparison showed that the intensity
+of first-magnitude stars was roughly 100 times more intense than
+sixth-magnitudes, so the mathematical rigorification [is that a word?] of
+the process involved a logarithmic process with each smaller magnitude
+being 100^(1/5) = 2.512 brighter than the last.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - Erik Max Francis:
+Stefan E. Jones wrote:
+
+> What sort of star are they talking about, for example? A M8 red subdwarf?
+> A F2 yellow-white star?
+The definition is with respect to our Sun.
+
+
+> How many stars are in the galaxy the scale mentions?
+It uses our Galaxy as a reference, which has a luminosity of about 10^11
+Suns.
+
+
+> There's a lot of play there, and as mentioned there's a lot of room
+> (D'oh!) between 2 and 3! I suppose 2.1 = 10 stars, 2.2 = 100, . . . ,
+> 2.9 = 1,000,000,000 would work, with 3 ~= 10,000,000,000 stars. Ten
+> billion is not quite a galaxy's worth, but once you hit that many
+> systems . . .yeesh.
+See my article <3303F6F3...@alcyone.com <>>.  There I try to outline a
+rationalization of the Kardashev system logarithmically using a
+magnitude-like system.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Thursday, 13 February 1997 08:00:00 UTC - John D. Gwinner:
+Erik Max Francis <m...@alcyone.com <>> wrote ...
+> Increased flare activity, yes.  Periods of mass ejection, perhaps.  But
+> supernova, no.  A supernova occurs when a depleted iron core collapses to
+> form a neutron star; the neutron star's rebound after its formation
+(after
+> it reaches "maximum scrunch," if it's not black-hole-progenitor mass it
+> rebonds) forces the already infalling envelope to erupt outward.
+
+Ok, let's hypothetically say that we've got a Bobble generator that can
+project a Bobble big enough to englobe an inner part of a star (and
+something that can survive long enough or project at enough range to
+survive).  
+
+Bobble the center of the star.
+
+Wait until the bobble dissipates.
+
+What's the effect?
+
+(boy, this would be fun to simulate.  Is there any 'Accrete' type programs
+that a PC could run to do this simulation?)
+
+I've been trying to figure out the 'worst' weapons and their effects.  High
+technology is assumed (i.e. force fields, stasis fields, FTL, etc.).
+
+                == John ==
+----------------------------------------------------------------------------
+
+Friday, 14 February 1997 08:00:00 UTC - Andrew Crisp:
+Erik Max Francis wrote:
+> 
+> My idea is to use a logarithmic scale, similarly concretified as in the
+> stellar magnitude scale**.  The divisions between type I and type II, and
+> type II and type III in the Kardashev scale are not logarithmically equal;
+> let's make them so by choosing our scale as 10^10 (the geometric mean of
+> 10^9 and 10^11).  Furthermore, let's choose a "civilization magnitude" (not
+> calling it a Kardashev scale anymore, since they differ now) of M = 2 at P
+> (power available) = 3.827 x 10^26 W, defining the system based on the
+> luminosity of the Sun.
+> 
+> From this, we find that our function M(P) is
+> 
+>     M = 0.0434 ln P - 0.658
+> 
+> Our civilization, according to the _1994 World Almanac_, consumed 346
+> quadrillion (US) btu in 1993; this is 3.65 x 10^20 J.  Averaged over 1 y,
+> the power is 11.6 TW.  (Think about that when people talk about terawatt
+> lasers.)
+> 
+> In this system, our civilzation qualifies as a civilization of magnitude
+> 0.647.  Not too bad.
+> 
+I had some idea that the Kardashev scale was logramithic, but I never
+took the time to work out the function.  And the idea of a "civilization
+magnitude" is nice.  Mind if I use it?  
+Thank you for your comments; and the note on "Terawatt lasers" is
+certainly well taken.  Replies like this help make science fiction
+wonderfully realistic.
+
+-- 
+Andrew B. Crisp
+JET 2
+NBCC Moncton
+Part-Time Science Fiction writer
+----------------------------------------------------------------------------
+
+Saturday, 15 February 1997 08:00:00 UTC - Bill Dugan:
+Erik Max Francis <m...@alcyone.com <>> wrote:
+snip
+
+
+>* The data sheet gives the size of each square, the number of squares, and
+>the average spacing.  It separately gives the insolation portion of the
+>squares as 5.5%.  Using this data to calculate the circumference of the
+>shadow square ring and thus its radius, and using everything to determine
+>the relative areas, I get a 6.0% insolation percentage.  If I, however,
+>mistakenly pretend there are 20 gaps (20 squares means 19 gaps, not 20),
+>then I arrive at their 5.5% figure.  Oops on them.
+If the squares are linked to form a ring, there should be as many gaps
+as squares.
+----------------------------------------------------------------------------
+
+Saturday, 15 February 1997 08:00:00 UTC - Erik Max Francis:
+Bill Dugan wrote:
+
+> If I, however,
+> >mistakenly pretend there are 20 gaps (20 squares means 19 gaps, not 20),
+> >then I arrive at their 5.5% figure.  Oops on them.
+> 
+> If the squares are linked to form a ring, there should be as many gaps
+> as squares.
+Then make that oops on me.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Saturday, 15 February 1997 08:00:00 UTC - Erik Max Francis:
+Andrew Crisp wrote:
+
+> I had some idea that the Kardashev scale was logramithic, but I never
+> took the time to work out the function.  And the idea of a "civilization
+> magnitude" is nice.  Mind if I use it?
+Not at all; credit wouldn't hurt either :-).
+
+
+> Thank you for your comments; and the note on "Terawatt lasers" is
+> certainly well taken.  Replies like this help make science fiction
+> wonderfully realistic.
+Thank you.  Glad you enjoyed them.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Saturday, 15 February 1997 08:00:00 UTC - Erik Max Francis:
+Erik Max Francis wrote:
+
+> Our civilization, according to the _1994 World Almanac_, consumed 346
+> quadrillion (US) btu in 1993; this is 3.65 x 10^20 J.  Averaged over 1 y,
+> the power is 11.6 TW.  (Think about that when people talk about terawatt
+> lasers.)
+> 
+> In this system, our civilzation qualifies as a civilization of magnitude
+> 0.647.  Not too bad.
+As a followup comment (yes, to my own post), I don't necessarily suggest
+that this _particular_ scale is good; it's just a rationalization attempt
+at matching up remotely well with Kardashev's scale.
+
+A much simpler scale would be, I think, a logarithmic base-10 (or perhaps
+some other, larger scale) scale measuring power output with the Sun's
+luminosity being the standard basis at magnitude 0.  So M' = 0 is the Sun's
+luminosity, M' = 1 is ten times the Sun's luminosity, and so on.  The
+equation then becomes the simple 
+
+   M' = log P - log (3.827 x 10^26)
+
+      = log P - 26.58
+
+In this system, we have the following figures for different power outputs:
+
+        thing                                power                modified magnitude
+        United States (1993)                2.81 x 10^12 W        -14.1
+        Human civilization (1993)        1.16 x 10^13 W        -13.5
+        Kardashev type I                4 x 10^17 W        -8.98
+        Ringworld                        2.1 x 10^25 W        -1.26
+        Kardashev type II                4 x 10^26 W        0 [by definition]
+        Kardashev type III                4 x 10^37 W        11.0
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Sunday, 16 February 1997 08:00:00 UTC - Leonard Erickson:
+Erik Max Francis <m...@alcyone.com <>> writes:
+
+> * The data sheet gives the size of each square, the number of squares, and
+> the average spacing.  It separately gives the insolation portion of the
+> squares as 5.5%.  Using this data to calculate the circumference of the
+> shadow square ring and thus its radius, and using everything to determine
+> the relative areas, I get a 6.0% insolation percentage.  If I, however,
+> mistakenly pretend there are 20 gaps (20 squares means 19 gaps, not 20),
+> then I arrive at their 5.5% figure.  Oops on them.
+Oops yourself.
+
+If you have a *circle*, (as opposed to a straight line) the number of
+gaps is *equal* to the number of squares rather than being one less.
+
+Consider: square+gap repeated 19 times plus one square, leaves you with
+the first and last squares immediately adjacent! Put a gap inbetween
+them and you now have twenty gaps. 
+
+-- 
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Sunday, 16 February 1997 08:00:00 UTC - Anders Sandberg:
+>Ok, let's hypothetically say that we've got a Bobble generator that can
+>project a Bobble big enough to englobe an inner part of a star (and
+>something that can survive long enough or project at enough range to
+>survive).  
+>
+>Bobble the center of the star.
+>
+>Wait until the bobble dissipates.
+>
+>What's the effect?
+The inside of the bobble would remain in stasis, so it would still
+be hot nuclear plasma. The star would slowly cool off and grow denser
+(my guess is that this would take a few millions of years, since it
+would take a long time for the photons to leave the star and heat
+would be released by the contraction). When the bobble dissipates
+we have a hot, fairly low-density plasma surrounded by a dense
+cool plasma. There would most likely be a brief collapse where the
+core would heat up a lot, followed by a quick expansion where much of
+the mantle would blow off. Not a supernova, but at least a pretty
+nova and a planetary nebula.
+
+
+>I've been trying to figure out the 'worst' weapons and their effects.  High
+>technology is assumed (i.e. force fields, stasis fields, FTL, etc.).
+My favorite is causing vacuum decay into a lower state if one exists.
+Spreads through the universe at lightspeed, makes all matter unstable
+and releases something like 10^30 J/m^3. Not much left. 
+
+Of course, even greater weapons were hinted at in the books by Peter
+Nilsson (_Rymdväktaren_ and _Nyaga_, both in Swedish): sabotaging the
+laws of physics using some form of information-manipulation. Apparently
+the potential was to destroy large parts of the multiverse.
+
+-----------------------------------------------------------------------
+Anders Sandberg                                      Towards Ascension!
+nv91...@nada.kth.se <>         http://www.nada.kth.se/~nv91-asa/main.html <http://www.nada.kth.se/~nv91-asa/main.html>
+GCS/M/S/O d++ -p+ c++++ !l u+ e++ m++ s+/+ n--- h+/* f+ g+ w++ t+ r+ !y
+----------------------------------------------------------------------------
+
+Sunday, 16 February 1997 08:00:00 UTC - Erik Max Francis:
+Leonard Erickson wrote:
+
+> Erik Max Francis <m...@alcyone.com <>> writes:
+> 
+> >  Oops on them.
+> 
+> Oops yourself.
+Yep.  Somebody already nailed me on this one.  Me = duh.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Sunday, 16 February 1997 08:00:00 UTC - Molhant Norman:
+Erik Max Francis <m...@alcyone.com <>> writes about the Ringworld shadow squares:
+
+>* The data sheet gives the size of each square, the number of squares, and
+>the average spacing.  It separately gives the insolation portion of the
+>squares as 5.5%.  Using this data to calculate the circumference of the
+>shadow square ring and thus its radius, and using everything to determine
+>the relative areas, I get a 6.0% insolation percentage.  If I, however,
+>mistakenly pretend there are 20 gaps (20 squares means 19 gaps, not 20),
+>then I arrive at their 5.5% figure.  Oops on them.
+Oops on you.  A ring with one shadow square has one gap.  A ring with two
+shadow squares has two gaps.  How many gaps in a ring with 20 shadow squares?
+20, right.  It's a straight line that would have only 19 gaps between 20
+markers.  In a circle, there are as many gaps as there are markers.  See?
+
+Bye!
+-- 
+(s) Norman "Le Gaffeur Sachant Gaffer" Molhant.
+----------------------------------------------------------------------------
+
+Sunday, 16 February 1997 08:00:00 UTC - Erik Max Francis:
+Ross Smith wrote:
+> Um, I really hate to point this out, Erik ... but take a look at Carl
+> Sagan's _The Cosmic Connection_. He extends the Kardashev scale into a
+> more detailed scale in pretty much the same way, and adds a parallel
+> scale for a civilisation's information storage.
+
+Oh.  I haven't read any of Sagan's nonfiction except _Cosmos_.
+
+Still, in a later message I suggested using a base-10 logarithmic scale
+based on magnitude 0 representing the Sun's output.
+
+As for parallel scales, just take the common logarithm of the number of
+available bits.  Easy.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Monday, 17 February 1997 08:00:00 UTC - Nyrath the nearly wise:
+John D. Gwinner (gwi...@northnet.org <>) wrote:
+: Bobble the center of the star.
+: 
+: Wait until the bobble dissipates.
+: 
+: What's the effect?
+I remember a rather silly weapon from an old SF
+story about robot tanks (No, not a Bolo story).
+They could make force fields that would pass matter but
+not energy. They could make said fields into a self-sustaining
+bubble.
+ So, make one field, lob a nuke into it. Nuke goes off.
+Now you have a force field with a little piece of Inferno
+inside.
+ Launch the field at an enemy tank. As the tank enters
+the field, it is suddenly at ground zero. And none of the
+energy can escape, so all of it can be utilized to
+vaporize the tank.
+
+ Offhand, I'm sure that a nuclear detonation would produce
+enough of a matter based shock wave when it went off
+to wreak the force field launcher.
+
++----------------------------------------------------------------------------+
+| WINCHELL CHUNG                   http://www.clark.net/pub/nyrath/home.html <http://www.clark.net/pub/nyrath/home.html> |
+| Nyrath the nearly wise                                    nyr...@clark.net <> |
++---_---+---------------------[ SURREAL SAGE SEZ: ]--------------------------+
+|  /_\  | Men are disturbed not by things that happen, but by their opinion  |
+| <(*)> | of the things that happen.                                         |
+|/_/|\_\|                                                                    |
+| //|\\ |                                                                    |
++///|\\\+--------------------------------------------------------------------+
+----------------------------------------------------------------------------
+
+Monday, 17 February 1997 08:00:00 UTC - Ross Smith:
+Erik Max Francis wrote:
+> 
+> Andrew Crisp wrote:
+> 
+> > I had some idea that the Kardashev scale was logramithic, but I never
+> > took the time to work out the function.  And the idea of a "civilization
+> > magnitude" is nice.  Mind if I use it?
+> 
+> Not at all; credit wouldn't hurt either :-).
+Um, I really hate to point this out, Erik ... but take a look at Carl
+
+Sagan's _The Cosmic Connection_. He extends the Kardashev scale into a
+more detailed scale in pretty much the same way, and adds a parallel
+scale for a civilisation's information storage.
+-- 
+Ross Smith (Wellington, New Zealand)        <mailto:al...@netlink.co.nz <>>
+          <http://www.geocities.com/SiliconValley/Park/3699/ <http://www.geocities.com/SiliconValley/Park/3699/>>
+ +++ Divide By Cucumber Error. Please Reinstall Universe And Reboot +++
+----------------------------------------------------------------------------
+
+Monday, 17 February 1997 08:00:00 UTC - Tapio Erola:
+Anders Sandberg <nv91...@chagall.nada.kth.se <>> wrote:
+: >I've been trying to figure out the 'worst' weapons and their effects.  High
+
+: >technology is assumed (i.e. force fields, stasis fields, FTL, etc.).
+Umm, a fairly nasty variant (probably invented several times) enters
+to my mind: catalytically dropping temperature-requirement of common
+fusion reactions to negligible. The star simply releases all the energy 
+it had in store for next few billion years in few hours/months/whatever. 
+The results you can imagine. 
+
+-- 
+Tapio Erola        t...@paju.oulu.fi <> (No mail to t...@sliver.oulu.fi <> please
+
+Any sufficiently advanced stupidity is indistinguishable from malice.
+        -- Hanlon's Razor
+----------------------------------------------------------------------------
+
+Monday, 17 February 1997 08:00:00 UTC - Erik Max Francis:
+Molhant Norman wrote:
+> Oops on you.
+    ...
+
+> In a circle, there are as many gaps as there are markers.  See?
+As I'm sure you've all noticed by now, I intentionally put at least one
+error in a post every month or so to test how many people are reading.
+Cough.  Because, of course -- cough -- I never unintentionally make
+mistakes.  Cough.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Monday, 17 February 1997 08:00:00 UTC - B. Vermo:
+In article <32FE4168...@alcyone.com <>>,
+Erik Max Francis <m...@alcyone.com <>> wrote:
+|bla...@freenet.edmonton.ab.ca <> wrote:
+|
+|> Why bother even trying to destroy a whole planet in the first place, when
+|> you can just destroy the surface or just the biosphere.  It can be done
+|> with even present-day nuclear technology.
+|
+|As long as you have a _lot_ of nukes.  A global thermonuclear war would
+|collapse human civilization, but the biosphere would certainly survive.  It
+|wouldn't even be comparable to mass extinctions in the past which have
+|happened naturally.
+It should not take more than a few thousand 20kt thermonuclear bombes in
+a salt-filled outer shell to create a very effective mass extinction.
+You do not need to limit yourself to conventional nuclear weapons if
+all you want is to totally neutralize a planetary civilization. Design for
+a maximum yield of short lived isotopes which are readily absorbed by
+the human organism, and Hitler will look like a kind uncle.
+ 
+A combination of chemical and biological weapons may be even more 
+cost-effective, but the dirty nukes would make it possible to resettle
+the planet after only a short wait.
+
+You might have to clean out pockets of survivors and well protected
+bunkers, but a number of delayed action bombs could take care of
+most of them when they come out of hiding.
+----------------------------------------------------------------------------
+
+Monday, 17 February 1997 08:00:00 UTC - Brian Trosko:
+B. Vermo <b...@bigblue.no <>> wrote:
+
+: It should not take more than a few thousand 20kt thermonuclear bombes in
+
+: a salt-filled outer shell to create a very effective mass extinction.
+Sure, of people, but that's not really a mass extinction.
+
+By way of reference, several mammalian specie in the vicinity of
+Chernobyl, notably a species of vole, have undergone dramatic population
+explosions since the accident.  Sure, mutation rates are through the roof,
+but the area isn't exactly devoid of higher life.
+----------------------------------------------------------------------------
+
+Tuesday, 18 February 1997 08:00:00 UTC - Leonard Erickson:
+Erik Max Francis <m...@alcyone.com <>> writes:
+
+> Chris Lawson wrote:
+>
+>> However, some theorists have postulated that neutrino radiation from
+>> nearby novas makes up for this weak interaction by sheer weight of
+>> numbers, ie there are so *many* neutrinos, that they still cause  a
+>> significant radiation load, thus triggering a mass extinction.
+<snip>
+
+
+> However, the neutrino flux from an impending supernova (the neutrino burst
+> will reach you before you see anything wrong with the star) is only lethal
+> to something on the order of 10 au.  Definitely insystem.
+More of a problem is the increase in "particle radiation" when the
+expanding gas shell from the supernova sweeps across nearby stellar
+systems. 
+
+-- 
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Wednesday, 19 February 1997 08:00:00 UTC - John D. Gwinner:
+Leonard:
+
+Leonard Erickson <sha...@krypton.rain.com <>> wrote:
+> Erik Max Francis <m...@alcyone.com <>> writes:
+> > However, the neutrino flux from an impending supernova (the neutrino
+burst
+> > will reach you before you see anything wrong with the star) is only
+lethal
+> > to something on the order of 10 au.  Definitely insystem.
+> 
+> More of a problem is the increase in "particle radiation" when the
+> expanding gas shell from the supernova sweeps across nearby stellar
+> systems. 
+Do you have any formula's, or rough ideas of out to what distance this
+would be fatal?
+
+                == John ==
+----------------------------------------------------------------------------
+
+Wednesday, 19 February 1997 08:00:00 UTC - bla...@freenet.edmonton.ab.ca:
+How about dumping huge amounts of antimatter into a sun?
+For best effect, some mechanism must prevent it from exploding until it
+reaches the core.  Something like a photon torpedo?
+
+=====================                ====================================
+BLAINE GORDON MANYLUK                email: bla...@freenet.edmonton.ab.ca <>
+EDMONTON, AB
+----------------------------------------------------------------------------
+
+Wednesday, 19 February 1997 08:00:00 UTC - Erik Max Francis:
+Leonard Erickson wrote:
+
+> More of a problem is the increase in "particle radiation" when the
+> expanding gas shell from the supernova sweeps across nearby stellar
+> systems.
+I was only talking about the neutrino lethality range.
+
+-- 
+        Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                      Alcyone Systems /   web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ San Jose, California, United States /  icbm:  37 20 07 N  121 53 38 W
+                                    \
+               "I am become death, / destroyer of worlds."
+                                  / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Wednesday, 19 February 1997 08:00:00 UTC - Alistair Young:
+In <5djnlq$8sa$1...@news.sas.ab.ca <>>, bla...@freenet.edmonton.ab.ca <> () writes:
+>
+>Why bother even trying to destroy a whole planet in the first place, when
+>you can just destroy the surface or just the biosphere.  It can be done
+>with even present-day nuclear technology.
+Style. Reducing an entire planet to rubble goes better with the black 
+cape and maniacal laughter.
+
+Simply killing all the inhabitants just doesn't have the same e'lan 
+among Evil Overlords.
+
+Alistair
+
+--
+Arkane Systems Ltd.            Sysimperator, dominus retis deusque machinarum.
+e-mail: ava...@arkane.demon.co.uk <>          WWW: http://www.arkane.demon.co.uk/ <http://www.arkane.demon.co.uk/>
+The opinions above ARE my company's, because I OWN it!             [Team OS/2]
+------------------------------------------------------------------------------
+"Here I am, brain the size of a planet, and they ask me 'Can I add this machine
+ to the DNS.' It gives me a headache just trying to think down to their level."
+   - Gary Barnes <g...@aber.ac.uk <>>
+----------------------------------------------------------------------------
+
+Wednesday, 19 February 1997 08:00:00 UTC - Craig Berry:
+Erik Max Francis (m...@alcyone.com <>) wrote:
+: James Nicoll wrote:
+: >         If it were a Greg Bear story, the DS would work by flipping
+: > the dipswitches on the laws of nature, so gravity turned off for a moment
+: > and angular momentum ripped the planet apart (This does not match what
+: > we saw).
+: 
+: When gravity turned back on, the planet would recoalesce into a single
+: body; angular momentum isn't nearly enough to give anything in the body
+: escape speed.
+I'm sure the occupants of the world would find this very comforting. :)
+
+And besides, if you just leave the gravity turned off long enough, and 
+let the pieces drift away on their linear trajectories, eventually 
+they'll rach a point where they *are* at mutual escape velocity from one 
+another.  Then you can turn the gravity back on.
+
+But as for your scenario above...hrm...I wonder if this is what happened 
+to Miranda?  Oh, and the zeta-particle depolarized flux from the poorly 
+designed retrocapacitor framistat accidentally tipped the entire Uranus 
+system 98 degrees before they spotted the problem. :)
+
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Wednesday, 19 February 1997 08:00:00 UTC - Erik Max Francis:
+Craig Berry wrote:
+> Minor quibble:  Assuming 100% efficiency (every Joule of energy you
+> supply
+> goes into kinetic enrgy of some hunk of Earth mass), doing it at any rate
+> (over a few seconds, or a week, or a year) requires the same energy
+> input;
+> only the power (energy/time) requirement changes.
+
+Naturally.  That's what I get for typing too quickly, or something.
+
+-- 
+       Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                     Alcyone Systems /    web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+San Jose, California, United States /    icbm:  37 20 07 N  121 53 38 W
+                                   \
+              "I am become death, / destroyer of worlds."
+                                 / J. Robert Oppenheimer (quoting legend)
+----------------------------------------------------------------------------
+
+Wednesday, 19 February 1997 08:00:00 UTC - Craig Berry:
+Erik Max Francis (m...@alcyone.com <>) wrote:
+[wrt energy required to destroy the Earth]
+: With the assumption that the Earth is uniform (incorrect, but sufficient to
+: get an order-of-magnitude estimate), with M = 5.97 x 10^24 kg and R = 6.37
+: x 10^6 m, U is 2.24 x 10^32 J.  By comparison, the Sun's luminosity is
+: about 4 x 10^26 W; the gravitational binding energy of the Earth is equal
+: to about a week of the Sun's total energy output.
+I suddenly found myself picturing a *big* magnifying glass being held 
+near the orbit of Venus as I read this... :)
+
+: Now to make it happen in "a matter of seconds" you need to apply even more
+: energy.  The only real limitation there is the speed of light.  (Any waves
+: travelling through the body itself are going to be shockwaves, not sound
+: waves.)
+
+
+Minor quibble:  Assuming 100% efficiency (every Joule of energy you supply
+goes into kinetic enrgy of some hunk of Earth mass), doing it at any rate
+(over a few seconds, or a week, or a year) requires the same energy input;
+only the power (energy/time) requirement changes.  Of course, in reality,
+if you do it too slowly, the net effect will be that Earth merely heats up
+until its blackbody radiation rate matches your energy input rate...still
+unpleasant, of course, but with no satisfying *BOOM* involved. 
+---------------------------------------------------------------------
+   |   Craig Berry - cbe...@cinenet.net <>
+ --*--    Home Page: http://www.cinenet.net/users/cberry/home.html <http://www.cinenet.net/users/cberry/home.html>
+   |      Member of The HTML Writers Guild: http://www.hwg.org/ <http://www.hwg.org/>   
+       "Every man and every woman is a star."
+----------------------------------------------------------------------------
+
+Thursday, 20 February 1997 08:00:00 UTC - William Timmins:
+Hmm. I've heard that strange particles have a (theoretical) ability to
+'eat' neutrons, thus liberating a great deal of energy. What is
+interesting is that they can keep doing this, getting more and more
+massive. How massive can they get? I have no idea, but I've heard big
+enough so that the particle could (theoretically again) be seen under
+magnification directly.
+The interesting part is that it would hold an electron cloud, so it
+would behave like normal matter unless under fusion-type conditions.
+
+Where this is leading is that it would definately do amazingly icky
+things to a star.
+
+In a neutron star, it would be even more interesting. I don't know if a
+single massive strange particle would be more dense than neutronium. If
+it WAS.. you could turn neutron stars into black holes. (If they were
+over a certain mass)
+
+Would someone more knowledgeable in the current state of particle
+physics please elucidate?
+
+-Will
+----------------------------------------------------------------------------
+
+Friday, 21 February 1997 08:00:00 UTC - Del Cotter:
+On Thu, 20 Feb 1997, in rec.arts.sf.science
+William Timmins <po...@drycas.club.cc.cmu.edu <>> wrote
+
+>Hmm. I've heard that strange particles have a (theoretical) ability to
+>'eat' neutrons, thus liberating a great deal of energy. What is
+>interesting is that they can keep doing this, getting more and more
+>massive. How massive can they get? I have no idea, but I've heard big
+>enough so that the particle could (theoretically again) be seen under
+>magnification directly.
+This sounds odd.  Surely a particle's wavelength should get *smaller* as
+its mass increases?
+
+-- 
+                   Del Cotter    d...@branta.demon.co.uk <>
+         The US Tour   Sat 23rd August - Sun 14th September 1997
+ Houston Austin SanAntonio Phoenix Flagstaff GrandCanyon LakeMead LasVegas 
+DeathValley Yosemite NapaValley SanFrancisco  TouristTipsGratefullyReceived
+----------------------------------------------------------------------------
+
+Saturday, 22 February 1997 08:00:00 UTC - L. Shelton Bumgarner:
+Erik Max Francis <m...@alcyone.com <>> wrote:
+>bla...@freenet.edmonton.ab.ca <> wrote:
+
+
+>> Why bother even trying to destroy a whole planet in the first place, when
+>> you can just destroy the surface or just the biosphere.  It can be done
+>> with even present-day nuclear technology.
+>As long as you have a _lot_ of nukes.  A global thermonuclear war would
+
+>collapse human civilization, but the biosphere would certainly survive.  It
+>wouldn't even be comparable to mass extinctions in the past which have
+>happened naturally.
+If I were an SF writer instead of a journalist, I would attempt to
+write an alternative universe story about a world were there was
+a WWIII in 1962. The story would be about its consequences. My idea is
+this -- if we messed up that bad, we would have a great incentive to
+get off the planet. We could do it now (a la Contact) if humankind
+could get its act together.
+
+bum
+-- 
+L. Shelton Bumgarner 
+Keeper of the Great Renaming FAQ
+Apologies in advance for errors and incoherencies -- $.02
+[e-mailed copies of responses to my postings are welcomed]
+----------------------------------------------------------------------------
+
+Saturday, 22 February 1997 08:00:00 UTC - bla...@freenet.edmonton.ab.ca:
+Alistair Young (ava...@arkane.demon.co.uk <>) wrote:
+: In <5djnlq$8sa$1...@news.sas.ab.ca <>>, bla...@freenet.edmonton.ab.ca <> () writes:
+: >Why bother even trying to destroy a whole planet in the first place, when
+
+: >you can just destroy the surface or just the biosphere.  It can be done
+: >with even present-day nuclear technology.
+: Style. Reducing an entire planet to rubble goes better with the black 
+: cape and maniacal laughter.
+
+
+: Simply killing all the inhabitants just doesn't have the same e'lan 
+: among Evil Overlords.
+Good point.
+
+Also few writers, even some hard-SF ones, realize just how fragile life-
+forms are compared to masses of rock and metal.  (See the "Asteroid
+Science" thread.  Enough nukes to destroy humanity many times over are
+barely enough to budge a large asteroid at the right time.)  
+
+=====================                ====================================
+BLAINE GORDON MANYLUK                email: bla...@freenet.edmonton.ab.ca <>
+EDMONTON, AB
+----------------------------------------------------------------------------
+
+Monday, 24 February 1997 08:00:00 UTC - Justin Fang:
+In article <CpLO9BAB...@branta.demon.co.uk <>>,
+Del Cotter  <d...@branta.demon.co.uk <>> wrote:
+>On Thu, 20 Feb 1997, in rec.arts.sf.science
+>William Timmins <po...@drycas.club.cc.cmu.edu <>> wrote
+
+>>Hmm. I've heard that strange particles have a (theoretical) ability to
+>>'eat' neutrons, thus liberating a great deal of energy. What is
+>>interesting is that they can keep doing this, getting more and more
+>>massive. How massive can they get? I have no idea, but I've heard big
+>>enough so that the particle could (theoretically again) be seen under
+>>magnification directly.
+
+>This sounds odd.  Surely a particle's wavelength should get *smaller* as
+>its mass increases?
+Yes, although the the interaction of a particle with other particles, like
+photons, is not necessarily governed by wavelength. 
+
+But a lump of strange matter would be a whole bunch of quarks (including, of
+course, strange quarks) bound together by the strong nuclear force. The
+theory (as of several years ago, anyway; I don't know if this is still
+believed) is that neutrons (maybe protons too) that came in contact with
+strange matter would be absorbed by having one or more of their quarks
+converted into strange quarks with a release of energy. So if you dropped a
+lump into a neuron star, the entire star might convert resulting in a very
+big boom. All IIRC, anyone more up to date please correct me.
+
+--
+Justin Fang (jus...@ugcs.caltech.edu <>)
+                     This space intentionally left blank.
+----------------------------------------------------------------------------
+
+Wednesday, 26 February 1997 08:00:00 UTC - Gary L. Krepps:
+In article <330CDF...@drycas.club.cc.cmu.edu <>>, William Timmins <po...@drycas.club.cc.cmu.edu <>> wrote:
+>Hmm. I've heard that strange particles have a (theoretical) ability to
+>'eat' neutrons, thus liberating a great deal of energy. What is
+>interesting is that they can keep doing this, getting more and more
+>massive. How massive can they get? I have no idea, but I've heard big
+>enough so that the particle could (theoretically again) be seen under
+>magnification directly.
+>
+>The interesting part is that it would hold an electron cloud, so it
+>would behave like normal matter unless under fusion-type conditions.
+>
+>Where this is leading is that it would definately do amazingly icky
+>things to a star.
+>
+>In a neutron star, it would be even more interesting. I don't know if a
+>single massive strange particle would be more dense than neutronium. If
+>it WAS.. you could turn neutron stars into black holes. (If they were
+>over a certain mass)
+>
+>Would someone more knowledgeable in the current state of particle
+>physics please elucidate?
+>
+Since no one knowledgeable seems to have addressed your point yet, let me have 
+a go at it.
+I think I read that "charmed matter" might be able to do this.  This is like 
+normal matter (actually like very condensed matter, I think), supposedly, but 
+with charmed quarks replacing one of the normal, completely cynical ones.  OK, 
+I made up the cynical part.  With particle physicists' naming conventions, 
+you'll never know.
+
+Anyway, I think it can eat baryons (like protons and neutrons), but would have 
+electrons around it and so would not, ordinarily, just go around eating 
+particles.
+
+Charmed matter is supposed to still be very hypothetical.  But there just 
+might be charmed matter stars out there.
+
+This is, of course, all my professional recollection of particle physics.  
+Unfortunately, I'm a computer programmer.
+----------------------------------------------------------------------------
+
+Friday, 7 March 1997 08:00:00 UTC - Stig The Intrepid:
+Andrew Crisp <mo03...@nbcc.nb.ca <>> rambled on in the following manner:
+
+
+>On another (related) topic, I've recently read some commentary on the
+>Kardashev scale for grading advanced civilizations.  As I recall, it's:
+
+>K1 -- Civilization energy output equals energy output of a planet
+>K2 -- Civilization energy output equals energy output of a star
+>K3 -- Civilization energy output equals energy output of a galaxy
+
+        I have heard of this scale before.  My understanding of it was that it
+was developed by futurists in order to have a very rough definition of
+a possible society. Also I thought it was like this:
+
+K1 -- Civilization energy NEEDS equivalent to rescources of a planet.
+K2 -- Civilization energy NEEDS equivalent to rescources of a solar
+system.
+K3 -- Civilization energy NEEDS equivalent to rescources of a galaxy.
+
+        It is more of a scale of what it takes to feed a society.  This is not
+simply in terms of energy needs but materials as well.  Perhaps in the
+not too distant future we will become a K1 society, requiring all of
+the planets rescources to support us.  If we are very inefficient this
+may happen sooner than we think.  A K2 society would actively "farm"
+its native solar system including its sun.  I don't mean solar power,
+I mean a direct solar "tap", as well as gathering rescources from the
+other planets.  Personally I have a hard time conceptualizing a K3
+civilization.
+
+
+>Are there more accurate (accepted) scales of measuring technological
+>development?  I'm working on a scale called "Modified Kardashev";
+>keeping the standard classes, but adding decimals to indicate
+>intermediate steps. 
+
+        I'm not aware of any other scales but that does not mean they don't
+exist.  However, if your going to moderate the scale bear in mind that
+it is a measurment of size and consumption.  It does not specify
+technological achievement.  I would think a K2 society would require
+some form of FTL travel once it begins to exhaust its local rescources
+but perhaps not.  Technological achievements are impossible to predict
+whereas consumption follows a natural progression.  This is why the
+scale was developed.  A society could have God's technology, but if it
+is able to sustain itself on a single planet by limitting its
+population it is still a K1 society.  
+        We assume that anybody capable of farming a galaxy (K3) could do just
+about anything.  
+
+Regards,
+
+Stig the Intepid
+5is...@pipeline.com <>
+
+  
+                 _.'__    `. 
+             .--(#)(##)---/#\
+           .' @          /###\      "People that are really very weird can
+           :         ,   #####             get into sensitive positions and
+            `-..__.-' _.-\###/       have a tremendous impact on history."
+                 `;_:    `"'                 - Vice President Dan Quayle
+                .'"""""`. 
+               /,  JOE  ,\
+              //  COOL!  \\
+              `-._______.-'
+              ___`. | .'___ 
+        jgs  (______|______)                      
+----------------------------------------------------------------------------
+
+Wednesday, 12 March 1997 08:00:00 UTC - Erik Max Francis:
+Stig The Intrepid wrote:
+
+>         I have heard of this scale before.  My understanding of it was
+> that it
+> was developed by futurists in order to have a very rough definition of
+> a possible society. Also I thought it was like this:
+>
+> K1 -- Civilization energy NEEDS equivalent to rescources of a planet.
+> K2 -- Civilization energy NEEDS equivalent to rescources of a solar
+> system.
+> K3 -- Civilization energy NEEDS equivalent to rescources of a galaxy.
+I believe Kardashev's original formulation talked about the energy
+available to a civilization, not necessarily what it needs (although the
+energy that it needs would definitely be available).
+
+ 
+>         It is more of a scale of what it takes to feed a society.  This
+> is not
+> simply in terms of energy needs but materials as well.  Perhaps in the
+> not too distant future we will become a K1 society, requiring all of
+> the planets rescources to support us.
+This is definitely not the case.  The Kardashev scale only talks about
+energy, not material resources.
+
+-- 
+       Erik Max Francis, &tSftDotIotE / email:  m...@alcyone.com <>
+                     Alcyone Systems /    web:  http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+San Jose, California, United States /    icbm:  37 20 07 N  121 53 38 W
+                                   \
+              "I am become death, / destroyer of worlds."
+                                 / J. Robert Oppenheimer (quoting legend)

@@ -1,0 +1,171 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.programmer/an8B_pzSHbc
+TITLE: Wanted: Combat Algorithms && Landscape/Solar System Generator 
+
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - Robert Gasch:
+Hi, 
+I've been looking through all sorts of search engines but have not 
+really found anything on the following subjects:
+
+1) I'm looking for some algorithms to handle combat of armies 
+consisting of different unit types. Also, if anybody has any 
+ideas on how to implement tactics (formations, etc), I would 
+appreciate a pointer in the right direction. 
+
+2) If anybody knows any good landscape/world generators, I would 
+also appreciate a pointer. 
+
+3) I once (something like 10 years ago when Internet was not more 
+than a loose connection of Telnet and FTP sites) saw a piece of 
+code which generated data for a simulated solar system. The final 
+data would include planetary types, orbit info and other related 
+stuff. Unfortunateley I can not find anything like this. 
+
+Thanks for any hints
+--> Robert
+Robert...@peoplesoft.com <>
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - RMC:
+- show quoted text -
+>I've been looking through all sorts of search engines but have not 
+>really found anything on the following subjects:
+>
+>1) I'm looking for some algorithms to handle combat of armies 
+>consisting of different unit types. Also, if anybody has any 
+>ideas on how to implement tactics (formations, etc), I would 
+>appreciate a pointer in the right direction. 
+>
+>2) If anybody knows any good landscape/world generators, I would 
+>also appreciate a pointer. 
+>
+>3) I once (something like 10 years ago when Internet was not more 
+>than a loose connection of Telnet and FTP sites) saw a piece of 
+>code which generated data for a simulated solar system. The final 
+>data would include planetary types, orbit info and other related 
+>stuff. Unfortunateley I can not find anything like this. 
+The best place I know of to look, is Captain Barcode's War Room
+at http://www.geocities.com/Area51/6902/index.html <http://www.geocities.com/Area51/6902/index.html>
+
+-- 
+email - ista...@aol.com <>
+WWW   - http://members.aol.com/istanari/default.html <http://members.aol.com/istanari/default.html>
+----------------------------------------------------------------------------
+
+Thursday, 30 January 1997 08:00:00 UTC - GrimmWare:
+Robert Gasch (Robert...@peoplesoft.com <>) wrote:
+: Hi, 
+: 
+: I've been looking through all sorts of search engines but have not 
+: really found anything on the following subjects:
+: 
+: [minor snip]
+:
+: 2) If anybody knows any good landscape/world generators, I would 
+: also appreciate a pointer. 
+: 
+: [another minor snip]
+:
+: Thanks for any hints
+: --> Robert
+: Robert...@peoplesoft.com <>
+:
+GrimmWare is nearing release of The Genesis Engine, an easy to use
+terrain generator based on plate tectonics.  It will be available
+as a 32 bit dll as well as a 32 bit static library.  You can check
+out some pre-release information at our web site ...
+
+     http://www.grimmware.com <http://www.grimmware.com>
+
+G.R.Moore
+President, GrimmWare
+grm...@grimmware.com <>
+http://www.grimmware.com <http://www.grimmware.com>
+ 
+----------------------------------------------------------------------------
+
+Friday, 31 January 1997 08:00:00 UTC - Ian Burrell:
+In article <32f0c...@ple-news-01.peoplesoft.com <>>,
+Robert Gasch <Robert...@peoplesoft.com <>> wrote:
+>
+>3) I once (something like 10 years ago when Internet was not more 
+>than a loose connection of Telnet and FTP sites) saw a piece of 
+>code which generated data for a simulated solar system. The final 
+>data would include planetary types, orbit info and other related 
+>stuff. Unfortunateley I can not find anything like this. 
+>
+Look at http://www-leland.stanford.edu/~iburrell/create/accrete.html <http://www-leland.stanford.edu/~iburrell/create/accrete.html>.
+
+
+ - Ian
+
+-- 
+          -- Ian Burrell == ibur...@leland.stanford.edu <> **
+           <URL:http://www-leland.stanford.edu/~iburrell/ <http://www-leland.stanford.edu/~iburrell/>>
+Hacker's Law: The belief that enhanced understanding will necessarily
+   stir a nation to action is one of mankind's oldest illusions.
+----------------------------------------------------------------------------
+
+Sunday, 2 February 1997 08:00:00 UTC - Edward Margel:
+In article <32f0c...@ple-news-01.peoplesoft.com <>>, 
+Robert...@peoplesoft.com <> (Robert Gasch) says:
+>
+>Hi, 
+>
+>I've been looking through all sorts of search engines but have not 
+>really found anything on the following subjects:
+>2) If anybody knows any good landscape/world generators, I would 
+>also appreciate a pointer. 
+
+
+Check out Virtek 3D-Ware Game Library @ www.virtek.com <http://www.virtek.com>
+also check out WGT 5.0
+
+Both are good 3D world generators.
+----------------------------------------------------------------------------
+
+Monday, 3 February 1997 08:00:00 UTC - Nyrath the nearly wise:
+Robert Gasch (Robert...@peoplesoft.com <>) wrote:
+: 3) I once (something like 10 years ago when Internet was not more 
+: than a loose connection of Telnet and FTP sites) saw a piece of 
+: code which generated data for a simulated solar system. The final 
+: data would include planetary types, orbit info and other related 
+: stuff. Unfortunateley I can not find anything like this. 
+Go to 
+http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html>
+
+Enter the Misc. Links section.
+Look for the "Accrete Homepage" listing.
+There is a downloadable version of accrete in the "Freebies" section.
+
++----------------------------------------------------------------------------+
+| WINCHELL CHUNG                   http://www.clark.net/pub/nyrath/home.html <http://www.clark.net/pub/nyrath/home.html> |
+| Nyrath the nearly wise                                    nyr...@clark.net <> |
++---_---+---------------------[ SURREAL SAGE SEZ: ]--------------------------+
+|  /_\  | Childhood and genius have the same master-organ in common -        |
+| <(*)> | inquisitiveness.                                                   |
+|/_/|\_\|                                                                    |
+| //|\\ |                                                                    |
++///|\\\+--------------------------------------------------------------------+
+----------------------------------------------------------------------------
+
+Monday, 3 February 1997 08:00:00 UTC - Nyrath the nearly wise:
+Robert Gasch (Robert...@peoplesoft.com <>) wrote:
+: 1) I'm looking for some algorithms to handle combat of armies 
+: consisting of different unit types. Also, if anybody has any 
+: ideas on how to implement tactics (formations, etc), I would 
+: appreciate a pointer in the right direction. 
+I'm not sure how much help this will be, but check out
+http://www.cris.com/~swoodcoc/influ.thread.html <http://www.cris.com/~swoodcoc/influ.thread.html>
+
+
++----------------------------------------------------------------------------+
+| WINCHELL CHUNG                   http://www.clark.net/pub/nyrath/home.html <http://www.clark.net/pub/nyrath/home.html> |
+| Nyrath the nearly wise                                    nyr...@clark.net <> |
++---_---+---------------------[ SURREAL SAGE SEZ: ]--------------------------+
+|  /_\  | There has been an alarming increase in the number of things you    |
+| <(*)> | know nothing about.                                                |
+|/_/|\_\|                                                                    |
+| //|\\ |                                                                    |
++///|\\\+--------------------------------------------------------------------+

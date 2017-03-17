@@ -37,7 +37,7 @@ author of an accrete version (ported to C++ from code written by Wales Larrison)
 Erik Max Francis / Erik Max Francist?
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 9 May 1993 20:23:42 UTC+1
-Last Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 12 March 1997 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
@@ -67,7 +67,7 @@ provided copy of Matr Burdick's code in C Form that posted on rec.games.frp.misc
 Ian Matthew Burrell
 newsgroup: rec.games.design
 First Archived Msg: Wednesday, 28 July 1993 02:11:32 UTC+1
-Last Archived Msg: Thursday, 15 February 1996 08:00:00 UTC
+Last Archived Msg: Friday, 31 January 1997 08:00:00 UTC
 
 background:
 Was looking for the source code for Accrete

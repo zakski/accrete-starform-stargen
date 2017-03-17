@@ -248,7 +248,7 @@ looking for an accrete program
 Leonard Erickson
 newsgroup: rec.arts.sf.science
 First Archived Msg: Friday, 9 February 1996 08:00:00 UTC
-Last Archived Msg: Saturday, 8 February 1997 08:00:00 UTC
+Last Archived Msg: Tuesday, 18 February 1997 08:00:00 UTC
 
 background:
 interested in accrete
@@ -357,18 +357,27 @@ interested in accrete
 Nyrath
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
-Last Archived Msg: Sunday, 2 February 1997 08:00:00 UTC
+Last Archived Msg: Monday, 17 February 1997 08:00:00 UTC
 
 background:
 responded to Lyan
 pretty sure has a few accrete variants cached
+responded to Brian Davis
 
 John D. Gwinner
 newsgroup: rec.arts.sf.science
 First Archived Msg: Saturday, 1 February 1997 08:00:00 UTC
-Last Archived Msg: Monday, 3 February 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 19 February 1997 08:00:00 UTC
 
 background:
 has knowledge of accrete
 Responded to Erik Max Francis
 responded to Andy Lanagan
+responded to Brian Davis
+
+Robert Gasch
+newsgroup: rec.games.programmer
+First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
+
+background:
+interested in accrete
