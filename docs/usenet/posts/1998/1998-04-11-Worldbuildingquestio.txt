@@ -1,0 +1,85 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/bA-AZUouGu0
+TITLE: Worldbuilding questions 
+
+----------------------------------------------------------------------------
+
+Saturday, 11 April 1998 08:00:00 UTC+1 - cin...@juno.com:
+A couple of questions related to worldbuilding:
+1.  I was looking at Fogg's JBIS article where he wrote about Silicon
+Creation, and some of the formulae in that article required stellar ages as
+inputs.  So I'm wondering:  Is there a way to find the _ages_ (not the time
+they spend on main sequence) of stars like Alpha Centauri, Tau Ceti, etc.?
+Any equations or tables I could use for this?
+
+2.  On a related note, what are the scientific laws that govern where certain
+types of planets can form around a star?  Is there a limit to how close gas
+giants can be (I'm pretty sure there is, but I'm not sure _what_ it is)?  Are
+the environments of Mars and Venus a function only of their proximity to the
+star, or are there other factors involved?
+
+Any help would be much appreciated.
+
+MI
+
+-----== Posted via Deja News, The Leader in Internet Discussion ==-----
+http://www.dejanews.com/ <http://www.dejanews.com/>   Now offering spam-free web-based newsreading
+----------------------------------------------------------------------------
+
+Tuesday, 14 April 1998 08:00:00 UTC+1 - William Baird:
+In article <6gol6p$kjf$1...@nnrp1.dejanews.com <>>,  <cin...@juno.com <>> wrote:
+>2.  On a related note, what are the scientific laws that govern where certain
+>types of planets can form around a star?  Is there a limit to how close gas
+>giants can be (I'm pretty sure there is, but I'm not sure _what_ it is)? 
+Not really...at least from what I've read about with the 'newly'
+discovered planets.  There are .5 Jupiter mass planets about .05 AU from
+their parent star...
+
+Try looking at http://wwwusr.obspm.fr/departement/darc/planets/encycl.html <http://wwwusr.obspm.fr/departement/darc/planets/encycl.html>
+for a listing of planets found.  Let's say some of our old theories got
+shot in the foot about planetary formation...if not there are some mild
+changes to be seen...:)
+
+ Will
+
+>MI
+
+
+-- 
+Will Baird  email:  wba...@acca.nmsu.edu <>  http://acca.nmsu.edu/~wbaird/ <http://acca.nmsu.edu/~wbaird/>
+Phantoms!  Whenever I think I fully understand mankind's purpose on earth... 
+suddenly I see phantoms dancing in the shadows...[saying] pointly as words, 
+"What you know is nothing little man; what you have to learn, immense." - CD
+----------------------------------------------------------------------------
+
+Tuesday, 14 April 1998 08:00:00 UTC+1 - Brian Davis:
+William Baird wrote:
+> 
+> Cincsac wrote:
+> >2.  On a related note, what are the scientific laws that govern 
+> >    where certain types of planets can form around a star?  Is 
+> >    there a limit to how close gas giants can be (I'm pretty sure 
+> >    there is, but I'm not sure _what_ it is)?
+> 
+> Not really...at least from what I've read about with the 'newly'
+> discovered planets.  There are .5 Jupiter mass planets about .05 AU 
+> from their parent star...
+   Careful. While it's true that Jupiter-mass planets inside 1 A.U. were
+not expected, it does not mean they formed there [1].
+
+> Try looking at http://wwwusr.obspm.fr/departement/darc/planets/ <http://wwwusr.obspm.fr/departement/darc/planets/>
+> encycl.html for a listing of planets found.  Let's say some of our 
+
+> old theories got shot in the foot about planetary formation...if not 
+> there are some mild changes to be seen...:)
+   That's probably a fair assesment.
+
+                                                   -Brian Davis
+
+[1] Lin, Bodenheimer, "Orbital Migration of the Planetary Companion of
+51 Pegasi to its Present Location", Nature, V380, 18-Apr-96
+----------------------------------------------------------------------------
+
+Sunday, 19 April 1998 08:00:00 UTC+1 - Knucles2:
+...........
+Or that they are gass giants....
+If anything can go wrong.......it will......

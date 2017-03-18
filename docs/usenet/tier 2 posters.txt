@@ -137,15 +137,16 @@ responded to Craig Berry
 responded to Dean Gilbert
 has copy of accrete
 
-Nyrath
+Nyrath the nearly wise
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
-Last Archived Msg: Monday, 17 February 1997 08:00:00 UTC
+Last Archived Msg: Friday, 3 April 1998 09:00:00 UTC+1
 
 background:
 responded to Lyan
 pretty sure has a few accrete variants cached
 responded to Brian Davis
+suggested urls
 
 Antti Arola
 newsgroup: rec.games.frp.misc
@@ -170,3 +171,61 @@ First Archived Msg: Sunday, 2 November 1997 08:00:00 UTC
 
 background:
 has knowledge of accrete
+
+John D. Gwinner
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 1 February 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 11 March 1998 08:00:00 UTC
+
+background:
+has knowledge of accrete
+Responded to Erik Max Francis
+responded to Andy Lanagan
+responded to Brian Davis
+using accrete for 3d visualization
+
+Alan D Kohler
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 23 February 1998 08:00:00 UTC
+Last Archived Msg: Friday, 20 March 1998 08:00:00 UTC
+
+background:
+GURPS query
+titus-bode query
+has used accrete
+
+Jeffrey Cornish
+newsgroup: sci.astro
+First Archived Msg: Thursday, 19 March 1998 08:00:00 UTC
+
+background:
+has knowledge of accrete (accrete3?)
+lists oldsite to find versions at
+GURPS query
+Responded to Mark Foster Query
+
+Jonathan Silverlight
+newsgroup: sci.astro
+First Archived Msg: Thursday, 1 June 1995 08:00:00 UTC+1
+Last Archived Msg: Friday, 20 March 1998 08:00:00 UTC
+
+background:
+had Steve Gilham's copy
+responded to mark foster
+
+cincsac@juno.com
+newsgroup: rec.arts.sf.science
+First Archived Msg: Saturday, 11 April 1998 08:00:00 UTC+1
+Last Archived Msg: Tuesday, 21 April 1998 08:00:00 UTC+1
+
+background:
+asking about silicon creation
+
+Tom Ford
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 3 November 1998 08:00:00 UTC
+Last Archived Msg: Tuesday, 3 November 1998 08:00:00 UTC
+
+background:
+asking about accretion algorithms
+had copy of accrete

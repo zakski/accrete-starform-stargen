@@ -92,7 +92,7 @@ Responded to Chris Johnson & Arild Toerum
 Del Cotter
 newsgroup: rec.arts.sf.science
 First Archived Msg: Monday, 10 May 1993 13:41:12 UTC+1
-Last Archived Msg: Friday, 21 February 1997 08:00:00 UTC
+Last Archived Msg: Saturday, 4 April 1998 09:00:00 UTC+1
 
 background:
 Responded to Arild Toerum
@@ -139,7 +139,7 @@ Responded to Paul F. Dietz
 James Davis Nicoll
 newsgroup: rec.arts.sf.science
 First Archived Msg: Saturday, 15 May 1993 15:56:52 UTC+1
-Last Archived Msg: Thursday, 6 February 1997 08:00:00 UTC
+Last Archived Msg: Friday, 27 February 1998 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
@@ -159,10 +159,11 @@ Responded to James Davis Nicoll
 Ross Smith
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 16 May 1993 01:40:59 UTC+1
-Last Archived Msg: Monday, 17 February 1997 08:00:00 UTC
+Last Archived Msg: Saturday, 28 February 1998 08:00:00 UTC
 
 background:
 Responded to Chris Johnson
+Gurps Query
 
 S. Arrowsmith
 newsgroup: rec.arts.sf.science
@@ -266,13 +267,6 @@ First Archived Msg: Friday, 5 May 1995 08:00:00 UTC+1
 
 background:
 interested in accrete (the Carl Sagan Version)
-
-Jonathan Silverlight
-newsgroup: sci.astro
-First Archived Msg: Thursday, 1 June 1995 08:00:00 UTC+1
-
-background:
-had Steve Gilham's copy
 
 Seppo Kalevi Halonen
 newsgroup: sci.astro
@@ -626,11 +620,12 @@ responded to K.HAIGH-HUTCHINSON
 Dan Goodman
 newsgroup: rec.arts.sf.science
 First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
-Last Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
+Last Archived Msg: Saturday, 4 April 1998 09:00:00 UTC+1
 
 background:
 responded to Lyan
 responded to Matthew Melmon
+suggested gillet's worldbuilding book
 
 Mike Bagneski
 newsgroup: rec.arts.sf.science
@@ -729,6 +724,7 @@ responded to Matthew Melmon
 Julian Flood
 newsgroup: rec.arts.sf.science
 First Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+Last Archived Msg: Monday, 13 April 1998 08:00:00 UTC+1
 
 background:
 responded to Eric Edwards
@@ -857,14 +853,6 @@ First Archived Msg: Sunday, 2 February 1997 08:00:00 UTC
 
 background:
 responded to Robert Gasch
-
-Brian Davis
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
-Last Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
-
-background:
-ask if star wars could happen
 
 Mike Huskey
 newsgroup: rec.arts.sf.science
@@ -1001,3 +989,247 @@ First Archived Msg: Monday, 3 November 1997 08:00:00 UTC
 background:
 replied to Antti Arola
 
+Michael Cule
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 16 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+rap...@research.canon.com.au
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 16 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Matthew C. Goodman
+newsgroup: rec.games.frp.misc
+First Archived Msg: Monday, 16 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Joseph M. Saul
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+dmm
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
+Last Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+John P. Raynor
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Jeremy Reaban
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+TTC
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+David P. Summers
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
+Last Archived Msg: Thursday, 19 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Bill McHale
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+James Lindsay
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Brian Wong
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+P. ENGEBOS
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+David Crowe
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Eric Haas
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 19 February 1998 08:00:00 UTC
+Last Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Bertil Jonell
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 19 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Nelson Cunnington
+newsgroup: rec.games.frp.misc
+First Archived Msg: Saturday, 21 February 1998 08:00:00 UTC
+Last Archived Msg: Saturday, 28 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Prodigal
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 24 February 1998 08:00:00 UTC
+Last Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Alan Shutko
+newsgroup: rec.games.frp.misc
+First Archived Msg: Tuesday, 24 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Lurker / Mike Miller
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+Last Archived Msg: Thursday, 26 February 1998
+
+background:
+GURPS query
+
+Joe Pettit
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+Last Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+David Skogsberg
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Matthew Goldman
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+Last Archived Msg: Friday, 27 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Nils K Hammer
+newsgroup: rec.games.frp.misc
+First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Ian Davis
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Dave Seagraves
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+James Jeffers
+newsgroup: rec.games.frp.misc
+First Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+Zoran Bekric
+newsgroup: rec.games.frp.misc
+First Archived Msg: Sunday, 1 March 1998 08:00:00 UTC
+
+background:
+GURPS query
+
+
+Mark Foster
+newsgroup: sci.astro
+First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
+
+background:
+8th grader, query about test involving fictional planet
+
+Josh Hesse
+newsgroup: sci.astro
+First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
+
+background:
+responded to mark foster
+
+Norbert Pfannerer
+newsgroup: sci.astro
+First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
+
+background:
+responded to mark foster
+
+Phil Armitage
+newsgroup: sci.astro
+First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
+
+background:
+responded to mark foster
+
+William Baird
+newsgroup: sci.astro
+First Archived Msg: Tuesday, 14 April 1998 08:00:00 UTC+1
+
+background:
+
+Knucles2
+newsgroup: sci.astro
+First Archived Msg: Sunday, 19 April 1998 08:00:00 UTC+1
+
+background:

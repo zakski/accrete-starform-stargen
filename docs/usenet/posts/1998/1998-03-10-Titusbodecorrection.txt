@@ -1,0 +1,673 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/pw2bZxGNzF4
+TITLE: Titus-bode correction??
+
+----------------------------------------------------------------------------
+Wednesday, 11 March 1998 08:00:00 UTC - Alan D Kohler:
+Hi all,
+
+Last year, I ran across the page of a well-spoken budding SF writer
+who had a variation of the titus-bode relatationship that corrected
+the factors for different stellar masses. I wanted to incorporate it
+into a system I am making for simulating star systems, but can no
+longer find the page - online or in hardcopy. Does anyone here know of
+such a postulated solar mass corrected titus-bode formula?
+
+Spam Filter Notice: Remove "REMOVE2REPLY" to reply by email.
+Alan D Kohler <hwk...@REMOVE2REPLYpoky.srv.net <>>
+New on my RPG Pages(3/6/98):
+SAGE free net SFRPG system!
+General: http://poky.srv.net/~hwkwnd/homepage.html <http://poky.srv.net/~hwkwnd/homepage.html>
+SF: http://poky.srv.net/~hwkwnd/SFRPG.html <http://poky.srv.net/~hwkwnd/SFRPG.html>
+----------------------------------------------------------------------------
+
+Tuesday, 10 March 1998 08:00:00 UTC - Erik Max Francis:
+Alan D Kohler wrote:
+> Last year, I ran across the page of a well-spoken budding SF writer
+> who had a variation of the titus-bode relatationship that corrected
+> the factors for different stellar masses.
+
+That's a neat trick, considering we know of no other complete planetary
+systems against which to judge the model.
+
+> I wanted to incorporate it
+> into a system I am making for simulating star systems, but can no
+> longer find the page - online or in hardcopy. Does anyone here know of
+> such a postulated solar mass corrected titus-bode formula?
+
+I'm not familiar with this particular notion.  However, a simple
+geometric sequence (the Titius-Bode relationship is not quite
+geometric), r = A B^n, can fit to the sizes of the orbit of the planets
+relatively well, particularly if you include the asteroid belt and
+exclude Pluto.
+
+-- 
+         Erik Max Francis, &tSftDotIotE / mailto:m...@alcyone.com <>
+                       Alcyone Systems / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+  San Jose, California, United States / icbm:+37.20.07/-121.53.38
+                                     \
+        "I've got the fever for the / flavor of a cracker"
+                                   / Ice Cube
+----------------------------------------------------------------------------
+
+Wednesday, 11 March 1998 08:00:00 UTC - Alan D Kohler:
+On Tue, 10 Mar 1998 18:36:21 -0800, Erik Max Francis <m...@alcyone.com <>>
+wrote:
+
+>Alan D Kohler wrote:
+>
+>> Last year, I ran across the page of a well-spoken budding SF writer
+>> who had a variation of the titus-bode relatationship that corrected
+>> the factors for different stellar masses.
+>
+>That's a neat trick, considering we know of no other complete planetary
+>systems against which to judge the model.
+Who said it had to be accurate - just beleivable. Need I remind you
+that their is an "sf" in the title to this group. Speculation is part
+of the trade.
+
+
+>> I wanted to incorporate it
+>> into a system I am making for simulating star systems, but can no
+>> longer find the page - online or in hardcopy. Does anyone here know of
+>> such a postulated solar mass corrected titus-bode formula?
+>
+>I'm not familiar with this particular notion.  However, a simple
+>geometric sequence (the Titius-Bode relationship is not quite
+>geometric), r = A B^n, can fit to the sizes of the orbit of the planets
+>relatively well, particularly if you include the asteroid belt and
+>exclude Pluto.
+You've missed the point. I *do* undertand what titus-bode is and do
+understand that it is an emprical relations based on observations of
+our own system. But this gentleman had a reasonable version of the
+titus-bode law scaled for other systems. The titus bode relationship
+is, as you will recall:
+
+General form:
+Orbit        Distance
+1        0 x N + C
+2        1 x N + C
+3        2 x N + C
+4        4 x N + C
+5        8 x N + C
+6        16 x N + C
+....
+
+Where N is .3 AU and C is .4 AU.
+
+Now, the formula this gent set forth, N and C were scaled by
+fractional powers of the stars mass in solar masses (something like N
+= .3 AU x M^1/2 + .4 AU x M^2/3 - the numbers aren't exact, that's
+what I'm trying to remember) I don't know if he had any reason for the
+powers he used, or if they were just wild speculations.
+
+Just as an aside, one Doctor has done some research suggesting that
+there is a mathematical basis behind the titus-bode relationship, but
+I don't recall his name right off... I just stumbled accross the
+article when I was doing the search for the info I am requesting here.
+
+
+Spam Filter Notice: Remove "REMOVE2REPLY" to reply by email.
+Alan D Kohler <hwk...@REMOVE2REPLYpoky.srv.net <>>
+New on my RPG Pages(3/6/98): 
+SAGE free net SFRPG system!
+General: http://poky.srv.net/~hwkwnd/homepage.html <http://poky.srv.net/~hwkwnd/homepage.html>
+SF: http://poky.srv.net/~hwkwnd/SFRPG.html <http://poky.srv.net/~hwkwnd/SFRPG.html>
+----------------------------------------------------------------------------
+
+Wednesday, 11 March 1998 08:00:00 UTC - John D. Gwinner:
+Alan D Kohler wrote in message <35060bb2....@news.srv.net <>>...
+
+
+>>> Last year, I ran across the page of a well-spoken budding SF writer
+>>> who had a variation of the titus-bode relatationship that corrected
+>>> the factors for different stellar masses.
+
+
+>Now, the formula this gent set forth, N and C were scaled by
+
+>fractional powers of the stars mass in solar masses (something like N
+>= .3 AU x M^1/2 + .4 AU x M^2/3 - the numbers aren't exact, that's
+>what I'm trying to remember) I don't know if he had any reason for the
+>powers he used, or if they were just wild speculations.
+I did something similar several years ago (actually, over 10 years ago) and
+it worked fairly well.  However, lately I'm using the ACCRETE source code;
+with modern PC's it's plenty fast enough.
+
+
+>Just as an aside, one Doctor has done some research suggesting that
+>there is a mathematical basis behind the titus-bode relationship, but
+>I don't recall his name right off... I just stumbled accross the
+>article when I was doing the search for the info I am requesting here.
+
+I believe the titus-bode 'law' has to do with harmonic arrangements, which
+makes a lot of sense.  ACCRETE solves for this, I believe.
+
+I still have the original ACCRETE somewhere on cards, actually.  I found it
+at Cornell, after doing some work on the Drake equation for a paper I wrote
+as an Undergrad.  However, there's modern C versions that are easier to work
+on.  I've hacked a C++ version and am still working on it.  This is for a 3D
+solar system visualization project.
+
+        == John ==
+----------------------------------------------------------------------------
+
+Wednesday, 11 March 1998 08:00:00 UTC - Erik Max Francis:
+Alan D Kohler wrote:
+
+> Who said it had to be accurate - just beleivable. Need I remind you
+> that their is an "sf" in the title to this group. Speculation is part
+> of the trade.
+Well, if you don't need something to be accurate, you can just make up
+anything!
+
+
+> You've missed the point. I *do* undertand what titus-bode is and do
+> understand that it is an emprical relations based on observations of
+> our own system. But this gentleman had a reasonable version of the
+> titus-bode law scaled for other systems. ...
+Yes.  And what I am telling you is that you can scale it yourself, just
+as arbitrarily.
+
+Given a geometric relationship:
+
+    r = A B^n
+
+A governs the characteristic scale of the system (if you start with n =
+1, then A does not correspond to the first orbit), B governs how much
+larger each orbit is than the last one.  For the Solar System (Mercury
+through Mars, Ceres, and Jupiter through Neptune) you can get a
+moderately good fit (average error 10.02%) for A = 0.204 au, B = 1.733.
+
+A better metric would include more parameters, such as mass or radius or
+type, or perhaps a term which tended to make resonant orbits more
+likely/stable.  Either way, you can add as many terms as you like to
+make the curve a better fit.
+
+
+> Now, the formula this gent set forth, N and C were scaled by
+> fractional powers of the stars mass in solar masses (something like N
+> = .3 AU x M^1/2 + .4 AU x M^2/3 - the numbers aren't exact, that's
+> what I'm trying to remember) I don't know if he had any reason for the
+> powers he used, or if they were just wild speculations.
+Considering the exact nature of the Titius-Bode law is thought to be a
+lucky accident, it is highly unlikely that they were anything but wild
+guesses or fooling around.
+
+There are also other things to consider when dealing with evolved stars,
+which is that orbits get changed as the star evolves.  When a star
+leaves the main sequence and turns itself into a red giant, it undergoes
+a mass loss episode where it sheds a significant amount of its outer
+envelope.  This causes the planets to spiral out somewhat, due to the
+gradually decreasing mass of the primary.  Ultimately you end up with a
+white dwarf, with planetary orbits out further from what they were, with
+a gap in the middle.
+
+
+> Just as an aside, one Doctor has done some research suggesting that
+> there is a mathematical basis behind the titus-bode relationship, but
+> I don't recall his name right off... I just stumbled accross the
+> article when I was doing the search for the info I am requesting here.
+There almost certainly is some vague relationship.  The bodies are
+probably placed at roughly geometric spacing because the density of the
+accreting matter in the protosolar system varied as e^-r.  So far out
+you'd expect to see few bodies; close in you'd expect to see more.
+
+-- 
+         Erik Max Francis, &tSftDotIotE / mailto:m...@alcyone.com <>
+                       Alcyone Systems / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+  San Jose, California, United States / icbm:+37.20.07/-121.53.38
+                                     \
+        "I've got the fever for the / flavor of a cracker"
+                                   / Ice Cube
+----------------------------------------------------------------------------
+
+Wednesday, 11 March 1998 08:00:00 UTC - Alan D Kohler:
+On Wed, 11 Mar 1998 09:41:48 -0800, Erik Max Francis <m...@alcyone.com <>>
+wrote:
+>Alan D Kohler wrote:
+
+>
+>> Who said it had to be accurate - just beleivable. Need I remind you
+>> that their is an "sf" in the title to this group. Speculation is part
+>> of the trade.
+>
+>Well, if you don't need something to be accurate, you can just make up
+>anything!
+Well, you can't just make up anything, otherwise you don't fit
+criteria B - beleivable!
+
+
+>> You've missed the point. I *do* undertand what titus-bode is and do
+>> understand that it is an emprical relations based on observations of
+>> our own system. But this gentleman had a reasonable version of the
+>> titus-bode law scaled for other systems. ...
+>
+>Yes.  And what I am telling you is that you can scale it yourself, just
+>as arbitrarily.
+(Snip)
+
+
+>> Just as an aside, one Doctor has done some research suggesting that
+>> there is a mathematical basis behind the titus-bode relationship, but
+>> I don't recall his name right off... I just stumbled accross the
+>> article when I was doing the search for the info I am requesting here.
+>
+>There almost certainly is some vague relationship.  The bodies are
+>probably placed at roughly geometric spacing because the density of the
+>accreting matter in the protosolar system varied as e^-r.  So far out
+>you'd expect to see few bodies; close in you'd expect to see more.
+Well, I troubled to read through the abstract of the Doctor I
+mentioned above (Dr. Robert Bass - anyone heard of him?) His abstract
+suggests that the orbits of adjacent planets with orbital periods that
+are rational multiples of one another cannot be stable unless they sit
+in a titus-bode kind of relationship. His abstact also suggests that
+the actual relationship is not as we discussed above, but rather:
+
+D[n+1] = D[n]*beta
+
+D is the orbital distance of orbit n. Beta is, uncorrected for
+planetary masses, 1.80. (corrected for planetary mass, B = 1.8 +/- .2)
+Under this assumption, it is not neptune that is in the wrong place,
+but EARTH! (His abstract didn't detail HOW Earth gets away with being
+in the wrong orbit... perhaps earth's orbital period is a non-rational
+multiple of the orbital periods of Venus and Mars... anyone care to
+punch the numbers into their calculator to confirm this?)
+
+An implication of this is that planetary orbits are not FIXED
+absolutely, just fixed *with respect to one another*. This implies
+that the placement of planets is, somewhat arbitrary. A method of
+simulating a system would be to randomly pick a distance for the inner
+planet, and then place the rest of the system by multiplying by Br.
+Bass' assumed beta of 1.8 +/- .2. This will even work for systems of
+the "post gas giant" model that you suggested.
+
+Ana advantage of using this approach in simulations is that it allows
+us to simulate systems like 51 Peg. 51 Peg is a G-type star similar to
+our own. However, there is a near-jovian mass planet very close to the
+central star - on the order of 1/2 or less (IIRC) of what would be
+mercury's orbit. Under the solar-mass dependant model I mentioned
+earlier, this kind of arrangement is not possible: any sun similar to
+ours should have similar orbits about it. but under Dr. Bass' model,
+we can set the inner orbit arbitrarily.
+
+Any comments? Can anyone comment on the validity of Dr. Bass or his
+paper. Abstracts for some of his work is at:
+
+http://www.kronia.com/bass.htm <http://www.kronia.com/bass.htm>
+
+BTW, I do know about accrete - and have used a version of it myself.
+However, what I am looking for here is a little more "quick & dirty"
+type of thing that you can do with a pencil, paper, & calculator.
+
+
+Spam Filter Notice: Remove "REMOVE2REPLY" to reply by email.
+Alan D Kohler <hwk...@REMOVE2REPLYpoky.srv.net <>>
+New on my RPG Pages(3/6/98): 
+SAGE free net SFRPG system!
+General: http://poky.srv.net/~hwkwnd/homepage.html <http://poky.srv.net/~hwkwnd/homepage.html>
+SF: http://poky.srv.net/~hwkwnd/SFRPG.html <http://poky.srv.net/~hwkwnd/SFRPG.html>
+----------------------------------------------------------------------------
+
+Thursday, 12 March 1998 08:00:00 UTC - Erik Max Francis:
+Alan D Kohler wrote:
+
+> >Well, if you don't need something to be accurate, you can just make
+> > up
+> >anything!
+> 
+> Well, you can't just make up anything, otherwise you don't fit
+> criteria B - beleivable!
+Since there are no sensible or widely-believed theories regarding the
+spacing of planetary orbits, nearly _anything_ is believable.  There is
+no standard against which to test things.  You could pick the orbital
+radii randomly, and it would be hard to argue against the possibility of
+such an arrangement, simply because we have no standard against which to
+compare it.  Other than the avoidance of very-closely-spaced orbits or
+orbits connected by resonances, basically anything is possible.
+
+
+> D is the orbital distance of orbit n. Beta is, uncorrected for
+> planetary masses, 1.80. (corrected for planetary mass, B = 1.8 +/- .2)
+> Under this assumption, it is not neptune that is in the wrong place,
+> but EARTH!
+It sounds like there is a fundamental problem with this approach. 
+Models of planetary formation are, just like any other models,
+_explanatory_ models.  They are intended to explain what is observed. 
+Particularly when you're talking about a situation as complicated as the
+formation of a planetary system, and ultimately the spacing of the
+orbits that arise (which is a terribly complicated, quite stochastic,
+and probably chaotic system), coming up with a model, and saying, "Hey,
+here's my model.  I think it's a good model.  However, Earth (or in the
+case of the Titius-Bode relationship, Neptune) doesn't fit," is kind of
+missing the point.  Naturally cataclysmic events, which, though rare, do
+happen, will alter a system from its "natural" planetary configuration
+(if such a thing actually exists, which is probably unlikely) to
+something changed, and may eventually cause global perturbations,
+destroying the original ideal configuration.  Either way, if this is
+one's explanation of why the model is inaccurate (which it is in these
+cases), then one must immediately explain _why_ the model is inaccurate
+-- was the Earth bumped in from some outer orbit, was there some
+interaction from an interloper that, say, separated Neptune and its
+former moon Pluto (hypothetically) to cause the current configuration? 
+If these aftereffects aren't immediately apparent, then the model is
+worthless.
+
+
+> An implication of this is that planetary orbits are not FIXED
+> absolutely, just fixed *with respect to one another*. This implies
+> that the placement of planets is, somewhat arbitrary.
+Note, though, that even with this model, you get a roughly-geometric
+global spacing of the orbits.  Each orbit is some (moderately variable)
+factor larger than the previous orbit.
+
+That planetary orbits follow a roughly geometric pattern is probably
+never very surprising, since inward there is lots of accretable
+material, and outward there is much less.  Not only does this mean there
+is more material to make planets in the inner system, but it means that
+when planets form in the outer system, they get huge, because they tend
+to get large before other planetesimals can gobble up their food.  So
+you get terrestrials insystem, jovians outsystem, with a roughly
+geometric sequence (better modeled if you divide the curve fitting
+between an inner system and an outer system, divided at the line where
+jovians tend to be favored over terrestrials).
+
+
+> BTW, I do know about accrete - and have used a version of it myself.
+> However, what I am looking for here is a little more "quick & dirty"
+> type of thing that you can do with a pencil, paper, & calculator.
+I would recommend a simple geometric relationship (forget Bode's law,
+because it is too specific and contrived):
+
+    r = A B^n, 
+
+where r is the radius of the nth orbit (counting from 0).  Here things
+are very easy -- A is the radius of the 0th orbit, and B is the ratio
+between successive orbits.  Add in a +-10% error for good luck.  Choose
+A and B to come up with interesting results (for the Solar System, A =
+0.39 au, and B is roughly 1.6).  Vary A and B according to the stellar
+type.  Make them proportional to the stellar mass, for instance, say, or
+proportional to the stellar luminosity (o= M^3.5).
+
+-- 
+         Erik Max Francis, &tSftDotIotE / mailto:m...@alcyone.com <>
+                       Alcyone Systems / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+  San Jose, California, United States / icbm:+37.20.07/-121.53.38
+                                     \
+        "I've got the fever for the / flavor of a cracker"
+                                   / Ice Cube
+----------------------------------------------------------------------------
+
+Thursday, 12 March 1998 08:00:00 UTC - Alan D Kohler:
+On Thu, 12 Mar 1998 00:53:00 -0800, Erik Max Francis <m...@alcyone.com <>>
+wrote:
+>Alan D Kohler wrote:
+
+>
+>> >Well, if you don't need something to be accurate, you can just make
+>> > up
+>> >anything!
+>> 
+>> Well, you can't just make up anything, otherwise you don't fit
+>> criteria B - beleivable!
+>
+>Since there are no sensible or widely-believed theories regarding the
+>spacing of planetary orbits, nearly _anything_ is believable.
+Not exactly true. *I* personally wouldn't beleive a system that allows
+two earth size worlds within .1 AU... or 2 jupiter sized worlds within
+.5 AU.
+
+
+- show quoted text ->> D is the orbital distance of orbit n. Beta is, uncorrected for
+>> planetary masses, 1.80. (corrected for planetary mass, B = 1.8 +/- .2)
+>> Under this assumption, it is not neptune that is in the wrong place,
+>> but EARTH!
+>
+>It sounds like there is a fundamental problem with this approach. 
+>Models of planetary formation are, just like any other models,
+>_explanatory_ models.  They are intended to explain what is observed. 
+>Particularly when you're talking about a situation as complicated as the
+>formation of a planetary system, and ultimately the spacing of the
+>orbits that arise (which is a terribly complicated, quite stochastic,
+>and probably chaotic system), coming up with a model, and saying, "Hey,
+>here's my model.  I think it's a good model.  However, Earth (or in the
+>case of the Titius-Bode relationship, Neptune) doesn't fit," is kind of
+>missing the point.  Naturally cataclysmic events, which, though rare, do
+>happen, will alter a system from its "natural" planetary configuration
+>(if such a thing actually exists, which is probably unlikely) to
+>something changed, and may eventually cause global perturbations,
+>destroying the original ideal configuration.  Either way, if this is
+>one's explanation of why the model is inaccurate (which it is in these
+>cases), then one must immediately explain _why_ the model is inaccurate
+>-- was the Earth bumped in from some outer orbit, was there some
+>interaction from an interloper that, say, separated Neptune and its
+>former moon Pluto (hypothetically) to cause the current configuration? 
+>If these aftereffects aren't immediately apparent, then the model is
+>worthless.
+Well, Dr. Bass claims that it's not just the accretion density - it is
+orbital dynamics. However, I, too, felt that the fact that Earth
+didn't fit the model made it seem just as contrived as the standard
+titus-bode.
+
+
+>> An implication of this is that planetary orbits are not FIXED
+>> absolutely, just fixed *with respect to one another*. This implies
+>> that the placement of planets is, somewhat arbitrary.
+>> BTW, I do know about accrete - and have used a version of it myself.
+
+>> However, what I am looking for here is a little more "quick & dirty"
+>> type of thing that you can do with a pencil, paper, & calculator.
+>
+>I would recommend a simple geometric relationship (forget Bode's law,
+>because it is too specific and contrived):
+>
+>    r = A B^n, 
+>
+>where r is the radius of the nth orbit (counting from 0).  Here things
+>are very easy -- A is the radius of the 0th orbit, and B is the ratio
+>between successive orbits.  Add in a +-10% error for good luck.  Choose
+>A and B to come up with interesting results (for the Solar System, A =
+>0.39 au, and B is roughly 1.6).  Vary A and B according to the stellar
+>type.  Make them proportional to the stellar mass, for instance, say, or
+>proportional to the stellar luminosity (o= M^3.5).
+Well, I was considering making a model based on Dr. Bass' model... but
+found his "earth doesn't fit" a little disconcerting. I am more liable
+to beleive that a small gass giant in the outer system can more easily
+stray from the geometric position that an inner planet where m/r^2
+relationships are much larger.
+
+What I figure I'd do is select an inner planet orbit arbitrarily, use
+for A, make B something like A* .8 +/- .05, and then use those numbers
+in the standard titus-bode to find the "base line" orbits, and vary
+the actual positions from those base lines by some random factor.
+
+
+Spam Filter Notice: Remove "REMOVE2REPLY" to reply by email.
+Alan D Kohler <hwk...@REMOVE2REPLYpoky.srv.net <>>
+New on my RPG Pages(3/6/98): 
+SAGE free net SFRPG system!
+General: http://poky.srv.net/~hwkwnd/homepage.html <http://poky.srv.net/~hwkwnd/homepage.html>
+SF: http://poky.srv.net/~hwkwnd/SFRPG.html <http://poky.srv.net/~hwkwnd/SFRPG.html>
+----------------------------------------------------------------------------
+
+Thursday, 12 March 1998 08:00:00 UTC - Erik Max Francis:
+Alan D Kohler wrote:
+
+> >Since there are no sensible or widely-believed theories regarding the
+> >spacing of planetary orbits, nearly _anything_ is believable.
+> 
+> Not exactly true. *I* personally wouldn't beleive a system that allows
+> two earth size worlds within .1 AU... or 2 jupiter sized worlds within
+> .5 AU.
+I qualified my statement in the part that you omitted.
+
+So just pick up a system that gives reasonably-spaced worlds.
+
+
+> What I figure I'd do is select an inner planet orbit arbitrarily, use
+> for A, make B something like A* .8 +/- .05, and then use those numbers
+> in the standard titus-bode to find the "base line" orbits, and vary
+> the actual positions from those base lines by some random factor.
+If you're referring to a geometric relationship like the one that I
+cited, r = A B^n, then this doesn't make a whole lot of sense.  A and B
+are in different units (A is units of distance; B is dimensionless).  If
+you were referring to A as being in astronomical units, then for the
+solar system, A/au = 0.39, and so B = 0.8 (A/au) would lead B to be
+something smaller than unity, which means that successive orbits will
+array themselves _inward_, rather than outward.
+
+But, other than that, this is basically the same kind of relationship I
+was talking about.  Use a simple geometric series (or maybe two, one for
+the terrestrials, one for the jovians), and throw in a random fudge
+factor.
+
+-- 
+         Erik Max Francis, &tSftDotIotE / mailto:m...@alcyone.com <>
+                       Alcyone Systems / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+  San Jose, California, United States / icbm:+37.20.07/-121.53.38
+                                     \
+        "I've got the fever for the / flavor of a cracker"
+                                   / Ice Cube
+----------------------------------------------------------------------------
+
+Thursday, 12 March 1998 08:00:00 UTC - Alan D Kohler:
+On Thu, 12 Mar 1998 09:32:12 -0800, Erik Max Francis <m...@alcyone.com <>>
+wrote:
+>Alan D Kohler wrote:
+
+>
+>> >Since there are no sensible or widely-believed theories regarding the
+>> >spacing of planetary orbits, nearly _anything_ is believable.
+>> 
+>> Not exactly true. *I* personally wouldn't beleive a system that allows
+>> two earth size worlds within .1 AU... or 2 jupiter sized worlds within
+>> .5 AU.
+>
+>I qualified my statement in the part that you omitted.
+>
+>So just pick up a system that gives reasonably-spaced worlds.
+>
+>> What I figure I'd do is select an inner planet orbit arbitrarily, use
+>> for A, make B something like A* .8 +/- .05, and then use those numbers
+>> in the standard titus-bode to find the "base line" orbits, and vary
+>> the actual positions from those base lines by some random factor.
+>
+>If you're referring to a geometric relationship like the one that I
+>cited, r = A B^n, then this doesn't make a whole lot of sense.  A and B
+>are in different units (A is units of distance; B is dimensionless).  If
+>you were referring to A as being in astronomical units, then for the
+>solar system, A/au = 0.39, and so B = 0.8 (A/au) would lead B to be
+>something smaller than unity, which means that successive orbits will
+>array themselves _inward_, rather than outward.
+I'm referring to the form I threw out: D = A + B * N, where N = 0 for
+orbit 1 and N = 2^(orbit# - 2) for all other orbits. For example, lets
+say that I use  R * M^.5 * .1 AU for the innermost orbit, where M is
+the mass of the central star in solar masses, and R is a random
+variable we will simulate by the roll of one six-sided dice. Lets say
+I want to figure orbits for Epsilon Indi. Epsilon indi is a K5V star,
+estimated mass = .67 Msol. for our dice roll, we get a 4. The
+innermost orbit would be at .33 AU, => A = .327 AU. Use 1 dice - 1
+dice, summed times .01 to produce the proposed variation in B. a 6 and
+a 3 results in a proposed variation of .83. B = .83 (.327) = .272
+
+Orbits for this system would look like this:
+Orbit        N        Radius (in AU)
+1        0        0.327
+2        1        0.599
+3        2        0.871
+4        4        1.415
+5        8        2.503
+6        16        4.679
+7        32        9.031
+8        64        17.735
+9        128        35.143
+10        256        69.959
+ 
+Then make a center weighted randon distribution about each ideal orbit
+to find an actual orbit.
+
+
+>But, other than that, this is basically the same kind of relationship I
+>was talking about.  Use a simple geometric series (or maybe two, one for
+>the terrestrials, one for the jovians), and throw in a random fudge
+>factor.
+Two is a possibility I had considered... jovians fit Dr. Bass' "times
+1.8" rule pretty well, but inner worlds tend to follows a less
+predicatable sequence.
+
+
+Spam Filter Notice: Remove "REMOVE2REPLY" to reply by email.
+Alan D Kohler <hwk...@REMOVE2REPLYpoky.srv.net <>>
+New on my RPG Pages(3/6/98): 
+SAGE free net SFRPG system!
+General: http://poky.srv.net/~hwkwnd/homepage.html <http://poky.srv.net/~hwkwnd/homepage.html>
+SF: http://poky.srv.net/~hwkwnd/SFRPG.html <http://poky.srv.net/~hwkwnd/SFRPG.html>
+----------------------------------------------------------------------------
+
+Friday, 13 March 1998 08:00:00 UTC - Nyrath the nearly wise:
+John D. Gwinner wrote:
+> I did something similar several years ago (actually, over 10 years ago) and
+> it worked fairly well.  However, lately I'm using the ACCRETE source code;
+> with modern PC's it's plenty fast enough.
+> I still have the original ACCRETE somewhere on cards, actually.  I found it
+> at Cornell, after doing some work on the Drake equation for a paper I wrote
+> as an Undergrad.  However, there's modern C versions that are easier to work
+> on.
+        For people who are interested, check out Ian Burrell's 
+        Accrete homepage at
+
+http://www-leland.stanford.edu/~iburrell/create/accrete.html <http://www-leland.stanford.edu/~iburrell/create/accrete.html>
+----------------------------------------------------------------------------
+
+Friday, 13 March 1998 08:00:00 UTC - Erik Max Francis:
+Alan D Kohler wrote:
+
+> Two is a possibility I had considered... jovians fit Dr. Bass' "times
+> 1.8" rule pretty well, but inner worlds tend to follows a less
+> predicatable sequence.
+With a simple geometric sequence (r = A B^n), one gets only a 5.5%
+average error for the inner four planets (worst:  Venus, 10.5%; best: 
+Earth, 0.88%), for A = 0.416, B = 1.558.  And one gets only a 4.5%
+average error for the four jovian outer planets (worst:  Uranus, 8.7%;
+best:  Saturn, 1.2%).
+
+One could even be fancy and choose two curves, but which are both
+connected:  Orbit 0 is the terrestrial-jovian boundary (defined however
+you like), somewhere between Mars and Jupiter in our system; orbit T1 is
+the first terrestrial inward from the boundary (i.e., Mars), orbit T2 is
+the second terrestrial inward (i.e., Earth), etc.  Orbit J1 is the first
+jovian outward from the boundary (i.e., Jupiter), J2 is the second
+(i.e., Saturn), etc.  Both would be geometric sequences, except that the
+terrestrial sequence would have B < 1 (monotonic decreasing) and the
+jovian sequence would have B > 1 (monotonic increasing).
+
+-- 
+         Erik Max Francis, &tSftDotIotE / mailto:m...@alcyone.com <>
+                       Alcyone Systems / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+  San Jose, California, United States / icbm:+37.20.07/-121.53.38
+                                     \
+        "I've got the fever for the / flavor of a cracker"
+                                   / Ice Cube
+----------------------------------------------------------------------------
+
+Saturday, 14 March 1998 08:00:00 UTC - Russell Wallace:
+Alan D Kohler wrote:
+> 
+> Hi all,
+> 
+> Last year, I ran across the page of a well-spoken budding SF writer
+> who had a variation of the titus-bode relatationship that corrected
+> the factors for different stellar masses. I wanted to incorporate it
+> into a system I am making for simulating star systems, but can no
+> longer find the page - online or in hardcopy. Does anyone here know of
+> such a postulated solar mass corrected titus-bode formula?
+For science *fiction* purposes, I suggest making the baseline distance
+proportional to the square root of stellar luminosity.  There's no
+particular reason to believe this relationship is correct, but there's
+no particular reason to believe it isn't either, and it gives the best
+chance of habitable planets, because it means the middle terrestrial
+planets will get an amount of illumination similar to what Earth gets.
+
+-- 
+"To summarize the summary of the summary: people are a problem."
+Russell Wallace
+mano...@iol.ie <>

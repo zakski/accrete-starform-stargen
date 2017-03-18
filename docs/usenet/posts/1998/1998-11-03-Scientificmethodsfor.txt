@@ -1,0 +1,255 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/beiFLa4I5TM
+TITLE: 'Scientific' methods for solar system generation 
+
+----------------------------------------------------------------------------
+
+Tuesday, 3 November 1998 08:00:00 UTC - Tom Ford:
+I'm searching for some algorythums based on at least a little science which
+will generator solar systems. The most up-to-date one I have come across
+so far is circa 1979, which I feel may be a little out of date.
+It's for a game, as you may have guessed; we plan to have planets and moons
+and stations all orbiting each other, done Newtonianly.
+
+Although we plan to simulate binary/tertairy etc. systems, I doubt if there
+are scientific methods deal with the solar systems of these (since to my
+albeit limited knowledge no planets in such systems have been found).
+
+Thanks for your time.
+
+Tom Ford
+----------------------------------------------------------------------------
+
+Tuesday, 3 November 1998 08:00:00 UTC - Greg Neill:
+Tom Ford <fl...@fishy.ox.compsoc.net <>> wrote:
+: I'm searching for some algorythums based on at least a little science which- show quoted text -
+: will generator solar systems. The most up-to-date one I have come across
+: so far is circa 1979, which I feel may be a little out of date.
+
+- show quoted text -: It's for a game, as you may have guessed; we plan to have planets and moons
+: and stations all orbiting each other, done Newtonianly.
+
+- show quoted text -: Although we plan to simulate binary/tertairy etc. systems, I doubt if there
+: are scientific methods deal with the solar systems of these (since to my
+: albeit limited knowledge no planets in such systems have been found).
+: Thanks for your time.
+
+: Tom Ford
+
+Tom,
+
+  Regardless of whether or not examples of binary or ternary systems
+with planets have been found and examined, we fully expect that
+Newton's law of gravitation will hold in such cases.  Thus, it is
+possible to simulate such systems.  You need to look for some solar
+system simulation codes for inspiration.  If arcsecond accuracy is not
+required (this is a game, right?) then a simple leap-frog algorithm
+will suffice.  For starters, pull down JACK.BAS from
+
+  http://www.skypub.com/software/softwar2.shtml <http://www.skypub.com/software/softwar2.shtml>
+
+and take a close look at how it works.
+
+-- 
+----------------------------------------------------------------------------
+Greg Neill,              |CYNIC, n. A blackguard whose faulty vision sees
+HNSX Supercomputers Inc. |things as they are, not as they ought to be.  Hence
+                         |the custom among the Scythians of plucking out a 
+                         |cynic's eyes to improve his vision. - A.  Bierce
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Wednesday, 4 November 1998 08:00:00 UTC - Tom Ford:
+Greg Neill <NO@Spam.please> writes:
+> Tom,
+
+[snip]
+
+Thanks for your advice; on second reading my post was a little vague.
+What I'm actually looking for is an algorythum which will create a solar
+system; ie. start with a star then project what types and sizes of planets
+will be created as the star cools, their positions, masses, composition etc.
+
+Theoretically I am a physics undergraduate so I hope I should be able to
+calculate the equations and physics of actually orbitting under gravity
+myself :)
+
+Tom
+----------------------------------------------------------------------------
+
+Wednesday, 4 November 1998 08:00:00 UTC - Greg Neill:
+Tom Ford <fl...@fishy.ox.compsoc.net <>> wrote:
+: Greg Neill <NO@Spam.please> writes:
+: > Tom,
+
+: [snip]
+
+
+- show quoted text -: Thanks for your advice; on second reading my post was a little vague.
+: What I'm actually looking for is an algorythum which will create a solar
+: system; ie. start with a star then project what types and sizes of planets
+: will be created as the star cools, their positions, masses, composition etc.
+
+- show quoted text -: Theoretically I am a physics undergraduate so I hope I should be able to
+: calculate the equations and physics of actually orbitting under gravity
+: myself :)
+: Tom
+
+Tom,
+
+  Since there is no definitive, universally agreed upon mechanism for 
+solar system formation, let alone mathematically codified algorithms for
+predicting planet formation, you're going to have a bit of trouble here.
+I have seen references to simulations being done, making use of best
+guesses for initial conditions, making assumptions about the relative
+importance of the processes involved (gravitation vs magneto-fluid
+dynamics for example).
+
+  It's possible to obtain very plausible results using fairly 
+straightforward simulations.  One example that I remember well was 
+published in a newsletter called 'The Orrery', issue 13.  You might be 
+able to obtain that back issue from the newsletter's editor/publisher, 
+Caxton Foster.  A web page to look at for more information is:
+
+  http://www.capecod.net/~cfoster1/caxton.htm <http://www.capecod.net/~cfoster1/caxton.htm>
+
+
+
+Best of Luck,
+
+-- 
+----------------------------------------------------------------------------
+Greg Neill,              |CYNIC, n. A blackguard whose faulty vision sees
+HNSX Supercomputers Inc. |things as they are, not as they ought to be.  Hence
+                         |the custom among the Scythians of plucking out a 
+                         |cynic's eyes to improve his vision. - A.  Bierce
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Wednesday, 4 November 1998 08:00:00 UTC - M.C.Harrison:
+Greg Neill wrote:
+> 
+> Tom Ford <fl...@fishy.ox.compsoc.net <>> wrote:
+> : I'm searching for some algorythums based on at least a little science which
+>
+> will suffice.  For starters, pull down JACK.BAS from
+> 
+>   http://www.skypub.com/software/softwar2.shtml <http://www.skypub.com/software/softwar2.shtml>
+No joy, with that url.
+----------------------------------------------------------------------------
+
+Wednesday, 4 November 1998 08:00:00 UTC - Greg Neill:
+M.C.Harrison <nospam@spammers.of.the.world.unite.etc> wrote:- show quoted text -
+: Greg Neill wrote:
+: > 
+: > Tom Ford <fl...@fishy.ox.compsoc.net <>> wrote:
+: > : I'm searching for some algorythums based on at least a little science which
+: >
+: > will suffice.  For starters, pull down JACK.BAS from
+: > 
+: >   http://www.skypub.com/software/softwar2.shtml <http://www.skypub.com/software/softwar2.shtml>
+
+- show quoted text -: No joy, with that url.
+
+Wow!  Must've changed overnight!  Here's the new one:
+
+  http://www.skypub.com/resources/software/basic/basic.html <http://www.skypub.com/resources/software/basic/basic.html>
+
+
+-- 
+----------------------------------------------------------------------------
+Greg Neill,              |CYNIC, n. A blackguard whose faulty vision sees
+HNSX Supercomputers Inc. |things as they are, not as they ought to be.  Hence
+                         |the custom among the Scythians of plucking out a 
+                         |cynic's eyes to improve his vision. - A.  Bierce
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Wednesday, 4 November 1998 08:00:00 UTC - Erik Max Francis:
+Tom Ford wrote:
+
+> What I'm actually looking for is an algorythum which will create a
+> solar
+> system; ie. start with a star then project what types and sizes of
+> planets
+> will be created as the star cools, their positions, masses,
+> composition etc.
+One thing that should get you started is ACCRETE.  Unfortunately, the
+one page I knew that was about it and had it available for downloaded
+has expired, but you should be able to find it somewhere on the web with
+some web searches.
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900 
+Alcyone Systems / irc maxxon (efnet) / finger m...@sade.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / Scars are like memories.  We do not have them removed.
+           / Chmeee
+----------------------------------------------------------------------------
+
+Thursday, 5 November 1998 08:00:00 UTC - Tom Ford:
+Erik Max Francis <m...@alcyone.com <>> writes:
+
+> One thing that should get you started is ACCRETE.  Unfortunately, the
+Yeah, that's the programme I have got. I was rather hoping there was
+something more up to date (prehistoric C in the code I have, anyway).
+
+Tom
+----------------------------------------------------------------------------
+
+Thursday, 5 November 1998 08:00:00 UTC - M.C.Harrison:
+Greg Neill wrote:
+> 
+> : No joy, with that url.
+> Wow!  Must've changed overnight!  Here's the new one:
+>   http://www.skypub.com/resources/software/basic/basic.html <http://www.skypub.com/resources/software/basic/basic.html>
+Excellent link, troughed most of them already for future use. :)))
+----------------------------------------------------------------------------
+
+Thursday, 5 November 1998 08:00:00 UTC - Brian Davis
+Tom Ford wrote:
+
+>> One thing that should get you started is ACCRETE.
+> 
+> Yeah, that's the programme I have got. I was rather hoping there was
+> something more up to date (prehistoric C in the code I have, anyway).
+        ACCRETE isn't bad, as far as it goes. If you want a more detailed
+simulation, look up "Silicon Creation" (in the library, Journal of the
+British Interplanetary Society, author Martyn Fogg). He extended Dole's
+ACCRETE code a bit. No code, but good interesting descriptions and
+plenty of references.
+        I've been trying to write a better version of ACCRETE, but I'm afraid I
+got bogged down in the details (I think they may be a slight bug in the
+version running around the net, which probably means I don't understand
+it well enough yet.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 5 November 1998 08:00:00 UTC - Brian Davis:
+Brian Davis wrote:
+
+> ACCRETE isn't bad, as far as it goes. If you want a more detailed
+> simulation, look up "Silicon Creation"
+        First, I apologize for posting before researching.
+        Second, here's some references:
+
+        Fogg, Martyn J. "Extra-Solar Planetary Systems: A Microcomputer 
+           Simulation". JBIS V38, 501-514, 1985.
+        Fogg, "Terraforming, as part of a strategy for interstellar 
+           colonization", JBIS V44, p183, 1991
+        Fogg, "An Estimate of the Prevalence of Biocompatible and Habitable 
+           Planets", JBIS V45, pp.3-12, 1992
+
+        There is also a guy (on the web) who has worked out a home-computer
+simulation based on Wetherill's method of planetismals (perhaps more
+realistic). I know longer have his URL, but his name is Kevin Sagarsee.
+I never did reproduce his code, but it might be interesting.
+        The real problem is that the formation of the solar system (at least
+down to the details level you might like) is not fully understood (or at
+least agreed upon).
+
+-- 
+Brian Davis

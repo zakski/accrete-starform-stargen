@@ -1,0 +1,1024 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/T6I6RXmtrOg
+TITLE: Could This Be A Planet?? 
+
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC -  	Mark Foster:
+        I am in the 8th grade and we about to take a state wide test
+involving open ended questions in various subject. We got a sample
+question the other day to help us prepare. What our class and science
+teacher are debating is weather this imaginary planet "Ronda" could really
+exist. Look over this table.
+-------------------------
+
+Characteristics Of Ronda
+
+-------------------------
+
+Atmospheric Content-
+
+O2 (Oxygen) Levels : 5%
+CO2 (Carbon Dioxide) Levels : 60%
+N2 (Nitrogen) Levels : 10%
+Traces : 25%
+Magnetic Field : no
+
+O-Zone layer : no
+
+
+Distance from star : 100,000,000 km
+Rotation: 230 days
+
+Revolution : 230 days
+
+Diameter : 7,930 (Same as Earth)
+
+Density : 2.00 g/cm3
+
+Axis tilt : 0 degrees
+
+---------------------------
+
+The question we want to know is if a planet like this could really exist?
+----------------------------------------------------------------------------
+
+Thursday, 19 March 1998 08:00:00 UTC - Jeffrey Cornish:
+G'day Mark.  What an excellent post.  I'm an avid science fact and science
+fiction fan, so I'm sure I could help you on this matter.
+Mark Foster wrote in message <6esl5m$h...@fridge.shore.net <>>...
+> I am in the 8th grade and we about to take a state wide test
+>involving open ended questions in various subject. We got a sample
+>question the other day to help us prepare. What our class and science
+>teacher are debating is weather this imaginary planet "Ronda" could really
+>exist. Look over this table.
+
+
+Good info.  I'll take each point and try to explain what is reasonable and
+why.
+
+>
+>-------------------------
+>
+>Characteristics Of Ronda
+>
+>-------------------------
+
+>Distance from star : 100,000,000 km
+
+Okay, 100 Million km.  The Earth is 150 Million Km from the Sun.  So, if
+Ronda's stellar primary (it's 'Sun') is about the same as ours in luminosity
+(brightness), Ronda would recieve about 2.29 time the energy per square
+meter that the Earth does.
+
+This means it's going to be hot.  Very hot.
+
+>Rotation: 230 days
+>Revolution : 230 days
+
+If the rotation period is exactly the same as the period of revolution it is
+called a 'Tidal Lock.'  However Ronda would need to be much closer to it's
+star in order for this to have occurred.  And if you didn't want Ronda to be
+a baked slag-ball world, Ronda's star would have to be much smaller than our
+Sun--maybe a red dwarf (an 'M' spectral class star).
+
+This also means that Ronda has a day-side and a night-side.  The temperature
+on the day side will be incredibly hot--because it is always exposed to the
+light of Ronda's star.
+
+>Diameter : 7,930 (Same as Earth)
+>Density : 2.00 g/cm3
+
+Okay, this doesn't add up.  The size of the planet is okay, however the
+density is whacked.  2.00 g/cm3 is only twice the density of water.  The
+Earth has an average density of 5.5 g/cm3--that's pretty much Iron and
+silicates.  Some moons of the outer Jovian worlds (Saturn, Neptune, etc)
+have comparable densities, but they are mostly water ice over a silicate
+core.  So Ronda would appear to be made of water ice--which isn't likely if
+it's surface temperature is perhaps over 100 degrees Centigrade--all of the
+ice would melt and the water would boil away.
+
+>Axis tilt : 0 degrees
+
+The effect of axial tilt is the 'seasons' and in this case would have a
+slight moderating effect on the extreme temperatures of the dayside.
+
+>
+>Atmospheric Content-
+>O2 (Oxygen) Levels : 5%
+>CO2 (Carbon Dioxide) Levels : 60%
+>N2 (Nitrogen) Levels : 10%
+>Traces : 25%
+
+<grin> 25% is not a 'Trace' level. Ignoring that, lets look at the rest.
+
+Alright, mostly Carbon dioxide with molecular Nitrogen and molecular Oxygen.
+Two important bits of information have been left out here--the Surface
+Temperature and if Life is present.
+
+Free molecular Oxygen will only exist if there are photosynthetic organisms
+using a chlorophyl analog--either bacteria, algae or plants that eat CO2 and
+give off O2 as a waste product.  No life, no O2.
+
+If the surface temperature is in excess of the boiling point of water, no
+photosynthetic lifeform that we know of could survive.  On Earth the only
+critters that can survive boiling-hot enviroments are chemosynthetic
+bacteria that 'eat' sulfur compounds.  They do not, as far as I am aware,
+give off Oxygen as a waste gas.
+
+Carbon-Dioxide is a perfectly reasonable gas to expect in the atmosphere of
+Ronda.  However, if 60% of the atmosphere were CO2, Ronda would be a runaway
+'Greenhouse World' like our nearest planetary neighbor, Venus.  On Earth
+only a fraction of a percent of the atmosphere is made up of Carbon
+Dioxide--if it were just a few percent, the Earth would rapidly become a
+Greenhouse World like Venus.
+
+What keep the Earth's CO2 in check?  Life!  Plants and algae absorb CO2 and
+sunlight, converting it into sugar and Oxygen.  The Oxygen in our air is
+actually a waste product from all of the Earth's photosynthetic plants.
+
+
+However, Oxygen is a very reactive gas.  It combines very easily with all
+sort of chemicals and elements, 'oxidizing' them.  Rust is one
+example--Oxygen reacting with Iron.  It is unlikely that a planet would have
+very much O2 in it's atmosphere.  5% sounds okay for the Oxygen component of
+the atmosphere.
+
+Molecular Nitrogen is a stable, non-reactive gas.  Most of the Earth's
+atmosphere is made up of N2, mainly because 1) photosynthetic plants
+consumed nearly all of the CO2, giving off O2 as a waste product. and 2) the
+O2 was absorbed by the oceans and reacted with minerals.  There is still
+plenty of excess Oxygen in the Earth's atmosphere, thanks to the plants and
+algae.
+
+In short, it would be reasonable to have a high-Nitrogen/CO2 atmosphere, or
+a high-Nitrogen/low O2/low CO2 atmosphere.
+
+>Magnetic Field : no
+
+Well, because Ronda is not very dense, it probably doesn't have a very large
+Iron core (if it has one at all).  The Earth's magnetic field is generated
+by it's massive Iron core.  Because the Earth spins, it acts like a very
+large dynamo, generating a huge magnetic field.
+
+Mars, much like Ronda, doesn't have as heavy a core as the Earth, and it may
+not be as hot, too.  Mars doesn't have a very strong magnetic field.
+
+>O-Zone layer : no
+
+This is spelled OZONE.  Ozone is tri-atomic oxygen (three-atom oxygen) or
+O3.  Ozone is created in the upper regions of the Earth's atmosphere by the
+bombardment of O2 by ultraviolet light (or 'radiation') from the Sun.  The
+Earth's ozone layer absorbs most of the UV (ultraviolet) light that reaches
+the Earth.
+
+If Ronda does have a significant amount of Oxygen in it's atmosphere, it
+would most likely have a significant ozone layer.
+>---------------------------
+>
+>The question we want to know is if a planet like this could really exist?
+>
+
+Well, when I am creating a 'realistic' world for one of my science-fiction
+roleplaying games, I create a world in one of two ways:  Top-down or
+Bottom-up.
+
+Bottom up is the most realistic.  Start with the world's star and the
+planetary system.  I usually run an 'accretion simulator' to place the major
+bodies (everything down to the size of the largest asteroid).  Most of the
+time I end up with a body of significant size within the star's bio-zone.
+The bio-zone is the area around a star where liquid water can exist.
+
+With our Sun the Earth is about smack dab in the middle of the biozone,
+Venus is too close to the Sun to be in it and Mars is just outside it.
+
+Next I look at the characteristics of the main world--Size, Composition,
+Density, Mass, and Gravity.
+
+Size.  Pretty self explanatory--how big is this world.  For a good
+life-bearing planet, a diameter between 8000 km and 16000 km is good.
+
+Composition is what it is made up of:  How rich in silicates or Iron.  Is
+the core of the world large enough to be molten.  How abundant are trace
+elements like radio-isotopes, which help keep the core hot as they undergo
+radioactive decay.
+
+Next is it's average Density.  Actually most of the time I figure this out
+first and extrapolate the Composition of the world from it.  Density can be
+expressed in grams per cubic cm or as a percentage of Earth's density.
+5.5g/cm3 is equal to 1.0 DensityEarth.
+
+I can calculate the planet's mass by multiplying it's volume by it's
+density.  A quick and dirty way to figure this is to take the planet's
+diameter in miles, and divide by 1000, rounding up.  The Earth would be
+'size' 8  (7915mi / 1000 = 7.915, rounded up to 8).  The planets Mass =
+Density/Earth's density x ( Size factor / 8 )^3 (cubed).  This gives you a
+result in 'Standard Terran Masses' where 1.0 = Earth's mass.
+
+Finally, if you know the planet's mass and it's size, you can calculate the
+mean surface gravity.  The planet's surface gravity in G's = Planet's Mass x
+(64 / Planet's Size^2<<squared>>).
+
+So, say I had a medium sized world, say 7000 miles/ 11200km in diameter,
+composed of a mostly rocky/silicate core ( 3.85 g/cc or .70 Terran density).
+This world would only mass 47% of what the Earth does and have a surface
+gravity of .61G or 2/3rds the gravity on the Earth.
+
+Next I have to make a decision--does this world have life.  If so, I have
+some choices of atmospheric composition--O2 and N2 being preferred for a
+colonizable world..  If not, the atmosphere is likely to be composed of
+Hydrocarbons (Methane), CO, CO2, and Nitrogen.
+
+From here I would figure how bright this planet's star is and how far away
+it orbits.  With that information and information about the atmosphere of
+the planet I can calculate the approximate surface temperature.
+
+I hope this has helped.  Please feel free to e-mail me with any questions,
+or check out 'world building' resources on the web.
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC - Josh Hesse:
+Mark Foster (mfo...@shore.net <>) wrote:
+: 
+: Characteristics Of Ronda
+: 
+[snip]
+<flip answer>
+
+Sounds similar to Venus.
+
+</flip answer>
+
+-Josh
+-- 
+Do not send mail to this account.  Really.
+"Talk about silly conspiracy theories..." -Wayne Schlitt in unl.general
+This post (C)1998, Josh Hesse.  Quoted material is (C) of the person quoted.
+       |ess|erb|unl|u|    (Oo)  MYTHOS      How's my posting? 1-800-DEV-NULL
+email: jh|e@h|ie.|.ed|    /||\ NEW AEON     .Sigfile freshness date: 3/6/98
+
+     "Nazi Nazi Nazi!" -James Driscoll, aka <space...@sprynet.com <>>
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC - Alan D Kohler:
+On Thu, 19 Mar 1998 22:55:18 -0000, "Jeffrey Cornish"
+<nospam....@sprynet.com <>> wrote:
+
+>G'day Mark.  What an excellent post.  I'm an avid science fact and science
+>fiction fan, so I'm sure I could help you on this matter.
+>
+>Mark Foster wrote in message <6esl5m$h...@fridge.shore.net <>>...
+>> I am in the 8th grade and we about to take a state wide test
+>>involving open ended questions in various subject. We got a sample
+>>question the other day to help us prepare. What our class and science
+>>teacher are debating is weather this imaginary planet "Ronda" could really
+>>exist. Look over this table.
+>
+>
+>Good info.  I'll take each point and try to explain what is reasonable and
+>why.
+>
+>>
+>>-------------------------
+>>
+>>Characteristics Of Ronda
+>>
+>>-------------------------
+>
+>>Distance from star : 100,000,000 km
+>
+>Okay, 100 Million km.  The Earth is 150 Million Km from the Sun.  So, if
+>Ronda's stellar primary (it's 'Sun') is about the same as ours in luminosity
+>(brightness), Ronda would recieve about 2.29 time the energy per square
+>meter that the Earth does.
+>
+>This means it's going to be hot.  Very hot.
+Hmmm...  about .7 AU from the primary... about like venus.
+
+>>Rotation: 230 days
+>>Revolution : 230 days
+Hmm... tidal locked. About like venus.
+
+
+>If the rotation period is exactly the same as the period of revolution it is
+>called a 'Tidal Lock.'  However Ronda would need to be much closer to it's
+>star in order for this to have occurred.  And if you didn't want Ronda to be
+>a baked slag-ball world, Ronda's star would have to be much smaller than our
+>Sun--maybe a red dwarf (an 'M' spectral class star).
+>
+>This also means that Ronda has a day-side and a night-side.  The temperature
+>on the day side will be incredibly hot--because it is always exposed to the
+>light of Ronda's star.
+>
+>>Diameter : 7,930 (Same as Earth)
+>>Density : 2.00 g/cm3
+>
+>Okay, this doesn't add up.  The size of the planet is okay, however the
+>density is whacked.  2.00 g/cm3 is only twice the density of water.  The
+>Earth has an average density of 5.5 g/cm3--that's pretty much Iron and
+>silicates.  Some moons of the outer Jovian worlds (Saturn, Neptune, etc)
+>have comparable densities, but they are mostly water ice over a silicate
+>core.  So Ronda would appear to be made of water ice--which isn't likely if
+>it's surface temperature is perhaps over 100 degrees Centigrade--all of the
+>ice would melt and the water would boil away.
+Agreed. The venus' density is about 5.25, a shade lower than earth's.
+The lowest density among the inner planets is mars at 3.93. This is
+VERY low density for a planet that close to a star... unles the star
+happens to be a red dwarf. :-)
+
+
+>>Axis tilt : 0 degrees
+>
+>The effect of axial tilt is the 'seasons' and in this case would have a
+>slight moderating effect on the extreme temperatures of the dayside.
+>
+>>
+>>Atmospheric Content-
+>>O2 (Oxygen) Levels : 5%
+>>CO2 (Carbon Dioxide) Levels : 60%
+>>N2 (Nitrogen) Levels : 10%
+>>Traces : 25%
+>
+><grin> 25% is not a 'Trace' level. Ignoring that, lets look at the rest.
+>
+>Alright, mostly Carbon dioxide with molecular Nitrogen and molecular Oxygen.
+>Two important bits of information have been left out here--the Surface
+>Temperature and if Life is present.
+>
+>Free molecular Oxygen will only exist if there are photosynthetic organisms
+>using a chlorophyl analog--either bacteria, algae or plants that eat CO2 and
+>give off O2 as a waste product.  No life, no O2.
+>
+>If the surface temperature is in excess of the boiling point of water, no
+>photosynthetic lifeform that we know of could survive.  On Earth the only
+>critters that can survive boiling-hot enviroments are chemosynthetic
+>bacteria that 'eat' sulfur compounds.  They do not, as far as I am aware,
+>give off Oxygen as a waste gas.
+>
+>Carbon-Dioxide is a perfectly reasonable gas to expect in the atmosphere of
+>Ronda.  However, if 60% of the atmosphere were CO2, Ronda would be a runaway
+>'Greenhouse World' like our nearest planetary neighbor, Venus.
+Again, unless the central star is much cooler than our sun.
+
+
+- show quoted text ->  On Earth
+>only a fraction of a percent of the atmosphere is made up of Carbon
+>Dioxide--if it were just a few percent, the Earth would rapidly become a
+>Greenhouse World like Venus.
+>
+>What keep the Earth's CO2 in check?  Life!  Plants and algae absorb CO2 and
+>sunlight, converting it into sugar and Oxygen.  The Oxygen in our air is
+>actually a waste product from all of the Earth's photosynthetic plants.
+>
+>
+>However, Oxygen is a very reactive gas.  It combines very easily with all
+>sort of chemicals and elements, 'oxidizing' them.  Rust is one
+>example--Oxygen reacting with Iron.  It is unlikely that a planet would have
+>very much O2 in it's atmosphere.  5% sounds okay for the Oxygen component of
+>the atmosphere.
+>
+>Molecular Nitrogen is a stable, non-reactive gas.  Most of the Earth's
+>atmosphere is made up of N2, mainly because 1) photosynthetic plants
+>consumed nearly all of the CO2, giving off O2 as a waste product. and 2) the
+>O2 was absorbed by the oceans and reacted with minerals.  There is still
+>plenty of excess Oxygen in the Earth's atmosphere, thanks to the plants and
+>algae.
+>
+>In short, it would be reasonable to have a high-Nitrogen/CO2 atmosphere, or
+>a high-Nitrogen/low O2/low CO2 atmosphere.
+>
+>>Magnetic Field : no
+>
+>Well, because Ronda is not very dense, it probably doesn't have a very large
+>Iron core (if it has one at all).  The Earth's magnetic field is generated
+>by it's massive Iron core.  Because the Earth spins, it acts like a very
+>large dynamo, generating a huge magnetic field.
+>
+>Mars, much like Ronda, doesn't have as heavy a core as the Earth, and it may
+>not be as hot, too.  Mars doesn't have a very strong magnetic field.
+>
+>>O-Zone layer : no
+>
+>This is spelled OZONE.  Ozone is tri-atomic oxygen (three-atom oxygen) or
+>O3.  Ozone is created in the upper regions of the Earth's atmosphere by the
+>bombardment of O2 by ultraviolet light (or 'radiation') from the Sun.  The
+>Earth's ozone layer absorbs most of the UV (ultraviolet) light that reaches
+>the Earth.
+(Snip) Agreed.
+
+Well, all I can say is that the only way that this planet could have
+oxygen is that it recently had plantlike lifeforms in it's oceans -
+currently and recently. Given its density, it would have to be made
+mostly of some form of Ice... water or otherwise. To have liquid
+water, the only ice that can exist is water ice.
+
+So, lets say there is a thick envelope of water ice surrounding a
+rocky core. Near a small orange or red dwarf star, perhaps this planet
+might receive just enough light to melt some of the surface ice into
+ocean-sized puddle on the sunward side. So yes, I thinkit is a
+stretch, but I think it MIGHT be possible. It is pretty hard to
+imagine even primitive life evolving on a world like that, but I guess
+it is possible.
+
+
+However, if you are assuming that this world orbits a star like our
+own, then there is no way this is possible.
+
+Just my .02 cents,
+
+Spam Filter Notice: Remove "REMOVE2REPLY" to reply by email.
+Alan D Kohler <hwk...@REMOVE2REPLYpoky.srv.net <>>
+New on my RPG Pages(3/6/98): 
+SAGE free net SFRPG system!
+General: http://poky.srv.net/~hwkwnd/homepage.html <http://poky.srv.net/~hwkwnd/homepage.html>
+SF: http://poky.srv.net/~hwkwnd/SFRPG.html <http://poky.srv.net/~hwkwnd/SFRPG.html>
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC - Norbert Pfannerer:
+Jeffrey Cornish (nospam....@sprynet.com <>) wrote:
+: G'day Mark.  What an excellent post.  I'm an avid science fact and science
+: fiction fan, so I'm sure I could help you on this matter.
+
+: Mark Foster wrote in message <6esl5m$h...@fridge.shore.net <>>...
+: > I am in the 8th grade and we about to take a state wide test
+: >involving open ended questions in various subject. We got a sample
+: >question the other day to help us prepare. What our class and science
+: >teacher are debating is weather this imaginary planet "Ronda" could really
+: >exist. Look over this table.
+
+
+: Good info.  I'll take each point and try to explain what is reasonable and
+: why.
+
+: >
+: >-------------------------
+: >
+: >Characteristics Of Ronda
+: >
+: >-------------------------
+
+: >Distance from star : 100,000,000 km
+
+: Okay, 100 Million km.  The Earth is 150 Million Km from the Sun.  So, if
+: Ronda's stellar primary (it's 'Sun') is about the same as ours in luminosity
+: (brightness), Ronda would recieve about 2.29 time the energy per square
+: meter that the Earth does.
+
+: This means it's going to be hot.  Very hot.
+
+: >Rotation: 230 days
+: >Revolution : 230 days
+Don't forget that the star is smaller than the sun. From the distance and
+orbital period of 230 days calculate the star's mass, guess it's type,
+etc. I'll leave the details to the experts, but it seems the luminosity is
+much smaller than our sun's, and the planet might not be so hot after all.
+
+
+--
+   Norbert Pfannerer
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC - Jonathan Silverlight:
+ 
+In article <6esl5m$h...@fridge.shore.net <>>, Mark Foster (mfo...@shore.net <>) writes:
+>       I am in the 8th grade and we about to take a state wide test 
+>involving open ended questions in various subject. We got a sample 
+>question the other day to help us prepare. What our class and science 
+>teacher are debating is weather this imaginary planet "Ronda" could really 
+>exist. Look over this table.
+>
+>-------------------------
+>
+>Characteristics Of Ronda
+>
+>-------------------------
+>
+>Atmospheric Content-
+>O2 (Oxygen) Levels : 5%
+>CO2 (Carbon Dioxide) Levels : 60%
+>N2 (Nitrogen) Levels : 10%
+>Traces : 25%
+>
+>Magnetic Field : no
+>
+>O-Zone layer : no
+>
+>Distance from star : 100,000,000 km
+>
+>Rotation: 230 days
+>
+>Revolution : 230 days
+>
+>Diameter : 7,930 (Same as Earth)
+>
+>Density : 2.00 g/cm3
+>
+>Axis tilt : 0 degrees
+>
+>---------------------------
+>
+>The question we want to know is if a planet like this could really exist?
+>
+>
+Wow. I wish I'd been tested this way rather than the "those who
+can't do, teach" method. Is this sort of helping with the homework
+allowed? Oh well, it's too much fun to miss. 
+
+You don't mention the type of star Ronda is orbiting, but I see a
+problem with a density of 2 g/cm^3. That's only twice as dense as
+water, which implies that the planet contains a lot of water or ice
+(like some of the moons of Jupiter) rather then rock or iron
+which has a density > 5 g/cm^3. It's not an Earthlike world around a
+G star, but it sounds plausible.
+
+BTW, why not quote the diameter as 12,000 km ?
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC - Jeffrey Cornish:
+>: >Rotation: 230 days
+>: >Revolution : 230 days
+>
+>Don't forget that the star is smaller than the sun. From the distance and
+>orbital period of 230 days calculate the star's mass, guess it's type,
+>etc. I'll leave the details to the experts, but it seems the luminosity is
+>much smaller than our sun's, and the planet might not be so hot after all.
+>
+>
+>--
+>   Norbert Pfannerer
+Dang, I missed that.
+
+Thanks Norbert!
+----------------------------------------------------------------------------
+
+Saturday, 21 March 1998 08:00:00 UTC - Brian Davis:
+Jeffrey Cornish wrote:
+<A really good summary of what "Ronda" might be like>
+>Okay, 100 Million km.  The Earth is 150 Million Km from the Sun...
+
+>
+>>Rotation: 230 days
+>>Revolution : 230 days
+>
+> If the rotation period is exactly the same as the period of revolution
+> it is called a 'Tidal Lock.'  However Ronda would need to be much
+> closer to it's star in order for this to have occurred.
+        Not neccesarily. Not knowning the mass of the central star, the Q of
+
+the planet or the orbital eccentricity, it's not a impossible situation.
+You mention later using an "accretion" model (I presume ACCRETE,
+Starform, or something similar) - some of these do lock/syncronous
+rotation calculations, and I don't think a tidal lock at 0.66 AU is out
+of the question, particularly with all the free variables.
+> And if you didn't want Ronda to be a baked slag-ball world, Ronda's
+
+> star would have to be much smaller than our Sun
+
+        Let's think about this. As you mention later, there are some glaring
+gaps in the information supplied - such as the surface temperature and
+the presence of life. But at least the first of these we can
+approximate. (Warning: for the original poster, the following goes
+slightly beyond what you probably need to know for a 8th grade contest).
+We know Ronda orbits its star in 233 days (I'm assuming 24-hour days).
+That, coupled with the orbital radius (about 0.66 AU), gives us the mass
+of the primary: about 0.71 Msol (71% of the mass of the Sun). The
+luminosity for stars in this range can be approximated as
+        L = Lsol ( M / Msol )^4.75
+which give as luminosity of only 0.2 that of our Sun. Ronda receives the
+equivilent inslation that a planet at 1.48 AU in our own solar system
+would - slightly more than Mars. Not very hot at all.
+>>Diameter : 7,930 (Same as Earth)
+
+>>Density : 2.00 g/cm3
+>
+> Okay, this doesn't add up.  The size of the planet is okay, however
+> the density is whacked.  2.00 g/cm3 is only twice the density of
+> water.
+        That does seem unrealistic, but there are at least two classes of solar
+
+system bodies that come close to that density - gas giants (Jupiter, for
+instance, is 1.3 g/cc, while Saturn is 0.69 g/cc) and icy moons
+(Callisto is around 1.8 g/cc, but has a diameter of only 2987 mi). I
+agree that it seems impossible, but I'm not *sure* it is. Can anyone
+calculate the theoretical density of a all water-ice body the size of
+Ronda, taking the numerous polytrops of ice into account? Or the density
+of a all-water body?
+> So Ronda would appear to be made of water ice--which isn't
+
+> likely if it's surface temperature is perhaps over 100 deg-C
+
+        At the projected surface temperatures (close to Martian), this is not
+quite as impossible as it might at first seem. Still *highly* unlikely I
+think.
+> Two important bits of information have been left out here--the Surface
+
+> Temperature and if Life is present.
+        And another one - the surface pressure.
+
+>> Atmospheric Content-
+
+>> O2 (Oxygen) Levels : 5%
+>> CO2 (Carbon Dioxide) Levels : 60%
+>> N2 (Nitrogen) Levels : 10%
+>> Traces : 25%
+>
+> ...Free molecular Oxygen will only exist if there are photosynthetic
+> organisms using a chlorophyl analog--either bacteria, algae or plants
+> that eat CO2 and give off O2 as a waste product.  No life, no O2.
+        Not exclusively true. I agree that the presence of free oxygen in the
+
+atmosphere of the average planet is highly unlikely except in the
+presence of life, but there are exceptions. Europa's atmosphere (such as
+it is) consists of oxygen produced from sublimated water ice (the
+hydrogen having been lost due to thermal escape). If the "surface" of
+our planet is only water (and if a *large* pecentage of the bulk
+material is water also), then the possiblity exist for water vapor to be
+converted into hydrogen and oxygen by UV in the upper atmosphere. The
+hydrogen is lost, while the oxygen sticks around.
+        OK, no, I would think life is more likely too.
+> If the surface temperature is in excess of the boiling point of water,
+
+> no photosynthetic lifeform that we know of could survive.
+        But taking the probably stellar luminosity into account, Ronda would
+
+probably be within the potential ecosphere. Life is not out of the
+question, and a possible explaination for the O2 content.
+> Carbon-Dioxide is a perfectly reasonable gas to expect in the
+
+> atmosphere of Ronda.  However, if 60% of the atmosphere were CO2,
+> Ronda would be a runaway 'Greenhouse World'
+        Perhaps. I'm not sure how much CO2 is needed to produce a runaway
+
+greenhouse at that illumination level, and more importantly, we don't
+know how much CO2 is present because we don't know the surface pressure.
+> It is unlikely that a planet would have very much O2 in it's
+
+> atmosphere.  5% sounds okay for the Oxygen component
+        Based on what? If life is present, certainly. If life is not present,
+
+very doubtful (barring unusual circumstances like I mentioned above).
+> In short, it would be reasonable to have a high-Nitrogen/CO2
+
+> atmosphere, or a high-Nitrogen/low O2/low CO2 atmosphere.
+        Or a high-N2/low-O2/high-CO2 if life was just getting started - like
+
+during the first couple billion years of Earth history (ie- the majority
+of it - before any higher life had come on the scene).
+> Well, when I am creating a 'realistic' world...
+
+> ...I usually run an 'accretion simulator' to place the major bodies
+        I'm guessing you're using "ACCRETE" or something similar. Which
+specificly do you use? And what else does it generate? I'm currently
+adapting the Starform program for the Mac (and planning some
+updates/expassions; Fogg's original 'Silicon Creation' program seems to
+have been much more detailed). Much of what you mention as calculating
+is done automaticly in some more advanced versions of this type of
+program (such as Starform).
+
+-Brian Davis
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC - Jeffrey Cornish:
+Brian Davis wrote in message <351320...@umich.edu <>>...
+
+>Jeffrey Cornish wrote:
+>>
+>> If the rotation period is exactly the same as the period of revolution
+>> it is called a 'Tidal Lock.'  However Ronda would need to be much
+>> closer to it's star in order for this to have occurred.
+>
+> Not neccesarily. Not knowning the mass of the central star, the Q of
+>the planet or the orbital eccentricity, it's not a impossible situation.
+>You mention later using an "accretion" model (I presume ACCRETE,
+>Starform, or something similar) - some of these do lock/syncronous
+>rotation calculations, and I don't think a tidal lock at 0.66 AU is out
+>of the question, particularly with all the free variables.
+
+Hmm, good points, but based on the examples at hand (all nine in our solar
+system) a retrograde rotation is more likely.  Perhaps the first
+interstellar surveys will reveal which of us is correct. *grin*
+
+
+>
+>> And if you didn't want Ronda to be a baked slag-ball world, Ronda's
+>> star would have to be much smaller than our Sun
+>
+> Let's think about this. As you mention later, there are some glaring
+>gaps in the information supplied - such as the surface temperature and
+>the presence of life. But at least the first of these we can
+>approximate. (Warning: for the original poster, the following goes
+>slightly beyond what you probably need to know for a 8th grade contest).
+>We know Ronda orbits its star in 233 days (I'm assuming 24-hour days).
+>That, coupled with the orbital radius (about 0.66 AU), gives us the mass
+>of the primary: about 0.71 Msol (71% of the mass of the Sun). The
+>luminosity for stars in this range can be approximated as
+> L = Lsol ( M / Msol )^4.75
+>which give as luminosity of only 0.2 that of our Sun. Ronda receives the
+>equivilent inslation that a planet at 1.48 AU in our own solar system
+>would - slightly more than Mars. Not very hot at all.
+
+Gak--I missed that.  And I have the formulas right here too. *sigh*
+
+
+>
+>>>Diameter : 7,930 (Same as Earth)
+>>>Density : 2.00 g/cm3
+>>
+>> Okay, this doesn't add up.  The size of the planet is okay, however
+>> the density is whacked.  2.00 g/cm3 is only twice the density of
+>> water.
+>
+> That does seem unrealistic, but there are at least two classes of solar
+>system bodies that come close to that density - gas giants (Jupiter, for
+>instance, is 1.3 g/cc, while Saturn is 0.69 g/cc) and icy moons
+>(Callisto is around 1.8 g/cc, but has a diameter of only 2987 mi). I
+>agree that it seems impossible, but I'm not *sure* it is. Can anyone
+>calculate the theoretical density of a all water-ice body the size of
+>Ronda, taking the numerous polytrops of ice into account? Or the density
+>of a all-water body?
+>
+>> So Ronda would appear to be made of water ice--which isn't
+>> likely if it's surface temperature is perhaps over 100 deg-C
+>
+> At the projected surface temperatures (close to Martian), this is not
+>quite as impossible as it might at first seem. Still *highly* unlikely I
+>think.
+>
+>> Two important bits of information have been left out here--the Surface
+>> Temperature and if Life is present.
+>
+> And another one - the surface pressure.
+>
+>>> Atmospheric Content-
+>>> O2 (Oxygen) Levels : 5%
+>>> CO2 (Carbon Dioxide) Levels : 60%
+>>> N2 (Nitrogen) Levels : 10%
+>>> Traces : 25%
+>>
+>> ...Free molecular Oxygen will only exist if there are photosynthetic
+>> organisms using a chlorophyl analog--either bacteria, algae or plants
+>> that eat CO2 and give off O2 as a waste product.  No life, no O2.
+>
+> Not exclusively true. I agree that the presence of free oxygen in the
+>atmosphere of the average planet is highly unlikely except in the
+>presence of life, but there are exceptions. Europa's atmosphere (such as
+>it is) consists of oxygen produced from sublimated water ice (the
+>hydrogen having been lost due to thermal escape). If the "surface" of
+>our planet is only water (and if a *large* pecentage of the bulk
+>material is water also), then the possiblity exist for water vapor to be
+>converted into hydrogen and oxygen by UV in the upper atmosphere. The
+>hydrogen is lost, while the oxygen sticks around.
+> OK, no, I would think life is more likely too.
+
+Ah, but Europa's atmosphere has a third the density of a flatulent episode
+in the Astrodome.  Question is would photodecomposition of H2O to O2 and H2
+occur in a dense atmosphere??
+
+
+>
+>> If the surface temperature is in excess of the boiling point of water,
+>> no photosynthetic lifeform that we know of could survive.
+>
+> But taking the probably stellar luminosity into account, Ronda would
+>probably be within the potential ecosphere. Life is not out of the
+>question, and a possible explaination for the O2 content.
+>
+>> Carbon-Dioxide is a perfectly reasonable gas to expect in the
+>> atmosphere of Ronda.  However, if 60% of the atmosphere were CO2,
+>> Ronda would be a runaway 'Greenhouse World'
+>
+> Perhaps. I'm not sure how much CO2 is needed to produce a runaway
+>greenhouse at that illumination level, and more importantly, we don't
+>know how much CO2 is present because we don't know the surface pressure.
+>
+>> It is unlikely that a planet would have very much O2 in it's
+>> atmosphere.  5% sounds okay for the Oxygen component
+>
+> Based on what? If life is present, certainly. If life is not present,
+>very doubtful (barring unusual circumstances like I mentioned above).
+>
+I'm sorry, that should have been 'If Ronda has life, 5% O2 sounds okay'
+
+
+>> In short, it would be reasonable to have a high-Nitrogen/CO2
+>> atmosphere, or a high-Nitrogen/low O2/low CO2 atmosphere.
+>
+> Or a high-N2/low-O2/high-CO2 if life was just getting started - like
+>during the first couple billion years of Earth history (ie- the majority
+>of it - before any higher life had come on the scene).
+>
+Good point.  Although O2 is going to be very rare in a reducing atmosphere.
+
+>> Well, when I am creating a 'realistic' world...
+>> ...I usually run an 'accretion simulator' to place the major bodies
+>
+> I'm guessing you're using "ACCRETE" or something similar. Which
+>specificly do you use? And what else does it generate? I'm currently
+>adapting the Starform program for the Mac (and planning some
+>updates/expassions; Fogg's original 'Silicon Creation' program seems to
+>have been much more detailed). Much of what you mention as calculating
+>is done automaticly in some more advanced versions of this type of
+>program (such as Starform).
+> -Brian Davis
+
+I've used several versions of Accrete.  For RPG, I find Accrete3, modified
+for compatibility with the Traveller RPG is good because it does its
+darnedest to create a habitable main-world.
+
+Jeffrey
+----------------------------------------------------------------------------
+
+Friday, 20 March 1998 08:00:00 UTC - Phil Armitage:
+  hwk...@REMOVE2REPLY.poky.srv.net <> (Alan D Kohler) wrote:
+> On Thu, 19 Mar 1998 22:55:18 -0000, "Jeffrey Cornish" wrote:
+> >Mark Foster wrote in message <6esl5m$h...@fridge.shore.net <>>...
+[...]
+> >>Diameter : 7,930 (Same as Earth)
+> >>Density : 2.00 g/cm3
+> >
+> >Okay, this doesn't add up.  The size of the planet is okay, however the
+> >density is whacked.  2.00 g/cm3 is only twice the density of water.  The
+> >Earth has an average density of 5.5 g/cm3--that's pretty much Iron and
+> >silicates.  Some moons of the outer Jovian worlds (Saturn, Neptune, etc)
+> >have comparable densities, but they are mostly water ice over a silicate
+> >core.  So Ronda would appear to be made of water ice--which isn't likely if
+> >it's surface temperature is perhaps over 100 degrees Centigrade--all of the
+> >ice would melt and the water would boil away.
+>
+> Agreed. The venus' density is about 5.25, a shade lower than earth's.
+> The lowest density among the inner planets is mars at 3.93. This is
+> VERY low density for a planet that close to a star... unles the star
+> happens to be a red dwarf. :-)
+Certainly it's hard to imagine forming a predominantly icy planet
+that close to a solar type star. It's worth remembering though that
+several of the detected extrasolar planets are so close to their
+stars that they couldn't have been formed where they are now either.
+The general belief is that these planets were formed further out, and
+then dragged (by an inflowing disk), or scattered (by interactions
+with other planets or smaller bodies) into their current orbits. At
+least if the first disk-based scenario is right, there could be
+smaller but equally out-of-place planets that were dragged inwards and
+are now inhabiting the inner regions of those planetary systems.
+
+The escape velocity of the hypothetical world mentioned above is
+pretty low, so it might well be the case that the water would all
+be boiled off within a few Gyr (though I haven't checked). But
+oddballs like a larger ice / water world around the location of
+Earth might well be possible...
+
+Phil Armitage
+Canadian Institute for Theoretical Astrophysics
+
+
+
+-----== Posted via Deja News, The Leader in Internet Discussion ==-----
+http://www.dejanews.com/ <http://www.dejanews.com/>   Now offering spam-free web-based newsreading
+----------------------------------------------------------------------------
+
+Saturday, 21 March 1998 08:00:00 UTC - Brian Davis:
+Jeffrey Cornish wrote:
+> Brian Davis wrote:
+> >Jeffrey Cornish wrote:
+> >>
+> >> Ronda would need to be much closer to it's star in order for [tidal 
+> >> locking] to have occurred.
+
+> >
+> > Not neccesarily. Not knowning the mass of the central star, the Q of
+> > the planet or the orbital eccentricity, it's not a impossible 
+> > situation.
+> 
+> Hmm, good points, but based on the examples at hand (all nine in our 
+> solar system) a retrograde rotation is more likely.
+        Venus's retrograde rotation is probably the result of the last
+mega-impact or two, something Accrete (and for that matter, most BotE
+calculations) don't take into account. Of course, I said "not knowing
+the mass of the central star", and then figured out later that it was so
+low tidal locking would be extremely unlikely. Maybe Ronda had a
+near-synchronous period accidentally, and over a long period of time
+(low mass star implies a long time on the main sequence) the final tidal
+locking occured.
+
+
+
+> Perhaps the first interstellar surveys will reveal which of us is 
+> correct. *grin*
+        I agree; I really wish we could be around to have this discussion then
+;-).
+
+> > ...the mass of the primary: about 0.71 Msol...
+> > ...luminosity of only 0.2 that of our Sun...
+> > Ronda receives the equivilent insolation that a planet at 1.48 AU in 
+
+> > our own solar system would - slightly more than Mars. Not very hot 
+> > at all.
+> 
+> Gak--I missed that.
+        Good think too - it gave the rest of us something to do <grin>. But
+seriously, it probably shouldn't have been needed - this was presented
+as a problem for 8th graders. I agree with another poster to this
+thread, I *really* wish I would have had more chances to do this sor tof
+thing, but I would *not* expect an 8th grader to have the main sequence
+mass/luminosity relationship memorized.
+
+<on UV disassociation of H2O>
+
+> Question is would photodecomposition of H2O to O2 and H2 occur in a 
+> dense atmosphere??
+        Certainly - it is thought to have occured on Venus, for example. If the
+planet's atmospheric structure does not posses a cold-trap, water will
+be present at all altitudes, and photodisassociation can proceed. A more
+important question in this setting is if Ronda's (small, weak) star will
+put off enough UV to drive the process (I'm guessing no).
+
+
+> I'm sorry, that should have been 'If Ronda has life, 5% O2 sounds 
+> okay'
+        And life seems at least possible. I agree - life is probably implied by
+this problem. I only mentioned the UV trick around a water-world to
+point out that assumptions should be questioned, especially when we only
+have one system (the solar system) to base them upon.
+
+
+> I've used several versions of Accrete.  For RPG, I find Accrete3, 
+> modified for compatibility with the Traveller RPG is good because it 
+> does its darnedest to create a habitable main-world.
+        Where did you find this? Is source code availible?
+
+                                                                                                        -Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 22 March 1998 08:00:00 UTC - Jeffrey Cornish:
+Brian Davis wrote in message <3513C2...@umich.edu <>>...
+>Jeffrey Cornish wrote:
+
+<discussion upon rotation of planetary bodies snipped>
+
+>> Perhaps the first interstellar surveys will reveal which of us is
+>> correct. *grin*
+>
+> I agree; I really wish we could be around to have this discussion then
+>;-).
+>
+I like to think that we will.  Call me an optimist
+
+
+
+>> > ...the mass of the primary: about 0.71 Msol...
+>> > ...luminosity of only 0.2 that of our Sun...
+>> > Ronda receives the equivilent insolation that a planet at 1.48 AU in
+>> > our own solar system would - slightly more than Mars. Not very hot
+>> > at all.
+>>
+>> Gak--I missed that.
+>
+> Good think too - it gave the rest of us something to do <grin>. But
+>seriously, it probably shouldn't have been needed - this was presented
+>as a problem for 8th graders. I agree with another poster to this
+>thread, I *really* wish I would have had more chances to do this sor tof
+>thing, but I would *not* expect an 8th grader to have the main sequence
+>mass/luminosity relationship memorized.
+>
+Well, each of us can contribute our own stash of info from time to time.
+This just matched up on a lot of things that I've read about and mulled
+over.
+
+
+
+><on UV disassociation of H2O>
+>> Question is would photodecomposition of H2O to O2 and H2 occur in a
+>> dense atmosphere??
+>
+> Certainly - it is thought to have occured on Venus, for example. If the
+>planet's atmospheric structure does not posses a cold-trap, water will
+>be present at all altitudes, and photodisassociation can proceed. A more
+>important question in this setting is if Ronda's (small, weak) star will
+>put off enough UV to drive the process (I'm guessing no).
+>
+
+Another good obseravation, Brian.
+
+
+
+>> I'm sorry, that should have been 'If Ronda has life, 5% O2 sounds
+>> okay'
+>
+> And life seems at least possible. I agree - life is probably implied by
+>this problem. I only mentioned the UV trick around a water-world to
+>point out that assumptions should be questioned, especially when we only
+>have one system (the solar system) to base them upon.
+>
+>> I've used several versions of Accrete.  For RPG, I find Accrete3,
+>> modified for compatibility with the Traveller RPG is good because it
+>> does its darnedest to create a habitable main-world.
+>
+> Where did you find this? Is source code availible?
+>
+> -Brian Davis
+for accrete3, go to Jim V.'s dinky homepage
+(http://members.aol.com/jimvassila/ <http://members.aol.com/jimvassila/> ) and check out RPG software.  He also
+has a wonderful 3-D starmap program for RPG use.
+
+Whoops.. It's not there, but both v2 and v3 are here:
+http://www.hooked.net/~dberry/gateway.html <http://www.hooked.net/~dberry/gateway.html>
+
+Also http://www-leland.stanford.edu/~iburrell/create/accrete.html <http://www-leland.stanford.edu/~iburrell/create/accrete.html>

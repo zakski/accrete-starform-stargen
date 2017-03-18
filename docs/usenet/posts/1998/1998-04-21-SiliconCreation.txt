@@ -1,0 +1,63 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/OXg-JAVVYUU
+TITLE: Silicon Creation 
+
+----------------------------------------------------------------------------
+
+Tuesday, 21 April 1998 08:00:00 UTC+1 - cin...@juno.com:
+Hello all:
+Does anyone know where I could get a copy of Fogg's 'Silicon Creation' source
+code?  I've been trying to write a Win95 version of his program (looking at
+plenty of journal articles on the way), and having the source code he used
+would make things a lot easier.  I'm not sure if Silicon Creation is public
+domain or not; if it isn't, then just pretend I never posted this.  Any help
+would be much appreciated.
+
+MI
+
+-----== Posted via Deja News, The Leader in Internet Discussion ==-----
+http://www.dejanews.com/ <http://www.dejanews.com/>   Now offering spam-free web-based newsreading
+----------------------------------------------------------------------------
+
+Tuesday, 21 April 1998 08:00:00 UTC+1 - cin...@juno.com:
+Hello all:
+
+Does anyone know where I could get a copy of Fogg's 'Silicon Creation' source
+code?  I've been trying to write a Win95 version of his program (for personal
+use; it would make worldbuilding a lot easier), and having the source code he
+used would make things a lot easier.  I'm not sure if Silicon Creation is
+public domain or not; if it isn't, then just pretend I never posted this.
+Any help would be much appreciated.
+MI
+
+-----== Posted via Deja News, The Leader in Internet Discussion ==-----
+http://www.dejanews.com/ <http://www.dejanews.com/>   Now offering spam-free web-based newsreading
+----------------------------------------------------------------------------
+
+Thursday, 23 April 1998 08:00:00 UTC+1 - Brian Davis:
+cin...@juno.com <> wrote:
+
+> Does anyone know where I could get a copy of Fogg's 'Silicon 
+> Creation' source code?  I've been trying to write a Win95 version of 
+> his program (for personal use; it would make worldbuilding a lot 
+> easier), and having the source code he used would make things a lot 
+> easier.  I'm not sure if Silicon Creation is public domain or not; 
+> if it isn't, then just pretend I never posted this. Any help would 
+> be much appreciated.
+   While there are several versions of 'a' source code availible (I
+presume you've found them), none of them appear to be Fogg's (in fact,
+some of them contain some interesting errors, especially in the Accrete
+subroutines). I wrote Fogg to request the source, and he replied that is
+was on a discarded machine in his garage, and even he wouldn't retrieve
+it, but write it from scratch again if the situation ever came up. So it
+looks like no dice. If you do find something, please let me know - I've
+looked to the point where re-creating seems the better option.
+   In addition, which version of 'Silicon Creation' are you trying to
+model? There were at least three (and possibly more). The one that
+incorperated seven different types of atmospheres (although the most
+interesting) was the least accurate, and there were at least two
+variations on the Accrete subroutines as well.
+   I, too, am re-writing this program (how many times has that been
+done, I wonder?), and I'm just using a current version (Starform) as a
+guide - there are a lot of improvements possible, in speed, memory, and
+certainly accuracy.
+                                              -Brian Davis

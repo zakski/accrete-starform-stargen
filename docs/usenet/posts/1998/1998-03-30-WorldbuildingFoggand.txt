@@ -1,0 +1,45 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/3dGSJGvZgo8
+TITLE: Worldbuilding, Fogg, and Accrete 
+
+----------------------------------------------------------------------------
+
+Monday, 30 March 1998 09:00:00 UTC+1 - Brian Davis:
+I've been trying to reproduce Fogg's 'Silicon Creation' program,
+and I was wondering if anyone has some further references or advice. For
+those of you who don't know, Martyn Fogg's program 'Silicon Creation'
+program uses the Dole 'Accrete' method to generate a sample solar
+system, and then tries to come up with realistic-looking enviroments for
+each planet. There are some popular version of this (try searching under
+'accrete' or starform'), but the do not approach Fogg's program.
+     Yes, I know the Dole formation model is not physically valid, but
+it does generate interesting, realistic-*looking* systems.
+Some of my specific questions:
+
+   1) Does anyone know where I could get a copy of the original
+      paper by Dole? Not the article in Icarus, but RAND corp. paper
+      I have seen referenced but been completely unable to find.
+      The versions I've found of Accrete are woefully undocumented,
+      and therefore hard to modify.
+
+   2) Fogg used 7 types of atmospheres, but even in Fogg's papers
+      these are poorly described (What % of each element? Mentions
+      that ammonia and sulfur dioxide can form liquids, but when /
+      what conditions?). Is there a better describtion anywhere?
+
+   3) Suggestions on how to modify the Accrete subroutine to simulate
+      formation of regular satellite systems in planetary subnebula.
+      At least the central dust density and the central luminosity
+      need to be defined.
+
+   4) Suggestions on a simple terrestrial climate model (better than
+      Hart's, which Fogg originally used)? I'm leaning towards a
+      model of Kasting, which included CO2 clouds.
+
+     Any comments or suggestions will be appreciated, and if someone
+thinks this appropriate to post to sci.space.science or sci.space.tech,
+please feel free. I've been unable to post to this two (moderated)
+groups for several months, (I believe due to my provider; I've gotten no
+notification from the moderator, so my posts were not rejected due to
+content, and my problem appears unrelated to the recent posting
+problem). Thank you. 
+                                                  -Brian Davis

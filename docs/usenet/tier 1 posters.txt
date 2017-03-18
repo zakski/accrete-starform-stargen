@@ -37,7 +37,7 @@ author of an accrete version (ported to C++ from code written by Wales Larrison)
 Erik Max Francis / Erik Max Francist?
 newsgroup: rec.arts.sf.science
 First Archived Msg: Sunday, 9 May 1993 20:23:42 UTC+1
-Last Archived Msg: Wednesday, 12 March 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 4 November 1998 08:00:00 UTC
 
 background:
 Responded to Arild Toerum
@@ -118,3 +118,14 @@ Last Archived Msg: Monday, 14 August 1995 08:00:00 UTC+1
 background:
 looking for accrete /usml
 author of geocities site with a cache of usml/acrete files
+
+Brian Davis
+newsgroup: rec.arts.sf.science
+First Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
+Last Archived Msg: Thursday, 5 November 1998 08:00:00 UTC
+
+background:
+ask if star wars could happen
+worked on mac port
+planned on updates/expansions
+was trying to recreate silicon creation
