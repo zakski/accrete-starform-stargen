@@ -22,7 +22,7 @@ First Archived Msg: Thursday, 21 November 1991 16:43:49 UTC
 Last Archived Msg: Sunday, 12 March 1995 00:23:17 UTC
 
 background:
-writer of the freely available starform/accrete source code
+writer of the freely available starform/accrete source code (pascal/c/c++)
 may have made pascal version and c version available on ftp briefly in '95
 has made versions up to at least 3.6
 
