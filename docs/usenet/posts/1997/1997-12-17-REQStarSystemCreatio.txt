@@ -1,0 +1,104 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/X7ryg6-Uklc
+TITLE: REQ: Star System Creation 
+
+----------------------------------------------------------------------------
+
+Wednesday, 17 December 1997 08:00:00 UTC - me*salzburg.co.at*me too*:
+Hi there !
+Sorry for that X-post, but the USENET is not very convinient for
+people looking for a starting point.
+
+I'm looking for a somewhat scientific exact system for creating star
+systems. Now, before anyone's starting to jump down my throat, I mean
+_somewhat_ scientific, please no flames on this point.
+I need this system for a space travelling GURPS FRPG universe and all
+I found was the not very satisfying traveller II-system.
+(The system I'm looking for is in no way bound to the FRPG-scene or
+GURPS-ruleset)
+
+Complex or exhausting computations should be of no trouble since I'm
+planning to write a small program for this task anyway.
+Any pointers would really be appreciated.
+
+Please reply via e-mail.
+
+greetings,
+
+
+peter riegersperger       <ri...@salzburg.co.at <>>
+-----------------------------------------------
+http://www.cosy.sbg.ac.at/~prieger <http://www.cosy.sbg.ac.at/~prieger>
+
+"One thing we learn from history is that we
+don't learn from history."
+                                       unknown
+----------------------------------------------------------------------------
+
+Wednesday, 17 December 1997 08:00:00 UTC - Nyrath the nearly wise:
+Thus spoke Rick <rick@*remove me*salzburg.co.at <http://salzburg.co.at>*me too*>:
+
+> I'm looking for a somewhat scientific exact system for creating star
+> systems. Now, before anyone's starting to jump down my throat, I mean
+> _somewhat_ scientific, please no flames on this point.
+> I need this system for a space travelling GURPS FRPG universe and all
+> I found was the not very satisfying traveller II-system.
+
+        Go to http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html>
+        click on the "freebies" section, and do a "find"
+        on the page for "accrete".  There is c source
+        code and an IBM executable, and a link to the
+        Accrete homepage.  This will make nice solar systems
+        for you.
+
+        Also go to the "misc links" section and check the
+        "worldbuilding" links.  Some are links to RPG pages.
+
+-- 
+      * A B S I T * I N V I D I A * V E R B O ** I D E M * S O N A N S *      
++----------------------------------------------------------------------------+
+| WINCHELL CHUNG                   http://www.clark.net/pub/nyrath/home.html <http://www.clark.net/pub/nyrath/home.html> |
+| Nyrath the nearly wise                                    nyr...@clark.net <> |
++---_---+---------------------[ SURREAL SAGE SEZ: ]--------------------------+
+|  /_\  | Stupidity is an equal-opportunity employer                         |
+| <(*)> |                                                                    |
+|/_/|\_\|                                                                    |
+| //|\\ |                                                                    |
++///|\\\+--------------------------------------------------------------------+
+----------------------------------------------------------------------------
+
+Wednesday, 17 December 1997 08:00:00 UTC - Ian Burrell:
+In article <677e1c$8...@clarknet.clark.net <>>,
+Nyrath the nearly wise  <nyr...@clark.net <>> wrote:
+>Thus spoke Rick <rick@*remove me*salzburg.co.at <http://salzburg.co.at>*me too*>:
+>
+>> I'm looking for a somewhat scientific exact system for creating star
+>> systems. Now, before anyone's starting to jump down my throat, I mean
+>> _somewhat_ scientific, please no flames on this point.
+>> I need this system for a space travelling GURPS FRPG universe and all
+>> I found was the not very satisfying traveller II-system.
+>
+>
+>        Go to http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html>
+>        click on the "freebies" section, and do a "find"
+>        on the page for "accrete".  There is c source
+>        code and an IBM executable, and a link to the
+>        Accrete homepage.  This will make nice solar systems
+>        for you.
+>
+>        Also go to the "misc links" section and check the
+>        "worldbuilding" links.  Some are links to RPG pages.
+>
+Or he could just go directly to
+<URL:http://www-leland.stanford.edu/~iburrell/create/accrete.html <http://www-leland.stanford.edu/~iburrell/create/accrete.html>>.
+However, accrete is a rather old simulation and current science has
+moved well beyond it (into computionally difficult domains).  It is
+still good for producing Solar System-like systems.
+
+
+ - Ian
+
+-- 
+  Ian Burrell  ibur...@leland.stanford.edu <>
+  http://www-leland.stanford.edu/~iburrell/ <http://www-leland.stanford.edu/~iburrell/>
+Baruch's Observation: 
+    If all you have is a hammer, everything looks like a nail.

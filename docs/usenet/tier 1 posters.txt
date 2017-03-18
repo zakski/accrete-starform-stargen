@@ -67,7 +67,7 @@ provided copy of Matr Burdick's code in C Form that posted on rec.games.frp.misc
 Ian Matthew Burrell
 newsgroup: rec.games.design
 First Archived Msg: Wednesday, 28 July 1993 02:11:32 UTC+1
-Last Archived Msg: Friday, 31 January 1997 08:00:00 UTC
+Last Archived Msg: Wednesday, 17 December 1997 08:00:00 UTC
 
 background:
 Was looking for the source code for Accrete

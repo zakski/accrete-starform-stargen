@@ -1,0 +1,171 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp.misc/Da4rr7ZRQYc
+TITLE: Wanted: solar system generator 
+
+----------------------------------------------------------------------------
+
+Thursday, 30 October 1997 08:00:00 UTC - Antti Arola:
+Anyone know a ftp/www site where I could get a (preferably 2300AD-based)
+computer program that would generate solar systems for me? I could make
+one myself but don't like wasting time on another sideproject...
+Preferably either PC executable or source code in TP/C/C++.
+
+Thanks in advance,
+
+        - AeA / An-Tiar e dari (TIOMTKKK)   
+          antti...@lut.fi <>
+----------------------------------------------------------------------------
+
+Friday, 31 October 1997 08:00:00 UTC - Doug Berry:
+On 30 Oct 1997 16:29:20 GMT, aar...@hepo.cc.lut.fi <> (Antti Arola) wrote:
+
+>Anyone know a ftp/www site where I could get a (preferably 2300AD-based)
+>computer program that would generate solar systems for me? I could make
+>one myself but don't like wasting time on another sideproject...
+>
+>Preferably either PC executable or source code in TP/C/C++.
+Go out to my page, go to the Traveller page, and you find two versions of Accrete as well as a link to the Accret home page.  URL below.
+--
+++++++++++++++++++++++++++++++++++++++++++++
++ Doug Berry      dbe...@nospam.hooked.net <> +
++ http://www.hooked.net/~dberry/index.html <http://www.hooked.net/~dberry/index.html> +
++    (remove "nospam" to reply by mail)    +
+++++++++++++++++++++++++++++++++++++++++++++
++    Traveller Evangelist, Writer, and     +
++    enthusastic flame war participant.    +
+++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------
+
+Saturday, 1 November 1997 08:00:00 UTC - Antti Arola:
+In article <345caf34...@news.concentric.net <>>, Sean Malloy wrote:
+>Or, for a more general set of programs, go to
+>http://www.logicrucible.com <http://www.logicrucible.com> and look at 'Astrologicus' and
+>'Terralogicus'. The first is a galaxy simulator; it will generate
+>galaxies down to individual planetary systems, including details of
+>the composition of all the planets and their moons. The second is a
+Is that scale anywhere even close to sensible anymore? Let's assume a 10k
+file for one solar system and 200E+09 solar systems in a galaxy - that
+would make a 2000 terabyte file, which I would have some serious trouble
+fitting to my hard drive with. ;-)
+
+Even the result of _my_ system-generation project (estimated 15 megs)
+looks scary enough, especially when it's supposed to be a supplement for
+a 200kB RPG... <grin>
+
+>planet simulator; either on its own or launched from Astrologicus, it
+>will do complete terrain/biome/population generation for a world.
+
+Sounds like a good complement for Accret (which is just what I was looking
+for) and an interesting tool to play with. Probably will eliminate the
+need of finding out the meaning of those UWP (or something like that)
+strings.
+
+>The Logicrucible software can be downloaded as a free demo -- you
+>can't save anything, but everything else works, so you can see what it
+>does. I strongly encourage you to take a look.
+
+I'll do that, thanks for the info. 
+
+        - AeA / An-Tiar e dari (TIOMTKKK)   
+          antti...@lut.fi <>
+----------------------------------------------------------------------------
+
+Sunday, 2 November 1997 08:00:00 UTC - Antti Arola:
+In article <345c6d11...@news.concentric.net <>>, Sean Malloy wrote:
+>>>Or, for a more general set of programs, go to
+>>>http://www.logicrucible.com <http://www.logicrucible.com> and look at 'Astrologicus' and
+>>>'Terralogicus'. The first is a galaxy simulator; it will generate
+>>
+>>Is that scale anywhere even close to sensible anymore? Let's assume a 10k
+>
+>generates the planetary system. Once the cluster/system has been
+>generated, you can decide whether to save the information -- so your
+>galaxy only has the storage requirements for the part of the galaxy
+>you 'explored'.
+<Whew> What a relief. :-) But, because I didn't find any demo version
+download links at the page, I think I'll just do away with Accrete,
+Gliese3 and some other stuff I grabbed from a starmapping site found by
+following the links at Logicrucible.
+
+        - AeA / An-Tiar e dari (TIOMTKKK)   
+          antti...@lut.fi <>
+----------------------------------------------------------------------------
+
+Sunday, 2 November 1997 08:00:00 UTC - Marcus L. Rowland:
+>On 30 Oct 1997 16:29:20 GMT, aar...@hepo.cc.lut.fi <> (Antti Arola) wrote:
+>
+>>Anyone know a ftp/www site where I could get a (preferably 2300AD-based)
+>>computer program that would generate solar systems for me? I could make
+>>one myself but don't like wasting time on another sideproject...
+>>
+>>Preferably either PC executable or source code in TP/C/C++.
+Sorry, for some reason I think I missed this post before, and I don't
+think I've previously replied.
+
+There's one on my web page; World Generator, a program for PC which was
+shareware and is now freeware, with Turbo Pascal 4 source code. Not very
+realistic, but for various reasons I never got round to improving it. It
+is a very simple-minded program but does have the advantage of being
+VERY fast on modern machines. It generates systems in a 10x10x10 LY
+space, draws planet maps, calculates travel distances etc., so could
+work quite well for 2300 AD.
+
+Unfortunately it runs in the old CGA 4-colour (320x200) mode and various
+aspects of the way it works make it more or less impossible to upgrade
+it to a better palette or resolution. It'd probably be easier to write a
+new program from scratch.
+
+If what you are after is raw system data, Accrete works better.
+-- 
+Marcus L. Rowland
+http://www.ffutures.demon.co.uk/ <http://www.ffutures.demon.co.uk/>
+"We are all victims of this slime. They... ...fill our mailboxes with gibberish 
+that would get them indicted if people had time to press charges"
+[Hunter S. Thompson predicts junk e-mail, 1985 (from Generation of Swine)]
+----------------------------------------------------------------------------
+
+Monday, 3 November 1997 08:00:00 UTC - Juergen Hubert:
+Antti Arola wrote:
+> 
+> Anyone know a ftp/www site where I could get a (preferably 2300AD-based)
+> computer program that would generate solar systems for me? I could make
+> one myself but don't like wasting time on another sideproject...
+> 
+> Preferably either PC executable or source code in TP/C/C++.
+> 
+> Thanks in advance,
+> 
+>         - AeA / An-Tiar e dari (TIOMTKKK)
+>           antti...@lut.fi <>
+There's one for GURPS at http://www.sjgames.com/gurps/utilities/ <http://www.sjgames.com/gurps/utilities/>
+but you should have little trouble in using it for 2300AD.
+
+--
+Juergen Hubert
+HUB...@gawein.physik.uni-erlangen.de <>
+
+"Sometimes I do stupid stuff, and I don't even know why...
+...as if my body were controlled by some demented, sadistic 
+puppet-master..."
+                                        -- Bernard Bernoulli
+"Well, we all feel that way sometimes."
+                                        -- Weird Ed Edison
+               in: "Day of the Tentacle"
+----------------------------------------------------------------------------
+
+Monday, 3 November 1997 08:00:00 UTC - Dr. Rich Staats:
+Antti Arola wrote:
+
+
+> In article <345caf34...@news.concentric.net <>>, Sean Malloy wrote:
+>
+> >The Logicrucible software can be downloaded as a free demo -- you
+> >can't save anything, but everything else works, so you can see what it
+> >does. I strongly encourage you to take a look.
+>
+> I'll do that, thanks for the info.
+>
+Antti,
+
+I hope you have better luck than I did in finding the downloadedable demo.
+
+Rich

@@ -1,0 +1,70 @@
+URL: https://groups.google.com/forum/#!topic/rec.games.frp.misc/Yl06jyxHMx4
+TITLE: Traveller's UWP values 
+
+----------------------------------------------------------------------------
+
+Friday, 7 November 1997 08:00:00 UTC - Roger Burton West:
+In article <slrn666aeh...@hepo.cc.lut.fi <>>
+           aar...@hepo.cc.lut.fi <> "Antti Arola" wrote:
+>I've begun to use Accrete2 and it gives each planet an UWP. From the docs
+>I got the impression that UWP is a Traveller-related thingy containing the
+>planet's atmosphere, hydrosphere and some third value (only these first
+>three are given). So, how does one decode this mysterious UWP?
+
+1 = size (x1000 miles -> diameter)
+2 = atmosphere (um, 7 is standard breathable I think)
+3 = hydro (x10 is % water coverage)
+
+Roger
+
+--
+ /~~\_/~\ BEWARE ,,,  |~) _  _  _  _  |~)    __|_ _  _  \    / _  __|_
+|  #=#======of==#   | |~\(_)(_|(/_|   |_)|_||  | (_)| |  \/\/ (/__\ |
+ \__/~\_/ FILKER ```         _|          ro...@firedrake.demon.co.uk <>
+                         McQ!       http://www.firedrake.demon.co.uk/ <http://www.firedrake.demon.co.uk/>
+----------------------------------------------------------------------------
+
+Friday, 7 November 1997 08:00:00 UTC - Antti Arola:
+I've begun to use Accrete2 and it gives each planet an UWP. From the docs
+I got the impression that UWP is a Traveller-related thingy containing the
+planet's atmosphere, hydrosphere and some third value (only these first
+three are given). So, how does one decode this mysterious UWP?
+        - AeA / An-Tiar e dari (TIOMTKKK)   
+          antti...@lut.fi <>
+----------------------------------------------------------------------------
+
+Saturday, 8 November 1997 08:00:00 UTC - Harold D. Hale:
+Roger Burton West wrote:
+> 
+> In article <slrn666aeh...@hepo.cc.lut.fi <>>
+>            aar...@hepo.cc.lut.fi <> "Antti Arola" wrote:
+> 
+> >I've begun to use Accrete2 and it gives each planet an UWP. From the docs
+> >I got the impression that UWP is a Traveller-related thingy containing the
+> >planet's atmosphere, hydrosphere and some third value (only these first
+> >three are given). So, how does one decode this mysterious UWP?
+> 
+> 1 = size (x1000 miles -> diameter)
+> 2 = atmosphere (um, 7 is standard breathable I think)
+> 3 = hydro (x10 is % water coverage)
+   Well actually a '6' atmosphere is standard (aka Earth), a '7' would
+be standard, tainted (the taint being a harmful component that could be
+anything from industrial pollutants to sulfur compounds from volcanoes
+to suspended particulates to "use your imagination").  Tainted
+atmospheres can be breathable without filtration for a few minutes or
+even many years depending upon the world (if you don't mind dying from
+lung damage or cancer one day).   Native lifeforms of course would be
+unaffected by atmospheric taint, and humans can be adapted to breathing
+it with no ill effects through genetic engineering (man-made or the
+"natural" way through evolution or selective breeding) or through the
+use of cybernetics.
+
+   UWPs really haven't changed significantly in Traveller since the
+early 80s, though how they are generated is badly in need of an overhaul
+in light of astronomical dicoveries made since that time and some design
+flaws.  The third edition of the rules (TNE) made some adjustments in
+the creation process (not enough IMHO), but UWPs are still UWPs.
+
+Regards,
+
+Harold
