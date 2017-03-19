@@ -161,6 +161,33 @@ First: Saturday, 1 February 1997 08:00:00 UTC
 Last: Wednesday, 11 March 1998 08:00:00 UTC
 
 Thread List:
+1997-01-25-Fictionalplanetweath.txt
+1997-02-04-StarWarsCoulditHappe.txt
+1998-03-10-Titusbodecorrection.txt
 
 of Interest:
 has own accrete variant for 3d visualization
+
+Leonard Erickson
+newsgroups: rec.arts.sf.science
+First: Friday, 9 February 1996 08:00:00 UTC
+Last: Tuesday, 18 February 1997 08:00:00 UTC
+
+Thread List:
+1996-02-02-Torchships.txt
+1997-01-25-Fictionalplanetweath.txt
+1997-02-04-StarWarsCoulditHappe.txt
+
+of Interest:
+plans to port accrete to a "more friendly" language
+
+Das Miller
+newsgroups: sci.astro
+First: Monday, 15 April 1996 08:00:00 UTC+1
+Last: Wednesday, 17 April 1996 08:00:00 UTC+1
+
+Thread List:
+1996-04-15-TheoldAccreteProgram.txt
+
+of Interest:
+ported accrete to windows

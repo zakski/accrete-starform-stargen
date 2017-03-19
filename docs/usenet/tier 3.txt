@@ -1,0 +1,190 @@
+Ian Brown
+newsgroups: rec.games.programmer
+First Referenced: Wednesday, 8 November 1989 17:44:31 UTC
+First: Friday, 15 November 1991 18:55:03 UTC
+
+Thread List:
+1989-11-08-LookingforMattBurdic.txt
+1991-11-08-Stellarformationmode.txt
+
+of Interest:
+Had a copy of the starform program
+Wanted to get in touch with Burdick
+
+Nicolai Shapero
+newsgroups: rec.games.frp
+First: Thursday, 7 February 1991 14:26:45 UTC
+
+Thread List:
+1991-02-07-Planetsimulation.txt
+
+of Interest:
+wrote Other Suns RPG
+Had a copy of the accrete/starform program (got from Sean Malloy)
+
+Walter Milliken
+newsgroups: rec.games.frp
+First: Wednesday, 20 February 1991 23:14:57 UTC
+
+Thread List:
+1991-02-07-Planetsimulation.txt
+
+of Interest:
+author of usernet GURPS digest
+in usml
+had copy of accrete?
+
+Bryan Feir
+newsgroups: rec.games.frp.misc, comp.sources.wanted
+First: Wednesday, 9 June 1993 22:36:26 UTC+1
+Last: Thursday, 8 July 1993 20:15:57 UTC+1
+
+Thread List:
+1993-06-09-RequestAccrete.txt
+1993-07-08-REQUESTAccrete.txt
+
+of Interest:
+Found a version of accrete on punisher.caltech
+Had same version that Steve Gilham had?
+Was Looking for most recent version / moon handling version
+
+Brent Josep Lehman
+newsgroups: comp.lang.pascal, alt.sci.planetary
+First: Wednesday, 2 February 1994 02:36:39 UTC
+Last: Thursday, 17 March 1994 23:18:16 UTC
+
+Thread List:
+1994-02-02-ACCRETE.txt
+1994-03-17-Seekinginfoonprotost.txt
+
+of Interest:
+interested in accrete written in pascal
+acquired a copy of accrete
+experimenting with variables
+
+Soenke Behrens
+newsgroups: rec.arts.sf.science
+First: Sunday, 19 February 1995 23:51:31 UTC
+
+Thread List:
+1995-02-19-DolesAccreteprogram.txt
+
+of Interest:
+interested in accrete
+has a copy
+
+Alfred A. Aburto
+newsgroups: sci.astro
+First: Thursday, 2 March 1995 03:59:23 UTC
+
+Thread List:
+1995-03-02-DolesAccreteprogram.txt
+
+of Interest:
+has a copy (posted by Philip Hodder?)
+
+Peter Yard
+newsgroups: sci.astro
+First: Saturday, 11 May 1996 08:00:00 UTC+1
+Last: Thursday, 23 May 1996 08:00:00 UTC+1
+
+Thread List:
+1996-05-06-planetsnearby.txt
+
+of Interest:
+has copy of accrete
+
+Antti Arola
+newsgroups: rec.games.frp.misc
+First: Thursday, 30 October 1997 08:00:00 UTC
+Last: Friday, 7 November 1997 08:00:00 UTC
+
+Thread List:
+1997-10-30-Wantedsolarsystemgen.txt
+1997-11-07-TravellersUWPvalues.txt
+
+of Interest:
+interested in accrete
+has a version with traveller UWP values
+
+Alan D Kohler
+newsgroups: rec.games.frp.misc
+First: Monday, 23 February 1998 08:00:00 UTC
+Last: Friday, 20 March 1998 08:00:00 UTC
+
+Thread List:
+1998-02-16-GURPSTravellerHowdoe.txt
+1998-03-10-Titusbodecorrection.txt
+1998-03-19-CouldThisBeAPlanet.txt
+
+of Interest:
+titus-bode query
+has a copy of accrete
+
+Jonathan Silverlight
+newsgroups: sci.astro
+First: Thursday, 1 June 1995 08:00:00 UTC+1
+Last: Friday, 20 March 1998 08:00:00 UTC
+
+Thread List:
+1995-05-31-Iwanttobuildsolarsys.txt
+1998-03-19-CouldThisBeAPlanet.txt
+
+of Interest:
+had Steve Gilham's copy
+responded to mark foster
+
+Tom Ford
+newsgroups: rec.arts.sf.science
+First: Tuesday, 3 November 1998 08:00:00 UTC
+Last: Tuesday, 3 November 1998 08:00:00 UTC
+
+
+Thread List:
+1998-11-03-Scientificmethodsfor.txt
+
+of Interest:
+asking about accretion algorithms
+had copy of accrete
+
+Mr. Tines
+newsgroups: rec.games.frp.misc
+First: Thursday, 27 April 1995 08:00:00 UTC+1
+
+Thread List:
+1995-04-26-SolarSystemGenerator.txt
+
+of Interest:
+has a copy of  Acrete
+
+Joel Hunter Crook
+newsgroups: rec.arts.sf.science, alt.sci.planetary
+First: Saturday, 10 February 1996 08:00:00 UTC
+Last: Friday, 1 March 1996 08:00:00 UTC
+
+Thread List:
+1996-02-02-Torchships.txt
+1996-03-01-Lookingforsoftwarede.txt
+
+of Interest:
+has copy of accrete
+
+Edward V. Wright
+newsgroups: rec.arts.sf.science
+First: Sunday, 11 February 1996 08:00:00 UTC
+Last: Tuesday, 20 February 1996 08:00:00 UTC
+
+Thread List:
+1996-02-02-Torchships.txt
+
+of Interest:
+has copy of accrete
+posted code
+
+Stephen D. Schaper
+newsgroups: alt.sci.planetary
+First: Friday, 1 March 1996 08:00:00 UTC
+Last: Wednesday, 29 May 1996 08:00:00 UTC+1
+
+of Interest:
+has copy of accrete

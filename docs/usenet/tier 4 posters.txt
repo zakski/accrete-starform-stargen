@@ -1,1235 +1,421 @@
-Darryl Okahata
-newsgroup: rec.games.programmer
-First Archived Msg: Wednesday, 8 November 1989 17:44:31 UTC
+Brian & Lori Henderson
+newsgroups: rec.games.frp.misc
+First: Thursday, 5 October 1995 08:00:00 UTC+1
 
-background:
-Helped point Ian Brown in the direction of Matt Burdick, who wrote starform
+of Interest:
+talking about stellar system generation
+mention Other Suns as alternative to accrete (pretty sure Shapero ussed accrete in some cpacity though)
+
+
+Douglas Jackson
+newsgroups: rec.games.frp.misc
+First: Wednesday, 18 October 1995 08:00:00 UTC+1
+Last: Thursday, 8 June 1995 08:00:00 UTC+1
+
+of Interest:
+talking about stellar system generation
+mentions SSG (Solar System Generator) based on GURPS
+
+Marcus L. Rowland
+newsgroups: rec.games.frp.misc
+First: Sunday, 2 November 1997 08:00:00 UTC
+
+of Interest:
+has knowledge of accrete
+has world generator
+
+cincsac@juno.com / cin...@juno.com:
+newsgroups: rec.arts.sf.science
+First: Saturday, 11 April 1998 08:00:00 UTC+1
+Last: Tuesday, 21 April 1998 08:00:00 UTC+1
+
+Thread List:
+1998-04-11-Worldbuildingquestio.txt
+1998-04-21-SiliconCreation.txt
+
+of Interest:
+asking about silicon creation
+
+Michael Polis
+newsgroups: rec.games.frp.misc
+First: Sunday, 26 July 1992 18:26:57 UTC+1
+Last: Tuesday, 15 September 1992 17:02:56 UTC+1
+
+of Interest:
+Aware of / Interested in usml ftp site
+
+Kieran Mullen
+newsgroups: rec.games.frp.misc
+First: Monday, 27 July 1992 16:29:54 UTC+1
+
+of Interest:
+Aware of / Interested in usml ftp site
+
+Eric Chris Garrison
+newsgroups: rec.games.frp.misc
+First: Monday, 14 September 1992 20:55:35 UTC+1
+
+of Interest:
+Aware of / Interested in usml ftp site
+
+Mark Gellis
+newsgroups: sci.astro
+First: Tuesday, 23 March 1993 13:45:54 UTC
+
+of Interest:
+looking for accrete
+
+Stuart C. Squibb
+newsgroups: rec.arts.sf.science
+First: Saturday, 15 May 1993 10:27:05 UTC+1
+
+of Interest:
+interested in planet generation simulators
+
+David M. Swain
+newsgroups: sci.astro
+First: Tuesday, 17 August 1993 10:00:00 UTC+1
+
+of Interest:
+Was looking for the source code for Accrete
+
+Geoff Thomas
+newsgroups: rec.games.programmer
+First: Tuesday, 21 September 1993 01:25:03 UTC+1
+Last: Saturday, 25 September 1993 07:13:35 UTC+1
+
+of Interest:
+interested in usml ftp site data.
+
+Greg Oberfield
+newsgroups: rec.games.programmer
+First: Tuesday, 21 September 1993 01:25:03 UTC+1
+
+of Interest:
+interested in usml ftp site data.
+interested in restarting usml mailing list
+
+Jeff Schoner
+newsgroups: comp.lang.pascal
+First: Friday, 4 February 1994 23:14:00 UTC
+
+of Interest:
+interested in accrete written in pascal
+
+Daniel Myers
+newsgroups: rec.games.design
+First: Friday, 25 February 1994 16:31:34 UTC
+
+of Interest:
+interested in accrete
+
+Allen Waddell
+newsgroups: rec.arts.sf.science
+First: Saturday, 4 June 1994 16:03:02 UTC+1
+Last: Saturday, 4 February 1995 15:11:55 UTC
+
+of Interest:
+interested in accrete (looking from June '94 to Feb '95 at least)
+
+Robert W. Rapplean
+newsgroups: rec.arts.sf.science
+First: Saturday, 1 October 1994 13:26:04 UTC+1
+Last: Sunday, 22 January 1995 19:44:50 UTC
+
+of Interest:
+interested in high gravity worlds
+interested in accrete
+
+Callum Robert Finlayson
+newsgroups: sci.astro
+First: Tuesday, 6 December 1994 17:37:09 UTC
+
+of Interest:
+interested in accrete
+
+Jim Rittenhouse
+newsgroups: sci.astro
+First: Wednesday, 7 June 1995 08:00:00 UTC+1
+
+of Interest:
+interested in accrete
 
 Peter Cooper
-newsgroup: rec.games.programmer
-First Archived Msg: Friday, 8 November 1991 03:40:03 UTC
+newsgroups: rec.games.programmer
+First: Friday, 8 November 1991 03:40:03 UTC
 
-background:
+of Interest:
 was looking for a stellar formation model for use in a game
 
 Guy Garnett
-newsgroup: rec.games.programmer
-First Archived Msg: Tuesday, 12 November 1991 03:17:58 UTC
+newsgroups: rec.games.programmer
+First: Tuesday, 12 November 1991 03:17:58 UTC
 
-background:
+of Interest:
 did a good bit of his own research for a star-system generator for a science-fiction game.
 
 Kelly Alexander
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 11 March 1992 21:37:42 UTC
+newsgroups: sci.astro
+First: Wednesday, 11 March 1992 21:37:42 UTC
 
-background:
+of Interest:
 was looking for an accretion program variation that will take some initial conditions, and then generate a solar system from them
 
 Bradley B Kohn
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 23 July 1992 20:21:11 UTC+1
+newsgroups: rec.games.frp.misc
+First: Thursday, 23 July 1992 20:21:11 UTC+1
 
-background:
+of Interest:
 was looking a computer program to create detailed maps for frps.
 
-Andrew G Hummell
-newsgroup: rec.games.frp.misc
-First Archived Msg: Friday, 24 July 1992 13:41:39 UTC+1
-
-background:
-Responded to Bradley B Kohn
-
-Alec Habig
-newsgroup: rec.games.frp.misc
-First Archived Msg: Friday, 24 July 1992 17:43:38 UTC+1
-
-background:
-Responded to Bradley B Kohn
-
-Ed King
-newsgroup: rec.games.frp.misc
-First Archived Msg: Friday, 24 July 1992 21:21:07 UTC+1
-
-background:
-Responded to Bradley B Kohn
-
-William A. Calderwood
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 28 July 1992 19:53:59 UTC+1
-
-background:
-Interested in Andrew G Hummell's response to Bradley B Kohn
-
-Arild Toerum
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 8 May 1993 16:22:10 UTC+1
-
-background:
-looking for a list a number of relatively proximate stars which may possibly have habitable planets
-
-Matt G Gabin
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 8 May 1993 19:03:55 UTC+1
-
-background:
-Responded to Arild Toerum
-
-Chris Johnson
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 10 May 1993 10:02:02 UTC+1
-
-background:
-Responded to Arild Toerum
-
-David K Fraser
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 10 May 1993 12:02:06 UTC+1
-
-background:
-Responded to Chris Johnson & Arild Toerum
-
-Del Cotter
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 10 May 1993 13:41:12 UTC+1
-Last Archived Msg: Saturday, 4 April 1998 09:00:00 UTC+1
-
-background:
-Responded to Arild Toerum
-Responded to John Redford
-Responded to Jim Davies
-
-Joseph Hall
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 12 May 1993 04:51:38 UTC+1
-
-background:
-Responded to Chris Johnson & Arild Toerum
-
-Dave Garnett
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 12 May 1993 11:43:22 UTC+1
-
-background:
-Responded to Joseph Hall
-
-Robert Hearn
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 12 May 1993 19:49:53 UTC+1
-
-background:
-Responded to Arild Toerum
-
-John Redford
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 13 May 1993 22:16:04 UTC+1
-
-background:
-Responded to Del Cotter
-
-Bruce Scott  
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 15 May 1993 15:04:52 UTC+1
-Last Archived Msg: Tuesday, 18 May 1993 13:49:45 UTC+1
-
-background:
-Responded to Arild Toerum
-Responded to Paul F. Dietz
-
-James Davis Nicoll
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 15 May 1993 15:56:52 UTC+1
-Last Archived Msg: Friday, 27 February 1998 08:00:00 UTC
-
-background:
-Responded to Arild Toerum
-Responded to Paul F. Dietz
-Responded to Mike C
-Responded to Lyan
-responded to Brian Davis
-
-Paul F. Dietz
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 16 May 1993 00:15:03 UTC+1
-Last Archived Msg: Tuesday, 18 May 1993 01:49:26 UTC+1
-
-background:
-Responded to James Davis Nicoll
-
-Ross Smith
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 16 May 1993 01:40:59 UTC+1
-Last Archived Msg: Saturday, 28 February 1998 08:00:00 UTC
-
-background:
-Responded to Chris Johnson
-Gurps Query
-
-S. Arrowsmith
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 18 May 1993 16:08:36 UTC+1
-
-background:
-Responded to James Davis Nicoll
-
-Travis Corcoran
-newsgroup: rec.arts.sf.science
-First Archived Msg: Friday, 14 May 1993 19:18:56 UTC+1
-Last Archived Msg: Monday, 17 May 1993 11:45:26 UTC+1
-
-background:
-Responded to Arild Toerum
-
-Neelakantan Krishnaswami
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 1 October 1994 16:50:36 UTC+1
-
-background:
-Responded to Robert W. Rapplean
-
 Anders Sandberg
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 1 October 1994 17:31:18 UTC+1
-Last Archived Msg: Sunday, 16 February 1997 08:00:00 UTC
+newsgroups: rec.arts.sf.science
+First: Saturday, 1 October 1994 17:31:18 UTC+1
+Last: Sunday, 16 February 1997 08:00:00 UTC
 
-background:
+of Interest:
 Responded to Robert W. Rapplean
 Has knowledge of Accrete.
 Responded to Richard Baker
 
-E. Hildaur Neilsen, Jr.
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 1 October 1994 19:13:20 UTC+1
-
-background:
-Responded to Anders Sandberg
-
-Richard Baker
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 3 October 1994 17:14:45 UTC+1
-
-background:
-Responded to Anders Sandberg
-
-Craig William Jackson
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 5 October 1994 02:49:54 UTC+1
-
-background:
-Responded to Robert W. Rapplean
-
-Tim Poston
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 6 October 1994 12:00:10 UTC+1
-
-background:
-Responded to Robert W. Rapplean
-
 Michael H. Start
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 26 April 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Wednesday, 26 April 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 interested in planetary generators
 
 Ken Walton
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 27 April 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Thursday, 27 April 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 Responded to Michael H. Start
 Suggested Stargen for GURPS Space
 
-Andrew Philip Fabbro
-newsgroup: rec.games.frp.misc
-First Archived Msg: Friday, 28 April 1995 08:00:00 UTC+1
-
-background:
-Responded to Michael H. Start
-
-Justin Mohareb
-newsgroup: rec.games.frp.misc
-First Archived Msg: FFriday, 28 April 1995 08:00:00 UTC+1
-
-background:
-Responded to Michael H. Start
-
-Skeksis
-newsgroup: rec.games.frp.misc
-First Archived Msg: Friday, 5 May 1995 08:00:00 UTC+1
-
-background:
-Responded to Michael H. Start
-
 Dave Hardenbrook
-newsgroup: sci.astro
-First Archived Msg: Friday, 5 May 1995 08:00:00 UTC+1
+newsgroups: sci.astro
+First: Friday, 5 May 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 interested in accrete (the Carl Sagan Version)
 
 Seppo Kalevi Halonen
-newsgroup: sci.astro
-First Archived Msg: Tuesday, 6 June 1995 08:00:00 UTC+1
-Last Archived Msg: Saturday, 10 June 1995 08:00:00 UTC+1
+newsgroups: sci.astro
+First: Tuesday, 6 June 1995 08:00:00 UTC+1
+Last: Saturday, 10 June 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 interested in solar system generator algorithm
 
-John Robert Williams
-newsgroup: sci.astro
-First Archived Msg: Tuesday, 6 June 1995 08:00:00 UTC+1
-
-background:
-Responded to Seppo Kalevi Halonen
-
-Dave Menconi
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 7 June 1995 08:00:00 UTC+1
-
-background:
-Responded to Seppo Kalevi Halonen
-
 Thomas Schruefer
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 7 June 1995 08:00:00 UTC+1
+newsgroups: sci.astro
+First: Wednesday, 7 June 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 Responded to Seppo Kalevi Halonen
 suggested a website
 
-dtulloh
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 7 June 1995 08:00:00 UTC+1
-
-background:
-Responded to Seppo Kalevi Halonen
-
-Robert Paige Rendell
-newsgroup: sci.astro
-First Archived Msg: Thursday, 8 June 1995 08:00:00 UTC+1
-
-background:
-Responded to Seppo Kalevi Halonen
-
-Timothy Cain
-newsgroup: sci.astro
-First Archived Msg: Thursday, 8 June 1995 08:00:00 UTC+1
-
-background:
-Responded to Seppo Kalevi Halonen
-
-Dave
-newsgroup: sci.astro
-First Archived Msg: Monday, 12 June 1995 08:00:00 UTC+1
-
-background:
-Responded to Seppo Kalevi Halonen
-
 Tom Salyers
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 5 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Thursday, 5 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
 Luc Maillet
-newsgroup: rec.games.frp.misc
-First Archived Msg: Monday, 9 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Monday, 9 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
 J.W.Thomas
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 10 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Tuesday, 10 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
 Carl D. Cravens
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 10 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Tuesday, 10 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
 Leif Kj{\o}nn{\o}y
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 11 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Wednesday, 11 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
 Stephan Zielinski
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 11 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Wednesday, 11 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
 David C. Hall
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 11 October 1995 08:00:00 UTC+1
-Last Archived Msg: Friday, 20 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Wednesday, 11 October 1995 08:00:00 UTC+1
+Last: Friday, 20 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
 Guy Hoyle
-newsgroup: rec.games.frp.misc
-First Archived Msg: Monday, 16 October 1995 08:00:00 UTC+1
+newsgroups: rec.games.frp.misc
+First: Monday, 16 October 1995 08:00:00 UTC+1
 
-background:
+of Interest:
 talking about stellar system generation
 
-Mike C
-newsgroup: rec.arts.sf.science
-First Archived Msg: Friday, 2 February 1996 08:00:00 UTC
-
-background:
-looking for info on torchships
-
-Wayne Throop
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 3 February 1996 08:00:00 UTC
-
-background:
-Responded to Mike C
-
-Andrew C. Plotkin
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 3 February 1996 08:00:00 UTC
-
-background:
-Responded to Mike C
-
-Julian Treadwell
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 6 February 1996 08:00:00 UTC
-
-background:
-Responded to Mike C
-
-the ROYster-Meister
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 7 February 1996 08:00:00 UTC
-Last Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
-
-background:
-Responded to Mike C
-
-Cliff L. Biffle
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
-
-background:
-Responded to Mike C
-
-Jeff Suzuki
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
-Last Archived Msg: Tuesday, 20 February 1996 08:00:00 UTC
-
-background:
-Responded to Cliff L. Biffle
-Responded to the ROYster-Meister
-Responded to Edward V. Wright
-
-Bronis Vidugiris
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 8 February 1996 08:00:00 UTC
-
-background:
-Responded to Mike C
-
-Andrew Stephenson
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 13 February 1996 08:00:00 UTC
-
-background:
-responded to Erik Max Francis
-
-Barbara A Cohen
-newsgroup: sci.astro
-First Archived Msg: Monday, 6 May 1996 08:00:00 UTC+1
-
-background:
-interested in habitable planets
-
-Gordon Clarke
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 8 May 1996 08:00:00 UTC+1
-Last Archived Msg: Friday, 10 May 1996 08:00:00 UTC+1
-
-background:
-responded to Barbara A Cohen
-responded to Stephen D. Schaper
-
-Chris Carrier
-newsgroup: sci.astro
-First Archived Msg: Friday, 10 May 1996 08:00:00 UTC+1
-
-background:
-responded to Barbara A Cohen
-
-Peter Weis
-newsgroup: sci.astro
-First Archived Msg: Sunday, 12 May 1996 08:00:00 UTC+1
-
-background:
-responded to Barbara A Cohen
-
-Ray Tomes
-newsgroup: sci.astro
-First Archived Msg: Monday, 13 May 1996 08:00:00 UTC+1
-
-background:
-responded to Barbara A Cohen
-
-Mark Duffett
-newsgroup: sci.astro
-First Archived Msg: Tuesday, 14 May 1996 08:00:00 UTC+1
-
-background:
-responded to Mike Hammond
-
-Mickey Lane
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 15 May 1996 08:00:00 UTC+1
-
-background:
-responded to Barbara A Cohen
-
-Bill Owen
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 15 May 1996 08:00:00 UTC+1
-
-background:
-responded to Mickey Lane
-
-Tim Patterson
-newsgroup: sci.astro
-First Archived Msg: Thursday, 16 May 1996 08:00:00 UTC+1
-
-background:
-responded to Mickey Lane
-
-Paul Schlyter
-newsgroup: sci.astro
-First Archived Msg: Friday, 17 May 1996 08:00:00 UTC+1
-Last Archived Msg: Monday, 20 May 1996 08:00:00 UTC+1
-
-background:
-responded to Tim Patterson
-responded to Duane Sand
-
-Doug Schiffer
-newsgroup: sci.astro
-First Archived Msg: Friday, 17 May 1996 08:00:00 UTC+1
-
-background:
-responded to Mickey Lane
-
-Duane Sand
-newsgroup: sci.astro
-First Archived Msg:  Saturday, 18 May 1996 08:00:00 UTC+1
-Last Archived Msg: Sunday, 19 May 1996 08:00:00 UTC+1
-
-background:
-responded to Paul Schlyter
-
-Hairy One Kenobi
-newsgroup: sci.astro
-First Archived Msg: Sunday, 19 May 1996 08:00:00 UTC+1
-
-background:
-responded to Gordon Clarke
-
-Chris Marriott
-newsgroup: sci.astro
-First Archived Msg: Sunday, 19 May 1996 08:00:00 UTC+1
-
-background:
-responded to Hairy One Kenobi
-
-K.HAIGH-HUTCHINSON
-newsgroup: sci.astro
-First Archived Msg: Tuesday, 21 May 1996 08:00:00 UTC+1
-
-background:
-responded to Barbara A Cohen
-
-Eric Williams
-newsgroup: sci.astro
-First Archived Msg: Tuesday, 21 May 1996 08:00:00 UTC+1
-
-background:
-responded to Hairy One Kenobi
-
-Craig Berry
-newsgroup: sci.astro, rec.arts.sf.science
-First Archived Msg: Tuesday, 21 May 1996 08:00:00 UTC+1
-Last Archived Msg: Wednesday, 19 February 1997 08:00:00 UTC
-
-background:
-responded to K.HAIGH-HUTCHINSON
-responded to Dan Goodman
-responded to Tommy the Terrorist
-responded to Steven Thomas
-responded to Julie A.Pascal
-responded to Jim Davies
-responded to John D. Gwinner
-
-Steve Willner
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 22 May 1996 08:00:00 UTC+1
-
-background:
-responded to Duane Sand
-
-Andreas Ekholm
-newsgroup: sci.astro
-First Archived Msg: Wednesday, 22 May 1996 08:00:00 UTC+1
-
-background:
-responded to Duane Sand
-
-Jedidiah Whitten
-newsgroup: sci.astro
-First Archived Msg: Thursday, 23 May 1996 08:00:00 UTC+1
-Last Archived Msg: Tuesday, 28 May 1996 08:00:00 UTC+1
-
-background:
-responded to K.HAIGH-HUTCHINSON
-
-Dave Tholen
-newsgroup: sci.astro
-First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
-
-background:
-responded to Paul Schlyter
-
-John Oliver
-newsgroup: sci.astro
-First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
-
-background:
-responded to K.HAIGH-HUTCHINSON
-
 Dan Goodman
-newsgroup: rec.arts.sf.science
-First Archived Msg: Friday, 24 May 1996 08:00:00 UTC+1
-Last Archived Msg: Saturday, 4 April 1998 09:00:00 UTC+1
+newsgroups: rec.arts.sf.science
+First: Friday, 24 May 1996 08:00:00 UTC+1
+Last: Saturday, 4 April 1998 09:00:00 UTC+1
 
-background:
+of Interest:
 responded to Lyan
 responded to Matthew Melmon
 suggested gillet's worldbuilding book
 
-Mike Bagneski
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
+sl859@cc.usu.edu
+newsgroups: rec.games.programmer
+First: Thursday, 10 August 1995 08:00:00 UTC+1
 
-background:
-responded to Dan Goodman
+of Interest:
+interested in accrete /usml
 
-Tommy the Terrorist
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
-Last Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
+Ling Lo
+newsgroups: rec.arts.sf.science
+First: Sunday, 22 October 1995 08:00:00 UTC+1
 
-background:
-responded to Craig Berry
-responded to Andy Lanagan
+of Interest:
+looking for an accrete program
 
-Eric Edwards
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 26 January 1997 08:00:00 UTC
+Vicke Dovheden
+newsgroups: rec.arts.sf.science
+First: Tuesday, 13 February 1996 08:00:00 UTC
+Last: Wednesday, 14 February 1996 08:00:00 UTC
 
-background:
-responded to Lyan
+of Interest:
+responded to Erik Max Francis
+interested in accrete
 
-Gary L. Krepps
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
-Last Archived Msg: Wednesday, 26 February 1997 08:00:00 UTC
+David Lowe
+newsgroups: rec.arts.sf.science
+First: Wednesday, 14 February 1996 08:00:00 UTC
 
-background:
-responded to Dan Goodman
+of Interest:
+interested in accrete
 
-Lyan
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+Amara Graps
+newsgroups: sci.astro
+First: Monday, 15 April 1996 08:00:00 UTC+1
 
-background:
-responded to Dan Goodman
+of Interest:
+interested in accrete
 
-Steven Thomas
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
+Frank Henriquez
+newsgroups: sci.astro
+First: Tuesday, 23 April 1996 08:00:00 UTC+1
+Last: Sunday, 28 April 1996 08:00:00 UTC+1
 
-background:
-responded to Lyan
+of Interest:
+interested in accrete
 
-Peter Kwangjun Suk
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
-Last Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
+Christopher Michael Jones
+newsgroups: sci.astro
+First: Friday, 26 April 1996 08:00:00 UTC+1
 
-background:
-responded to Lyan
+of Interest:
+interested in accrete
 
-Matthew Melmon
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
-Last Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
+Dean Gilbert
+newsgroups: sci.astro
+First: Friday, 24 May 1996 08:00:00 UTC+1
 
-background:
-responded to Peter Kwangjun Suk
-responded to Tommy the Terrorist
+of Interest:
+interested in accrete
 
-Julie A.Pascal
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
-Last Archived Msg: Thursday, 6 February 1997 08:00:00 UTC
+Mike Hammond
+newsgroups: sci.astro
+First: Monday, 13 May 1996 08:00:00 UTC+1
+Last: Sunday, 26 May 1996 08:00:00 UTC+1
 
-background:
-responded to Steven Thomas
-responded to Henry Spencer
-responded to Del Cotter
+of Interest:
+responded to Barbara A Cohen
+responded to Mark Duffett
+interested in accrete
 
-Jim Davies
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 27 January 1997 08:00:00 UTC
-Last Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+Robert Gasch
+newsgroups: rec.games.programmer
+First: Thursday, 30 January 1997 08:00:00 UTC
 
-background:
-responded to Craig Berry
+of Interest:
+interested in accrete
 
-Stephen Dedman
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+Juergen Hubert
+newsgroups: rec.games.frp.misc
+First: Sunday, 2 November 1997 08:00:00 UTC
 
-background:
-responded to Eric Edwards
+of Interest:
+has knowledge of system generator
 
-Prof.Faus
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
+Roger Burton West
+newsgroups: rec.games.frp.misc
+First: Friday, 7 November 1997 08:00:00 UTC
 
-background:
-responded to Matthew Melmon
+of Interest:
+has knowledge of what uwp is
 
-Julian Flood
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 28 January 1997 08:00:00 UTC
-Last Archived Msg: Monday, 13 April 1998 08:00:00 UTC+1
+Harold D. Hale
+newsgroups: rec.games.frp.misc
+First: Saturday, 8 November 1997 08:00:00 UTC
 
-background:
-responded to Eric Edwards
+of Interest:
+has knowledge of what uwp is
 
-William Burns
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
+peter riegersperger  
+newsgroups: rec.games.frp.misc
+First: Wednesday, 17 December 1997 08:00:00 UTC
 
-background:
-responded to Julie A.Pascal
+of Interest:
+looking for a solar system generator
 
-Twisted STISter / Phil Plait
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
 
-background:
-responded to Julie A.Pascal
+MORNINMAN
+newsgroups: rec.games.frp.misc
+First: Wednesday, 25 February 1998 08:00:00 UTC
 
-Ed Chart
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 29 January 1997 08:00:00 UTC
+of Interest:
+has knowledge of Accrete
 
-background:
-responded to Eric Edwards
+David Morgan-Mar
+newsgroups: rec.games.frp.misc
+First: Tuesday, 24 February 1998 08:00:00 UTC
+Last: Thursday, 26 February 1998 08:00:00 UTC
 
-Mike Stringer
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
-
-background:
-responded to James Nicoll
-
-Steve Patterson
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
-
-background:
-responded to Jim Davies
-
-Henry Spencer
-newsgroup: rec.arts.sf.science
-First Archived Msg: Friday, 31 January 1997 08:00:00 UTC
-Last Archived Msg: Tuesday, 11 February 1997 08:00:00 UTC
-
-background:
-responded to Matthew Melmon
-
-Andy Lanagan
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 3 February 1997 08:00:00 UTC
-Last Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
-
-background:
-responded to Lyan
-
-Stevens R. Miller
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 3 February 1997 08:00:00 UTC
-Last Archived Msg: Saturday, 8 February 1997 08:00:00 UTC
-
-background:
-responded to Andy Lanagan
-
-Fly Boy
-newsgroup: rec.arts.sf.science
-First Archived Msg: Tuesday, 4 February 1997 08:00:00 UTC
-
-background:
-responded to Andy Lanagan
-
-
-Lance Purple
-newsgroup: rec.arts.sf.science
-First Archived Msg:Tuesday, 4 February 1997 08:00:00 UTC
-
-background:
-responded to Tommy the Terrorist
-
-Harvey White
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
-
-background:
-responded to Stevens R. Miller
-
-Cyber Linguist
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 12 February 1997 08:00:00 UTC
-
-background:
-responded to Stevens R. Miller
-
-Cyber Linguist
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 12 February 1997 08:00:00 UTC
-
-background:
-responded to Stevens R. Miller
-
-
-RMC
-newsgroup: rec.games.programmer
-First Archived Msg: Wednesday, 12 February 1997 08:00:00 UTC
-
-background:
-responded to Stevens R. Miller
-
-
-RMC
-newsgroup: rec.games.programmer
-First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
-
-background:
-responded to Robert Gasch
-
-GrimmWare
-newsgroup: rec.games.programmer
-First Archived Msg: Thursday, 30 January 1997 08:00:00 UTC
-
-background:
-responded to Robert Gasch
-
-Edward Margel
-newsgroup: rec.games.programmer
-First Archived Msg: Sunday, 2 February 1997 08:00:00 UTC
-
-background:
-responded to Robert Gasch
-
-Mike Huskey
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Chris Lawson
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 5 February 1997 08:00:00 UTC
-Last Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Beth and Richard Treitel
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 6 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Andrew Crisp
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 8 February 1997 08:00:00 UTC
-Last Archived Msg: Friday, 14 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Barry Bocaner
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-BLAINE GORDON MANYLUK
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
-Last Archived Msg: Saturday, 22 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Roger Smith
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-John Burton
-newsgroup: rec.arts.sf.science
-First Archived Msg: Sunday, 9 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Stefan E. Jones
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 13 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Bill Dugan
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 15 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Tapio Erola
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 17 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-B. Vermo
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 17 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Brian Trosko
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 17 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Alistair Young
-newsgroup: rec.arts.sf.science
-First Archived Msg: Wednesday, 19 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-William Timmins
-newsgroup: rec.arts.sf.science
-First Archived Msg: Thursday, 20 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-L. Shelton Bumgarner
-newsgroup: rec.arts.sf.science
-First Archived Msg: Saturday, 22 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Justin Fang
-newsgroup: rec.arts.sf.science
-First Archived Msg: Monday, 24 February 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Stig The Intrepid
-newsgroup: rec.arts.sf.science
-First Archived Msg: Friday, 7 March 1997 08:00:00 UTC
-
-background:
-responded to Brian Davis
-
-Dr. Rich Staats
-First Archived Msg: Monday, 3 November 1997 08:00:00 UTC
-
-background:
-replied to Antti Arola
-
-Michael Cule
-newsgroup: rec.games.frp.misc
-First Archived Msg: Monday, 16 February 1998 08:00:00 UTC
-
-background:
+of Interest:
 GURPS query
-
-rap...@research.canon.com.au
-newsgroup: rec.games.frp.misc
-First Archived Msg: Monday, 16 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Matthew C. Goodman
-newsgroup: rec.games.frp.misc
-First Archived Msg: Monday, 16 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Joseph M. Saul
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-dmm
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
-Last Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-John P. Raynor
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Jeremy Reaban
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-TTC
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-David P. Summers
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
-Last Archived Msg: Thursday, 19 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Bill McHale
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 17 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-James Lindsay
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Brian Wong
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-P. ENGEBOS
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-David Crowe
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 18 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Eric Haas
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 19 February 1998 08:00:00 UTC
-Last Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Bertil Jonell
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 19 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Nelson Cunnington
-newsgroup: rec.games.frp.misc
-First Archived Msg: Saturday, 21 February 1998 08:00:00 UTC
-Last Archived Msg: Saturday, 28 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Prodigal
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 24 February 1998 08:00:00 UTC
-Last Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Alan Shutko
-newsgroup: rec.games.frp.misc
-First Archived Msg: Tuesday, 24 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Lurker / Mike Miller
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-Last Archived Msg: Thursday, 26 February 1998
-
-background:
-GURPS query
-
-Joe Pettit
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-Last Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-David Skogsberg
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Matthew Goldman
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-Last Archived Msg: Friday, 27 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Nils K Hammer
-newsgroup: rec.games.frp.misc
-First Archived Msg: Wednesday, 25 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Ian Davis
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Dave Seagraves
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-James Jeffers
-newsgroup: rec.games.frp.misc
-First Archived Msg: Thursday, 26 February 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-Zoran Bekric
-newsgroup: rec.games.frp.misc
-First Archived Msg: Sunday, 1 March 1998 08:00:00 UTC
-
-background:
-GURPS query
-
-
-Mark Foster
-newsgroup: sci.astro
-First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
-
-background:
-8th grader, query about test involving fictional planet
-
-Josh Hesse
-newsgroup: sci.astro
-First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
-
-background:
-responded to mark foster
-
-Norbert Pfannerer
-newsgroup: sci.astro
-First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
-
-background:
-responded to mark foster
-
-Phil Armitage
-newsgroup: sci.astro
-First Archived Msg: Friday, 20 March 1998 08:00:00 UTC
-
-background:
-responded to mark foster
-
-William Baird
-newsgroup: sci.astro
-First Archived Msg: Tuesday, 14 April 1998 08:00:00 UTC+1
-
-background:
-
-Knucles2
-newsgroup: sci.astro
-First Archived Msg: Sunday, 19 April 1998 08:00:00 UTC+1
-
-background:
+ Aina "Stargen" program?
+
+Greg Neill
+newsgroups: rec.arts.sf.science
+First: Tuesday, 3 November 1998 08:00:00 UTC
+Last: Wednesday, 4 November 1998 08:00:00 UTC
+
+of Interest:
+has algorithms
+
+M.C.Harrison
+newsgroups: rec.arts.sf.science
+First: Wednesday, 4 November 1998 08:00:00 UTC
+Last: Thursday, 5 November 1998 08:00:00 UTC
+
+of Interest:
+has algorithms
