@@ -1,0 +1,6 @@
+tier 1: author of acrete variant
+tier 2: host/poster of an acrete version
+tier 3: owner of an acrete copy
+tier 4: interested in acrete
+tier 5: interested in generating planets/systems
+tier 6: unrelated

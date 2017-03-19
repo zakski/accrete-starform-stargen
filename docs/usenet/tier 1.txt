@@ -1,0 +1,156 @@
+Burton Choinski
+newsgroups: rec.games.frp
+First: Monday, 30 July 1990 16:35:00 UTC+1
+
+Thread List:
+1990-07-30-2300adsystemgenprog.txt
+
+of Interest:
+wrote SYSTEM 2300, A Stellar System Generator for 2300ad in C - based on acrete
+may have released source on the web
+
+Dave Allen
+newsgroups: rec.games.frp, rec.games.programmer
+First: Thursday, 21 February 1991 18:22:22 UTC
+Last: Tuesday, 5 October 1993 16:48:35 UTC+1
+
+
+Thread List:
+1991-02-21-Planetsimulationarch.txt
+1993-09-20-UniverseSimulatorGOT.txt
+1993-10-05-UniverseSimulationan.txt
+
+of Interest:
+had a copy of ACCRETE (from Dole?)
+wrote a variant modified to allow captured moons
+wrote a variant which uses the same accretion engine to produce reasonable moon systems
+3 other Simulators hosted on his personal website til 2003.
+suggested Ralph Wirthlin post the salvaged usml ftp site cache to comp.sources.misc
+promoted wuarchive.wustl.edu ftp site as host for usml in 93
+see model / usml cliff notes for more details
+
+Matt Burdick
+newsgroups: rec.games.programmer, sci.astro
+First: Thursday, 21 November 1991 16:43:49 UTC
+Last: Sunday, 12 March 1995 00:23:17 UTC
+
+Thread List:
+1991-11-08-Stellarformationmode.txt
+1995-02-19-DolesAccreteprogram.txt
+1995-03-02-DolesAccreteprogram.txt
+
+of Interest:
+writer of the freely available starform/accrete source code (pascal/c/c++)
+may have made pascal version and c version available on ftp briefly in '95
+has made versions up to at least 3.6
+his variants are used by a lot of people
+
+Jon Leech
+newsgroups: sci.astro
+First: Thursday, 12 March 1992 17:23:38 UTC
+Last: Tuesday, 13 February 1996 08:00:00 UTC
+
+Thread List:
+1992-03-11-Accretionprograms.txt
+1996-02-02-Torchships.txt
+
+of Interest:
+author of an accrete version (ported to C++ from code written by Wales Larrison)
+
+Erik Max Francis / Erik Max Francist?
+newsgroups: rec.arts.sf.science
+First: Sunday, 9 May 1993 20:23:42 UTC+1
+Last: Wednesday, 4 November 1998 08:00:00 UTC
+
+Thread List:
+1993-05-08-Starswithhabitablepl.txt
+1995-05-31-Iwanttobuildsolarsys.txt
+1996-02-02-Torchships.txt
+1996-05-06-planetsnearby.txt
+1997-01-25-Fictionalplanetweath.txt
+1997-02-04-StarWarsCoulditHappe.txt
+1998-03-10-Titusbodecorrection.txt
+1998-11-03-Scientificmethodsfor.txt
+
+of Interest:
+wrote modified copy of accrete (Burdick variant?) - prettier info print?
+have his version of the code (final?)
+
+Steve Gilham / steveg@arc.ug.eds.com / ste...@arc.ug.eds.com
+newsgroups: rec.arts.sf.science, sci.astro
+First: Friday, 14 May 1993 19:18:56 UTC+1
+Last: Thursday, 15 February 1996 08:00:00 UTC
+
+Thread List:
+1993-05-08-Starswithhabitablepl.txt
+1995-03-20-Planetarysystemcodet.txt
+1995-05-31-Iwanttobuildsolarsys.txt
+1995-10-05-SciFiWhatdoyouusetoc.txt
+1996-02-02-Torchships.txt
+
+of Interest:
+wrote accrete variation in Basic that appeared in White Dwarf issue 58 (US issue 57) in 1984
+wrote accrete variation in C++ in 1995 based on his previous version.
+referred to Hart, Dole and Fogg's papers
+provided psuedo-code outline of his accrete variation
+provided copy of Matr Burdick's code in C Form that posted on rec.games.frp.misc by Larry Smith
+provided basic version bug fix
+
+Ian Matthew Burrell
+newsgroups: rec.games.design
+First: Wednesday, 28 July 1993 02:11:32 UTC+1
+Last: Wednesday, 17 December 1997 08:00:00 UTC
+
+Thread List:
+1993-07-28-AccreteandActual.txt
+1994-02-25-Solarsystemgenerator.txt
+1996-02-02-Torchships.txt
+1997-01-30-WantedCombatAlgorith.txt
+1997-12-17-REQStarSystemCreatio.txt
+
+of Interest:
+Was looking for the source code for Accrete
+Was in contact with Dave Allen
+Is author of one variant of accrete (Java port)
+Had knowledge about the revived Universe simulation mailing list.
+put his variants on the web in '96
+
+Andrew Folkins
+newsgroups: sci.astro
+First: Thursday, 8 June 1995 08:00:00 UTC+1
+
+Thread List:
+1995-06-06-Solarsystemgenerator.txt
+
+of Interest:
+on usml
+author of accrete variant
+
+Carl Burke
+newsgroups: sci.astro
+First: Thursday, 8 June 1995 08:00:00 UTC+1
+
+Thread List:
+1995-06-06-Solarsystemgenerator.txt
+
+of Interest:
+author of accrete variants (Modula-2, C++, Java?)
+
+Brian Davis
+newsgroups: rec.arts.sf.science
+First: Tuesday, 4 February 1997 08:00:00 UTC
+Last: Thursday, 5 November 1998 08:00:00 UTC
+
+Thread List:
+1997-02-04-StarWarsCoulditHappe.txt
+1998-03-19-CouldThisBeAPlanet.txt
+1998-03-30-WorldbuildingFoggand.txt
+1998-04-11-Worldbuildingquestio.txt
+1998-04-21-SiliconCreation.txt
+1998-11-03-Scientificmethodsfor.txt
+
+of Interest:
+worked on mac port
+planned on updates/expansions
+was trying to recreate silicon creation
+was writing his own version
