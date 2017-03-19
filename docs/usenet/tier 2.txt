@@ -1,0 +1,130 @@
+Timothy M. Stark / Tim Stark
+newsgroups: sci.astro, rec.games.programmer
+First: Tuesday, 23 March 1993 22:43:43 UTC
+Last: Tuesday, 21 September 1993 01:25:03 UTC+1
+
+Thread List:
+1993-03-23-SolarSystemGenerator.txt
+1993-03-25-UniverseSimulationAl.txt
+1993-09-20-UniverseSimulatorGOT.txt
+1994-11-03-AnonymousFTPFrequent.txt
+1994-12-24-AnonymousFTPFrequent.txt
+
+of Interest:
+looking for Universe generators (like accrete or the stuff in usml)
+interested in usml ftp site data.
+put usml ftp cache on his anonymous ftp site at clark.net
+
+Sean Malloy
+newsgroups: rec.games.design
+First: Wednesday, 28 July 1993 20:56:04 UTC+1
+
+Thread List:
+1993-07-28-Accretesource.txt
+
+of Interest:
+on usml
+wrote a star generator for other suns
+Gave source code of Accrete to Ian Burrell
+Posted version of accrete? (Is his version modififed?)
+
+Ralph Wirthlin
+newsgroups: rec.games.programmer
+First: Monday, 20 September 1993 20:08:26 UTC+1
+
+Thread List:
+1993-09-20-UniverseSimulatorGOT.txt
+
+of Interest:
+on usml
+Acquired usml ftp site data.
+uploaded cache to new ftp site.
+
+Christopher Neufeld
+newsgroups: rec.arts.sf.science
+First: Sunday, 5 February 1995 05:00:07 UTC
+Last: Tuesday, 4 February 1997 08:00:00 UTC
+
+Thread List:
+1995-01-22-SearchingforACCREET.txt
+1997-01-25-Fictionalplanetweath.txt
+
+of Interest:
+had possession of an accrete copy
+uploaded accrete to ftp upon a request
+
+Ronald Florence
+newsgroups: sci.astro
+First: Thursday, 2 March 1995 13:28:26 UTC
+
+Thread List:
+1995-03-02-DolesAccreteprogram.txt
+
+of Interest:
+has a copy (posted by Philip Hodder?)
+posted a fix to some accrete code
+
+Steve Dang
+newsgroups: rec.games.programmer
+First: Monday, 12 June 1995 08:00:00 UTC+1
+Last: Monday, 14 August 1995 08:00:00 UTC+1
+
+Thread List:
+1995-08-09-PlanetGenerators.txt
+1995-08-14-UPDATEPlanetGenerato.txt
+
+of Interest:
+looking for accrete /usml
+author of geocities site with a cache of usml/acrete files
+
+
+Larry Smith
+newsgroups: rec.games.frp.misc
+First: Friday, 6 October 1995 08:00:00 UTC+1
+
+Thread List:
+1993-05-08-Starswithhabitablepl.txt
+1995-10-05-SciFiWhatdoyouusetoc.txt
+
+of Interest:
+talking about stellar system generation
+posssibly has a copy of accrete based on other intel
+uploaded a copy?
+
+Nyrath the nearly wise
+newsgroups: rec.arts.sf.science
+First: Sunday, 26 January 1997 08:00:00 UTC
+Last: Friday, 3 April 1998 09:00:00 UTC+1
+
+Thread List:
+1997-01-25-Fictionalplanetweath.txt
+1997-01-30-WantedCombatAlgorith.txt
+1997-02-04-StarWarsCoulditHappe.txt
+1997-12-17-REQStarSystemCreatio.txt
+1998-03-10-Titusbodecorrection.txt
+
+of Interest:
+put accrete variants on his anonymous ftp site at clark.net
+suggested urls
+
+Doug Berry
+newsgroups: rec.games.frp.misc
+First: Friday, 31 October 1997 08:00:00 UTC
+
+Thread List:
+1997-10-30-Wantedsolarsystemgen.txt
+
+of Interest:
+interested in accrete
+has accrete variants on website
+
+Jeffrey Cornish
+newsgroups: sci.astro
+First: Thursday, 19 March 1998 08:00:00 UTC
+
+Thread List:
+1998-03-19-CouldThisBeAPlanet.txt
+
+of Interest:
+has knowledge of accrete (accrete3?)
+lists old site to find versions at

@@ -154,3 +154,13 @@ worked on mac port
 planned on updates/expansions
 was trying to recreate silicon creation
 was writing his own version
+
+John D. Gwinner
+newsgroups: rec.arts.sf.science
+First: Saturday, 1 February 1997 08:00:00 UTC
+Last: Wednesday, 11 March 1998 08:00:00 UTC
+
+Thread List:
+
+of Interest:
+has own accrete variant for 3d visualization

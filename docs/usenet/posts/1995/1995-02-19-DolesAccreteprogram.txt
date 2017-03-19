@@ -22,7 +22,7 @@ Soenke
 Standard disclaimer: My opinions are my own, not those of my employer
 ----------------------------------------------------------------------------
 
-Sunday, 12 March 1995 00:23:17 UTC - Soenke Behrens:
+Sunday, 12 March 1995 00:23:17 UTC - Matt Burdick:
 Sbeh...@contech.demon.co.uk <> (Soenke Behrens):
 > Well, if this is the same code that I already have, then it's
 > buggy. Some small bugs (typos, - instead of /, and that sort of

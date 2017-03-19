@@ -35,7 +35,8 @@ around 1984. He may have also released it on usenet, but such a post is missing 
 
 Martyn J. Fogg wrote a subsequent research paper that attempted to vary the mass of the star and build up information about the potential atmosphere of each 
 planet in the generated system. Brian Davis reports that he wrote Fogg to request the source, and he replied that is was on a discarded machine in his 
-garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up.
+garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up. Thus far no one seems to of replicated his planetary 
+classification system.
 
 ###[ACCRETE 1a/1b](https://scholar.google.com/scholar?cluster=9385174980475541539&hl=en&as_sdt=0,5)
 
