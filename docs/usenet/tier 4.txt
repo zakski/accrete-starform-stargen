@@ -276,7 +276,7 @@ talking about stellar system generation
 Dan Goodman
 newsgroups: rec.arts.sf.science
 First: Friday, 24 May 1996 08:00:00 UTC+1
-Last: Saturday, 4 April 1998 09:00:00 UTC+1
+Last: Friday, 2 April 1999 09:00:00 UTC+1
 
 of Interest:
 responded to Lyan
@@ -316,6 +316,7 @@ interested in accrete
 Amara Graps
 newsgroups: sci.astro
 First: Monday, 15 April 1996 08:00:00 UTC+1
+Last: Monday, 20 September 1999 08:00:00 UTC+1
 
 of Interest:
 interested in accrete
@@ -323,7 +324,7 @@ interested in accrete
 Frank Henriquez
 newsgroups: sci.astro
 First: Tuesday, 23 April 1996 08:00:00 UTC+1
-Last: Sunday, 28 April 1996 08:00:00 UTC+1
+Last: Friday, 2 April 1999 09:00:00 UTC+1
 
 of Interest:
 interested in accrete
@@ -441,6 +442,7 @@ talking about stellar system generation
 Frank Palmer
 newsgroups: rec.arts.sf.science
 First: Tuesday, 16 March 1999 08:00:00 UTC
+Last: Friday, 2 April 1999 09:00:00 UTC+1
 
 of Interest:
 talking about stellar system generation

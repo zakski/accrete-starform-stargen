@@ -1,0 +1,450 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/GaneYckMTAI
+TITLE: Alpha Centauri system question 
+
+----------------------------------------------------------------------------
+
+Friday, 2 April 1999 09:00:00 UTC+1 - Dan Goodman:
+Is it safe to assume that the Alpha Centauri system contains (or can
+contain) stuff equivalent to Trans-Neptunian Objects?  (Regardless of
+whether there's anything larger and/or closer in?)
+
+
+--
+Dan Goodman
+dsg...@visi.com <>
+http://www.visi.com/~dsgood/index.html <http://www.visi.com/~dsgood/index.html>
+Whatever you wish for me, may you have twice as much.
+----------------------------------------------------------------------------
+
+Friday, 2 April 1999 09:00:00 UTC+1 - Frank Palmer:
+Crusader Rabbit (gp...@att.net <>) wrote:
+: single dominate central body.  The system as a whole will have a
+: center of gravity somewhere between the two or three large masses but
+: that CoG will be moving around in a rather eccentric "orbit" of its
+: own due to the two or three bodies having very different masses from
+: one another.  
+
+Um, no.
+
+The C of G will be of constant velocity (except for accelerations of gravity 
+from bodies EXTERNAL to the system).  That's what a center of gravity (or, 
+better, a center of mass) does.
+
+Also, I believe that the periods of the stars around each other is quite long.
+
+Even so, I would second our local superhero's guess that this would make the 
+more distant orbits less stable.
+
+--
+Frank Palmer
+flpa...@ripco.com <>
+----------------------------------------------------------------------------
+
+Friday, 2 April 1999 09:00:00 UTC+1 - Erik Max Francis:
+Crusader Rabbit wrote:
+>         Centauri is at least a two-star system (possibly three).
+
+I've heard from unofficial sources that it was decided that Proxima
+definitely wasn't bound to the system, but I haven't seen any references
+to back that up yet.
+
+> Its
+> motion dynamics are going to be different than that of a system with a
+
+> single dominate central body.  The system as a whole will have a
+> center of gravity somewhere between the two or three large masses but
+> that CoG will be moving around in a rather eccentric "orbit" of its
+> own due to the two or three bodies having very different masses from
+> one another.
+The center of gravity of a system in isolation _by definition_ moves in
+a straight line.
+
+If you're talking about the center of mass of the A-B system, then, yes,
+as Proxima passes by, the center of mass of the other two stars is going
+to describe an hyperbola, but it's going to be a pretty shallow curve,
+since Proxima is so far away (about 1/6 ly = 11 000 au = 1.6 Pm).
+
+A is G2 V and B is K0 V.  Their true orbit has an eccentricity of about
+0.5, which makes their distances vary roughly from 10 au (2 Tm) to 40 au
+(6 Tm).
+
+> Seems unlikely objects as far away from each of the
+> stars as you describe could withstand the perturbations of their
+> orbits the other large bodies would induce.
+
+When you have binar star systems, if you want to have planets, then then
+you basically only have two options:  1. both stars close together, with
+the planetary system far away; 2. both stars far away, with the
+planetary systems huddled around each star.
+
+Such an eccentric orbit between the two probably precludes any really
+interesting planets in the mix.  I doubt a planet at ~1 au would be
+stable, and to have stable planets far away, they'd need to have _huge_
+orbits.
+
+Alpha Centauri probably does not have any interesting planets, but it
+probably has an Oort cloud.  Whether or not it has something like a
+Kuiper belt is up for grabs, but I don't see why you could have one
+(placed at, say, 100 au).
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / Melancholy men, of all others, are the most witty.
+           / Aristotle
+----------------------------------------------------------------------------
+
+Friday, 2 April 1999 09:00:00 UTC+1 - Frank Henriquez:
+In article <370532F0...@alcyone.com <>>, Erik Max Francis
+<m...@alcyone.com <>> wrote:
+
+
+
+>I've heard from unofficial sources that it was decided that Proxima
+>definitely wasn't bound to the system, but I haven't seen any references
+>to back that up yet.
+There was an article a few years ago:
+
+"Is Proxima really in orbit about Alpha Cen A/B?":
+
+http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1993MNRAS.261L...5M&db_key=AST&high=36a4d29ba903927 
+<http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1993MNRAS.261L...5M&db_key=AST&high=36a4d29ba903927>
+
+or
+
+http://ourworld.compuserve.com/homepages/rajm/proxima.htm <http://ourworld.compuserve.com/homepages/rajm/proxima.htm>
+
+I remember a followup article that stated that Proxima was probably bound,
+but just barely. 
+
+Related papers:
+ 
+"ALPHA-CENTAURI AND PROXIMA-CENTAURI - RADIAL VELOCITIES AND THE BOUND STATE":
+http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1979ApJ...234L.205W&db_key=AST&high=36a4d29ba903947 
+<http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1979ApJ...234L.205W&db_key=AST&high=36a4d29ba903947>
+
+"Dynamics of nearby multiple stars. The alpha Centauri system":
+
+http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1994A%26A...292..115A&db_key=AST&high=36a4d29ba903583 
+<http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1994A%26A...292..115A&db_key=AST&high=36a4d29ba903583>
+
+
+>Such an eccentric orbit between the two probably precludes any really
+>interesting planets in the mix.
+Then again, maybe not. The article below discusses long term stability
+around binaries:
+http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1999AJ....117..621H&db_key=AST&high=36a4d29ba904079 
+<http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1999AJ....117..621H&db_key=AST&high=36a4d29ba904079>
+
+Or directly, if you're at a University:
+
+http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html <http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html>
+   
+Frank
+
+-- 
+--
+Frank Henriquez  Programmer/Analyst  Jules Stein Eye Institute, UCLA
+fr...@ucla.edu <>   http://www.ben2.ucla.edu/~frank/ <http://www.ben2.ucla.edu/~frank/>
+----------------------------------------------------------------------------
+
+Friday, 2 April 1999 09:00:00 UTC+1 - Bruce Sterling Woodcock:
+Frank Henriquez wrote:
+> 
+> In article <370532F0...@alcyone.com <>>, Erik Max Francis
+> <m...@alcyone.com <>> wrote:
+> 
+> >I've heard from unofficial sources that it was decided that Proxima
+> >definitely wasn't bound to the system, but I haven't seen any references
+> >to back that up yet.
+> 
+> There was an article a few years ago:
+> 
+> "Is Proxima really in orbit about Alpha Cen A/B?":
+> [snip]
+It's also worth noting that Proxima Centauri appears to have a companion,
+although whether it's a planet or a brown dwarf (or not there are all!)
+remains to be seen.
+
+Bruce
+----------------------------------------------------------------------------
+
+Friday, 2 April 1999 09:00:00 UTC+1 - Erik Max Francis:
+Crusader Rabbit wrote:
+>         My mental image of a binary system has the CoG moving through
+> space
+> in a sine path; always closer to the larger mass body.  Unfortunately,
+> I don't do math, so I'll take your (and Erik's) word for it.
+
+Momentum is conserved.  If there are no external forces acting on a
+system, then the momentum of that system is constant -- that is, the
+center of mass of the system moves in a straight line (or does not
+move).
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / Melancholy men, of all others, are the most witty.
+           / Aristotle
+----------------------------------------------------------------------------
+
+Friday, 2 April 1999 09:00:00 UTC+1 - Erik Max Francis:
+Crusader Rabbit wrote:
+>         I thought the CoG of a binary system moved through space in a
+> sine-wave path and that adding a third mass into the dynamics would
+> put "bumps" on the sine wave similar to superimposing a harmonic.
+
+Gravity is a conservative force field, and so it conserves momentum and
+energy.  The center of mass of a closed system (of arbitrarily many
+bodies) thus has no forces on it, and moves in a straight line (or, as I
+said, doesn't move at all).
+
+The recent discoveries of extrasolar planets, for instance, work by
+looking at wobbling of the _star_ (i.e., one body, not the center of
+mass of the whole system).  Maybe that's what you were thinking of.
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / Melancholy men, of all others, are the most witty.
+           / Aristotle
+----------------------------------------------------------------------------
+
+Saturday, 3 April 1999 09:00:00 UTC+1 - Brian McNett:
+In article <370532F0...@alcyone.com <>> , Erik Max Francis
+<m...@alcyone.com <>>  wrote:
+>Such an eccentric orbit between the two probably precludes any really
+
+>interesting planets in the mix.  I doubt a planet at ~1 au would be
+>stable, and to have stable planets far away, they'd need to have _huge_
+>orbits.
+>
+>Alpha Centauri probably does not have any interesting planets, but it
+>probably has an Oort cloud.  Whether or not it has something like a
+>Kuiper belt is up for grabs, but I don't see why you could have one
+>(placed at, say, 100 au).
+http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html <http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html>
+
+Most of you should be able to read the abstract.  Only certain users at
+university sites will be able to download the article.
+
+For the inner system of Alpha Centauri, they get a critical distance from A
+of 2.79AU and for B of 2.54AU. Particles within this distance remained
+stable during their simulation. They also calculate
+an OUTER limit (where the planet orbits both stars), which, I think, is what
+the original poster wants.
+
+No word therin on whether planets could actually form in such a system, but
+this blows holes in many people's assumptions about where stable planetary
+orbits can exist.
+
+# Brian McNett
+# Fungal Parataxonomy                Mycology Information (Mycoinfo)
+# Webmaster, Staff Writer   **The World's First Mycology E-Journal**   
+# <mailto:webm...@mycoinfo.com <>>         <http://www.mycoinfo.com/ <http://www.mycoinfo.com/>>
+----------------------------------------------------------------------------
+
+Saturday, 3 April 1999 09:00:00 UTC+1 - Brian McNett:
+In article <frank-02049...@ochi.jsei.ucla.edu <>> , fr...@ucla.edu <>
+(Frank Henriquez) wrote:
+[snip]
+
+Frank beats me to it again!  And a much better job too!
+
+# Brian McNett
+# Fungal Parataxonomy                Mycology Information (Mycoinfo)
+# Webmaster, Staff Writer   **The World's First Mycology E-Journal**   
+# <mailto:webm...@mycoinfo.com <>>         <http://www.mycoinfo.com/ <http://www.mycoinfo.com/>>
+----------------------------------------------------------------------------
+
+Sunday, 4 April 1999 09:00:00 UTC+1 - Stanley Friesen:
+"Brian McNett" <bri...@telebyte.net <>> wrote:
+>For the inner system of Alpha Centauri, they get a critical distance from A
+>of 2.79AU and for B of 2.54AU. Particles within this distance remained
+>stable during their simulation.
+My memory is a little fuzzy here - but isn't this large enough for the
+orbit of *Mars* to be stable?
+
+The peace of God be with you.
+
+Stanley Friesen
+----------------------------------------------------------------------------
+
+Sunday, 4 April 1999 09:00:00 UTC+1 - DaveKDwyer:
+> "Brian McNett" <bri...@telebyte.net <>> points out:
+
+>http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html <http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html>
+>
+>Most of you should be able to read the abstract.  Only certain users at
+>university sites will be able to download the article.
+>
+>For the inner system of Alpha Centauri, they get a critical distance from A
+>of 2.79AU and for B of 2.54AU. Particles within this distance remained
+>stable during their simulation. They also calculate
+>an OUTER limit (where the planet orbits both stars), which, I think, is what
+>the original poster wants.
+>
+>No word therin on whether planets could actually form in such a system, but
+>this blows holes in many people's assumptions about where stable planetary
+>orbits can exist.
+>
+Thanx, IIRC Stephen Dole in his seminal "Habitable Planets for Man" (1964) did
+a similar analysis.  IIRC the numbers for stable planetary orbits weren't quite
+that high, but then he probably only had a slide rule even if he was working
+for RAND at the time.
+David Dwyer
+-- 
+"Reality is not an option." D.Dwyer
+----------------------------------------------------------------------------
+
+Sunday, 4 April 1999 09:00:00 UTC+1 - Markus Redeker:
+Stanley Friesen <sar...@ix.netcom.com <>> wrote:
+> "Brian McNett" <bri...@telebyte.net <>> wrote:
+>>For the inner system of Alpha Centauri, they get a critical distance from A
+>>of 2.79AU and for B of 2.54AU. Particles within this distance remained
+>>stable during their simulation.
+> My memory is a little fuzzy here - but isn't this large enough for the
+
+> orbit of *Mars* to be stable?
+No, Mars has a distance of 1.52 AU. 
+
+-- 
+Markus Redeker | c...@ibp.de <>                                 Hamburg, Germany
+----------------------------------------------------------------------------
+
+Sunday, 4 April 1999 09:00:00 UTC+1 - dante_...@my-dejanews.com:
+In article <mk18e7...@daedalus.ibp.de <>>,
+  c...@ibp.de <> (Markus Redeker) wrote:
+> Stanley Friesen <sar...@ix.netcom.com <>> wrote:
+> > "Brian McNett" <bri...@telebyte.net <>> wrote:
+> >>For the inner system of Alpha Centauri, they get a critical distance from A
+> >>of 2.79AU and for B of 2.54AU. Particles within this distance remained
+> >>stable during their simulation.
+>
+> > My memory is a little fuzzy here - but isn't this large enough for the
+> > orbit of *Mars* to be stable?
+>
+> No, Mars has a distance of 1.52 AU.
+Re-read the post.  Objects remained in stable orbits with a distance of 2.79
+AU for A, and 2.54 AU for B.  That means Mars, or some planet-like object
+with a distance of 1.52 AU, *would* be in a stable orbit.
+
+I would imagine Alpha Centauri would have a pretty huge asteroid belt
+(belts?).
+
+Dane Winter
+
+-----------== Posted via Deja News, The Discussion Network ==----------
+http://www.dejanews.com/ <http://www.dejanews.com/>       Search, Read, Discuss, or Start Your Own    
+----------------------------------------------------------------------------
+
+Sunday, 4 April 1999 09:00:00 UTC+1 - A. McIntire:
+Stanley Friesen wrote:
+> 
+> "Brian McNett" <bri...@telebyte.net <>> wrote:
+> >For the inner system of Alpha Centauri, they get a critical distance from A
+> >of 2.79AU and for B of 2.54AU. Particles within this distance remained
+> >stable during their simulation.
+> 
+> My memory is a little fuzzy here - but isn't this large enough for the
+> orbit of *Mars* to be stable?
+> 
+> The peace of God be with you.
+> 
+> Stanley Friesen.
+.  Mars' major axis is 1.52 AU, well under  2.54.  Ceres, in the 
+asteroind belt, is at 2.8 AU.
+----------------------------------------------------------------------------
+
+Sunday, 4 April 1999 09:00:00 UTC+1 - Bruce Sterling Woodcock:
+dante_...@my-dejanews.com <> wrote:
+> 
+> In article <mk18e7...@daedalus.ibp.de <>>,
+>   c...@ibp.de <> (Markus Redeker) wrote:
+> > Stanley Friesen <sar...@ix.netcom.com <>> wrote:
+> > > "Brian McNett" <bri...@telebyte.net <>> wrote:
+> > >>For the inner system of Alpha Centauri, they get a critical distance from A
+> > >>of 2.79AU and for B of 2.54AU. Particles within this distance remained
+> > >>stable during their simulation.
+> >
+> > > My memory is a little fuzzy here - but isn't this large enough for the
+> > > orbit of *Mars* to be stable?
+> >
+> > No, Mars has a distance of 1.52 AU.
+> 
+> Re-read the post.  Objects remained in stable orbits with a distance of 2.79
+> AU for A, and 2.54 AU for B.  That means Mars, or some planet-like object
+> with a distance of 1.52 AU, *would* be in a stable orbit.
+Ah, I guess it depends on what is meant by "within".  If they meant "less
+than or up to this distance" then you're right.  If they meant "at or around
+this distance" then you're wrong.
+
+Bruce
+----------------------------------------------------------------------------
+
+Sunday, 4 April 1999 09:00:00 UTC+1 - Erik Max Francis:
+Bruce Sterling Woodcock wrote:
+
+> Ah, I guess it depends on what is meant by "within".  If they meant
+> "less
+> than or up to this distance" then you're right.  If they meant "at or
+> around
+> this distance" then you're wrong.
+It also depends on the timescales over which those orbits are stable.  A
+few million years won't cut it.
+
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / I'm paranoid.  But am I paranoid enough?
+           / Louis Wu
+----------------------------------------------------------------------------
+
+Tuesday, 20 April 1999 08:00:00 UTC+1 - Jim Burrows:
+"Brian McNett" <bri...@telebyte.net <>> points out:
+
+>http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html <http://www.journals.uchicago.edu/AJ/journal/issues/v117n1/980335/980335.html>
+>
+>Most of you should be able to read the abstract.  Only certain users at
+>university sites will be able to download the article.
+>
+>For the inner system of Alpha Centauri, they get a critical distance from A
+>of 2.79AU and for B of 2.54AU. Particles within this distance remained
+>stable during their simulation. They also calculate
+>an OUTER limit (where the planet orbits both stars), which, I think, is what
+>the original poster wants.
+>
+>No word therin on whether planets could actually form in such a system, but
+>this blows holes in many people's assumptions about where stable planetary
+>orbits can exist.
+>
+The abstract is very intriguing. Unfortunately, I'm one of the many who
+cannot access the full article. I'm working a solar system-generator based
+on the old accrete program. One of the options is to generate systems based
+on the systems that Dole listed as the most likely to have habitable
+planets. The list includes several binary systems, and I'd like to limit the
+generated planets to the stable orbits. I've plugged in the numbers listed
+here for Alpha Centauri, but I'd love to have figures for the rest of them.
+Can anyone provide the data for any of the following?
+
+    70 Ophiuchi A
+    Eta Cassiopeiae A
+    36 Ophiuchi A
+    36 Ophiuchi B
+    HR7703 A
+    HR753 A
+
+JimB.

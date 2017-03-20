@@ -1,0 +1,1307 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/a8JukfOPPso
+TITLE: worldbuilding: Gillett's spectral types table?!? 
+
+----------------------------------------------------------------------------
+
+Tuesday, 14 September 1999 08:00:00 UTC+1 - Brian Davis:
+Has anyone been able to reproduce (from equations, references, etc.)
+the table in the back of Gillett's "Worldbuilding" book? On page 178 he
+list some properties of main sequence stars - but the mass/luminosity
+relationship does not agree with the equations I have, specificly:
+   L = 0.71 M^n  ,  where n = 3.75 M/Ms  +  2.125  if  0.1<M<0.7
+                          n = 4.75                 if  0.7<M<2.0
+
+Additionally, he seems to exrapolate beyond the limits of the equation I
+mention anyway. I have some of the same problems with Gillett's
+estiamtions of MS lifetimes, to wit his figures from the table don't
+mesh well with the equation:
+
+   Tms = 10 M^(1-n)  ,   [in Gy]
+
+Any help here?!? Looking at Gillett's reference doesn't help much, as
+his table doesn't seem to agree with them (and he even says
+"recalculated from" such-and-such reference).
+
+   Help! I'm convinced the error is mine, but I can find it. Has anybody
+else thrown this table into Excel and tried to reproduce his figures?
+Anyone?
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 14 September 1999 08:00:00 UTC+1 - A. McIntire:
+- show quoted text -Brian Davis wrote:
+> 
+> Has anyone been able to reproduce (from equations, references, etc.)
+> the table in the back of Gillett's "Worldbuilding" book? On page 178 he
+> list some properties of main sequence stars - but the mass/luminosity
+> relationship does not agree with the equations I have, specificly:
+> 
+>    L = 0.71 M^n  ,  where n = 3.75 M/Ms  +  2.125  if  0.1<M<0.7
+>                           n = 4.75                 if  0.7<M<2.0
+> 
+> Additionally, he seems to exrapolate beyond the limits of the equation I
+> mention anyway. I have some of the same problems with Gillett's
+> estiamtions of MS lifetimes, to wit his figures from the table don't
+> mesh well with the equation:
+> 
+>    Tms = 10 M^(1-n)  ,   [in Gy]
+> 
+> Any help here?!? Looking at Gillett's reference doesn't help much, as
+> his table doesn't seem to agree with them (and he even says
+> "recalculated from" such-and-such reference).
+> 
+>    Help! I'm convinced the error is mine, but I can find it. Has anybody
+> else thrown this table into Excel and tried to reproduce his figures?
+> Anyone?
+> 
+> --
+> Brian Davis.
+.
+You're right;  Gillette's formula seems to work okay for dwarf stars, but 
+it overestimates the luminosities of stars more massive than the sun.
+The formula given by the "Astronomy and Astrophysics Encyclopedia", 
+edited by Stephen P. Moran gives
+
+Log L= 2.6 Log Mass - 0.36 for stars under 0.5 Mass sun.
+
+Log L= 3.8 Log Mass for stars between 0.5 and 2.5 Mass sun.
+
+Log L= 2.6 Log Mass +0.5 for stars over 2.5 Mass sun
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Brian Davis:
+[sci.astro added to thread]
+A. McIntire wrote:
+
+> You're right;  Gillett's formula seems to work okay for dwarf stars, 
+
+> but it overestimates the luminosities of stars more massive than the 
+> sun.
+   Of course, mine is even worse... :-(
+
+ 
+> The formula given by the "Astronomy and Astrophysics Encyclopedia",
+> edited by Stephen P. Moran gives
+   Thanks for another good reference. But now I've got *five* different
+mass/luminosity relationships to go on, and still no clue. Putting them
+all in (roughly) the same form*, they are:
+
+An empirical fit by McCluskey & Kondo, 1972 [for M > 0.2 Ms]:
+L = 1.202 ( M ^ 3.8 )
+
+An empirical fit by Harris et.al <http://et.al>., 1963 [approximate]
+L = M ^ 4    if L > Ls
+  = M ^ 2.8  if L < Ls
+
+L = M ^ 3.8
+
+Fit provided by you (from Moran's book):
+L = 0.4365 ( M ^ 2.6 )  if M < 0.5 Ms
+  =          M ^ 3.8    if 0.5 Ms < M < 2.5 Ms
+  = 3.1623 ( M ^ 2.5 )  if M > 2.5 Ms
+
+Equation used by Martyn Fogg [for zero age main sequence stars; only
+quoted as valid up to 2.0 Ms anyway]:
+L = 0.71 ( M ^ n )
+   n = 3.75 M + 2.125  for M < 0.7 Ms
+   n = 4.75            for M > 0.7 Ms
+
+While I'm inclined to go with your's, (and see no reason to accept the
+1963 approximate relationship over the others), I am curious as to the
+constraints on this. I realize perhaps the difference is just in the
+data, but does anyone know of any relationships that claim to talk about
+zero-age main sequence stars, and specificly how the luminosity changes
+as they age, as well as their expected lifespans on the main sequence?
+From Fogg, I have:
+
+L = Lz exp[ 0.045 (10 t / Tms )^1.33 ]
+   Lz = zero age main sequence luminosity (one of the above?)
+   t = age of star
+   Tms = main sequence lifetime of star
+       = 10 ( M ^ (1-n) )     (where n is defined above)
+
+But this is about *all* I have, and Fogg's equations specificly excluded
+massive 2 Ms and above) stars, so I don't trust them too far.
+
+* putting them all in the same form BTW was probably the best learning
+experience for me. Why are they presented in so many different ways?
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+[sci.astro added to Newsgroups, since that's where you're bound to find
+better information on this.]
+Brian Davis wrote:
+
+
+> Has anyone been able to reproduce (from equations, references, etc.)
+> the table in the back of Gillett's "Worldbuilding" book? On page 178
+> he
+> list some properties of main sequence stars - but the mass/luminosity
+> relationship does not agree with the equations I have, specificly:
+> 
+>    L = 0.71 M^n  ,  where n = 3.75 M/Ms  +  2.125  if  0.1<M<0.7
+>                           n = 4.75                 if  0.7<M<2.0
+> 
+> Additionally, he seems to exrapolate beyond the limits of the equation
+>  I
+> mention anyway. I have some of the same problems with Gillett's
+> estiamtions of MS lifetimes, to wit his figures from the table don't
+> mesh well with the equation:
+>
+>    Tms = 10 M^(1-n)  ,   [in Gy]
+>
+> Any help here?!? Looking at Gillett's reference doesn't help much, as
+> his table doesn't seem to agree with them (and he even says
+> "recalculated from" such-and-such reference).
+[Long quote retained for context.]
+
+If his figures are different from his quoted reference, then he
+obviously simply made a mistake.
+
+
+>    Help! I'm convinced the error is mine, but I can find it. Has
+> anybody
+> else thrown this table into Excel and tried to reproduce his figures?
+> Anyone?
+Here's some more information:
+
+_Stars and their spectra_, J.B. Kahler, p. 153:
+
+    ... we find that the energy output of a main sequence star is very
+    approximately proportional to the 3.5 power of its mass.
+
+_An introduction to the theory of stellar structure_, S. Chandrasekhar
+(yes, _the_ Chandrasekhar), p. 3 contains a M-L diagram which indicates
+very roughly that high-mass stars (log M > ~1, log L > ~2) L goes as M,
+whereas for lower mass stars (log M < ~1, log L < ~2) L goes as M^4.
+
+_Principles of stellar evolution and nucleosynthesis_, D.D. Clayton:
+
+    ... the luminosity is proportional to a rather high power of the
+    mass; that is, 
+
+        L = const x M^nu [1-50]
+
+    where nu lies in the range of 3.5 to 4.0. ... Basically Eq. [1-50]
+    may be thought of as an approximation applicable to a class  called
+    main-sequence stars.
+
+_Stellar structure and evolution_, R. Kippenhahn, A. Weigert, p. 207-8:
+
+    ... R increases slowly, and L increases strongly with increasing M. 
+    For an interpolation over a certain range of M we may again write
+
+        R ~ M^xi, L ~ M^eta.
+
+    From the slopes of the curve in Fig. 22.2 [M-parameterized T-L
+    diagram and M-R diagram for zero-age main sequence stars] we find
+    roughly xi = 0.57 and 0.8 in the upper and lower mass rangess
+    respectively.  In the range of small values of M, there is a
+    pronounced maximum of the slope around M = 1 M_solar, indicating
+    that a remarkable deviation from homologous behaviour in this range.
+    ...
+        Also the slope of the M-L relation in Fig 22.3 [M-L diagram]
+    varies with M.  Over the whole mass range plotted [-1 < log
+    (M/M_solar) < 1.5], the average of eta is about 3.2.  For M = (1 ..
+    10) M_solar, the average exponent is 3.88, while in the larger range
+    M = (1 .. 40) M_solar it is 3.35. ...
+
+Finally, here's a [long] post I discovered I'd archived from Amara Graps
+about this subject:
+
+. 
+
+Newsgroups: sci.astro
+Path:
+news.spies.com <http://news.spies.com>!nntp1.jpl.nasa.gov <http://nntp1.jpl.nasa.gov>!news.magicnet.net <http://news.magicnet.net>!news.sprintlink.net 
+<http://news.sprintlink.net>!new-news.sprintlink.net <http://new-news.sprintlink.net>!news.scott.net <http://news.scott.net>!acara.snsnet.net 
+<http://acara.snsnet.net>!HiWAAY.net!imci2!news.internetMCI.com <http://news.internetMCI.com>!newsfeed.internetmci.com <http://newsfeed.internetmci.com>!uwm.edu
+ <http://uwm.edu>!lll-winken.llnl.gov <http://lll-winken.llnl.gov>!decwrl!amd!netcomsv!uu4news.netcom.com <http://uu4news.netcom.com>!netcomsv!uu3news.netcom.
+com <http://uu3news.netcom.com>!ixnews1.ix.netcom.com <http://ixnews1.ix.netcom.com>!netcom.com <http://netcom.com>!agraps
+From: agr...@netcom.com <> (Amara Graps)
+Subject: Re: question about mass vs luminosity of main seq. stars
+Message-ID: <agrapsDq...@netcom.com <>>
+Organization: NETCOM On-line Communication Services (408 261-4700 guest)
+References: <4lou9i$3...@newz.oit.unc.edu <>>
+Date: Sat, 27 Apr 1996 20:31:55 GMT
+Lines: 153
+Sender: agr...@netcom10.netcom.com <>
+
+Phil Fernsten <fernsten...@mhs.unc.edu <>> writes:
+
+>I was studying a Hertzsrung-Russell diagram and noticed that rather
+>modest differences in temperature are associated with very large
+>differences in luminosity for stars in the main sequence.  Both of
+>these quantities are apparently related to the mass of main sequence
+>stars, so I wondered if there is a simple relationship between the 
+>mass of these stars and their luminosity, surface temperature, radius,
+>and lifespan on the main sequence.  
+[...]
+>I'd be grateful if someone could help me out here or steer me to an
+>appropriate source for this information.
+
+You may be interested in knowing that there is a deep theoretical
+basis for the relationships between M, L, T, R of stars on the main
+sequence that goes back almost a hundred years. It is the theory of
+"polytropes" and the "Lane-Emden" equations. Chandrasekhar wrote quite
+a bit about it in his book: _An Introduction to the Study of Stellar
+Structure_ published in 1939 (look at Ch. 4: "Polytropic and
+Isothermal Gas Spheres"). There, he refers to R. Emden's kinetic
+theory work published in 1907. You will find that most current stellar
+evolution astrophysics texts discuss it. See Clayton: _Principles of
+Stellar Evolution and Nucleosynthesis_ (Chapter 2.4), Schwarzschild:
+_Structure and Evolution of Stars_ (pg. 109) and Bowers and Deeming:
+_Astrophysics I: Stars_ (pg.  60-61).
+
+The polytrope theory looks at the limitations of the structure of a
+star based on just the conditions of hydrostatic equilibrium. It
+assumes a power-law relation between pressure P and density rho:
+
+P = K rho^{1 + 1/n}
+
+where K is constant and n is the polytropic index. Gaseous spheres in
+which each point along the radius follow the above relationship are
+called "polytropes."
+
+Stellar models in which the polytropic index is constant from the
+center to surface have played an important role in the development of
+the theory of the stellar interior. (Polytropes have no physical
+relevance unless n is really constant throughout the structure.)
+
+The Lane-Emden equation is the following. Start with the simplest
+equations of a quasi-static stellar model:
+
+dP/dr = -G M rho/r^2
+
+dM/dr = 4 pi r^2 rho
+
+Combine and rewrite them compactly as:
+
+1/r^2  d/dr(r^2/rho dP/dr) = -4 pi G rho
+
+(P = pressure, G = gravitational constant, rho = density, r = radius, 
+M = mass)
+
+After substituting the P = K rho^{1 + 1/n} relationship and 
+doing some normalizing, you get the Lane-Emden equation:
+
+(Involves substituting rho/rho_0 = theta^n, P = K rho^{1 + 1/n} *
+theta^{n+1}, r = alpha * xi, alpha = [((n + 1)K)/(4 pi G) * rho_0^{1/n
+- 1}]^0.5 where xi and theta are renormalization variables)
+
+1/xi^2 d/dxi(xi^2 dtheta/dxi) + theta^n = 0
+
+The solution for theta as a function of xi completely determines the
+structure of a polytrope (star under the above polytropic assumptions)
+except for the choice of central density.
+
+The polytropic index n is an important parameter in stellar modeling.
+Convection in stars limits n to >= 1.5 The Sun can be characterized
+somewhere between n = 2.5 and n = 3.
+
+As it turns out, most main sequence stars can be conveniently well
+characterized by polytropic index n = 3. You may find in the
+literature Eddington's "quartic equation" or the "Eddington Standard
+Model" which is based on the n = 3 parameter.
+
+Some general notes of structural physical phenomena along the main
+sequence. (my reference is some class notes by John Faulkner)
+
+Whatever opacity or energy generation law, L increases with M. This
+places massive stars at the upper end of the main sequence. Also
+radiation pressure increases with M. So that for a given density rho,
+temperature T will be larger, which means that electron-scattering
+will be more important. Therefore, in general:
+
+Upper Main Sequence: 
+        Large mass stars, 
+        supported by radiation pressure
+        electron-scattering (energy transport), 
+        CNO cycle dominant (energy generation).
+
+Lower Main Sequence: 
+        Small mass stars, 
+        supported by gas pressure
+        Kramers opacity (energy transport), 
+        PP chain dominant (energy generation).
+
+The following are some "homologous" relationships for M, R, L, T on
+the upper and lower main sequence. These are from Bowers and Deeming
+Table 7.3, which follows the Upper and Lower Main Sequence assumptions
+above.
+
+Upper Main Sequence: 
+R ~ (kappa_0 epsilon_0)^{3/4} * G^{21/164} * M^{37/82}
+L ~ kappa_0^{1/2} * epsilon_0^{3/2} *G^{-2} * T^{125/4}
+T ~ (kappa_0 epsilon_0)^{-2/111} * G^{5/41} * M^{2/41}
+L ~ kappa_0^{-42/41} * epsilon_0^{-1/41} * G^{297/164} * M^{125/82}
+
+Lower Main Sequence: 
+R ~ (kappa_0 epsilon_0)^{2/15} * (G mu)^{-1/3} * M^{1/15}
+L ~ kappa_0^{-1/6} * epsilon_0^{5/6} *(G mu)^{-4/3} * T^{81/12}
+T ~ (kappa_0 epsilon_0)^{-2/15} * (G mu)^{4/3} * M^{12/15}
+L ~ kappa_0^{-16/15} * epsilon_0^{1/15} * (G mu)^{23/3} * M^{27/5}
+
+kappa_0 = constant of opacity from Kramer's opacity formula (function
+of chemical composition)
+epsilon_0 = constant of energy generation rate (appropriate for H
+burning)
+G = gravitational constant 
+mu = mean molecular weight 
+M = mass 
+T = temperature
+
+Bowers and Deeming have an interesting discussion about these
+relationships. First, there is a mass-luminosity relation of L ~ M^5.4
+for the upper main sequence and L ~ M^1.6 for the lower main sequence.
+These indices (5.4, 1.6) are primarily indices of relative importance
+of gas pressure and radiation pressure for support of the star.
+
+One can estimate the position of the main sequence in the HR diagram
+with these relationships. In the lower main sequence, L ~ T^7 and in
+the upper main sequence, L ~ T^31.
+
+The luminosity of stars on the lower main sequence is very sensitive
+to the value of G. This may be interesting to cosmology theorists that
+demand that the gravitational constant be different in the past than
+what it is now.
+
+Also, a change in chemical composition of a star is felt first through
+mu, the mean molecular weight, and increases the temperature T by a
+factory mu^{4/3} and L by a factor mu^{23/3}. It therefore moves a
+star along a line L ~ T^6 in the HR diagram.
+
+You can read more about these homologous relationships in Bowers and
+Deeming (Chapter 7), and Chandrasekhar (Chapter 6).
+
+Amara
+
+-- 
+
+*************************************************************************
+Amara Graps                         email: agr...@netcom.com <>
+Computational Physics               vita:  finger agr...@best.com <>
+Multiplex Answers                   URL:   http://www.amara.com/ <http://www.amara.com/>
+*************************************************************************
+"If you gaze for long into the abyss, the abyss also gazes into
+you."  --Nietzsche
+
+
+
+
+
+
+
+
+
+
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Wed 1999 Sep 15 (18%/949) | &tSftDotIotE
+ __
+/  \ Take my advice:  Pull down your pants and slide on the ice.
+\__/ Dr. Sidney Freedman
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+Bastian Hanschitz wrote:
+> Since luminosity  L remains constant during the main-sequence-phase
+> T_hr, ...
+
+Actually, the luminosity increases significantly (by ~25% as I recall)
+as the star consumes H in its core.  Most lifetimes are generally only
+timescales, anyway.
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Wed 1999 Sep 15 (18%/949) | &tSftDotIotE
+ __
+/  \ Take my advice:  Pull down your pants and slide on the ice.
+\__/ Dr. Sidney Freedman
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Brian Davis:
+Bastian Hanschitz wrote:
+> From what I can see, you are looking for several qualities of HRD
+> main-sequence stars.
+
+   If "HRD" is Hertzsprung Russell Diagram, you're correct.
+
+> An empirical mass/luminosity-relationship... is:
+> 
+> L / L_o = (m / m_o) ^ a
+>
+> I've found values for  a  between 3.0 and 3.5 (depends on where you
+> place your tangent...)
+
+   And I guess that's my problem: I'd like to know which *one* is right,
+when in fact there may not be a single one that is correct
+
+> Since luminosity  L remains constant during the main-sequence...
+
+   Well, actually (according to everything I've read) it doesn't, and
+that's (probably) part of my problem. Gradually a star increases in
+luminosity, surface temperature, and radius during it's time on the main
+sequence. The Sun probably started out around 30% dimmer (and will
+finish almost twice as bright) as it is now, all while still on the main
+sequence.
+   And I suspect that's part of the problem I'm having: the zero-age
+main sequence luminosity won't be the same as the empirically observed
+luminosities, due to aging (as well as different masses aging at
+different rates, and the fact that low-mass stars haven't been around
+long enough to have any "aged" examples present (the galaxy is too
+young)).
+
+[snip otherwise reasonable BotE calculation]
+
+> T_hr = 7,2 * 10^9 a  * (m / m_o) ^2
+
+   The dependance on the mass (m^2, in your example) seems wrong; it
+implies that massive stars should live longer than low-mass ones, which
+is not the case.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Brian Davis:
+Erik Max Francis wrote:
+
+> [sci.astro added to Newsgroups, since that's where you're bound to 
+> find better information on this.]
+   Yeah, I already did that with my first reply to the thread - oh well,
+great minds...
+
+
+> Here's some more information:
+   [snip a looong, detailed list that was *just* the sort of thing I was
+looking for]
+
+Thanks, Erik, you've saved me much time once again. Of course, you may
+also have gotten me off USENET for some time as I try to digest all of
+that post (including Amara's contribution).
+   The sort answer seems to be that I'm looking for more precession than
+is really warrented.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Bastian Hanschitz:
+Hi there...!
+
+From what I can see, you are looking for several qualities of HRD
+main-sequence stars.
+(Hope that's true otherwise this has only been an excercise in typing...:)
+An empirical mass/luminosity-relationship in first approximation is:
+
+
+L / L_o = (m / m_o) ^ a
+L     : Luminosity of star
+L_o : Luminosity of sun
+m    : Mass of star
+m_o: Mass of sun
+
+a     :  I've found values for  a  between 3.0 and 3.5 (depends on where you
+place your tangent...)
+
+Mass/radius-relationship:
+
+R / R_o = ( m / m_o ) ^ 0.6
+
+R, R_o : Radius star / sun
+
+
+Time on main sequence:
+
+Since luminosity  L remains constant during the main-sequence-phase T_hr,
+the star burns the
+
+energy W = L * T_hr
+
+Hydrogen-fusion produces about 6.13*10^14 J from 1kg H.
+If one assumes 70% (average percentage in sun's photoshere) of the star's
+mass to be Hydrogen, then that amounts to the energy
+
+W = 6,13*10^14 (J/kg) * 0,07 * m = 0,43*10^14 (J/kg)
+
+So the time on the m-s becomes:
+
+T_hr = 0,43*10^14 (J/kg) * m / L
+
+And that thrown into the mass/luminosity-relation gives
+
+
+T_hr = 7,2 * 10^9 a  * (m / m_o) ^2
+a          : years
+m,m_o : Mass star, sun
+
+
+And finally a table showing some values for stars with the same chemical
+composition as the sun:
+
+Spectral type:    O5  |    B0   |    A0   |    F0    |   G0   |    K0   |
+M0
+m/m_o          :    50   |   18    |   3,2    |   1,8    |   1,1   |    0,8
+|    0,5
+T_hr/years    :   3e6  |   2e7   |   7e8   |   2e9   |    6e9  |   1e10 |
+3e10
+
+e6 : 10^6 (for sake of space...)
+
+The large difference in the age of main-sequence-stars leads to the
+conclusion that there are still stars being born...
+
+Hope this helps a bit...
+
+BTW: I have this stuff from two german textbooks on astronomy
+(Weigert/Wendker "Astronomy and Astrophysics",
+Gondolatsch/Steinacker/Zimmermann "Astronomy") and my notes from Prof.
+deBoer, Bonn, Germany.
+
+
+Bastian = :-)
+
+------------------------------
+Brian Davis <bda...@pdnt.com <>> schrieb in im Newsbeitrag:
+37E006CA.7E79@pdnt.com...
+- show quoted text -
+> [sci.astro added to thread]
+>
+> A. McIntire wrote:
+>
+> > You're right;  Gillett's formula seems to work okay for dwarf stars,
+> > but it overestimates the luminosities of stars more massive than the
+> > sun.
+>
+>    Of course, mine is even worse... :-(
+>
+> > The formula given by the "Astronomy and Astrophysics Encyclopedia",
+> > edited by Stephen P. Moran gives
+>
+>    Thanks for another good reference. But now I've got *five* different
+> mass/luminosity relationships to go on, and still no clue. Putting them
+> all in (roughly) the same form*, they are:
+>
+> An empirical fit by McCluskey & Kondo, 1972 [for M > 0.2 Ms]:
+> L = 1.202 ( M ^ 3.8 )
+>
+> An empirical fit by Harris et.al <http://et.al>., 1963 [approximate]
+> L = M ^ 4    if L > Ls
+>   = M ^ 2.8  if L < Ls
+>
+> L = M ^ 3.8
+>
+> Fit provided by you (from Moran's book):
+> L = 0.4365 ( M ^ 2.6 )  if M < 0.5 Ms
+>   =          M ^ 3.8    if 0.5 Ms < M < 2.5 Ms
+>   = 3.1623 ( M ^ 2.5 )  if M > 2.5 Ms
+>
+> Equation used by Martyn Fogg [for zero age main sequence stars; only
+> quoted as valid up to 2.0 Ms anyway]:
+> L = 0.71 ( M ^ n )
+>    n = 3.75 M + 2.125  for M < 0.7 Ms
+>    n = 4.75            for M > 0.7 Ms
+>
+> While I'm inclined to go with your's, (and see no reason to accept the
+> 1963 approximate relationship over the others), I am curious as to the
+> constraints on this. I realize perhaps the difference is just in the
+> data, but does anyone know of any relationships that claim to talk about
+> zero-age main sequence stars, and specificly how the luminosity changes
+> as they age, as well as their expected lifespans on the main sequence?
+> From Fogg, I have:
+>
+> L = Lz exp[ 0.045 (10 t / Tms )^1.33 ]
+>    Lz = zero age main sequence luminosity (one of the above?)
+>    t = age of star
+>    Tms = main sequence lifetime of star
+>        = 10 ( M ^ (1-n) )     (where n is defined above)
+>
+> But this is about *all* I have, and Fogg's equations specificly excluded
+> massive 2 Ms and above) stars, so I don't trust them too far.
+>
+> * putting them all in the same form BTW was probably the best learning
+> experience for me. Why are they presented in so many different ways?
+>
+> --
+> Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+Brian Davis wrote:
+
+>    Yeah, I already did that with my first reply to the thread - oh
+> well,
+> great minds...
+WHO ARE YOU AGAIN AND HOW DID YOU GET INTO MY HOUSE
+
+
+> Thanks, Erik, you've saved me much time once again. Of course, you may
+> also have gotten me off USENET for some time as I try to digest all of
+> that post (including Amara's contribution).
+Good, I'm glad -- that took a while (and admittedly I didn't do a
+completely exhaustive job).  I'd recommend you pick up some stellar
+structure and evolution texts -- there are quite a few available,
+although they're all technical, which is somewhat disappointing, since I
+remember after seeing _Cosmos_ I was interested in more, but couldn't
+find any laymen's boooks on the subject.  I had to wait until I knew
+enough to be able to digest some mathematics and physics before I could
+learn anything.  Rather disappointing.
+
+
+>    The sort answer seems to be that I'm looking for more precession
+> than
+> is really warrented.
+It's funny you mention that, because I had actually intended to point
+that out.  I don't know precisely what application you're looking to use
+this information for, but if it's for (hard) science fiction writing,
+you really don't need that much, especially if you're not going into
+details, and just putting together settings.  For instance, you need to
+know that Sirius' lifetime is almost certainly too short to support
+intelligent life, not necessarily exactly what that lifetime is to n
+significant figures.  Or for a game or bare-bones simulation,
+first-order approximations should do just fine.
+
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Thu 1999 Sep 16 (19%/949) | &tSftDotIotE
+ __
+/  \ No man is more cheated than the selfish man.
+\__/ Henry Ward Beecher
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+Brian Davis wrote:
+
+>    And I guess that's my problem: I'd like to know which *one* is
+> right,
+> when in fact there may not be a single one that is correct
+Indeed there isn't.  A log-log graph is not a straight line, so it's not
+simply a y = x^a, where a is a constant.  a is also a function of x.
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Thu 1999 Sep 16 (19%/949) | &tSftDotIotE
+ __
+/  \ No man is more cheated than the selfish man.
+\__/ Henry Ward Beecher
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Philip Plait:
+In sci.astro Brian Davis <bda...@pdnt.com <>> wrote:
+> [sci.astro added to thread]
+> A. McIntire wrote:
+
+
+> > You're right;  Gillett's formula seems to work okay for dwarf stars, 
+> > but it overestimates the luminosities of stars more massive than the 
+> > sun.
+
+>    Of course, mine is even worse... :-(
+>  
+> > The formula given by the "Astronomy and Astrophysics Encyclopedia",
+> > edited by Stephen P. Moran gives
+Nitpick: It's Stephen Maran. He's written quite a few popular
+astronomy books too.
+
+
+*    *    *    *    *    The Bad Astronomer    *    *    *    *
+
+Phil Plait                    bada...@badastronomy.com <>
+The Bad Astronomy Web Page: http://www.badastronomy.com <http://www.badastronomy.com>
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Leonard Erickson:
+"Bastian Hanschitz" <banth...@gmx.de <>> writes:
+
+> Hi there...!
+>
+> From what I can see, you are looking for several qualities of HRD
+> main-sequence stars.
+> (Hope that's true otherwise this has only been an excercise in typing...:)
+>
+> An empirical mass/luminosity-relationship in first approximation is:
+>
+> L / L_o = (m / m_o) ^ a
+>
+> L     : Luminosity of star
+> L_o : Luminosity of sun
+> m    : Mass of star
+> m_o: Mass of sun
+> a     :  I've found values for  a  between 3.0 and 3.5 (depends on where you
+> place your tangent...)
+Sources quoted in various postings seem to give values ranging from 2.5
+to 4.8. And also seem to indicate that "a" varies with mass. 
+
+If a *does* vary with mass, we need *that* function. <sigh>
+
+-- 
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - A. McIntire:
+Brian Davis wrote:
+> 
+> Bastian Hanschitz wrote:
+> 
+> > From what I can see, you are looking for several qualities of HRD
+> > main-sequence stars.
+> 
+>    If "HRD" is Hertzsprung Russell Diagram, you're correct.
+> 
+> > An empirical mass/luminosity-relationship... is:
+> >
+> > L / L_o = (m / m_o) ^ a
+> >
+> > I've found values for  a  between 3.0 and 3.5 (depends on where you
+> > place your tangent...)
+> 
+>    And I guess that's my problem: I'd like to know which *one* is right,
+> when in fact there may not be a single one that is correct
+> 
+> > Since luminosity  L remains constant during the main-sequence...
+> 
+>    Well, actually (according to everything I've read) it doesn't, and
+> that's (probably) part of my problem. Gradually a star increases in
+> luminosity, surface temperature, and radius during it's time on the main
+> sequence. The Sun probably started out around 30% dimmer (and will
+> finish almost twice as bright) as it is now, all while still on the main
+> sequence.
+>    And I suspect that's part of the problem I'm having: the zero-age
+> main sequence luminosity won't be the same as the empirically observed
+> luminosities, due to aging (as well as different masses aging at
+> different rates, and the fact that low-mass stars haven't been around
+> long enough to have any "aged" examples present (the galaxy is too
+> young)).
+> 
+> [snip otherwise reasonable BotE calculation]
+> 
+> > T_hr = 7,2 * 10^9 a  * (m / m_o) ^2
+> 
+>    The dependance on the mass (m^2, in your example) seems wrong; it
+> implies that massive stars should live longer than low-mass ones, which
+> is not the case.
+> 
+> --
+> Brian Davis.
+.
+  When I used the 3.5 power formula, the results I got were nowhere near
+given masses and luminosities of nearby stars.  I did a regression 
+analysis using data on about 30 nearby stars given in an astronomy book, 
+and got L=( M/Msun)^4.34.  Obviously most of these stars were less 
+massive than the sun. I think the formula I gave you earlier, based on 
+"The Astronomy and Astrophysics Encyclopedia", published in 1990, and 
+presumably having better data, gives
+results most closely matching the real universe.
+Using the above formulas for initial luminosity, Gillette's LZAMS 
+equations can still be used to get the relative increase in luminosity 
+over time, but as I said before, they overestimate the luminosity of 
+stars more massive than the Sun.
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Brian Davis:
+Leonard Erickson wrote:
+
+> Sources quoted in various postings seem to give values ranging from 
+> 2.5 to 4.8. And also seem to indicate that "a" varies with mass.
+> 
+> If a *does* vary with mass, we need *that* function. <sigh>
+   Which is why I initally liked Fogg's version; here, the exponent does
+vary with mass in a simple way (as oppossed to a bunch of patched
+together power laws, it's a little easier to calculate). but Fogg's
+version is limited to 2 Msolar or less (and it has problems, it seems,
+even there).
+   So I guess if I want accuracy, I use a patched function. <sigh>
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Brian Davis:
+A. McIntire wrote:
+> Using the [aforementioned] formulas for initial luminosity, 
+
+> Gillette's LZAMS equations can still be used to get the relative 
+> increase in luminosity over time,
+   Although the equations you gave overestimate the Lzams significantly
+(after all, they yield L=1 for M=1, which is *not* the case for a
+zero-age population). So I've got to (at least) uniformly scale the
+luminosities down so that L=0.71 when M=1.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Brian Davis:
+Erik Max Francis wrote:
+>> Of course, you may also have gotten me off USENET for some time...
+
+> 
+> Good, I'm glad -- that took a while
+   Hey, if you wanted me off USENET, you don't have to be rude about it
+<grin; oh the wonderful things you can do by editing quoted material>...
+
+
+> (and admittedly I didn't do a completely exhaustive job).
+   No, but you did a well-rounded job (with references!
+thankyouthankyouthankyou...) which helps in a number of ways.
+
+
+> I'd recommend you pick up some stellar structure and evolution 
+> texts -- there are quite a few available,
+   Which is part of the problem - picking one and digging through it is
+something I've not been able to do yet.
+
+
+>> The sort answer seems to be that I'm looking for more precession
+>> than is really warrented.
+> 
+> It's funny you mention that, because I had actually intended to 
+> point that out.  I don't know precisely what application you're 
+> looking [at]...
+   It started out as simple worldbuilding (thus the title), but what I
+was aiming at was trying to classify the habitable zones around various
+stars (ecosphere width vs. stellar mass vs. stellar abundance, maximum
+and average lifetime in the habitable zone, tidal locking, etc.) and so
+I got rather interesed in the details (which is where I usually get
+stuck). Order of magnitude is good, but it's not the way I was trained.
+   Yes, I'm aware of Martyn Fogg's work on this, as well as the very
+good book "Circumstellar Habitable Zones" - I just like doing some of
+this one my own. Incidently, for others interested, let me recommend:
+
+http://www.planetarybiology.com/principl.htm <http://www.planetarybiology.com/principl.htm>
+
+While there are better resources off-line, this is a pretty good one for
+some of this stuff on-line.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+Brian Davis wrote:
+
+> Erik Max Francis wrote:
+> 
+> >> Of course, you may also have gotten me off USENET for some time...
+> >
+> > Good, I'm glad -- that took a while
+> 
+>    Hey, if you wanted me off USENET, you don't have to be rude about
+> it
+> <grin; oh the wonderful things you can do by editing quoted
+> material>...
+ONE DAY I'LL GET YOU FOR THIS
+
+
+>    It started out as simple worldbuilding (thus the title), but what I
+> was aiming at was trying to classify the habitable zones around
+> various
+> stars (ecosphere width vs. stellar mass vs. stellar abundance, maximum
+> and average lifetime in the habitable zone, tidal locking, etc.) and
+> so
+> I got rather interesed in the details (which is where I usually get
+> stuck). Order of magnitude is good, but it's not the way I was
+> trained.
+One issue is that while stellar evolution is a well-developed theory and
+matches very well with observation, it's pretty hard to get exact
+figures for all the variables:  mass, luminosity, radius, temperature,
+composition, age, etc.  You can't measure the mass if it's in a binary
+(and even then you can only get the total mass of the binary); and all
+the rest have a complex nonlinear relationship.
+
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Thu 1999 Sep 16 (22%/949) | &tSftDotIotE
+ __
+/  \ God grant me to contend with those that understand me.
+\__/ Thomas Fuller
+----------------------------------------------------------------------------
+
+Friday, 17 September 1999 08:00:00 UTC+1 - Bruce Scott TOK:
+In article <990916.134322...@krypton.rain.com <>>,
+Leonard Erickson <sha...@krypton.rain.com <>> wrote:
+
+>Sources quoted in various postings seem to give values ranging from 2.5
+>to 4.8. And also seem to indicate that "a" varies with mass. 
+>
+>If a *does* vary with mass, we need *that* function. <sigh>
+a does indeed vary with mass... it depends on how much of the entire
+curve is used in the fitting.  For sunlike stars, it is mildly different
+than for much bigger stars or much smaller ones, and for brown dwarfs
+the dependence is very nonlinear because you are close to a cutoff.
+
+Many nearby stars are not on the main sequence... it is good to remember
+that.
+
+The best thing to do is take a published curve for zero-age or evolved
+main sequence... or just the (thicker) observed main sequence, and fit
+to that.  What I would do is fit the upper and lower parts of the curve
+separately and then use a roll-over for the transition.  Use your
+favorite method...  you'll need at least a calculator anyway.
+
+-- 
+cu,
+Bruce
+
+drift wave turbulence:  http://www.rzg.mpg.de/~bds/ <http://www.rzg.mpg.de/~bds/>
+----------------------------------------------------------------------------
+
+Friday, 17 September 1999 08:00:00 UTC+1 - Brian Davis:
+Erik Max Francis wrote:
+
+> One issue is that while stellar evolution is a well-developed theory 
+> and matches very well with observation, it's pretty hard to get 
+> exact figures for all the variables
+   Agreed, which is why I started with a theoretical relationship for
+zero-age main sequence stars. In other words, since I'm trying to get a
+statistical estimate, I can just set all the variables to the values I
+want, and generate statistics (as to what they *mean*, of course, is a
+different problem).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Friday, 17 September 1999 08:00:00 UTC+1 - A. McIntire:
+- show quoted text -Brian Davis wrote:
+> 
+> A. McIntire wrote:
+> 
+> > Using the [aforementioned] formulas for initial luminosity,
+> > Gillette's LZAMS equations can still be used to get the relative
+> > increase in luminosity over time,
+> 
+>    Although the equations you gave overestimate the Lzams significantly
+> (after all, they yield L=1 for M=1, which is *not* the case for a
+> zero-age population). So I've got to (at least) uniformly scale the
+> luminosities down so that L=0.71 when M=1.
+> 
+> --
+> Brian Davis.
+.
+L=1 for M=1 at age zero. Obviously the sun is older than age 0, and when
+you plug in the LZAM formula, as you said, the luminosity of the sun is
+now about 1.4.
+Incidentally, you'll also have to adjust for initial composition of the
+stellar material.  Martin Schwarzschild, in "Structure and Evolution of 
+the Stars" gives
+Luminosity is proportional to k^8.06.
+ where k= 1/(2X + 3/4 Y + 1/2 Z)
+where X= fraction of hydrogen in star by % at age zero,
+      Y= fraction of helium in star by % at age zero,
+      Z= fraction of heavier elements by% at age zero.
+Tha book was published in 1958, so maybe new date have ruined this 
+theoretical model.
+----------------------------------------------------------------------------
+
+Saturday, 18 September 1999 08:00:00 UTC+1 - A. McIntire:
+Erik Max Francis wrote:
+> 
+> B
+> 
+> >    It started out as simple worldbuilding (thus the title), but what I
+> > was aiming at was trying to classify the habitable zones around
+> > various
+> > stars (ecosphere width vs. stellar mass vs. stellar abundance, maximum
+> > and average lifetime in the habitable zone, tidal locking, etc.) and
+> > so
+> > I got rather interesed in the details (which is where I usually get
+> > stuck). Order of magnitude is good, but it's not the way I was
+> > trained.
+> 
+> One issue is that while stellar evolution is a well-developed theory and
+> matches very well with observation, it's pretty hard to get exact
+> figures for all the variables:  mass, luminosity, radius, temperature,
+> composition, age, etc.  You can't measure the mass if it's in a binary
+> (and even then you can only get the total mass of the binary); and all
+> the rest have a complex nonlinear relationship.
+> 
+> --
+> Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+>  Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+>     San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+>              USA | Thu 1999 Sep 16 (22%/949) | &tSftDotIotE
+>  __
+> /  \ God grant me to contend with those that understand me.
+> \__/ Thomas Fuller.
+.
+I agree with your general point, but you stated it a little backwards:  
+The mass can be determined ONLY in binary, or multiple star systems.
+I read on an astronomy site lately that luminosities  and masses of stars 
+within 10 parsecs of us are correct to within about 10% for each factor.
+----------------------------------------------------------------------------
+
+Saturday, 18 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+"A. McIntire" wrote:
+
+> Erik Max Francis wrote:
+>
+> > You can't measure the mass if it's in a
+> > binary
+> > (and even then you can only get the total mass of the binary); and
+> > all
+> > the rest have a complex nonlinear relationship.
+>
+> I agree with your general point, but you stated it a little backwards:
+> The mass can be determined ONLY in binary, or multiple star systems.
+Hardly a little backwards -- I got it _exactly_ backwards.  Give me some
+credit for screwing up truly badly!
+
+If it wasn't already fairly obvious even from the context, that was a
+flub of the fingers -- we can only measure the mass (the sum of the
+component stars', actually) directly in multiple star systems; for stars
+in isolation we have no way of measuring its mass.
+
+
+> I read on an astronomy site lately that luminosities  and masses of
+> stars 
+> within 10 parsecs of us are correct to within about 10% for each
+> factor.
+Indeed.  Astrophysics is a hard science, after all -- it's ultimately
+dictated by observation, no matter how elegant the theory is.  If it
+disagrees with experiment, then it needs revision; the theories that we
+presently have match with observation (what we _can_ observe) to an
+acceptable degree.
+
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Sat 1999 Sep 18 (27%/949) | &tSftDotIotE
+ __
+/  \ The enemy of my enemy is my friend.
+\__/ (an Arab proverb)
+----------------------------------------------------------------------------
+
+Saturday, 18 September 1999 08:00:00 UTC+1 - Riboflavin:
+Erik Max Francis wrote in message <37E3FE28...@alcyone.com <>>...
+>Hardly a little backwards -- I got it _exactly_ backwards.  Give me some
+>credit for screwing up truly badly!
+
+The new EMF -when he's wrong, he's EXACTLY wrong. Now available in
+department stores nationwide.
+--
+Kevin Allegood ribotr...@mindspring.pants.com <>
+Remove the pants from my email address to reply
+"I am convinced people who worry about spelling and punctuation
+on the net fold their underwear before they have sex. It's just got to be."
+- Bunboy
+----------------------------------------------------------------------------
+
+Monday, 20 September 1999 08:00:00 UTC+1 - Amara Graps:
+Brian Davis <bda...@pdnt.com <>> wrote:
+ 
+>Erik Max Francis wrote:
+>>grin; oh the wonderful things you can do by editing quoted material>...
+>> (and admittedly I didn't do a completely exhaustive job).
+It's a little funny for me to see my three-year old material emerge
+from the bit-grave. (I hope it was good.)
+
+
+>No, but you did a well-rounded job (with references!
+>thankyouthankyouthankyou...) which helps in a number of ways.
+                                      
+>It started out as simple worldbuilding (thus the title), but what I
+>was aiming at was trying to classify the habitable zones around
+>various stars (ecosphere width vs. stellar mass vs. stellar
+>abundance, maximum and average lifetime in the habitable zone, tidal
+>locking, etc.) and so I got rather interesed in the details (which
+>is where I usually get stuck). Order of magnitude is good, but it's
+>not the way I was trained. 
+Brian, I have something that might be useful for you, if you are
+interested in order-of-magnitude kinds of things regarding
+main-sequence stars. What I offer is based on star-catalog data, so
+this is an empirical approach.
+
+In the summer of 1993, I sifted through the Wooley 25 pc and the
+Yale Bright Star catalogs, in order to organize and filter out main
+sequence stars, which were, based on other criteria, going to be
+part of a selection of circumstellar disk stars to observe with ISO,
+the Infrared Space Observatory.
+
+I pulled out the 100 brightest stars of each spectral type, and
+plotted them on an HR diagram: absolute magnitude versus spectral
+type and fit polynomial curves to the diagram to arrive at minimum
+and maximum bounds for main sequence stars. (I took +/- 1? sigma for
+the bounds plus another 30% from the highest absolute magnitude).
+Some stars were mis-classified, and other stars could be one of two
+classes, so I frequently had to go to SIMBAD to look up more
+information on a star to see where the star probably should belong
+on the HR Diagram.
+
+It's rough, but by eye, it seems to give a good envelope of absolute
+magnitudes for main sequence stars for each spectral type.
+
+You can see a plot of the result at:
+
+http://www.amara.com/past/HRDiagmed.gif <http://www.amara.com/past/HRDiagmed.gif>
+
+(from the page: http://www.amara.com/past/irexcess.html <http://www.amara.com/past/irexcess.html>)
+
+So the empirical filter to keep the main-sequence stars is the
+following, where "stype" is the spectral type, in a numerical format
+so that 0 = '0', 1 = 'B', 1.2 = 'B2' etc.
+
+
+lowest absolute magnitude for main sequence stars = 
+-6.3755 + 6.8529*stype - 1.6762*stype^2 + 0.1621*stype^3
+
+highest absolute magnitude for main sequence stars = 
+uabsmag= -0.50779 -0.080193*s - 0.21704*s^2 + .0049891*s^3
+uabsmag = uabsmag - 0.3*uabsmag  ;subtract additional 30%
+
+Below is some old IDL code, that might be useful.  Have fun.
+
+Amara
+
+
+
+;***************************************************
+function low_absmag, num_sptype
+;PURPOSE: This function takes the input spectral type (in
+;numerical format where 0 = '0', 1 = 'B', 1.2 = 'B2' etc.),
+;and calculates the lower bound of the acceptable absolute
+;magnitudes. These values are based on fits in Kaleidagraph v3.0
+;to Wooley 25pc catalog data.
+;<<<<<<FORMULA:>>>>>>>>>>>>
+;low_absmag = -6.3755 + 6.8529*stype - 1.6762*stype^2 + 0.1621*stype^3
+;-----------------------------------------------------------------
+;Amara Graps    8-22-93        Updated:
+;----------------------------------------------------------------
+s = num_sptype
+labsmag = -6.3755 + 6.8529*s - 1.6762*s^2 + 0.1621*s^3
+
+return, labsmag
+end   ;of function low_absmag
+;***************************************************
+function up_absmag, num_sptype
+;PURPOSE: This function takes the input spectral type (in
+;numerical format where 0 = '0', 1 = 'B', 1.2 = 'B2' etc.),
+;and calculates the upper bound of the acceptable absolute
+;magnitudes. These values are based on fits in Kaleidagraph v3.0
+;to Wooley 25pc catalog data. I subtract (upper bound is
+;UP on the HR diagram) an additional 30% to encompass the
+;main envelope of the Wooley main sequence stars.
+;<<<<<<FORMULA:>>>>>>>>>>>>
+;up_absmag = -0.50779 + -0.080193*stype - 0.21704*stype^2 
+;+ .0049891*stype^3
+;-----------------------------------------------------------------
+;Amara Graps    8-22-93        Updated:
+;----------------------------------------------------------------
+s = num_sptype
+uabsmag = -0.50779 -0.080193*s - 0.21704*s^2 + .0049891*s^3
+uabsmag = uabsmag - 0.3*uabsmag  ;subtract additional 30%
+
+return, uabsmag
+end   ;of function up_absmag
+;***************************************************
+
+function extract_stype, text
+;PURPOSE: This function takes the input text which is a
+;string number for spectral type and extract the leftmost
+;two characters.
+;-----------------------------------------------------------------
+;Amara Graps    8-15-93        Updated:
+;----------------------------------------------------------------
+str = strtrim(text,2)   ;strip white space
+left2char = strmid(str, 0, 2)
+
+return, left2char
+end   ;of function extract_stype
+
+;***************************************************
+function convert_spec, text
+;PURPOSE: This function converts the input 2-char text string
+;to a number that we can use as an x-value to plot.  The
+;ordering of the spectral type is M,K,G,F,A,G,O = 
+;1,2,3,4,5,6,7  with the secondary value '2' of 'G2' being
+;a decimal value.
+;-------------------------------------------------------
+;Amara Graps   8-16-93     Updated: 8-17-93
+;-------------------------------------------------------
+first_char = strmid(text, 0, 1)
+last_char = strmid(text, 1, 1)
+case first_char of
+   'O': num = 0.
+   'B': num = 1.
+   'A': num = 2.
+   'F': num = 3.
+   'G': num = 4.
+   'K': num = 5.
+   'M': num = 6.
+endcase
+case last_char of
+   '0': num = num + 0.0
+   '1': num = num + 0.1
+   '2': num = num + 0.2
+   '3': num = num + 0.3
+   '4': num = num + 0.4
+   '5': num = num + 0.5
+   '6': num = num + 0.6
+   '7': num = num + 0.7
+   '8': num = num + 0.8
+   '9': num = num + 0.9
+   else: num = num + 0.5   ;for weird chars
+endcase
+
+return, num
+end   ;of function convert_spec
+;***************************************************************
+
+-- 
+
+*****************************************************************
+Amara Graps                 | Max-Planck-Institut fuer Kernphysik
+Interplanetary Dust Group   | Saupfercheckweg 1
++49-6221-516-543            | 69117 Heidelberg, GERMANY
+                            * http://galileo.mpi-hd.mpg.de/~graps <http://galileo.mpi-hd.mpg.de/~graps>
+*****************************************************************
+        "Never fight an inanimate object." - P. J. O'Rourke
+----------------------------------------------------------------------------
+
+Sunday, 26 September 1999 08:00:00 UTC+1 - Robert Teague:
+Brian Davis wrote:
+> 
+>    It started out as simple worldbuilding (thus the title), but what I
+> was aiming at was trying to classify the habitable zones around various
+> stars (ecosphere width vs. stellar mass vs. stellar abundance, maximum
+> and average lifetime in the habitable zone, tidal locking, etc.) and so
+> I got rather interesed in the details (which is where I usually get
+> stuck). Order of magnitude is good, but it's not the way I was trained.
+>    Yes, I'm aware of Martyn Fogg's work on this, as well as the very
+> good book "Circumstellar Habitable Zones" - I just like doing some of
+> this one my own. Incidently, for others interested, let me recommend:
+> 
+I haven't seen it mentioned in this thread, so I'll throw this out:
+
+"Habitable Planets for Man" by Dole and Asimov. The 2nd and 3rd editions
+have
+the relevant equations.
+
+Robert
+-- 
+"Being the most magnificent horse in the Universe is not
+something anyone should have to work at."
+                        --Starlite, "Horse of a Different Color"

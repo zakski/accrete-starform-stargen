@@ -1,0 +1,513 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/aVuMU3ZNoQw
+TITLE: Mass/Luminosity & Stellar aging? 
+
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Brian Davis:
+[sci.astro added to thread]
+A. McIntire wrote:
+
+> You're right;  Gillett's formula seems to work okay for dwarf stars, 
+> but it overestimates the luminosities of stars more massive than the 
+> sun.
+
+   Of course, mine is even worse... :-(
+ 
+> The formula given by the "Astronomy and Astrophysics Encyclopedia",
+> edited by Stephen P. Moran gives
+
+   Thanks for another good reference. But now I've got *five* different
+mass/luminosity relationships to go on, and still no clue. Putting them
+all in (roughly) the same form*, they are:
+
+An empirical fit by McCluskey & Kondo, 1972 [for M > 0.2 Ms]:
+L = 1.202 ( M ^ 3.8 )
+
+An empirical fit by Harris et.al <http://et.al>., 1963 [approximate]
+L = M ^ 4    if L > Ls
+  = M ^ 2.8  if L < Ls
+
+L = M ^ 3.8
+
+Fit provided by you (from Moran's book):
+L = 0.4365 ( M ^ 2.6 )  if M < 0.5 Ms
+  =          M ^ 3.8    if 0.5 Ms < M < 2.5 Ms
+  = 3.1623 ( M ^ 2.5 )  if M > 2.5 Ms
+
+Equation used by Martyn Fogg [for zero age main sequence stars; only
+quoted as valid up to 2.0 Ms anyway]:
+L = 0.71 ( M ^ n )
+   n = 3.75 M + 2.125  for M < 0.7 Ms
+   n = 4.75            for M > 0.7 Ms
+
+While I'm inclined to go with your's, (and see no reason to accept the
+1963 approximate relationship over the others), I am curious as to the
+constraints on this. I realize perhaps the difference is just in the
+data, but does anyone know of any relationships that claim to talk about
+zero-age main sequence stars, and specificly how the luminosity changes
+as they age, as well as their expected lifespans on the main sequence?
+From Fogg, I have:
+
+L = Lz exp[ 0.045 (10 t / Tms )^1.33 ]
+   Lz = zero age main sequence luminosity (one of the above?)
+   t = age of star
+   Tms = main sequence lifetime of star
+       = 10 ( M ^ (1-n) )     (where n is defined above)
+
+But this is about *all* I have, and Fogg's equations specificly excluded
+massive 2 Ms and above) stars, so I don't trust them too far.
+
+* putting them all in the same form BTW was probably the best learning
+experience for me. Why are they presented in so many different ways?
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+Bastian Hanschitz wrote:
+> Since luminosity  L remains constant during the main-sequence-phase
+> T_hr, ...
+
+Actually, the luminosity increases significantly (by ~25% as I recall)
+as the star consumes H in its core.  Most lifetimes are generally only
+timescales, anyway.
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Wed 1999 Sep 15 (18%/949) | &tSftDotIotE
+ __
+/  \ Take my advice:  Pull down your pants and slide on the ice.
+\__/ Dr. Sidney Freedman
+----------------------------------------------------------------------------
+
+Wednesday, 15 September 1999 08:00:00 UTC+1 - Brian Davis:
+Bastian Hanschitz wrote:
+> From what I can see, you are looking for several qualities of HRD
+> main-sequence stars.
+
+   If "HRD" is Hertzsprung Russell Diagram, you're correct.
+
+> An empirical mass/luminosity-relationship... is:
+> 
+> L / L_o = (m / m_o) ^ a
+>
+> I've found values for  a  between 3.0 and 3.5 (depends on where you
+> place your tangent...)
+
+   And I guess that's my problem: I'd like to know which *one* is right,
+when in fact there may not be a single one that is correct
+
+> Since luminosity  L remains constant during the main-sequence...
+
+   Well, actually (according to everything I've read) it doesn't, and
+that's (probably) part of my problem. Gradually a star increases in
+luminosity, surface temperature, and radius during it's time on the main
+sequence. The Sun probably started out around 30% dimmer (and will
+finish almost twice as bright) as it is now, all while still on the main
+sequence.
+   And I suspect that's part of the problem I'm having: the zero-age
+main sequence luminosity won't be the same as the empirically observed
+luminosities, due to aging (as well as different masses aging at
+different rates, and the fact that low-mass stars haven't been around
+long enough to have any "aged" examples present (the galaxy is too
+young)).
+
+[snip otherwise reasonable BotE calculation]
+
+> T_hr = 7,2 * 10^9 a  * (m / m_o) ^2
+
+   The dependance on the mass (m^2, in your example) seems wrong; it
+implies that massive stars should live longer than low-mass ones, which
+is not the case.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Bastian Hanschitz:
+Hi there...!
+
+From what I can see, you are looking for several qualities of HRD
+main-sequence stars.
+(Hope that's true otherwise this has only been an excercise in typing...:)
+An empirical mass/luminosity-relationship in first approximation is:
+
+
+L / L_o = (m / m_o) ^ a
+L     : Luminosity of star
+L_o : Luminosity of sun
+m    : Mass of star
+m_o: Mass of sun
+
+a     :  I've found values for  a  between 3.0 and 3.5 (depends on where you
+place your tangent...)
+
+Mass/radius-relationship:
+
+R / R_o = ( m / m_o ) ^ 0.6
+
+R, R_o : Radius star / sun
+
+
+Time on main sequence:
+
+Since luminosity  L remains constant during the main-sequence-phase T_hr,
+the star burns the
+
+energy W = L * T_hr
+
+Hydrogen-fusion produces about 6.13*10^14 J from 1kg H.
+If one assumes 70% (average percentage in sun's photoshere) of the star's
+mass to be Hydrogen, then that amounts to the energy
+
+W = 6,13*10^14 (J/kg) * 0,07 * m = 0,43*10^14 (J/kg)
+
+So the time on the m-s becomes:
+
+T_hr = 0,43*10^14 (J/kg) * m / L
+
+And that thrown into the mass/luminosity-relation gives
+
+
+T_hr = 7,2 * 10^9 a  * (m / m_o) ^2
+a          : years
+m,m_o : Mass star, sun
+
+
+And finally a table showing some values for stars with the same chemical
+composition as the sun:
+
+Spectral type:    O5  |    B0   |    A0   |    F0    |   G0   |    K0   |
+M0
+m/m_o          :    50   |   18    |   3,2    |   1,8    |   1,1   |    0,8
+|    0,5
+T_hr/years    :   3e6  |   2e7   |   7e8   |   2e9   |    6e9  |   1e10 |
+3e10
+
+e6 : 10^6 (for sake of space...)
+
+The large difference in the age of main-sequence-stars leads to the
+conclusion that there are still stars being born...
+
+Hope this helps a bit...
+
+BTW: I have this stuff from two german textbooks on astronomy
+(Weigert/Wendker "Astronomy and Astrophysics",
+Gondolatsch/Steinacker/Zimmermann "Astronomy") and my notes from Prof.
+deBoer, Bonn, Germany.
+
+
+Bastian = :-)
+
+------------------------------
+Brian Davis <bda...@pdnt.com <>> schrieb in im Newsbeitrag:
+37E006CA.7E79@pdnt.com...
+- show quoted text -
+> [sci.astro added to thread]
+>
+> A. McIntire wrote:
+>
+> > You're right;  Gillett's formula seems to work okay for dwarf stars,
+> > but it overestimates the luminosities of stars more massive than the
+> > sun.
+>
+>    Of course, mine is even worse... :-(
+>
+> > The formula given by the "Astronomy and Astrophysics Encyclopedia",
+> > edited by Stephen P. Moran gives
+>
+>    Thanks for another good reference. But now I've got *five* different
+> mass/luminosity relationships to go on, and still no clue. Putting them
+> all in (roughly) the same form*, they are:
+>
+> An empirical fit by McCluskey & Kondo, 1972 [for M > 0.2 Ms]:
+> L = 1.202 ( M ^ 3.8 )
+>
+> An empirical fit by Harris et.al <http://et.al>., 1963 [approximate]
+> L = M ^ 4    if L > Ls
+>   = M ^ 2.8  if L < Ls
+>
+> L = M ^ 3.8
+>
+> Fit provided by you (from Moran's book):
+> L = 0.4365 ( M ^ 2.6 )  if M < 0.5 Ms
+>   =          M ^ 3.8    if 0.5 Ms < M < 2.5 Ms
+>   = 3.1623 ( M ^ 2.5 )  if M > 2.5 Ms
+>
+> Equation used by Martyn Fogg [for zero age main sequence stars; only
+> quoted as valid up to 2.0 Ms anyway]:
+> L = 0.71 ( M ^ n )
+>    n = 3.75 M + 2.125  for M < 0.7 Ms
+>    n = 4.75            for M > 0.7 Ms
+>
+> While I'm inclined to go with your's, (and see no reason to accept the
+> 1963 approximate relationship over the others), I am curious as to the
+> constraints on this. I realize perhaps the difference is just in the
+> data, but does anyone know of any relationships that claim to talk about
+> zero-age main sequence stars, and specificly how the luminosity changes
+> as they age, as well as their expected lifespans on the main sequence?
+> From Fogg, I have:
+>
+> L = Lz exp[ 0.045 (10 t / Tms )^1.33 ]
+>    Lz = zero age main sequence luminosity (one of the above?)
+>    t = age of star
+>    Tms = main sequence lifetime of star
+>        = 10 ( M ^ (1-n) )     (where n is defined above)
+>
+> But this is about *all* I have, and Fogg's equations specificly excluded
+> massive 2 Ms and above) stars, so I don't trust them too far.
+>
+> * putting them all in the same form BTW was probably the best learning
+> experience for me. Why are they presented in so many different ways?
+>
+> --
+> Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Erik Max Francis:
+Brian Davis wrote:
+
+>    And I guess that's my problem: I'd like to know which *one* is
+> right,
+> when in fact there may not be a single one that is correct
+Indeed there isn't.  A log-log graph is not a straight line, so it's not
+simply a y = x^a, where a is a constant.  a is also a function of x.
+
+
+-- 
+Erik Max Francis | icq 16063900 | whois mf303 | email m...@alcyone.com <>
+ Alcyone Systems | irc maxxon (efnet) | web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+    San Jose, CA | languages en, eo | icbm 37 20 07 N 121 53 38 W
+             USA | Thu 1999 Sep 16 (19%/949) | &tSftDotIotE
+ __
+/  \ No man is more cheated than the selfish man.
+\__/ Henry Ward Beecher
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Bastian Hanschitz:
+Brian Davis <bda...@pdnt.com <>> schrieb in im Newsbeitrag: 37E05C5B.8BE@pdnt.com...
+
+T_hr = 7,2 * 10^9 a  * (m / m_o) ^2
+>
+>    The dependance on the mass (m^2, in your example) seems wrong; it
+> implies that massive stars should live longer than low-mass ones, which
+> is not the case.
+Oops! Typo-alert!!!!
+it is     m^  - 2 !!!!!
+But before we go any further:
+could you please tell me what exactly you are looking for, since this might make things a
+bit easier (and I don't have rec.arts.sf.science on my news-server, so I can't read the
+thread there...)
+
+Bastian = :-)
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Philip Plait:
+In sci.astro Brian Davis <bda...@pdnt.com <>> wrote:
+> [sci.astro added to thread]
+> A. McIntire wrote:
+
+
+> > You're right;  Gillett's formula seems to work okay for dwarf stars, 
+> > but it overestimates the luminosities of stars more massive than the 
+> > sun.
+
+>    Of course, mine is even worse... :-(
+>  
+> > The formula given by the "Astronomy and Astrophysics Encyclopedia",
+> > edited by Stephen P. Moran gives
+Nitpick: It's Stephen Maran. He's written quite a few popular
+astronomy books too.
+
+
+*    *    *    *    *    The Bad Astronomer    *    *    *    *
+
+Phil Plait                    bada...@badastronomy.com <>
+The Bad Astronomy Web Page: http://www.badastronomy.com <http://www.badastronomy.com>
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Leonard Erickson:
+"Bastian Hanschitz" <banth...@gmx.de <>> writes:
+
+> Hi there...!
+>
+> From what I can see, you are looking for several qualities of HRD
+> main-sequence stars.
+> (Hope that's true otherwise this has only been an excercise in typing...:)
+>
+> An empirical mass/luminosity-relationship in first approximation is:
+>
+> L / L_o = (m / m_o) ^ a
+>
+> L     : Luminosity of star
+> L_o : Luminosity of sun
+> m    : Mass of star
+> m_o: Mass of sun
+> a     :  I've found values for  a  between 3.0 and 3.5 (depends on where you
+> place your tangent...)
+Sources quoted in various postings seem to give values ranging from 2.5
+to 4.8. And also seem to indicate that "a" varies with mass. 
+
+If a *does* vary with mass, we need *that* function. <sigh>
+
+-- 
+Leonard Erickson (aka Shadow)
+ sha...@krypton.rain.com <>        <--preferred
+leo...@qiclab.scn.rain.com <>        <--last resort
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - A. McIntire:
+Brian Davis wrote:
+> 
+> Bastian Hanschitz wrote:
+> 
+> > From what I can see, you are looking for several qualities of HRD
+> > main-sequence stars.
+> 
+>    If "HRD" is Hertzsprung Russell Diagram, you're correct.
+> 
+> > An empirical mass/luminosity-relationship... is:
+> >
+> > L / L_o = (m / m_o) ^ a
+> >
+> > I've found values for  a  between 3.0 and 3.5 (depends on where you
+> > place your tangent...)
+> 
+>    And I guess that's my problem: I'd like to know which *one* is right,
+> when in fact there may not be a single one that is correct
+> 
+> > Since luminosity  L remains constant during the main-sequence...
+> 
+>    Well, actually (according to everything I've read) it doesn't, and
+> that's (probably) part of my problem. Gradually a star increases in
+> luminosity, surface temperature, and radius during it's time on the main
+> sequence. The Sun probably started out around 30% dimmer (and will
+> finish almost twice as bright) as it is now, all while still on the main
+> sequence.
+>    And I suspect that's part of the problem I'm having: the zero-age
+> main sequence luminosity won't be the same as the empirically observed
+> luminosities, due to aging (as well as different masses aging at
+> different rates, and the fact that low-mass stars haven't been around
+> long enough to have any "aged" examples present (the galaxy is too
+> young)).
+> 
+> [snip otherwise reasonable BotE calculation]
+> 
+> > T_hr = 7,2 * 10^9 a  * (m / m_o) ^2
+> 
+>    The dependance on the mass (m^2, in your example) seems wrong; it
+> implies that massive stars should live longer than low-mass ones, which
+> is not the case.
+> 
+> --
+> Brian Davis.
+.
+  When I used the 3.5 power formula, the results I got were nowhere near
+given masses and luminosities of nearby stars.  I did a regression 
+analysis using data on about 30 nearby stars given in an astronomy book, 
+and got L=( M/Msun)^4.34.  Obviously most of these stars were less 
+massive than the sun. I think the formula I gave you earlier, based on 
+"The Astronomy and Astrophysics Encyclopedia", published in 1990, and 
+presumably having better data, gives
+results most closely matching the real universe.
+Using the above formulas for initial luminosity, Gillette's LZAMS 
+equations can still be used to get the relative increase in luminosity 
+over time, but as I said before, they overestimate the luminosity of 
+stars more massive than the Sun.
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Brian Davis:
+Leonard Erickson wrote:
+
+> Sources quoted in various postings seem to give values ranging from 
+> 2.5 to 4.8. And also seem to indicate that "a" varies with mass.
+> 
+> If a *does* vary with mass, we need *that* function. <sigh>
+   Which is why I initally liked Fogg's version; here, the exponent does
+vary with mass in a simple way (as oppossed to a bunch of patched
+together power laws, it's a little easier to calculate). but Fogg's
+version is limited to 2 Msolar or less (and it has problems, it seems,
+even there).
+   So I guess if I want accuracy, I use a patched function. <sigh>
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 16 September 1999 08:00:00 UTC+1 - Brian Davis:
+A. McIntire wrote:
+> Using the [aforementioned] formulas for initial luminosity, 
+
+> Gillette's LZAMS equations can still be used to get the relative 
+> increase in luminosity over time,
+   Although the equations you gave overestimate the Lzams significantly
+(after all, they yield L=1 for M=1, which is *not* the case for a
+zero-age population). So I've got to (at least) uniformly scale the
+luminosities down so that L=0.71 when M=1.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Friday, 17 September 1999 08:00:00 UTC+1 - Bruce Scott TOK:
+In article <990916.134322...@krypton.rain.com <>>,
+Leonard Erickson <sha...@krypton.rain.com <>> wrote:
+
+>Sources quoted in various postings seem to give values ranging from 2.5
+>to 4.8. And also seem to indicate that "a" varies with mass. 
+>
+>If a *does* vary with mass, we need *that* function. <sigh>
+a does indeed vary with mass... it depends on how much of the entire
+curve is used in the fitting.  For sunlike stars, it is mildly different
+than for much bigger stars or much smaller ones, and for brown dwarfs
+the dependence is very nonlinear because you are close to a cutoff.
+
+Many nearby stars are not on the main sequence... it is good to remember
+that.
+
+The best thing to do is take a published curve for zero-age or evolved
+main sequence... or just the (thicker) observed main sequence, and fit
+to that.  What I would do is fit the upper and lower parts of the curve
+separately and then use a roll-over for the transition.  Use your
+favorite method...  you'll need at least a calculator anyway.
+
+-- 
+cu,
+Bruce
+
+drift wave turbulence:  http://www.rzg.mpg.de/~bds/ <http://www.rzg.mpg.de/~bds/>
+----------------------------------------------------------------------------
+
+Friday, 17 September 1999 08:00:00 UTC+1 - A. McIntire:
+- show quoted text -Brian Davis wrote:
+> 
+> A. McIntire wrote:
+> 
+> > Using the [aforementioned] formulas for initial luminosity,
+> > Gillette's LZAMS equations can still be used to get the relative
+> > increase in luminosity over time,
+> 
+>    Although the equations you gave overestimate the Lzams significantly
+> (after all, they yield L=1 for M=1, which is *not* the case for a
+> zero-age population). So I've got to (at least) uniformly scale the
+> luminosities down so that L=0.71 when M=1.
+> 
+> --
+> Brian Davis.
+.
+L=1 for M=1 at age zero. Obviously the sun is older than age 0, and when
+you plug in the LZAM formula, as you said, the luminosity of the sun is
+now about 1.4.
+Incidentally, you'll also have to adjust for initial composition of the
+stellar material.  Martin Schwarzschild, in "Structure and Evolution of 
+the Stars" gives
+Luminosity is proportional to k^8.06.
+ where k= 1/(2X + 3/4 Y + 1/2 Z)
+where X= fraction of hydrogen in star by % at age zero,
+      Y= fraction of helium in star by % at age zero,
+      Z= fraction of heavier elements by% at age zero.
+Tha book was published in 1958, so maybe new date have ruined this 
+theoretical model.

@@ -1,0 +1,53 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/rFCoeqn8cwk
+TITLE: Star-system formation/generation (was: A planets temperature) 
+
+----------------------------------------------------------------------------
+
+Wednesday, 17 March 1999 08:00:00 UTC - Khelben Blackstaff:
+Hi, and back again !
+Ok, i think a small introduction whould be convinient.
+
+I'd like to code a program/library which describes/creates
+a starsystem either from a simple morgan-keenan classification
+or from an accrete-like subroutine.
+
+First the morgan-keenan aspect:
+
+   spectral-types (O,B,A,F,G,K,M,R,N,S [0-9]):
+
+      i think that some types (R,N,S) are no longer in use, but
+      i'd like to know what they were originally standing for,
+      somebody?
+
+      is it possible to establish surface temperatures from
+      these values only ?
+
+   luminosity-classes (Ia,Ib,IIa,II,III,IV,V,VI,VII):
+
+      V is mainsequence, right ?
+
+      can i establish some base masses from the classes
+      above and modify them with the spectral-types to
+      determine their actual mass, say "A M3III star
+      has ?? times the mass of sol" ?
+
+   more general questions:
+
+      has someone mass-luminosity equations for other
+      startypes than main-sequence ?
+
+      how can i differenciate the various stars based
+      on margan-keenan, to apply these equations ?
+
+
+more to follow, if these questions are answered to my satisfaction.
+
+--fredo
+
+*--------------------------------------------------------------*
+|  Khelben Blackstaff is out there ! !                         |
+|    apache,perl,php,linux,startrek,b5,eastern,stories         |
+*--------------------------------------------------------------*
+
+-----------== Posted via Deja News, The Discussion Network ==----------
+http://www.dejanews.com/ <http://www.dejanews.com/>       Search, Read, Discuss, or Start Your Own    

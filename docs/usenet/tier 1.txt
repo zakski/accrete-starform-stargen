@@ -60,7 +60,7 @@ author of an accrete version (ported to C++ from code written by Wales Larrison)
 Erik Max Francis / Erik Max Francist?
 newsgroups: rec.arts.sf.science
 First: Sunday, 9 May 1993 20:23:42 UTC+1
-Last: Tuesday, 16 March 1999 08:00:00 UTC
+Last: Saturday, 18 September 1999 08:00:00 UTC+1
 
 Thread List:
 1993-05-08-Starswithhabitablepl.txt
@@ -72,6 +72,9 @@ Thread List:
 1998-03-10-Titusbodecorrection.txt
 1998-11-03-Scientificmethodsfor.txt
 1999-03-11-Aplanetstemperature.txt
+1999-04-02-AlphaCentaurisystemq.txt
+1999-09-14-worldbuildingGillett.txt
+1999-09-15-MassLuminosityStella.txt
 
 of Interest:
 wrote modified copy of accrete (Burdick variant?) - prettier info print?
@@ -140,7 +143,7 @@ author of accrete variants (Modula-2, C++, Java?)
 Brian Davis
 newsgroups: rec.arts.sf.science
 First: Tuesday, 4 February 1997 08:00:00 UTC
-Last: Wednesday, 17 March 1999 08:00:00 UTC 
+Last: Friday, 17 September 1999 08:00:00 UTC+1
 
 Thread List:
 1997-02-04-StarWarsCoulditHappe.txt
@@ -150,6 +153,8 @@ Thread List:
 1998-04-21-SiliconCreation.txt
 1998-11-03-Scientificmethodsfor.txt
 1999-03-11-Aplanetstemperature.txt
+1999-09-14-worldbuildingGillett.txt
+1999-09-15-MassLuminosityStella.txt
 
 of Interest:
 worked on mac port
@@ -173,12 +178,13 @@ has own accrete variant for 3d visualization
 Leonard Erickson
 newsgroups: rec.arts.sf.science
 First: Friday, 9 February 1996 08:00:00 UTC
-Last: Tuesday, 18 February 1997 08:00:00 UTC
+Last: Thursday, 16 September 1999 08:00:00 UTC+1
 
 Thread List:
 1996-02-02-Torchships.txt
 1997-01-25-Fictionalplanetweath.txt
 1997-02-04-StarWarsCoulditHappe.txt
+1999-09-14-worldbuildingGillett.txt
 
 of Interest:
 plans to port accrete to a "more friendly" language
@@ -201,6 +207,16 @@ Last: Tuesday, 16 March 1999 08:00:00 UTC
 
 Thread List:
 1999-03-11-Aplanetstemperature.txt
+1999-03-17-Starsystemformationg.txt
 
 of Interest:
 ported accrete to perl?
+
+Jim Burrows
+First: Tuesday, 20 April 1999 08:00:00 UTC+1
+
+Thread List:
+1999-04-02-AlphaCentaurisystemq.txt
+
+of Interest:
+author of stargen
