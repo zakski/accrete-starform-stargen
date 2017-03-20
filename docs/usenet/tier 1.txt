@@ -60,7 +60,7 @@ author of an accrete version (ported to C++ from code written by Wales Larrison)
 Erik Max Francis / Erik Max Francist?
 newsgroups: rec.arts.sf.science
 First: Sunday, 9 May 1993 20:23:42 UTC+1
-Last: Wednesday, 4 November 1998 08:00:00 UTC
+Last: Tuesday, 16 March 1999 08:00:00 UTC
 
 Thread List:
 1993-05-08-Starswithhabitablepl.txt
@@ -71,6 +71,7 @@ Thread List:
 1997-02-04-StarWarsCoulditHappe.txt
 1998-03-10-Titusbodecorrection.txt
 1998-11-03-Scientificmethodsfor.txt
+1999-03-11-Aplanetstemperature.txt
 
 of Interest:
 wrote modified copy of accrete (Burdick variant?) - prettier info print?
@@ -139,7 +140,7 @@ author of accrete variants (Modula-2, C++, Java?)
 Brian Davis
 newsgroups: rec.arts.sf.science
 First: Tuesday, 4 February 1997 08:00:00 UTC
-Last: Thursday, 5 November 1998 08:00:00 UTC
+Last: Wednesday, 17 March 1999 08:00:00 UTC 
 
 Thread List:
 1997-02-04-StarWarsCoulditHappe.txt
@@ -148,6 +149,7 @@ Thread List:
 1998-04-11-Worldbuildingquestio.txt
 1998-04-21-SiliconCreation.txt
 1998-11-03-Scientificmethodsfor.txt
+1999-03-11-Aplanetstemperature.txt
 
 of Interest:
 worked on mac port
@@ -191,3 +193,14 @@ Thread List:
 
 of Interest:
 ported accrete to windows
+
+Khelben Blackstaff
+newsgroups: rec.arts.sf.science
+First: Thursday, 11 March 1999 08:00:00 UTC
+Last: Tuesday, 16 March 1999 08:00:00 UTC
+
+Thread List:
+1999-03-11-Aplanetstemperature.txt
+
+of Interest:
+ported accrete to perl?

@@ -1,0 +1,1751 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/mGzc_sV4vOo
+TITLE: A planets temperature 
+
+----------------------------------------------------------------------------
+
+Thursday, 11 March 1999 08:00:00 UTC - Khelben Blackstaff:
+Hi !
+I am currently working on a project based on starform/accrete
+and some rpg-supplements to create a perl-module to generate
+the various "features" of a starsystem.
+
+One of the issues of this module is its ability to calculate
+the temperature of various planetary objects (gas-giants,
+asteroids, planetoids, moons, terrestrial planets).
+
+Has someone formulas regarding these issue ? I have read
+on the alien-planet design page that the planets albedo
+(http://www.compulink.co.uk/~vicarage/planets/ <http://www.compulink.co.uk/~vicarage/planets/>)
+is a serious issue and very dependent on the chemical
+composition of the planets atmosphere.
+
+The startform sources seam only to contain albedo values
+for earth-like nitrogen-oxygen atmospheres.
+
+I would be glad to receive comments or to satisfy requests
+(modifying the source or sending it over) for various issues.
+
+Here some output of the test script (for those interrested):
+
+-------------------------CUT-HERE-------------------------
+srand=0x36c1c6a1
+             MK: M7.0iii
+           Mass:       4.7152000000 sol
+                    9379.0043200000 x(1e+27)kg
+     Luminosity:     227.6409633221 sol
+                   87550.7144936684 x(1e+24)J/s
+  Surface Temp.:    3554.1688545551 Kelvin
+ Stellar Radius:     177.0962442273 sol
+                       0.8239237031 AU
+===PLANET===
+  Planetary Orbit:    14.025952 AU
+             Zone: 2
+             Type: Earth-like
+   Orbital Period:     8835.654 terran days
+     Eccentricity:   0.03483018 u
+         Diameter:    10393.000 km
+             Mass:        0.594 earth
+  Rotation Period:       26.906 hours
+       Axial Tilt:        8.909 degrees
+          Gravity:        0.894 g
+          Density:     6035.492 kg/m3
+
+  Escape Velocity:     9.548169 km/sec
+     RMS Velocity:  1145.524523 m/sec
+    Mol Retention:     8.000000 mol
+
+Atmospheric Index:    762.93334
+Primary Component: Nitrogen+Carbon-Dioxyde
+         Pressure:      0.45287 bar
+    Optical Depth:      2.90589
+      Hydrography:     82.94735 %
+   Cloud Coverage:     82.58432 %
+     Ice Coverage:      0.20828 %
+ det. Temperature:      +28.975 Celsius
+           Albedo:      0.37920
+---MOON---
+      Moon Radian:    17288.226 km
+   Orbital Period:        0.339 terran days
+    Moon Diameter:     1368.767 km
+        Moon Mass:   0.09249421 moon
+     Moon Density:     5069.971 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.12762497 g
+---MOON---
+      Moon Radian:    67982.933 km
+   Orbital Period:        2.640 terran days
+    Moon Diameter:     2080.434 km
+        Moon Mass:   0.16926020 moon
+     Moon Density:     2642.239 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.10109433 g
+---MOON---
+      Moon Radian:   234941.281 km
+   Orbital Period:       16.961 terran days
+    Moon Diameter:     4129.704 km
+        Moon Mass:   0.73107515 moon
+     Moon Density:     1459.098 kg/m3
+  Rotation Period:        4.945 terran days
+          Gravity:   0.11081643 g
+
+-------------------------CUT-HERE-------------------------
+
+
+Don't try Hard-Sciences in an Alternate Universe !
+
+*--------------------------------------------------------------*
+|  Khelben Blackstaff is out there ! !                         |
+|    apache,perl,php,linux,startrek,b5,eastern,stories         |
+*--------------------------------------------------------------*
+
+-----------== Posted via Deja News, The Discussion Network ==----------
+http://www.dejanews.com/ <http://www.dejanews.com/>       Search, Read, Discuss, or Start Your Own    
+----------------------------------------------------------------------------
+
+Thursday, 11 March 1999 08:00:00 UTC - William Clifford:
+On Thu, 11 Mar 1999 11:04:09 GMT, Khelben Blackstaff
+<khelben_b...@my-dejanews.com <>> wrote:
+>Hi !
+>I am currently working on a project based on starform/accrete
+>and some rpg-supplements to create a perl-module to generate
+>the various "features" of a starsystem.
+>
+>One of the issues of this module is its ability to calculate
+>the temperature of various planetary objects (gas-giants,
+>asteroids, planetoids, moons, terrestrial planets).
+>
+>Has someone formulas regarding these issue ? I have read
+>on the alien-planet design page that the planets albedo
+>(http://www.compulink.co.uk/~vicarage/planets/ <http://www.compulink.co.uk/~vicarage/planets/>)
+>is a serious issue and very dependent on the chemical
+>composition of the planets atmosphere.
+Well the amount of sunlight (intensity I) in Watts/m^2 a planet
+recieves is given by 
+
+ I = P/(4*pi*A^2)
+
+where P is the luminosity of the star in Watts and A is the semi-major
+axis in meters. I think this equation is unit independant though so
+you could use AU for your distance measure as long as you convert your
+P into appropriate units also. Your luminosity figures are in J/s
+which is the same as Watts so we'll use SI units. 
+
+Your sample star has a luminosity of 8.755e28 watts and your sample
+planet has a semi-major axis of 14 AU or 2e12 meters so it gets (more
+or less) 1742 W/m^2. This is about 400 W/m^2 more than Earth gets from
+our sun. Probably the program you are using takes this into account
+when calculating the semi-major axis of a life-as-we-know-it planet
+may orbit in.
+
+This is not the only factor (or even the most important one) is
+figuring out the surface temperature of the body. As your source says
+the albedo of the planet in question is a factor but so is the
+atmospheric composition and condition (the greenhouse effect).
+Consider Venus and Mercury. Some data I got from:
+<http://nssdc.gsfc.nasa.gov/planetary/planetfact.html <http://nssdc.gsfc.nasa.gov/planetary/planetfact.html>> (a great set of
+pages loaded with all kinds of good raw data about planets we actually
+know about).
+
+Mercury
+A = 57.9e9 m
+I = 9214 W/m^2
+Bond albedo = 0.056
+Visual geometric albedo = 0.11
+Black body temperature = 442.5 K
+Average temperature =  440 K (although this goes as high as 725 K on
+the sunward side)
+
+Venus
+A = 108.2e9 m
+I = 22660 W/m^2
+Bond albedo = 0.72
+Visual geometric albedo = 0.65
+Black body temperature = 238.9 K
+Average temperature = 737 K
+
+Look at the differences in black body temperatures and the actual
+average temperatures. This is what the greenhouse effect can do for
+you. Unfortunately I don't know any equations you can use to project
+this sort of thing. 
+
+You do seem to have the relevant factors though. Your planet has only
+0.9 of Earth's gravity with which to hold any kind of atmosphere. And
+indeed the atmospheric pressure you have at almost half a bar so it
+seems to me that should be fairly cold. However with the smaller
+radius it has a smaller surface area with which to radiate collected
+heat. Perhaps the planet generator already knows how to balance this
+(though I doubt it for no particular reason).  You also have two moons
+which also probably affect things. I've read speculation that held
+that if Venus had a large moon like earth's it might not be so bad a
+place to live. Long term terraforming for Venus might involve
+borrowing Ceres or something. 
+
+
+>The startform sources seam only to contain albedo values
+>for earth-like nitrogen-oxygen atmospheres.
+Taking into account chemical compositions I don't think your going to
+be able to get a good equation to predict planetary temperature. As I
+pointed out there are a lot of factors taking the chemical mix of the
+atmosphere adds still more. Good luck though. I know I'd be interested
+in seeing a good solar system generator myself when you're done. I'd
+want to plug in Alpha Centari or Procyon and see what happened.
+
+-William Clifford
+
+wo...@transposition.com <>
+
+Know your fields before replying by mail
+----------------------------------------------------------------------------
+
+Thursday, 11 March 1999 08:00:00 UTC - Erik Max Francis:
+Khelben Blackstaff wrote:
+
+> One of the issues of this module is its ability to calculate
+> the temperature of various planetary objects (gas-giants,
+> asteroids, planetoids, moons, terrestrial planets).
+> 
+> Has someone formulas regarding these issue ?
+You can calculate the temperature of a body like so:
+
+For a star of luminosity L at a distance R, the insolation I at that
+distance will be 
+
+    I = L/(4 pi R^2)
+
+The surface area S of a planet exposed to the insolation is 
+
+    S = pi r^2, 
+
+where r is its radius.  So the amount of radiation absorbed by the
+planet is 
+
+    P = (1 - a) I S
+
+      = (1 - a) L r^2/(4 R^2)
+
+where a is the planet's albedo.  When in thermal equilibrium, the planet
+reradiates this heat over its entire surface area A, 
+
+    A = 4 pi r^2.
+
+The radiation law relates heat flux P, emissivity e, area A, and
+temperature T by 
+
+    P = e sigma A T^4, 
+
+so 
+
+    T = [P/(e sigma A)]^(1/4)
+
+or
+
+    T = [(1 - a) L/(4 e pi sigma R^2)]^(1/4).
+
+
+> I have read
+> on the alien-planet design page that the planets albedo
+> (http://www.compulink.co.uk/~vicarage/planets/ <http://www.compulink.co.uk/~vicarage/planets/>)
+> is a serious issue and very dependent on the chemical
+> composition of the planets atmosphere.
+Yes; it's not a simple matter and I doubt that it would be easy at all
+to have some kind of general formulas for different kinds of bodies and
+atmospheric compositions.  That's why that alien planet builder thing
+uses albedo (though they don't talk about emissivity) as an input, not
+an output.
+
+
+> The startform sources seam only to contain albedo values
+> for earth-like nitrogen-oxygen atmospheres.
+Your best option is probably to use the bodies of the solar system as a
+model.  Look at the albedos and emissivities of the real planets, and
+try to generalize.
+
+>              MK: M7.0iii
+
+Note that luminosity classes are capitalized, and is separated from the
+spectral type with spaces.  Also, subclasses doesn't exist for all
+spectral types; such subdivisons only become required for the earlier
+stellar types.  So:  M7 III.
+
+>            Mass:       4.7152000000 sol
+>      Luminosity:     227.6409633221 sol
+
+>   Surface Temp.:    3554.1688545551 Kelvin
+>  Stellar Radius:     177.0962442273 sol
+It looks like you're using the main sequence mass-luminosity relation
+for calculating this, here, which is _way_ off for a giant.  (I don't
+offhand know what the relation is; I don't have it in front of me.)
+
+By inspection from Table 1-2 from _Principles of stellar evolution and
+nucleosynthesis_ (Donald D. Clayton), an M5 III star has a luminosity of
+almost 2000 solar luminosities, and an effective temperature well under
+2900 K (and an M7 III star will only be brighter and cooler).
+
+I'm not sure where you got the stellar radius; that looks totally
+wrong.  With T being the effective temperature, and L being the
+luminosity, and R being the stellar radius, we have 
+
+    L = sigma R^2 T^4.
+
+So if the temperature is about twice that of the Sun's, and the
+luminosity is about 2000 times that of the Sun, the radius should be
+(2000/2^4)^(1/2) ~ 10 times that of the Sun.
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / The golden rule is that there are no golden rules.
+           / George Bernard Shaw
+----------------------------------------------------------------------------
+
+Thursday, 11 March 1999 08:00:00 UTC - Erik Max Francis:
+William Clifford wrote:
+
+> Probably the program you are using takes this into account
+> when calculating the semi-major axis of a life-as-we-know-it planet
+> may orbit in.
+There's your problem right there!  This planet is around a bright giant
+(2000 luminosities for an M5 III star, so M7 III would only be
+brighter).
+
+The relation he used was the mass-luminosity relation for main sequence
+stars, which doesn't work well for giants.  A star with a mass of 5
+solar masses only stays on the main sequence (burns H only) about 60
+million years (from _Stellar structure and evolution_ by R. Kippenhahn
+and A. Weigart), the core collapses, He ignites (the He flash), and then
+it starts burning He.  Core He burning only continues for another 10
+million years or so, and then afterwards, the C-O core collapses, the
+star expands again, and you have a C flash, and it starts burning C (by
+this point you probably have a bright giant, luminosity class II).
+
+Any planet in the biozone before the star becomes a red giant, of
+course, wouldn't be anymore -- and similarly, any planet in the biozone
+after the star becomes the red giant wouldn't have been before.  Tens of
+millions of years is barely enough time for life to _evolve_, much less
+make the planet habitable in any meaningful sense (getting a N-O
+atmosphere takes a long time of evolution; evolving higher life forms
+takes much longer).
+
+Once a star leaves the main sequence, any life that was on planets
+around it will not survive (at least in any significant sense), and
+after it's off the main sequence, the non-H main sequences are so short
+that they're negligible.  After the main sequence, in other words, the
+stellar system becomes hostile.
+
+A simple metric to use is this:  The luminosity of a star on the main
+sequence (burning H only) is roughly proportional to the 3.5th power of
+the mass of the star:  L o= M^3.5.  The lifetime of a star on the main
+sequence is roughly proportional to the mass of the star divided by its
+luminosity ("amount of matter"/"rate of conversion of that matter"):  T
+o= M/L = M^-2.5.  A star with a mass of only twice that of the Sun only
+has a lifetime of about 20% that of the Sun, or perhaps 2 billion years,
+which wasn't even long enough to evolve higher life forms on Earth.
+
+
+> This is not the only factor (or even the most important one) is
+> figuring out the surface temperature of the body. As your source says
+> the albedo of the planet in question is a factor but so is the
+> atmospheric composition and condition (the greenhouse effect).
+> Consider Venus and Mercury. ...
+You can stop right there -- that nails the point home about as easily as
+it could possibly be done.  :-)
+
+
+> You also have two moons
+> which also probably affect things. I've read speculation that held
+> that if Venus had a large moon like earth's it might not be so bad a
+> place to live. Long term terraforming for Venus might involve
+> borrowing Ceres or something.
+This was believed in the 1960s or 1970s, but I believe it has been
+discredited.  (Sorry, no references.)
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / The golden rule is that there are no golden rules.
+           / George Bernard Shaw
+----------------------------------------------------------------------------
+
+Friday, 12 March 1999 08:00:00 UTC - Khelben Blackstaff:
+In article <36e7f80e...@news.ionline.com <>>,
+  wo...@hooya.com <> (William Clifford) wrote:
+
+> Well the amount of sunlight (intensity I) in Watts/m^2 a planet
+> recieves is given by
+>
+>  I = P/(4*pi*A^2)
+>[...]
+> Look at the differences in black body temperatures and the actual
+> average temperatures. This is what the greenhouse effect can do for
+> you. Unfortunately I don't know any equations you can use to project
+> this sort of thing.
+ok, i have the formula how much energy the planet receives,
+but how do i calculate the black-body temperature ?
+
+> [...]
+
+> I know I'd be interested
+> in seeing a good solar system generator myself when you're done. I'd
+> want to plug in Alpha Centari or Procyon and see what happened.
+you want Alpha Centauri, A or B ?
+(see below for a typical output of a G2V-star or sol)
+
+--------CUT-HERE--------
+             MK: G2.0v
+           Mass:       1.0146000000 sol
+                    2018.1408600000 x(1e+27)kg
+     Luminosity:       1.0520393952 sol
+                     404.6143513953 x(1e+24)J/s
+  Surface Temp.:    6030.5156753375 Kelvin
+                    5757.3656753375 Celsius
+ Stellar Radius:       1.0118903557 sol
+                       0.0047077252 AU
+ max. P. Radius:   200.968634398769 AU
+
+
+==========================================================
+  Planetary Orbit:     0.478730 AU
+             Zone: 1
+             Type: Rockball
+   Orbital Period:      120.110 terran days
+     Eccentricity:   0.23292610 u
+         Diameter:      549.149 km
+             Mass:        0.000 earth
+  Rotation Period:     1254.294 hours
+                    (Tidal Lock)
+       Axial Tilt:        8.330 degrees
+          Gravity:        0.023 g
+          Density:     2897.000 kg/m3
+
+  Escape Velocity:     0.349532 km/sec
+     RMS Velocity:  2281.584337 m/sec
+    Mol Retention:  6497.000000 mol
+
+Atmospheric Index:      0.00000
+Primary Component: None
+         Pressure:      0.00000 bar
+    Optical Depth:      0.00000
+      Hydrography:      0.00000 %
+   Cloud Coverage:      0.00000 %
+     Ice Coverage:      0.00000 %
+ det. Temperature:     +199.515 Celsius
+           Albedo:      0.06033
+
+==========================================================
+  Planetary Orbit:     0.628730 AU
+             Zone: 1
+             Type: Rockball
+   Orbital Period:      180.775 terran days
+     Eccentricity:   0.01542920 u
+         Diameter:     1580.673 km
+             Mass:        0.001 earth
+  Rotation Period:      103.225 hours
+       Axial Tilt:       13.916 degrees
+          Gravity:        0.043 g
+          Density:     1914.000 kg/m3
+
+  Escape Velocity:     0.817779 km/sec
+     RMS Velocity:  1737.253013 m/sec
+    Mol Retention:  1186.000000 mol
+
+Atmospheric Index:      0.00000
+Primary Component: None
+         Pressure:      0.00000 bar
+    Optical Depth:      0.00000
+      Hydrography:      0.00000 %
+   Cloud Coverage:      0.00000 %
+     Ice Coverage:      0.00000 %
+ det. Temperature:     +139.823 Celsius
+           Albedo:      0.05551
+------------------------------------------------------
+      Moon Radian:     2497.892 km
+   Orbital Period:        0.557 terran days
+    Moon Diameter:      104.261 km
+        Moon Mass:   0.00001436 moon
+     Moon Density:     1781.519 kg/m3
+
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.00341596 g
+------------------------------------------------------
+      Moon Radian:     6303.506 km
+   Orbital Period:        2.232 terran days
+    Moon Diameter:       77.641 km
+        Moon Mass:   0.00001047 moon
+     Moon Density:     3146.424 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.00449269 g
+------------------------------------------------------
+      Moon Radian:     9827.329 km
+   Orbital Period:        4.344 terran days
+    Moon Diameter:      102.940 km
+        Moon Mass:   0.00003534 moon
+     Moon Density:     4554.716 kg/m3
+  Rotation Period:        2.994 terran days
+          Gravity:   0.00862278 g
+------------------------------------------------------
+      Moon Radian:    16096.909 km
+   Orbital Period:        9.107 terran days
+    Moon Diameter:      233.061 km
+        Moon Mass:   0.00015460 moon
+     Moon Density:     1716.749 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.00735828 g
+------------------------------------------------------
+      Moon Radian:    39144.529 km
+   Orbital Period:       34.534 terran days
+    Moon Diameter:      145.597 km
+        Moon Mass:   0.00003079 moon
+     Moon Density:     1402.553 kg/m3
+  Rotation Period:       26.782 terran days
+          Gravity:   0.00375554 g
+==========================================================
+  Planetary Orbit:     0.928730 AU
+             Zone: 2
+             Type: Earth-like
+   Orbital Period:      324.547 terran days
+     Eccentricity:   0.46999958 u
+         Diameter:    13651.480 km
+             Mass:        1.226 earth
+  Rotation Period:       31.389 hours
+       Axial Tilt:        3.869 degrees
+          Gravity:        1.069 g
+          Density:     5494.000 kg/m3
+
+  Escape Velocity:    11.965942 km/sec
+     RMS Velocity:  1176.082728 m/sec
+    Mol Retention:     5.000000 mol
+
+Atmospheric Index:    847.29226
+Primary Component: Nitrogen+Carbon-Dioxyde
+         Pressure:      1.03755 bar
+    Optical Depth:      3.04132
+      Hydrography:     48.71010 %
+   Cloud Coverage:     73.86681 %
+     Ice Coverage:      0.08421 %
+ det. Temperature:      +32.563 Celsius
+           Albedo:      0.38292
+------------------------------------------------------
+      Moon Radian:    33049.272 km
+   Orbital Period:        0.623 terran days
+    Moon Diameter:     4406.855 km
+        Moon Mass:   1.32660962 moon
+     Moon Density:     2178.894 kg/m3
+
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.17658980 g
+------------------------------------------------------
+      Moon Radian:    68357.706 km
+   Orbital Period:        1.853 terran days
+    Moon Diameter:     3023.352 km
+        Moon Mass:   0.69989245 moon
+     Moon Density:     3559.952 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.19794005 g
+------------------------------------------------------
+      Moon Radian:   253816.239 km
+   Orbital Period:       13.260 terran days
+    Moon Diameter:     2707.901 km
+        Moon Mass:   0.53307335 moon
+     Moon Density:     3773.704 kg/m3
+  Rotation Period:       30.589 hours
+          Gravity:   0.18793226 g
+------------------------------------------------------
+      Moon Radian:   504255.432 km
+   Orbital Period:       37.131 terran days
+    Moon Diameter:     7532.658 km
+        Moon Mass:  13.76722104 moon
+     Moon Density:     4527.733 kg/m3
+  Rotation Period:       43.071 hours
+          Gravity:   0.62723421 g
+------------------------------------------------------
+      Moon Radian:   658541.571 km
+   Orbital Period:       55.416 terran days
+    Moon Diameter:     2398.285 km
+        Moon Mass:   0.37561918 moon
+     Moon Density:     3827.584 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.16882091 g
+------------------------------------------------------
+      Moon Radian:  1746661.791 km
+   Orbital Period:      239.374 terran days
+    Moon Diameter:     4853.805 km
+        Moon Mass:   2.75212029 moon
+     Moon Density:     3382.982 kg/m3
+  Rotation Period:       21.409 terran days
+          Gravity:   0.30198318 g
+------------------------------------------------------
+      Moon Radian:  2694112.482 km
+   Orbital Period:      458.551 terran days
+    Moon Diameter:     4034.920 km
+        Moon Mass:   2.11900911 moon
+     Moon Density:     4534.269 kg/m3
+  Rotation Period:       14.438 terran days
+          Gravity:   0.33646733 g
+==========================================================
+  Planetary Orbit:     1.528730 AU
+             Zone: 2
+             Type: Earth-like
+   Orbital Period:      685.392 terran days
+     Eccentricity:   0.28070176 u
+         Diameter:    12757.000 km
+             Mass:        1.147 earth
+  Rotation Period:       26.707 hours
+       Axial Tilt:       57.156 degrees
+          Gravity:        1.146 g
+          Density:     6299.805 kg/m3
+
+  Escape Velocity:    11.973881 km/sec
+     RMS Velocity:   714.490784 m/sec
+    Mol Retention:     5.000000 mol
+
+Atmospheric Index:   1122.93701
+Primary Component: Chlorine-Compounds
+         Pressure:      1.28670 bar
+    Optical Depth:      3.44647
+      Hydrography:     35.09302 %
+   Cloud Coverage:      0.73239 %
+     Ice Coverage:     52.63953 %
+ det. Temperature:      -38.134 Celsius
+           Albedo:      0.41607
+------------------------------------------------------
+      Moon Radian:    33482.539 km
+   Orbital Period:        0.657 terran days
+    Moon Diameter:     3303.957 km
+        Moon Mass:   0.54541017 moon
+     Moon Density:     2125.687 kg/m3
+
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.12916189 g
+------------------------------------------------------
+      Moon Radian:   120565.086 km
+   Orbital Period:        4.488 terran days
+    Moon Diameter:     4291.139 km
+        Moon Mass:   1.42725139 moon
+     Moon Density:     2538.996 kg/m3
+  Rotation Period:        4.295 terran days
+          Gravity:   0.20037117 g
+------------------------------------------------------
+      Moon Radian:   285726.886 km
+   Orbital Period:       16.373 terran days
+    Moon Diameter:      739.728 km
+        Moon Mass:   0.00460655 moon
+     Moon Density:     1599.702 kg/m3
+  Rotation Period:        6.687 terran days
+          Gravity:   0.02176265 g
+------------------------------------------------------
+      Moon Radian:   410381.467 km
+   Orbital Period:       28.182 terran days
+    Moon Diameter:     3574.021 km
+        Moon Mass:   1.44066973 moon
+     Moon Density:     4435.805 kg/m3
+  Rotation Period:       21.646 hours
+          Gravity:   0.29156156 g
+------------------------------------------------------
+      Moon Radian:   846955.697 km
+   Orbital Period:       83.557 terran days
+    Moon Diameter:     2492.467 km
+        Moon Mass:   0.39274423 moon
+     Moon Density:     3565.336 kg/m3
+  Rotation Period:       55.404 terran days
+          Gravity:   0.16342961 g
+------------------------------------------------------
+      Moon Radian:  1278171.148 km
+   Orbital Period:      154.909 terran days
+    Moon Diameter:     1199.621 km
+        Moon Mass:   0.02664898 moon
+     Moon Density:     2169.838 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.04787097 g
+------------------------------------------------------
+      Moon Radian:  4930553.959 km
+   Orbital Period:     1173.641 terran days
+    Moon Diameter:     6322.197 km
+        Moon Mass:   3.49911045 moon
+     Moon Density:     1946.403 kg/m3
+  Rotation Period:      459.960 terran days
+          Gravity:   0.22630882 g
+==========================================================
+  Planetary Orbit:     2.728730 AU
+             Zone: 3
+             Type: Rockball
+   Orbital Period:     1634.496 terran days
+     Eccentricity:   0.07565574 u
+         Diameter:      929.642 km
+             Mass:        0.000 earth
+  Rotation Period:       81.729 hours
+       Axial Tilt:        0.610 degrees
+          Gravity:        0.030 g
+          Density:     2287.000 kg/m3
+
+  Escape Velocity:     0.525741 km/sec
+     RMS Velocity:   400.282777 m/sec
+    Mol Retention:  2871.000000 mol
+
+Atmospheric Index:      0.00000
+Primary Component: None
+         Pressure:      0.00000 bar
+    Optical Depth:      0.00000
+      Hydrography:      0.00000 %
+   Cloud Coverage:      0.00000 %
+     Ice Coverage:      0.00000 %
+ det. Temperature:      -76.261 Celsius
+           Albedo:      0.08084
+------------------------------------------------------
+      Moon Radian:     1215.552 km
+   Orbital Period:        0.383 terran days
+    Moon Diameter:       31.815 km
+        Moon Mass:   0.00000071 moon
+     Moon Density:     3109.297 kg/m3
+
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.00181925 g
+------------------------------------------------------
+      Moon Radian:     2408.529 km
+   Orbital Period:        1.069 terran days
+    Moon Diameter:       65.419 km
+        Moon Mass:   0.00000270 moon
+     Moon Density:     1357.343 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.00163303 g
+------------------------------------------------------
+      Moon Radian:     8122.679 km
+   Orbital Period:        6.621 terran days
+    Moon Diameter:       54.356 km
+        Moon Mass:   0.00000290 moon
+     Moon Density:     2539.674 kg/m3
+  Rotation Period:        5.297 terran days
+          Gravity:   0.00253881 g
+==========================================================
+  Planetary Orbit:     5.128730 AU
+             Zone: 3
+             Type: Terrestrial
+   Orbital Period:     4211.702 terran days
+     Eccentricity:   0.12355142 u
+         Diameter:    17890.502 km
+             Mass:        1.829 earth
+  Rotation Period:       20.734 hours
+       Axial Tilt:       12.201 degrees
+          Gravity:        0.929 g
+          Density:     3642.000 kg/m3
+
+  Escape Velocity:    12.767778 km/sec
+     RMS Velocity:   212.969623 m/sec
+    Mol Retention:     4.000000 mol
+
+Atmospheric Index:      5.04297
+Primary Component: Nitrogen+Carbon-Dioxyde
+         Pressure:      0.00921 bar
+    Optical Depth:      3.01779
+      Hydrography:      0.13642 %
+   Cloud Coverage:      0.00000 %
+     Ice Coverage:      0.20462 %
+ det. Temperature:     -131.884 Celsius
+           Albedo:      0.14118
+------------------------------------------------------
+      Moon Radian:    30866.221 km
+   Orbital Period:        0.460 terran days
+    Moon Diameter:      857.866 km
+        Moon Mass:   0.01277345 moon
+     Moon Density:     2844.002 kg/m3
+
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.04486936 g
+------------------------------------------------------
+      Moon Radian:    46863.379 km
+   Orbital Period:        0.861 terran days
+    Moon Diameter:     3386.983 km
+        Moon Mass:   1.25462958 moon
+     Moon Density:     4538.955 kg/m3
+  Rotation Period:       15.677 hours
+          Gravity:   0.28272846 g
+------------------------------------------------------
+      Moon Radian:   124975.239 km
+   Orbital Period:        3.751 terran days
+    Moon Diameter:     1454.429 km
+        Moon Mass:   0.04002988 moon
+     Moon Density:     1828.885 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.04891921 g
+------------------------------------------------------
+      Moon Radian:   279114.374 km
+   Orbital Period:       12.518 terran days
+    Moon Diameter:     1289.785 km
+        Moon Mass:   0.05797899 moon
+     Moon Density:     3798.377 kg/m3
+  Rotation Period:       43.110 hours
+          Gravity:   0.09009818 g
+------------------------------------------------------
+      Moon Radian:   556025.175 km
+   Orbital Period:       35.198 terran days
+    Moon Diameter:     2917.767 km
+        Moon Mass:   0.57537611 moon
+     Moon Density:     3255.962 kg/m3
+  Rotation Period:       20.702 terran days
+          Gravity:   0.17471516 g
+==========================================================
+  Planetary Orbit:     9.928730 AU
+             Zone: 3
+             Type: Large_Gas_Giant
+   Orbital Period:    11344.448 terran days
+         Diameter:   113751.200 km
+             Mass:      209.765 earth
+  Rotation Period:       41.161 hours
+          Gravity:        2.635 g
+          Density:     1625.000 kg/m3
+
+  Escape Velocity:    54.225742 km/sec
+
+         Pressure:      0.00000 bar
+ det. Temperature:     -169.713 Celsius
+------------------------------------------------------
+      Moon Radian:   190324.532 km
+   Orbital Period:        0.658 terran days
+    Moon Diameter:      531.455 km
+        Moon Mass:   0.00144081 moon
+     Moon Density:     1349.235 kg/m3
+
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.01318728 g
+------------------------------------------------------
+      Moon Radian:   279832.924 km
+   Orbital Period:        1.173 terran days
+    Moon Diameter:      210.497 km
+        Moon Mass:   0.00016047 moon
+     Moon Density:     2418.503 kg/m3
+  Rotation Period:       16.016 hours
+          Gravity:   0.00936254 g
+------------------------------------------------------
+      Moon Radian:   471731.106 km
+   Orbital Period:        2.568 terran days
+    Moon Diameter:      336.944 km
+        Moon Mass:   0.00123547 moon
+     Moon Density:     4539.854 kg/m3
+  Rotation Period:       51.000 hours
+          Gravity:   0.02813196 g
+------------------------------------------------------
+      Moon Radian:  1820788.960 km
+   Orbital Period:       19.476 terran days
+    Moon Diameter:     2285.404 km
+        Moon Mass:   0.17482360 moon
+     Moon Density:     2058.687 kg/m3
+  Rotation Period:        4.412 terran days
+          Gravity:   0.08652748 g
+------------------------------------------------------
+      Moon Radian:  4026505.762 km
+   Orbital Period:       64.049 terran days
+    Moon Diameter:      362.397 km
+        Moon Mass:   0.00114235 moon
+     Moon Density:     3373.854 kg/m3
+  Rotation Period:        6.615 terran days
+          Gravity:   0.02248595 g
+------------------------------------------------------
+      Moon Radian:  6867010.327 km
+   Orbital Period:      142.649 terran days
+    Moon Diameter:    48355.048 km
+        Moon Mass:  22.60855674 earth
+     Moon Density:     2285.179 kg/m3
+  Rotation Period:       12.139 terran days
+          Gravity:   2.03218305 g
+------------------------------------------------------
+      Moon Radian:  13637426.463 km
+   Orbital Period:      399.223 terran days
+    Moon Diameter:      945.160 km
+        Moon Mass:   0.01064590 moon
+     Moon Density:     1772.338 kg/m3
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.03080721 g
+------------------------------------------------------
+      Moon Radian:  35621294.322 km
+   Orbital Period:     1685.319 terran days
+    Moon Diameter:      336.499 km
+        Moon Mass:   0.00075494 moon
+     Moon Density:     2785.115 kg/m3
+  Rotation Period:       34.384 terran days
+          Gravity:   0.01723564 g
+==========================================================
+  Planetary Orbit:    19.528730 AU
+             Zone: 3
+             Type: Asteroid_Belt
+          Density:     7966.000 kg/m3
+
+
+==========================================================
+  Planetary Orbit:    38.728730 AU
+             Zone: 3
+             Type: Rockball
+   Orbital Period:    87396.227 terran days
+     Eccentricity:   0.31415930 u
+         Diameter:     1695.114 km
+             Mass:        0.003 earth
+  Rotation Period:       22.422 hours
+       Axial Tilt:        0.559 degrees
+          Gravity:        0.146 g
+          Density:     6059.000 kg/m3
+
+  Escape Velocity:     1.560351 km/sec
+     RMS Velocity:    28.202933 m/sec
+    Mol Retention:   326.000000 mol
+
+Atmospheric Index:      0.00000
+Primary Component: None
+         Pressure:      0.00000 bar
+    Optical Depth:      0.00000
+      Hydrography:      0.00000 %
+   Cloud Coverage:      0.00000 %
+     Ice Coverage:      0.00000 %
+ det. Temperature:     -220.479 Celsius
+           Albedo:      0.05176
+------------------------------------------------------
+      Moon Radian:     2883.821 km
+   Orbital Period:        0.349 terran days
+    Moon Diameter:      229.154 km
+        Moon Mass:   0.00041655 moon
+     Moon Density:     4866.023 kg/m3
+
+  Rotation Period:  Tidal Lock (Same Facing)
+          Gravity:   0.02050697 g
+------------------------------------------------------
+      Moon Radian:     6744.214 km
+   Orbital Period:        1.250 terran days
+    Moon Diameter:      228.882 km
+        Moon Mass:   0.00012212 moon
+     Moon Density:     1431.711 kg/m3
+  Rotation Period:       25.034 hours
+          Gravity:   0.00602653 g
+------------------------------------------------------
+      Moon Radian:    27937.222 km
+   Orbital Period:       10.538 terran days
+    Moon Diameter:      312.568 km
+        Moon Mass:   0.00042760 moon
+     Moon Density:     1968.312 kg/m3
+  Rotation Period:       26.347 hours
+          Gravity:   0.01131458 g
+------------------------------------------------------
+      Moon Radian:    95929.169 km
+   Orbital Period:       67.051 terran days
+    Moon Diameter:      189.682 km
+        Moon Mass:   0.00009437 moon
+     Moon Density:     1943.834 kg/m3
+  Rotation Period:       33.980 terran days
+          Gravity:   0.00678088 g
+------------------------------------------------------
+      Moon Radian:   301415.091 km
+   Orbital Period:      373.445 terran days
+    Moon Diameter:       69.022 km
+        Moon Mass:   0.00000436 moon
+     Moon Density:     1866.566 kg/m3
+  Rotation Period:       56.908 terran days
+          Gravity:   0.00236935 g
+==========================================================
+  Planetary Orbit:    77.128730 AU
+             Zone: 3
+             Type: Asteroid_Belt
+          Density:     5199.000 kg/m3
+
+
+==========================================================
+  Planetary Orbit:   153.928730 AU
+             Zone: 3
+             Type: Asteroid_Belt
+          Density:     4255.000 kg/m3
+--------CUT-HERE--------
+
+
+satisfaction out there ?
+
+*--------------------------------------------------------------*
+|  Khelben Blackstaff is out there ! !                         |
+|    apache,perl,php,linux,startrek,b5,eastern,stories         |
+*--------------------------------------------------------------*
+
+-----------== Posted via Deja News, The Discussion Network ==----------
+http://www.dejanews.com/ <http://www.dejanews.com/>       Search, Read, Discuss, or Start Your Own    
+----------------------------------------------------------------------------
+
+Saturday, 13 March 1999 08:00:00 UTC - Chris Lawson:
+wo...@hooya.com <> (William Clifford) wrote:
+[snip]
+
+
+>Look at the differences in black body temperatures and the actual
+>average temperatures. This is what the greenhouse effect can do for
+>you. Unfortunately I don't know any equations you can use to project
+>this sort of thing. 
+While the greenhouse effect is extremely important for Venus,
+there are other important factors. In the case of the Earth, we
+can thank the radioactive decay in our iron core for the fact
+that the planet hasn't cooled to life-inhospitable levels.
+
+
+regards,
+Chris Lawson
+----------------------------------------------------------------------------
+
+Sunday, 14 March 1999 08:00:00 UTC - Bill Woods:
+Khelben Blackstaff wrote:
+
+> In article <36e7f80e...@news.ionline.com <>>,
+>   wo...@hooya.com <> (William Clifford) wrote:
+>
+> > Well the amount of sunlight (intensity I) in Watts/m^2 a planet
+> > receives is given by
+> >
+> >  I = P/(4*pi*A^2)
+> >[...]
+> > Look at the differences in black body temperatures and the actual
+> > average temperatures. This is what the greenhouse effect can do for
+> > you. Unfortunately I don't know any equations you can use to project
+> > this sort of thing.
+>
+> ok, i have the formula how much energy the planet receives,
+> but how do i calculate the black-body temperature ?
+A spherical black-body receives
+
+Power  =  Intensity * Cross Section
+
+       =  Intensity * ( pi R^2 )
+
+The Stefan-Boltzmann Law says that
+
+Power  =  sigma * Area * Temperature^4
+
+       =  [5.67 * 10^-8 W/m^2/°K^4] * ( 4 pi R^2 ) * T^4
+
+Solving for T:   T  =  [ I / 4 sigma ]^0.25
+
+
+
+>
+>
+> > [...]
+> > I know I'd be interested
+> > in seeing a good solar system generator myself when you're done. I'd
+> > want to plug in Alpha Centari or Procyon and see what happened.
+>
+> you want Alpha Centauri, A or B ?
+> (see below for a typical output of a G2V-star or sol)
+>
+> --------CUT-HERE--------
+--
+   Bill Woods
+
+         "The transformation was amazing. Ten minutes ago,
+ I'd looked like a typically encrusted old-time Netcaster.
+ Now I looked like a dangerous lunatic with no fashion sense.
+ Stop me before I accessorize again."
+
+                   _The Fortunate Fall_  by Raphael Carter
+----------------------------------------------------------------------------
+
+Sunday, 14 March 1999 08:00:00 UTC - Brian Davis:
+Khelben Blackstaff wrote:
+> I am currently working on a project based on starform/accrete...
+
+>
+> One of the issues of this module is its ability to calculate
+> the temperature of various planetary objects...
+> 
+> Has someone formulas regarding these issue?
+   Do you realize that there is a version out there that does an
+interative surface temperature calculation, using about 10 different
+albedos for various surface, and (very very roughly) taking water in to
+account for Earth-like worlds? The output you show below seems to do
+this, and if all you need is some other albedos, just grap them and
+chug.
+
+
+> I would be glad to receive comments or to satisfy requests
+> (modifying the source or sending it over) for various issues.
+        Sounds good - I have some code too (I stalled out while trying to
+replicate the Accrete subroutines, as I've found some small errors in
+them in the versions I've seen).
+
+
+>            Mass:       4.7152000000 sol
+>      Luminosity:     227.6409633221 sol
+        You might also want to calculate the MS lifetime - it would be quite
+short for a star like this, and if you're doing tid-lock calculations
+you've already calculated it, correct? I'd output it.
+
+> ===PLANET===
+>      Eccentricity:   0.03483018 u
+
+        If you have the eccentricity, calculate the maximum and minimum
+insolation - you want surface temperatures, this might be important.
+
+>   Rotation Period:       26.906 hours
+
+        Do you take tidal braking into account here? From just the Sun, or from
+the moons to? Depending on the system, the moons shouldn't be ignored.
+
+> Atmospheric Index:    762.93334
+
+        What is this?
+
+> ---MOON---
+
+        How do you produce moons? Re-call the Accrete subroutine, or just make
+some nice-looking moons? Do you tidally evolve the moon's orbits (a very
+nice touch I've yet to see)?
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 15 March 1999 08:00:00 UTC - Khelben Blackstaff:
+In article <36EC2B...@pdnt.com <>>,
+  bda...@pdnt.com <> wrote:
+>    Do you realize that there is a version out there that does an
+> interative surface temperature calculation, using about 10 different
+> albedos for various surface, and (very very roughly) taking water in to
+> account for Earth-like worlds? The output you show below seems to do
+> this, and if all you need is some other albedos, just grap them and
+> chug.
+Actually my program is based on several sources which includes this
+mentioned above, where do i grab albedos for (eg.) chlorine-based
+atmospheres ?
+
+
+
+>         Sounds good - I have some code too (I stalled out while trying to
+> replicate the Accrete subroutines, as I've found some small errors in
+> them in the versions I've seen).
+I simply grabbed the star-property-table from GURPS-Space and
+coded a workable algorithm around.
+
+
+
+>         You might also want to calculate the MS lifetime - it would be quite
+> short for a star like this, and if you're doing tid-lock calculations
+> you've already calculated it, correct? I'd output it.
+Ups, you caught me. Actually i based the rotation periods on the formula
+for "Shortest possible rotation period" (in the aline planet designer)
+and multiplied it by a factor of 80 to 1200. If the period were greater
+than 5 times the period for a tidal-lock, it is adjusted to be one.
+
+The calculation for MS-lifetime is nice but what do i need for non-MS
+stellar types ?
+
+Which stellar-type and luminosity-class combination are actually MS ?
+
+
+
+>         If you have the eccentricity, calculate the maximum and minimum
+> insolation - you want surface temperatures, this might be important.
+It is "somewhere" in my code, but not used much.
+
+
+
+>         Do you take tidal braking into account here? From just the Sun, or from
+> the moons to? Depending on the system, the moons shouldn't be ignored.
+I have established the following procedure:
+   =) determine planet-properties (size, density, etc...)
+   =) determine moon-properties
+   =) adjust the planets rotation period by:
+              1 + ( sum of moonmasses / planetmass )
+
+
+
+> > Atmospheric Index:    762.93334
+>
+>         What is this?
+This is an index from starform which represents the total amount
+of gaseous elements volume in a planets atmosphere. I don't know
+the reasons behind the actual calculation, but it works well.
+
+
+
+>         How do you produce moons? Re-call the Accrete subroutine, or just make
+> some nice-looking moons? Do you tidally evolve the moon's orbits (a very
+> nice touch I've yet to see)?
+I just grab the data from the following table, and randomly
+alternate between a titus-bode and a random determination.
+
+---CUT-ME-HERE--- [planet-properties] #  +--rotational multiplier #  | 
++--base diameter #  |  |  +--diameter variation #  |  |  |  +--diameter
+multiplier(km) #  |  |        |  |  +--base density #  |  |  |  |  |        +--density
+variation #  |        |  |  |  |  |  +--max. axial tilt(degrees) #  |  |  |  |  | 
+|  |  +--max. no. moons #  |  |  |  |  |  |  |        |  +--max. combined mass of
+moons(% of planet) #  |  |  |  |  |  |        |  |  | R =  0.19 , 100 ,  75 ,  10 ,
+4.75 , 3.75 , 30 ,  2 ,  0.003 ,Rockball A =  1  ,  1 ,  0 ,  1 , 5.55 , 3.75
+,  1 ,        0 ,  0.000 ,Asteroid_Belt H =  0.66 ,  30 ,  20 , 20000 , 1.55 , 0.75
+, 50 , 20 ,  0.033 ,Huge_Gas_Giant L =        0.66 ,        20 ,  10 , 10000 , 1.55 ,
+0.75 , 72 , 10 ,  0.333 ,Large_Gas_Giant G =  0.66 ,  6 ,  4 , 10000 , 1.55 ,
+0.75 , 90 ,  6 ,  3.333 ,Gas_Giant T =        0.33 , 120 ,  60 ,  100 , 4.55 , 3.25
+, 64 ,        4 ,  3.333 ,Terrestrial E =  0.33 ,  13 ,  3 ,        1000 , 5.55 , 1.75 ,
+50 ,  4 ,  3.333 ,Earth-like ---CUT-ME-HERE---
+
+Should i send the sources over for examination ?
+  (beware it's really an undocumented mess)
+
+
+*--------------------------------------------------------------*
+|  Khelben Blackstaff is out there ! !                         |
+|    apache,perl,php,linux,startrek,b5,eastern,stories         |
+*--------------------------------------------------------------*
+
+-----------== Posted via Deja News, The Discussion Network ==----------
+http://www.dejanews.com/ <http://www.dejanews.com/>       Search, Read, Discuss, or Start Your Own    
+----------------------------------------------------------------------------
+
+Monday, 15 March 1999 08:00:00 UTC - Brian Davis:
+Chris Lawson wrote:
+
+> While the greenhouse effect is extremely important for Venus,
+   *and* Earth...
+
+
+> there are other important factors. In the case of the Earth, we
+> can thank the radioactive decay in our iron core for the fact
+> that the planet hasn't cooled to life-inhospitable levels.
+   Where did you get this idea? Most of the decay does *not* take place
+in the core in the first place, and it provides a trivial amount of heat
+(compared to the Sun). Heat lost through the crust is about 10^21
+J/year, or only 0.06 W/m^2. Energy from the Sun is in the hundreds of
+W/m^2 averaged over the year.
+   Heating in the core maintains plate tectonics on Earth, which are
+very important to climate, but without that heat, plate tectonics would
+shut down, CO2 would build up (volcanos won't shut down as fast), and
+the temperatures will rise (not cool).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 15 March 1999 08:00:00 UTC - Brian Davis:
+Khelben Blackstaff wrote:
+
+> ok, i have the formula how much energy the planet receives,
+> but how do i calculate the black-body temperature ?
+   Here's a quick-and-dirty way (as another poster mentioned, this is
+not a easy problem to do completely). Assuming zero obliquity and no
+greenhouse effect, the surface temperture would be around:
+
+Teff = ( (1-A) Cos(phi) / (e a^2 ) )^(1/4) ( (L/Ls) / (sigma pi) )^(1/2)
+   Teff = effective surface temperature [K]
+   phi = latitude [rad]
+   e = emmisivity (assume 0.9 for rough estimate) [unitless]
+   a = distance from the sun [AU]
+   L = stellar luminosity
+   Ls = the Sun's luminosity
+   sigma = Stephan-Boltzman constant = 5.6697e-8 [W/m^2/K^4]
+   pi = 3.14159
+
+For albedos (something it seems your lacking), you could use the one's
+used by Fogg in Silicon Creation:
+
+Gas Giant:           0.4
+Airless rocky body:  0.07
+Airless icy body:    0.4-0.7
+Venus analog:        0.7 (dense CO2 with clouds)
+Titan analog:        0.2 (nitrogen-methane atmosphere)
+(others more complex)
+
+BTW, I once asked Martyn Fogg for a copy of how he did the atmospheres
+in Silicon Creation (it was a much more complec routine than in anything
+I've seen since, with seven different basic atmospheres that took into
+acocunt oxidation states for instance). He replied that the original
+program only existed in a machine moldering in his garage, so it's hard
+to reproduce exactly.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 15 March 1999 08:00:00 UTC - Brian Davis:
+Erik Max Francis wrote:
+
+> For a star of luminosity L at a distance R, the insolation I at that
+> distance will be
+> 
+>     I = L/(4 pi R^2)
+   Two questions: Out of curiosity, how would you correct this for a
+non-point source? For instance, if the "sun" subtended 20 degrees of the
+sky for instance, this would be slightly inaccruate - any idea how much
+or how to correct for it?
+
+   On a related question, how would you take into account the added
+"insolation" for a moon of a gas giant? The planet is both reflecting
+and emitting thermally towards the moon, and with the large angle it
+would subtend for a close moon I'd think this is significant. Do you
+have to correct for this in reality? How much of a correction is it?
+
+
+> It looks like you're using the main sequence mass-luminosity relation
+> for calculating this, here, which is _way_ off for a giant.  (I don't
+> offhand know what the relation is; I don't have it in front of me.)
+   Is there a simple realtionship for high-end and low-end main
+sequence? I've not run across one yet (admittedly I don't have
+references for star stuff at the current time), and would be curious to
+extend outside the 0.1-2.0 solar mass range:
+
+   L = 0.71 M^n          zero-age main sequence luminosity [Ls]
+      M =                stellar mass [Ms]
+      n = 3.75 M + 2.125 for 0.1 < M < 0.7
+        = 4.75           for 0.7 < M < 2.0
+
+And what's a good way to estimate lifetime or time-varyin lum,inosity
+for very dim stars? Obviously "long", but how long (scaled to mass)?
+
+--
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 15 March 1999 08:00:00 UTC - Brian Davis:
+Khelben Blackstaff wrote:
+
+> Actually my program is based on several sources which includes this
+> mentioned above, where do i grab albedos for (eg.) chlorine-based
+> atmospheres ?
+   Very good question - since we don't know of any, there's very little
+hard data (for that matter, there's some good reasons why they might be
+very rare too). I's guess "high" (0.8?) for a Cl-dominated atmosphere,
+but that's just a gut feeling - clouds would be the important factor,
+and I'm not sure of the weather on such a world.
+
+
+> I simply grabbed the star-property-table from GURPS-Space and
+> coded a workable algorithm around.
+   My point was that the Accrete subroutines that are out on the web
+seem to have subtle differences from both Dole's original (as deduced
+from tryin to follow his math) and my own equations worked out. A very
+minor point, since the way accrete builds planets isn't a "good" method
+anymore.
+   If you really want to get technical, there's a guy out there who has
+replicated a baby version of Wetherill's monte-carlo method to produce
+terrestrial planets. I still haven't understood that one, but at least
+it's a more up-to-date model. Check out:
+
+http://web.netusa1.net/~ksagars/ <http://web.netusa1.net/~ksagars/>
+
+
+> Ups, you caught me. Actually i based the rotation periods on the 
+> formula for "Shortest possible rotation period" (in the aline planet 
+> designer) and multiplied it by a factor of 80 to 1200.
+   Fogg (and some of the versions of Accrete etc. out there) base inital
+rotation on a odd "coincidence" of the solar system - the angular
+momentum per unit mass in the solar system is roughly constant, so:
+
+   omega = ( 2 j m / ( k r^2 ) )^(1/2)  inital angular velocity [rad/s]
+      m =                               planetary mass [kg]
+      k =                               contral condensation factor
+      r =                               planetary radius
+      j = 1.46e-20                      constant [m^2/s^2/kg]
+
+I have to point out that this is a lot like Titus-Bode - a nice little
+law with little or nothing to back it up, but if all you're doing is
+making things for SF or roleplaying, it might be OK. Then this inital
+angular momentum (rotation rate) is reduced through a tidal braking
+approximation (*big* approximation), and tidal lock (or resonance like
+Mercury's) is calculated.
+
+
+> This is an index from starform which represents the total amount
+> of gaseous elements volume in a planets atmosphere. I don't know
+> the reasons behind the actual calculation, but it works well.
+   OK, I know what you're talking about now. It's a form of Fogg's
+"volatile inventory" method (basicly scaling the amount of volatiles to
+planet mass), and it does yield nice results.
+
+
+>> How do you produce moons?
+>
+> I just grab the data from the following table,
+   I'll try to take a look at that table later in a better font. In the
+mean-time, you might want to check out Nyrath's webpage, specificly:
+
+http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html>
+
+and the World-building and Starsystem building section of:
+
+http://www.clark.net/pub/nyrath/smap11.html#new96 <http://www.clark.net/pub/nyrath/smap11.html#new96>
+
+Lots of fun stuff there to keep you curious (and much thanks to Nyrath
+for maintaing his pages! It's nice to come back to a page after a year
+or so and not find them missing!).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 15 March 1999 08:00:00 UTC - Erik Max Francis:
+Khelben Blackstaff wrote:
+
+> I simply grabbed the star-property-table from GURPS-Space and
+> coded a workable algorithm around.
+Ugh.
+
+
+> The calculation for MS-lifetime is nice but what do i need for non-MS
+> stellar types ?
+Why would you want to make such systems?  Non-main sequence stars
+(subdwarfs are still technically main sequence stars, they just have
+weird metallicities), remember, are stars that were formally burning H
+into He and have now moved onto other sources.  They have gone through
+rapid (in astronomical or geological timescales) changes in size and
+luminosity, and will continue to go through such changes over timescales
+that are very short compared to their main sequence lifetime (even if
+that itself was short!), and are actively making their systems extremely
+unpleasant.
+
+Further, you'll probably only want to consider a fairly narrow range of
+stars.  Earlier than F2 V or so, and the lifetime of the star is just
+too short for any significant life forms to develop.
+
+
+> Which stellar-type and luminosity-class combination are actually MS ?
+Any star with the V luminosity class (or if it's pre-MK, then it has the
+d prefix for dwarf).  0 through Ib are supergiants, II and III are
+giants, IV are subgiants, VI are subdwarfs (low-metallicity H-burning
+stars).  A prefix D (or sometimes written VII) are white dwarfs.
+
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / It's a man's world, and you men can have it.
+           / Katherine Anne Porter
+----------------------------------------------------------------------------
+
+Monday, 15 March 1999 08:00:00 UTC - Erik Max Francis:
+Brian Davis wrote:
+
+>    Two questions: Out of curiosity, how would you correct this for a
+> non-point source? For instance, if the "sun" subtended 20 degrees of
+> the
+> sky for instance, this would be slightly inaccruate - any idea how
+> much
+> or how to correct for it?
+Then you'd have to use calculus.
+
+
+>    On a related question, how would you take into account the added
+> "insolation" for a moon of a gas giant? The planet is both reflecting
+> and emitting thermally towards the moon, and with the large angle it
+> would subtend for a close moon I'd think this is significant. Do you
+> have to correct for this in reality? How much of a correction is it?
+Well, if you're talking about insolation, then you're going to have to
+specify what frequency range you're talking about.  Usually "insolation"
+refers to visible light only.
+
+As for a satellite of Jupiter, it would certainly be significant, but to
+get a rough idea you wouldn't have to do much correcting for the angular
+size of Jupiter -- it will affect the precise number, but it's not going
+to completely screw up the calculation.
+
+
+>    Is there a simple realtionship for high-end and low-end main
+> sequence? I've not run across one yet (admittedly I don't have
+> references for star stuff at the current time), and would be curious
+> to
+> extend outside the 0.1-2.0 solar mass range:
+> 
+>    L = 0.71 M^n          zero-age main sequence luminosity [Ls]
+>       M =                stellar mass [Ms]
+>       n = 3.75 M + 2.125 for 0.1 < M < 0.7
+>         = 4.75           for 0.7 < M < 2.0
+Usually this is simply expressed as 
+
+    L o= M^nu, 
+
+where nu is a dimensionless constant, averaging between 3.5 and 4.0
+[1].  A little more verbose is this:
+
+    Over the whole mass range plotted [from -1 < lg (M/M_sol) < 1.5]
+    the average [nu] is about 3.2.  For M = 1 .. 10 M_sol the average
+    exponent is 3.88, while in the larger range M = 1 .. 40 M_sol it is
+    3.35.  The decreasing slope towards larger M is an effect of the
+    increasing radiation pressure. ... [2]
+
+
+> And what's a good way to estimate lifetime or time-varyin lum,inosity
+> for very dim stars? Obviously "long", but how long (scaled to mass)?
+I'm not sure what you mean by "time-varying luminosity" (when it starts
+to leave the main sequence?), but the evolutionary timescale is defined
+as  [3]
+
+    T_E o= f X M/L, 
+
+where f is the mass fraction of the He core that gets built up, X is the
+mass fraction of H in the original composition (zero-age main sequence
+star), M is its mass, and L is its luminosity.
+
+Or, to first approximation (for stars that are of the same population), 
+
+    T_E o= M/L.
+
+Since L o= M^3.5, you get T_E o= M^-2.5.  A red dwarf at the very end of
+the main sequence (about 0.08 M_sol) would have a lifetime about 600
+times longer than that of the Sun, and since the Sun's main sequence
+lifetime is about 10 Gy, that gives this lonely red dwarf a lifetime of
+roughly 6 Ty.
+
+Although it should be noted that red dwarf evolution is a sketchy area,
+simply because there are no red dwarfs around which have had a chance to
+show significant evolution -- the Universe isn't old enough yet! 
+Further, red dwarf interiors should be fully convective, which makes
+modelling them somewhat more difficult.  (If you're looking at projected
+evolution tracks along an H-R diagram, you'll often see the very late
+main sequence stars' tracks are cut short.)
+
+. 
+
+1.  _Principles of stellar evolution and nucleosynthesis_, Clayton, p.
+40.
+2.  _Stellar structure and evolution_, Kippenhahn and Weigert, p. 209.
+3.  _Principles of stellar evolution and nucleosynthesis_, Clayton, p,
+65-66.
+
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / It's a man's world, and you men can have it.
+           / Katherine Anne Porter
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Frank Palmer:
+In article: <36ED71...@pdnt.com <>>
+Brian Davis <bda...@pdnt.com <>> writes:
+ Bd> Heating in the core maintains plate tectonics on Earth, which are
+ Bd> very important to climate, but without that heat, plate tectonics
+ Bd> would shut down, CO2 would build up (volcanos won't shut down as fast),
+ Bd> and the temperatures will rise (not cool).
+
+Plate tectonics subsume carbonates from the seafloor.
+
+But why would CO2 build up?  Shellfish would still be
+depositing the carbonates, they would just stay on the sea
+floor.
+
+What am I missing?
+ 
+___ Blue Wave/QWK v2.12
+                                                                           
+--
+Frank Palmer
+flpa...@ripco.com <>
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Frank Palmer:
+<36ED74...@pdnt.com <>> From: Brian Davis <bda...@pdnt.com <>>
+writes:
+ Bd> Here's a quick-and-dirty way (as another poster mentioned, this is
+ Bd> not a easy problem to do completely). Assuming zero obliquity and no
+ Bd> greenhouse effect, the surface temperture would be around:
+
+
+ Bd> For albedos (something it seems your lacking), you could use the one's
+ Bd> used by Fogg in Silicon Creation:
+
+Does albedo really matter?
+
+Now, if (as is the case with earth because of the greenhouse
+effect) the albedo of the planet were different at the peak
+wavelength of incoming radiation than it was at the peak of
+outgoing radiation, then that would change the temperature.
+
+But if albedo is the same at both wavelengths, then the
+equilibrium temperature is the same.
+
+ 
+___ Blue Wave/QWK v2.12
+                                                                                                            
+--
+Frank Palmer
+flpa...@ripco.com <>
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Khelben Blackstaff:
+In article <36ED7C...@pdnt.com <>>,
+  bda...@pdnt.com <> wrote:
+>    Fogg (and some of the versions of Accrete etc. out there) base inital
+> rotation on a odd "coincidence" of the solar system - the angular
+> momentum per unit mass in the solar system is roughly constant, so:
+>
+>    omega = ( 2 j m / ( k r^2 ) )^(1/2)  inital angular velocity [rad/s]
+>       m =                               planetary mass [kg]
+>       k =                               contral condensation factor
+>       r =                               planetary radius
+>       j = 1.46e-20                      constant [m^2/s^2/kg]
+What is the "contral condensation factor" ?
+
+
+
+*--------------------------------------------------------------*
+|  Khelben Blackstaff is out there ! !                         |
+|    apache,perl,php,linux,startrek,b5,eastern,stories         |
+*--------------------------------------------------------------*
+
+-----------== Posted via Deja News, The Discussion Network ==----------
+http://www.dejanews.com/ <http://www.dejanews.com/>       Search, Read, Discuss, or Start Your Own    
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Brian Davis:
+Khelben Blackstaff wrote:
+
+> What is the "contral condensation factor" ?
+   If a planet has a dense core, it's moment of inertia is less than
+that of an identically sized sphere. As a result, the moment of inertia
+is often stated as I = k M R^2, with k termed (at least in some texts)
+the "central condensation factor". For terretrial planets, this is
+generally less than 0.4 (what it is for a homogeneous sphere). As rough
+estimates, it's about 0.33 for terrrestrials, and around 0.24 for gas
+giants.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Brian Davis:
+Frank Palmer wrote:
+
+> Brian Davis writes:
+> 
+>  Bd> Heating in the core maintains plate tectonics on Earth, which are
+>  Bd> very important to climate, but without that heat, plate tectonics
+>  Bd> would shut down, CO2 would build up (volcanos won't shut down as 
+>  Bd> fast), and the temperatures will rise (not cool).
+> 
+> Plate tectonics subsume carbonates from the seafloor.
+   So you are removing a sink of CO2. Is it still deposited? Yes, but...
+
+
+> But why would CO2 build up?  Shellfish would still be
+> depositing the carbonates, they would just stay on the sea
+> floor.
+   Eventually you would run out of (a) places to put it (most carbonate
+is deposited at shallow depths, not in the deep ocean), (b) calcium. Not
+plate tectonics, little or no erosion (land surface erodes to near sea
+level), and thus no new supplies of calcium or magnesium. And there's a
+lot more CO2 in the system than there is spare cations like calcium.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Brian Davis:
+Frank Palmer wrote:
+> Does albedo really matter?
+
+   Yes, because...
+
+
+> Now, if (as is the case with earth because of the greenhouse
+> effect) the albedo of the planet were different at the peak
+> wavelength of incoming radiation than it was at the peak of
+> outgoing radiation, then that would change the temperature.
+   Albedo only is used for incoming radiation, not outgoing (there you
+have to talk about the emmisivity). The amount that the planet receives
+must equal the amount it radiates, where incoming is proportional to
+(1-A) and outgoing is proportional to e T^4. If I increase A while
+leaving e the same, I will certainly change the temperature. And yes,
+you could set up a system that as the albedo changes the emmisivity
+would change to compensate - but normally the emmisivity doesn't change
+much with temperature, while the albedo does.
+   At least, I think so. i'm not sure what you mena by the "outgoing
+albedo", so I may not be understanding what you're asking.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Anton Ertl:
+In article <36EE68...@pdnt.com <>>,
+ Brian Davis <bda...@pdnt.com <>> writes:
+> Frank Palmer wrote:
+> > But why would CO2 build up?  Shellfish would still be
+> > depositing the carbonates, they would just stay on the sea
+> > floor.
+> 
+>    Eventually you would run out of (a) places to put it (most carbonate
+> is deposited at shallow depths, not in the deep ocean), (b) calcium. Not
+> plate tectonics, little or no erosion (land surface erodes to near sea
+> level), and thus no new supplies of calcium or magnesium. And there's a
+> lot more CO2 in the system than there is spare cations like calcium.
+Are you sure? I believe that there is enough calcium and magnesium
+silicate around that could react into calcium carbonate. And compared
+to the masses of rocks on the continents the 0.03% C02 in the
+athmosphere (and whatever its proportion in the seas is) appears
+small.
+
+If the calcium etc. is so scarce, why is the level of CO2 in our
+athmosphere so small? Why is most of the carbon in the near the
+surface of Earth present as carbonates?
+
+- anton
+-- 
+M. Anton Ertl                    Some things have to be seen to be believed
+an...@mips.complang.tuwien.ac.at <> Most things have to be believed to be seen
+http://www.complang.tuwien.ac.at/anton/home.html <http://www.complang.tuwien.ac.at/anton/home.html>
+----------------------------------------------------------------------------
+
+Tuesday, 16 March 1999 08:00:00 UTC - Erik Max Francis:
+Brian Davis wrote:
+
+> > What is the "contral condensation factor" ?
+> 
+>    If a planet has a dense core, it's moment of inertia is less than
+> that of an identically sized sphere. As a result, the moment of
+> inertia
+> is often stated as I = k M R^2, with k termed (at least in some
+> texts)
+> the "central condensation factor".
+Huh, I've never heard it called that.  Usually it's something like
+"moment of inertia/(M R^2)."
+
+
+-- 
+Erik Max Francis / email m...@alcyone.com <> / whois mf303 / icq 16063900
+Alcyone Systems / irc maxxon (efnet) / finger m...@members.alcyone.com <>
+  San Jose, CA / languages En, Eo / web http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+          USA / icbm 37 20 07 N 121 53 38 W / &tSftDotIotE
+             \
+            / But tell me, who _are_ they, these wanderers ... ?
+           / Rainer Maria Rilke
+----------------------------------------------------------------------------
+
+Wednesday, 17 March 1999 08:00:00 UTC - Khelben Blackstaff:
+Hi !
+Ok, from all the replies i got, it seams that i should start a
+new thread called "Star-system formation/generation" and
+together establish a workable solution from the ground up.
+
+
+-- fredo
+
+*--------------------------------------------------------------*
+|  Khelben Blackstaff is out there ! !                         |
+|    apache,perl,php,linux,startrek,b5,eastern,stories         |
+*--------------------------------------------------------------*
+
+-----------== Posted via Deja News, The Discussion Network ==----------
+http://www.dejanews.com/ <http://www.dejanews.com/>       Search, Read, Discuss, or Start Your Own    
+----------------------------------------------------------------------------
+
+Wednesday, 17 March 1999 08:00:00 UTC - Brian Davis:
+Erik Max Francis wrote:
+
+>> k termed (at least in some texts) the "central condensation factor".
+> 
+> Huh, I've never heard it called that.
+   I wish I'd never, but it's a short label and it's (unfortunately)
+stuck in my head ever since. One of my professors first used it (in my
+hearing at least), and I later think I ran across it in one of Martyn
+Fogg's papers on numerical models of solar systems - although I could
+very well be wrong about that.
+
+-- 
+Brian Davis
