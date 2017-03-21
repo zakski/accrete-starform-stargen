@@ -324,7 +324,7 @@ interested in accrete
 Frank Henriquez
 newsgroups: sci.astro
 First: Tuesday, 23 April 1996 08:00:00 UTC+1
-Last: Friday, 2 April 1999 09:00:00 UTC+1
+Last: Friday, 5 May 2000 08:00:00 UTC+1
 
 of Interest:
 interested in accrete
@@ -435,6 +435,7 @@ talking about stellar system generation
 Bill Woods
 newsgroups: rec.arts.sf.science
 First: Sunday, 14 March 1999 08:00:00 UTC
+Last: Monday, 11 December 2000 05:29:13 UTC
 
 of Interest:
 talking about stellar system generation

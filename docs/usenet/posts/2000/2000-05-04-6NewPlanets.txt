@@ -1,0 +1,1030 @@
+URL: https://groups.google.com/forum/#!topic/sci.astro/X5dpkWIPITI
+TITLE: 6 New Planets 
+
+----------------------------------------------------------------------------
+
+Thursday, 4 May 2000 08:00:00 UTC+1 - Raimo Kangasniemi:
+Scientist using the 1.2 meter Leonard Euler 
+telescope in La Silla have
+found apparently six new planets and 
+two brown dwarfs:
+http://www.eso.org/outreach/press-rel/pr-2000/pr-13-00.html <http://www.eso.org/outreach/press-rel/pr-2000/pr-13-00.html>
+----------------------------------------------------------------------------
+
+Thursday, 4 May 2000 08:00:00 UTC+1 - rouge77:
+You mean scientists?
+But, it is nice to see that trend of finding planets with masses
+like Saturn continues.
+
+
+* Sent from RemarQ http://www.remarq.com <http://www.remarq.com> The Internet's Discussion Network *
+The fastest and easiest way to search and participate in Usenet - Free!
+----------------------------------------------------------------------------
+
+Thursday, 4 May 2000 08:00:00 UTC+1 - John M. Dollan:
+rouge77 wrote:
+> 
+> You mean scientists?
+> 
+> But, it is nice to see that trend of finding planets with masses
+> like Saturn continues.
+Indeed.  And I hope that we will soon be finding them in further orbits
+as well (and with low eccentricities!).
+
+-- 
+John M. Dollan
+Graduate Assistant to Residence Life
+Montana State University -- Northern
+ICQ# 308260
+http://www.geocities.com/Athens/Academy/1861/ <http://www.geocities.com/Athens/Academy/1861/>
+
+"Space ... is big. Really big. You just won't believe how vastly,
+hugely, mindboggingly big it is. I mean you may think it's a long way
+down the road to the chemist, but that's just  peanuts to space. Listen
+..."
+        -- Hitchhiker's Guide to the Galaxy, Douglas Adams
+----------------------------------------------------------------------------
+
+Thursday, 4 May 2000 08:00:00 UTC+1 - Brian Davis:
+John M. Dollan wrote:
+
+> Indeed.  And I hope that we will soon be finding them in
+> further orbits as well (and with low eccentricities!).
+   Why? It's so much more fun when all your ideas & theories get tossed
+out the window. Sigh... but people will still keep on using ACCRETE to
+generate "realistic" looking systems I suppose...
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 4 May 2000 08:00:00 UTC+1 - John M. Dollan:
+Brian Davis wrote:
+> 
+>    Why? It's so much more fun when all your ideas & theories get tossed
+> out the window. Sigh... but people will still keep on using ACCRETE to
+> generate "realistic" looking systems I suppose...
+> 
+> --
+> Brian Davis
+Oh, don't get me wrong, these new and completely unexpected orbits are
+every bit as fascinating as your run of the mill Sol-type system... but
+isn't it assumed that with systems similar to our own, the odds of
+eventually finding terrestrial worlds (once we reach that capability)
+are greater?  Other Earths may indeed be very rare (or not, depending on
+who you ask), but I would be thrilled to hear news of other Mars', or
+Venus', or even Mercurys.
+
+At any rate, regardless of the planet's nature, every new discovery, to
+me, is thrilling.
+
+-- 
+John M. Dollan
+Graduate Assistant to Residence Life
+Montana State University -- Northern
+ICQ# 308260
+http://www.geocities.com/Athens/Academy/1861/ <http://www.geocities.com/Athens/Academy/1861/>
+
+"Space ... is big. Really big. You just won't believe how vastly,
+hugely, mindboggingly big it is. I mean you may think it's a long way
+down the road to the chemist, but that's just  peanuts to space. Listen
+..."
+        -- Hitchhiker's Guide to the Galaxy, Douglas Adams
+----------------------------------------------------------------------------
+
+Friday, 5 May 2000 08:00:00 UTC+1 - Frank Henriquez:
+In article <3911F0...@pdnt.com <>>, bda...@pdnt.com <> wrote:
+
+>   Why? It's so much more fun when all your ideas & theories get tossed
+>out the window. Sigh... but people will still keep on using ACCRETE to
+>generate "realistic" looking systems I suppose...
+What's interesting is that the version of Accrete (I forgot the program's
+original name) that was mentioned in Icarus in the early 70's (C. Sagan
+was one of the authors) showed systems with Jupiter and Saturn sized
+planets (or larger) orbiting very near their primaries...
+
+Frank
+
+-- 
+Frank Henriquez  Programmer/Analyst  Jules Stein Eye Institute, UCLA
+fr...@ucla.edu <>   http://www.ben2.ucla.edu/~frank/index.htm <http://www.ben2.ucla.edu/~frank/index.htm>
+----------------------------------------------------------------------------
+
+Sunday, 7 May 2000 08:00:00 UTC+1 - Bob Kenney:
+Bloody Viking wrote:
+> 
+> Now that we can detect planets, what we need to do id try to detect that
+> alleged Nemesis object with the 26 megayear eccentric-as-fuck orbit. The
+> theory goes like this: A Jupiter style object in the above described orbit
+> reaches its perihelion in the Oort Cloud and fucks with the comets,
+> causing some to take the nose dive toward Sol.
+> 
+> It seems extinctions occur periodically, once in 26 megayears or so. We
+> have another 9 megayears to go before this alleged object swings around
+> and has its fun. Now, we need to find this thing. How can we attempt to
+> find it?
+        BV,
+
+        You're assuming it's a single object in orbit around the sun itself.
+     Perhaps it's something the sun itself is in orbit around.  The galaxy is
+     a large group of various objects orbiting their collective center of mass.
+     The sun's orbit takes it around the galactic core once every 220-240 million
+     years, but other stars/dust clouds/etc may have differing orbital
+     velocities/parameters.  In that ~230 million years we may end up passing
+     through the leading/trailing edges of various spiral arms, dust clouds, and
+     other galactic structures in some kind of periodic way that ends up shaking
+     loose objects in the Oort cloud.  Also, the suns orbit would take us through
+     the galactic plane twice, and from what I've read it looks like younger stars
+     (and perhaps the dust clouds they form from?) tend to hang out near the
+     galactic plane, as opposed to older stars, or middle-aged stars like the sun.
+
+     If this is the case, perhaps we could turn the problem on it's head and try
+     to deduce the structure of the galaxy by analyzing the distributon of
+     extinctions. :-) :-) (Just kidding!)
+
+
+
+        Just offering an alternative (WAG) reason for the somewhat periodic nature
+     of the extinctions.
+
+> 
+
+-- 
+  Bob Kenney
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Bloody Viking:
+rouge77 <danton77NOdaSPAM@yahoo.com.invalid> wrote:
+: But, it is nice to see that trend of finding planets with masses
+: like Saturn continues.
+
+Now that we can detect planets, what we need to do id try to detect that
+
+alleged Nemesis object with the 26 megayear eccentric-as-fuck orbit. The
+theory goes like this: A Jupiter style object in the above described orbit
+reaches its perihelion in the Oort Cloud and fucks with the comets,
+causing some to take the nose dive toward Sol. 
+
+It seems extinctions occur periodically, once in 26 megayears or so. We
+have another 9 megayears to go before this alleged object swings around
+and has its fun. Now, we need to find this thing. How can we attempt to
+find it? 
+-- 
+CAUTION: Email Spam Killer in use. Leave this line in your reply! 152680
+ First Law of Economics: You can't sell product to people without money.
+
+4968238 bytes of spam mail deleted.           http://www.wwa.com/~nospam/ <http://www.wwa.com/~nospam/>
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Brian Davis:
+Bloody Viking wrote:
+> Now that we can detect planets [with the mass of Saturn], what
+> we need to do is try to detect that alleged Nemesis object with
+> the 26 megayear eccentric... orbit.
+
+   Well, first off that's going to be hard, since to use the current
+method of finding extrasolar planets they need to be, well, extrasolar -
+you detect them by studying how the star moves relative to you, which is
+tough if you're in orbit around it as well (*not* impossible, but more
+difficult).
+   Rather tougher, you'd need accurate measurements for an orbital
+period or so - tough to do if you've got a loooong period.
+
+
+> It seems extinctions occur periodically, once in 26 megayears or
+> so. We have another 9 megayears to go before this alleged object
+> swings around and has its fun. Now, we need to find this thing.
+   Considering that, *if* this theory is correct, we have around 9
+million years left... I think time is on our side.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Brian Davis:
+Frank Henriquez wrote:
+
+> What's interesting is that the version of Accrete (I forgot the
+> program's original name)
+   It was originally "ACRETE".
+
+
+> that was mentioned in Icarus in the early 70's (C. Sagan was one
+> of the authors)
+   Isaacman & Sagan, "Computer Simulations of Planetary Accretion
+      Dynamics: Sensitivity to Inital Conditions", Icarus 31,
+      p510-533, 1977
+
+
+> showed systems with Jupiter and Saturn sized planets (or larger)
+> orbiting very near their primaries...
+   Nearer, yes, but not even close to "near" in the sense that the
+current extrasolar planets are found. ACRETE limited formation to
+outside of 0.3 AU, and although one set of runs did produce "close" gas
+giants, these were outside of 0.3 AU, and probably could not have formed
+at that distance anyway by the mechanism being simulated (an ACRETE type
+mechanism probably couldn't form a gas giant in the face of T-Tauri
+winds & Jeans escape).
+   Currently there are known extrasolar planets around 0.01 AU out from
+the central star. Even if the ACRETE method had any theoretical validity
+left (and it was a great step forward in it's day), these sorts of
+systems fall well outside it's results. Sorry for the mini-rant, I
+actually happen to really like ACRETE and the many variations.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Brian Davis:
+John M. Dollan wrote:
+
+> Oh, don't get me wrong, these new and completely unexpected orbits
+> are every bit as fascinating as your run of the mill Sol-type
+> system...
+   I guess that's one of my points - there's little to no evidence that
+"Sol-type systems" ARE run-of-the-mill... currently the mill seems to be
+producing systems that are anything but "Sol-type" (I know, selection
+effects, but still...).
+   My main point is how unexpected all these systems are, and how
+"interesting" that makes it for the established theories, not that it
+isn't exciting. Just reminds my of the old curse "may you live in
+interesting times...".
+
+
+> but isn't it assumed that with systems similar to our own, the odds
+> of eventually finding terrestrial worlds (once we reach that
+> capability) are greater?
+   If you mean "are worlds like ours likely to be found in systems like
+ours?", I'd have to answer with a qualified yes. But it doesn'tmean that
+systmes like ours are common, or even the most interesting (consider a
+very large moon of one of these close-in jovians, for instance; in the
+habitable zone for M dwarfs, which are far far more common than G2 types
+like our own Sun).
+
+
+> I would be thrilled to hear news of other Mars', or Venus', or
+> even Mercurys. At any rate, regardless of the planet's nature,
+> every new discovery, to me, is thrilling.
+   I completely agree with both points. I guess my scepticism is due to
+the relative difficulty: detection of 0.003 M_jupiter objects in 1 AU
+orbits is still a far cry from a Saturn-mass object. Hopefully soon, but
+I'm not sure when.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Frank Henriquez:
+In article <391703...@pdnt.com <>>, bda...@pdnt.com <> wrote:
+
+>   Isaacman & Sagan, "Computer Simulations of Planetary Accretion
+>      Dynamics: Sensitivity to Inital Conditions", Icarus 31,
+>      p510-533, 1977
+Thanks Brian! I think there was a much later article by William Kaula that
+modified some of the initial conditions to make more "realistic" systems.
+
+I agree that Acrete is obsolete, but it was the first published planetary
+system generator that I'm aware of (unless Dole's predates it).
+
+
+>   I guess that's one of my points - there's little to no evidence that
+>"Sol-type systems" ARE run-of-the-mill... currently the mill seems to be
+>producing systems that are anything but "Sol-type" (I know, selection
+>effects, but still...).
+I think it's still very much a selection effect - these searches just
+aren't that sensitive to Jupiter sized objects with long periods - "When
+all you have is a hammer, everything looks like a nail."
+
+Frank
+
+-- 
+Frank Henriquez  Programmer/Analyst  Jules Stein Eye Institute, UCLA
+fr...@ucla.edu <>   http://www.ben2.ucla.edu/~frank/index.htm <http://www.ben2.ucla.edu/~frank/index.htm>
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - John M. Dollan:
+Brian Davis wrote:
+
+>    I guess that's one of my points - there's little to no evidence that
+> "Sol-type systems" ARE run-of-the-mill... currently the mill seems to be
+> producing systems that are anything but "Sol-type" (I know, selection
+> effects, but still...).
+Oh, that's very true.  But, as you say, there is still selection effect
+to consider.  Of course, even if migrating Jovian worlds which create 51
+Pegasi-type solar systems are common early in a system's history, and we
+see the result as many systems with close in gas giants, that does not
+necessarily mean that there still couldn't be large terrestrial worlds
+in favorable orbits.  It depends on how early these Jovians migrated
+inward, and if they left enough time for other Terrestrial worlds to
+form before planetary accretion stopped.  As far as I know, that is
+something of an open ended question (but, admittedly, I'm quite a bit
+behind on the latest papers on planetary formation).
+
+
+>    My main point is how unexpected all these systems are, and how
+> "interesting" that makes it for the established theories, not that it
+> isn't exciting. Just reminds my of the old curse "may you live in
+> interesting times...".
+Absolutely!  It does make me wonder what other wonderfully bizarre
+systems might be out there, that would essentially thumb their noses at
+our ideas of planetary formation.
+
+
+>    If you mean "are worlds like ours likely to be found in systems like
+> ours?", I'd have to answer with a qualified yes. But it doesn'tmean that
+> systmes like ours are common, or even the most interesting (consider a
+> very large moon of one of these close-in jovians, for instance; in the
+> habitable zone for M dwarfs, which are far far more common than G2 types
+> like our own Sun).
+That's why I tend to think that the Drake Equation, for one, needs to be
+looked at with a more open mind.  As far as worlds that can support even
+simple life, we have not only found candidates in our own Solar System
+that we would never have before considered (Europa), but there are many
+possible configurations out there.  In addition to the ones that you
+suggested, I wonder if giant stars, producing thawing on previously
+frozen worlds, might not create a transient habitable world.  Presuming
+that life will crop up where conditions are favorable, every time (A big
+presumption, I know), I can see a world about, say Antares that has
+pools of liquid water, even oceans, that harbor some form of microbial
+life.  Of course, it may not last long....
+
+But then, I really like wild speculation, obviously!
+
+
+>    I completely agree with both points. I guess my scepticism is due to
+> the relative difficulty: detection of 0.003 M_jupiter objects in 1 AU
+> orbits is still a far cry from a Saturn-mass object. Hopefully soon, but
+> I'm not sure when.
+I think we may have to wait until there is a planet detector in orbit,
+or out by Jupiter (gads, I can't recall the name of the proposed
+project, but it was a part of NASA's Origins Program, I believe).  I
+wonder if it is even possible to detect worlds such as what you stated,
+using current techniques.  Can Radial Velocity be refined down to that
+level even, speaking theoretically?
+
+-- 
+John M. Dollan
+Graduate Assistant to Residence Life
+Montana State University -- Northern
+ICQ# 308260
+http://www.geocities.com/Athens/Academy/1861/ <http://www.geocities.com/Athens/Academy/1861/>
+
+"Space ... is big. Really big. You just won't believe how vastly,
+hugely, mindboggingly big it is. I mean you may think it's a long way
+down the road to the chemist, but that's just  peanuts to space. Listen
+..."
+        -- Hitchhiker's Guide to the Galaxy, Douglas Adams
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - John M. Dollan:
+Brian Davis wrote:
+
+> Sorry for the mini-rant, I
+> actually happen to really like ACRETE and the many variations.
+>
+Before my hard drive crash of '99 (thank you very much, Norton Disk
+Doctor... sheesh) I used to have at least twelve IBM program variations
+of this little gem.  It may not really be valid any longer, but it was a
+great little collection that I had.  One of these days I may even try to
+find them again....
+-- 
+John M. Dollan
+Graduate Assistant to Residence Life
+Montana State University -- Northern
+ICQ# 308260
+http://www.geocities.com/Athens/Academy/1861/ <http://www.geocities.com/Athens/Academy/1861/>
+
+"Space ... is big. Really big. You just won't believe how vastly,
+hugely, mindboggingly big it is. I mean you may think it's a long way
+down the road to the chemist, but that's just  peanuts to space. Listen
+..."
+        -- Hitchhiker's Guide to the Galaxy, Douglas Adams
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Brian Davis:
+Frank Henriquez wrote:
+
+> I think there was a much later article by William Kaula that
+> modified some of the initial conditions to make more "realistic"
+> systems.
+   Thank you! I'll see what I can dig up next time I'm at the library. A
+much more "realistic" version of Acrete was the "Silicon Creation"
+program written by Martyn Fogg, to try to determine the distribution of
+habitable worlds relative to stellar type (interesting articles
+published in the Journal of the British Interplanetary Society).
+
+
+> I agree that Acrete is obsolete, but it was the first published 
+> planetary system generator that I'm aware of (unless Dole's
+> predates it).
+   Dole was the first publication based on Acrete - Sagan, Fogg, and
+others then used it as a base to study the systems it produced. The
+downfall of course is that while the systems "look" good, the physics
+that was usedis now known to be oversimplified.
+
+
+> I think it's still very much a selection effect - these searches
+> just aren't that sensitive to Jupiter sized objects with long
+> periods - "When all you have is a hammer, everything looks like
+> a nail."
+   I agree, and very well said. It's still interesting that there seem
+to be so many of these "odd" systems out there, but at this point we can
+speculate one way or the other quite a bit - at least the statistics on
+planetary systems is moving beyond the n=1 case, even if selection
+effects are a pain.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - John Rehling:
+> I think it's still very much a selection effect - these searches
+> just aren't that sensitive to Jupiter sized objects with long
+> periods - "When all you have is a hammer, everything looks like
+> a nail."
+Perhaps others can provide the fine details I can't recall, but I
+believe that there is more evidence out there than which places have
+shown planets in the Doppler plots, and which have not. I believe that
+searches for microlensing events that a Jupiter-sized and
+Jupiter-distant (3-7 AU) planet would cause have found no such
+planets, and that there is already talk of upper limits on how many
+stars have such planets, and that the upper limit is something like
+30%...
+
+-JAR
+-- 
+Nothing is really work unless you would rather be doing something
+else.
+        -James M. Barrie
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Bruce Sterling Woodcock:
+"Brian Davis" <bda...@pdnt.com <>> wrote in message
+news:391738BF.1FCB@pdnt.com...
+>    I agree, and very well said. It's still interesting that there seem
+> to be so many of these "odd" systems out there, but at this point we can
+> speculate one way or the other quite a bit - at least the statistics on
+> planetary systems is moving beyond the n=1 case, even if selection
+> effects are a pain.
+One way to help combat the selection effects is to keep in mind the
+"negative" results many observations of systems have gotten so far.
+I think that statistically we've determined that roughly 5% of all stars
+(or maybe all G, H, and K stars, not sure) have planets; it's entirely
+possible that the other 95% *are* systems much like our system and
+simply have terrestial planets and far-away gas giants we can't detect
+yet.  A few systems have been ruled out of having Jupiter-sized planets
+at Jupiter distances, but they could still have them further out or have
+terrestial planets.
+
+Bruce
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Frank Henriquez:
+In article <391738...@pdnt.com <>>, bda...@pdnt.com <> wrote:
+
+>A much more "realistic" version of Acrete was the "Silicon Creation"
+>program written by Martyn Fogg
+Martyn Fogg was an occasional contributor to sci.astro. His articles in
+JBIS are always thought provoking.
+
+
+>   I agree, and very well said. It's still interesting that there seem
+>to be so many of these "odd" systems out there, but at this point we can
+>speculate one way or the other quite a bit - at least the statistics on
+>planetary systems is moving beyond the n=1 case, even if selection
+>effects are a pain.
+I think all we can say is that planetary systems are not rare, and that
+there's more variety than we had assumed, based on our single example.
+It'll be interesting to see how things evolve once radial velocity
+measurements can detect Jupiter sized planets at "normal" distances. I
+suspect that the detection rate will fall - at least at first - since the
+periods will be much longer.
+
+Frank
+
+-- 
+Frank Henriquez  Programmer/Analyst  Jules Stein Eye Institute, UCLA
+fr...@ucla.edu <>   http://www.ben2.ucla.edu/~frank/index.htm <http://www.ben2.ucla.edu/~frank/index.htm>
+----------------------------------------------------------------------------
+
+Monday, 8 May 2000 08:00:00 UTC+1 - Bruce Sterling Woodcock:
+"Barahir" <bar...@aol.com <>> wrote in message
+news:20000508212419.05660.00002084@ng-cj1.aol.com...
+> Hmm.. I'm intreged (sp, *groan*) by this program.. a quick search through
+> metacrawler and yahoo only revealed one site where it could be found,
+which
+> apparently expired with the graduation of the hosting student.
+>
+> So where can I find this program?
+Strange, I found it easy, although I dodn't remember if I used Yahoo or
+Google.
+
+http://www.accesscom.com/~iburrell/create/accrete.html <http://www.accesscom.com/~iburrell/create/accrete.html>
+
+Bruce
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Barahir:
+Hmm.. I'm intreged (sp, *groan*) by this program.. a quick search through
+metacrawler and yahoo only revealed one site where it could be found, which
+apparently expired with the graduation of the hosting student.
+So where can I find this program?  I have this strange obsession with such
+programs ( I wasted a long summer playing with a interesting program called
+"Gravity" back in my earlier years, it was just so much FUN tossing random
+jupiter sized bodies at the inner solar system from a light year out or so..
+kinda like watching car accidents or some such. )
+
+Brian
+bar...@aol.com <>
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - lad...@my-deja.com:
+In article <39169922...@mcn.net <>>,
+  "John M. Dollan" <dol...@mcn.net <>> wrote:
+[snip]
+> Brian Davis wrote:
+> >detection of 0.003 M_jupiter objects in 1 AU
+> > orbits is still a far cry from a Saturn-mass object. Hopefully soon,
+> > but I'm not sure when.
+>
+> I think we may have to wait until there is a planet detector in orbit,
+> or out by Jupiter (gads, I can't recall the name of the proposed
+> project, but it was a part of NASA's Origins Program, I believe).
+The NASA Origins program web page is here:
+
+http://origins.jpl.nasa.gov/ <http://origins.jpl.nasa.gov/>
+
+
+> I wonder if it is even possible to detect worlds such as what you
+> stated, using current techniques.  Can Radial Velocity be refined down
+> to that level even, speaking theoretically?
+There are several proposals for space-based planetary detection systems.
+For example, there's the Terrestrial Planet Finder.
+
+http://tpf.jpl.nasa.gov/ <http://tpf.jpl.nasa.gov/>
+
+Another interesting one is Kepler -- which, despite being "faster better
+cheaper," does not appear to be funded yet:
+
+http://www.kepler.arc.nasa.gov/ <http://www.kepler.arc.nasa.gov/>
+
+These space-based detectors would not use Doppler measurements of radial
+velocity to detect planets.  As you point out, it's probably not possible
+to make Doppler measurements at the level of sensitivity required for the
+detection of smaller objects.  A star is not a bowling-ball.  The surface
+bubbles and boils.  This motion must at some level contribute to the
+smearing of the atomic absorption lines used for Doppler shift
+measurements and thus place a lower limit on this type of measurement.
+
+Kepler would look for planetary transits of the kind seen last year at
+HD209458 -- but, of course, with more sensitivity.  TPF (and, its
+progenitors, ST-3 and SIM, which wouldn't be sensitive enough to detect
+Earth around the Sun) is an interferometric telescope setup, akin to what
+they're doing on the ground right now at Mauna Kea -- but again, much
+better.  TPF would use multiple, widely-separated telescopes to a)
+increase the angular resolution and b) use interferometric nulling to
+effectively "cancel the glare" of the central star, allowing otherwise-
+invisible, close-orbiting objects to be seen.   That's right, folks, TPF
+is a visual technique -- there will be an image, even if it's just a
+moving pinprick.
+
+But hey, why stop there?  Once we've gotten that far (IF we ever get that
+far... sigh...), let's build an even bigger interferometer so that the
+images of terrestrial planets subtend several pixels on our imaging
+system.  That's the Planetary Imager.  This is the one that they've
+proposed sending out to 5 AU -- to get away from inner solar-system dust
+and infrared radiation.
+
+http://origins.jpl.nasa.gov/missions/planetimg.html <http://origins.jpl.nasa.gov/missions/planetimg.html>
+
+--
+John J. Ladasky Jr., Ph.D.
+Department of Structural Biology
+Stanford University Medical Center
+Stanford, CA 94305
+Secretary, Californians for Renewable Energy <http://www.calfree.com <http://www.calfree.com>>
+
+
+Sent via Deja.com http://www.deja.com/ <http://www.deja.com/>
+Before you buy.
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Brian Davis:
+John M. Dollan wrote:
+
+> I used to have at least twelve IBM program variations
+> of [Accrete]... One of these days I may even try to
+> find them again....
+   You could do worse than to start at Nyrath's web pages, specificly:
+
+   http://www.clark.net/pub/nyrath/smap11.html#new96 <http://www.clark.net/pub/nyrath/smap11.html#new96>
+
+Several of the links are dead, but it's a great resources for
+worldbuilding in general, and at least used to be linked to several
+versions of Accrete and similar programs.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Brian Davis:
+Barahir wrote:
+
+> So where can I find this program?
+   As I mentioned in a different reply, Nyrath's web site has a number
+of links (and a lot of other great stuff). Take a look at:
+
+http://www.clark.net/pub/nyrath/smap11.html#new96 <http://www.clark.net/pub/nyrath/smap11.html#new96>
+
+
+> I wasted a long summer playing with a interesting program called
+> "Gravity" back in my earlier years, it was just so much FUN
+> tossing random jupiter sized bodies at the inner solar system
+> from a light year out or so..
+   I used to write code like that - I prefered simulation solar system
+accretion (using only a 100 bodies or so - *not* realistic, but a lot of
+fun to watch) and motion of objects near L4 & L5. You could do worse to
+turn kids on to science by letting them "play" with programs like this.
+Be warned that Accrete doesn't do any animations, and the central model
+is not dynamical, so you can't "see" it happening, but it's still neat.
+One version of it (Starform) goes much further with climate
+calculations...
+
+http://www.accesscom.com/~iburrell/create/accrete.html <http://www.accesscom.com/~iburrell/create/accrete.html>
+
+...and several (dozens?) of versions have been created for various
+role-playing games.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Brian Davis:
+John Rehling wrote:
+
+> Perhaps others can provide the fine details I can't recall, but I
+> believe that there is more evidence out there than which places have
+> shown planets in the Doppler plots, and which have not. I believe that
+> searches for microlensing events that a Jupiter-sized and
+> Jupiter-distant (3-7 AU) planet would cause have found no such
+> planets, and that there is already talk of upper limits on how many
+> stars have such planets, and that the upper limit is something like
+> 30%...
+
+And in a seperate post Bruce Sterling wrote:
+
+> One way to help combat the selection effects is to keep in mind the
+> "negative" results many observations of systems have gotten so far.
+> I think that statistically we've determined that roughly 5% of all
+> stars (or maybe all G, H, and K stars, not sure) have planets; it's
+> entirely possible that the other 95% *are* systems much like our
+> system and simply have terrestial planets and far-away gas giants
+> we can't detect yet.
+   Agreed with both of you (sorry for combining posts, but it seemed
+appropriate), but these negative results rarely get the same press
+covereage (interpreted as "I didn't know about them" <grin>). It is
+curious that the two of you seem to present very different limits, one
+that only 30% of stars have close-in jovians, and the other that "only
+5% have [proven] planets". Does anyone have any references for these
+negative results calculations? This is perhaps where pressing the
+detection limits might yield the biggest pay-offs - some models indicate
+that the solar system without Jupiter would be a *very* different place,
+for instance.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - John M. Dollan:
+Brian Davis wrote:
+> 
+>    You could do worse than to start at Nyrath's web pages, specificly:
+> 
+>    http://www.clark.net/pub/nyrath/smap11.html#new96 <http://www.clark.net/pub/nyrath/smap11.html#new96>
+> 
+> Several of the links are dead, but it's a great resources for
+> worldbuilding in general, and at least used to be linked to several
+> versions of Accrete and similar programs.
+Yeah, that's one of my main resources for various programs and such.  A
+wonderful site.  I just have to take the time and track down, from
+there, what is offered.  If I recall right, there are old accrete
+programs, and more modern variations, such as It's Full of Stars,
+although many of these newer programs are not... well, very accurate
+even in a passing sense.  But they are still fun to play around with!
+
+-- 
+John M. Dollan
+Graduate Assistant to Residence Life
+Montana State University -- Northern
+ICQ# 308260
+http://www.geocities.com/Athens/Academy/1861/ <http://www.geocities.com/Athens/Academy/1861/>
+
+"Space ... is big. Really big. You just won't believe how vastly,
+hugely, mindboggingly big it is. I mean you may think it's a long way
+down the road to the chemist, but that's just  peanuts to space. Listen
+..."
+        -- Hitchhiker's Guide to the Galaxy, Douglas Adams
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - John Rehling:
+Brian writes:
+> It is curious that the two of you seem to present very different
+> limits, one that only 30% of stars have close-in jovians, and the
+> other that "only 5% have [proven] planets".
+
+They're limits of two different things.
+
+Bruce's stat is that about 5% of stars (surveyed) have
+easily-detectable planets (high gravitational influence on their star;
+tend to be hot Jupiters) and about 95% (again, surveyed) don't.
+
+Mine (reference below) is really two: no more than about 30% (and it
+may be much less -- there is no lower limit save 0; again the caveat
+"of those surveyed" applies) of stars have Jupiter-mass planets
+orbiting from 1.5 to 3 AU away, and no more than about 30% (same
+caveats) have planets of about 3 M_j from 1 to 4 AU out.
+
+The negative result Bruce mentions would leave open the possibility
+that 3-M_j planets 4AU out are quite common. The one I cited would
+leave open the possibility that hot Jupiters are quite common.
+
+Taking the results together, we can say that (if the stars surveyed
+can be thought of as typical)
+
+Stars with hot Jupiters or hot Saturns: 5%
+Stars with planets > ~1 M_j from 1-3 AU: <30% (probably much less,
+ like 2%, as this gets into the range of Doppler detections).
+Stars with planets > ~3 M_j from 1 to 4 AU: <30% (possibly near zero).
+
+      by deduction
+
+Stars with no > Jupiter-mass planets within 4 AU: 65%-95%.
+
+Stars with no terrestrial planets in the habitable zone: 3%-100%
+(doesn't say much, but the close-in giant planets in elliptical orbits
+rule out terrestrial planets there; they could, however, have
+habitable satellites around giant planets).
+
+My reference (was hard to find, but I'm glad I did!)
+
+http://www.aas.org/publications/baas/v31n5/aas195/775.htm <http://www.aas.org/publications/baas/v31n5/aas195/775.htm>
+
+[24.04] Microlensing Constraints on the Frequency of Jupiter Mass Planets    
+   
+   B. S. Gaudi, M. D. Albrow, J.-P. Beaulieu, J. A. R. Caldwell, D. L.
+   DePoy, M. Dominik, A. Gould, J. Greenhill, K. Hill, S. Kane, R.
+   Martin, J. Menzies, R. M. Naber, R. W. Pogge, K. R. Pollard, P. D.
+   Sackett, K. C. Sahu, P. Vermaak, R. Watson, A. Williams (The PLANET
+   Collaboration)
+
+   Microlensing is the only technique likely, within the next 5 years, to
+   constrain the frequency of Jupiter-analogs. The PLANET collaboration
+   has monitored nearly 100 microlensing events of which more than 20
+   have sensitivity to the perturbations that would be caused by a
+   Jovian-mass companion to the primary lens. No clear signatures of such
+   planets have been detected. These null results indicate that Jupiter
+   mass planets with separations of 1.5-3 AU occur in less than 1/3 of
+   systems. A similar limit applies to planets of 3 Jupiter masses for
+   separations of 1-4 AU. These are the best limits for extrasolar
+   planets at these separations by any technique.
+
+-JAR
+-- 
+Men love war because it allows them to look serious; because it is the
+only thing that stops women laughing at them.
+        -John Fowles
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Bruce Sterling Woodcock:
+"Brian Davis" <bda...@pdnt.com <>> wrote in message
+news:39181986.23BD@pdnt.com...
+> John Rehling wrote:
+>
+> > Perhaps others can provide the fine details I can't recall, but I
+> > believe that there is more evidence out there than which places have
+> > shown planets in the Doppler plots, and which have not. I believe that
+> > searches for microlensing events that a Jupiter-sized and
+> > Jupiter-distant (3-7 AU) planet would cause have found no such
+> > planets, and that there is already talk of upper limits on how many
+> > stars have such planets, and that the upper limit is something like
+> > 30%...
+>
+> And in a seperate post Bruce Sterling wrote:
+>
+> > One way to help combat the selection effects is to keep in mind the
+> > "negative" results many observations of systems have gotten so far.
+> > I think that statistically we've determined that roughly 5% of all
+> > stars (or maybe all G, H, and K stars, not sure) have planets; it's
+> > entirely possible that the other 95% *are* systems much like our
+> > system and simply have terrestial planets and far-away gas giants
+> > we can't detect yet.
+>
+>    Agreed with both of you (sorry for combining posts, but it seemed
+> appropriate), but these negative results rarely get the same press
+> covereage (interpreted as "I didn't know about them" <grin>). It is
+> curious that the two of you seem to present very different limits, one
+> that only 30% of stars have close-in jovians, and the other that "only
+> 5% have [proven] planets". Does anyone have any references for these
+> negative results calculations?
+The two are not contradictory... they are just different limits based on
+different surveys.
+
+
+Microlensing is the only technique likely, within the next 5 years, to
+constrain the frequency of Jupiter-analogs. The PLANET collaboration
+has monitored nearly 100 microlensing events of which more than 20 have
+sensitivity to the perturbations that would be caused by a Jovian-mass
+companion to the primary lens. No clear signatures of such planets have
+been detected. These null results indicate that Jupiter mass planets with
+separations of 1.5-3 AU occur in less than 1/3 of systems. A similar limit
+applies to planets of 3 Jupiter masses between 1-4 AU.
+http://xxx.lpthe.jussieu.fr/abs/astro-ph/0004269 <http://xxx.lpthe.jussieu.fr/abs/astro-ph/0004269>
+
+Bottom line: Approximately 3% of Solar Type stars harbor planetary
+companions that have masses from 1 - 10 Mjup and orbit within a several
+Astronomical Units (AU). At most 1% of stars harbor brown-dwarf
+companions within several AU. Their masses are spread out from 10 - 70
+Mjup, as demonstrated beautifully by the data of Michel Mayor, Antoine
+Duquennoy, and Didier Queloz at Geneva Observatory and Observatoire
+de Haute Provence.
+
+http://cannon.sfsu.edu/~gmarcy/planetsearch/bd/bd.html <http://cannon.sfsu.edu/~gmarcy/planetsearch/bd/bd.html>
+
+Note that the Marcy and Butler paper is a little old and far more planets
+have been detected since, and the last statistic I saw said now it was about
+5% of surveyed stars.  Also note that almost all surveyed stars are "Solar
+Type" stars whereas the Microlensing event constrains companions to all
+stars, and would include Brown Dwarfs.
+
+I've seen a more recent paper that described the frequency of discovery
+at various detection limits but I don't have a reference.
+
+Bruce
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Frank Henriquez:
+In article <8f9le3$u3s$1...@slb7.atl.mindspring.net <>>, "Bruce Sterling
+Woodcock" <sirb...@ix.netcom.com <>> wrote:
+Abstract of article:
+
+
+>Microlensing is the only technique likely, within the next 5 years, to
+>constrain the frequency of Jupiter-analogs. The PLANET collaboration
+>has monitored nearly 100 microlensing events of which more than 20 have
+>sensitivity to the perturbations that would be caused by a Jovian-mass
+>companion to the primary lens. No clear signatures of such planets have
+>been detected. These null results indicate that Jupiter mass planets with
+>separations of 1.5-3 AU occur in less than 1/3 of systems. A similar limit
+>applies to planets of 3 Jupiter masses between 1-4 AU.
+>
+>http://xxx.lpthe.jussieu.fr/abs/astro-ph/0004269 <http://xxx.lpthe.jussieu.fr/abs/astro-ph/0004269>
+Well, maybe it's just whistling in the dark, but I think that the low
+number of Jupiter sized planets in the "prime real estate" region of
+sun-like stars is good news. The microlensing paper doesn't really address
+systems like ours, with Jupiter sized planets beyond 4AU. 
+
+If planetary systems start by having large Jupiter classed planets
+spiraling into the primary, it's also possible that there are quite a few
+systems with no large Jupiter mass gas giants - maybe only Saturn sized or
+smaller. 
+
+Frank
+
+-- 
+Frank Henriquez  Programmer/Analyst  Jules Stein Eye Institute, UCLA
+fr...@ucla.edu <>   http://www.ben2.ucla.edu/~frank/index.htm <http://www.ben2.ucla.edu/~frank/index.htm>
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Bob May:
+The problems with all of these surveys is that they investigate only a
+few systems (most stars fail for a number of reasons, amongst them
+are: length of observation, location of the star relative to others
+and many other reasons) have really been checked and the results give
+only a few datapoints on a large range of the variability.  Doing
+lensing checks on stars is quite problematic as the planets don't
+necessarially produce a huge lensing effect and then only when the
+planet passes directly in front of the star in question which has
+problems as the parent sun is so close to the star at that range.
+Next is to find stars with a sufficient number of stars behind so that
+the lensing effect can be seen in a decent time interval.  The process
+can detect planets but the restrictions on the process can't tell you
+how many systems are really out there because the sample compared to
+the rest of the stars is so small and the probability of the detection
+is also so small as to make the results pretty meaningless.
+--
+Bob May
+
+Don't subscribe to ACCESS1 for your webserver for the low prices.  The
+service has
+been lousy and has been poor for the last year.  Bob May
+----------------------------------------------------------------------------
+
+Tuesday, 9 May 2000 08:00:00 UTC+1 - Bruce Sterling Woodcock:
+"Bob May" <bob...@nethere.com <>> wrote in message
+news:shh1ft8td58184@corp.supernews.com...
+> The problems with all of these surveys is that they investigate only a
+> few systems (most stars fail for a number of reasons, amongst them
+> are: length of observation, location of the star relative to others
+> and many other reasons) have really been checked and the results give
+> only a few datapoints on a large range of the variability.
+Yes, that's why the surveys always couch the probabilities in the
+appropriate terms:  X chance of mass A-B at distance C-D, etc.
+
+
+> Doing
+> lensing checks on stars is quite problematic as the planets don't
+> necessarially produce a huge lensing effect and then only when the
+> planet passes directly in front of the star in question which has
+> problems as the parent sun is so close to the star at that range.
+> Next is to find stars with a sufficient number of stars behind so that
+> the lensing effect can be seen in a decent time interval.  The process
+> can detect planets but the restrictions on the process can't tell you
+> how many systems are really out there because the sample compared to
+> the rest of the stars is so small and the probability of the detection
+> is also so small as to make the results pretty meaningless.
+Actually, all of those possible errors are *included* in the calculation;
+that's why the estimate from lensing was so high.  100 or so samples
+out of millions really can be statistically signficant, at least for our own
+neck of the woods.
+
+Bruce
+----------------------------------------------------------------------------
+
+Thursday, 11 May 2000 08:00:00 UTC+1 - Brian Davis:
+Bruce Sterling Woodcock wrote:
+
+> Yes, that's why the surveys always couch the probabilities in the
+> appropriate terms:  X chance of mass A-B at distance C-D, etc.
+   One interesting point: has anyone targeted any double stars? In
+short, when limits like "5% of surveyed stars" are stated, is that
+generally 5% of solitary stars? this reduces the "odds" considerably
+(and there would seem to be no *technical* reason why doppler searches
+couldn't reveal planets around binaries as well, although "external"
+planets would likely be tough due to long orbital periods).
+   Has anyone seen anything on binary planets? Or does anyone have a
+good "correction" for these limits in terms of *all* stars (not just
+solitary ones)?
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 11 May 2000 08:00:00 UTC+1 - John Rehling:
+> One interesting point: has anyone targeted any double stars?
+One planet has been discovered orbiting binary stars:
+
+http://physicsweb.org/article/news/03/11/4 <http://physicsweb.org/article/news/03/11/4>
+
+It sounds like this is one planet orbiting around both stars (?);
+there could also be systems with a planet orbiting one star, but with
+another star farther away orbiting the star-planet(s) system.
+
+I think searches have mainly targeted single-star systems because the
+results are easier to comprehend.
+
+-JAR
+
+
+-- 
+Aristotle could have avoided the mistake of thinking that women had
+fewer teeth than men by the simple device of asking Mrs. Aristotle to
+open her mouth.
+        -Bertrand Russell
+----------------------------------------------------------------------------
+
+Thursday, 11 May 2000 08:00:00 UTC+1 - Bruce Sterling Woodcock:
+"Brian Davis" <bda...@pdnt.com <>> wrote in message
+news:391B1D46.3D1A@pdnt.com...
+> Bruce Sterling Woodcock wrote:
+>
+> > Yes, that's why the surveys always couch the probabilities in the
+> > appropriate terms:  X chance of mass A-B at distance C-D, etc.
+>
+>    One interesting point: has anyone targeted any double stars?
+Yes.
+
+
+> In
+> short, when limits like "5% of surveyed stars" are stated, is that
+> generally 5% of solitary stars? this reduces the "odds" considerably
+> (and there would seem to be no *technical* reason why doppler searches
+> couldn't reveal planets around binaries as well, although "external"
+> planets would likely be tough due to long orbital periods).
+Most stars are double or greater star systems.  There might have been
+some selection bias away from multiple star systems, but I think now all
+Sol-type and other close stars are being surveyed.
+
+
+>    Has anyone seen anything on binary planets? Or does anyone have a
+> good "correction" for these limits in terms of *all* stars (not just
+> solitary ones)?
+We've found several planets orbiting in multiple star star systems.
+Aside from the link posted by John (I think that's about the planet that
+is believed to orbit both stars), we have the planet around Tau Bootis,
+aka GJ 527A, which has a companion star GJ 527B, the planet around
+55 Cancri, aka rho Cancri A, which has companion star rho Cancri B,
+the planet around Gl 86 (probably a binary system), and the planet around
+16 Cygni B --16 Cygni A and C also exist, making it a trinary system.
+There are probably others too.
+
+Bruce

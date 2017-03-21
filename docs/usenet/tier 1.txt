@@ -60,7 +60,7 @@ author of an accrete version (ported to C++ from code written by Wales Larrison)
 Erik Max Francis / Erik Max Francist?
 newsgroups: rec.arts.sf.science
 First: Sunday, 9 May 1993 20:23:42 UTC+1
-Last: Saturday, 18 September 1999 08:00:00 UTC+1
+Last: Sunday, 10 December 2000 20:51:44 UTC
 
 Thread List:
 1993-05-08-Starswithhabitablepl.txt
@@ -75,6 +75,7 @@ Thread List:
 1999-04-02-AlphaCentaurisystemq.txt
 1999-09-14-worldbuildingGillett.txt
 1999-09-15-MassLuminosityStella.txt
+2000-12-09-20yearplanet.txt
 
 of Interest:
 wrote modified copy of accrete (Burdick variant?) - prettier info print?
@@ -143,7 +144,7 @@ author of accrete variants (Modula-2, C++, Java?)
 Brian Davis
 newsgroups: rec.arts.sf.science
 First: Tuesday, 4 February 1997 08:00:00 UTC
-Last: Friday, 17 September 1999 08:00:00 UTC+1
+Last: Wednesday, 13 December 2000 17:24:02 UTC
 
 Thread List:
 1997-02-04-StarWarsCoulditHappe.txt
@@ -155,6 +156,9 @@ Thread List:
 1999-03-11-Aplanetstemperature.txt
 1999-09-14-worldbuildingGillett.txt
 1999-09-15-MassLuminosityStella.txt
+2000-05-04-6NewPlanets.txt
+2000-12-02-WhatIsAtmosphericPre.txt
+2000-12-09-20yearplanet.txt
 
 of Interest:
 worked on mac port

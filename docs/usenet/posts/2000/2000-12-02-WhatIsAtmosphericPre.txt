@@ -1,0 +1,940 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/KjuZmBgJux0
+TITLE: What-Is: Atmospheric Pressure . . . 
+
+----------------------------------------------------------------------------
+
+Saturday, 2 December 2000 08:00:00 UTC - ameen . net:
+From a hard science prospective, what atmospheric composition would
+boost an atmopheres pressure and still be 'healthy' for human
+consumption? Assuming a gravity of .6, .7, and .8. I have been told
+that pressures below .8 are not fit for human consumption. I have also
+read that water vapor and CO2 are good compounds to this end, but
+risky.
+Any help is appreciated.
+
+
+Ben Wilson (a.k.a. Ameen, Last of the Dausha)
+____________________________
+-"Ever heard of Aristotle . . . Plato . . . Socrates?!"
+-"Yes."
+-"Morons!"
+----------------------------------------------------------------------------
+
+Saturday, 2 December 2000 08:00:00 UTC - George William Herbert:
+Ameen Dausha <ameen @ dausha . net> wrote:
+>From a hard science prospective, what atmospheric composition would
+>boost an atmopheres pressure and still be 'healthy' for human
+>consumption? Assuming a gravity of .6, .7, and .8. I have been told
+>that pressures below .8 are not fit for human consumption. I have also
+>read that water vapor and CO2 are good compounds to this end, but
+>risky.
+>Any help is appreciated.
+CO2 is not helpful at all.  More than a few percent will kill you
+at any pressure.
+
+Water's vapor pressure is not helpful at any reasonable temperature.
+
+Using even a standard 80/20 Nitrogen/Oxygen atmosphere, though, you
+can do an amazing amount.  Look at a standard atmosphere table... 
+
+Denver CO is at around a mile high (5,500 feet or so), and has a 12 PSI
+atmospheric pressure (0.8 atm) and very few people have any problem
+living in Denver (though some with chronic breathing problems may...).
+
+At 10,000 feet you get down to 10 PSI (0.66 atm).  There are plenty 
+of ski resorts at that altitude, again with many people doing fine.
+Between 5 and 10 thousand feet (0.8 and 0.65 atm) you slowly increase
+the number of people who will have problems at that altitude.
+
+Mauna Kea is at around 4,200 meters (13,500 feet or so), and 8.5 PSI.
+That's around 0.57 atm.  There are a bunch of telescopes up there,
+and people live up there to operate the telescopes.  Each year, they
+have some cases of people getting sick or failing to adapt to the
+altitude and having to be driven down the hill rapidly to recover.
+But as a general rule, average health grad students, professors,
+and technicians are able to adapt to and effectively work at this
+height and pressure.
+
+Above that altitude you hit more and more problems.
+
+Everest "Base Camp" is at around 17,000 feet.  Pressure there is
+around 7.5 PSI (0.5 atm).  Some people get sick at "Base Camp"
+each year, but as a general rule people in good health can slowly
+ascend to that altitude and continue to operate there without getting
+ill or severely degraded.
+
+Everest's peak is around 8850 meters (29,028 feet).  Pressure is
+around 4.75 PSI (0.32 atm).  Humans in world-class physical condition
+can ascend Everest without supplimental oxygen, though generally
+at the cost of detectable but minor brain damage even on the best
+ascents and most healthy climbers.  As a general rule climbers
+rarely go over 8,000 meters without supplimental oxygen; at 8 km
+altitude you have 5.2 PSI (0.35 atm).  That is known as the "Death Zone",
+where you have to get up and back down again quickly or risk permanent
+harm or death due to oxygen depravation.
+
+Note that with supplimental oxygen, these pressure levels are 
+not a serious problem.  Many early spacecraft used 4 PSI pure oxygen
+(and western spacesuits still do, though the Shuttle uses roughly
+sea level pressure and gas mix).  At the peak of Everest, with
+a 50/50 Oxygen/Nitrogen mix, you'd have around 2.4 PSI of Oxygen
+in the breathing gas, which is equivalent to an altitude of around
+10,000 feet (most people do fine, and just about anyone can adapt
+and live on that oxygen partial pressure).
+
+With pure oxygen, fit humans can survive as low as around 3.2 PSI of
+total pressure, but below that you have physiological failures in the
+gas exchange mechanisms in the lungs.  Space suits run at 4 PSI to
+stay away from the limit and give a bit of safety margin both on suit
+performance, in case it gets punctured or breaks, and in case an
+astronaut is ill or impaired and their temporary useful limit is a bit
+over 3.2 PSI pure O2).
+
+
+-george william herbert
+gher...@retro.com <>
+----------------------------------------------------------------------------
+
+Saturday, 2 December 2000 08:00:00 UTC - Brian Davis:
+Ameen Dausha wrote:
+
+> From a hard science prospective, what atmospheric composition would
+> boost an atmopheres pressure and still be 'healthy' for human
+> consumption?
+   Well, you could have a partial pressure of N2 around 3 Atm, and O2
+doesn't become toxic until perhaps 0.5 Atm. So a N2/O2 atmosphere like
+Earth's could be survivable at around 3.5 Atm, with about 14% O2. If you
+want exotic gas mixes, it could be higher (replace N2 with He, for
+instance), but that's a little exotic.
+
+
+> Assuming a gravity of .6, .7, and .8. I have been told that pressures
+> below .8 are not fit for human consumption.
+   I'm confused. If you want a higher pressure, you can use more gas or
+a higher gravity - I'm not sure why you'd want a lower gravity (*if* a
+high-pressure breathable atmosphere is your only goal). As to pressures
+below 0.8 Atm, those are very "fit for consumption" - you'd breath that
+any time you went to 1880 m (6200') altitude, for instance.
+
+
+> I have also read that water vapor and CO2 are good compounds to this
+> end, but risky.
+   I must be mis-interpreting something here, but the partial pressure
+of water vapor in the atmopshere is set by the surface temperature, and
+it will remain very low (unless the temperature is much to high for
+human habitation). Similarly CO2 is toxic at very low partial pressures,
+and so can't help much. Both of these are *terrible* gases to base a
+high-pressure human breathable atmopshere on.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 3 December 2000 00:43:04 UTC - ameen . net:
+Brian Davis <bda...@pdnt.com <>> spake from on high claiming:
+
+>Ameen Dausha wrote:
+>
+>> From a hard science prospective, what atmospheric composition would
+>> boost an atmopheres pressure and still be 'healthy' for human
+>> consumption?
+>
+>   Well, you could have a partial pressure of N2 around 3 Atm, and O2
+>doesn't become toxic until perhaps 0.5 Atm. So a N2/O2 atmosphere like
+>Earth's could be survivable at around 3.5 Atm, with about 14% O2. If you
+>want exotic gas mixes, it could be higher (replace N2 with He, for
+>instance), but that's a little exotic.
+>
+>> Assuming a gravity of .6, .7, and .8. I have been told that pressures
+>> below .8 are not fit for human consumption.
+>
+>   I'm confused. If you want a higher pressure, you can use more gas or
+>a higher gravity - I'm not sure why you'd want a lower gravity (*if* a
+>high-pressure breathable atmosphere is your only goal). As to pressures
+>below 0.8 Atm, those are very "fit for consumption" - you'd breath that
+>any time you went to 1880 m (6200') altitude, for instance.
+To ease your confusion, I have a planet with a lower density than
+Earth's--and correspondingly lower gravity. [Diameter 9600 miles,
+Density 3.64, gravity is ~.8] I don't like the diameter . . . I'd like
+it to be smaller. The only reason why I don't drop the diameter is
+because I do not want to sacrifice a realistic atmosphere.
+
+I am trying to boost atmospheric pressure for a lower gravity planet
+for it to remain normal. You and the other poster have clued me into
+the Earth values and what to equate pressures to. That's a start. But,
+if I drop the diameter (and correspondingly the gravity), I run the
+risk of bleeding off the atmosphere too soon. I suppose my question
+would be better worded as "How to avoid atmosphere bleed in a lower
+gravity world?"
+
+
+>> I have also read that water vapor and CO2 are good compounds to this
+>> end, but risky.
+>
+>   I must be mis-interpreting something here, but the partial pressure
+>of water vapor in the atmopshere is set by the surface temperature, and
+>it will remain very low (unless the temperature is much to high for
+>human habitation). 
+No, I misspoke. I keep forgetting that the amount of vapor is in
+relation to the temperature. An earlier misconception that keeps
+sneaking back into my mind.
+
+
+>Similarly CO2 is toxic at very low partial pressures,
+>and so can't help much. Both of these are *terrible* gases to base a
+>high-pressure human breathable atmopshere on.
+I've noticed. :-) Disregard.
+
+>Brian Davis
+
+
+Ben Wilson (a.k.a. Ameen, Last of the Dausha)
+____________________________
+-"Ever heard of Aristotle . . . Plato . . . Socrates?!"
+-"Yes."
+-"Morons!"
+----------------------------------------------------------------------------
+
+Sunday, 3 December 2000 08:00:00 UTC - Brian Davis:
+Ameen Dausha wrote:
+
+> Brian Davis <bda...@pdnt.com <>> spake from on high claiming:
+   "Spake from on high"?!? Closer to "guessed from below", but oh well...
+
+
+> The only reason why I don't drop the diameter is because I do not
+> want to sacrifice a realistic atmosphere.
+   Is there some reason you don't want to raise the density? Your planet
+is bigger than the Earth, but with a density lower than Mars.
+Self-compression alone would likely drive the density higher.
+
+
+> I am trying to boost atmospheric pressure for a lower gravity planet
+> for it to remain normal. You and the other poster have clued me into
+> the Earth values and what to equate pressures to. That's a start.
+   As both Henry & I mentioned, humans can breath at much lower
+pressures than atmospheric. But as you mention,
+
+
+> if I drop the diameter (and correspondingly the gravity), I run the
+> risk of bleeding off the atmosphere too soon. I suppose my question
+> would be better worded as "How to avoid atmosphere bleed in a lower
+> gravity world?"
+   Which is a good point. To keep the atmosphere around for billions of
+years, you want the mean molecular velocity to be well below escape
+velocity at the exosphere. But the escape velocity from your planet is roughly:
+
+   v_esc = sqrt( 2 R g ) = 11.2 km/sec
+
+Almost exactly the same as for the Earth: given a similar gas
+composition and a similar exosphere temperature, the situations are
+analogous. You'll be likely to keep the atmosphere around for a long time.
+   Furthermore, if this planet orbits a late-type (class M) star, with
+little to no UV output, the exosphere may well be much cooler than
+Earths in the first place, making it even less of a problem.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 3 December 2000 08:00:00 UTC - ameen . net:
+Brian Davis <bda...@pdnt.com <>> spake from on high claiming:
+[snip]
+
+
+>   "Spake from on high"?!? Closer to "guessed from below", but oh well...
+Well, I try to keep discussions on the high road. :-) Too many news
+groups where flame wars were the matter of course.
+
+
+>> The only reason why I don't drop the diameter is because I do not
+>> want to sacrifice a realistic atmosphere.
+>
+>   Is there some reason you don't want to raise the density? Your planet
+>is bigger than the Earth, but with a density lower than Mars.
+>Self-compression alone would likely drive the density higher.
+Right, Mars has a density of 3.94, IIRC. There is a reason to keep the
+density lower . . . I'm trying to keep the industrial metal abundance
+down. If I could up the density logically while maintaining this, I
+would be more than happy to bump the density up. I admit I'm not that
+much of a scientist, so would you please explain 'self-compression?'
+Is this a 'legal' way to accomplish this?
+
+
+>> I am trying to boost atmospheric pressure for a lower gravity planet
+>> for it to remain normal. You and the other poster have clued me into
+>> the Earth values and what to equate pressures to. That's a start.
+>
+>   As both Henry & I mentioned, humans can breath at much lower
+>pressures than atmospheric. But as you mention,
+>
+>> if I drop the diameter (and correspondingly the gravity), I run the
+>> risk of bleeding off the atmosphere too soon. I suppose my question
+>> would be better worded as "How to avoid atmosphere bleed in a lower
+>> gravity world?"
+>
+>   Which is a good point. To keep the atmosphere around for billions of
+>years, you want the mean molecular velocity to be well below escape
+>velocity at the exosphere. But the escape velocity from your planet is roughly:
+>
+>   v_esc = sqrt( 2 R g ) = 11.2 km/sec
+>
+>Almost exactly the same as for the Earth: given a similar gas
+>composition and a similar exosphere temperature, the situations are
+>analogous. You'll be likely to keep the atmosphere around for a long time.
+>   Furthermore, if this planet orbits a late-type (class M) star, with
+>little to no UV output, the exosphere may well be much cooler than
+>Earths in the first place, making it even less of a problem.
+As I understand, the luminosity of this M5 would be 10 percent the
+Sun's, and the biozone is correspondingly only .1 AU--which makes for
+a dizzying orbit.  So, I'm assuming that the relative brightness would
+be the same, although the wavelength would naturally be lower. Close
+enough for government work? :-)
+
+>-- 
+
+>Brian Davis
+
+Ben Wilson (a.k.a. Ameen, Last of the Dausha)
+____________________________
+-"Ever heard of Aristotle . . . Plato . . . Socrates?!"
+-"Yes."
+-"Morons!"
+----------------------------------------------------------------------------
+
+Sunday, 3 December 2000 08:00:00 UTC - James Burns:
+Ameen Dausha wrote:
+> 
+[...]
+
+> Right, Mars has a density of 3.94, IIRC. There is a reason to keep the
+> density lower . . . I'm trying to keep the industrial metal abundance
+> down. If I could up the density logically while maintaining this, I
+> would be more than happy to bump the density up. I admit I'm not that
+> much of a scientist, so would you please explain 'self-compression?'
+> Is this a 'legal' way to accomplish this?
+> 
+[...]
+Would it work to have your planet only partly habitable (the Lowlands)?
+Niven's Canyon (Known Space) and Pournelle's Haven (Co-Dominion, War 
+World) have very deep regions that have much higher pressure than the 
+planetary average. Pournelle made good use of the marginal areas in 
+his plotting, source of barbarian hordes and all that.
+Yours, Jim Burns
+----------------------------------------------------------------------------
+
+Monday, 4 December 2000 00:14:06 UTC - ameen . net:
+James Burns <burn...@osu.edu <>> spake from on high claiming:
+
+- show quoted text ->Ameen Dausha wrote:
+>> 
+>[...]
+>> Right, Mars has a density of 3.94, IIRC. There is a reason to keep the
+>> density lower . . . I'm trying to keep the industrial metal abundance
+>> down. If I could up the density logically while maintaining this, I
+>> would be more than happy to bump the density up. I admit I'm not that
+>> much of a scientist, so would you please explain 'self-compression?'
+>> Is this a 'legal' way to accomplish this?
+>> 
+>[...]
+>Would it work to have your planet only partly habitable (the Lowlands)?
+>Niven's Canyon (Known Space) and Pournelle's Haven (Co-Dominion, War 
+>World) have very deep regions that have much higher pressure than the 
+>planetary average. Pournelle made good use of the marginal areas in 
+>his plotting, source of barbarian hordes and all that.
+Not quite sure yet. The initial goal is to build a habitable world.
+I've posted since then with a slight variation of this same planet. It
+revolves around a M5 star, quite dim.
+
+
+Ben Wilson (a.k.a. Ameen, Last of the Dausha)
+____________________________
+-"Ever heard of Aristotle . . . Plato . . . Socrates?!"
+-"Yes."
+-"Morons!"
+----------------------------------------------------------------------------
+
+Monday, 4 December 2000 08:00:00 UTC - Brian Davis:
+Ameen Dausha wrote:
+> There is a reason to keep the density lower... I'm trying to keep
+
+> the industrial metal abundance down.
+   To do that, just assume that there's not much metal in the *crust* -
+partitioning between the crust and the mantle can take care of this for
+you, while not altering the net density much. If there was more carbon
+in  the protostellar nebula, for instance, it would have combined with
+the left-over oxygen, leaving iron to combine with sulfur only and sink
+to the core... nearly *all* of it.
+   A nebula richer in carbon would result in a terrestrial planet where
+iron is as rare (on the surface) as cobalt. Stephen Gillett mentions
+this ("carbonosis") in his book "Worldbuilding".
+
+
+> I admit I'm not that much of a scientist, so would you please explain
+> 'self-compression?' Is this a 'legal' way to accomplish this?
+   Oh yes. The idea is that even solids are compressible under high
+pressures, so while "normal" iron has a density around 7000-odd kg/m^3,
+in the core the densities are up to 12,000 kg/m^3 or more, due to the
+compression of the overlying material. The actual equations are complex
+(read: I don't know them), but you can get a good estimate by using
+solar system bodies.
+
+
+> As I understand, the luminosity of this M5 would be 10 percent the
+> Sun's, and the biozone is correspondingly only .1 AU--which makes for
+> a dizzying orbit.  So, I'm assuming that the relative brightness would
+> be the same, although the wavelength would naturally be lower. Close
+> enough for government work? :-)
+   Certainly - one issue is who your audience is. If you had to satisfy
+people like me (picky, annoying, and over-educated), then there are
+better ways to do it. But you have to aim at your audience, and I fully
+admit that people like me are sometimes a small proportion (witness the
+success of many many sci-fi TV shows). But it takes very little extra
+work to get much closer, mainly using the inverse square law.
+   If you want to do this stuff right, Gillett's book "World-building"
+is an excellent place to start (ISBN 0-89879-707-1). But to work out the
+actual math for the above situation doesn't take more than a few
+equations. A M5V star has a mass around 0.35 Ms, and a luminosity of
+roughly 0.019 Ls (about 2% of the Sun's, not 10%). The light a planet
+receives from the star drops with the square of the distance, so the
+insolation on your planet would be proportional to L / a^2. If L = 0.019
+Ls, then it has to be at a distance of sqrt(L) = 0.14 AU to receive
+Earth-normal insolation. For your 10% luminosity figure (L = 0.1 Ls),
+the proper distance for Earth-normal insolation would be 0.32 AU, more
+than three times further out then you seem to be assuming.
+   Also, there's some leeway in the amount of insolation a "habitable"
+planet needs. Reasonable limits (luminosities in terms of the Sun's, and
+orbital distances in terms of AU) are:
+
+   a_inner = sqrt( L / 1.1  )    inner limit: closer & it's too hot
+   a_outer = sqrt( L / 0.53 )    outer limit: further away & it freezes
+
+Just take your stars luminosity and plug and chug.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 4 December 2000 08:00:00 UTC - ameen . net:
+Brian Davis <bda...@pdnt.com <>> spake from on high claiming:
+
+>Ameen Dausha wrote:
+>
+>> There is a reason to keep the density lower... I'm trying to keep
+>> the industrial metal abundance down.
+>
+>   To do that, just assume that there's not much metal in the *crust* -
+>partitioning between the crust and the mantle can take care of this for
+>you, while not altering the net density much. If there was more carbon
+>in  the protostellar nebula, for instance, it would have combined with
+>the left-over oxygen, leaving iron to combine with sulfur only and sink
+>to the core... nearly *all* of it.
+>   A nebula richer in carbon would result in a terrestrial planet where
+>iron is as rare (on the surface) as cobalt. Stephen Gillett mentions
+>this ("carbonosis") in his book "Worldbuilding".
+Hmm, the very text I have. Perhaps I should read much more deeply than
+I have. :-)
+
+
+>> I admit I'm not that much of a scientist, so would you please explain
+>> 'self-compression?' Is this a 'legal' way to accomplish this?
+>
+>   Oh yes. The idea is that even solids are compressible under high
+>pressures, so while "normal" iron has a density around 7000-odd kg/m^3,
+>in the core the densities are up to 12,000 kg/m^3 or more, due to the
+>compression of the overlying material. The actual equations are complex
+>(read: I don't know them), but you can get a good estimate by using
+>solar system bodies.
+Hmm, if lack of knowledge  = complexity, there are a great many
+complex things I am involving myself with. :-) But, as in knowledge
+there is no growth without risk.
+
+
+>> As I understand, the luminosity of this M5 would be 10 percent the
+>> Sun's, and the biozone is correspondingly only .1 AU--which makes for
+>> a dizzying orbit.  So, I'm assuming that the relative brightness would
+>> be the same, although the wavelength would naturally be lower. Close
+>> enough for government work? :-)
+>
+>   Certainly - one issue is who your audience is. If you had to satisfy
+>people like me (picky, annoying, and over-educated), then there are
+>better ways to do it. 
+Although my audience may not care so much, I am picky and annoying.
+Education? Hmm, depends on the field. But, I have to have a certain
+suspension of disbelief when I write, and not having a realistic
+setting would always be on my mind.
+
+[snip]
+
+
+>   If you want to do this stuff right, Gillett's book "World-building"
+>is an excellent place to start (ISBN 0-89879-707-1).
+I also have "Aliens and Alien Societies" (not Eilan and his Society)
+(same publisher)  that manages to fill in some chinks left open in
+"World-Building" I suppose I should confess that I am also resorting
+to GURPS Space. It may not be overly precise, but it has reduced the
+complexity of a formula or two.
+
+[snipage]
+
+
+>   Also, there's some leeway in the amount of insolation a "habitable"
+>planet needs. Reasonable limits (luminosities in terms of the Sun's, and
+>orbital distances in terms of AU) are:
+>
+>   a_inner = sqrt( L / 1.1  )    inner limit: closer & it's too hot
+>   a_outer = sqrt( L / 0.53 )    outer limit: further away & it freezes
+>
+>Just take your stars luminosity and plug and chug.
+Cool! Thanks. :-) I'm sure there are other postings waiting.
+
+
+Ben Wilson (a.k.a. Ameen, Last of the Dausha)
+____________________________
+-"Ever heard of Aristotle . . . Plato . . . Socrates?!"
+-"Yes."
+-"Morons!"
+----------------------------------------------------------------------------
+
+Tuesday, 5 December 2000 08:00:00 UTC - Brian Davis:
+Ameen Dausha wrote:
+
+>> If you want to do this stuff right, Gillett's book "World-building"
+>> is an excellent place to start (ISBN 0-89879-707-1).
+> 
+> I also have "Aliens and Alien Societies" (not Eilan and his Society)
+> (same publisher)  that manages to fill in some chinks left open in
+> "World-Building"
+   I enjoyed both of those, but was rather disappointed with "Space
+Travel" in the same series, and I've not laid hands on "Time Travel"
+also from the same series.
+
+
+> I suppose I should confess that I am also resorting to GURPS Space.
+> It may not be overly precise, but it has reduced the complexity of
+> a formula or two.
+   And it generates real-feeling systems. Other sources are to take a
+look at are any of the many many worldbuilding solar system generators,
+almost all based on a program called ACCRETE. Some of these add
+complicated routines on top to figure out tidal locking, atmospheric
+composition, wtc. Nyrath's web site has a lot of links to such things:
+
+http://www.clark.net/pub/nyrath/starmap.html <http://www.clark.net/pub/nyrath/starmap.html>
+(specificly the misc. links section, I think)
+
+Alien planet designer is another good site to look at: he gives many of
+the equations needed as well:
+
+http://www.compulink.co.uk/~vicarage/planets/ <http://www.compulink.co.uk/~vicarage/planets/>
+
+And on the biological front (also has some calculations on the habitable
+zone), try:
+
+http://www.planetarybiology.com/ <http://www.planetarybiology.com/>
+
+(he's writing an on-line textbook, and some of the chapters are good
+intros to both simple habitable zone calculations as well as biochemistry).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 6 December 2000 01:39:57 UTC - GrapeApe:
+The seventies Ames/Stanford paper on space habitats seems to relate that
+atmospheric pressure on its own is relatively unimportant to our survival. That
+is, we could easily be comfortable in extremes of pressure that we are non
+commonly accustomed to.
+When DOES it become a problem?
+
+ (discounting the effects sudden changes and assuming proper
+depresuraization/represuurization when the changes do occur)
+
+
+
+
+--cut and paste to adopt this sig file---
+
+Make Deja a useful Usenet Archive again!
+
+http://www2.PetitionOnline.com/dejanews/petition.html <http://www2.PetitionOnline.com/dejanews/petition.html>
+----------------------------------------------------------------------------
+
+Wednesday, 6 December 2000 08:00:00 UTC - Brian Davis:
+GrapeApe wrote:
+> When DOES [pressure] become a problem?
+
+   I answered part of this at the top of this thread. Breathable mixes
+have been used to simulated water depths of 701 m (around 70 Atm), using
+a H2/O2 atmosphere with traces of N2, but as another poster has put it
+about these deep diving mixes, they're "a witches brew". More
+practically, N2 can be breathed at a partial pressure of at least 3 Atm
+(higher in some people), while O2 isn't toxic until around 0.5 Atm, so
+for a *likely* mix (N2/O2), you could have a survivable, breathable mix
+at 3.5 Atm.
+   At the very high pressure end, you can mix complex but survivable
+atmospheres, but the ultimate limit may be the work of breathing - these
+dense (due to pressure, not exotic component gases) mixes are hard work
+to breath. I've seen estimates that the gas density limits you to
+pressures lower than 160 Atm.
+   At the low pressure end, an atmosphere of pure O2 is OK (for
+breathing, anyway) at around 0.14 Atm, but highly flammable. For a safer
+burning mix, make it 25% O2, 75% N2, at a minimum pressure a tad below
+0.4 Atm.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Thursday, 7 December 2000 00:08:53 UTC - GrapeApe:
+>   At the very high pressure end, you can mix complex but survivable
+>atmospheres, but the ultimate limit may be the work of breathing - these
+>dense (due to pressure, not exotic component gases) mixes are hard work
+>to breath. I've seen estimates that the gas density limits you to
+>pressures lower than 160 Atm.
+>   At the low pressure end, an atmosphere of pure O2 is OK (for
+>breathing, anyway) at around 0.14 Atm, but highly flammable. For a safer
+>burning mix, make it 25% O2, 75% N2, at a minimum pressure a tad below
+>0.4 Atm.
+what about other effects less directly concerned with pulmonary and respiratory
+aspects of the pressure? Wouldn't we be much more likely to be dehydrated at
+the lower atmospheric pressures? Would our hearing be affected? Flight?
+
+
+
+
+--cut and paste to adopt this sig file---
+
+Make Deja a useful Usenet Archive again!
+
+http://www2.PetitionOnline.com/dejanews/petition.html <http://www2.PetitionOnline.com/dejanews/petition.html>
+----------------------------------------------------------------------------
+
+Thursday, 7 December 2000 08:00:00 UTC - Brian Davis:
+GrapeApe wrote:
+
+> what about other effects less directly concerned with pulmonary
+> and respiratory aspects of the pressure?
+   Well, those are the big ones, that if I recall actually limit the
+maximum and minimum pressures.
+
+
+> Wouldn't we be much more likely to be dehydrated at the lower
+> atmospheric pressures?
+   I'm not sure why, but I'm not sure why not either. Your nose does a
+good job of retaining water vapor under dry (low relative humidity)
+conditions, considering that the air leaving the lungs is saturated with
+water (supersaturated w.r.t. most outside air temperatures). At very low
+total pressures, when H2O(v) would account for a significant portion of
+the airmass, this might be an issue (ie, if you have to condense 40% of
+the air volume passing through the system), but I don't actually know of
+any hard biometric limits on this (have to check the Bioastronautics
+Databook - it might have something). Interesting point.
+
+
+> Would our hearing be affected?
+   Higher pressure -> higher speed of sound (@ fixed T), but that
+usually wouldn't actually change what you hear. Denser gas might change
+the vocal resonances subtly, but I've got no proof. BTW, if anyone wants
+to argue how/why He changes the voice, feel free - I've now found
+contradictory explanations in several different (current) medical and
+physics text on the mechanism, ranging from the simple (low density gas
+-> higher frequency) to the complex biological (He saturation changes
+the tension in the vocal cords themselves). And inert gases can
+certainly have biological effects.
+   Something like a bat might have an adjustment period, as timing is
+everything for their sonar system (they have essentially biological
+delay lines built in, which I suspect depend somewhat on the local speed
+of sound). However the fact that bats can be found at a variety of
+altitudes (and in fact can navigate fine during rapid changes in
+pressure - like when descending an entrance) makes it doubtful this is a
+large effect.
+
+> Flight?
+
+   In general, easier with a denser atmosphere - I couldn't tell you how
+much, however (if I double the gas density & keep the wing area &
+gravity the same, how does the power requirement scale? And how does
+this vary between flapping flight and airplane flight?).
+   It could certainly make buoyant lift more practical, for technology
+or biology.
+
+   Other issues for humans that I *do* know you'd need to consider
+include the work of breathing a dense gas mix (at about 8 Atm I'm told
+you can feel the air eddy and swirl in your mouth as you breath), and
+the much higher rate of heat loss (dense gas -> higher specific heat per
+unit volume). And at very high pressures, things like High Pressure
+Nervous Syndrome start to mess things up (one of the reasons you
+actually start adding N2 back into a deep diving mix at very high
+pressures - it counteracts the HPNS induced by high pressure He).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Friday, 8 December 2000 02:20:38 UTC - GrapeApe:
+>> Flight?
+>
+>   In general, easier with a denser atmosphere - I couldn't tell you how
+>much, however (if I double the gas density & keep the wing area &
+>gravity the same, how does the power requirement scale? And how does
+>this vary between flapping flight and airplane flight?).
+>   It could certainly make buoyant lift more practical, for technology
+>or biology.
+The ames stanford stuff I was drawing from leaned towards the likelihood of
+lower pressures. I don't know if it would make it harder to get off the ground
+or not, merely having fewer molecules to beat against may not affect things, as
+long as there is still a lower pressure above the wing. Plus there is a gravity
+gradient to take advantage of. My intuition would suggest a glider would not go
+as far at the low limts of pressure suggested in this study, but I could easily
+be wrong. The pressure gradient might differ as well, not sure if this would
+create a higher frequency of 'ear popping' or not.
+
+
+
+
+
+--cut and paste to adopt this sig file---
+
+Make Deja a useful Usenet Archive again!
+
+http://www2.PetitionOnline.com/dejanews/petition.html <http://www2.PetitionOnline.com/dejanews/petition.html>
+----------------------------------------------------------------------------
+
+Sunday, 14 January 2001 07:13:32 UTC - Ansel Sermersheim:
+Hello all, first time poster to rass.  Nice to find a forum that sounds
+like a math-rich version of what my friends & I always end up
+handwaving about <g>
+
+>>>>> "George" == George William Herbert <gher...@gw.retro.com <>> writes:
+
+> Using even a standard 80/20 Nitrogen/Oxygen atmosphere, though, you
+> can do an amazing amount.  Look at a standard atmosphere table...
+One of the web sites I've found that deals with it quite well in
+layman's terms is at <http://www.avweb.com/toc/aeromed.html <http://www.avweb.com/toc/aeromed.html>>.  This
+has a bunch of medical information of interest to pilots of
+general aviation unpressurized aircraft, which operate up to 12.5-14kft
+normally, or ~18-20 w/supplemental oxygen.
+
+[snip description of effect of reduced pressure at different levels]
+
+
+> With pure oxygen, fit humans can survive as low as around 3.2 PSI of
+> total pressure, but below that you have physiological failures in
+> the gas exchange mechanisms in the lungs.  Space suits run at 4 PSI
+> to stay away from the limit and give a bit of safety margin both on
+> suit performance, in case it gets punctured or breaks, and in case
+> an astronaut is ill or impaired and their temporary useful limit is
+> a bit over 3.2 PSI pure O2).
+One of the things I was thinking about the other day is some idea of
+how much O2 consumption can be reduced.  
+
+Particularly <http://www.avweb.com/articles/respirat.html <http://www.avweb.com/articles/respirat.html>> gives me
+the idea that with proper biofeedback and training, one can trade O2
+efficiency and lower pressure for being very distracted by having to
+think about breathing continuously, by taking the conditions down to
+levels where Cheyne-Stokes breathing would normally set in.  
+
+It would be a truly horrible experience, but for someone in a
+long-duration transit or emergency situation where they didn't need
+much mental acuity, it might be workable.  Perhaps even intubation &
+artificial respiration in a closed feedback loop with a blood O2 sat
+monitor.  (Not something I'd personally like to experience, to be
+sure.)
+
+My reason for pondering this is wondering just how far a
+belter/orbital/colony/habitat/etc society could stretch resources if
+e.g. the first hydroponics facility were near completion and resupply
+was cut off too soon. (Particularly for political reasons, e.g. they'd
+have a long enough period of diplomatic indications that things were
+going sour to start a crash program.)
+
+As an aside, there must be a relation between body mass and O2
+consumption - what about having deep space workers acting as decision
+operators for mechanized ships be quadruple amputees?  Sick thought, I 
+know, but in a frontier environment w/ limited resources things can
+get ugly.
+
+-- 
+$_{\$,}=[];@,=(%_,\%_,\*_,sub{},'JaPH'x2);y/0-9a-y//d,for(@,);map{$_ x=3}@,;$q=
+join'',sort'$y=shift@,; $y^= int(eval$q) $q=q-my eval${q}if@,;$y-;pr'=~/\S*/g;$
+_=q]"^vp|\@Zi0e|12O7340CP567M[,"];s@\d@\$][$&]@g;@]=(split'',unpack qq^$&q^^q^,
+^^q,nQ,,q^)%1T&'`P%"SD`^);push@,,eval;eval(('JXKCC'^q^/.*/g^).$q=~/(.{6}).$/g);
+----------------------------------------------------------------------------
+
+Friday, 19 January 2001 18:05:34 UTC - ameen . net:
+What does the Perl in your .sig line do? I'd run it myself but I'm a
+wee bit cautious.
+Ansel Sermersheim <an...@babylon.dyndns.org <>> spake from on high
+claiming:
+
+>Hello all, first time poster to rass.  Nice to find a forum that sounds
+- show quoted text -
+>like a math-rich version of what my friends & I always end up
+>handwaving about <g>
+>
+>>>>>> "George" == George William Herbert <gher...@gw.retro.com <>> writes:
+>
+>> Using even a standard 80/20 Nitrogen/Oxygen atmosphere, though, you
+>> can do an amazing amount.  Look at a standard atmosphere table...
+>
+>One of the web sites I've found that deals with it quite well in
+>layman's terms is at <http://www.avweb.com/toc/aeromed.html <http://www.avweb.com/toc/aeromed.html>>.  This
+>has a bunch of medical information of interest to pilots of
+>general aviation unpressurized aircraft, which operate up to 12.5-14kft
+>normally, or ~18-20 w/supplemental oxygen.
+>
+>[snip description of effect of reduced pressure at different levels]
+>
+>> With pure oxygen, fit humans can survive as low as around 3.2 PSI of
+>> total pressure, but below that you have physiological failures in
+>> the gas exchange mechanisms in the lungs.  Space suits run at 4 PSI
+>> to stay away from the limit and give a bit of safety margin both on
+>> suit performance, in case it gets punctured or breaks, and in case
+>> an astronaut is ill or impaired and their temporary useful limit is
+>> a bit over 3.2 PSI pure O2).
+>
+>One of the things I was thinking about the other day is some idea of
+>how much O2 consumption can be reduced.  
+>
+>Particularly <http://www.avweb.com/articles/respirat.html <http://www.avweb.com/articles/respirat.html>> gives me
+>the idea that with proper biofeedback and training, one can trade O2
+>efficiency and lower pressure for being very distracted by having to
+>think about breathing continuously, by taking the conditions down to
+>levels where Cheyne-Stokes breathing would normally set in.  
+>
+>It would be a truly horrible experience, but for someone in a
+>long-duration transit or emergency situation where they didn't need
+>much mental acuity, it might be workable.  Perhaps even intubation &
+>artificial respiration in a closed feedback loop with a blood O2 sat
+>monitor.  (Not something I'd personally like to experience, to be
+>sure.)
+>
+>My reason for pondering this is wondering just how far a
+>belter/orbital/colony/habitat/etc society could stretch resources if
+>e.g. the first hydroponics facility were near completion and resupply
+>was cut off too soon. (Particularly for political reasons, e.g. they'd
+>have a long enough period of diplomatic indications that things were
+>going sour to start a crash program.)
+>
+>As an aside, there must be a relation between body mass and O2
+>consumption - what about having deep space workers acting as decision
+>operators for mechanized ships be quadruple amputees?  Sick thought, I 
+>know, but in a frontier environment w/ limited resources things can
+>get ugly.
+>
+>-- 
+>$_{\$,}=[];@,=(%_,\%_,\*_,sub{},'JaPH'x2);y/0-9a-y//d,for(@,);map{$_ x=3}@,;$q=
+>join'',sort'$y=shift@,; $y^= int(eval$q) $q=q-my eval${q}if@,;$y-;pr'=~/\S*/g;$
+>_=q]"^vp|\@Zi0e|12O7340CP567M[,"];s@\d@\$][$&]@g;@]=(split'',unpack qq^$&q^^q^,
+>^^q,nQ,,q^)%1T&'`P%"SD`^);push@,,eval;eval(('JXKCC'^q^/.*/g^).$q=~/(.{6}).$/g);
+>
+
+
+Ben Wilson (a.k.a. Ameen, Last of the Dausha)
+
+____________________________
+-"Ever heard of Aristotle . . . Plato . . . Socrates?!"
+-"Yes."
+-"Morons!"
+----------------------------------------------------------------------------
+
+Friday, 19 January 2001 20:57:35 UTC - Ansel Sermersheim:
+>>>>> "Ameen Dausha" == Ameen Dausha <ameen> writes:
+
+> What does the Perl in your .sig line do? I'd run it myself but I'm a
+> wee bit cautious.
+It prints 'Just another Perl hacker,', as is traditional in Perl
+groups.
+
+If you'd like an analysis of how it works, email me.
+
+ObSFS:
+
+While undergoing a caffeine-enhanced state of mind, I got a very odd
+idea:
+
+If one placed a generating tether on one of Jupiter or Saturn's
+ringlets, used the power to crack H2O, and used that to fuel a
+long-burn engine, would you get more thrust out of the engines than
+you would lose in the tether?  Gut instinct says no.  Obviously, if
+you used one tether to directly run another tether, you'd lose.
+However, with the rocket, you'll be getting thrust from the reaction
+mass you're throwing out the back, so it wouldn't neccesarily violate
+conservation of energy.
+
+Dunno how you'd get it into a useful orbit after getting it to the
+inner planets, though.
+
+-Ansel
+
+-- 
+$_{\$,}=[];@,=(%_,\%_,\*_,sub{},'JaPH'x2);y/0-9a-y//d,for(@,);map{$_ x=3}@,;$q=
+join'',sort'$y=shift@,; $y^= int(eval$q) $q=q-my eval${q}if@,;$y-;pr'=~/\S*/g;$
+_=q]"^vp|\@Zi0e|12O7340CP567M[,"];s@\d@\$][$&]@g;@]=(split'',unpack qq^$&q^^q^,
+^^q,nQ,,q^)%1T&'`P%"SD`^);push@,,eval;eval(('JXKCC'^q^/.*/g^).$q=~/(.{6}).$/g);
+----------------------------------------------------------------------------
+
+Sunday, 21 January 2001 13:47:20 UTC - Ilmari Karonen:
+In article <87vgrbn...@redhawk.babylon.dyndns.org <>>, Ansel Sermersheim wrote:
+>
+>If one placed a generating tether on one of Jupiter or Saturn's
+>ringlets, used the power to crack H2O, and used that to fuel a
+>long-burn engine, would you get more thrust out of the engines than
+>you would lose in the tether?  Gut instinct says no.  Obviously, if
+>you used one tether to directly run another tether, you'd lose.
+>However, with the rocket, you'll be getting thrust from the reaction
+>mass you're throwing out the back, so it wouldn't neccesarily violate
+>conservation of energy.
+Sure.  Ought to work, even if it might not be practical.
+
+Turn the problem around and assume you use most of the ringlet's mass
+for reaction.  So you would effectively use the tether to generate
+electricity, use that to drive 2H_2O -> 2H_2 + O_2, and then use the
+reverse reaction to blast a suitably small chunk of the ringlet (and
+perhaps also the tether and other equipment) off to escape velocity.
+
+
+
+>Dunno how you'd get it into a useful orbit after getting it to the
+>inner planets, though.
+Generate enough spare fuel and save it.
+
+
+
+>$_{\$,}=[];@,=(%_,\%_,\*_,sub{},'JaPH'x2);y/0-9a-y//d,for(@,);map{$_ x=3}@,;$q=
+>join'',sort'$y=shift@,; $y^= int(eval$q) $q=q-my eval${q}if@,;$y-;pr'=~/\S*/g;$
+>_=q]"^vp|\@Zi0e|12O7340CP567M[,"];s@\d@\$][$&]@g;@]=(split'',unpack qq^$&q^^q^,
+>^^q,nQ,,q^)%1T&'`P%"SD`^);push@,,eval;eval(('JXKCC'^q^/.*/g^).$q=~/(.{6}).$/g);
+print@{{split//,"buitdtcsxrprlrhognqlvkshjhweoekeuctafanPaJy,r m e z\n"}}{a..z};
+
+-- 
+Ilmari Karonen - http://www.sci.fi/~iltzu/ <http://www.sci.fi/~iltzu/>
+"Congratulations, you have just reinvented the wheel. *And* made it square."  
+                                     -- Simon Cozens in comp.lang.perl.misc
+----------------------------------------------------------------------------
+
+Thursday, 25 January 2001 03:25:08 UTC - ameen . net:
+Ansel Sermersheim <an...@babylon.dyndns.org <>> spake from on high
+claiming:
+>>>>>> "Ameen Dausha" == Ameen Dausha <ameen> writes:
+
+>
+>> What does the Perl in your .sig line do? I'd run it myself but I'm a
+>> wee bit cautious.
+>
+>It prints 'Just another Perl hacker,', as is traditional in Perl
+>groups.
+>
+>If you'd like an analysis of how it works, email me.
+No, I think I can crack it. :-) Thanks. Just curious. I don't think
+I'm that obfuscated a Perl hack yet. But, I'm working on it. Just ask
+my co-workers.
+
+
+
+
+Ben Wilson (a.k.a. Ameen, Last of the Dausha)
+____________________________
+-"Ever heard of Aristotle . . . Plato . . . Socrates?!"
+-"Yes."
+-"Morons!"

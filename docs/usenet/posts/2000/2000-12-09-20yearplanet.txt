@@ -1,0 +1,3081 @@
+URL: https://groups.google.com/forum/#!topic/rec.arts.sf.science/UYZVRfssddc
+TITLE: 20 year planet 
+
+----------------------------------------------------------------------------
+
+Saturday, 9 December 2000 19:48:17 UTC - Douglas Muir:
+Thanks to Eric, Max and John for help with orbital calculations.
+I've been messing around with the idea of a planet with a long year and
+strongly differentiated seasons.  Here's a first draft.
+
+
+The planet Nerval, Earthlike in most respects, orbits the brown dwarf Rimbaud.
+  Rimbaud has a mass about 20 times that of Jupiter; it glows dully with about
+0.0002 solar luminosity.  
+
+Nerval orbits some 3.5 million km away, which means that it receives a bit
+less than 40% of the insolation that Earth gets.
+
+This would condemn the planet to a Mars-like deep freeze, except that Nerval,
+in its turn, orbits the blue-white main sequence star Baudelaire.  Baudelaire
+has two solar masses and is about twelve times as luminous as the Sun. 
+Rimbaud has an eccentric orbit, swinging between 4 and 15 a.u. from its bright
+primary (from just inside the orbit of Jupiter, out nearly to the orbit of
+Uranus, in Solar System terms).  One orbit takes just over 20 years to complete.
+
+At closest approach, the Nerval-Rimbaud system gets 0.75 the insolation that
+Earth does; at apastron, that shrinks to a mere 0.045.  This means that
+Nerval's /total/ insolation varies from about 45% of Earth's in "midwinter",
+to about 115% at perihelion.
+
+A rough blackbody calculation (assuming that Earth's average temperature is
+290 absolute, and that temperature varies as the fourth root of insolation --
+and yes, I know it wouldn't be that simple) suggests that Nerval's average
+temperature would vary between about 52 degrees Celsius colder than Earth and
+about 10 degrees warmer.
+
+A back-of-the-envelope calculation gives Nerval a "month" of about 10 days. 
+Since it's so close to Rimbaud, it will probably be tidally locked; just for
+the hell of it, I'm going to say that it's a 3-2 resonance lock, like Mercury,
+rather than a straight day-equals-month deal like the Moon.  This gives a
+"day" that's about one week long, which will lead to lots of odd effects,
+somewhat mitigated by the fact that the planet is illuminated from two
+sources.  
+
+To keep things simple, I'm assuming fairly flat orbits and little axial tilt.
+
+Baudelaire is between one and two billion years old; it's probably nearing the
+end of its time on the main sequence, but it has at least a hundred my to go
+yet.  So there has been enough time for native life to evolve, if such is
+desired, though it may not be out of the Paleozoic yet.  Let's say that things
+have at least reached a late Precambrian stage, with seas full of life and
+plenty of oxygen in the atmosphere.
+
+
+So.
+
+1)  Is this plausible?   We now know that lots of stars have massive
+superjovian companions, some with quite eccentric orbits.  Any reason this
+couldn't work?  (and, are my numbers correct to a first approximation?)
+
+2)  How habitable is this place going to be?  How bad are winters?  I'm
+assuming that Nerval is Earthlike in most respects other than its location, so
+what happens when you vary an Earthlike world's solar flux by 150% over a
+20-year cycle?  
+
+I see both positive and negative feedback loops here.  At periastron, more
+water vapor in the atmosphere will tend to increase the greenhouse effect; at
+apastron, increased ice cover might bounce more light away.  Also, I think
+that high latitudes will see C02 snow in late winter, which might cause a
+downward spike in temperature.
+
+UV flux will vary by even more than net temperature, since Rimbaud produces
+almost no UV while Baudelaire's light is much bluer than Sol's.  Possibly the
+local plant life has two different chlorophyll equivalents, each capturing a
+different set of wavelengths
+
+Where would colonists live?  The equator?  How cold would it get there in
+winter, and how hot in summer?
+
+Any interesting consequences that I've overlooked here?
+
+
+Thanks in advance,
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Saturday, 9 December 2000 21:11:11 UTC - Mark Lanett:
+"Douglas Muir" <dougla...@yale.edu <>> wrote in message
+news:3A328BAE.1085046A@yale.edu...
+
+> Baudelaire is between one and two billion years old; it's probably nearing
+the
+> end of its time on the main sequence, but it has at least a hundred my to
+go
+> yet.  So there has been enough time for native life to evolve, if such is
+> desired, though it may not be out of the Paleozoic yet.  Let's say that
+things
+> have at least reached a late Precambrian stage, with seas full of life and
+> plenty of oxygen in the atmosphere.
+For comparison purposes, the Earth is estimated to be 4.5Ga old, and the
+Precambrian period ended with the appearance of animal fossils 0.5Ga ago. In
+fact we didn't have an oxygen atmosphere for the first 2Ga. So things have
+to happen at least twice as fast on your planet as on the Earth. Not that
+that can't happen, but we only have the one data point.
+
+Timeline at http://www.ucmp.berkeley.edu/precambrian/precambrian.html <http://www.ucmp.berkeley.edu/precambrian/precambrian.html>
+
+~mark
+----------------------------------------------------------------------------
+
+Saturday, 9 December 2000 20:28:12 UTC - Douglas Muir:
+Mark Lanett wrote:
+
+
+> For comparison purposes, the Earth is estimated to be 4.5Ga old, and the
+> Precambrian period ended with the appearance of animal fossils 0.5Ga ago. In
+> fact we didn't have an oxygen atmosphere for the first 2Ga. So things have
+> to happen at least twice as fast on your planet as on the Earth. Not that
+> that can't happen, but we only have the one data point.
+Sure.  I'm somewhat arbitrarily assuming that things could indeed happen twice
+as fast; since evolution is a highly contingent process, I don't think that's unreasonable.
+
+(Yes, there's also a geological/chemical aspect, I know.  Let's just take the
+Earthlike atmosphere as given for the time being.)
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 06:09:21 UTC - Ross Smith:
+Douglas Muir wrote:
+> 
+> A back-of-the-envelope calculation gives Nerval a "month" of about 10 days.
+> Since it's so close to Rimbaud, it will probably be tidally locked; just for
+> the hell of it, I'm going to say that it's a 3-2 resonance lock, like Mercury,
+> rather than a straight day-equals-month deal like the Moon.  This gives a
+> "day" that's about one week long, which will lead to lots of odd effects,
+> somewhat mitigated by the fact that the planet is illuminated from two
+> sources.
+The 3:2 lock has two consequences you've missed:
+
+First, Mercury's 3:2 lock is a consequence of its fairly eccentric
+orbit. Tidal effects are stronger at perihelion, so the rotation has (to
+oversimplify a bit) locked in on the orbital angular velocity at
+perihelion, which is faster than the average. If Nerval's orbit is
+eccentric, you've got yet another cause for temperature variation.
+
+Second, your seven-day "day" is wrong. That's the sidereal rotation
+period, but when it's combined with the orbital motion, it turns out
+that the solar day for a planet in 3:2 resonance is _twice_ the orbit
+period. So Nerval's day/night cycle takes 20 Earth days, not 7.
+
+(The formula is 1/sidereal_day - 1/orbit_period = 1/solar_day.)
+
+Also, because the day/night cycle is a combination of the (fixed angular
+velocity) rotation and (variable angular velocity) orbit, the apparent
+motion of the sun in the sky isn't the simple trajectory it is on Earth.
+It sometimes moves forwards and backwards in its path, and from some
+parts of the planet's surface, you'll get multiple sunrises and sunsets,
+with the sun bobbing up and down over the horizon a couple of times
+before crossing the sky.
+
+BTW, if Rimbaud is the normal size for a brown dwarf, its apparent
+diameter in Nerval's sky is about 2.5 degrees, five times the size of
+the Sun or Moon in ours. Its visibility to the naked eye would probably
+be almost entirely reflected light from the other star; most of its own
+radiation is IR, and the "dark side" would be a very dim red, probably
+not discernible against the daylight sky when the other star is visible
+(the surface temperature would be around 2200 K).
+
+(From theoretical calculations of the behaviour of highly compressed
+matter, supported by what little we know about real brown dwarfs, it's
+believed that planets and brown dwarfs have a more or less constant
+diameter between Jupiter's mass and the smallest true stars. Density
+increases instead of volume, until large-scale nuclear reactions start
+and expand the star.)
+
+-- 
+Ross Smith ......... r-s...@ihug.co.nz <> ......... Auckland, New Zealand
+   "Well, yes, I was aiming at him, but I've never hit anything with
+   a rocket launcher before, so I didn't think it mattered." -- Axly
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 06:13:09 UTC - Douglas Muir:
+Ross Smith wrote:
+
+
+> The 3:2 lock has two consequences you've missed:
+> 
+> First, Mercury's 3:2 lock is a consequence of its fairly eccentric
+> orbit. Tidal effects are stronger at perihelion, so the rotation has (to
+> oversimplify a bit) locked in on the orbital angular velocity at
+> perihelion, which is faster than the average. 
+Whoa.  Now that I did not know.  Thank you!
+
+(So, are resonance locks generally more likely to be found in eccentric
+orbits?  How eccentric do they have to be?)
+
+
+
+> If Nerval's orbit is
+> eccentric, you've got yet another cause for temperature variation.
+Eek.  I'm trying to keep things simple here, to just look at the consequences
+of the 20-year cycle.  Throwing in another temperature curve makes things
+messier.  What's the least eccentricity we can get away with?
+
+
+
+> Second, your seven-day "day" is wrong. That's the sidereal rotation
+> period, but when it's combined with the orbital motion, it turns out
+> that the solar day for a planet in 3:2 resonance is _twice_ the orbit
+> period. So Nerval's day/night cycle takes 20 Earth days, not 7.
+> 
+> (The formula is 1/sidereal_day - 1/orbit_period = 1/solar_day.)
+[staring at formula]  Are you sure that's written right?  
+
+But, okay -- I just play-acted this out with two CD-ROMs, and you're right; it
+takes two complete orbits to get back to the same point.  Huh.  
+
+Sometimes Usenet makes it all worthwhile.
+
+
+
+> Also, because the day/night cycle is a combination of the (fixed angular
+> velocity) rotation and (variable angular velocity) orbit, the apparent
+> motion of the sun in the sky isn't the simple trajectory it is on Earth.
+> It sometimes moves forwards and backwards in its path, and from some
+> parts of the planet's surface, you'll get multiple sunrises and sunsets,
+> with the sun bobbing up and down over the horizon a couple of times
+> before crossing the sky.
+Neat.  But this would be a result of the eccentricity of the orbit, right? 
+That is, if the orbit were perfectly circular, we wouldn't see this effect;
+and if it were only slightly eccentric, we'd see it only a little.
+
+
+
+> BTW, if Rimbaud is the normal size for a brown dwarf, its apparent
+> diameter in Nerval's sky is about 2.5 degrees, five times the size of
+> the Sun or Moon in ours. 
+Yah, I was thinking that I should work that out.  Thanks.
+
+(BTW, the Sun or Moon is about the size of your little fingernail held at
+arm's length... there's a near-full Moon tonight, check it out.*)
+
+Baudelaire, of course, would be teensy; at apastron it would be a tiny disk
+(though still bright enough to dazzle), and would give about as much light as
+dusk or a very overcast day.  At periastron Baudelaire would be a bit more
+than a quarter the size of the sun, and looking at it would be begging for UV damage.
+
+
+
+>Its visibility to the naked eye would probably
+> be almost entirely reflected light from the other star; most of its own
+> radiation is IR, and the "dark side" would be a very dim red, probably
+> not discernible against the daylight sky when the other star is visible
+> (the surface temperature would be around 2200 K).
+Oh, really?  Hm.  -- Where's that figure from?  I'm curious.
+
+2200 K hat gives a peak output wavelength down in the IR, but if I'm
+remembering my Planck curve correctly (and I may not be), we'd still be
+getting on-the-order-of one percent of output in the visible spectrum.  That's
+about as much light as a nearly-full moon, though smeared out over a larger
+surface area... I think it would glow a very dull brick red, no?
+
+Oh, and there's true moonlight sometimes; I didn't mention it, but Rimbaud has
+at least one other large satellite -- Mars-sized Verlaine, in the next orbit
+out.  At closest approach Verlaine will show a disk about half as big as the
+Moon's.  So near apastron, at least, it would give a respectable amount of moonlight.
+
+
+
+> (From theoretical calculations of the behaviour of highly compressed
+> matter, supported by what little we know about real brown dwarfs, it's
+> believed that planets and brown dwarfs have a more or less constant
+> diameter between Jupiter's mass and the smallest true stars. Density
+> increases instead of volume, until large-scale nuclear reactions start
+> and expand the star.)
+Yah, I'd been assuming that.
+
+Any thoughts on climate?  I'm wondering about things like icefields -- how
+fast they can form, how quickly they'll melt -- and also ambient temperatures generally.
+
+But anyhow, thanks for the very informative post.
+
+
+Doug M.
+
+*I just stepped outside to reconfirm the moon-and-little-fingernail thing
+myself, and the Moon was sitting in the middle of an obtuse isosceles triangle
+formed by Jupiter, Saturn, and Aldebaran...  very cool.
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 07:29:38 UTC - Gareth Wilson:
+Douglas Muir wrote:
+<snip>
+
+
+
+> 1)  Is this plausible?   We now know that lots of stars have massive
+> superjovian companions, some with quite eccentric orbits.  Any reason this
+> couldn't work?  (and, are my numbers correct to a first approximation?)
+>
+First, an extremely serious problem: "Nerval" reminds of the kitten in the Garfield
+cartoons :)
+It all sounds fairly plausible, but other members of the group can probably check
+the mathematics better than I can. One issue is that brown dwarfs seem to be very
+rare, rarer than planets of a few Jupiter masses. Could the scenario work with just
+the star as the heat source?
+
+
+>
+> 2)  How habitable is this place going to be?  How bad are winters?  I'm
+> assuming that Nerval is Earthlike in most respects other than its location, so
+> what happens when you vary an Earthlike world's solar flux by 150% over a
+> 20-year cycle?
+I'm wondering if the summer is hot enough to melt all the snow that forms in the
+winter. If not, you get an positive feedback loop and the place is an iceball in a
+century. It would be useful to plot a graph of temperature versus time to find out
+how long the "seasons" are, and what the average temperature is. I've done this
+myself while investigating the  real extrasolar planets, but I can't vouch for the
+accuracy of my formula so I won't inflict it on you. In general winter lasts a lot
+longer than summer. If you want to prevent your planet freezing over, make sure
+there's free circulation of water from the tropics to the poles, no polar continents
+or enclosed polar oceans like the Arctic. You want to keep the continent sizes small
+and put them in the tropics.  Colonists will live at the equator, and they'll just
+put up with the year or so when it's unpleasantly hot.
+--
+~~~~~~~~~~~~~~~
+Gareth Wilson
+Christchurch
+New Zealand
+~~~~~~~~~~~~~~
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 08:40:48 UTC - Douglas Muir:
+Gareth Wilson wrote:
+
+> First, an extremely serious problem: "Nerval" reminds of the kitten in the Garfield
+> cartoons :)
+My favorite line in French poetry is that bit about the "tour abolie", and
+somehow this world made me think of it.  I suppose glaciers going back and
+forth every 20 years would render a lot of things abolie.
+
+Strictly speaking, it should have been named Verlaine (the companion of
+Rimbaud), but I'm assuming the colonists balked at naming their planet after a
+ creep who _wasn't_ a first rate poet.  So Verlaine is the next planet out.
+
+
+
+> It all sounds fairly plausible, but other members of the group can probably check
+> the mathematics better than I can. One issue is that brown dwarfs seem to be very
+> rare, rarer than planets of a few Jupiter masses. 
+Really?  I didn't know that.  Source?
+
+
+
+> Could the scenario work with just
+> the star as the heat source?
+We either have to shorten the year or make the star brighter.  
+
+Shortening the year is less interesting to me; I picked 20 years as a minimum,
+for the drama of the thing.
+
+Making the star brighter works, but then it leaves the main sequence faster,
+so the maximum possible age of the planet gets younger and younger.  The
+problem with this is that, absent terraforming, it takes a while for a planet
+to generate a breathably oxygen-rich atmosphere.  Earth didn't manage it until
+the late Precambrian, more than three billion years after the planet formed. 
+I think it could happen faster than that, but I wouldn't want to push it much
+below a billion years or so.
+
+
+
+> > 2)  How habitable is this place going to be?  How bad are winters?  I'm
+> > assuming that Nerval is Earthlike in most respects other than its location, so
+> > what happens when you vary an Earthlike world's solar flux by 150% over a
+> > 20-year cycle?
+> 
+> I'm wondering if the summer is hot enough to melt all the snow that forms in the
+> winter. 
+Well, at periastron it's getting about 115% as much energy as Earth, and this
+goes on for a couple of years.  This won't melt all the ice -- the poles will
+always have some -- but it should get rid of a lot of it.
+
+If need be, we can nudge periastron in just a bit; moving periastron from 4
+a.u. to 3.5. a.u. cooks things up considerably without changing the length of
+the year much.
+
+
+
+> It would be useful to plot a graph of temperature versus time to find out
+> how long the "seasons" are, and what the average temperature is. I've done this
+> myself while investigating the  real extrasolar planets, but I can't vouch for the
+> accuracy of my formula so I won't inflict it on you. 
+No, no, toss it out, please.  If it's wrong there are people here who'll
+cheerfully pick it apart.
+
+I want to do a spreadsheet, myself, with total insolation graphed across time.
+ I'd have to think a bit about the equations, though; I'm not sure how
+movement across an elliptical orbit is described.  Any suggestions are welcome
+(I'm using Excel).
+
+
+
+>In general winter lasts a lot
+> longer than summer. 
+Sure.  A couple of years of summer, maybe three years each of spring and fall,
+twelve years of winter, is what it looks like.
+
+Good point about the continents.  Mind, Earth's poles have been open ocean for
+most of the planet's history; the present situation is a bit unusual.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 10:08:26 UTC - Brandon Van Every:
+"Douglas Muir" <dougla...@yale.edu <>> wrote in message
+>
+> This would condemn the planet to a Mars-like deep freeze, except that
+Nerval,
+> in its turn, orbits the blue-white main sequence star Baudelaire.
+Baudelaire!  Why, that's quite a fancy name there, pardner!  I can see
+the colonists cracking all the weather jokes about things Baudeing ill!
+Welcome to my humble abaude....
+
+
+--
+Cheers,                         www.3DProgrammer.com <http://www.3DProgrammer.com>
+Brandon Van Every               Seattle, WA
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 10:50:38 UTC - Gareth Wilson:
+Douglas Muir wrote:
+
+> Gareth Wilson wrote:
+>
+> > It all sounds fairly plausible, but other members of the group can probably check
+> > the mathematics better than I can. One issue is that brown dwarfs seem to be very
+> > rare, rarer than planets of a few Jupiter masses.
+>
+> Really?  I didn't know that.  Source?
+>
+>
+After a bit of checking I can correct that statement. Up until 1995 the methods used to
+look for extrasolar planets didn't detect any brown dwarfs so they were thought to be
+very rare. Then lots of brown dwarfs started being discovered by direct observation, so
+they were actually common. And the Doppler shift  methods found a few after 1997, too.
+But brown dwarfs orbiting high-mass stars, like your scenario, are still very rare. The
+Doppler shift methods found only five, compared to more than 40 planets.
+
+
+>
+>
+> > It would be useful to plot a graph of temperature versus time to find out
+> > how long the "seasons" are, and what the average temperature is. I've done this
+> > myself while investigating the  real extrasolar planets, but I can't vouch for the
+> > accuracy of my formula so I won't inflict it on you.
+>
+> No, no, toss it out, please.  If it's wrong there are people here who'll
+> cheerfully pick it apart.
+>
+That's what I'm afraid of :)
+OK, I have an angle A that has some significance in the orbit. In the spreadsheet I just
+start it at pi and run it down in pi/400 increments, using 800 rows so completes a full
+circle.  I have two other coloumns that give sin A and cos A. The time value is given by
+(e*(A-e*sinA)/2.3247786)-0.5, where e is the eccentricity. Don't ask me to explain the
+other numbers. The distance between the planet/dwarf and the star is given by
+s*(1-e*cosA), where s is the semimajor axis. This gives you 800 time values and the
+corresponding distance values, which you can use as X and Y values in a graph. Working
+out the insolation or temperature at different times is just a matter of plugging the
+distances into standard worldbuilding equations.
+
+
+--
+~~~~~~~~~~~~~~~
+Gareth Wilson
+Christchurch
+New Zealand
+~~~~~~~~~~~~~~
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 11:42:01 UTC - Ross Smith:
+Douglas Muir wrote:
+> 
+> Ross Smith wrote:
+> 
+> > The 3:2 lock has two consequences you've missed:
+> >
+> > First, Mercury's 3:2 lock is a consequence of its fairly eccentric
+> > orbit. Tidal effects are stronger at perihelion, so the rotation has (to
+> > oversimplify a bit) locked in on the orbital angular velocity at
+> > perihelion, which is faster than the average.
+> 
+> Whoa.  Now that I did not know.  Thank you!
+> 
+> (So, are resonance locks generally more likely to be found in eccentric
+> orbits?  How eccentric do they have to be?)
+Resonance locks at ratios other than 1:1 are likely to be found in
+eccentric orbits. Higher eccentricities will give a preference for
+higher resonance ratios (3:2, 2:1, 5:2, 3:1, etc; maybe the occasional
+intermediate case like 5:3). There'll be a relationship between the
+eccentricity and the most likely ratio, but I don't know the specific
+numbers.
+
+
+> > If Nerval's orbit is
+> > eccentric, you've got yet another cause for temperature variation.
+> 
+> Eek.  I'm trying to keep things simple here, to just look at the consequences
+> of the 20-year cycle.  Throwing in another temperature curve makes things
+> messier.  What's the least eccentricity we can get away with?
+Well, Mercury's eccentricity is about 0.2. I don't know just how much
+you'd need for a 3:2 resonance to be plausible, but you should be able
+to get away with 0.1. That gives a ratio of about 1.5 in illumination
+between periastron and apastron.
+
+
+> > (The formula is 1/sidereal_day - 1/orbit_period = 1/solar_day.)
+> 
+> [staring at formula]  Are you sure that's written right?
+Yep. Example: Earth's solar day is 24 hours, sidereal day is 23h56m,
+year is 365.25 days (roughly) or 8766 hours.
+
+    1      1       1
+  ----- - ---- = -----
+  23.93   8766   24.00
+
+(The reason for the formula becomes clearer if you think in terms of
+angular velocities.)
+
+
+> > Also, because the day/night cycle is a combination of the (fixed angular
+> > velocity) rotation and (variable angular velocity) orbit, the apparent
+> > motion of the sun in the sky isn't the simple trajectory it is on Earth.
+> > It sometimes moves forwards and backwards in its path, and from some
+> > parts of the planet's surface, you'll get multiple sunrises and sunsets,
+> > with the sun bobbing up and down over the horizon a couple of times
+> > before crossing the sky.
+> 
+> Neat.  But this would be a result of the eccentricity of the orbit, right?
+> That is, if the orbit were perfectly circular, we wouldn't see this effect;
+> and if it were only slightly eccentric, we'd see it only a little.
+Right.
+
+
+> >Its visibility to the naked eye would probably
+> > be almost entirely reflected light from the other star; most of its own
+> > radiation is IR, and the "dark side" would be a very dim red, probably
+> > not discernible against the daylight sky when the other star is visible
+> > (the surface temperature would be around 2200 K).
+> 
+> Oh, really?  Hm.  -- Where's that figure from?  I'm curious.
+From the luminosity you quoted (0.0002 Sun), the diameter of a brown
+dwarf (about 150 000 km), and the black-body law. Real stars aren't
+blackbodies, but it'll be correct to within 100 K or so.
+
+(Or exactly correct by the usual astronomical definition. The
+temperature normally quoted for stars is the "effective temperature",
+which is defined to be the temperature of a blackbody with the same
+luminosity per unit surface area; this is only approximately equal to
+the thermodynamic temperature, but there's no way to directly measure
+that (well, you can deduce it from Doppler smearing of the spectral
+lines, but that's even less accurate for most stars).)
+
+-- 
+Ross Smith ......... r-s...@ihug.co.nz <> ......... Auckland, New Zealand
+   "Well, yes, I was aiming at him, but I've never hit anything with
+   a rocket launcher before, so I didn't think it mattered." -- Axly
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 11:50:36 UTC - Oliver Neukum:
+> longer than summer. If you want to prevent your planet freezing over, make sure
+> there's free circulation of water from the tropics to the poles, no polar continents
+> or enclosed polar oceans like the Arctic. You want to keep the continent sizes small
+> and put them in the tropics.  Colonists will live at the equator, and they'll just
+> put up with the year or so when it's unpleasantly hot.
+Ok, some remarks.
+
+That moon will probably quite volcanic, like Jupiter's moons.
+
+If there is any difference in the rotational plane of the moons and the
+planets, the climate at the poles would be truely extreme.
+
+        Regards
+                Oliver
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 11:58:51 UTC - Ross Smith:
+Douglas Muir wrote:
+> 
+> I want to do a spreadsheet, myself, with total insolation graphed across time.
+>  I'd have to think a bit about the equations, though; I'm not sure how
+> movement across an elliptical orbit is described.  Any suggestions are welcome
+> (I'm using Excel).
+You can get a very good approximation by using Kepler's third law: the
+line joining sun and planet sweeps out equal areas in equal times.
+Divide the orbit into a large number of segments, say 360 one-degree
+segments. Calculate the distance from sun to planet at the centre of
+each segment, and approximate the area of the segment as that distance
+times the angle (since you only need relative areas, don't bother
+multiplying by the angle). Add up all the areas, and then you can get
+the time to cross each segment by dividing the segment's area by the
+total, times the orbit period. This should all be easy with a
+spreadsheet.
+
+Polar equation of an ellipse, with one focus at the origin:
+
+  r = a.(1 - e^2)/(1 - e cos phi)
+
+(where a = semimajor axis, e = eccentricity, phi = polar angle)
+
+-- 
+Ross Smith ......... r-s...@ihug.co.nz <> ......... Auckland, New Zealand
+   "Well, yes, I was aiming at him, but I've never hit anything with
+   a rocket launcher before, so I didn't think it mattered." -- Axly
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 12:14:11 UTC - Oliver Neukum:
+> Shortening the year is less interesting to me; I picked 20 years as a minimum,
+> for the drama of the thing.
+> 
+> Making the star brighter works, but then it leaves the main sequence faster,
+> so the maximum possible age of the planet gets younger and younger.  The
+> problem with this is that, absent terraforming, it takes a while for a planet
+> to generate a breathably oxygen-rich atmosphere.  Earth didn't manage it until
+> the late Precambrian, more than three billion years after the planet formed. 
+> I think it could happen faster than that, but I wouldn't want to push it much
+> below a billion years or so.
+OK, let's cheat.
+We take two stars with about 120% of Sol's luminosity orbiting extremely
+closely. That's the tricky part. I am not sure how close they can be.
+
+Then make the planet not a brown dwarf but a very small star 10% solar
+mass. Stellar flares might become a problem.
+
+Now have an orbital plane around the small star inclined about 90° to the
+orbital plane of the larger stars.
+
+You even get seasons of equal length.
+
+        HTH
+                Oliver
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 12:51:28 UTC - Paul F. Dietz:
+Douglas Muir wrote:
+
+> The problem with this is that, absent terraforming, it takes
+> a while for a planet to generate a breathably oxygen-rich
+> atmosphere.  Earth didn't manage it until
+> the late Precambrian, more than three billion years after the
+> planet formed. I think it could happen faster than that, but I
+> wouldn't want to push it much below a billion years or so.
+I'd be cautious about assuming it must take so much time.
+
+On Earth, the O2 in the atmosphere comes from photosynthesis
+followed by burial of some of the reduced organic matter
+(if it is left at the surface, it reoxidizes almost
+immediately, causing no net increase in atmospheric O2.)
+
+The time scale for this can be estimated by a thought
+experiment: kill all life on the planet, and see how long
+it takes for emission of reduced gases from volcanoes
+and erosion of reduced materials in the crust (organics,
+ferrous iron, sulfur, etc.) to consume the oxygen.
+
+The answer you get is roughly a million years.  Now, maybe
+the *first time* it happens it must take longer (since
+by now the crust may be more oxidized than it was back
+then), but maybe not.  The time delay on Earth may have
+been just an historical accident.
+
+        Paul
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 16:44:23 UTC - Jim Davies:
+Also spracht Douglas Muir <dougla...@yale.edu <>>:
+
+>The planet Nerval, Earthlike in most respects, orbits the brown dwarf Rimbaud.
+>  Rimbaud has a mass about 20 times that of Jupiter; it glows dully with about
+>0.0002 solar luminosity.  
+>
+>Nerval orbits some 3.5 million km away, which means that it receives a bit
+>less than 40% of the insolation that Earth gets.
+>
+>This would condemn the planet to a Mars-like deep freeze, except that Nerval,
+>in its turn, orbits the blue-white main sequence star Baudelaire.  Baudelaire
+>has two solar masses and is about twelve times as luminous as the Sun. 
+>Rimbaud has an eccentric orbit, swinging between 4 and 15 a.u. from its bright
+>primary (from just inside the orbit of Jupiter, out nearly to the orbit of
+>Uranus, in Solar System terms).  One orbit takes just over 20 years to complete.
+Sounds like Helliconia by Brian Aldiss, but with much shorter
+longyears (Helliconia's are a few thousand years, with a huge main
+star).
+
+I doubt the planet's orbit would be stable - it's a 3-body problem so
+gets chaotic. especially if there are any other planets around.
+
+- 
+Jim Davies
+----------
+Mind your manners, son! I've got a tall pointy hat!
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 17:39:22 UTC - Douglas Muir:
+Jim Davies wrote:
+
+> Sounds like Helliconia by Brian Aldiss, but with much shorter
+> longyears (Helliconia's are a few thousand years, with a huge main
+> star).
+I got about halfway through the Helliconia trilogy before throwing it over;
+there were /big/ holes in the worldbuilding.  Frex, the huge main star was a
+supergiant that could only spend a few tens of millions of years on the main
+sequence.  Yet the planet had a complex ecology, with all sorts of adaptations
+to the "great year".
+
+Someone told me that Aldiss eventually resolved this, but I never got that
+far, and anyhow there were lots of other problems.
+
+
+
+> I doubt the planet's orbit would be stable - it's a 3-body problem so
+> gets chaotic. especially if there are any other planets around.
+No, it'd be stable.  It's orbiting quite close to the primary, which is
+orbiting quite far from the sun -- about 3.7 million km and (at closest
+approach) 600 million km, respectively.
+
+A bigger concern is whether the primary has a lot of junk in orbit -- other
+moons, rings, what have you.  I've waved my hand and said "no"; there's one
+other biggish moon, Marslike Verlaine, and some dinky stuff, and that's it.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 18:07:35 UTC - Brian Davis:
+Paul F. Dietz wrote:
+
+> The answer you get is roughly a million years.  Now, maybe
+> the *first time* it happens it must take longer (since
+> by now the crust may be more oxidized than it was back
+> then), but maybe not.  The time delay on Earth may have
+> been just an historical accident.
+   I'd agree with Paul that you can shorten that timespan considerably
+if you wish - what prevented the build up of O2 in the Earth's
+atmosphere was not slow production, but the oxidation of nearly
+everything else (primarly iron and sulfur) in the crustal system.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 18:13:23 UTC - Brian Davis:
+Jim Davies wrote:
+
+> I doubt the planet's orbit would be stable - it's a 3-body problem so
+> gets chaotic. especially if there are any other planets around.
+   Actually, the planet orbits the brown dwarf so close it's orbit would
+be stable (baring resonance effects). Any small body orbiting within
+rough 0.2 AU of the brown dwarf would be stable against perturbations
+from the more massive star at periastron, and he's set the planet only
+0.024 AU out. The brown dwarf is 100 times larger than Jupiter (in mass
+ratio), but the planet orbits only about 80% further out the Callisto.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 18:18:56 UTC - Brian Davis:
+Oliver Neukum wrote:
+
+> That moon will probably quite volcanic, like Jupiter's moons.
+   Well, the only reason Jupiter's moons are volcanic is due to tidal
+energy being dissipated in them - this planet of a brown dwarf would
+have been tidally locked for a *loong* time, so unless there are other
+similar sized moons in a mean-motion resonance with it (a'la
+Io-Europa-Ganymede), I suspect there's not enough heat source to drive
+much. Once every 20 year approaches to the massive star *might* do
+something, but it's far from obvious what.
+
+
+> If there is any difference in the rotational plane of the moons and
+> the planets, the climate at the poles would be truely extreme.
+   Ditto if we throw any significant obliquity for the brown dwarf or
+it's planet. Although I think it's really a question of what the brown
+dwarf's obliquity is - it's planet will orbit in the equatorial plane (I
+think; there's a limit for that, and I've not calculated it explicitly
+yet), and tidal forces will reduce the planet's own obliquity to zero rapidly.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 18:29:31 UTC - Brian Davis:
+Ross Smith wrote:
+
+> There'll be a relationship between the eccentricity and the most
+> likely ratio, but I don't know the specific numbers.
+In an ideal universe:
+
+   W = (1-e)/(1+e)   _or_   e = (1-W)/(1+W)
+   where W = sidereal years / sidereal days (ie- Mercury 2:3 = 2/3)
+         e = orbital eccentricity
+
+If the eccentricity is below, oh, say 0.1, then you're likely to fall
+into a 1:1 orbital lock, not some higher resonance. As you say, this is
+more a probability argument than a rigid constraint, but it's handy.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 19:16:41 UTC - Gareth Wilson:
+Gareth Wilson wrote:
+
+>
+> But brown dwarfs orbiting high-mass stars, like your scenario, are still very rare. The
+> Doppler shift methods found only five, compared to more than 40 planets.
+>
+Whoops, forgot to give the source. Try htttp://www.sciam.com/2000/0400issue/0400basri.html <http://www.sciam.com/2000/0400issue/0400basri.html>.
+
+--
+~~~~~~~~~~~~~~~
+Gareth Wilson
+Christchurch
+New Zealand
+~~~~~~~~~~~~~~
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 19:19:21 UTC - Brian Davis:
+[...and by the time I hit the thread, everything's been answered. Oh
+well... leaving out the stuff that's been mentioned...]
+Douglas Muir wrote:
+
+
+> The planet Nerval, Earthlike in most respects,
+   Question for the future: how "Earthlike"? What's the
+radius/mass/gravity, and what's the atmosphere like? Can we assume a
+80/20 N2/O2 mix at 1 Atm under a gravity of 1 G? How much is ocean, and
+where are the continents located? For the purposes of climate, this
+stuff is helpful.
+
+
+> Rimbaud has a mass about 20 times that of Jupiter; it glows dully
+> with about 0.0002 solar luminosity.
+   While I've read your exchange with Ross Smith, I'm curious to know if
+there's a good way to determine luminosity (or equivilently surface
+temperature) for these objects at a given mass & age. I'll take the
+75,000 km radius as a given, I guess.
+
+> A rough blackbody calculation... suggests that Nerval's average
+
+> temperature would vary between about 52 degrees Celsius colder
+> than Earth and about 10 degrees warmer.
+   Fair enough. If you want a "harder-SF" solution (in this case meaning
+more complex, not neccessarily more correct), you could apply the
+iterative solution that Martyn Fogg used in on of his papers (I've the
+details if you want them). He takes into account a rough greenhouse
+effect (but see below) as well as albedo feedbacks (ice & clouds, very
+roughly). Two big factors are going to be thermal inertia of the system
+(want to moderate the climate? Use more atmosphere), and the response
+time (OK, similar effect). Periastron may be too short to raise the
+actual temperature much, due to ocean evaporation limiting the thermal
+response for instance.
+
+> Since it's so close to Rimbaud, it will probably be tidally locked...
+
+The distance for tidal locking from a star is approximately:
+
+   a_lock = 0.104 [ (k2/Q) T P M^2 / rho ]^(1/6)
+      k2/Q = factors dealing with the planet; rough estimate, 3.31e-3
+      T = age of system, in years
+      P = inital rotation period of planet, in hours
+      M = mass of central star, in solar masses
+      rho = planetary density in kg/m^3
+
+For Rimbaud, a_lock is around 0.124 AU out, assuming an age of 1 billion
+years. The planet would be well and truly tidally locked, and would have
+been for essentially all it's existance.
+
+> I'm going to say that it's a 3-2 resonance lock...
+
+   As others have pointed out, probably not without a significantly
+eccentric orbit. But if you need an eccentric orbit to maintain a
+day/night cycle of some type, it still might be OK for climate - while
+the insolation recieved from Rimbaud will vary over the 9.5 day cycle,
+thermal inertia might save you. Once again, if you assume that minimum
+eccentricty of 0.1, that's an insolation variation of about 50%.
+   I'm gussing you want to avoid 1:1 tidal lock to avoid the
+complications of a "one faced" world? It's doable, although I've never
+wroked out how easy oceans are in these settings.
+
+> 1)  Is this plausible?
+
+   Seems like it to me.
+
+
+> (and, are my numbers correct to a first approximation?)
+   Your numbers are good enough that you should be answering such posts,
+not authoring them :-). The only differences I came up with were on the
+order of 10% or so, lost in the noise and significant figures.
+
+> 2)  How habitable is this place going to be?... what happens when you
+
+> vary an Earthlike world's solar flux by 150% over a 20-year cycle?
+   First you've got to work out exactly how the insolation varies over
+time, as Gareth Wilson suggested. Then figure out if at any time in the
+orbit the planet can not reach equilibrium at hte rate heat is being
+driven through the system - if that happens, then a simple equilibrium
+model of a black body temperature response is obviously out.
+
+
+> I see both positive and negative feedback loops here.  At periastron,
+> more water vapor in the atmosphere will tend to increase the 
+> greenhouse effect; at apastron, increased ice cover might bounce
+> more light away.
+   Those are both positive feedbacks. Evaporating water might also
+moderate the temperature increase, removing heat from the equatorial
+regions (latent heat effects) and transporting it to the polar regions.
+And the big bugaboo is cloud cover - more water vapor, more clouds,
+higher albedo, lower heat input. Water *vapor* is a greenhouse gas, and
+a good one... but it's not always there as a vapor.
+
+
+> UV flux will vary by even more than net temperature, since Rimbaud
+> produces almost no UV while Baudelaire's light is much bluer than
+> Sol's.
+   Baudelaire will produce sixty times more UV than our Sun, which is
+still almost four times solar at periastron. I'm very curious what sort
+of ozone layer would form (cyclic, with a 20 year period? How fast does
+it form an decay?).
+
+
+> Possibly the local plant life has two different chlorophyll
+> equivalents, each capturing a different set of wavelengths
+   Maybe, but I'd go for two seperate ecospheres - one optimized for the
+long winter, one for the brief summer. Probably more efficient, and more
+interesting, with maybe one or two species that try to thrive in both
+conditions (why? So that they have a better shot during fall & spring).
+
+
+> Where would colonists live?  The equator?
+   Near a big body of water (climate moderation again)
+
+
+> Any interesting consequences that I've overlooked here?
+   Consider that a lot of greenhouse gases are actually going to
+increase your effective albedo during much of the year (ie- an
+atmosphere that absorbs IR frequencies will also prevent said
+frequencies from reaching the ground as they come from Rimbaud).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 20:51:44 UTC - Erik Max Francis:
+Ross Smith wrote:
+
+> (From theoretical calculations of the behaviour of highly compressed
+> matter, supported by what little we know about real brown dwarfs, it's
+> believed that planets and brown dwarfs have a more or less constant
+> diameter between Jupiter's mass and the smallest true stars. Density
+> increases instead of volume, until large-scale nuclear reactions start
+> and expand the star.)
+Right.  In fact, Jupiter is right around the maximum volume mark;
+objects significantly more massive than Jupiter are _smaller_, up until
+you get to the main sequence and photon pressure starts counting.
+
+-- 
+ Erik Max Francis / m...@alcyone.com <> / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ __ San Jose, CA, US / 37 20 N 121 53 W / ICQ16063900 / &tSftDotIotE
+/  \ Virtue has never been as respectable as money.
+\__/ Mark Twain
+    Erik Max Francis' bookmarks / http://www.alcyone.com/max/links/ <http://www.alcyone.com/max/links/>
+ A highly categorized list of Web links.
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 20:55:31 UTC - Erik Max Francis:
+Gareth Wilson wrote:
+
+> One issue is that brown dwarfs seem
+> to be very
+> rare, rarer than planets of a few Jupiter masses.
+That is not currently known; it is commonly thought that there are
+probably more brown dwarfs than red dwarfs (if you follow the population
+curve, lower mass means greater numbers).
+
+It's really not known how the distribution changes when you go from
+brown dwarfs to jovian planets (especially when there are no sharp,
+well-defined boundaries).  It is highly premature, I think, to state
+that brown dwarfs are rarer than large jovians.
+
+
+-- 
+ Erik Max Francis / m...@alcyone.com <> / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ __ San Jose, CA, US / 37 20 N 121 53 W / ICQ16063900 / &tSftDotIotE
+/  \ The believer is happy; the doubter is wise.
+\__/ (an Hungarian proverb)
+    Alcyone Systems / http://www.alcyone.com/ <http://www.alcyone.com/>
+ Alcyone Systems, San Jose, California.
+----------------------------------------------------------------------------
+
+Sunday, 10 December 2000 23:21:58 UTC - Matthias Warkus:
+It was the Sun, 10 Dec 2000 10:08:26 GMT...
+...and Brandon Van Every <vanevery@3DProgrammer.com> wrote:
+> 
+> "Douglas Muir" <dougla...@yale.edu <>> wrote in message
+> >
+> > This would condemn the planet to a Mars-like deep freeze, except that
+> Nerval,
+> > in its turn, orbits the blue-white main sequence star Baudelaire.
+> 
+> Baudelaire!  Why, that's quite a fancy name there, pardner!  I can see
+> the colonists cracking all the weather jokes about things Baudeing ill!
+> Welcome to my humble abaude....
+I hope you know who Baudelaire was?
+
+But then, as you probably are USAmerican, it's not to be expected of
+you.
+
+mawa
+-- 
+Wenn die Wochentage Länder wären...
+...dann wäre der Montag Nordkorea.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 03:29:22 UTC - Douglas Muir:
+Erik Max Francis wrote:
+
+> Someone else pointed the name Nerval smacks a little too closely to one
+> of the characters in the Garfield comic strip; I had the same reaction
+> upon first reading it too.
+
+Geez, guys, it's _French_.  Gerard de Nerval, pronounced Zhair-ARD duh
+Nuhr-VAHL, great Romantic/Decadent poet.  Wrote "Desdichado", one of the best
+poems ever written in any language.  He deserves a planet somewhere, and AFAIK
+he doesn't have one yet.
+
+Garfield?  Sheesh.
+
+
+> Note that brown dwarfs emit the heat from their own formation and slow
+> gravitational contraction (with a little non-self-sustaining deuterium
+> fusion for laughs); a brown dwarf with such a low luminosity will emit
+> most of its energy in frequencies lower than that of visible light.  To
+> the naked eye it will probably be appear _really_ dim.  (Haven't run any
+> calculations to see how bright one would expect it to be, though.)
+
+As noted, I've half-arbitrarily assumed that it will glow a very dull brick
+red, giving roughly about as much light as a full moon.
+
+In winter, things will be rather dim as well as cold, since the planet won't
+get much light from distant Baudelaire either.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 03:49:49 UTC - Erik Max Francis:
+Douglas Muir wrote:
+
+> Thanks to Eric, Max and John for help with orbital calculations.
+Sure.
+
+
+> The planet Nerval, Earthlike in most respects, orbits the brown dwarf
+> Rimbaud.
+Someone else pointed the name Nerval smacks a little too closely to one
+of the characters in the Garfield comic strip; I had the same reaction
+upon first reading it too.
+
+
+>   Rimbaud has a mass about 20 times that of Jupiter; it glows dully
+> with about
+> 0.0002 solar luminosity.
+Note that brown dwarfs emit the heat from their own formation and slow
+gravitational contraction (with a little non-self-sustaining deuterium
+fusion for laughs); a brown dwarf with such a low luminosity will emit
+most of its energy in frequencies lower than that of visible light.  To
+the naked eye it will probably be appear _really_ dim.  (Haven't run any
+calculations to see how bright one would expect it to be, though.)
+
+
+-- 
+ Erik Max Francis / m...@alcyone.com <> / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ __ San Jose, CA, US / 37 20 N 121 53 W / ICQ16063900 / &tSftDotIotE
+/  \ I am become death, the destroyer of worlds.
+\__/ J. Robert Oppenheimer (quoting Hindu legend)
+    blackgirl international / http://www.blackgirl.org/ <http://www.blackgirl.org/>
+ The Internet resource for black women.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 04:04:14 UTC - Douglas Muir:
+Brian Davis wrote:
+
+> > The planet Nerval, Earthlike in most respects,
+> 
+>    Question for the future: how "Earthlike"? What's the
+> radius/mass/gravity, and what's the atmosphere like? Can we assume a
+> 80/20 N2/O2 mix at 1 Atm under a gravity of 1 G? 
+
+Yes, to a first approximation -- give or take 10%.  As you point out below,
+tweaking these factors can be interesting (thicker atmosphere buffers climate,
+etc.), but I'd like to keep it simple for now.
+
+
+> How much is ocean, and
+> where are the continents located? 
+
+Roughly 3/1 water/land, much like Earth.  Not much land at the poles;
+otherwise similar to Earth, with several separate continents scattered around
+the planet.
+
+There might be a bit more vulcanism, but this is more because Nerval is
+younger than Earth (c. 1.5 gy instead of 4.5) than because of tidal effects.
+
+I think it's far enough away that there won't be charged-particle and
+magnetosphere types of issues with the primary, though of course we don't know
+enough about brown dwarves.
+
+
+> > A rough blackbody calculation... suggests that Nerval's average
+> > temperature would vary between about 52 degrees Celsius colder
+> > than Earth and about 10 degrees warmer.
+> 
+>    Fair enough. If you want a "harder-SF" solution (in this case meaning
+> more complex, not neccessarily more correct), you could apply the
+> iterative solution that Martyn Fogg used in on of his papers (I've the
+> details if you want them). 
+
+I'd be interested, yes.  Although my impression is that you're quite right --
+the "harder" answer isn't likely to be that much more precise (or more
+correct).  
+
+
+>    As others have pointed out, probably not without a significantly
+> eccentric orbit. But if you need an eccentric orbit to maintain a
+> day/night cycle of some type, it still might be OK for climate - while
+> the insolation recieved from Rimbaud will vary over the 9.5 day cycle,
+> thermal inertia might save you. Once again, if you assume that minimum
+> eccentricty of 0.1, that's an insolation variation of about 50%.
+
+I'm going to squint hard and squeeze the eccentricity down to 0.08, which
+gives a variation of less than 30%... much less at apastron, of course, when
+most insolation is coming from blue Baudelaire.
+
+
+>    I'm gussing you want to avoid 1:1 tidal lock to avoid the
+> complications of a "one faced" world? 
+
+Yep.
+
+
+> > 2)  How habitable is this place going to be?... what happens when you
+> > vary an Earthlike world's solar flux by 150% over a 20-year cycle?
+> 
+>    First you've got to work out exactly how the insolation varies over
+> time, as Gareth Wilson suggested.
+
+Yah, I need to get around to setting up a spreadsheet for that.  
+
+
+> Then figure out if at any time in the
+> orbit the planet can not reach equilibrium at hte rate heat is being
+> driven through the system - if that happens, then a simple equilibrium
+> model of a black body temperature response is obviously out.
+
+Um... um?  
+
+Could you explain that again, please?
+
+
+> > UV flux will vary by even more than net temperature, since Rimbaud
+> > produces almost no UV while Baudelaire's light is much bluer than
+> > Sol's.
+> 
+>    Baudelaire will produce sixty times more UV than our Sun, which is
+> still almost four times solar at periastron. 
+
+At periastron, 15 a.u. out, it would be getting 60/15^2 as much, or about
+0.28... right?
+
+At apastron, yah, things get crispy; take your melanin pills, cover up, and
+just stay out of direct sunlight as much as possible.
+
+
+> I'm very curious what sort
+> of ozone layer would form (cyclic, with a 20 year period? How fast does
+> it form an decay?).
+
+I'm curious about that myself!  Anyone know?
+
+
+> > Possibly the local plant life has two different chlorophyll
+> > equivalents, each capturing a different set of wavelengths
+> 
+>    Maybe, but I'd go for two seperate ecospheres - one optimized for the
+> long winter, one for the brief summer. Probably more efficient, and more
+> interesting, with maybe one or two species that try to thrive in both
+> conditions (why? So that they have a better shot during fall & spring).
+
+Hah.  I like this idea in principle, but boy are there a lot of details to be
+worked out.  At periastron the planet's getting more energy than Earth, and
+_lots_ more UV, though it may not actually be warmer (since thawing it out of
+its long winter will soak up an immense amount of heat).  During winter most
+of the planet is superarctic, almost Martian; the equator occasionally goes
+above freezing, but not for long, and CO2 will fall as snow in high latitudes.
+
+Yeah, it would almost have to be two separate ecologies, with summer's being
+much more energetic.
+
+(Idle curiousity: does anyone know what CO2 snow in an Earthlike atmosphere
+would look like?  Tiny specks, big fluffy flakes?  What kind of crystalline
+structure does solid CO2 have?)
+
+
+>    Consider that a lot of greenhouse gases are actually going to
+> increase your effective albedo during much of the year (ie- an
+> atmosphere that absorbs IR frequencies will also prevent said
+> frequencies from reaching the ground as they come from Rimbaud).
+
+Ahh.  Good point, thanks.
+
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 04:10:58 UTC - Matthew DeBell:
+Oliver Neukum wrote in message ...
+>OK, let's cheat.
+>We take two stars with about 120% of Sol's luminosity orbiting extremely
+>closely. That's the tricky part. I am not sure how close they can be.
+
+
+I think the Roche limit would apply, but I don't have the equation.  I'm
+sure Google would turn it up.
+
+>Then make the planet not a brown dwarf but a very small star 10% solar
+>mass. Stellar flares might become a problem.
+>
+>Now have an orbital plane around the small star inclined about 90° to the
+>orbital plane of the larger stars.
+>
+>You even get seasons of equal length.
+
+
+But would the orbit be stable?
+
+
+--
+Matthew DeBell
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 05:07:09 UTC - Erik Max Francis:
+Douglas Muir wrote:
+
+> Geez, guys, it's _French_.  Gerard de Nerval, pronounced Zhair-ARD duh
+> Nuhr-VAHL, great Romantic/Decadent poet.  Wrote "Desdichado", one of
+> the best
+> poems ever written in any language.  He deserves a planet somewhere,
+> and AFAIK
+> he doesn't have one yet.
+> 
+> Garfield?  Sheesh.
+I'm aware that it wasn't named after the Garfield comic strip.  However,
+due to my mind being poisoned by such things, that's the first thing
+that popped in my head, which is not the right imagery.  Someone else
+pointed out a similar ill-connection.
+
+
+> As noted, I've half-arbitrarily assumed that it will glow a very dull
+> brick
+> red, giving roughly about as much light as a full moon.
+It may be even dinner than that.  I'm not sure.
+
+-- 
+ Erik Max Francis / m...@alcyone.com <> / http://www.alcyone.com/max/ <http://www.alcyone.com/max/>
+ __ San Jose, CA, US / 37 20 N 121 53 W / ICQ16063900 / &tSftDotIotE
+/  \ Only the ephemeral is of lasting value.
+\__/ Ionesco
+    Alcyone Systems / http://www.alcyone.com/ <http://www.alcyone.com/>
+ Alcyone Systems, San Jose, California.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 05:29:13 UTC - Bill Woods:
+Gareth Wilson wrote:
+> Douglas Muir wrote:
+>
+> > Gareth Wilson wrote:
+
+    :
+
+> > > It would be useful to plot a graph of temperature versus time
+> > > to find out how long the "seasons" are, and what the average
+> > > temperature is. I've done this myself while investigating the
+> > > real extrasolar planets, but I can't vouch for the accuracy
+> > > of my formula so I won't inflict it on you. of my formula so
+> > > I won't inflict it on you.
+> >
+> > No, no, toss it out, please.  If it's wrong there are people
+> > here who'll cheerfully pick it apart.
+> >
+>
+> That's what I'm afraid of :)
+> OK, I have an angle A that has some significance in the orbit.
+> In the spreadsheet I just start it at pi and run it down in
+> pi/400 increments, using 800 rows so completes a full circle.
+> I have two other columns that give sin A and cos A. The time
+> value is given by (e*(A-e*sinA)/2.3247786)-0.5, where e is the
+> eccentricity. Don't ask me to explain the other numbers. The
+> distance between the planet/dwarf and the star is given by
+> s*(1-e*cosA), where s is the semimajor axis. This gives you
+> 800 time values and the corresponding distance values, which
+> you can use as X and Y values in a graph. Working out the
+> insolation or temperature at different times is just a matter
+> of plugging the distances into standard worldbuilding equations.
+
+An odd-looking formula for t(A), but the results match
+those from another which I had.
+
+Time(yr)  Insolation(fraction of Earth's)
+
+  0         1.15
+  0.6       1.00
+  1         0.85
+  2         0.63
+  3         0.55
+  4         0.51      "It's frickin' cold in here,
+  5         0.48                 Mr. Bigglesworth!"
+  6         0.47
+  7         0.46
+  8         0.46
+  9         0.45
+ 10         0.45
+ 11         0.45
+ 12         0.46
+ 13         0.46
+ 14         0.46
+ 15         0.47
+ 16         0.49
+ 17         0.51
+ 18         0.56
+ 19         0.68
+ 20         0.96
+ 20.1       1.00
+ 20.7       1.15
+ 21         1.11
+
+
+ObSF: _Firetime_ and _Satan's World_
+
+--
+    Bill Woods
+
+As migration approached, two elderly vultures doubted they could
+make the trip south, so they decided to go by airplane. When they
+checked their baggage,the attendant noticed that they were carrying
+two dead raccoons.
+
+"Do you wish to check those raccoons through as luggage?" he asked.
+
+"No, thanks," replied one of the vultures. "They're carrion."
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 06:36:44 UTC - Gareth Wilson:
+> Douglas Muir wrote:
+>
+>
+> > Garfield?  Sheesh.
+>
+>
+
+I suppose this isn't the time to point out that there's a New Zealand rock
+group called The Verlaines, most famous for getting into trouble with the
+meat promotion people for the dead cow on their album cover? No?
+Seriously, your names do have the advantage of being more original than the
+old mythology standby.
+--
+~~~~~~~~~~~~~~~
+Gareth Wilson
+Christchurch
+New Zealand
+~~~~~~~~~~~~~~
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 06:46:21 UTC - Douglas Muir:
+Gareth Wilson wrote:
+
+
+> I suppose this isn't the time to point out that there's a New Zealand rock
+> group called The Verlaines, most famous for getting into trouble with the
+> meat promotion people for the dead cow on their album cover? No?
+Heh.  I know someone who claims, with a straight face, that Rimbaud and
+Verlaine are the true fathers of modernity.
+
+
+
+> Seriously, your names do have the advantage of being more original than the
+> old mythology standby.
+There are only so many gods.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 07:14:26 UTC - Douglas Muir:
+Bill Woods wrote:
+Ahh.  Super handy table, Bill.  And this:
+
+
+
+>   4         0.51      "It's frickin' cold in here,
+>   5         0.48                 Mr. Bigglesworth!"
+-- damn near made me choke on my spinakopita.
+
+It also drives home that this is not a world with hot and cold seasons; it's a
+frickin' cold world that gets hit with a heat pulse a couple of years out of
+every 20.  12 out of 20 years it's getting less than half the radiation that
+Earth does, and the "hot" part of the orbit is just 1.2 years long.
+
+Hm.  This makes it pretty inhospitable. I'm torn between tweaking the orbits
+to warm things up a bit, and leaving it in its stark and brutal beauty.
+
+
+
+> ObSF: _Firetime_ and _Satan's World_
+Yah.  And _A Deepness in the Sky_, of course, and that one about the "fair"
+planet by George R. R. Martin.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 08:11:03 UTC - Douglas Muir:
+Gareth Wilson wrote:
+ 
+> I've plugged the Nerval system's characteristics into the equations described in my
+> previous post. Rimbaud's orbit around Baudelaire has a semi-major axis of 9.5 AU and
+> an eccentricity of 0.58. 
+Remind me again of the formula for eccentricity.
+
+
+
+>From these figures I've generated the time/distance,
+> time/insolation and time/temperature curves. They're rather hard to summarise in
+> words. 
+Maybe a column-chart, like Bill Woods' post?
+
+
+
+>One thing that
+> strikes you is the shortness of the summer.
+Yep.
+
+
+
+> Let's look at insolation. I'm assuming
+> Nerval gets a constant insolation of 0.4 (compared to Earth) from Rimbaud in
+> addition to the varying insolation from Baudelaire. 
+Check.  That's right.
+
+
+
+> In that case Nerval gets more
+> insolation than Earth for only one year and 2 months out of it's entire 20 year
+> orbit. I've used the same black body temperature formula as Doug did: it gives an
+> average temperature about freezing for only two years and four months. Bring your
+> mittens...
+Okay, it's just a wee bit _too_ cold.  This planet is nearly Martian for 12
+years out of 20.  Might be interesting to visit, but nobody's going to live
+there absent terraforming, unless Earthlike planets are really horribly rare.
+
+So let me tweak it just a little bit.
+
+1)  I'm moving it a bit closer to Rimbaud -- enough to turn up the heat a
+little.  Average heat from Rimbaud is now 0.45 instead of 0.4.  This will also
+shorten the "day" a bit, but never mind that just now.
+
+2)  Let's also move apastron in a bit, from 4 a.u. to 3.6 a.u.  This means that
+
+-- at apastron Nerval will receive 0.93 sols from Baudelaire, instead of 0.75;
+
+-- the year gets a bit shorter (in fact, it now is just a hair over 20 years); and,
+
+-- total insolation will now vary from 0.5 (low) to 1.48 (high).
+
+Summer will still be short, but we should now see some steam; the heat pulse
+should be intense enough to melt the ice and make things wild and crazy for a
+year or two.
+
+Does this work for you guys?  Anyone want to do the chart?
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 08:27:56 UTC - Gareth Wilson:
+I've plugged the Nerval system's characteristics into the equations described in my
+previous post. Rimbaud's orbit around Baudelaire has a semi-major axis of 9.5 AU and
+an eccentricity of 0.58. From these figures I've generated the time/distance,
+time/insolation and time/temperature curves. They're rather hard to summarise in
+words. (Hey, maybe I'll post a bitmap file of them! Just kidding.) One thing that
+strikes you is the shortness of the summer. Let's look at insolation. I'm assuming
+Nerval gets a constant insolation of 0.4 (compared to Earth) from Rimbaud in
+addition to the varying insolation from Baudelaire. In that case Nerval gets more
+insolation than Earth for only one year and 2 months out of it's entire 20 year
+orbit. I've used the same black body temperature formula as Doug did: it gives an
+average temperature about freezing for only two years and four months. Bring your
+mittens...- show quoted text -
+--
+~~~~~~~~~~~~~~~
+Gareth Wilson
+Christchurch
+New Zealand
+~~~~~~~~~~~~~~
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 10:23:06 UTC - Gareth Wilson:
+Douglas Muir wrote:
+
+> Gareth Wilson wrote:
+>
+> > I've plugged the Nerval system's characteristics into the equations described in my
+> > previous post. Rimbaud's orbit around Baudelaire has a semi-major axis of 9.5 AU and
+> > an eccentricity of 0.58.
+>
+> Remind me again of the formula for eccentricity.
+Distance from the centre to one focus, divided by the semi-major axis.
+
+
+>
+> 1)  I'm moving it a bit closer to Rimbaud -- enough to turn up the heat a
+> little.  Average heat from Rimbaud is now 0.45 instead of 0.4.  This will also
+> shorten the "day" a bit, but never mind that just now.
+>
+> 2)  Let's also move apastron in a bit, from 4 a.u. to 3.6 a.u.
+Assuming the periastron stays the same, you've now got a semi-major axis of 9.3 and an
+eccentricity of 0.61.
+
+
+> This means that
+>
+> -- at apastron Nerval will receive 0.93 sols from Baudelaire, instead of 0.75;
+>
+> -- the year gets a bit shorter (in fact, it now is just a hair over 20 years); and,
+>
+> -- total insolation will now vary from 0.5 (low) to 1.48 (high).
+>
+Plugging these values, using 20 years for the period and starting at apastron, you get:
+Time (years)   Insolation
+3.2                    0.5
+5.8                    0.51
+8.1                    0.55
+9.7                    0.66
+10.8                  0.99
+11.5                 1.36
+12.2                  0.99
+
+Sorry about the funny increments. The heat pulse doesn't seem to last much longer, but
+it's much more intense.
+
+
+
+
+
+
+--
+~~~~~~~~~~~~~~~
+Gareth Wilson
+Christchurch
+New Zealand
+~~~~~~~~~~~~~~
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 12:38:00 UTC - Oliver Neukum:
+On Sun, 10 Dec 2000, Matthew DeBell wrote:
+
+> Oliver Neukum wrote in message ...
+> 
+> >OK, let's cheat.
+> >We take two stars with about 120% of Sol's luminosity orbiting extremely
+> >closely. That's the tricky part. I am not sure how close they can be.
+> 
+> 
+> I think the Roche limit would apply, but I don't have the equation.  I'm
+> sure Google would turn it up.
+It indeed does. For bodies of equal density and mass, it turns out to be
+2.5*diameter. If I haven't made a mistake it should be OK.
+
+
+> >Then make the planet not a brown dwarf but a very small star 10% solar
+> >mass. Stellar flares might become a problem.
+> >
+> >Now have an orbital plane around the small star inclined about 90° to the
+> >orbital plane of the larger stars.
+> >
+> >You even get seasons of equal length.
+> 
+> 
+> But would the orbit be stable?
+I sure no reason, why not. The moons of Uranus are in stable orbits.
+After all the gravitic force is the same, orbital planes different or not.
+
+        Regards
+                Oliver
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 19:28:57 UTC - Jim Davies:
+Also spracht Douglas Muir <dougla...@yale.edu <>>:
+snip
+>I got about halfway through the Helliconia trilogy before throwing it over;
+>there were /big/ holes in the worldbuilding.  Frex, the huge main star was a
+>supergiant that could only spend a few tens of millions of years on the main
+>sequence.  Yet the planet had a complex ecology, with all sorts of adaptations
+>to the "great year".
+
+That bugged me too. I only bothered with Winter, as too many things
+seemed implausible.
+
+>> I doubt the planet's orbit would be stable - it's a 3-body problem so
+>> gets chaotic. especially if there are any other planets around.
+>
+>No, it'd be stable.  It's orbiting quite close to the primary, which is
+>orbiting quite far from the sun -- about 3.7 million km and (at closest
+>approach) 600 million km, respectively.
+
+Looked at like that (and compared with Jupter's moons), I stand
+corrected.
+
+Incidentally, astronomers have found evidence of planetary formation
+in double star systems (New Scientist 25/11/00 p20 & Astrophysical
+Journal v543 p328).
+
+- 
+Jim Davies
+----------
+Mind your manners, son! I've got a tall pointy hat!
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 22:21:14 UTC - Brian Davis:
+Douglas Muir wrote:
+> I'd be interested, [in Martyn Fogg's method]
+
+   OK, here it goes. It's basicly three steps that you iterate through
+until the predicted surface temperature converges (till the change is
+less than 1 K or so between iterations).
+
+1) Calculate an effective temperature, Teff:
+   Teff = Teff_earth ( [(1-A)/(1-Ae)] L / a^2 )^(1/4) 
+      Teff_earth = 255 K
+      Ae = 0.3 (Earth's global albedo, roughly)
+      A =      (planet's albedo)
+      L =      (stellar luminosity, in terms of the Sun's)
+      a =      (planet's orbital distance, in AU)
+
+2) Calculate greenhouse correction (based on optical depth, Tau):
+   Tg = [ (1 + ( 3 Tau / 4 ))^(1/4) - 1 ] Teff Fconv
+      Tau = Tau_H2O + Tau_CO2
+         Tau_H2O = 0.15 ( q_planet / q_earth )^(1/2)
+         Tau_CO2 = 2.34 ( q_planet / q_earth )^(1/2)
+            q_i = mass of atmospheric gas on earth or planet
+                  (if you want to correct for H2O feedbacks, use
+                  the q_water calculation in the step below)
+      Fconv = 0.43 (parameter to allow for convective mixing)
+
+3) Calculate the surface temperature & a new effective albedo:
+   Tsurf = Teff + Tg
+   A = F_c A_c + (1-F_c) ( F_i A_i + F_w + A_w + F_r A_r + F_v A_v )
+      F_c = 3.752e-17 q_water
+         q_water = 1.258e+16 exp[ 0.0698 ( Tsurf - 288 ) ]
+      A_c = 0.52 (albedo of clouds)
+      F_i = ( (328 - Tsurf) / 70 )^5
+      A_i = 0.70 (albedo of ice)
+      F_w = fraction of the surface covered with water
+      A_w = 0.04 (albedo of the open ocean)
+      F_r, F_v = fraction of surface covered with (r)ock or (v)egetation
+      A_r = 0.15 (albedo of rock)
+      A_v = 0.13 (albedo of vegetation)
+
+4) Repeat step 1) to derive the next Tsurf, until Tsurf stops changing.
+
+
+> Although my impression is that you're quite right -- the "harder"
+> answer isn't likely to be that much more precise (or more
+> correct).
+   I'm certain of it, but I like this method because (a) it's really not
+too hard (honest!), (b) it takes into account both greenhouse feedbacks
+with water vapor or different atmospheric mixes, and roughly albedo
+feedbacks. Ignoring these is obviously wrong (it's like tossing out the
+33 degree greenhouse correction for Earth), so it at least lulls me into
+thinking I know whatI'm doing :-).
+
+   Keep in mins that you can have the surface temperature go over the
+boiling point of the oceans, at which point things blow up, and it will
+also predict roughly when you reach global glaciation, although the
+state-of-the-art has come a *long* way on that, invalidating this method.
+
+   Well, hey, you asked... ;-)
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 22:39:48 UTC - Brian Davis:
+Douglas Muir wrote:
+>> how "Earthlike"?...Can we assume a 80/20 N2/O2 mix at 1 Atm
+
+>> under a gravity of 1 G?
+> 
+> Yes, to a first approximation -- give or take 10%... I'd like to
+> keep it simple for now.
+   First Law of Ecology: you can never do just one thing. There are at
+least two non-Earth-like implications of your set-up, the insolation
+(the major point of this thread), and the *rotation*. Nerval is going to
+rotate much slower than Earth, with a correspondingly weak Coriolis
+parameter. But thanks for the clairification on just how "Earth-like"
+we're talking.
+
+> Roughly 3/1 water/land...similar to Earth, with several separate
+
+> continents scattered around the planet.
+   So at least you can assume heat-pumping ocean currents pretty easily.
+Good, that was one thing I was curious about.
+
+
+> There might be a bit more vulcanism, but this is more because Nerval
+> is younger than Earth (c. 1.5 gy instead of 4.5) than because of
+> tidal effects.
+   Another great point that I completely missed! Earth's current flux is
+around 0.070 W/m^2 (averages 1.7 W/m^2 in geothermal sites). ASSuming
+the Earth's heat output is dominated by the mantle (not too bad), and
+that in turn is controled by four primary isotopes, I get a heat flux
+for a 1.5 Ga Earth around 2.4 times higher, quite significant.
+
+
+> I think it's far enough away that there won't be charged-particle and
+> magnetosphere types of issues with the primary, though of course we
+> don't know enough about brown dwarves.
+   If you assume that the brown dwarf has at least a Jovian field,
+Nerval is going to be *inside* Rimbaud's bow shock. This could be a good
+thing, as it protects the upper atmosphere from solar wind stripping
+during close approaches to Baudelaire... but only if the bow shock
+remains outside 3.5 million km, which I'm not sure of. I know Jupiter's
+bow shock distance, but I *don't* know how to scale it w.r.t. field
+strength or solar wind strength (or for that matter how the solar wind
+strength varies for a 2 Ms star).
+
+>> If you want a "harder-SF" solution... you could apply the
+>> iterative solution that Martyn Fogg used...
+
+> 
+> I'd be interested, yes.
+   See the parallel post to this one, entitled "Fogg's Method"
+
+
+> I'm going to squint hard and squeeze the eccentricity down to 0.08,
+> which gives a variation of less than 30%...
+   Given where all these numbers are coming from, you don't need to
+squint too hard to use a small eccentrictiy and still allow a 3:2 locked
+state - after all, we really only have one example ;-)
+
+
+> Yah, I need to get around to setting up a spreadsheet for that.
+   Well, the thread inspired me to finally work it out, sort of. If you
+start with the angle that the planet makes from periastron (call it f),
+you can derive both the time it took to get there (periastron passage is
+time zero), and the distance from the star at the time rather simply:
+
+Given f (angle between planet's position and periastron point in orbit):
+   E = 2 ArcTan[ ((1-e)/(1+e))^(1/2) Tan(f/2) ]
+   t = (P / 2pi ) ( E - e Sin(E) )
+   r = a ( 1 - e Cos(E) )
+Run this thru a spreadsheet, with each line a slightly different angle
+(f), and you can get a pretty good idea pretty quick. And as long as you
+have r calculated for every line, determining the insolation at a given
+time is just one more column of cells.
+
+
+>> Then figure out if at any time in the orbit the planet can not reach
+>> equilibrium at the rate heat is being driven through the system - if
+>> that happens, then a simple equilibrium model of a black body
+>> temperature response is obviously out.
+> 
+> Um... um?
+> 
+> Could you explain that again, please?
+   Sure - basicly because, upon reading it, I did a terrible job the
+first time. The black body approximation assumes that the amount of
+stellar energy coming in is equal to the amount of thermal energy
+radiating away. In fact, unless the surface has a very very small
+thermal inertia, this just isn't so - during the morning, for instance,
+the energy in exceeds the energy out, and so the surface incerases in
+temperature. The same thing happens on a seasonal scale for the Earth
+(that's why the coldest day of the year is almost never the shortest day
+of the year, for instance).
+   Essentially I was talking about thermal lags and non-equlibrium
+conditions, but I did a very poor job of it. Sorry 'bout that.
+
+
+> At periastron, 15 a.u. out, it would be getting 60/15^2 as much,
+> or about 0.28... right?
+   Near as I can tell. To be honest, the numbers I quoted are based on
+the assumption that star radiate as black bodies, which it turns out
+fails rather miserably, *especially* at short wavelengths, but it's the
+best I've got unless someone wants to dig up a bunch of spectral power
+data for the different stellar types. I orginally calculated the numbers
+to determine the power radiated at a short enough wavelength to split
+water (195 nm), so that "60" includes everything shortwards of that.
+
+
+>> Maybe, but I'd go for two seperate ecospheres - one optimized for
+>> the long winter, one for the brief summer.
+> 
+> Hah.  I like this idea in principle, but boy are there a lot of
+> details to be worked out.
+   After posting that I realized that Hal Clement once again beat us all
+to it, with "Cycle of Fire", but I still think it's a good idea. And by
+this point, I figured you *liked* working out details, or you would have
+left dozens of posts ago.
+
+
+> does anyone know what CO2 snow in an Earthlike atmosphere
+> would look like?  Tiny specks, big fluffy flakes?
+   Size would depend on how you form it, and with as low a density as
+CO2 takes in a (human-breathable) atmosphere, I suspect and CO2 precip
+would be in tiny particles. I'm not even sure I can think of a mechanism
+to "pack" CO2(s) into larger objects, like flakes or "Carbon dioxide men".
+
+
+>> an atmosphere that absorbs IR frequencies will also prevent said
+>> frequencies from reaching the ground as they come from Rimbaud.
+> 
+> Ahh.  Good point, thanks.
+   Yeah, but one that I'm really unsure how to handle. I went around on
+this a while ago, and found out that "greenhouse gases" for very
+different temperature ranges are hard to figure out - nobody worries
+about such things on Earth.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Monday, 11 December 2000 23:02:43 UTC - Matthew DeBell:
+Oliver Neukum wrote in message ...
+>> But would the orbit be stable?
+
+>
+>I sure no reason, why not. The moons of Uranus are in stable orbits.
+>After all the gravitic force is the same, orbital planes different or not.
+
+My concern isn't the inclination of the orbital plane.  It is that having
+the brown dwarf floating around will result in occasional nudging of the
+planet's orbit because the barycenter of the two stars will be wobbling,
+sometimes moving closer to the planet and sometimes farther away.  That
+seems like it might make the planet's orbit unstable.
+
+--
+Matthew DeBell
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 03:35:43 UTC - Bill Woods:
+Douglas Muir wrote:
+    :
+
+
+> Okay, it's just a wee bit _too_ cold.  This planet is nearly Martian for 12
+> years out of 20.  Might be interesting to visit, but nobody's going to live
+> there absent terraforming, unless Earthlike planets are really horribly rare.
+>
+> So let me tweak it just a little bit.
+>
+> 1)  I'm moving it a bit closer to Rimbaud -- enough to turn up the heat a
+> little.  Average heat from Rimbaud is now 0.45 instead of 0.4.  This will also
+> shorten the "day" a bit, but never mind that just now.
+>
+> 2)  Let's also move [peribaud] in a bit, from 4 a.u. to 3.6 a.u.  This means that
+>
+> -- at [peribaud] Nerval will receive 0.93 sols from Baudelaire, instead of 0.75;
+>
+> -- the year gets a bit shorter (in fact, it now is just a hair over 20 years); and,
+>
+> -- total insolation will now vary from 0.5 (low) to 1.48 (high).
+>
+> Summer will still be short, but we should now see some steam; the heat pulse
+> should be intense enough to melt the ice and make things wild and crazy for a
+> year or two.
+>
+> Does this work for you guys?  Anyone want to do the chart?
+For convenience, how about setting the year at 20.0 years?
+For  Mbaud = 2 Msun  , that means  a = 9.3 AU . Any combination
+of peribaud and apobaud which average out to that will work.
+
+How about turning up the heat from Rimbaud by increasing its mass,
+and thus luminosity? Instead of a dull red, make it a nice cherry red.
+
+If you don't want seasons like Minnesota ("last year, summer was on
+a Wednesday") you want an orbit which is less eccentric, not more.
+
+Time(yr)  Distance(AU) Insolation(/sun) BB Temp(°C)**
+-10         15            0.5            -37.61
+ -9         14.88         0.5            -37.51
+ -8         14.57         0.51           -37.23
+ -7         14            0.51           -36.69
+ -6         13.22         0.52           -35.84
+ -5         12.18         0.53           -34.44
+ -4         10.87         0.55           -32.16
+ -3          9.18         0.59           -27.82
+ -2          7.23         0.68           -19.27
+ -1          5.01         0.93             1.26
+  0          3.6          1.38            29.72
+  1          5.01         0.93             1.26
+  2          7.23         0.68           -19.27
+  3          9.18         0.59           -27.82
+  4         10.87         0.55           -32.16
+  5         12.18         0.53           -34.44
+  6         13.22         0.52           -35.84
+  7         14            0.51           -36.69
+  8         14.57         0.51           -37.23
+  9         14.9          0.5            -37.52
+ 10         15            0.5            -37.61
+ 11         14.89         0.5            -37.51
+ 12         14.58         0.51           -37.24
+ 13         14.01         0.51           -36.7
+ 14         13.24         0.52           -35.85
+ 15         12.19         0.53           -34.47
+ 16         10.89         0.55           -32.19
+ 17          9.26         0.59           -28.06
+ 18          7.25         0.68           -19.37
+ 19          5.03         0.92             1.09
+ 20          3.6          1.38            29.71
+
+**The equivalent figures for Earth and Mars are 6.5 and -46.33°C.
+The actual (overall) temperature is affected by the greenhouse
+gases in the atmosphere. That will slow IR radiation out but,
+as someone pointed out, it will also reduce Rimbaud's IR coming
+in. The atmosphere will also block some (most?) of Baudelaire's
+UV radiation. And then there's the overall albedo, which will
+vary with the size of the ice caps. And then there's the planet's
+thermal inertia... All of which should keep Nermal cold on the way
+down, and (relatively) warm on the way back out.
+
+--
+    Bill Woods
+
+    "Baudelaire is the foremost seer, king of poets, a *true God*.
+ Even so, he lived in too artistic a milieu; his so highly praised
+ form is meager. Ventures into the unknown demand new forms."
+                                                --  Arthur Rimbaud
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 07:29:18 UTC - Douglas Muir:
+Bill Woods wrote:
+[snip reworking of the orbit]
+
+
+> For convenience, how about setting the year at 20.0 years?
+I want it to be close to 20 years, but putting it right on the nose seems a
+bit pat.
+
+
+
+> For  Mbaud = 2 Msun  , that means  a = 9.3 AU . Any combination
+> of peribaud and apobaud which average out to that will work.
+> 
+> How about turning up the heat from Rimbaud by increasing its mass,
+> and thus luminosity? Instead of a dull red, make it a nice cherry red.
+I think I'd rather move it closer, which has the additional advantage of
+shortening the overlong "day".
+
+[snip lovely chart]
+
+This is better... maybe still not perfect.  Let me think agout this.
+
+
+
+>     "Baudelaire is the foremost seer, king of poets, a *true God*.
+>  Even so, he lived in too artistic a milieu; his so highly praised
+>  form is meager. Ventures into the unknown demand new forms."
+>                                                 --  Arthur Rimbaud
+Yes!  Exactly.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 07:46:09 UTC - Douglas Muir:
+Brian Davis wrote:
+
+> >> how "Earthlike"?...Can we assume a 80/20 N2/O2 mix at 1 Atm
+> >> under a gravity of 1 G?
+> >
+> > Yes, to a first approximation -- give or take 10%... I'd like to
+> > keep it simple for now.
+> 
+>    First Law of Ecology: you can never do just one thing. There are at
+> least two non-Earth-like implications of your set-up, the insolation
+> (the major point of this thread), and the *rotation*. Nerval is going to
+> rotate much slower than Earth, with a correspondingly weak Coriolis
+> parameter.
+Well, sure.  This is why I want to keep as many variables constant as possible.
+
+Frex, I think that an Earthlike planet with a 200-hour "day" would have pretty
+negligible Coriolis force.  What it might have instead, I suspect, is some
+sort of convection cell system between the cool and warm systems.  We don't
+see this on Earth because the planet rotates too fast, and air moving north or
+south gets deflected.  On Nerval, things might be otherwise.  But if we also
+change atmospheric density, gravity, and what have you, it all becomes quite
+difficult to visualize.
+
+
+
+> > There might be a bit more vulcanism, but this is more because Nerval
+> > is younger than Earth (c. 1.5 gy instead of 4.5) than because of
+> > tidal effects.
+> 
+>    Another great point that I completely missed! Earth's current flux is
+> around 0.070 W/m^2 (averages 1.7 W/m^2 in geothermal sites). ASSuming
+> the Earth's heat output is dominated by the mantle (not too bad), and
+> that in turn is controled by four primary isotopes, I get a heat flux
+> for a 1.5 Ga Earth around 2.4 times higher, quite significant.
+H'm.  Can you dig just a bit deeper into that for me?  How did you come up
+with that figure?
+
+-- This could make the "Earthlike" aspect a bit harder to manage; more
+volcanoes means more gas going into the atmosphere, among other things.  OTOH,
+it could give colonists places to live during the winter -- I'm thinking hot
+springs and geothermal power here.
+
+
+
+>    If you assume that the brown dwarf has at least a Jovian field,
+> Nerval is going to be *inside* Rimbaud's bow shock. 
+[thumps head]  You're right, of course.
+
+
+
+> This could be a good
+> thing, as it protects the upper atmosphere from solar wind stripping
+> during close approaches to Baudelaire... 
+Urk.  Good point.  Although, you know, that would only be an issue one year
+out of twenty.
+
+
+[snip formula... thanks!]
+
+
+
+>    After posting that I realized that Hal Clement once again beat us all
+> to it, with "Cycle of Fire", but I still think it's a good idea. And by
+> this point, I figured you *liked* working out details, or you would have
+> left dozens of posts ago.
+Mais oui.  I want to get the geology and planetology down before I start on
+the biosphere, though.
+
+
+
+> > does anyone know what CO2 snow in an Earthlike atmosphere
+> > would look like?  Tiny specks, big fluffy flakes?
+> 
+>    Size would depend on how you form it, and with as low a density as
+> CO2 takes in a (human-breathable) atmosphere, I suspect and CO2 precip
+> would be in tiny particles. 
+H'm?  Is there that much less CO2 in the atmosphere than water vapor?  If all
+the CO2 in the atmosphere condensed out, how many cm of "snow" would it make?
+
+
+
+> I'm not even sure I can think of a mechanism
+> to "pack" CO2(s) into larger objects, like flakes or "Carbon dioxide men".
+We can make snowballs and snowmen because ice, under pressure, melts a little.
+ Squeeze a handful of snow and you wet it just a bit.  Release the pressure
+and it refreezes, binding the snow crystals back together.
+
+We've all had the experience of trying to make a snowball from ice that's
+either too wet or too dry; it won't pack (though you can work with fine, dry
+snow if you squeeze a bit harder).
+
+CO2, though, doesn't want to be liquid at Earthlike air pressure.  You'd have
+to squeeze it *really* hard to pack it.  I suspect that it would be like very
+fine sand or dust... does anyone out there know for certain?
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 12:39:38 UTC - Oliver Neukum:
+> My concern isn't the inclination of the orbital plane.  It is that having
+> the brown dwarf floating around will result in occasional nudging of the
+> planet's orbit because the barycenter of the two stars will be wobbling,
+I may be in boneheaded mode, but why ?
+Shouldn't the stars orbit a center of mass, which all things equal
+wouldn't be in the center of a virtual line connecting them ?
+
+
+> sometimes moving closer to the planet and sometimes farther away.  That
+> seems like it might make the planet's orbit unstable.
+There might be tides, but the planet is far out.
+
+        Regards
+                Oliver
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 12:53:01 UTC - Oliver Neukum:
+> CO2, though, doesn't want to be liquid at Earthlike air pressure.  You'd have
+> to squeeze it *really* hard to pack it.  I suspect that it would be like very
+> fine sand or dust... does anyone out there know for certain?
+CO2 snow on an earthlike planet is hardly dry.
+And given sufficient time it will become ice, like ordinary snow.
+To get liquid CO2 you need ~30 bars, not all that much pressure.
+
+I have handeled solid CO2, but under lab conditions that stuff is too
+"wet" and you can't form it by hand. Your gloves don't provide enough
+insulation.
+
+        HTH
+                Oliver
+ 
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 16:21:27 UTC - Brian Davis:
+Matthew DeBell wrote:
+
+> My concern isn't the inclination of the orbital plane.  It is that
+> having the brown dwarf floating around will result in occasional
+> nudging of the planet's orbit...
+   Two was to do this. By analogy & by calculation.
+
+   First, compare the situation to a similar situation in the solar
+system that we *know* is stable. The mass ratio between the star & the
+brown dwarf is about 100-to-1, while the Sun's ratio with Jupiter is
+1000-to-1; other things being equal (Rimbaud's close approach is similar
+to Jupiter's average distance), orbits about Rimbaud should be *more*
+stable than jovian orbits. And Nerval orbits only 80% further out than Callisto.
+
+   Second, a satellite orbit is stable if it orbits closer than about
+1/3 a_hill, where a_hill is:
+
+   a_hill = a ( m / (3M) )^(1/3)
+      a = Moon's orbital radius
+      m = planet's mass
+      M = stellar mass
+
+For Rimbaud, a_hill = 0.59 AU, so anything closer than about 0.2 AU
+should be in a long-term stable orbit (at least w.r.t. stellar
+perturbations). Nerval orbits well within this limit.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 19:56:25 UTC - Matthew DeBell:
+Oliver Neukum wrote in message ...
+>> My concern isn't the inclination of the orbital plane.  It is that having
+>> the brown dwarf floating around will result in occasional nudging of the
+>> planet's orbit because the barycenter of the two stars will be wobbling,
+>
+>I may be in boneheaded mode, but why ?
+>Shouldn't the stars orbit a center of mass, which all things equal
+>wouldn't be in the center of a virtual line connecting them ?
+I didn't express that well.  You're right, the stars orbit a center of
+gravity.  I believe it's a shared focus of the two ellipses that describe
+their orbits.  (That point is at the center of a virtual line connecting
+them if the stars are of equal mass.  If they're of different masses then
+it's not at the center.)  If the two stars are the only objects involved
+then the barycenter doesn't wobble.
+
+Now, with three-body problems I'm out of my depth.  But my question ("Would
+the orbit be stable?") arose because I wonder if the planet's orbit may be
+perturbed when it draws relatively close to one of these stars.  However, I
+recall from your original description that the stars are exceptionally close
+together, so suppose the orbit would most likely be stable.
+
+--
+Matthew DeBell
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 20:07:28 UTC - Brian Davis:
+Douglas Muir wrote:
+
+> Frex, I think that an Earthlike planet with a 200-hour "day" would
+> have pretty negligible Coriolis force.  What it might have instead,
+> I suspect, is some sort of convection cell system between the cool
+> and warm systems.  We don't see this on Earth because the planet
+> rotates too fast,
+   Well, we sort of do - the direct thermal circulation is termed the
+Hadley circulation, and the region dominated by it the Hadley cell.
+There is also a direct cell near the poles (the polar cell; very weak,
+really, and some people think it a bad description to even talk about
+it) and a indirect cell (the Ferrel cell) inbetween.
+   What I was getting at is the temperate zone, with clashing warm &
+cold air masses(the baroclinic zone), is located at the northern
+boundary of the Hadley cell, and how far north that cell extends depends
+on the rotation, or more specificly a number called the thermal Rossby
+number (all units are mks units):
+
+   Ro = g H_tropo [ (T_eq - T_pole) / T_mean ] / ( omega^2 R^2 )
+      H_tropo = height of the tropopause, *usually* where P = 0.2 Atm
+      T_eq, T_pole, T_mean = equatorial, polar, and global mean temps
+      omega = 2pi / P = angular rotation rate [rad/sec]
+      R = planetary radius
+
+You can rough out the latitudinal temperature gradient with the BB
+approximation to get an estimate of this thermal Rossby number: it's
+around 0.2 for Earth, while a much larger 100 for Venus, and partially
+explains the different atmospheric circulations. The northern boundary
+of the Hadley cell (in degrees) is then:
+
+   theta = 90 / ( 1 + 17 exp[ -0.5846 (5.3 + ln(Ro)) ] )
+
+(note: this is a vast simplification of a much more complex theoretical
+derivation I ran across: any errors are my own, and *not* the original
+paper's). This implies Earth's baroclinic zone is located around 30°
+latitude, while for Venus it's 86° (no effective baroclinic zone).
+   Assuming the latitudinal temperature gradient is Earth-like (1/3) and
+and omega = 8.727e-6 rad/sec (a 200 hour sidereal day), I get Ro = 16,
+which implies theta = 78°, much higher than on Earth; by this one
+estimate, a large section of Nerval might be dominated by very stable
+(tropical-type) weather, without a lot of frontal systems that
+charecterize the baroclinic zones on Earth. With that high a thermal
+Rossby number, it also might have superrotating winds aloft like Titan &
+Venus do.
+
+
+>>> There might be a bit more vulcanism
+>>
+>> Another great point that I completely missed! Earth's current flux is
+>> around 0.070 W/m^2... I get a heat flux for a 1.5 Ga Earth around 2.4
+>> times higher, quite significant.
+> 
+> H'm.  Can you dig just a bit deeper into that for me?  How did you
+> come up with that figure?
+   By taking the cuurent mantel abundances of the isotopes, and
+calculating their abundances (& thus heat production) 3 Ga in the past,
+based on their half-lives. The amount of heat produced at a time t is:
+
+   H = H_o exp[ -lambda t]
+      H_o = current heat  production [W/kg]
+      lambda = decay constant for isotope in question
+
+For instance, a rock w/ 1 ppm K-40 produces arouns 2.8e-11 W/kg. 4.6 Ga
+ago (t = - 4.6e+9 years), it would have produced 3.6e-10 W/kg (lambda
+for K-40 is approximately 5.55e-10 years^-1), or about 13 times as much
+heat. Now all you need to know are the heat production of the isotopes
+currently. For undepleted mantle currently, U-238 produces 1.9e-12 W/kg
+(lambda = 1.55e-10 years^-1), U-235 produces 8.2e-14 (lambda =
+9.85e-10), Th-232 is 2.7e-12 (lambda = 4.95e-11), & K-40 is 6.7e-13
+(lambda = 5.55e-10, roughly).
+   Does that make sense? You can adjust this by using diffeent relative
+proportions on the isotopes, of course, and you really have to figure
+out each isotope individually and then add them up.
+
+
+> This could make the "Earthlike" aspect a bit harder to manage; more
+> volcanoes means more gas going into the atmosphere, among other 
+> things.
+   It would also imply greater rates of CO2 recycling via oceanic crust
+subduction. The system balances in most cases, so I don't think this is
+too much of a worry overall (great for "local color" however).
+
+
+> it could give colonists places to live during the winter -- I'm 
+> thinking hot springs and geothermal power here.
+   Good thought, IMHO. I suspect you would have roughly the same flux in
+geothermal areas (1-2 W/m^2), but more of them, although it's just a
+hunch, no data or calcs to back it up.
+
+
+>> If you assume that the brown dwarf has at least a Jovian field,
+>> Nerval is going to be *inside* Rimbaud's bow shock.
+> 
+> [thumps head]  You're right, of course.
+   Planetary B-fields are something I'm only beginning to realize are
+very relevant, for atmospheric issues at least. This was pointed out to
+me by some of the Contact worldbuilders and I'm still trying to work out
+the consequences for habitable moons of M dwarf gas giants (a somewhat
+similar issue to Nerval/Rimbaud).
+
+
+>> it protects the upper atmosphere from solar wind stripping during
+>> close approaches to Baudelaire...
+> 
+> ...that would only be an issue one year out of twenty...
+   ...for 1.5 Ga or so - equivilent to worrying if a terrestrial
+atmosphere could be striped in 75 Ma at a distance of 4 AU from a 2 Ms,
+12 solar luminosity star. I state the problem that way so somebody more
+knowledgable than me can hit it, I'm rather clueless on even a BotE
+estiamte I'd trust on this.
+
+
+> H'm?  Is there that much less CO2 in the atmosphere than water vapor?
+   Um, well,... of *course* I checked this before posting... [sounds of
+rapid behind-the-back math]... OK, there's not *that* much less CO2, but
+it's still significant. 350 ppm CO2 is equivilent (I think) to 0.35 mb,
+while the partial pressure of water in saturated air at 280 K is around
+12 mb. Not as big a difference as I first assumed, but still
+significant. Keep in mind you don't see water snow at very cold
+temperatures, mostly (I assume) due to a lack of water vapor.
+
+
+> If all the CO2 in the atmosphere condensed out, how many cm of "snow"
+> would it make?
+   Not much? Depends critically on the density of the precipitate.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 20:11:14 UTC - Brian Davis:
+Bill Woods wrote:
+
+> Time(yr)  Distance(AU) Insolation(/sun) BB Temp(°C)**
+>   0          3.6          1.38            29.72
+>   1          5.01         0.93             1.26
+>   2          7.23         0.68           -19.27
+>   3          9.18         0.59           -27.82
+   I would have to agree with Douglas on this one - lovely table Bill.
+How exactly did you do it? Have you spreadsheeted up the tough half of
+the Kepler problem, or is there some simple way the rest of us can
+generate such a table w/out successive approximation?
+   Heck yeah I should know this - but elliptic integrals were always a
+little (try a lot) bit beyond me.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 21:50:36 UTC - Douglas Muir:
+Brian Davis wrote:
+> 
+> Douglas Muir wrote:
+> 
+> > Frex, I think that an Earthlike planet with a 200-hour "day" would
+> > have pretty negligible Coriolis force.  What it might have instead,
+> > I suspect, is some sort of convection cell system between the cool
+> > and warm systems.  We don't see this on Earth because the planet
+> > rotates too fast,
+> 
+>    Well, we sort of do - the direct thermal circulation is termed the
+> Hadley circulation, and the region dominated by it the Hadley cell.
+Okay.  Interesting.
+
+
+
+>    What I was getting at is the temperate zone, with clashing warm &
+> cold air masses(the baroclinic zone), is located at the northern
+> boundary of the Hadley cell, and how far north that cell extends depends
+> on the rotation, or more specificly a number called the thermal Rossby
+> number 
+[snip interesting equation]
+
+H'm.  So... raising the planet's gravity, or the height of its troposphere, or
+the difference between equatorial and polar temperature would increase this
+Rossby number, while increasing its size or the speed of its rotation would
+tend to decrease it... do I have that right?
+
+And a bigger Rossby number means a wider "tropical" belt of (relatively)
+stable weather?
+
+
+
+>    Assuming the latitudinal temperature gradient is Earth-like (1/3) and
+> and omega = 8.727e-6 rad/sec (a 200 hour sidereal day), I get Ro = 16,
+> which implies theta = 78°, much higher than on Earth; by this one
+> estimate, a large section of Nerval might be dominated by very stable
+> (tropical-type) weather, without a lot of frontal systems that
+> charecterize the baroclinic zones on Earth. With that high a thermal
+> Rossby number, it also might have superrotating winds aloft like Titan &
+> Venus do.
+Wouldn't the Rossby number change at apastron?
+
+If nothing else, surely there'd be thermal expansion of the atmosphere,
+raising the troposphere.
+
+
+[of vulcanism -- snip another interesting equation -- h'm, I need to save these]
+
+
+
+> > This could make the "Earthlike" aspect a bit harder to manage; more
+> > volcanoes means more gas going into the atmosphere, among other
+> > things.
+> 
+>    It would also imply greater rates of CO2 recycling via oceanic crust
+> subduction. The system balances in most cases, so I don't think this is
+> too much of a worry overall (great for "local color" however).
+Yeah... weathering is a big part of the CO2 cycle too, though.  And there
+won't be too much rain through most of the year to wash CO2 out of the atmosphere.
+
+OTOH, spring/summer/fall will have plenty of wild weather and lots of erosion.
+ So maybe that balances, too.
+
+
+
+
+> > it could give colonists places to live during the winter -- I'm
+> > thinking hot springs and geothermal power here.
+> 
+>    Good thought, IMHO. I suspect you would have roughly the same flux in
+> geothermal areas (1-2 W/m^2), but more of them, although it's just a
+> hunch, no data or calcs to back it up.
+I think at least some of the colonists are going to live in heated (but not
+pressurized) domes, with Earthlight lamps, heaters, and pocket-sized Terran ecosystems.
+
+Given the planet's marginal habitability, the colonists can't really survive
+without at least 20th century technology; at a minimum, they need electricity
+to run lamps to grow Earth-plants for food.  Paradoxically, this has made them
+relectant to trust _very_ advanced technology, unless it's very very very
+sturdy and redundant.
+
+Geothermal power suits them very well.  It's about the simplest generation
+method imaginable (drill a hole, stick a pipe in it, attach a turbine and
+generator); you _can_ use all sorts of high tech to make it work better, but
+you can make do with 19th century tools if need be.  
+
+
+
+>    Planetary B-fields are something I'm only beginning to realize are
+> very relevant, for atmospheric issues at least. This was pointed out to
+> me by some of the Contact worldbuilders and I'm still trying to work out
+> the consequences for habitable moons of M dwarf gas giants (a somewhat
+> similar issue to Nerval/Rimbaud).
+Ah, interesting.  Why put it around the GG instead of the sun itself, though?
+
+
+
+> > H'm?  Is there that much less CO2 in the atmosphere than water vapor?
+> 
+>    Um, well,... of *course* I checked this before posting... [sounds of
+> rapid behind-the-back math]... OK, there's not *that* much less CO2, but
+> it's still significant. 350 ppm CO2 is equivilent (I think) to 0.35 mb,
+> while the partial pressure of water in saturated air at 280 K is around
+> 12 mb. Not as big a difference as I first assumed, but still
+> significant. Keep in mind you don't see water snow at very cold
+> temperatures, mostly (I assume) due to a lack of water vapor.
+That's right.  Very cold air won't hold water vapor at all, or barely.
+
+So CO2 snow would probably be rare, and tiny specks rather than flakes.  Still
+happen sometimes, though.  Okay.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Tuesday, 12 December 2000 23:28:46 UTC - Brian Davis:
+Brian Davis wrote:
+
+>> My concern isn't the inclination of the orbital plane.  It is that
+>> having the brown dwarf floating around will result in occasional
+>> nudging of the planet's orbit...
+> 
+>    Two was to do this. By analogy & by calculation...
+   My error, I mis-read what subthread I was answering too. That said, I
+never understood the initial post by Oliver. Can you explain it again?
+For a red dwarf orbiting a tightly bound massive binary, I would think
+you would have the same insolation as if you replace the binary with a
+solitary (and slightly more massive) star.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 13 December 2000 01:02:44 UTC - Jim Davies:
+Also spracht Douglas Muir <dougla...@yale.edu <>>:
+>CO2, though, doesn't want to be liquid at Earthlike air pressure.  You'd have
+
+>to squeeze it *really* hard to pack it.  I suspect that it would be like very
+>fine sand or dust... does anyone out there know for certain?
+Unlike water, CO2 is non-polar: there are no nonbonding orbitals on
+the C, so it's a straight symmetric molecule O=C=O. As a result, I
+doubt it would have any cohesion to speak of. Much more dominant would
+be any trace of water, which would combine with the CO2 to produce
+carbonic acid, which is clearly polar (pKa1 of about 6). As a result,
+a saturated CO2/water snowball would have about 10 times the cohesion
+of a pure water snowball. I think. I've not looked at this for 20
+years.
+
+- 
+Jim Davies
+----------
+Mind your manners, son! I've got a tall pointy hat!
+----------------------------------------------------------------------------
+
+Wednesday, 13 December 2000 02:32:40 UTC - Brian Davis:
+Douglas Muir wrote:
+
+> H'm.  So... raising the planet's gravity, or the height of its
+> troposphere, or the difference between equatorial and polar
+> temperature would increase this Rossby number, while increasing its
+> size or the speed of its rotation would tend to decrease it... do I
+> have that right?
+   That's how I'd read the equation. The complication is that few of
+those parameters are actually independant: the latitudinal themperature
+gradient, for instance, depends on the atmospheric circulation, which is
+what we're trying to figure out here. Likewise the tropopause height
+depends on the atmospheric scale height, and thru that inversely on
+gravity. So the term "g H_tropo" can be rewritten with no dependance on
+gravity, if you wanted.
+
+ 
+> And a bigger Rossby number means a wider "tropical" belt of
+> (relatively) stable weather?
+   Probably. The catch to all this is that I don't know how practical it
+is on very slowly-spinning worlds like Titan or Venus. It gives some
+nice estimates, but the flow regime is so different it makes me
+sceptical (although the source does apply it to such systems, so it may
+just be me).
+
+
+> Wouldn't the Rossby number change at apastron?
+   Well, maybe. Obviously the temperature changes, which will change the
+scale height (& thus the tropopause height, as you mention), and *may*
+change the dimensionless latitudinal temperature gradient (T_eq -
+T_pole)/T_mean. But I'm not sure it changes it enough, particularly over
+the short timespans we're talking about, to have much of an effect. It's
+a very interesting idea however - I'd not thought about such
+far-reaching changes in atmospheric circulation in this setting. It
+could 
+*really* play havoc with trying to determine the climate throughout the
+year (fun!).
+
+
+> If nothing else, surely there'd be thermal expansion of the 
+> atmosphere, raising the troposphere.
+   Using Bill Wood's numbers for a BB equlibrium surface temperature,
+the tropopause would be around 7 km during the winter (17 of the 20
+years), ramping suddenly up to as high as 8.9 km for just three years.
+That changes the thermal Rossby number (& the poleward extent of the
+Hadley zone) from 11.9 to 15.1. That's not huge - the baroclinic zone
+would be around 76° latitude in the winter, and 78° in the brief summer.
+   To throw in yet another wrinkle, if someone wants to yell at me that
+the assumption of a constant tropopause height is unjustified (on Earth,
+for instance, the tropopause is lower in the polar regions), feel free.
+It doesn't shift the results that much (I think it was ignored in the
+original paper as well).
+
+> [on vulcanism -- snip another interesting equation -- h'm, I need
+> to save these]
+
+   Yes, that's how it starts... and soon you have pages & pages of them
+(you didn't think I was pulling all this stuff out of my gray matter,
+did you?). Organizing them becomes a real trick.
+
+
+> Yeah... weathering is a big part of the CO2 cycle too, though.  And
+> there won't be too much rain through most of the year to wash CO2 out
+> of the atmosphere.
+   I'm not sure you need rain to scavenge CO2 out of the atmosphere -
+the sink for atmospheric CO2 is ultimately ocean carbonates, so it's
+dissolving in the ocean that scavenges CO2. the bigger problem (to my
+mind) is how the conventional carbonate/silicate cycle might work on a
+world with such wildly varying climate, in particular CO2 snow. The
+cycle as a whole should proceed "normally" (the time constants for
+dissolution in the oceans and crustal recycling will buffer the system),
+but that extra sink for CO2 may shift the "set-point" for the system, if
+you know what I mean.
+
+
+> Given the planet's marginal habitability, the colonists can't really
+> survive without at least 20th century technology; at a minimum, they
+> need electricity to run lamps to grow Earth-plants for food.
+   Maybe... another possibility is genetic engineering to produce crops
+that grow very rapidly during the "summer", enough to provide food
+during the "winter". You might need more acres per person to produce the
+food, but it's a possibility. Still another is seeing just how little
+light you need - in sunlight, as little as 10-20 W/m^2 (or less) can
+provide enough energy to grow (not fast, but at least grow). This won't
+happen under the near-IR insolation from the brown dwarf, but it might
+extend the growing season from the hot star (you would get down to 10
+W/m^2 at a distance of around 40 AU, assuming a luminosity of 12 solar).
+   Of course, if this is a plot point, forget it - not neccessary, just
+there in case it's helpful.
+
+
+>> This was pointed out to me by some of the Contact worldbuilders and
+>> I'm still trying to work out the consequences for habitable moons of
+>> M dwarf gas giants.
+> 
+> Ah, interesting.  Why put it around the GG instead of the sun itself,
+> though?
+   It's another way around the tidal locking issue. While a terrestrial
+planet in the habitable zone would be tidally locked, a GG wouldn't -
+it's a lot harder to dissipate energy there. So a large moon of such a
+GG would have a regular day-night cycle while still remaining in the
+habitable zone.
+   You want another reason? It sounds like a very interesting setting
+for science fiction in general. After all, why didn't you just pick a
+run-of-the-mill Earth-like world ;-) ?
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 13 December 2000 05:24:08 UTC - Bill Woods:
+Brian Davis wrote:
+
+> Bill Woods wrote:
+>
+> > Time(yr)  Distance(AU) Insolation(/sun) BB Temp(°C)**
+> >   0          3.6          1.38            29.72
+> >   1          5.01         0.93             1.26
+> >   2          7.23         0.68           -19.27
+> >   3          9.18         0.59           -27.82
+>
+>    I would have to agree with Douglas on this one - lovely table Bill.
+> How exactly did you do it? Have you spreadsheeted up the tough half of
+> the Kepler problem, or is there some simple way the rest of us can
+> generate such a table w/out successive approximation?
+The same way you and Gareth suggested: used a spreadsheet
+to calculate time(angle), dist(angle), insol(dist) and
+temp(insol). Then I picked out the values of time at one
+year intervals.
+
+I do have an infinite series for angle(time), but only out
+to the e^3 term -- not useful in this case.
+
+'Fogg's Method' looks interesting. If I'm reading the dependencies
+right I should start with some Tsurf_init and go q_water(Tsurf),
+A(q_w), Teff(A), Tg(q_w,Teff), Tsurf(Teff,Tg), and around and around.
+Is that right?
+
+
+>
+>    Heck yeah I should know this - but elliptic integrals were always a
+> little (try a lot) bit beyond me.
+You're NOT alone.
+
+--
+    Bill Woods
+                         (I'm starting to worry about this guy)
+              "There exist only three beings worthy of respect:
+the priest, the soldier, the poet. To know, to kill, to create."
+                                        --  Charles Baudelaire
+----------------------------------------------------------------------------
+
+Wednesday, 13 December 2000 09:25:46 UTC - Douglas Muir:
+Brian Davis wrote:
+[snip much about the Rossby number]
+
+Another thought just occurred to me: ocean circulation.
+
+Oceans have, like, mongo thermal mass.  Still, ocean temperature will change
+with the long year, especially at the surface.  This will raise... issues...
+with circulation.
+
+Meanwhile the slower rotation gives less Coriolis force to drive currents.
+
+Salinity... [clutches head].
+
+
+
+>    I'm not sure you need rain to scavenge CO2 out of the atmosphere -
+> the sink for atmospheric CO2 is ultimately ocean carbonates, so it's
+> dissolving in the ocean that scavenges CO2. 
+Yeah, but it's rain that pushes the cycle along, and so sets the equilibrium point.
+
+I mean, imagine two worlds starting with equal amounts of CO2 in the
+atmosphere, equal levels of vulcanism pumping more in and equal capacity to
+sink carbon in the oceans.  But one has more rain than the other (for whatever
+reason).  The rainier one will find an equilibrium with less atmospheric CO2;
+it's getting scrubbed out faster.  No? 
+
+
+
+> the bigger problem (to my
+> mind) is how the conventional carbonate/silicate cycle might work on a
+> world with such wildly varying climate, in particular CO2 snow. The
+> cycle as a whole should proceed "normally" (the time constants for
+> dissolution in the oceans and crustal recycling will buffer the system),
+Yeah, I think so.
+
+
+
+> but that extra sink for CO2 may shift the "set-point" for the system, if
+> you know what I mean.
+I don't think it's going to be that big a deal.  CO2 only falls as snow in
+high latitudes during winter.  And then, come spring, it goes straight back
+into the atmosphere.
+
+
+
+> > Given the planet's marginal habitability, the colonists can't really
+> > survive without at least 20th century technology; at a minimum, they
+> > need electricity to run lamps to grow Earth-plants for food.
+> 
+>    Maybe... another possibility is genetic engineering to produce crops
+> that grow very rapidly during the "summer", enough to provide food
+> during the "winter". You might need more acres per person to produce the
+> food, but it's a possibility. 
+I think it's simpler to gengineer a few simple food plants that can grow by
+Rimbaud's IR-rich light.   It may take some tinkering to get one sturdy enough
+to survive and grow wild in an alien biochemistry, but not so tough that it's
+going to take the place over, but it'd be worth doing.
+
+Normal, non-engineered Earth plants will grow OK during spring, summer and
+fall, as long as properly prepared soil is provided.  The colonists will miss
+out on a lot of plants that require Earth-like seasons (apple pie will be
+either a luxury or a legend), but the thing is doable.
+
+[H'm.  Would I want to live on a planet without mangoes?]
+
+
+
+> Still another is seeing just how little
+> light you need - in sunlight, as little as 10-20 W/m^2 (or less) can
+> provide enough energy to grow (not fast, but at least grow). 
+!  Really?  That seems amazingly feeble... like using a flashlight bulb to
+make a potted plant grow, give or take.
+
+
+
+> This won't
+> happen under the near-IR insolation from the brown dwarf, but it might
+> extend the growing season from the hot star (you would get down to 10
+> W/m^2 at a distance of around 40 AU, assuming a luminosity of 12 solar).
+Remind me again what the flux is at Earth-surface, temperate latitudes.
+
+
+
+>    You want another reason? It sounds like a very interesting setting
+> for science fiction in general. After all, why didn't you just pick a
+> run-of-the-mill Earth-like world ;-) ?
+Heh.
+
+
+Doug M.
+----------------------------------------------------------------------------
+
+Wednesday, 13 December 2000 17:03:22 UTC - Brian Davis:
+Douglas Muir wrote:
+> Another thought just occurred to me: ocean circulation... This will 
+> raise... issues... with circulation... less Coriolis... Salinity...
+> [clutches head].
+
+   I completely agree. The only out I can suggest, if you choose to
+worry about it at all, is for the Earth right now roughly half the heat
+transported to the pole is due to the atmopshere, and the other half due
+to the oceans. Would this happen on Nerval? Almost certainly not - but
+the positions of the continents would be critical as well, and I think a
+3D GCM with coupled oceans is a little bit beyond where you want to go
+with this.
+   At some point, you have the advantage of declaring it "fiction" - if
+a reader wants to run a GCM, more power to 'em.
+
+
+> The rainier one will find an equilibrium with less atmospheric CO2;
+> it's getting scrubbed out faster.  No?
+   Well, the rainier one will lower the CO2 level, but not due to rain
+per say but erosion. Increased rain -> faster erosion -> increased Ca
+ions in ocean -> shifting chemical equlibrium towards CaCO3 ->
+deposition of CaCO3, consequently drawing down dissolved CO2 levels ->
+atmopsheric CO2 dissolves in now undersaturated oceans -> less CO2,
+therefore less greenhouse warming -> lower temperature, less precipitation.
+   It's a subtle difference (perhaps a non-difference), but I wasn't
+sure how you were viewing the carbonate-silicate feedback.
+
+
+>> but that extra sink for CO2 may shift the "set-point" for the system
+> 
+> I don't think it's going to be that big a deal.
+   My concern was that the carbonate-silicate feedback depends also on
+the amount of CO2 in the atmosphere: more CO2 -> more CO2 into solution
+-> more CaCO3 deposited. But on Nerval what's the pCO2 that the ocean is
+in equilibruim with: the summer value (summer CO2 high is very short,
+occuring on such a brief timespan the oceans can not come into
+equilibrium with it)? The winter value (possibly closer, but not sure)?
+Or something between the two (my best bet; but where inbetween)?
+   Once again, I think we're worrying about trivial effects given the
+wealth of other approximations that are being thrown in - it's just that
+I like thinking about the trivia, it gives me a constant check on what's important.
+
+
+> I think it's simpler to gengineer a few simple food plants that can
+> grow by Rimbaud's IR-rich light.
+   If you are starting with terrestrial biochemistry, you may be in
+trouble: there should be an absolute minimum energy that a chlorophyll
+molecule can absorb - any less, and you can't knock an electron free,
+you just warm it up slightly. And if you postulate accessory pigments to
+capture low-energy photons, and then add up several so as to trigger the
+higher-energy chlorophyll, well... it will be tricky. There are some
+biochemical examples of this, sort of, I think... but it would be on my
+list of "radical changes"
+
+
+>> Still another is seeing just how little light you need - in
+>> sunlight, as little as 10-20 W/m^2 (or less) can provide enough
+>> energy to grow (not fast, but at least grow).
+> 
+> !  Really?  That seems amazingly feeble... like using a flashlight
+> bulb to make a potted plant grow, give or take.
+   I got this from Martyn Fogg's book "Terraforming" - it suprised me as
+well. He says:
+   "Undiluted sunlight is therefore adequate for some degree
+    of photosynthesis as far from the Sun as [roughly] 50
+    astronautical units... However, for reasonable rates of
+    biomass production, some concentration or supplementation
+    of natural sunlight will perhaps be required from the
+    orbit of Jupiter on outwards."
+If 1370 W/m^2 / (5 AU)^2 = 55 W/m^2 sunlight can provide "agriculture"
+of some form (taking Jupiter's distance as the practical limit), then
+that implies crops growing as far as 17 AU from Baudelaire (I assumed a
+bolometric luminosity of 14 for the star (from your 2nd , and
+"corrected" that to 11.6 to get the visual luminosity, which is closer
+to what plants can use). That implies (if you can mitigate the
+temperature issues) a year-around growing season (at least as a possibility).
+   With regard to light levels on Nerval during the winter (I know, this
+should be going under the "2nd draft" thread), using a visual luminosity
+of 11.6 and an apocentron of 14.4 AU, implies a flux of more than 75 
+W/m^2 - a very cloudy day on Earth is around 110 W/m^2, so this is more
+than enough for the human visual system to see "daylight".
+
+
+> Remind me again what the flux is at Earth-surface, temperate
+> latitudes.
+   Above the atmosphere, the solar constant is 1370 W/m^2 at 1 AU,
+although much of this can be filtered out by the atmosphere, it's not
+unusual to get between 700-1000 W/m^2 at noon on a sunny equatorial day.
+I guess I should "correct" my illumination levels above to account for
+atmospheric extinction & scattering as well... this might bring the 75
+W/m^2 estimate down to 40 W/m^2 (still plenty bright enough; think of
+the surface of a 40 W bulb spread out over a square meter - dim, but you
+can see), and move the "growing limit" in from 17 AU to around 12 AU -
+still a long growing season.
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 13 December 2000 17:24:02 UTC - Brian Davis:
+Bill Woods wrote:
+
+>> lovely table Bill. How exactly did you do it?
+> 
+> The same way you and Gareth suggested: used a spreadsheet
+> to calculate time(angle), dist(angle), insol(dist) and
+> temp(insol). Then I picked out the values of time at one
+> year intervals.
+   Do you mean "picked values of (angle) that yielded one year
+intervals"? If so, thanks for doing the work the rest of us were too
+lazy to do :-)
+
+
+> I do have an infinite series for angle(time), but only out
+> to the e^3 term -- not useful in this case.
+   Agreed, but could you post the series anyway? Inquiring (and
+math-challenged) minds want to know.
+
+ 
+> 'Fogg's Method' looks interesting. If I'm reading the dependencies
+> right I should start with some Tsurf_init and go q_water(Tsurf),
+> A(q_w), Teff(A), Tg(q_w,Teff), Tsurf(Teff,Tg), and around and around.
+> Is that right?
+   Yes, although Fogg started with step (1), calculating Teff(A) with an
+assumed inital value for A, 0.3 being a good rough start. If you look in
+a lot of the ACCRETE-type world-generators around, some of them
+(STARFORM for instance, I think) use this method. The description I
+posted is based directly on his paper, which has a few bells & whistles
+that reading somebody elses code doesn't give you (mostly, explainations).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Wednesday, 13 December 2000 21:28:28 UTC - Oliver Neukum:
+>    My error, I mis-read what subthread I was answering too. That said, I
+> never understood the initial post by Oliver. Can you explain it again?
+> For a red dwarf orbiting a tightly bound massive binary, I would think
+> you would have the same insolation as if you replace the binary with a
+> solitary (and slightly more massive) star.
+Yes, you would. But a binary lives longer. That way you double insolation
+without paying the price. Just a little cheating.
+
+        HTH
+                Oliver
+----------------------------------------------------------------------------
+
+Thursday, 14 December 2000 02:43:34 UTC - Bill Woods:
+Brian Davis wrote:
+
+> Bill Woods wrote:
+>
+> >> lovely table Bill. How exactly did you do it?
+> >
+> > The same way you and Gareth suggested: used a spreadsheet
+> > to calculate time(angle), dist(angle), insol(dist) and
+> > temp(insol). Then I picked out the values of time at one
+> > year intervals.
+>
+>    Do you mean "picked values of (angle) that yielded one year
+> intervals"? If so, thanks for doing the work the rest of us were too
+> lazy to do :-)
+Heck, that was the easiest part. I just copied those columns,
+pasted them into a text document, cut great swatches between
+the nearest-to-integral times, prettied up the result a bit,
+and pasted it into my post. It took longer to figure out why
+my temperature values were ~100° too high. Next go 'round,
+I'll add a column so I can sort for closeness-to-integrity.
+
+
+>
+>
+> > I do have an infinite series for angle(time), but only out
+> > to the e^3 term -- not useful in this case.
+>
+>    Agreed, but could you post the series anyway? Inquiring (and
+> math-challenged) minds want to know.
+from _Classical Dynamics_ by Marion, chap. 8.8:
+
+theta(t)  =  T + 2 e sinT + (5/4) e^2 sin4T
+               + (1/12) e^3 ( 13 sin6T - 3 sin2T ) + ...
+
+where T == 2 pi t / period
+
+This is the inverse of
+
+T(theta)  =  2 arctan( sqrt[ (1-e)/(1+e) ] tan(theta/2) )
+             - ( e sqrt(1-e^2) sin(theta) )/( 1 + e cos(theta) )
+
+
+
+>
+>
+> > 'Fogg's Method' looks interesting. If I'm reading the dependencies
+> > right I should start with some Tsurf_init and go q_water(Tsurf),
+> > A(q_w), Teff(A), Tg(q_w,Teff), Tsurf(Teff,Tg), and around and around.
+> > Is that right?
+>
+>    Yes, although Fogg started with step (1), calculating Teff(A) with an
+> assumed inital value for A, 0.3 being a good rough start. If you look in
+> a lot of the ACCRETE-type world-generators around, some of them
+> (STARFORM for instance, I think) use this method. The description I
+> posted is based directly on his paper, which has a few bells & whistles
+> that reading somebody else's code doesn't give you (mostly, explainations).
+Okay, so starting with A_init = 0.3 and q_water_init =   oops--
+What is the value for q_CO2_earth?  Are these q values in g/m^2,
+moles/cm^2 or what? I thought the greenhouse effect was due to
+water vapor much more than to CO2.
+
+
+
+>2) Calculate greenhouse correction (based on optical depth, Tau):
+>   Tg = [ (1 + ( 3 Tau / 4 ))^(1/4) - 1 ] Teff Fconv
+>      Tau = Tau_H2O + Tau_CO2
+>         Tau_H2O = 0.15 ( q_planet / q_earth )^(1/2)
+>         Tau_CO2 = 2.34 ( q_planet / q_earth )^(1/2)
+>            q_i = mass of atmospheric gas on earth or planet
+>                  (if you want to correct for H2O feedbacks, use
+>                  the q_water calculation in the step below)
+>      Fconv = 0.43 (parameter to allow for convective mixing)
+>
+>3) Calculate the surface temperature & a new effective albedo:
+>   Tsurf = Teff + Tg
+>   A = F_c A_c + (1-F_c) ( F_i A_i + F_w + A_w + F_r A_r + F_v A_v )
+>      F_c = 3.752e-17 q_water
+>         q_water = 1.258e+16 exp[ 0.0698 ( Tsurf - 288 ) ]
+--
+    Bill Woods
+                 (I'm *really* starting to worry about this guy)
+"I am the wound and the knife!
+ I am the blow and the cheek!
+ I am the limbs and the wheel --
+ The victim and the executioner!"
+                                    --  Charles Baudelaire
+----------------------------------------------------------------------------
+
+Thursday, 14 December 2000 21:03:16 UTC - Brian Davis:
+Bill Woods wrote:
+
+>> Do you mean "picked values of (angle) that yielded one year
+>> intervals"?
+> 
+> Heck, that was the easiest part. I just copied those columns,
+> pasted them into a text document, cut great swatches between
+> the nearest-to-integral times...
+   Ugh, Yeah, I really should have thought of that - well, now I know
+for next time :-).
+
+>>> I do have an infinite series for angle(time)...
+
+> from _Classical Dynamics_ by Marion, chap. 8.8:
+   Ugh again. That very text is sitting just a few feet away. Sigh...
+thanks for the second time, for the series and for the reminder of what
+sources to turn to.
+
+
+> Okay, so starting with A_init = 0.3 and q_water_init =   oops--
+> What is the value for q_CO2_earth?
+   You caught me. Unknown, although you could figure it out if you
+really wanted to I guess - the idea of Fogg's implementation was that
+everything was scaled as much as possible to the one example we have,
+Earth. He assumed the total volatiles availible was proportional to the
+mass of the planet (& inversely proportional to the mass of the central
+star), so a planet with 2 Me would have twice Earth's inital volatiles.
+He then further assumed that any planet experiencing insolations between
+1580 W/m^2 (a runaway greenhouse limit) and 86 W/m^2 promptly deposit
+99% of their volatile inventory as solids & liquids, thereby estimating
+the inital surface pressure (in Atm) as:
+
+   P_surf = Volatiles ( R_e / R )^2 (g/g_e)
+
+
+> Are these q values in g/m^2, moles/cm^2 or what?
+   since the equations only care about dimensionless quanities like
+q_CO2_earth / q_CO2_planet, it doesn't matter.
+
+
+> I thought the greenhouse effect was due to water vapor much more
+> than to CO2.
+   So did I, to be honest - I'll have to dig out some of my past
+invokations of this routine to check exactly how that squares. I once
+wrote Martyn about this routine (and others), but he said that the
+actual code was pretty well lost (it was stored on punched tape, if I
+recall - he did this some time ago).
+
+-- 
+Brian Davis
+----------------------------------------------------------------------------
+
+Friday, 15 December 2000 11:35:18 UTC - Pekka P. Pirinen:
+On Mon, 11 Dec 2000 03:14:26 -0400, Douglas Muir <dougla...@yale.edu <>>
+wrote:
+> > ObSF: _Firetime_ and _Satan's World_
+> 
+> Yah.  And _A Deepness in the Sky_, of course, and that one about the "fair"
+> planet by George R. R. Martin.
+_Dying of the Light_, pretty good, too, with the same feeling of doom as
+those early award-winning short stories.
+
+And _Helliconia_, I suppose.
+
+  Pekka P. Pirinen
+-- 
+"Although we may never know with complete certainty the identity of
+the winner of this year's Presidential election, the identity of the
+loser is perfectly clear.  It is the Nation's confidence in the judge
+as an impartial guardian of the rule of law."  Justice John Paul Stevens
+----------------------------------------------------------------------------
+
+Sunday, 17 December 2000 08:40:59 UTC - Anton Sherwood:
+: Ross Smith wrote:
+: > There'll be a relationship between the eccentricity and the
+: > most likely ratio, but I don't know the specific numbers.
+Brian Davis <bda...@pdnt.com <>> writes on December 10:
+: In an ideal universe:
+:    W = (1-e)/(1+e)   _or_   e = (1-W)/(1+W)
+:    where W = sidereal years / sidereal days (ie- Mercury 2:3 = 2/3)
+:          e = orbital eccentricity
+
+I'm glad to see someone else get there first and do the work!
+Some examples:
+        0/1        1/1
+        1/9        4/5
+        1/8        7/9
+        1/7        3/4
+        1/6        5/7
+        1/5        2/3
+        1/4        3/5
+        2/7        5/9
+        1/3        1/2
+        2/5        3/7
+
+The next question is the shape of each ratio's attractor-basin.
+If e = 97/159, W = 31/128, I guess the tide at points other
+than perihelion pushes W toward 1/4.  The tendency toward
+lower integers is stronger at lower eccentricities.
+
+Perhaps someday I'll integrate (over an orbit) the torque
+on a rod rotating at its ideal rate as computed above; as
+a function of eccentricity, the zero-crossings alternately
+represent attractors and repulsors.
+
+Hm.  But if the eccentricity does not exactly coincide
+with an attractor, there will be some net torque -- so that
+W stabilizes slightly away from the rational!  This is absurd,
+so what have I missed?  Does tide affect eccentricity?
+
+-- 
+Anton Sherwood  --  br0...@p0b0x.com <>  --  http://ogre.nu/ <http://ogre.nu/>
