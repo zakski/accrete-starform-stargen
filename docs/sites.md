@@ -62,4 +62,7 @@
     * [1994 - Matt Burdick - Starform](http://www.znark.com/create/files/starform.zip)
     * [1997 - Ian Burrell - Accrete](http://www.znark.com/java/accrete/accrete-src.zip)
     * [2001 - Jon Leech - Accrete](http://www.znark.com/create/files/acrete.zip)
-    
+
+* ~~http://www.freelancetraveller.com/features/preproom/adaptaccrete.html~~
+    * Traveller RPG Stuff
+    * [Sagan's Paper](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
