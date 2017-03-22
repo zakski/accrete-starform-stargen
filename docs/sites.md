@@ -66,3 +66,34 @@
 * ~~http://www.freelancetraveller.com/features/preproom/adaptaccrete.html~~
     * Traveller RPG Stuff
     * [Sagan's Paper](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
+    
+* ~~http://www.mu.org/~joe/traveller/archive/software/~~
+    * [1997 - Christopher E. Web - Accrete2](http://www.mu.org/~joe/traveller/archive/software/accrete2.zip)
+    * [1997 - Christopher E. Web - Accrete3](http://www.mu.org/~joe/traveller/archive/software/accrete3.zip)
+    * Other useful traveller rpg worldbuilding programs
+    
+* ~~http://seegras.discordia.ch/Roleplay/Traveller/Software/~~
+    * [1999 - Peter Keel - Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+    * [1999 - Peter Keel - Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
+    * Other useful traveller rpg worldbuilding programs
+
+* ~~http://www.therpgsite.com/showthread.php?33255-Wanted-Tool-for-generating-Traveller-world-maps/page2&s=3edb549b7ab51c92c68bded225747753~~
+    * Other useful traveller rpg worldbuilding programs
+    
+* ~~http://www.therpgsite.com/showthread.php?11563-Traveller-Online-Generators-Tools-amp-c~~
+    * Other useful traveller rpg worldbuilding programs
+
+* ~~http://www.therpgsite.com/showthread.php?28548-Alternate-Traveller-Worldgen-Procedures~~
+   * Other useful traveller rpg worldbuilding programs
+
+* ftp://ftp.clark.net/pub
+
+* ftp.wustl.edu/pub/msdos_uploads/misc/USML 
+
+* ftp://caliban.physics.utoronto.ca/pub/accrete.tar.Z
+
+* http://www.clark.net/pub/nyrath/starmap.html
+
+* http://www.hooked.net/~dberry/index.html
+
+* http://members.aol.com/jimvassila/

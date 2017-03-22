@@ -1,0 +1,10 @@
+If you have a working C compiler you can compile sciibin and decode the file.
+
+Here are parts 1 and 2:
+http://macgui.com/usenet/?group=13&original=48
+http://macgui.com/usenet/?group=13&original=49
+
+The .bsq file suggests that after binscii decoding you will find the file is compressed with squeeze. Use usq, part of Nulib, to decompress the SQUeeze format.
+
+Credit goes to Dog Cow of MacGui website/forums
+Also FozzTexx and istarian from reddit
