@@ -31,40 +31,40 @@
 * ~~Mutazoids~~
 * ~~Other Suns~~
 * ~~Pax Draconis~~
-* Phoenix Command
-* Prime Directive
-* Reich Star
-* Ringworld
-* Robotech
-* Second Dawn
-* Serenity
-* Shatterzone
-* SLA Industries
-* Space 1889
-* Space Infantry
-* Space Master
-* Space Opera
-* Spaceship Zero
-* Star Frontiers
-* Stargate SG-1
-* Star Hero
-* Starship Troopers
-* Star Trek: The Role Playing Game (FASA)
-* Star Trek Roleplaying Game (Decipher)
-* Star Trek: The Next Generation Role-playing Game
-* Star Wars: The Roleplaying Game (West End Games)
-* Star Wars Roleplaying Game (Wizards of the Coast)
-* Star Wars Roleplaying Game (Fantasy Flight Games)
-* Star Wreck Roleplaying Game
-* Tales from the Floating Vagabond
-* Time Lord - a Doctor Who game
-* Transhuman Space
+* ~~Phoenix Command~~
+* ~~Prime Directive~~
+* ~~Reich Star~~
+* ~~Ringworld~~
+* ~~Robotech~~
+* ~~Second Dawn~~
+* ~~Serenity~~
+* ~~Shatterzone~~
+* ~~SLA Industries~~
+* ~~Space 1889~~
+* ~~Space Infantry~~
+* ~~Space Master~~
+* ~~Space Opera~~
+* ~~Spaceship Zero~~
+* ~~Star Frontiers~~
+* ~~Stargate SG-1~~
+* ~~Star Hero~~
+* ~~Starship Troopers~~
+* ~~Star Trek: The Role Playing Game (FASA)~~
+* ~~Star Trek Roleplaying Game (Decipher)~~
+* ~~Star Trek: The Next Generation Role-playing Game~~
+* ~~Star Wars: The Roleplaying Game (West End Games)~~
+* ~~Star Wars Roleplaying Game (Wizards of the Coast)~~
+* ~~Star Wars Roleplaying Game (Fantasy Flight Games)~~
+* ~~Star Wreck Roleplaying Game~~
+* ~~Tales from the Floating Vagabond~~
+* ~~Time Lord - a Doctor Who game~~
+* ~~Transhuman Space~~
 * Traveller
 * Traveller: 2300
-* Trinity
-* Uncharted Worlds
-* Universe
-* Warhammer 40,000 Roleplay
+* ~~Trinity~~
+* ~~Uncharted Worlds~~
+* ~~Universe~~
+* ~~Warhammer 40,000 Roleplay~~
 
 ## Sites
 * ~~http://markjstock.org/pages/builder.html~~
@@ -169,6 +169,8 @@
 * ~~http://members.tip.net.au/~davidjw/jumplink/tjp_titl.htm~~
     * links to [Christopher Webb's site](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/trav.html) which contains already referenced links
     * [1997 - Christopher E. Web - Accrete2 - Alt](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
+
+* http://www.sjgames.com/gameaids/gurps/stargen.zip
     
 ## Git Repos
 
@@ -179,3 +181,37 @@
 * https://github.com/calebrob6/accrete
 
 * https://bitbucket.org/dchapes/accrete
+
+* https://github.com/omega13a/stargen
+
+* https://github.com/kennon/Accrete.js
+
+* https://github.com/Zomega/garnets
+
+* https://github.com/makhidkarun/stargen
+
+* https://github.com/grahamreeds/StarGen
+
+* https://github.com/fusiongyro/starform
+
+* https://github.com/kbingman/accretejs
+
+* https://github.com/tmanderson/Accrete.js
+
+* https://github.com/kbingman/accrete
+
+* https://github.com/makhidkarun/accrete2
+
+* https://github.com/StollD/Accrete
+
+* https://github.com/sveco/AccreteSharp
+
+* https://github.com/donggas90/ACCRETEPlus
+
+* https://github.com/pgremo/accrete
+
+* https://github.com/glegeza/StarformNET
+
+* https://github.com/monolar/accrete-rb
+
+* https://github.com/monolar/nim-accrete
