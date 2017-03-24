@@ -175,43 +175,63 @@
 ## Git Repos
 
 * https://github.com/ThomasKerman/Accrete
+    * apparently resolves to https://github.com/StollD/Accrete
+    * added snapshot as "2016 - Dorian Stoll - Accrete"
 
 * https://github.com/zonkmachine/starsysgen
+    * added snapshot as "2015 - Oskar Wallgren - Accrete"
 
 * https://github.com/calebrob6/accrete
+    * added snapshot as "2013 - Caleb Robinson - Accrete"
 
 * https://bitbucket.org/dchapes/accrete
+   * added snapshot as "2016 - Dave Chapeskie - Accrete"
 
 * https://github.com/omega13a/stargen
+   * added snapshot as "2014 - Brandon Amaro - Stargen"
 
 * https://github.com/kennon/Accrete.js
+    * added snapshot as "2013 - Kennon Ballou - Accrete"
 
 * https://github.com/Zomega/garnets
+    * added snapshot as "2015 - Will Oursler - Stargen"
 
 * https://github.com/makhidkarun/stargen
+    * added snapshot as "2014 - Joseph Heck - Stargen"
 
 * https://github.com/grahamreeds/StarGen
+    * added snapshot as "2013 - Graham Reeds - Stargen"
 
 * https://github.com/fusiongyro/starform
+    * added snapshot as "2013 - Daniel Lyons - Starform"
 
 * https://github.com/kbingman/accretejs
+   * added snapshot as "2015 - Keith Bingman - Accrete"
 
 * https://github.com/tmanderson/Accrete.js
+  * added snapshot as "2013 - Mitch Anderson - Accrete"
 
 * https://github.com/kbingman/accrete
+  * added snapshot as "2014 - Keith Bingman - Accrete"
 
 * https://github.com/makhidkarun/accrete2
-
-* https://github.com/StollD/Accrete
-
+  * added snapshot as "2013 - Joseph Heck - Accrete2"
+  
 * https://github.com/sveco/AccreteSharp
+  * added snapshot as  "2012 - sveco - Accrete"
 
 * https://github.com/donggas90/ACCRETEPlus
-
+  * added snapshot as "2015- Jong-il Hong - Accrete"
+  
 * https://github.com/pgremo/accrete
+  * added snapshot as "2013 - pgremo - Accrete"
 
 * https://github.com/glegeza/StarformNET
+    * may still be in active development
+    * added snapshot as "2017 - George Legeza - Starform"
 
 * https://github.com/monolar/accrete-rb
+ * added snapshot as "2015 - Andreas Marr - Accrete"
 
 * https://github.com/monolar/nim-accrete
+* added snapshot as "2015 - Andreas Marr - Accrete - Nim"
