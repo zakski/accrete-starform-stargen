@@ -1,5 +1,72 @@
-# Incomplete Todo List of Possible hosting sites for accrete variants
+# Incomplete Todo List of Possible hosting sites / search terms for accrete variants
 
+##RPGS
+* ~~2300 AD~~
+* ~~Albedo~~
+* ~~Alternity~~
+* ~~Battlelords of the 23rd Century~~
+* ~~Blackwatch~~
+* ~~Buck Rogers XXVC~~
+* ~~D6 Space~~
+* ~~d20 Future~~
+* ~~Diaspora~~
+* ~~The Doctor Who Role Playing Game~~
+* ~~Eclipse_Phase~~
+* ~~Fading Suns~~
+* ~~FTL:2448~~
+* ~~GURPS Space~~
+* ~~Heavy Gear~~
+* ~~Incursion~~
+* ~~Jovian Chronicles~~
+* ~~Legionnaire~~
+* ~~Living Steel~~
+* ~~Macross II~~
+* ~~Mach: The First Colony~~
+* ~~The Mechanoid Invasion~~
+* ~~MechWarrior~~
+* ~~Mekton~~
+* ~~The Metabarons Roleplaying Game~~
+* ~~Metamorphosis Alpha~~
+* ~~Mutant Chronicles~~
+* ~~Mutazoids~~
+* ~~Other Suns~~
+* ~~Pax Draconis~~
+* Phoenix Command
+* Prime Directive
+* Reich Star
+* Ringworld
+* Robotech
+* Second Dawn
+* Serenity
+* Shatterzone
+* SLA Industries
+* Space 1889
+* Space Infantry
+* Space Master
+* Space Opera
+* Spaceship Zero
+* Star Frontiers
+* Stargate SG-1
+* Star Hero
+* Starship Troopers
+* Star Trek: The Role Playing Game (FASA)
+* Star Trek Roleplaying Game (Decipher)
+* Star Trek: The Next Generation Role-playing Game
+* Star Wars: The Roleplaying Game (West End Games)
+* Star Wars Roleplaying Game (Wizards of the Coast)
+* Star Wars Roleplaying Game (Fantasy Flight Games)
+* Star Wreck Roleplaying Game
+* Tales from the Floating Vagabond
+* Time Lord - a Doctor Who game
+* Transhuman Space
+* Traveller
+* Traveller: 2300
+* Trinity
+* Uncharted Worlds
+* Universe
+* Warhammer 40,000 Roleplay
+
+## Sites
 * ~~http://markjstock.org/pages/builder.html~~
     * [1998 - Matt Burdick - Accrete2 & Accrete](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz) 
     * [missing starform copy](https://web.archive.org/web/20120101000000*/http://markjstock.org/progs/starform.tar.gz)
@@ -44,12 +111,6 @@
 * ~~(https://groups.google.com/forum/#!search/Joe$20Nowakowski$20accrete%7Csort:relevance)~~
     * Attempt to find posting of accrete by Joe Nowakowski
 
-* https://github.com/ThomasKerman/Accrete
-
-* https://github.com/zonkmachine/starsysgen
-
-* https://github.com/calebrob6/accrete
-
 * ~~http://jendaveallen.com/builder/index.html~~
     * Dave Allen's website hosted a few generators a while ago, but nothing on accrete
 
@@ -86,14 +147,35 @@
 * ~~http://www.therpgsite.com/showthread.php?28548-Alternate-Traveller-Worldgen-Procedures~~
    * Other useful traveller rpg worldbuilding programs
 
-* ftp://ftp.clark.net/pub
-
-* ftp.wustl.edu/pub/msdos_uploads/misc/USML 
+* ~~ftp.wustl.edu/pub/msdos_uploads/misc/USML~~
+    * Inaccessible
 
 * ftp://caliban.physics.utoronto.ca/pub/accrete.tar.Z
+    * ftp://caliban.physics.utoronto.ca/pub/www/neufeld/Welcome.html
 
-* http://www.clark.net/pub/nyrath/starmap.html
-
-* http://www.hooked.net/~dberry/index.html
+* ~~http://www.clark.net/pub/nyrath/starmap.html~~
+    * nyrath's accrete copy [page](https://web.archive.org/web/19961222034517/http://www.clark.net/pub/nyrath/smap07.html#new30) 
+    * Aina's ACCRETE based starsystem generator program. [pre v2](https://web.archive.org/web/20050623080038/http://www.geocities.com/TimesSquare/2691/stargen.html)
+    * Aina's ACCRETE based starsystem generator program. [v2](https://web.archive.org/web/20040916201003/http://www.lemoneyes-radio.com/stargen/)
+  
+* ~~http://www.hooked.net/~dberry/index.html~~
+    * Has [two accrete versions](https://web.archive.org/web/19990220140015/http://www.hooked.net/%7Edberry/gateway.html) similar to C. Webb's stuff but 
+    nothing archived. 
 
 * http://members.aol.com/jimvassila/
+    * moved to here  http://www.geocities.com/Area51/Starship/8023
+    * then here http://www.elektrasystems.net/~jimv
+
+* ~~http://members.tip.net.au/~davidjw/jumplink/tjp_titl.htm~~
+    * links to [Christopher Webb's site](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/trav.html) which contains already referenced links
+    * [1997 - Christopher E. Web - Accrete2 - Alt](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
+    
+## Git Repos
+
+* https://github.com/ThomasKerman/Accrete
+
+* https://github.com/zonkmachine/starsysgen
+
+* https://github.com/calebrob6/accrete
+
+* https://bitbucket.org/dchapes/accrete
