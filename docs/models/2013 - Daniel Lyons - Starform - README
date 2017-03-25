@@ -1,0 +1,145 @@
+Starform is an implementation of the Accrete algorithm. I've taken the code by
+Chris Croughton and updated it according to my own criteria. I may not know 
+much about the math, but I know a few things about programming, so my version
+exists in search of the following goals:
+
+ 1. To have a good quality, documented, readable, comprehensible implementation
+    of Accrete, useful for personal study, expansion, testing, embedding, and
+    in general playing.
+
+ 2. To showcase a high-quality codebase that can be used to direct ports to 
+    other languages as well as embed or call from other languages.
+ 
+ 3. To showcase modern C99 style and achieve an implementation that compiles
+    without a lot of work under modern Unix operating systems, and Plan 9 (the
+    supra-modern Unix).
+
+
+In pursuit of these goals, my changes have mostly been as follows:
+
+  - General refactoring, including renaming functions, breaking large functions
+    into smaller ones, narrowing interfaces and interdependencies, and refining
+    code responsibilities
+
+  - Removing support for MS-DOS and other obscure/useless platforms I dislike.
+
+  - Making the code more "objecty," removing global variables, doing less 
+    up-front calculation in favor of lazier alternatives where possible.
+
+  - Making starform into libstarform and changing the original utility into
+    a shell that simply calls this library.
+
+
+From here my goal is to produce a high-quality implementation of Starform in
+several other languages. I'd like to start with Standard ML, because it can be
+made to do things the C way if I must but is amenable to rewriting in a deeply
+functional style. Eventually I'd like to finish ports to other languages, namely
+Smalltalk, Common Lisp and Haskell, as at least one of these five languages will
+certainly continue to exist in the next hundred years.
+
+Finally, I intend to take the completed source code in all five languages and 
+have six copies engraved in steel and launched into space in all directions.
+Therefore, this code is licensed under the terms of the Revised BSD License.
+
+Chris's README is below.
+
+--------------------------------------------------------------------------------
+
+Starform (also known as Accrete) was created by Matt Burdick in 1988.  Since
+then it has been hacked about by many people.  This version is based on the
+original released 'starform' code, as far as I know, with my hacks to it to
+make it do what I want.
+
+My changes are:
+
+  Convert it to use ANSI C function prototypes, and have a header file for
+  each module containing the exported functions and variables.
+
+  Make it more modular, so that modules are not using data from modules that
+  call them (and hopefully not calling functions 'upward' either).
+  
+  Put the 'main' function as the only thing in starform.c, so that (hopefully)
+  all the other modules can be called by other programs.
+
+  Add day/night and maximum/minimum temperatures for rocky (not gas giant)
+  worlds.  The algorithm was stolen shamelessly from Stephen Kimmel's "World
+  Builder" BASIC program, and then hacked about until it gave the sort of
+  results my other simulations produce.
+
+  Add stuff to list what materials are liquid on the planets' surface and
+  what gasses might be in the atmosphere (if any).  It's guesswork to an
+  extent (especially proportions), if you want to take it out look for
+  function 'text_list_stuff' in module display.c and delete the calls to it.
+  If you know more than I do about the amounts or properties (not hard!)
+  please let me know any changes to make it better.  Note that I haven't yet
+  made it look at the max and min temperatures to see whether stuff freezes or
+  evaporates only part of the time...
+
+  I've also added some ad-hoc moon generation stuff, if you define 'MOON' when
+  compiling (add '-DMOON' to the CFLAGS variable in the makefile) then you'll
+  get moons generated as well.  It's not scientifically based, though, so you
+  probably don't want to do that...
+
+Please read the INSTALL file to find out how to build it.
+
+If you want to see the sort of output it produces, have a look at the EXAMPLE
+files in this archive.
+
+Chris Croughton, 1999.11.24
+mailto:chris@keris.demon.co.uk
+
+The following is Matt Burdick's original README file.
+
+-----------------------------------------------------------------------------
+
+This program is based on an article by Martyn Fogg in the Journal of the
+British Interplanetary Society (JBIS) called 'Extrasolar Planetary Systems:
+a Microcomputer Simulation'.  In it, he described how to generate various
+sun-like solar systems randomly.  Since he did a good job of listing
+references, I decided to implement it in Turbo Pascal on my PC.
+
+Later, I translated it to C for portability, and the result is what you see
+in front of you.  Because of my need to run this on an IBM-PC, there are two
+makefiles included with the program: 'Makefile' (for unix systems), and 
+'starform.mak' for MS-DOS systems.  To create the executable on a unix 
+system, type in 'make' alone; type 'make starform.mak' if you are on 
+an MS-DOS machine and using Microsoft C.
+
+Thanks go to Sean Malloy (malloy@nprdc.arpa) for his help with the random
+number routines and to Marty Shannon (mjs@mozart.att.com) for the
+lisp-style output format, command-line flags, and various other pieces.
+
+Enjoy, and if you find any glaring inconsistancies or interesting pieces to
+add to the simulation, let me know and I'll include it in any other
+distributions I send out.
+
+Now for some references.  These are not the only good references on this 
+subject; only the most interesting of many that were listed in Fogg's 
+article in vol 38 of JBIS:
+
+For a good description of the entire program:
+	"Extra-Solar Planetary Systems: A Microcomputer Simulation"
+	Martyn J. Fogg,  Journal of the British Interplanetary Society
+	Vol 38, pp. 501 - 514, 1985
+
+For the surface temperature/albedo iterative loop:
+	"The Evolution of the Atmosphere of the Earth"
+	Michael H. Hart, Icarus, Vol 33, pp. 23 - 39, 1978
+
+For the determination of the radius of a terrestrial planet:
+	"The Internal Constitution of the Planets"
+	D. S. Kothari, Ph.D. , Mon. Not. Roy. Astr. Soc.
+	Vol 96, pp. 833 - 843, 1936
+
+For the planetary mass accretion algorithm:
+	"Formation of Planetary Systems by Aggregation: A Computer Simulation"
+	S. H. Dole, RAND paper no. P-4226, 1969
+
+For the day length calculation:
+	"Q in the Solar System"
+	P. Goldreich and S. Soter, Icarus, Vol 5, pp. 375 - 389, 1966
+
+
+----------------------------------------------------------------------
+ I can be reached at the email address burdick%hpda@hplabs.hp.com
+----------------------------------------------------------------------
