@@ -68,7 +68,7 @@
 
 ## Sites
 * ~~http://markjstock.org/pages/builder.html~~
-    * [1998 - Matt Burdick - Accrete2 & Accrete](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz) 
+    * [1998 - Matt Burdick - Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz) 
     * [missing starform copy](https://web.archive.org/web/20120101000000*/http://markjstock.org/progs/starform.tar.gz)
 
 * http://macgui.com/downloads/?file_id=8797
@@ -129,7 +129,7 @@
     * [Sagan's Paper](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
     
 * ~~http://www.mu.org/~joe/traveller/archive/software/~~
-    * [1997 - Christopher E. Web - Accrete2](http://www.mu.org/~joe/traveller/archive/software/accrete2.zip)
+    * [1997 - Christopher E. Web - Accrete2 Mod 0](http://www.mu.org/~joe/traveller/archive/software/accrete2.zip)
     * [1997 - Christopher E. Web - Accrete3](http://www.mu.org/~joe/traveller/archive/software/accrete3.zip)
     * Other useful traveller rpg worldbuilding programs
     
@@ -168,7 +168,7 @@
 
 * ~~http://members.tip.net.au/~davidjw/jumplink/tjp_titl.htm~~
     * links to [Christopher Webb's site](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/trav.html) which contains already referenced links
-    * [1997 - Christopher E. Web - Accrete2 - Alt](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
+    * [1997 - Christopher E. Web - Accrete2 Mod 1](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
 
 * http://www.sjgames.com/gameaids/gurps/stargen.zip
     
