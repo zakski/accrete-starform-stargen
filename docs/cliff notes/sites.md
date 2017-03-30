@@ -91,7 +91,7 @@
 
 * ~~http://reocities.com/CapeCanaveral/8191/usml.html~~
     * [1995 - Andrew Folkins - Accretion](http://reocities.com/CapeCanaveral/8191/usml.html)
-    * [1995 - Matt Burdick - Accretion](http://reocities.com/CapeCanaveral/8191/usml.html)
+    * [1995 - Matt Burdick - Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
     * Steve Dang Geocities Site
 
 * ~~http://www.projectrho.com/public_html/starmaps/links.php~~

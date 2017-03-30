@@ -126,7 +126,7 @@ the end of Gilham's post was cut off in the Google Group archive, so the code is
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1993
-- Parents: Burdick.1994.B
+- Parents: Burdick.1998
 - Original Source: Complete.
 - Reproducibility: Reproducible.
 - Burdick Version: V3.1
@@ -235,6 +235,23 @@ has a different last modified date than the wrapping header info, so I am uncert
 
 Like Steve Gilham, his line of code is at least initially distinct from Burdick's.
 
+###[Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
+- Resource Name: 1995 - Matt Burdick - Starform
+- Author: Matt Burdick
+- Poster/Publisher: Steve Dang
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1995
+- Parents: Burdick.1994.B
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: V3.0
+- Key: Burdick.1995
+
+Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
+dated as been last modified later than Burrell's copy, so we have a potential version order between them.
+
+
 ###[ACCRETION](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Nyrath - Accrete
 - Author: Matt Burdick
@@ -276,7 +293,7 @@ branch.
 - Language: C
 - Creation Year: <= 1996
 - Source Year: 1996
-- Parents:  Burdick.1994.A / Nyrath.1995
+- Parents:  Burdick.1994.A / Nyrath.1995 / Burdick.1995
 - Original Source: Complete.
 - Reproducibility: Reproducible.
 - Burdick Version: n/a
@@ -289,7 +306,7 @@ generation code line but I am unsure as to which variant is the closest to being
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 0
 - Author: Christopher E. Webb
 - Poster/Publisher: Joseph Heck
-- Language: C
+- Language: C++
 - Creation Year: <= 1997
 - Source Year: 1997
 - Parents:  Burdick.1994.A / Nyrath.1995
@@ -304,7 +321,7 @@ Christopher E. Webb seems to of modified a version of accrete to utilise and gen
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 1
 - Author: Christopher E. Webb
 - Poster/Publisher: Christopher E. Webb
-- Language: C
+- Language: C++
 - Creation Year: <= 1997
 - Source Year: 1997
 - Parents:  Webb.1997.A
@@ -321,7 +338,7 @@ This copy was found on his website.
 - Resource Name: 1997 - Christopher E. Webb - Accrete3
 - Author: Christopher E. Webb
 - Poster/Publisher: Joseph Heck
-- Language: C
+- Language: C++
 - Creation Year: <= 1997
 - Source Year: 1997
 - Parents:  Webb.1997.A
@@ -354,6 +371,119 @@ accretion and burdick's code works.
 
 Burell's code is loosely based on Burdick's source code, but takes a much more rigid object-oriented approach.
 
+###[STARFORM](http://www.reocities.com/Area51/6902/w_accr.html)
+
+- Resource Name: 1998 - Carl Burke - Starform
+- Author: Carl Burke
+- Poster/Publisher: Carl Burke
+- Language: Java
+- Creation Year: >= 1995
+- Source Year: 1998
+- Parents: Burdick.1994.B or Malloy.1993 most likely
+- Original Source: Complete.
+- Reproducibility: Reproducible.
+- Burdick Version: V3.0 or V3.1 ?
+- Key: Burke.1998
+ 
+ Carl Burke, like Ian Burell, wrote his own java applet version of starform/accrete. He also was aware of Ian Burell's work and wonder how much it influenced
+ him.
+ 
+ In any case, He has written several versions in Pascal, C, Modula-2, C++ as well Java, but only this java version seems to remain.
+
+###[Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
+- Resource Name: 1998 - Matt Burdick - Acrete2
+- Author: Matt Burdick
+- Poster/Publisher: Mark J. Stock
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1998
+- Parents: Burdick.1995
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: V3.0
+- Key: Burdick.1998
+
+One of Mat Burdick's versions which apparently is commonly distributed as accrete2.
+ 
+Accrete2 and Starform are used pretty interchangeably so to have a copy of Accrete2, with old code versions inside of it should be pretty useful in 
+determining the version control history.  
+
+###[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+- Resource Name: 1999 - Keris - Accretion v1
+- Author: Chris "Keris" Croughton
+- Poster/Publisher: Chris "Keris" Croughton
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1999
+- Parents: Folkins.1988
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Keris.1999
+
+A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for normal planets to give some sort of 
+atmosphere, it seems to work reasonably. The output formats are (of course) totally different from starform. 
+
+###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+- Resource Name: 1999 - Peter Keel - Accrete
+- Author: Matt Burdick
+- Poster/Publisher: Peter Keel
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1999
+- Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Keel.1999.A
+
+A version cached by Peter Keel on his traveller rpg site.
+
+
+###[Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
+- Resource Name: 1999 - Peter Keel - Starform
+- Author: Matt Burdick
+- Poster/Publisher: Peter Keel
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1999
+- Parents: Burdick.1998
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: V3.0
+- Key: Keel.1999.B
+
+A version cached by Peter Keel on his traveller rpg site.
+
+###[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+- Resource Name: 2000 - Keris - Accretion v2
+- Author: Chris "Keris" Croughton
+- Poster/Publisher: Chris "Keris" Croughton
+- Language: C++
+- Creation Year: >= 1988
+- Source Year: 2000
+- Parents: Keris.1999
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Keris.2000.A
+
+This is Andrew Folkins' code again, but converted to C++. It's even more hacked about.
+
+###[Starform](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+- Resource Name: 2000 - Keris - Starform
+- Author: Chris "Keris" Croughton
+- Poster/Publisher: Chris "Keris" Croughton
+- Language: C++
+- Creation Year: >= 1988
+- Source Year: 2000
+- Parents: Keris.1999
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: V3.0
+- Key: Keris.2000.B
+
+This is Matt Burdick's original Starform code, hacked about by Keris with additions for atmospheric composition
 
 ###[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
 
@@ -366,43 +496,31 @@ Burell's code is loosely based on Burdick's source code, but takes a much more r
 - Parents: Dole.1969 / Dole.1970 / Larrison.????
 - Original Source: Complete.
 - Reproducibility: Reproducible.
+- Burdick Version: n/a
 - Key: Leech.1992
-
 
 Jon Leech ported code to C++ based on code written by Wales Larrison. He mentions an ftp site where his code is located, ftp.cs.unc.edu:pub/acrete.c, but it 
 is no longer stored there. 
  
 I have acquired a version of it from Ian Burrell's [website](http://znark.com/create/accrete.html), though I do not know if there have been any changes in 
 the meantime.
+
+ ###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+ - Resource Name: 2003 - Chuck Swiger - Accrete
+ - Author: Chuck Swiger
+ - Poster/Publisher: Chuck Swiger
+ - Language: C
+ - Creation Year: >= 1988
+ - Source Year: 2003
+ - Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995 / Keel.1999.A
+ - Original Source: Acquired.
+ - Reproducibility: Reproducible.
+ - Burdick Version: n/a
+ - Key: Keel.1999.A
  
-###STARFORM - Burdick
- Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone seems to of worked off. Unfortunately I was unable 
- to detect a site belonging to him that still hosted his source code so [Ian Burrell's hosted copy](http://znark.com/create/accrete.html) and the [USML 
- Geocities' archive](http://reocities.com/CapeCanaveral/8191/usmlarchive.html) will have to do.
+ A version altered by Swiger to include psuedorandom number generation enhancements and convert to use ansi C.
 
-
-###[STARFORM - Burke](http://www.reocities.com/Area51/6902/w_accr.html)
-Carl Burke has written a another Java Applet based on Burdick's code, and also added some in-depth simulation changes. I have looked over the code that 
-covers the accretion process, but not any of his other changes.
-
-###[Accretion - Folkins](http://reocities.com/CapeCanaveral/8191/usmlarchive.html)
-Andrew Folkins at some point published a port of burdick's code for the amiga, which was then modified by keris, unfortunately it is packed up in a shar 
-which I had to manually extract the source files from, so precise information about when he last modified each file has been lost. He is the first to 
-suggest a number of improvements on how to get the runtime down, and I am currently in the process of adding his planetismal insertion strategies as an option. 
-
-###[Accretion V1/V2/Starform - Chris "Keris" Croughton](https://web.archive.org/web/20150814073537/http://firedrake.org/keris/)
-Chris "Keris" Croughton is now deceased and his site and source code is now only accessible via the wayback machine.
-	Chris builds upon mat's version and this is used as the basis of StarGen and several other forks. His main contributions are 
-	improving the code's structure, adding various atmosphere bits and bobs and improved star code. He has also build upon a
-	version made by Andrew Folkins.
-#### V1
-A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for normal planets to give some sort of 
-atmosphere, it seems to work reasonably. The output formats are (of course) totally different from starform. 
-#### V2
-A version based on Andrew Folkins, hacked about by Keris, to now use C++. 
-#### Starform
-A version based on Burdick's code, hacked about by Keris. 
-
+ 
 ## Missing Implementations
 
 ###ACCRETE 1a/1b
@@ -459,3 +577,50 @@ fits into the bigger picture.
 
 Jon Leech claims that Wales wrote a variation based on Dole's 1970 paper. I cannot currently find any source code of this program online, so this branch is 
 considered orphaned right now, since I don't know where it fits into the bigger picture.
+
+###ACRETE
+
+- Resource Name: n/a
+- Author: Matt Burdick
+- Poster/Publisher: Joe Nowakowski
+- Language: C ?
+- Creation Year: >= 1988
+- Source Year: 1991
+- Parents: Burdick.1988
+- Original Source: Missing.
+- Reproducibility: Unreproducible.
+- Key: Burdick.????
+
+published to comp.sources by Joe Nowakowski but missing in the archives.
+
+
+###[Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
+- Resource Name: n/a
+- Author: Matt Burdick
+- Poster/Publisher: Philip Hodder
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1995
+- Parents: Malloy.1993
+- Original Source: Missing.
+- Reproducibility: Unreproducible.
+- Burdick Version: V3.1
+- Key: Hodder.????
+
+A variant of the highest version of Burdick's code that we have source code for. Posted by Hodder, but no cached post lying around as far as I can see.
+
+
+###[Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
+- Resource Name: n/a
+- Author: Matt Burdick
+- Poster/Publisher: n/a
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1995
+- Parents: Malloy.1993
+- Original Source: Missing.
+- Reproducibility: Unreproducible.
+- Burdick Version: V3.6
+- Key: Burdick.????
+
+Highest version known to exist of burdick's code. may have put it on an anonymous ftp site
