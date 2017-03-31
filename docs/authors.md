@@ -593,11 +593,11 @@ A snapshot of omega13a's version of Stargen that he put on his Star Trek fan sit
 - Language: Javascript
 - Creation Year: >= 2003
 - Source Year: 2013
-- Parents: Robinson.2013
+- Parents: Swiger.2003
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
 - Burdick Version: n/a
-- Key: Swiger.2003
+- Key: Robinson.2013
   
 port of Chuck Swiger's accrete to Javascript
 
@@ -619,6 +619,7 @@ port of Chuck Swiger's accrete to Javascript
 port of Keris's starform code to modern ansi C standards. Technically last touched the core code in 2011.
 
 ###[Stargen](https://github.com/grahamreeds/StarGen)
+
 - Resource Name: 2013 - Graham Reeds - Stargen
 - Author: Graham Reeds
 - Poster/Publisher: Graham Reeds (github)
@@ -634,6 +635,7 @@ port of Keris's starform code to modern ansi C standards. Technically last touch
 An expansion on burrow's code.
 
 ###[Accrete2](https://github.com/makhidkarun/accrete2)
+
 - Resource Name: 2013 - Joseph Heck - Accrete2
 - Author: Joseph Heck
 - Poster/Publisher: Joseph Heck (github)
@@ -665,6 +667,7 @@ A copy of a bunch of different version all in the same place, pretty sure this g
 fork of Mitch Anderson's port
 
 ###[Accrete](https://github.com/tmanderson/Accrete.js)
+
 - Resource Name: 2013 - Mitch Anderson - Accrete
 - Author: Mitch Anderson
 - Poster/Publisher: Mitch Anderson (github)
@@ -680,6 +683,7 @@ fork of Mitch Anderson's port
 A port of burrow's code.
 
 ##[Accrete](https://github.com/pgremo/accrete)
+
 - Resource Name: 2013 - pgremo - Accrete
 - Author: pgremo
 - Poster/Publisher: pgremo (github)
@@ -693,6 +697,201 @@ A port of burrow's code.
 - Key: pgremo.2013
   
 A version based on Ian Burrell's java code.
+
+###[Stargen](https://github.com/omega13a/stargen)
+- Resource Name: 2014 - Brandon Amaro - Stargen
+- Author: Brandon Amaro 
+- Poster/Publisher: Brandon Amaro (github)
+- Language: C++
+- Creation Year: >= 2008
+- Source Year: 2014
+- Parents: Amaro.2013
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Amaro.2014
+  
+omega13a's version on github
+
+
+###[Stargen](https://github.com/makhidkarun/stargen)
+
+- Resource Name: 2014 - Joseph Heck - Stargen
+- Author: Joseph Heck
+- Poster/Publisher: Joseph Heck (github)
+- Language: C++
+- Creation Year: >= 2008
+- Source Year: 2014
+- Parents: Burrows.2008
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Heck.2014
+  
+Joseph Heck copy of Burrow's code.
+
+###[Accrete](https://github.com/kbingman/accrete)
+
+- Resource Name: 2014 - Keith Bingman - Accrete
+- Author: Keith Bingman
+- Poster/Publisher: Keith Bingman (github)
+- Language: Javascript
+- Creation Year: >= 2008
+- Source Year: 2014
+- Parents: Swiger.2003 or possibly Robinson.2013
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Bingman.2014
+
+May be his own version or undocumented fork.
+
+
+https://github.com/monolar/nim-accrete
+
+###[Accrete](https://github.com/monolar/nim-accrete)
+- Resource Name: 2015 - Andreas Marr - Accrete - Nim
+- Author: Andreas Marr
+- Poster/Publisher: Andreas Marr (github)
+- Language: Nim
+- Creation Year: >= 2014
+- Source Year: 2015
+- Parents: Dole.1969 / Sagan.1977
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Marr.2015.A
+
+An Interesting standalone recreation of dole/sagan's versions in an obscure language.
+
+###[Accrete](https://github.com/monolar/accrete-rb)
+
+- Resource Name: 2015 - Andreas Marr - Accrete
+- Author: Andreas Marr
+- Poster/Publisher: Andreas Marr (github)
+- Language: Ruby
+- Creation Year: 2015
+- Source Year: 2015
+- Parents: Marr.2015.A
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Marr.2015.B
+
+I Believe this to be a follow on from his previous stuf in a more mainstream language.
+
+###[Accrete](https://github.com/kbingman/accretejs)
+
+- Resource Name: 2015 - Keith Bingman - Accrete
+- Author: Keith Bingman
+- Poster/Publisher: Keith Bingman (github)
+- Language: Javascript
+- Creation Year: >= 2012
+- Source Year: 2015
+- Parents: Anderson.2013
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Bingman.2015
+
+Fork of Anderson's work.
+
+###[Accrete](https://github.com/zonkmachine/starsysgen)
+
+- Resource Name: 2015 - Oskar Wallgren - Accrete
+- Author: Oskar Wallgren
+- Poster/Publisher: Oskar Wallgren (github)
+- Language: C
+- Creation Year: >= 2003
+- Source Year: 2015
+- Parents: Swiger.2003
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Wallgren.2015
+  
+copy of Chuck Swiger's accrete.
+
+###[Stargen](https://github.com/Zomega/garnets)
+
+- Resource Name: 2015 - Will Oursler - Stargen
+- Author: Will Oursler
+- Poster/Publisher: Will Oursler (github)
+- Language: Python
+- Creation Year: >= 2008
+- Source Year: 2015
+- Parents: Burrows.2008
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Oursler.2015
+  
+A port of burrow's code.
+
+###[Stargen](https://github.com/donggas90/ACCRETEPlus)
+
+- Resource Name: 2016 - Dave Chapeskie - Accrete
+- Author: Jong-il Hong
+- Poster/Publisher: Jong-il Hong (github)
+- Language: C
+- Creation Year: >= 2011
+- Source Year: 2015
+- Parents:  Lyons.2013
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Hong.2015
+
+A port of Lyons's code to C++
+
+###[Accrete](https://bitbucket.org/dchapes/accrete)
+
+- Resource Name: 2016 - Dave Chapeskie - Accrete
+- Author: Jong-il Hong
+- Poster/Publisher: Jong-il Hong (github)
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 2016
+- Parents: Burrell.1997, Burdick.1994.B, Burdick.1994.A, Burdick.1988 ?
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Hong.2015
+
+Looks like copies of old code.
+
+###[Accrete](https://github.com/StollD/Accrete)
+
+- Resource Name: 2016 - Dorian Stoll - Accrete
+- Author: Dorian Stoll
+- Poster/Publisher: Dorian Stoll (github)
+- Language: C#
+- Creation Year: >= 2003
+- Source Year: 2016
+- Parents: Swiger.2003
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Stoll.2016
+  
+variant of Chuck Swiger's accrete.
+
+###[Stargen](https://github.com/glegeza/StarformNET)
+
+- Resource Name: 2017 - George Legeza - Starform
+- Author: George Legeza
+- Poster/Publisher: George Legeza (github)
+- Language: C#
+- Creation Year: >= 2008
+- Source Year: 2017
+- Parents: Burrows.2008
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Legeza.2017
+  
+A port of burrow's code.
+
 
 ## Missing Implementations
 
