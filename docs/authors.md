@@ -352,9 +352,9 @@ Christopher E. Webb developed an updated version of his code that uses traveller
 This copy was found on Joseph Heck's website with the label of Accrete3, but is labelled Accrete2 mod 1 in the readme just like the one on Webb's website.
 
 ###[ACCRETE](http://znark.com/create/accrete.html)
-- Resource Name: 1997 - Ian Burell - Accrete
+- Resource Name: 1997 - Ian Burrell - Accrete
 - Author: Ian Burell
-- Poster/Publisher: Ian Burell
+- Poster/Publisher: Ian Burrell
 - Language: Java
 - Creation Year: >= 1993
 - Source Year: 1997
@@ -366,10 +366,10 @@ This copy was found on Joseph Heck's website with the label of Accrete3, but is 
 
 Ian Burrell's version, which given the information I have a available, seems to ported from some code provided by Sean Malloy.
 
-Only the portion of Burdik's code relating to Dole's paper seems to of been ported to Java, but it has provided me the initial understanding of how 
-accretion and burdick's code works. 
+Only the portion of Burdick's code relating to Dole's paper seems to of been ported to Java, but it has provided me the initial understanding of how 
+accretion and Burdick's code works. 
 
-Burell's code is loosely based on Burdick's source code, but takes a much more rigid object-oriented approach.
+Burrell's code is loosely based on Burdick's source code, but takes a much more rigid object-oriented approach.
 
 ###[STARFORM](http://www.reocities.com/Area51/6902/w_accr.html)
 
@@ -505,22 +505,195 @@ is no longer stored there.
 I have acquired a version of it from Ian Burrell's [website](http://znark.com/create/accrete.html), though I do not know if there have been any changes in 
 the meantime.
 
- ###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
- - Resource Name: 2003 - Chuck Swiger - Accrete
- - Author: Chuck Swiger
- - Poster/Publisher: Chuck Swiger
- - Language: C
- - Creation Year: >= 1988
- - Source Year: 2003
- - Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995 / Keel.1999.A
- - Original Source: Acquired.
- - Reproducibility: Reproducible.
- - Burdick Version: n/a
- - Key: Keel.1999.A
+###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+
+- Resource Name: 2003 - Chuck Swiger - Accrete
+- Author: Chuck Swiger
+- Poster/Publisher: Chuck Swiger
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 2003
+- Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995 / Keel.1999.A
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Swiger.2003
  
- A version altered by Swiger to include psuedorandom number generation enhancements and convert to use ansi C.
+A version altered by Swiger to include psuedorandom number generation enhancements and convert to use ansi C.
+
+###[Stargen](https://web.archive.org/web/20070221205935/http://home.comcast.net/~brons/NerdCorner/StarGen/StarGen.html)
+
+- Resource Name: 2006 - Jim Burrows - StarGen
+- Author: Jim Burrows
+- Poster/Publisher: Jim Burrows
+- Language: C++
+- Creation Year: >= 1988
+- Source Year: 2006
+- Parents: Many
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Burrows.2006
+
+A starform version altered by Burrows with bits and pieces added and modified and borrowed from Ian Burrell, C. Burke and Chris Croughton. StarGen is based 
+mostly on Burdick's, but has borrowed from the others, most notably Keris's.
+                              
+###[Stargen](http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html)
+
+- Resource Name: 2008 - Jim Burrows - StarGen
+- Author: Jim Burrows
+- Poster/Publisher: Jim Burrows
+- Language: C++
+- Creation Year: >= 2006
+- Source Year: 2008
+- Parents: Burrows.2006
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Burrows.2008
+
+Updated version of the 2006 edition.
+ 
+###[Accrete](https://github.com/sveco/AccreteSharp)
+
+- Resource Name: 2012 - sveco - Accrete
+- Author: sveco
+- Poster/Publisher: sveco (github)
+- Language: C#
+- Creation Year: >= 2006
+- Source Year: 2012
+- Parents: Burke.1998
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Burrows.2008
+  
+port of Carl Burke's accrete to c#
+ 
+###[Stargen](http://www.fedtrek.com/staff/omega13a/stargen_2013.zip)
+- Resource Name: 2013 - Brandon Amaro - Stargen
+- Author: Brandon Amaro (omega13a)
+- Poster/Publisher: Brandon Amaro (omega13a)
+- Language: C++
+- Creation Year: >= 2008
+- Source Year: 2013
+- Parents: Burrows.2008
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Amaro.2013
+  
+A snapshot of omega13a's version of Stargen that he put on his Star Trek fan site.
+
+###[Accrete](https://github.com/calebrob6/accrete)
+
+- Resource Name: 2013 - Caleb Robinson - Accrete
+- Author: Caleb Robinson
+- Poster/Publisher: Caleb Robinson (github)
+- Language: Javascript
+- Creation Year: >= 2003
+- Source Year: 2013
+- Parents: Robinson.2013
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Swiger.2003
+  
+port of Chuck Swiger's accrete to Javascript
 
  
+###[Starform](https://github.com/fusiongyro/starform)
+
+- Resource Name: 2013 - Daniel Lyons - Starform
+- Author: Daniel Lyons
+- Poster/Publisher: Daniel Lyons (github)
+- Language: C
+- Creation Year: >= 2000
+- Source Year: 2013
+- Parents:  Keris.2000.B
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Lyons.2013
+   
+port of Keris's starform code to modern ansi C standards. Technically last touched the core code in 2011.
+
+###[Stargen](https://github.com/grahamreeds/StarGen)
+- Resource Name: 2013 - Graham Reeds - Stargen
+- Author: Graham Reeds
+- Poster/Publisher: Graham Reeds (github)
+- Language: C++
+- Creation Year: >= 2008
+- Source Year: 2013
+- Parents: Burrows.2008
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Amaro.2013
+  
+An expansion on burrow's code.
+
+###[Accrete2](https://github.com/makhidkarun/accrete2)
+- Resource Name: 2013 - Joseph Heck - Accrete2
+- Author: Joseph Heck
+- Poster/Publisher: Joseph Heck (github)
+- Language: C
+- Creation Year: <2013
+- Source Year: 2013
+- Parents: Burrell.1997, Burdick.1994.B, Burdick.1994.A, Burdick.1988 ?
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Heck.2013
+  
+A copy of a bunch of different version all in the same place, pretty sure this guys had a copy of Webb's code too.
+
+
+###[Accrete](https://github.com/kennon/Accrete.js)
+- Resource Name: 2013 - Kennon Ballou - Accrete
+- Author: Kennon Ballou
+- Poster/Publisher: Kennon Ballou (github)
+- Language: Javascript
+- Creation Year: >= 2012
+- Source Year: 2013
+- Parents: Anderson.2013
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Ballou.2013
+  
+fork of Mitch Anderson's port
+
+###[Accrete](https://github.com/tmanderson/Accrete.js)
+- Resource Name: 2013 - Mitch Anderson - Accrete
+- Author: Mitch Anderson
+- Poster/Publisher: Mitch Anderson (github)
+- Language: Javascript
+- Creation Year: >= 2012
+- Source Year: 2013
+- Parents: Burrows.2008
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Anderson.2013
+  
+A port of burrow's code.
+
+##[Accrete](https://github.com/pgremo/accrete)
+- Resource Name: 2013 - pgremo - Accrete
+- Author: pgremo
+- Poster/Publisher: pgremo (github)
+- Language: Javascript
+- Creation Year: >= 2012
+- Source Year: 2013
+- Parents: Burrell.1997
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: pgremo.2013
+  
+A version based on Ian Burrell's java code.
+
 ## Missing Implementations
 
 ###ACCRETE 1a/1b
