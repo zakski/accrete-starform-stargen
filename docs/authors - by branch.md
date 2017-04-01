@@ -9,7 +9,9 @@ Initial model order will be according to the resource name.
 
 ## Implementations with Sources / Docs
 
-###[ACRETE](http://www.rand.org/content/dam/rand/pubs/papers/2005/P4226.pdf)
+###Trunk
+
+####[ACRETE](http://www.rand.org/content/dam/rand/pubs/papers/2005/P4226.pdf)
 
 - Resource Name: 1969 - Stephen H. Dole - Formation of Planetary Systems by Aggregation A Computer Simulation
 - Author: Stephen H. Dole
@@ -27,7 +29,7 @@ Stephen H. Dole wrote the original program and research paper that detailed the 
 researcher and whilst I have not recovered his original source code; I have a reliable recreations of his original engine based on his papers that exist 
 online, with the exception of the random number generator that he used as that would be machine dependent.
 
-###[ACRETE]
+####ACRETE
 
 - Resource Name: 1970 - Stephen H. Dole - Computer Simulation of the Formation of Planetary Systems
 - Author: Stephen H. Dole
@@ -44,7 +46,7 @@ online, with the exception of the random number generator that he used as that w
 Stephen H. Dole presented the original research paper findings in Icarus in 1970. The program that used is basically identical to the one written for the 
 Rand Corporation.
 
-###[ACRETE](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
+####[ACRETE](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
 
 - Resource Name: 1977 - Isaacmam & Sagan - Computer Simulations of Planetary Accretion Dynamics Sensitivity to Initial Conditions
 - Author: Richard Isaacman & Carl Sagan
@@ -64,25 +66,7 @@ our own are only one variety out of many different possible planetary systems.
 
 Most recreations of Accrete do not directly use this paper as their inspiration.
 
-###[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
-
-- Resource Name: 1984 - Steve Gilham - Acrete 
-- Author: Steve Gilham
-- Poster/Publisher: White Dwarf
-- Language: Microsoft Basic
-- Creation Year: 1984
-- Source Year: 1984
-- Parents: Dole.1969, Dole.1970
-- Original Source: Located.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Gilham.1984
-
-Gilham wrote a variant based on Dole's original paper in Icarus in the late '60s. It appeared in the gaming magazine White Dwarf issue 58/57 (UK/US) which was 
-published in October 1984. He may have also released it on usenet, but such a post is missing from google groups.
-
-
-###[Silicon Creation](http://www.academia.edu/download/31676329/fogg1985.pdf)
+####[Silicon Creation](http://www.academia.edu/download/31676329/fogg1985.pdf)
 
 - Resource Name: 1985 - Martyn J. Fogg - Extra-Solar Planetary Systems A Microcomputer Simulation
 - Author: Martyn J. Fogg
@@ -101,7 +85,85 @@ planet in the generated system. Brian Davis reports that he wrote Fogg to reques
 garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up. Thus far no one seems to of replicated his planetary 
 classification system.
 
-###[Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
+### Gilham Branch
+
+####[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
+
+- Resource Name: 1984 - Steve Gilham - Acrete 
+- Author: Steve Gilham
+- Poster/Publisher: White Dwarf
+- Language: Microsoft Basic
+- Creation Year: 1984
+- Source Year: 1984
+- Parents: Dole.1969, Dole.1970
+- Original Source: Located.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Gilham.1984
+
+Gilham wrote a variant based on Dole's original paper in Icarus in the late '60s. It appeared in the gaming magazine White Dwarf issue 58/57 (UK/US) which was 
+published in October 1984. He may have also released it on usenet, but such a post is missing from google groups.
+
+####[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
+
+- Resource Name: 1993 - Steve Gilham - Acrete Psuedocode
+- Author: Steve Gilham
+- Poster/Publisher: Steve Gilham
+- Language: Psuedocode
+- Creation Year: 1993
+- Source Year: 1993
+- Parents: Gilham.1984
+- Original Source: Located.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Gilham.1993
+
+Gilham re-wrote his variant in psuedocode in response to a request on usenet in 1993.
+
+####[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
+
+- Resource Name: 1995 - Steve Gilham - Acrete
+- Author: Steve Gilham
+- Poster/Publisher: Steve Gilham
+- Language: C++
+- Creation Year: <= 1995
+- Source Year: 1995
+- Parents: Gilham.1984, Gilham.1993
+- Original Source: Complete.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Gilham.1995
+
+Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code that has not evolved along the burdick
+branch.
+
+### Burdick Accrete Branch
+
+####[ACCRETION](http://znark.com/create/accrete.html)
+
+- Resource Name: 1994 - Matt Burdick - Accretion
+- Author: Matt Burdick
+- Poster/Publisher: Ian Burrell
+- Language: Turbo Pascal
+- Creation Year: 1988
+- Source Year: 1994
+- Parents: Fogg.1985
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Burdick.1988
+
+Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone seems to of worked off.
+
+This pretty close to being the original copy of Mat Burdick's first version, In that it is written in pascal which apparently is his original language and the 
+comments mention copyright 1988. However the fact that the source code was found on Ian Burrell's website and the files were last modified in 1994 count 
+against it being the very first version. Additionally the zip file was also labelled accretion, which has never been a name that Burdick has called it. 
+
+Burdick could only partially reproduce Fogg's work, since the way that Fogg determined the atmosphere type is not cleared marked out in his research paper.
+
+Nevertheless, this codebase is the parent of the vast majority of variations that have any source code still extant. 
+
+####[Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
 - Resource Name: 1988 - Matt Budick - Accrete -  Steve Gilham Incomplete
 - Author: Matt Burdick
@@ -117,6 +179,55 @@ classification system.
 
 A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve Gilham. Whilst it does seem to date back to 1988, 
 the end of Gilham's post was cut off in the Google Group archive, so the code is incomplete.
+
+####[ACCRETE](http://znark.com/create/files/accrete.zip)
+- Resource Name: 1994 - Matt Burdick - Accrete
+- Author: Mat Burdick
+- Poster/Publisher: Ian Burell
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1994
+- Parents: Gilham.1988
+- Original Source: Complete.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Burdick.1994.A
+
+One of Mat Burdick's C versions which is commonly distributed as accrete.
+ 
+This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting comparison.  
+
+####[ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
+- Resource Name: 1995 - Nyrath - Accrete
+- Author: Matt Burdick
+- Poster/Publisher: Nyrath the nearly wise
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1995
+- Parents: Burdick.1994.A
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Nyrath.1995
+
+Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
+dated as been last modified later than Burrell's copy, so we have a potential version order between them.
+
+###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+- Resource Name: 1999 - Peter Keel - Accrete
+- Author: Matt Burdick
+- Poster/Publisher: Peter Keel
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1999
+- Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Keel.1999.A
+
+A version cached by Peter Keel on his traveller rpg site.
+
 
 ###[Starform](https://groups.google.com/forum/#!topic/rec.games.design/xp8edV1wyIE)
 
@@ -138,63 +249,6 @@ It has the complete source code, and seems to be a higher version than the one p
 one intermediate version between the two.
  
 It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its precise place in the timeline.
-
-###[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
-
-- Resource Name: 1993 - Steve Gilham - Acrete Psuedocode
-- Author: Steve Gilham
-- Poster/Publisher: Steve Gilham
-- Language: Psuedocode
-- Creation Year: 1993
-- Source Year: 1993
-- Parents: Gilham.1984
-- Original Source: Located.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Gilham.1993
-
-Gilham re-wrote his variant in psuedocode in response to a request on usenet in 1993.
-
-###[ACCRETE](http://znark.com/create/files/accrete.zip)
-- Resource Name: 1994 - Matt Burdick - Accrete
-- Author: Mat Burdick
-- Poster/Publisher: Ian Burell
-- Language: C
-- Creation Year: >= 1988
-- Source Year: 1994
-- Parents: Gilham.1988
-- Original Source: Complete.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Burdick.1994.A
-
-One of Mat Burdick's C versions which is commonly distributed as accrete.
- 
-This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting comparison.  
-
-###[ACCRETION](http://znark.com/create/accrete.html)
-
-- Resource Name: 1994 - Matt Burdick - Accretion
-- Author: Matt Burdick
-- Poster/Publisher: Ian Burrell
-- Language: C
-- Creation Year: 1988
-- Source Year: 1994
-- Parents: Fogg.1985
-- Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Burdick.1988
-
-Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone seems to of worked off.
-
-This pretty close to being the original copy of Mat Burdick's first version, In that it is written in pascal which apparently is his original language and the 
-comments mention copyright 1988. However the fact that the source code was found on Ian Burrell's website and the files were last modified in 1994 count 
-against it being the very first version. Additionally the zip file was also labelled accretion, which has never been a name that Burdick has called it. 
-
-Burdick could only partially reproduce Fogg's work, since the way that Fogg determined the atmosphere type is not cleared marked out in his research paper.
-
-Nevertheless, this codebase is the parent of the vast majority of variations that have any source code still extant. 
 
 ###[Starform](http://znark.com/create/accrete.html)
 - Resource Name: 1994 - Matt Burdick - Starform
@@ -250,40 +304,6 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 
 Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
 dated as been last modified later than Burrell's copy, so we have a potential version order between them.
-
-
-###[ACCRETION](http://reocities.com/CapeCanaveral/8191/usml.html)
-- Resource Name: 1995 - Nyrath - Accrete
-- Author: Matt Burdick
-- Poster/Publisher: Nyrath the nearly wise
-- Language: C
-- Creation Year: >= 1988
-- Source Year: 1995
-- Parents: Burdick.1994.A
-- Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Nyrath.1995
-
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
-dated as been last modified later than Burrell's copy, so we have a potential version order between them.
-
-###[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
-
-- Resource Name: 1995 - Steve Gilham - Acrete
-- Author: Steve Gilham
-- Poster/Publisher: Steve Gilham
-- Language: C++
-- Creation Year: <= 1995
-- Source Year: 1995
-- Parents: Gilham.1984, Gilham.1993
-- Original Source: Complete.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Gilham.1995
-
-Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code that has not evolved along the burdick
-branch.
 
 ###[Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/MqgYTuIf13w)
 
@@ -423,22 +443,6 @@ determining the version control history.
 
 A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for normal planets to give some sort of 
 atmosphere, it seems to work reasonably. The output formats are (of course) totally different from starform. 
-
-###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
-- Resource Name: 1999 - Peter Keel - Accrete
-- Author: Matt Burdick
-- Poster/Publisher: Peter Keel
-- Language: C
-- Creation Year: >= 1988
-- Source Year: 1999
-- Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995
-- Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Keel.1999.A
-
-A version cached by Peter Keel on his traveller rpg site.
-
 
 ###[Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
 - Resource Name: 1999 - Peter Keel - Starform
