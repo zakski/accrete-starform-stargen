@@ -746,9 +746,6 @@ Joseph Heck copy of Burrow's code.
 
 May be his own version or undocumented fork.
 
-
-https://github.com/monolar/nim-accrete
-
 ###[Accrete](https://github.com/monolar/nim-accrete)
 - Resource Name: 2015 - Andreas Marr - Accrete - Nim
 - Author: Andreas Marr
@@ -830,10 +827,10 @@ A port of burrow's code.
 
 ###[Stargen](https://github.com/donggas90/ACCRETEPlus)
 
-- Resource Name: 2016 - Dave Chapeskie - Accrete
+- Resource Name: 015- Jong-il Hong - Accrete
 - Author: Jong-il Hong
 - Poster/Publisher: Jong-il Hong (github)
-- Language: C
+- Language: C++
 - Creation Year: >= 2011
 - Source Year: 2015
 - Parents:  Lyons.2013
@@ -847,8 +844,8 @@ A port of Lyons's code to C++
 ###[Accrete](https://bitbucket.org/dchapes/accrete)
 
 - Resource Name: 2016 - Dave Chapeskie - Accrete
-- Author: Jong-il Hong
-- Poster/Publisher: Jong-il Hong (github)
+- Author: Dave Chapeskie
+- Poster/Publisher: Dave Chapeskie (github)
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 2016
@@ -856,7 +853,7 @@ A port of Lyons's code to C++
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
 - Burdick Version: n/a
-- Key: Hong.2015
+- Key: Chapeskie.2016
 
 Looks like copies of old code.
 
