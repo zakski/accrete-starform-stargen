@@ -29,3 +29,12 @@ the pseudo-random number sequence is a tall order without the original software 
 - No consideration given to the accretion of satellites.
 
 - Dust Density Calculation are in 2D
+
+## Computer Simulation of the Formation of Planetary Systems
+
+Stephen Dole's follow-up paper which was published in Icarus a year later. 
+
+Its main usages are as a cross-reference for references found in the previous paper, its comparison of a small dataset against the available accurate (for 
+the time) measurements of the solar system, and its slightly alternate look at some of the formula used.
+
+The model seems to be identical to the one in the previous paper.
