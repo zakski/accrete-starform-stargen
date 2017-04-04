@@ -5,7 +5,7 @@ reference-wise the bibtex file for this paper will be "2.0 accrete"
 don't bother trying to copy any text from the pdf - it will come out with garbage.
 
 Basic Assumptions:
-- 1 star of between 0.7 & 1.3 solar massses
+- 1 star of between 0.7 & 1.3 solar masses
 - Planets can form between the radii 0.3 astronomical units (AU) and 50.0 AU adjusted by luminosity.
 
 Major Limitations:
@@ -13,7 +13,7 @@ Major Limitations:
 accurately recreating the pseudo-random number sequence is a tall order without the original software to hand. However unlike Dole's paper we can try to
 verify the modern ecosphere code is correct by comparing the non-random functions against the sample data he provides.
 
-- No solution for Dole's less thatn stellar Collision calculations.
+- No solution for Dole's less than stellar Collision calculations.
 
 - No consideration given to the accretion of satellites.
 
