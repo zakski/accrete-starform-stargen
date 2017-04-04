@@ -27,6 +27,15 @@ attempted it, I have not got it to run.
 
 However, you can see in the source code that most of the features of his later C/C++ versions are present. 
 
+#### Accrete (C)
+
+Burdick ported his pascal code to c some time in '88 or '89. This would pretty much turn out to be the language family of choice for the majority of 
+developers that forked his code.
+ 
+I have added c/visual studio support to gradle to accommodate these major revisions.
+
+This particular version is an incomplete one, published by Steve Gilham, so naturally it will not compile, but I have clean up all invalid whitespace 
+characters.
 
 ## Papers
 
