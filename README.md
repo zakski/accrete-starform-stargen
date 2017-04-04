@@ -34,7 +34,13 @@ developers that forked his code.
  
 I have added c/visual studio support to gradle to accommodate these major revisions.
 
+##### 1988 - Matt Budick - Accrete -  Steve Gilham Incomplete
 This particular version is an incomplete one, published by Steve Gilham, so naturally it will not compile, but I have cleaned up all invalid whitespace characters.
+
+##### 1994 - Matt Burdick - Accrete
+This is the first complete c version; classes files that existed in the previous version seem identical baring whitespace. 
+ 
+Unfortunately the C code is quite elderly so it does not compile right off the bat either, and I do not want to change it at this time.
 
 ## Papers
 
