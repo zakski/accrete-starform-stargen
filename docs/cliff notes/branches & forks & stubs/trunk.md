@@ -18,6 +18,8 @@ Stephen H. Dole wrote the original program and research paper that detailed the 
 researcher and whilst I have not recovered his original source code; I have a reliable recreations of his original engine based on his papers that exist 
 online, with the exception of the random number generator that he used as that would be machine dependent.
 
+References are stored in accrete.bib.
+
 ####ACRETE
 
 - Resource Name: 1970 - Stephen H. Dole - Computer Simulation of the Formation of Planetary Systems
@@ -35,9 +37,11 @@ online, with the exception of the random number generator that he used as that w
 Stephen H. Dole presented the original research paper findings in Icarus in 1970. The program that used is basically identical to the one written for the 
 Rand Corporation.
 
+References are stored in 1.5 accrete.bib.
+
 ####[ACRETE](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
 
-- Resource Name: 1977 - Isaacmam & Sagan - Computer Simulations of Planetary Accretion Dynamics Sensitivity to Initial Conditions
+- Resource Name: 1977 - Isaacmam & Sagan - Computer Simulations of Planetary Accretion Dynamics: Sensitivity to Initial Conditions
 - Author: Richard Isaacman & Carl Sagan
 - Poster/Publisher: Cornell University
 - Language: Most likely FORTRAN due to it being written for a IBM 7044.
@@ -55,6 +59,8 @@ our own are only one variety out of many different possible planetary systems.
 
 Most recreations of Accrete do not directly use this paper as their inspiration.
 
+References are stored in 1.7 accrete.bib.
+
 ####[Silicon Creation](http://www.academia.edu/download/31676329/fogg1985.pdf)
 
 - Resource Name: 1985 - Martyn J. Fogg - Extra-Solar Planetary Systems A Microcomputer Simulation
@@ -70,6 +76,10 @@ Most recreations of Accrete do not directly use this paper as their inspiration.
 - Key: Fogg.1985
 
 Martyn J. Fogg wrote a subsequent research paper that attempted to vary the mass of the star and build up information about the potential atmosphere of each 
-planet in the generated system. Brian Davis reports that he wrote Fogg to request the source, and he replied that is was on a discarded machine in his 
+planet in the generated system. 
+
+Brian Davis reports that he wrote Fogg to request the source, and he replied that is was on a discarded machine in his 
 garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up. Thus far no one seems to of replicated his planetary 
 classification system.
+
+References are stored in 2.0 accrete.bib.

@@ -38,3 +38,29 @@ Its main usages are as a cross-reference for references found in the previous pa
 the time) measurements of the solar system, and its slightly alternate look at some of the formula used.
 
 The model seems to be identical to the one in the previous paper.
+
+## Computer Simulations of Planetary Accretion Dynamics: Sensitivity to Initial Conditions
+
+A review/critique of the initial parameters and formulae of Dole's model written in 1977 by R. Isaacman and Carl Sagan.
+
+### Looks At/Discusses/Mentions
+ 
+- initial dust density distribution formula
+
+- the choices of orbital eccentricity for the dust cloud
+
+- parallel growth and injection of plantismals
+
+- varying the planetismal seed mass
+
+- altering the dust to gas mass ratio
+
+-  alternative planetary distancing
+
+## Conclusions
+
+that ACRETE is missing some of the essential physics of solar system cosmogony, or that planetary systems of our type are only one example in a rich array of
+alternative varieties of planetary systems. 
+
+Likewise, more fundamental changes in the nebular morphology (e.g. from an exponential to a power law density 
+distribution function) generate planetary systems some of which, although they do not closely resemble our own, are not fundamentally objectionable.
