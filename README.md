@@ -34,8 +34,7 @@ developers that forked his code.
  
 I have added c/visual studio support to gradle to accommodate these major revisions.
 
-This particular version is an incomplete one, published by Steve Gilham, so naturally it will not compile, but I have clean up all invalid whitespace 
-characters.
+This particular version is an incomplete one, published by Steve Gilham, so naturally it will not compile, but I have cleaned up all invalid whitespace characters.
 
 ## Papers
 
