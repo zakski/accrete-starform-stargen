@@ -1,3 +1,4 @@
+typedef struct dust_record  *dust_pointer;
 typedef struct planets_record  *planet_pointer;
 
 typedef struct planets_record {
@@ -8,26 +9,36 @@ typedef struct planets_record {
     int orbit_zone;             /* the 'zone' of the planet          */
     double radius;		/* equatorial radius (in km)	     */
     double density;		/* density (in g/cc)		     */
-    double orbital_period;	/* length of the local year (days)   */
+    double orb_period;   	/* length of the local year (days)   */
     double day;			/* length of the local day (hours)   */
     int resonant_period;	/* TRUE if in resonant rotation   */
     int axial_tilt;		/* units of degrees		     */
-    double escape_velocity;	/* units of cm/sec		     */
-    double surface_accel;	/* units of cm/sec2		     */
-    double surface_grav;	/* units of Earth gravities	     */
+    double esc_velocity;	/* units of cm/sec		     */
+    double surf_accel;  	/* units of cm/sec2		     */
+    double surf_grav;   	/* units of Earth gravities	     */
     double rms_velocity;	/* units of cm/sec		     */
-    double molecule_weight;	/* smallest molecular weight retained*/
+    double molec_weight;	/* smallest molecular weight retained*/
     double volatile_gas_inventory;
-    double surface_pressure;	/* units of millibars (mb)	     */
+    double surf_pressure;	/* units of millibars (mb)	     */
     int greenhouse_effect;	/* runaway greenhouse effect?	*/
     double boil_point;		/* the boiling point of water (Kelvin)*/
     double albedo;		/* albedo of the planet		     */
-    double surface_temp;	/* surface temperature in Kelvin     */
+    double surf_temp;   	/* surface temperature in Kelvin     */
     double hydrosphere;		/* fraction of surface covered	     */
     double cloud_cover;		/* fraction of surface covered	     */
     double ice_cover;		/* fraction of surface covered	     */
+#ifdef	MOON
     planet_pointer first_moon;
+#endif	/* MOON */
     planet_pointer next_planet;
     } planets;
 
+
+typedef struct dust_record {
+	  double inner_edge;
+	  double outer_edge;
+	  int dust_present;
+	  int gas_present;
+	  dust_pointer next_band;
+     } dust;
 

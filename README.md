@@ -11,6 +11,11 @@ Since then there have been numerous versions, and the work on this module is pri
 
 More detailed analysis can be found in the docs folder.
 
+## Requirements
+
+- Gradle 3.4.x+
+- Visual Studio 2015 (any edition)
+
 ## Source Code
 
 This section contains general comments about the recovered source code for each processed version.
@@ -41,6 +46,14 @@ This particular version is an incomplete one, published by Steve Gilham, so natu
 This is the first complete c version; classes files that existed in the previous version seem identical baring whitespace. 
  
 Unfortunately the C code is quite elderly so it does not compile right off the bat either, and I do not want to change it at this time.
+
+#### Accrete2 / Starform (C)
+
+This branch is actually the 3rd iteration of Brudicks code.
+
+##### 1994 - Matt Burdick - Starform
+
+Sorts out the dependency issues that I was seeing with the older code. Improves on the prior versions in general.
 
 ## Papers
 

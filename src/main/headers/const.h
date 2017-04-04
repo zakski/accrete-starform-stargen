@@ -1,20 +1,25 @@
-#ifndef RAND_MAX
-#define	RAND_MAX	(32767)
+#ifdef LONG_RAND
+#define RAND_MAX        (2147483647.0)
+#else
+#define RAND_MAX        (32767.0)
 #endif
 
 #define PI                      (3.1415926536)
+#define	RADIANS_PER_ROTATION	(2.0 * PI)
 #define TRUE                    (1)
 #define FALSE                   (0)
 #define ECCENTRICITY_COEFF      (0.077)		/* Dole's was 0.077         */
 #define	PROTOPLANET_MASS	(1.0E-15)	/* Units of solar masses    */
+#define CHANGE_IN_EARTH_ANG_VEL (-1.3E-15)	/* Units of radians/sec/year*/
 #define SOLAR_MASS_IN_GRAMS	(1.989E33)	/* Units of grams           */
 #define EARTH_MASS_IN_GRAMS	(5.977E27)	/* Units of grams           */
-#define EARTH_RADIUS		(6.378E6)	/* Units of cm              */
-#define EARTH_RADIUS_IN_KM	(6378.0)	/* Units of km              */
+#define EARTH_RADIUS		(6.378E8)	/* Units of cm		    */
+#define EARTH_DENSITY		(5.52)		/* Units of g/cc	    */
+#define KM_EARTH_RADIUS		(6378.0)	/* Units of km              */
 #define EARTH_ACCELERATION	(981.0)		/* Units of cm/sec2         */
 #define EARTH_AXIAL_TILT	(23.4)		/* Units of degrees         */
 #define EARTH_EXOSPHERE_TEMP	(1273.0)	/* Units of degrees Kelvin  */
-#define EARTH_MASSES_PER_SOLAR_MASS	(332775.64)
+#define SUN_MASS_IN_EARTH_MASSES (332775.64)
 #define EARTH_EFFECTIVE_TEMP	(255.0)		/* Units of degrees Kelvin  */
 #define EARTH_ALBEDO		(0.3)
 #define	CLOUD_COVERAGE_FACTOR	(1.839E-8)	/* Km2/kg                   */
@@ -27,7 +32,7 @@
 #define GAS_RETENTION_THRESHOLD	(5.0)		/* ratio of esc vel to RMS vel */
 #define GAS_GIANT_ALBEDO	(0.5)		/* albedo of a gas giant    */
 #define CLOUD_ALBEDO		(0.52)
-#define AIRLESS_ROCKY_ALBEDO	(0.07)
+#define ROCKY_AIRLESS_ALBEDO	(0.07)
 #define ROCKY_ALBEDO		(0.15)
 #define WATER_ALBEDO		(0.04)
 #define AIRLESS_ICE_ALBEDO	(0.5)
@@ -35,6 +40,7 @@
 #define SECONDS_PER_HOUR	(3600.0)
 #define CM_PER_AU		(1.495978707E13)/* number of cm in an AU    */
 #define CM_PER_KM		(1.0E5)		/* number of cm in a km     */
+#define KM_PER_AU               (CM_PER_AU / CM_PER_KM)
 #define CM_PER_METER		(100.0)
 #define MILLIBARS_PER_BAR	(1000.0)
 #define KELVIN_CELCIUS_DIFFERENCE	(273.0)
@@ -54,7 +60,7 @@
 /*  This table is from Dole's book "Habitable Planets for Man", p. 38  */
 
 #define ATOMIC_HYDROGEN		(1.0)	/* H   */
-#define MOLECULAR_HYDROGEN	(2.0)	/* H2  */
+#define MOL_HYDROGEN		(2.0)	/* H2  */
 #define HELIUM			(4.0)	/* He  */
 #define ATOMIC_NITROGEN		(14.0)	/* N   */
 #define ATOMIC_OXYGEN		(16.0)	/* O   */
@@ -62,18 +68,18 @@
 #define AMMONIA			(17.0)	/* NH3 */
 #define WATER_VAPOR		(18.0)	/* H2O */
 #define NEON			(20.2)	/* Ne  */
-#define MOLECULAR_NITROGEN	(28.0)	/* N2  */
+#define MOL_NITROGEN		(28.0)	/* N2  */
 #define CARBON_MONOXIDE		(28.0)	/* CO  */
 #define NITRIC_OXIDE		(30.0)	/* NO  */
-#define MOLECULAR_OXYGEN	(32.0)	/* O2  */
+#define MOL_OXYGEN		(32.0)	/* O2  */
 #define HYDROGEN_SULPHIDE	(34.1)	/* H2S */
 #define ARGON			(39.9)	/* Ar  */
 #define CARBON_DIOXIDE		(44.0)	/* CO2 */
 #define NITROUS_OXIDE		(44.0)	/* N2O */
 #define NITROGEN_DIOXIDE	(46.0)	/* NO2 */
 #define OZONE			(48.0)	/* O3  */
-#define SULPHUR_DIOXIDE		(64.1)	/* SO2 */
-#define SULPHUR_TRIOXIDE	(80.1)	/* SO3 */
+#define SULPH_DIOXIDE		(64.1)	/* SO2 */
+#define SULPH_TRIOXIDE		(80.1)	/* SO3 */
 #define KRYPTON			(83.8)	/* Kr  */
 #define XENON			(131.3)	/* Xe  */
 
@@ -88,4 +94,9 @@
 /*  covered with clouds in function cloud_fraction in file enviro.c.	     */
 #define	Q1_36			(1.258E19)	/* grams    */
 #define Q2_36			(0.0698)	/* 1/Kelvin */
+
+/* macros: */
+#define	pow2(a)	((a) * (a))
+#define	pow3(a)	((a) * (a) * (a))
+#define	pow1_4(a)	sqrt(sqrt(a))
 

@@ -5,17 +5,21 @@
 /*	P-4226.								*/
 /*----------------------------------------------------------------------*/
 
-typedef struct dust_bands_record  *dust_pointer;
-typedef struct dust_bands_record {
-	  double inner_edge;
-	  double outer_edge;
-	  int dust_present;
-	  int gas_present;
-	  dust_pointer next_band;
-     } dust_bands;
+#include	<stdio.h>
+#include	<math.h>
+#include	"const.h"
+#include	"structs.h"
+
+/* externals from C library not elsewhere declared: */
+extern char *malloc();
+extern void free();
+
+extern double random_number();
+extern double random_eccentricity();
+extern int flag_verbose, flag_lisp;
 
 /* A few variables global to the entire program:		*/
-extern planet_pointer planet_head;
+planet_pointer planet_head;
 
 /* Now for some variables global to the accretion process:      */
 int dust_left;
@@ -26,7 +30,7 @@ dust_pointer dust_head;
 void set_initial_conditions(inner_limit_of_dust, outer_limit_of_dust)
 double inner_limit_of_dust, outer_limit_of_dust;
 {
-     dust_head = (dust_bands *)malloc(sizeof(dust_bands));
+     dust_head = (dust *)malloc(sizeof(dust));
      planet_head = NULL;
      dust_head->next_band = NULL;
      dust_head->outer_edge = outer_limit_of_dust;
@@ -37,22 +41,22 @@ double inner_limit_of_dust, outer_limit_of_dust;
      cloud_eccentricity = 0.2;
 }
 
-double stellar_dust_limit(stellar_mass_ratio)
-double stellar_mass_ratio;
+double stellar_dust_limit(stell_mass_ratio)
+double stell_mass_ratio;
 {
-     return(200.0 * pow(stellar_mass_ratio,(1.0 / 3.0)));
+       return(200.0 * pow(stell_mass_ratio,(1.0 / 3.0)));
 }
 
-double innermost_planet(stellar_mass_ratio)
-double stellar_mass_ratio;
+double nearest_planet(stell_mass_ratio)
+double stell_mass_ratio;
 {
-     return(0.3 * pow(stellar_mass_ratio,(1.0 / 3.0)));
+     return(0.3 * pow(stell_mass_ratio,(1.0 / 3.0)));
 }
 
-double outermost_planet(stellar_mass_ratio)
-double stellar_mass_ratio;
+double farthest_planet(stell_mass_ratio)
+double stell_mass_ratio;
 {
-     return(50.0 * pow(stellar_mass_ratio,(1.0 / 3.0)));
+     return(50.0 * pow(stell_mass_ratio,(1.0 / 3.0)));
 }
 
 double inner_effect_limit(a, e, mass)
@@ -64,7 +68,7 @@ double a, e, mass;
 double outer_effect_limit(a, e, mass)
 double a, e, mass;
 {
-     return (a * (1.0 + e) * (1.0 + reduced_mass) / (1.0 - cloud_eccentricity));
+     return (a * (1.0 + e) * (1.0 + mass) / (1.0 - cloud_eccentricity));
 }
 
 int dust_available(inside_range, outside_range)
@@ -105,7 +109,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
      {
 	  if (((node1->inner_edge < min) && (node1->outer_edge > max)))
 	  {
-	       node2 = (dust_bands *)malloc(sizeof(dust_bands));
+	       node2 = (dust *)malloc(sizeof(dust));
 	       node2->inner_edge = min;
 	       node2->outer_edge = max;
 	       if ((node1->gas_present == TRUE))
@@ -113,7 +117,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 	       else
 		    node2->gas_present = FALSE;
 	       node2->dust_present = FALSE;
-	       node3 = (dust_bands *)malloc(sizeof(dust_bands));
+	       node3 = (dust *)malloc(sizeof(dust));
 	       node3->inner_edge = max;
 	       node3->outer_edge = node1->outer_edge;
 	       node3->gas_present = node1->gas_present;
@@ -127,7 +131,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 	  else
 	       if (((node1->inner_edge < max) && (node1->outer_edge > max)))
 	       {
-		    node2 = (dust_bands *)malloc(sizeof(dust_bands));
+		    node2 = (dust *)malloc(sizeof(dust));
 		    node2->next_band = node1->next_band;
 		    node2->dust_present = node1->dust_present;
 		    node2->gas_present = node1->gas_present;
@@ -145,7 +149,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 	       else
 		    if (((node1->inner_edge < min) && (node1->outer_edge > min)))
 		    {
-			 node2 = (dust_bands *)malloc(sizeof(dust_bands));
+			 node2 = (dust *)malloc(sizeof(dust));
 			 node2->next_band = node1->next_band;
 			 node2->dust_present = FALSE;
 			 if ((node1->gas_present == TRUE))
@@ -249,13 +253,13 @@ dust_pointer dust_band;
 /*  in units of solar masses.                                               */
 /*--------------------------------------------------------------------------*/
 
-double critical_limit(orbital_radius, eccentricity, stellar_luminosity_ratio)
-double orbital_radius, eccentricity, stellar_luminosity_ratio;
+double critical_limit(orb_radius, eccentricity, stell_luminosity_ratio)
+double orb_radius, eccentricity, stell_luminosity_ratio;
 {
      double temp, perihelion_dist;
 
-     perihelion_dist = (orbital_radius - orbital_radius * eccentricity);
-     temp = perihelion_dist * sqrt(stellar_luminosity_ratio);
+     perihelion_dist = (orb_radius - orb_radius * eccentricity);
+     temp = perihelion_dist * sqrt(stell_luminosity_ratio);
      return(B * pow(temp,-0.75));
 }
 
@@ -266,7 +270,7 @@ void accrete_dust(seed_mass, a, e, crit_mass,
 double *seed_mass, a, e, crit_mass,
      body_inner_bound, body_outer_bound;
 {
-     double perihelion_dist, new_mass, temp_mass;
+     double new_mass, temp_mass;
 
      new_mass = (*seed_mass);
      do
@@ -283,16 +287,16 @@ double *seed_mass, a, e, crit_mass,
 
 
 void coalesce_planetesimals(a, e, mass, crit_mass,
-			    stellar_luminosity_ratio,
+			    stell_luminosity_ratio,
 			    body_inner_bound, body_outer_bound)
-double a, e, mass, crit_mass, stellar_luminosity_ratio,
+double a, e, mass, crit_mass, stell_luminosity_ratio,
      body_inner_bound, body_outer_bound;
 {
      planet_pointer node1, node2, node3;
-     int coalesced;
+     int finished;
      double temp, dist1, dist2, a3;
 
-     coalesced = FALSE;
+     finished = FALSE;
      node1 = planet_head;
      while ((node1 != NULL))
      {
@@ -316,9 +320,11 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 	  }
 	  if (((fabs(temp) <= fabs(dist1)) || (fabs(temp) <= fabs(dist2))))
 	  {
-#ifdef VERBOSE
-	       printf("Collision between two planetesimals!\n");
-#endif
+	       if (flag_verbose)
+		       if (flag_lisp)
+			       printf(";Collision between two planetesimals!\n");
+		       else
+			       printf("Collision between two planetesimals!\n");
 	       a3 = (node1->mass + mass) / ((node1->mass / node1->a) + (mass / a));
 	       temp = node1->mass * sqrt(node1->a) * sqrt(1.0 - pow(node1->e,2.0));
 	       temp = temp + (mass * sqrt(a) * sqrt(sqrt(1.0 - pow(e,2.0))));
@@ -328,18 +334,18 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 		    temp = 0.0;
 	       e = sqrt(temp);
 	       temp = node1->mass + mass;
-	       accrete_dust(&(temp),a3,e,stellar_luminosity_ratio,
+	       accrete_dust(&(temp),a3,e,stell_luminosity_ratio,
 			    body_inner_bound,body_outer_bound);
 	       node1->a = a3;
 	       node1->e = e;
 	       node1->mass = temp;
 	       node1 = NULL;
-	       coalesced = TRUE;
+	       finished = TRUE;
 	  }
 	  else
 	       node1 = node1->next_planet;
      }
-     if (!(coalesced))
+     if (!(finished))
      {
 	  node3 = (planets *)malloc(sizeof(planets));
 	  node3->a = a;
@@ -383,59 +389,71 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 }
 
 
-planet_pointer distribute_planetary_masses(stellar_mass_ratio,
-					   stellar_luminosity_ratio, inner_dust, outer_dust)
-double stellar_mass_ratio, stellar_luminosity_ratio, inner_dust, outer_dust;
+planet_pointer dist_planetary_masses(stell_mass_ratio,
+					   stell_luminosity_ratio, inner_dust, outer_dust)
+double stell_mass_ratio, stell_luminosity_ratio, inner_dust, outer_dust;
 {
      double a, e, mass, crit_mass,
-     planetesimal_inner_bound, planetesimal_outer_bound;
+     planet_inner_bound, planet_outer_bound;
 
      set_initial_conditions(inner_dust,outer_dust);
-     planetesimal_inner_bound = innermost_planet(stellar_mass_ratio);
-     planetesimal_outer_bound = outermost_planet(stellar_mass_ratio);
+     planet_inner_bound = nearest_planet(stell_mass_ratio);
+     planet_outer_bound = farthest_planet(stell_mass_ratio);
      while (dust_left)
      {
-	  a = random_number(planetesimal_inner_bound,planetesimal_outer_bound);
+	  a = random_number(planet_inner_bound,planet_outer_bound);
 	  e = random_eccentricity( );
 	  mass = PROTOPLANET_MASS;
-#ifdef VERBOSE
-	  printf("Checking %f AU.\n",a);
-#endif
+	  if (flag_verbose)
+		  if (flag_lisp)
+			  printf(";Checking %lg AU.\n",a);
+		  else
+			  printf("Checking %lg AU.\n",a);
 	  if (dust_available(inner_effect_limit(a, e, mass),
 			     outer_effect_limit(a, e, mass))) {
-#ifdef VERBOSE
-		    printf(".. Injecting protoplanet.\n");
-#endif
-		    dust_density = DUST_DENSITY_COEFF * sqrt(stellar_mass_ratio)
+		  if (flag_verbose)
+			  if (flag_lisp)
+				  printf(";.. Injecting protoplanet.\n");
+			  else
+				  printf(".. Injecting protoplanet.\n");
+		    dust_density = DUST_DENSITY_COEFF * sqrt(stell_mass_ratio)
 			 * exp(-ALPHA * pow(a,(1.0 / N)));
-		    crit_mass = critical_limit(a,e,stellar_luminosity_ratio);
+		    crit_mass = critical_limit(a,e,stell_luminosity_ratio);
 		    accrete_dust(&(mass),a,e,crit_mass,
-				 planetesimal_inner_bound,
-				 planetesimal_outer_bound);
+				 planet_inner_bound,
+				 planet_outer_bound);
 		    if ((mass != 0.0) && (mass != PROTOPLANET_MASS))
 			 coalesce_planetesimals(a,e,mass,crit_mass,
-						stellar_luminosity_ratio,
-						planetesimal_inner_bound,planetesimal_outer_bound);
-#ifdef VERBOSE
-		    else printf(".. failed due to large neighbor.\n");
-#endif
+						stell_luminosity_ratio,
+						planet_inner_bound,planet_outer_bound);
+		    else if (flag_verbose)
+			    if (flag_lisp)
+				    printf(";.. failed due to large neighbor.\n");
+			    else
+				    printf(".. failed due to large neighbor.\n");
 	       }
-#ifdef VERBOSE
-	  else printf(".. failed.\n");
-#endif
+	  else if (flag_verbose)
+		  if (flag_lisp)
+			  printf(";.. failed.\n");
+		  else
+			  printf(".. failed.\n");
      }
      return(planet_head);
 }
 
 
 
-planet_pointer distribute_moon_masses(planetary_mass, stellar_luminosity_ratio,
+#ifdef	MOON
+planet_pointer dist_moon_masses(planetary_mass, stell_luminosity_ratio,
 				      planet_eccentricity, inner_dust, outer_dust)
-double planetary_mass, stellar_luminosity_ratio, planet_eccentricity,
+double planetary_mass, stell_luminosity_ratio, planet_eccentricity,
      inner_dust, outer_dust;
 {
      double a, e, mass, crit_mass,
-     planetesimal_inner_bound, planetesimal_outer_bound;
-     
+     planet_inner_bound, planet_outer_bound;
+
      return(NULL);
 }
+#endif	/* MOON */
+
+
