@@ -55,6 +55,10 @@ This branch is actually the 3rd iteration of Brudicks code.
 
 Sorts out the dependency issues that I was seeing with the older code. Improves on the prior versions in general.
 
+##### 1995 - Matt Burdick - Starform
+
+Steve Dang seems to of straight up copied Ian Burrell's version to his Geocities page.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 
