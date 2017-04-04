@@ -9,6 +9,25 @@ It grew to prominence in the 90's after a recreated version of the source code b
 
 Since then there have been numerous versions, and the work on this module is primarily focused on preserving the timeline of events that I have pieced together.
 
+More detailed analysis can be found in the docs folder.
+
+## Source Code
+
+This section contains general comments about the recovered source code for each processed version.
+
+### Burdick
+***
+
+Matt Burdick's codeline popularised accrete and disseminated across the web via ftp sites and usenet in the late 80's to mid 90's. 
+
+#### Accretion (Pascal)
+
+The first iteration of Burdick's code is written in Turbo Pascal 3 circa 1988. Naturally this is difficult to compile on modern systems, so while I have 
+attempted it, I have not got it to run. 
+
+However, you can see in the source code that most of the features of his later C/C++ versions are present. 
+
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 
