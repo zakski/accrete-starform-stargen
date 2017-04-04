@@ -9,7 +9,9 @@
 #include "const.h"
 #include "structs.h"
 
-#define VERBOSE
+/*
+  #define VERBOSE
+*/
 
 /*  These are all of the global variables used during accretion:  */
 float anum;
@@ -99,9 +101,8 @@ void generate_stellar_system()
 }
 
 
-void main ()
-{
-
+int main () {
      init();
      generate_stellar_system();
+     return 0;
 }

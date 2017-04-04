@@ -50,6 +50,11 @@ There are minor differences between this and Burrell's version.
  
 Unfortunately like Burrell's variant it doesn't compile using Gradle/VS either.
 
+##### 1999 - Peter Keel - Accrete
+There are minor cosmetic differences between this and Nyrath's version.
+ 
+Doesn't compile using Gradle/VS either.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 

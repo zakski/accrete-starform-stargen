@@ -4,6 +4,8 @@
 
 #define TRUE                    (1)
 #define FALSE                   (0)
+
+#define PI                      M_PI
 #define ECCENTRICITY_COEFF      (0.077)		/* Dole's was 0.077         */
 #define	PROTOPLANET_MASS	(1.0E-15)	/* Units of solar masses    */
 #define SOLAR_MASS_IN_GRAMS	(1.989E33)	/* Units of grams           */
