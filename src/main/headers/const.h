@@ -2,7 +2,6 @@
 #define	RAND_MAX	(32767)
 #endif
 
-#define PI                      (3.1415926536)
 #define TRUE                    (1)
 #define FALSE                   (0)
 #define ECCENTRICITY_COEFF      (0.077)		/* Dole's was 0.077         */
@@ -16,7 +15,7 @@
 #define EARTH_EXOSPHERE_TEMP	(1273.0)	/* Units of degrees Kelvin  */
 #define EARTH_MASSES_PER_SOLAR_MASS	(332775.64)
 #define EARTH_EFFECTIVE_TEMP	(255.0)		/* Units of degrees Kelvin  */
-#define EARTH_ALBEDO		(0.3)
+#define EARTH_ALBEDO		(0.39)
 #define	CLOUD_COVERAGE_FACTOR	(1.839E-8)	/* Km2/kg                   */
 #define EARTH_WATER_MASS_PER_AREA	(3.83E15)/* grams per square km     */
 #define	EARTH_SURF_PRES_IN_MILLIBARS	 (1000.0)
@@ -88,4 +87,3 @@
 /*  covered with clouds in function cloud_fraction in file enviro.c.	     */
 #define	Q1_36			(1.258E19)	/* grams    */
 #define Q2_36			(0.0698)	/* 1/Kelvin */
-

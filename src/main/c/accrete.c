@@ -1,3 +1,4 @@
+
 /*----------------------------------------------------------------------*/
 /*                           BIBLIOGRAPHY                               */
 /*  Dole, Stephen H.  "Formation of Planetary Systems by Aggregation:   */
@@ -15,7 +16,8 @@ typedef struct dust_bands_record {
      } dust_bands;
 
 /* A few variables global to the entire program:		*/
-extern planet_pointer planet_head;
+
+
 
 /* Now for some variables global to the accretion process:      */
 int dust_left;

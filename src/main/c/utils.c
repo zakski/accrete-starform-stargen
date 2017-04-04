@@ -3,7 +3,7 @@
 /* inner and outer bounds.                                              */
 /*----------------------------------------------------------------------*/
 
-double random_number(inner, outer)
+double random_number (inner, outer)
 double inner, outer;
 {
      double range;
@@ -18,13 +18,13 @@ double inner, outer;
 /*   exact value given it in 'value'.                                   */
 /*----------------------------------------------------------------------*/
 
-double about(value, variation)
+double about (value, variation)
 double value, variation;
 {
      return(value + (value * random_number(-variation,variation)));
 }
 
-double random_eccentricity()
+double random_eccentricity ()
 {
      return(1.0 - pow(random_number(0.0, 1.0),ECCENTRICITY_COEFF));
 }

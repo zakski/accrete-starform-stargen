@@ -40,7 +40,15 @@ This particular version is an incomplete one, published by Steve Gilham, so natu
 ##### 1994 - Matt Burdick - Accrete
 This is the first complete c version; classes files that existed in the previous version seem identical baring whitespace. 
  
-Unfortunately the C code is quite elderly so it does not compile right off the bat either, and I do not want to change it at this time.
+Unfortunately the C code is quite elderly so it does not compile right off the bat using Gradle/VS either, and I do not want to change it at this time.
+
+##### 1995 - Nyrath - Accrete
+There are minor differences between this and Burrell's version.
+ - EARTH_ALBEDO has been changed from 0.3 to 0.39 in const.h
+ - printf changed to fprintf to print out to a file
+ - moved initialisation method around
+ 
+Unfortunately like Burrell's variant it doesn't compile using Gradle/VS either.
 
 ## Papers
 

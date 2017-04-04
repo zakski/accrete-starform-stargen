@@ -9,6 +9,8 @@ apply plugin: 'visual-studio'
 // Add necessary language support
 apply plugin: 'c'
 
+
+
 model {
     toolChains {
         visualCpp(VisualCpp) {
@@ -21,7 +23,18 @@ model {
         }
     }
      components {
-        main(NativeExecutableSpec) {
+        accrete(NativeExecutableSpec) {
+            sources {
+                c {
+                    source {
+                        srcDir "src/main/c"
+                        include "**/*.c"
+                    }
+                    exportedHeaders {
+                        srcDir "src/main/headers"
+                    }
+                }
+            }
         }
     }
 }

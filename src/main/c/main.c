@@ -1,40 +1,43 @@
-#include	<stdio.h>
-#include	<string.h>
-#include        <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <float.h>
+#include <time.h>
 
-#ifdef MSDOS
-#include        <stddef.h>
-#include        <malloc.h>
-#include	<stdlib.h>
-#include        <float.h>
-#endif
+#include "const.h"
+#include "structs.h"
 
-#include        "const.h"
-#include        "structs.h"
-
-/*#define	VERBOSE*/
+#define VERBOSE
 
 /*  These are all of the global variables used during accretion:  */
+float anum;
 planet_pointer planet_head;
-double stellar_mass_ratio, stellar_luminosity_ratio, main_seq_life,
-     age, r_ecosphere, r_greenhouse, radians_per_rotation;
+double stellar_mass_ratio, stellar_luminosity_ratio, main_seq_life;
+double age, r_ecosphere, r_greenhouse, radians_per_rotation;
 int spin_resonance;
 
-
-#include        "utils.c"
-#include	"accrete.c"
-#include	"display.c"
-#include	"enviro.c"
-
 void init()
-{
-     srand(25);
+{                       /* This code gets the random number seed */
+time_t t;               /* from the seconds on the clock. It is  */
+struct tm trec;         /* from page 316 of the Orca/C manual.   */
+                        /* The origional code gave srand as 25,  */
+t = time(NULL);         /* this is much more random.             */
+trec = *localtime(&t);
+srand (trec.tm_sec);
 }
+
+
+
+#include "utils.c"
+#include "accrete.c"
+#include "display.c"
+#include "enviro.c"
 
 void generate_stellar_system()
 {
      planet_pointer planet;
-
      radians_per_rotation = 2.0 * PI;
      stellar_mass_ratio = random_number(0.6,1.3);
      stellar_luminosity_ratio = luminosity(stellar_mass_ratio);
@@ -48,9 +51,6 @@ void generate_stellar_system()
      r_greenhouse = r_ecosphere * GREENHOUSE_EFFECT_CONST;
      while (planet != NULL)
      {
-/*	planet->first_moon = distribute_moon_masses (planet->mass,
-		stellar_luminosity_ratio, planet->e,
-		0.0, planet_dust_limit(planet->mass));*/
 	  planet->orbit_zone = orbital_zone(planet->a);
 	  if (planet->gas_giant)
 	  {
@@ -99,10 +99,9 @@ void generate_stellar_system()
 }
 
 
-main (argc,argv)
-int argc;
-char *argv[];
+void main ()
 {
-     init( );
-     generate_stellar_system( );
+
+     init();
+     generate_stellar_system();
 }
