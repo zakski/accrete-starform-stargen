@@ -47,7 +47,7 @@ the time) measurements of the solar system, and its slightly alternate look at s
 The model seems to be identical to the one in the previous paper.
 
 ### Computer Simulations of Planetary Accretion Dynamics: Sensitivity to Initial Conditions
-
+***
 A review/critique of the initial parameters and formulae of Dole's model written in 1977 by R. Isaacman and Carl Sagan.
 
 #### Looks At/Discusses/Mentions
