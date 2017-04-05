@@ -14,21 +14,21 @@ CFLAGS = /Ox
 OBJS = accrete.obj enviro.obj display.obj utils.obj
 
 
-accrete.obj: accrete.c const.h structs.h
-	qcl /c $(CFLAGS) accrete.c
+accrete.obj: accrete.c const.h structs.h config.h
+        qcl /c $(CFLAGS) accrete.c
 
-enviro.obj: enviro.c const.h structs.h
-	qcl /c $(CFLAGS) enviro.c
+enviro.obj: enviro.c const.h structs.h config.h
+        qcl /c $(CFLAGS) enviro.c
 
-display.obj: display.c const.h structs.h
-	qcl /c $(CFLAGS) display.c
+display.obj: display.c const.h structs.h config.h
+        qcl /c $(CFLAGS) display.c
 
-utils.obj: utils.c const.h
-	qcl /c $(CFLAGS) utils.c
+utils.obj: utils.c const.h config.h
+        qcl /c $(CFLAGS) utils.c config.h
 
-starform.obj: starform.c const.h structs.h
-	qcl /c $(CFLAGS) starform.c
+starform.obj: starform.c const.h structs.h config.h
+        qcl /c $(CFLAGS) starform.c
 
 starform.exe: starform.obj $(OBJS)
-	link $(LINKFLAGS) starform.obj $(OBJS);
+        link $(LINKFLAGS) starform.obj $(OBJS);
 

@@ -49,7 +49,8 @@ Unfortunately the C code is quite elderly so it does not compile right off the b
 
 #### Accrete2 / Starform (C)
 
-This branch is actually the 3rd iteration of Brudicks code.
+This branch is actually the 3rd iteration of Burdick's code. The main changes between what is the first/second iteration and this seem to be its psuedorandom 
+number routines and its lisp-style console output.
 
 ##### 1994 - Matt Burdick - Starform
 
@@ -62,6 +63,11 @@ Steve Dang seems to of straight up copied Ian Burrell's version to his Geocities
 ##### 1999 - Peter Keel - Starform
 
 Peter Keel seems to have a version more or less identically to the prior two versions.
+
+##### 1993 - Matt Burdick - starform - Sean Molloy
+
+Sean Molloy posted a v3.1 version that seems to be the highest iteration of Burdick's original code available on the web. It seems to have some runtime 
+issues that could be the product of my new build process.
 
 ## Papers
 
