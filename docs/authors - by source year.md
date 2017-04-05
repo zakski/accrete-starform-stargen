@@ -401,22 +401,19 @@ Burrell's code is loosely based on Burdick's source code, but takes a much more 
  In any case, He has written several versions in Pascal, C, Modula-2, C++ as well Java, but only this java version seems to remain.
 
 ###[Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
-- Resource Name: 1998 - Matt Burdick - Acrete2
-- Author: Matt Burdick
+- Resource Name: 1998 - Mark J. Stock - Acrete2
+- Author: Mark J. Stock
 - Poster/Publisher: Mark J. Stock
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1998
-- Parents: Burdick.1995
+- Parents: Burdick.1995 ?
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
 - Burdick Version: V3.0
-- Key: Burdick.1998
+- Key: Stock.1998
 
-One of Mat Burdick's versions which apparently is commonly distributed as accrete2.
- 
-Accrete2 and Starform are used pretty interchangeably so to have a copy of Accrete2, with old code versions inside of it should be pretty useful in 
-determining the version control history.  
+One of Mat Burdick's versions hacked about by Mark J. Stock. 
 
 ###[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
 - Resource Name: 1999 - Keris - Accretion v1
@@ -457,7 +454,7 @@ A version cached by Peter Keel on his traveller rpg site.
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1999
-- Parents: Burdick.1998
+- Parents: Burdick.1995
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
 - Burdick Version: V3.0

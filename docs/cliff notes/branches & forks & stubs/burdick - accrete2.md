@@ -36,26 +36,7 @@ Accrete2 and Starform are names given to this iteration fairly interchangeably.
 - Key: Burdick.1995
 
 Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
-dated as been last modified later than Burrell's copy, so we have a potential version order between them.
-
-###[Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
-
-- Resource Name: 1998 - Matt Burdick - Acrete2
-- Author: Matt Burdick
-- Poster/Publisher: Mark J. Stock
-- Language: C
-- Creation Year: >= 1988
-- Source Year: 1998
-- Parents: Burdick.1995
-- Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: V3.0
-- Key: Burdick.1998
-
-One of Mat Burdick's versions which apparently is commonly distributed as accrete2.
- 
-Accrete2 and Starform are used pretty interchangeably so to have a copy of Accrete2, with old code versions inside of it should be pretty useful in 
-determining the version control history.  
+dated as been last modified later than Burrell's copy, so we have a potential version order between them. 
 
 ###[Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
 
@@ -65,7 +46,7 @@ determining the version control history.
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1999
-- Parents: Burdick.1998
+- Parents: Burdick.1995
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
 - Burdick Version: V3.0

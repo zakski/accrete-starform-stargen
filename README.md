@@ -59,6 +59,10 @@ Sorts out the dependency issues that I was seeing with the older code. Improves 
 
 Steve Dang seems to of straight up copied Ian Burrell's version to his Geocities page.
 
+##### 1999 - Peter Keel - Starform
+
+Peter Keel seems to have a version more or less identically to the prior two versions.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 

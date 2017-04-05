@@ -6,15 +6,12 @@
 /* inner and outer bounds.                                              */
 /*----------------------------------------------------------------------*/
 
-double random_number(inner, outer)
-double inner, outer;
-{
+double random_number(double inner, double outer) {
      double range;
 
      range = outer - inner;
      return((((double)rand()) / (double)(RAND_MAX)) * range + inner);
 }
-
 
 /*----------------------------------------------------------------------*/
 /*   This function returns a value within a certain variation of the    */
