@@ -9,10 +9,8 @@ apply plugin: 'visual-studio'
 // Add necessary language support
 apply plugin: 'c'
 
-
-
 model {
-    toolChains {
+   toolChains {
         visualCpp(VisualCpp) {
             // Specify the installDir if Visual Studio cannot be located
             // installDir "C:/Apps/Microsoft Visual Studio 10.0"
@@ -22,7 +20,7 @@ model {
             // path "/usr/bin/gcc"
         }
     }
-     components {
+    components {
         accrete(NativeExecutableSpec) {
             sources {
                 c {

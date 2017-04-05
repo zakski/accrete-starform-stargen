@@ -11,6 +11,11 @@ Since then there have been numerous versions, and the work on this module is pri
 
 More detailed analysis can be found in the docs folder.
 
+## Requirements
+
+- Gradle 3.4.x+
+- Visual Studio 2015 (any edition)
+
 ## Source Code
 
 This section contains general comments about the recovered source code for each processed version.
@@ -54,6 +59,28 @@ Unfortunately like Burrell's variant it doesn't compile using Gradle/VS either.
 There are minor cosmetic differences between this and Nyrath's version.
  
 Doesn't compile using Gradle/VS either.
+
+#### Accrete2 / Starform (C)
+
+This branch is actually the 3rd iteration of Burdick's code. The main changes between what is the first/second iteration and this seem to be its psuedorandom 
+number routines and its lisp-style console output.
+
+##### 1994 - Matt Burdick - Starform
+
+Sorts out the dependency issues that I was seeing with the older code. Improves on the prior versions in general.
+
+##### 1995 - Matt Burdick - Starform
+
+Steve Dang seems to of straight up copied Ian Burrell's version to his Geocities page.
+
+##### 1999 - Peter Keel - Starform
+
+Peter Keel seems to have a version more or less identically to the prior two versions.
+
+##### 1993 - Matt Burdick - starform - Sean Molloy
+
+Sean Molloy posted a v3.1 version that seems to be the highest iteration of Burdick's original code available on the web. It seems to have some runtime 
+issues that could be the product of my new build process.
 
 ## Papers
 

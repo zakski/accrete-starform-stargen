@@ -1,3 +1,7 @@
+#include        <math.h>
+#include        "config.h"
+#include        "const.h"
+
 /*----------------------------------------------------------------------*/
 /*  This function returns a random real number between the specified    */
 /* inner and outer bounds.                                              */
@@ -26,5 +30,5 @@ double value, variation;
 
 double random_eccentricity ()
 {
-     return(1.0 - pow(random_number(0.0, 1.0),ECCENTRICITY_COEFF));
+	return(1.0 - pow(random_number(0.0, 1.0), ECCENTRICITY_COEFF));
 }
