@@ -30,6 +30,12 @@ This is his first iteration, published in White Dwarf back in 1984.
 Its written in ibm basic which I could not even begin to guess how to compile. So I have ran the article through a web ocr utility and abandoned cleaning 
 that up until I have more time. 
 
+#### Acrete (psuedocode)
+
+Gilham's second iteration, published on Usenet. 
+
+The psuedo code just reiterates the info published in the WD article.
+
 ### Burdick
 ***
 
