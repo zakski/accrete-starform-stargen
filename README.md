@@ -62,8 +62,9 @@ Doesn't compile using Gradle/VS either.
 
 #### Accrete2 / Starform (C)
 
-This branch is actually the 3rd iteration of Burdick's code. The main changes between what is the first/second iteration and this seem to be its psuedorandom 
-number routines and its lisp-style console output.
+This branch is actually the 3rd iteration of Burdick's code. The main changes between what is the first/second iteration and this seem to be its psuedorandom number routines and its lisp-style console output.
+
+Accrete2/Starform is considered to be an offshoot from Burdick.1994.A/1994 - Matt Burdick - Accrete.
 
 ##### 1994 - Matt Burdick - Starform
 
