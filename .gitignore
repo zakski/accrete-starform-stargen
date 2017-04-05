@@ -3,6 +3,14 @@
 # Do not add user-specific sensitive/high-churn Intellij files
 .idea/
 
+# Do not add user-specific sensitive/high-churn Visual Studio files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.VC.db
+*.VC.VC.opendb
+
 # Do not add user-specific Gradle data and configuration
 .gradle/
 
@@ -13,6 +21,8 @@ gradlew.bat
 
 # Do not add local builds to git
 build/
+out/
+.vs/
 
 # Do not add complied jvm code to git
 *.class

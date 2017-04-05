@@ -4,37 +4,35 @@ version '0.0.1'
 
 // IntelliJ is the primary development medium, so it makes sense to add explicit support for it in gradle
 apply plugin: 'idea'
+apply plugin: 'visual-studio'
 
 // Add necessary language support
-apply plugin: 'java'
-apply plugin: 'scala'
+apply plugin: 'c'
 
-sourceCompatibility = '1.8'
-
-ext {
-    scalaVersion = '2.11.8'
-    scalaTestVersion = '3.0.0'
-    slf4jVersion = '1.7.12'
-    junitVersion = '4.11'
-}
-
-idea {
-    module {
-        downloadJavadoc = true
-        downloadSources = true
+model {
+   toolChains {
+        visualCpp(VisualCpp) {
+            // Specify the installDir if Visual Studio cannot be located
+            // installDir "C:/Apps/Microsoft Visual Studio 10.0"
+        }
+        gcc(Gcc) {
+            // Uncomment to use a GCC install that is not in the PATH
+            // path "/usr/bin/gcc"
+        }
     }
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    compile group: 'org.scala-lang', name: 'scala-compiler', version: scalaVersion
-
-    compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
-    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: slf4jVersion
-
-    testCompile group: 'org.scalatest', name: 'scalatest_2.11', version: scalaTestVersion
-    testCompile group: 'junit', name: 'junit', version: junitVersion
+    components {
+        accrete(NativeExecutableSpec) {
+            sources {
+                c {
+                    source {
+                        srcDir "src/main/c"
+                        include "**/*.c"
+                    }
+                    exportedHeaders {
+                        srcDir "src/main/headers"
+                    }
+                }
+            }
+        }
+    }
 }
