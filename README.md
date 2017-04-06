@@ -32,9 +32,6 @@ I have added c/visual studio support from Burdick's branch to gradle to accommod
 ##### 1995 - Andrew Folkins - Accretion
 This particular version is folkins' original code designed for the amiga. So naturally it does not compile without the amiga libraries.
 
- 
-Doesn't compile using Gradle/VS either.
-
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 
