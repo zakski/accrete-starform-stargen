@@ -36,6 +36,12 @@ Gilham's second iteration, published on Usenet.
 
 The psuedo code just reiterates the info published in the WD article.
 
+#### Acrete (C++)
+
+Gilham's third and final extant iteration, published on Usenet. 
+
+The code recreates Dole's algorithms, and only needed a few minor "std::" iostream tweaks to get up and running.
+
 ### Burdick
 ***
 
