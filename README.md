@@ -32,6 +32,9 @@ I have added c/visual studio support from Burdick's branch to gradle to accommod
 ##### 1995 - Andrew Folkins - Accretion
 This particular version is folkins' original code designed for the amiga. So naturally it does not compile without the amiga libraries.
 
+##### 1999 - Keris - Accretion v1
+Keris modified Folkins code to be less specific to the amiga. I had to add the random number routine as they were not included in the general windows c libs.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 
