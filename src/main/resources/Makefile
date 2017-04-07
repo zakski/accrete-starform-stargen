@@ -114,7 +114,7 @@ Dep_accretedexe = \
 
 accrete.exe : $(Dep_accretedexe)
   $(TLINK)   @&&|
- /v $(IDE_LFLAGSDOS) $(LEAT_accretedexe) $(LNIEAT_accretedexe) +
+ $(IDE_LFLAGSDOS) $(LEAT_accretedexe) $(LNIEAT_accretedexe) +
 C:\BC45\LIB\c0l.obj+
 dustband.obj+
 planet.obj+
