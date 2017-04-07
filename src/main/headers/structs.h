@@ -1,3 +1,12 @@
+typedef struct dust_bands_record  *dust_pointer;
+typedef struct dust_bands_record {
+	  double inner_edge;
+	  double outer_edge;
+	  int dust_present;
+	  int gas_present;
+	  dust_pointer next_band;
+     } dust_bands;
+
 typedef struct planets_record  *planet_pointer;
 
 typedef struct planets_record {
@@ -27,5 +36,6 @@ typedef struct planets_record {
     double cloud_cover;		/* fraction of surface covered	     */
     double ice_cover;		/* fraction of surface covered	     */
     planet_pointer first_moon;
-    planet_pointer next_planet;
-} planets;
+	 planet_pointer next_planet;
+	 } planets;
+

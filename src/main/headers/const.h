@@ -4,8 +4,6 @@
 
 #define TRUE                    (1)
 #define FALSE                   (0)
-
-#define PI                      M_PI
 #define ECCENTRICITY_COEFF      (0.077)		/* Dole's was 0.077         */
 #define	PROTOPLANET_MASS	(1.0E-15)	/* Units of solar masses    */
 #define SOLAR_MASS_IN_GRAMS	(1.989E33)	/* Units of grams           */
@@ -40,7 +38,8 @@
 #define MILLIBARS_PER_BAR	(1000.0)
 #define KELVIN_CELCIUS_DIFFERENCE	(273.0)
 #define GRAV_CONSTANT		(6.672E-8)	/* units of dyne cm2/gram2  */
-#define GREENHOUSE_EFFECT_CONST	(0.93)		/* affects inner radius..   */
+#define GREENHOUSE_EFFECT_CONST	(0.90)		/* affects inner radius..   */
+//#define GREENHOUSE_EFFECT_CONST	(0.93)		/* affects inner radius..   */
 #define MOLAR_GAS_CONST		(8314.41)	/* units: g*m2/(sec2*K*mol) */
 #define K			(50.0)		/* K = gas/dust ratio       */
 #define B			(1.2E-5)	/* Used in Crit_mass calc   */
@@ -50,7 +49,7 @@
 #define J			(1.46E-19)	/* Used in day-length calcs (cm2/sec2 g) */
 #define INCREDIBLY_LARGE_NUMBER	(9.9999E37)
 
-
+#define PI  (3.141592654)
 /*  Now for a few molecular weights (used for RMS velocity calcs):     */
 /*  This table is from Dole's book "Habitable Planets for Man", p. 38  */
 
@@ -89,3 +88,5 @@
 /*  covered with clouds in function cloud_fraction in file enviro.c.	     */
 #define	Q1_36			(1.258E19)	/* grams    */
 #define Q2_36			(0.0698)	/* 1/Kelvin */
+
+
