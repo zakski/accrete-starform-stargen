@@ -35,6 +35,11 @@ This particular version is folkins' original code designed for the amiga. So nat
 ##### 1999 - Keris - Accretion v1
 Keris modified Folkins code to be less specific to the amiga. I had to add the random number routine as they were not included in the general windows c libs.
 
+#### Accretion (C++)
+
+##### 2000 - Keris - Accretion v2
+Keris modified Folkins code even further. I am not sure how to compile this code with its dependency on a couple of scripts and a wierd .ch file.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 

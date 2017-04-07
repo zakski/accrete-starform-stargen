@@ -13,6 +13,9 @@
 #define Rsol  6.96e8 // m
 #define Re    6378140 // m
 
+#define Year  (365.25 * 24 * 3600)  // s
+#define Gy    (1e9 * Year)
+
 #define LY    9.46053627e15 // m
 
 #endif
