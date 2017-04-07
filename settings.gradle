@@ -1,2 +1,5 @@
 rootProject.name = 'accrete'
 
+include "recreation"
+
+project(":recreation").projectDir = file("modules/recreation")

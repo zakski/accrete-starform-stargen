@@ -1,0 +1,41 @@
+/* Language plugins to aid in compilation of target languages, probably best to be explicit here.*/
+apply plugin: 'java'
+apply plugin: 'scala'
+
+/*
+ * Specifying the versions as extra variables here so that they can be reused across multiple dependencies. Note you
+ * can add a '+' in the version info instead of a major/minor version to get the latest relevant version of the jar.
+ */
+ext {
+    scalaVersion = '2.11.8'
+    scalaTestVersion = '2.2.4'
+    slf4jVersion = '1.7.12'
+    junitVersion = '4.11'
+}
+
+idea {
+
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+/* The Repositories to pull the dependencies from. Can include local jars. */
+repositories {
+    mavenCentral()
+}
+
+/*
+ * Dependencies of the current system. Important dependencies for interops between scala and java are: scala compiler,
+ * slf4j logger, scalatest and junit.
+ */
+dependencies {
+    compile group: 'org.scala-lang', name: 'scala-compiler', version: scalaVersion
+
+    compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: slf4jVersion
+
+    testCompile group: 'org.scalatest', name: 'scalatest_2.11', version: scalaTestVersion
+    testCompile group: 'junit', name: 'junit', version: junitVersion
+}

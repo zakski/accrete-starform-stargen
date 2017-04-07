@@ -1,16 +1,18 @@
-// Equivalent to groupid and version in maven, artifactid equivalent is set in settings.gradle.
-group 'com.szadowsz'
-version '0.0.1'
+allprojects {
+    // IntelliJ is the primary development medium, so it makes sense to add explicit support for it in gradle
+    apply plugin: 'idea'
+    // Equivalent to groupid and version in maven, artifactid equivalent is set in settings.gradle.
+    group 'com.szadowsz'
+    version '0.0.1'
+}
 
-// IntelliJ is the primary development medium, so it makes sense to add explicit support for it in gradle
-apply plugin: 'idea'
 apply plugin: 'visual-studio'
 
 // Add necessary language support
 apply plugin: 'c'
 
 model {
-   toolChains {
+    toolChains {
         visualCpp(VisualCpp) {
             // Specify the installDir if Visual Studio cannot be located
             // installDir "C:/Apps/Microsoft Visual Studio 10.0"
@@ -34,5 +36,12 @@ model {
                 }
             }
         }
+    }
+}
+
+idea {
+    project {
+        languageLevel = '1.8'
+        vcs = 'Git'
     }
 }
