@@ -389,10 +389,10 @@ Burrell's code is loosely based on Burdick's source code, but takes a much more 
 - Language: Java
 - Creation Year: >= 1995
 - Source Year: 1998
-- Parents: Burdick.1994.B or Malloy.1993 most likely
+- Parents: Burdick.1994.B or Malloy.1993 most likely, Folkins.1988 for displays
 - Original Source: Complete.
 - Reproducibility: Reproducible.
-- Burdick Version: V3.0 or V3.1 ?
+- Burdick Version: unsure
 - Key: Burke.1998
  
  Carl Burke, like Ian Burell, wrote his own java applet version of starform/accrete. He also was aware of Ian Burell's work and wonder how much it influenced

@@ -20,6 +20,11 @@ More detailed analysis can be found in the docs folder.
 
 This section contains general comments about the recovered source code for each processed version.
 
+### Burke
+***
+
+A culmination of a series of ports to various different languages. Burke published a java oo design.
+
 ### Burdick
 ***
 
