@@ -1,5 +1,5 @@
 
-package iburrell.gui;
+package iburrell.accrete.gui;
 
 import java.applet.*;
 import java.awt.*;

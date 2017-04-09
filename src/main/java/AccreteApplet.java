@@ -7,13 +7,12 @@
 
 import java.applet.*;
 import java.awt.*;
-import java.io.*;
 import java.util.*;
 
 import iburrell.accrete.Accrete;
 import iburrell.accrete.Planetismal;
 
-import iburrell.gui.AppletFrame;
+import iburrell.accrete.gui.AppletFrame;
 
 public class AccreteApplet extends Applet implements Runnable
 {
