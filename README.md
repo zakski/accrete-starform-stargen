@@ -20,6 +20,28 @@ More detailed analysis can be found in the docs folder.
 
 This section contains general comments about the recovered source code for each processed version.
 
+### Gilham
+***
+
+#### Acrete (basic)
+
+This is his first iteration, published in White Dwarf back in 1984. 
+
+Its written in ibm basic which I could not even begin to guess how to compile. So I have ran the article through a web ocr utility and abandoned cleaning 
+that up until I have more time. 
+
+#### Acrete (psuedocode)
+
+Gilham's second iteration, published on Usenet. 
+
+The psuedo code just reiterates the info published in the WD article.
+
+#### Acrete (C++)
+
+Gilham's third and final extant iteration, published on Usenet. 
+
+The code recreates Dole's algorithms, and only needed a few minor "std::" iostream tweaks to get up and running.
+
 ### Burdick
 ***
 
