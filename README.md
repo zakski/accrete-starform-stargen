@@ -20,6 +20,11 @@ More detailed analysis can be found in the docs folder.
 
 This section contains general comments about the recovered source code for each processed version.
 
+### Burrell
+***
+
+Burrell's code solely implements Dole's algorithm as a java applet.
+
 ### Burdick
 ***
 
