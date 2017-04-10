@@ -117,8 +117,10 @@
 
 static int debug = DEBUG;
 
-#include <stdio.h>
+#include <cstdio>
+#include <cstdlib>
 
+#include "rand.h"
 #include "system.h"
 #include "const.h"
 
@@ -172,8 +174,8 @@ static double  MaxRadius;     /* MAXRADIUS modified by luminosity of primary */
 
 typedef struct Band Band;
 
-typedef list<Band>   BandList;
-typedef list<Planet> PList;
+typedef std::list<Band>   BandList;
+typedef std::list<Planet> PList;
 
 struct Band
 {                      /* Band of gas or dust */

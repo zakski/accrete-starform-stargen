@@ -28,6 +28,7 @@
 
 #include <time.h>
 
+#include "rand.h"
 #include "system.h"
 #include "const.h"
 
@@ -367,7 +368,7 @@ InitGenStar(void)
   seed[0] = time(NULL) >> 16;
   seed[1] = time(NULL) & 0xFFFF;
   seed[2] = time(NULL) & 0xFFFF;
-  seed48(seed);
+  srand48(seed);
 
   ComputeProbabilities();
 }

@@ -1,0 +1,33 @@
+// IntelliJ is the primary development medium, so it makes sense to add explicit support for it in gradle
+apply plugin: 'visual-studio'
+
+// Add necessary language support
+apply plugin: "cpp"
+
+model {
+    toolChains {
+        visualCpp(VisualCpp) {
+            // Specify the installDir if Visual Studio cannot be located
+            // installDir "C:/Apps/Microsoft Visual Studio 10.0"
+        }
+        gcc(Gcc) {
+            // Uncomment to use a GCC install that is not in the PATH
+            // path "/usr/bin/gcc"
+        }
+    }
+    components {
+        accrete(NativeExecutableSpec) {
+            sources {
+                cpp {
+                    source {
+                        srcDir "src/main/cpp"
+                        include "**/*.cc"
+                    }
+                    exportedHeaders {
+                        srcDir "src/main/headers"
+                    }
+                }
+            }
+        }
+    }
+}

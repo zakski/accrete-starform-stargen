@@ -3,7 +3,7 @@ Random number generator between 0 and 1.
 Link this program of a program requires drand48()
 if there is no drand48() in stdlib.h of your OS.
 */
-#include <stdlib.h>
+#include "rand.h"
 
 #define C 16807
 #define A 2147483647.0

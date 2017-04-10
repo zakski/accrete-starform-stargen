@@ -472,6 +472,7 @@ summarise(Star *star)
   }
 }
 
+void
 DisplaySystem(Star& star)
 {
   switch (star.spc_class)
