@@ -63,6 +63,13 @@ Steve Dang seems to of straight up copied Ian Burrell's version to his Geocities
 
 Peter Keel seems to have a version more or less identically to the prior two versions.
 
+### Keris
+***
+
+##### 2000 - Keris - Starform
+
+The starform code that Keris wrote is of great importance since it would be the line of code that Jim Burrows used to create StarGen.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 
