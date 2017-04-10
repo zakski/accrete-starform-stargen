@@ -70,6 +70,13 @@ Peter Keel seems to have a version more or less identically to the prior two ver
 
 The starform code that Keris wrote is of great importance since it would be the line of code that Jim Burrows used to create StarGen.
 
+### Burrows
+***
+
+##### 2006 - Jim Burrows - Stargen
+
+The stargen code that everyone is so familiar with.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 
