@@ -1,0 +1,1 @@
+nawk '/SYSTEM/ {ok = /habitable/} ok {print}' $1

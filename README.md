@@ -20,6 +20,26 @@ More detailed analysis can be found in the docs folder.
 
 This section contains general comments about the recovered source code for each processed version.
 
+### Folkins
+***
+
+Andrew Folkin's codeline was initial designed for the amiga, then hacked about by Keris. 
+
+#### Accretion (C)
+
+I have added c/visual studio support from Burdick's branch to gradle to accommodate these major revisions.
+
+##### 1995 - Andrew Folkins - Accretion
+This particular version is folkins' original code designed for the amiga. So naturally it does not compile without the amiga libraries.
+
+##### 1999 - Keris - Accretion v1
+Keris modified Folkins code to be less specific to the amiga. I had to add the random number routine as they were not included in the general windows c libs.
+
+#### Accretion (C++)
+
+##### 2000 - Keris - Accretion v2
+Keris modified Folkins code even further. I am not sure how to compile this code with its dependency on a couple of scripts and a wierd .ch file.
+
 ### Gilham
 ***
 
