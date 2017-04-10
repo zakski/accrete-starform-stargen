@@ -6,13 +6,15 @@
 - ~~add webb accrete branch~~
 - ~~add folkins accrete branch~~
 - ~~add gilham accrete branch~~
-- add burke accrete branch
-- add burrell accrete branch
+- ~~add burke accrete branch~~
+    - add github port code
+- ~~add burrell accrete branch~~
+    - add github port code
 - add keris accrete branch
 - add anderson accrete branch
 - add burrows stargen branch
 - add reeds stargen branch
-- add omega12a stargen branch
+- add omega13a stargen branch
 - add stubs
 - review info
 - unify branches as modules
