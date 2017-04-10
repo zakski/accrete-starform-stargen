@@ -1,6 +1,8 @@
 # This is a makefile for the Microsoft QuickC version of "starform",
 # a star system and planet generator
 
+CC=qcl
+
 # To make a version for debugging or tracing, uncomment this line:
 #CFLAGS = /Zi
 
@@ -13,22 +15,21 @@ CFLAGS = /Ox
 # This line should always be uncommented:
 OBJS = accrete.obj enviro.obj display.obj utils.obj
 
-
-accrete.obj: accrete.c const.h structs.h
-	qcl /c $(CFLAGS) accrete.c
-
-enviro.obj: enviro.c const.h structs.h
-	qcl /c $(CFLAGS) enviro.c
-
-display.obj: display.c const.h structs.h
-	qcl /c $(CFLAGS) display.c
-
-utils.obj: utils.c const.h
-	qcl /c $(CFLAGS) utils.c
-
-starform.obj: starform.c const.h structs.h
-	qcl /c $(CFLAGS) starform.c
+.c.o:
+	$(CC) /c $(CFLAGS) $*.c
 
 starform.exe: starform.obj $(OBJS)
 	link $(LINKFLAGS) starform.obj $(OBJS);
+
+accrete.o:	accrete.c const.h structs.h accrete.h utils.h data.h
+data.o:		data.c data.h const.h
+display.o:	display.c structs.h const.h propert.h enviro.h data.h
+enviro.o:	enviro.c const.h structs.h utils.h data.h
+gensys.o:	gensys.c const.h structs.h accrete.h utils.h data.h enviro.h \
+		display.h steltype.h
+propert.o:	propert.c propert.h elements.dat
+starform.o:	starform.c const.h structs.h gensys.h accrete.h utils.h \
+		data.h enviro.h display.h steltype.h propert.h
+steltype.o:	steltype.c
+utils.o:	utils.c const.h
 
