@@ -1,4 +1,5 @@
 package com.szadowsz.starform.profile
+
 import com.szadowsz.starform.accrete.constants.{AccreteConstants, FKeris2Constants}
 import com.szadowsz.starform.rand.{JDKRandGen, RandGenTrait}
 

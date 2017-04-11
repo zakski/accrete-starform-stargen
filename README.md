@@ -60,6 +60,11 @@ The code recreates Dole's algorithms, and only needed a few minor "std::" iostre
 
 Burrell's code solely implements Dole's algorithm as a java applet.
 
+### Burke
+***
+
+A culmination of a series of ports to various different languages. Burke published a java oo design.
+
 ### Burdick
 ***
 
