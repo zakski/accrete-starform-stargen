@@ -16,7 +16,8 @@ trait AccreteConstants {
     * @note unit is solar masses per cubic AU.
     *
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
-    * @see var Ao, in dole.cc - Keris.2000.A (in form of Msol / AU**3)
+    * @see const var Ao, in dole.cc - Keris.2000.A (in form of Msol / AU**3)
+    * @see const var DUST_DENSITY_COEFF, in DoleParams.java - Burrell.1997
     */
   def DUST_DENSITY_COEFF: Double = 1.5E-3 // TODO Confirm if the change from 1.5 to 2.0 was made by Dole, otherwise leave the original value.
 
@@ -30,6 +31,7 @@ trait AccreteConstants {
     *
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var gamma, in dole.cc - Keris.2000.A (already converted to fraction)
+    * @see const var N, in DoleParams.java - Burrell.1997
     */
   def N: Double = 3.0
 
@@ -43,6 +45,7 @@ trait AccreteConstants {
     *
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var alpha, in dole.cc - Keris.2000.A
+    * @see const var ALPHA, in DoleParams.java - Burrell.1997
     */
   def ALPHA: Double = 5.0
 
@@ -57,6 +60,7 @@ trait AccreteConstants {
     *
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var K, in dole.cc - Keris.2000.A
+    * @see const var K, in DoleParams.java - Burrell.1997
     */
   def K: Double = 50.0
 
@@ -70,6 +74,7 @@ trait AccreteConstants {
     *
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var MINRADIUS, in dole.cc - Keris.2000.A (converted to m)
+    * @see method InnermostPlanet, in DoleParams.java - Burrell.1997 (Burrell uses this in a Fogg like manner however).
     */
   def INNERMOST_PLANET: Double = 0.3
 
@@ -82,6 +87,7 @@ trait AccreteConstants {
     *
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var MAXRADIUS, in dole.cc - Keris.2000.A (converted to m)
+    * @see method OutermostPlanet, in DoleParams.java - Burrell.1997 (Burrell uses this in a Fogg like manner however).
     */
   def OUTERMOST_PLANET: Double = 50.0
 
@@ -98,6 +104,7 @@ trait AccreteConstants {
     * @see Habitable Planets for Man - Stephen H. Dole
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see method CreatePlanet, in dole.cc - Keris.2000.A
+    * @see const var ECCENTRICITY_COEFF, in DoleParams.java - Burrell.1997
     */
   def ECCENTRICITY_COEFF: Double = 0.077
 
@@ -113,6 +120,7 @@ trait AccreteConstants {
     *
     * @see pp. 20-21, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var W, line 151 in dole.cc - Keris.2000.A
+    * @see const var CLOUD_ECCENTRICITY, in DoleParams.java - Burrell.1997
     */
   def CLOUD_ECCENTRICITY: Double = 0.2
 
@@ -125,6 +133,7 @@ trait AccreteConstants {
     *
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var m0 in dole.cc - Keris.2000.A (converted to Kg)
+    * @see const var PROTOPLANET_MASS, in Planetismal.java - Burrell.1997
     */
   def PROTOPLANET_MASS: Double = 1.0E-15 /* Starting Mass in solar mass */
 
@@ -136,6 +145,7 @@ trait AccreteConstants {
     *
     * @see p. 21, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var B in dole.cc - Keris.2000.A (converted to Kg)
+    * @see const var B, in DoleParams.java - Burrell.1997
     */
   def B: Double = 1.2E-5
 }
