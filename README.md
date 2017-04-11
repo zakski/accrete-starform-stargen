@@ -55,6 +55,11 @@ Gilham's third and final extant iteration, published on Usenet.
 
 The code recreates Dole's algorithms, and only needed a few minor "std::" iostream tweaks to get up and running.
 
+### Burrell
+***
+
+Burrell's code solely implements Dole's algorithm as a java applet.
+
 ### Burdick
 ***
 
