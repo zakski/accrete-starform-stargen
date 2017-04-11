@@ -1,6 +1,7 @@
 allprojects {
     // IntelliJ is the primary development medium, so it makes sense to add explicit support for it in gradle
     apply plugin: 'idea'
+
     // Equivalent to groupid and version in maven, artifactid equivalent is set in settings.gradle.
     group 'com.szadowsz'
     version '0.0.1'

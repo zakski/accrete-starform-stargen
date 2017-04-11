@@ -1,0 +1,2 @@
+// Add necessary language support
+apply plugin: 'java'
