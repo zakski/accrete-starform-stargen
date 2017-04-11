@@ -1,8 +1,8 @@
 # Makefile for "stargen", a star system and planet generator
 
-# Change the following if your C compiler isn't called 'cc' (note that on Linux 
+# Change the following if your C compiler isn't called 'gcc' (note that on Linux 
 # the default compiler is gcc but it can still be run as cc).
-CC=cc
+CC=gcc
 
 # And change this to your fvorite C compiler flags:
 CFLAGS = -O -g -W -Wall -D_USE_LIBM_MATH_H
@@ -16,10 +16,6 @@ CFLAGS += -Wno-long-double
 # If you're debugging StarGen, you may want to uncomment the following line:
 
 #CFLAGS += -DMEMORY_CHECK=1
-
-# Play with moon generation
-
-#CFLAGS += -DMOONS=1
 
 OBJDIR = obj
 OBJS = main.o stargen.o accrete.o display.o Dumas.o enviro.o utils.o
@@ -54,7 +50,7 @@ SRCFILES  = accrete.c display.c Dumas.c enviro.c stargen.c utils.c main.c \
 MACFILES    = StarGen\ 68K StarGen\ PPC stargen $(KITFILES) ref
 OSXFILES    = stargen $(KITFILES) ref
 WINEXEFILES = WinStarGen.exe StarGen.exe \
-              MFC71u.dll msvcr71.dll msvcrt.dll \
+              mfc80u.dll msvcr80.dll \
               $(KITFILES) ref/*
 SHARFILES   = $(KITFILES) $(SRCFILES) ref/*
 
@@ -64,7 +60,7 @@ zip:	$(SHARFILES) $(WINEXEFILES)
 	mv new-html html
 	zip StarGenSource.zip $(SHARFILES) html
 	zip WinStarGen.zip $(WINEXEFILES) html
-	zip MacStarGen.zip $(OSX) html
+	zip MacStarGen.zip $(OSXFILES) html
 	mv html new-html
 	mv html-safe html
 	rm -rf new-html
