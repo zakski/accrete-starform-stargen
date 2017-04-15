@@ -17,7 +17,7 @@ abstract class StarformSimulation
 [S <: Star, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, Planet]](profile : StarformProfile[S,C])
   extends AccreteSimulation[H, Planet, R](profile) {
 
-  protected var star : S
+  protected var star : S = _
 
   protected val sConst : C = profile.starConstants
 
