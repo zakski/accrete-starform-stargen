@@ -5,19 +5,21 @@ import com.szadowsz.starform.model.accrete.calc.StarformAccrCalc
 import com.szadowsz.starform.model.accrete.calc.planet.StarformPlanCalc
 import com.szadowsz.starform.model.eco.calc.EcoCalc
 import com.szadowsz.starform.model.star.calc.StarCalc
+import com.szadowsz.starform.model.star.constants.StarConstants
 import com.szadowsz.starform.system.AbstractStarSystem
-import com.szadowsz.starform.system.bodies.base.Planetismal
-import com.szadowsz.starform.system.bodies.fogg.{Planet, Star}
+import com.szadowsz.starform.system.bodies.base.{Planetismal, Star}
+import com.szadowsz.starform.system.bodies.fogg.Planet
 
 /**
   * @author Zakski : 31/12/2015.
   */
-abstract class StarformSimulation[S <: Star, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, Planet]](profile : StarformProfile)
+abstract class StarformSimulation
+[S <: Star, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, Planet]](profile : StarformProfile[S,C])
   extends AccreteSimulation[H, Planet, R](profile) {
 
   protected var star : S
 
-  protected def initStar(): S
+  protected val sConst : C = profile.starConstants
 
   /**
     * calculations innately tied to the protoplanets
@@ -27,7 +29,7 @@ abstract class StarformSimulation[S <: Star, H <: SimulationStats[H], R <: Abstr
   /**
     * calculations to work out new protoplanet info after a collision.
     */
-  protected lazy val sCalc : StarCalc = profile.buildStarCalc()
+  protected lazy val sCalc : StarCalc[S] = profile.buildStarCalc(sConst)
 
   /**
     * calculations innately tied to the protoplanets
@@ -39,13 +41,14 @@ abstract class StarformSimulation[S <: Star, H <: SimulationStats[H], R <: Abstr
     */
   protected override lazy val accCalc: StarformAccrCalc = profile.buildAccCalc(pCalc,this)
 
+
   /**
     * Function to generate the Planets via accretion. Separated out to allow for the generation of an atmosphere introduced in Martyn J. Fogg's paper.
     *
     * @return a new list of [[Planetismal]] instances.
     */
   final protected def generatePlanets(): List[Planet] = {
-    star = initStar()
+    star = sCalc.initStar(rand)
     pCalc.setStar(star)
     accCalc.setStar(star)
     accrete()

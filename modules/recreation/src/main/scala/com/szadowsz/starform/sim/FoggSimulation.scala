@@ -2,10 +2,12 @@ package com.szadowsz.starform.sim
 
 import com.szadowsz.starform.model.{StarformProfile, StarformSimulation}
 import com.szadowsz.starform.model.accrete.AccreteStats
+import com.szadowsz.starform.model.star.constants.FoggBaseStarConst
 import com.szadowsz.starform.system.StarformSystem
 import com.szadowsz.starform.system.bodies.fogg.{FoggStar, Planet}
 
-case class FoggSimulation(profile : StarformProfile) extends StarformSimulation[FoggStar, AccreteStats, StarformSystem[FoggStar, Planet]](profile) {
+case class FoggSimulation[C <: FoggBaseStarConst](profile : StarformProfile[FoggStar,C])
+  extends StarformSimulation[FoggStar, C,AccreteStats, StarformSystem[FoggStar, Planet]](profile) {
 
   override var star: FoggStar = _
 
@@ -15,8 +17,6 @@ case class FoggSimulation(profile : StarformProfile) extends StarformSimulation[
     * @return a new [[AccreteStats]] instance.
     */
   override protected def initStats(): AccreteStats = AccreteStats()
-
-  override protected def initStar(): FoggStar = new FoggStar(sCalc, rand)
 
   /**
     * Function to initialise a new solar system instance at the end of each run.

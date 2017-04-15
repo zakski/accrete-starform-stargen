@@ -1,7 +1,8 @@
 package com.szadowsz.starform.system
 
 import com.szadowsz.starform.model.SimulationStats
-import com.szadowsz.starform.system.bodies.fogg.{Planet, Star}
+import com.szadowsz.starform.system.bodies.base.Star
+import com.szadowsz.starform.system.bodies.fogg.Planet
 
 /**
   * Created on 03/10/2016.

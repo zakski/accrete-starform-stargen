@@ -1,6 +1,6 @@
 package com.szadowsz.starform.model
 
-import com.szadowsz.starform.system.bodies.fogg.Star
+import com.szadowsz.starform.system.bodies.base.Star
 
 /**
   * Created on 13/04/2017.

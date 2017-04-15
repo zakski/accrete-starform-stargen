@@ -2,6 +2,7 @@ package com.szadowsz.starform.model
 
 import com.szadowsz.starform.model.eco.calc.FoggEcoCalc
 import com.szadowsz.starform.model.star.calc.FoggStarCalc
+import com.szadowsz.starform.model.star.constants.FoggStarConstants
 import com.szadowsz.starform.unit.UnitConverter
 import org.scalatest.{FunSpec, Matchers}
 
@@ -15,7 +16,7 @@ class FoggCalcSpec extends FunSpec with Matchers {
 
   val eCalc = new FoggEcoCalc()
   
-  val star = TestStar(new FoggStarCalc())
+  val star = TestStar(FoggStarCalc(new FoggStarConstants))
   
   describe("Sample System Planet 1 Calculations") {
     val isGasGiant = false
