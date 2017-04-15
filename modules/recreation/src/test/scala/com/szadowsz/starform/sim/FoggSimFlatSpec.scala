@@ -3,7 +3,7 @@ package com.szadowsz.starform.sim
 import java.util.Random
 
 import com.szadowsz.starform.model.accrete.calc.insert.RandInsertStrat
-import com.szadowsz.starform.profile.FoggProfile
+import com.szadowsz.starform.profile.starform.FoggProfile
 import org.scalatest.{FlatSpec, Matchers}
 
 /**

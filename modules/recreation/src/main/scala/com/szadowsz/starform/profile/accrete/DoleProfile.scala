@@ -1,4 +1,4 @@
-package com.szadowsz.starform.profile
+package com.szadowsz.starform.profile.accrete
 
 import com.szadowsz.starform.model.accrete.AccreteProfile
 import com.szadowsz.starform.model.accrete.calc.collision.{CollisionCalc, DoleCollCalc}

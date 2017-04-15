@@ -3,7 +3,7 @@ package com.szadowsz.starform
 import java.util.Random
 
 import com.szadowsz.starform.model.accrete.calc.insert.RandInsertStrat
-import com.szadowsz.starform.profile.FoggProfile
+import com.szadowsz.starform.profile.starform.FoggProfile
 import com.szadowsz.starform.sim.FoggSimulation
 import org.slf4j.{Logger, LoggerFactory}
 

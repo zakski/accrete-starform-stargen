@@ -3,7 +3,7 @@ package com.szadowsz.starform
 import java.util.Random
 
 import com.szadowsz.starform.model.accrete.calc.insert.RandInsertStrat
-import com.szadowsz.starform.profile.DoleProfile
+import com.szadowsz.starform.profile.accrete.DoleProfile
 import com.szadowsz.starform.sim.DoleSimulation
 import org.slf4j.{Logger, LoggerFactory}
 

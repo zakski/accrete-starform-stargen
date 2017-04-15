@@ -1,14 +1,14 @@
-package com.szadowsz.starform.profile
+package com.szadowsz.starform.profile.starform
 
 import com.szadowsz.starform.model.StarformProfile
-import com.szadowsz.starform.model.accrete.calc.{AccreteCalc, FoggAccCalc, StarformAccrCalc}
 import com.szadowsz.starform.model.accrete.calc.collision.{CollisionCalc, DoleCollCalc}
 import com.szadowsz.starform.model.accrete.calc.insert.{AccreteInsertStrat, RandInsertStrat}
 import com.szadowsz.starform.model.accrete.calc.planet.{FoggPlanCalc, PlanetesimalCalc, StarformPlanCalc}
+import com.szadowsz.starform.model.accrete.calc.{FoggAccCalc, StarformAccrCalc}
 import com.szadowsz.starform.model.accrete.constants.{AccreteConstants, DoleConstants}
 import com.szadowsz.starform.model.eco.calc.{EcoCalc, FoggEcoCalc}
 import com.szadowsz.starform.model.star.calc.{FoggStarCalc, StarCalc}
-import com.szadowsz.starform.model.star.constants.{FoggBaseStarConst, FoggStarConstants, StarConstants}
+import com.szadowsz.starform.model.star.constants.FoggStarConstants
 import com.szadowsz.starform.rand.{JDKRandGen, RandGenTrait}
 import com.szadowsz.starform.system.bodies.fogg.FoggStar
 
