@@ -1,7 +1,6 @@
 package com.szadowsz.starform.model.burdick
 
-import com.szadowsz.starform.model.eco.calc.FoggEcoCalc
-import com.szadowsz.starform.model.fogg.FoggTestStar
+import com.szadowsz.starform.model.eco.calc.BurdickEcoCalc
 import com.szadowsz.starform.model.star.calc.FoggStarCalc
 import com.szadowsz.starform.model.star.constants.FoggStarConstants
 import com.szadowsz.starform.unit.UnitConverter
@@ -14,7 +13,7 @@ class BurdickSpec extends FunSpec with Matchers {
 
   val tolerancePercentage = 0.05 // 5% of the expected value for tolerance. To account for floating point calculations on modern systems.
 
-  val eCalc = new FoggEcoCalc()
+  val eCalc = new BurdickEcoCalc()
 
   val star = BurdickTestStar(FoggStarCalc(new FoggStarConstants))
 
@@ -522,7 +521,7 @@ class BurdickSpec extends FunSpec with Matchers {
   }
 
   describe("Sample System Planet 10 Calculations") {
-    val isGasGiant = true
+    val isGasGiant = false
     val pMass = UnitConverter.earthMassToSolarMass(0.372)
     val pAxis = 28.450
     val orbitZone = eCalc.orbitalZone(star.luminosity,pAxis)
@@ -581,7 +580,7 @@ class BurdickSpec extends FunSpec with Matchers {
   }
 
   describe("Sample System Planet 11 Calculations") {
-    val isGasGiant = true
+    val isGasGiant = false
     val pMass = UnitConverter.earthMassToSolarMass(0.283)
     val pAxis = 46.864
     val orbitZone = eCalc.orbitalZone(star.luminosity,pAxis)
