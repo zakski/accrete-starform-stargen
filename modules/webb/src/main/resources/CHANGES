@@ -1,0 +1,14 @@
+		  CHANGE LOG (latest at start of file)
+
+2000-02-21
+Changed type of PlanetList (container of planets and moons) to
+vector<Planet> rather than list<Planet> to allow random-access (which is
+a pretty sensible thing to expect when looking at a solar system, let's
+face it; I only used a list<> before because the original code was
+written using lists).  dole.cc now has an internal list of the system
+it's building, because that /does/ need lists rather than vectors to
+work.
+
+Still no overall classes, but it's getting there...
+
+vim:tw=72:
