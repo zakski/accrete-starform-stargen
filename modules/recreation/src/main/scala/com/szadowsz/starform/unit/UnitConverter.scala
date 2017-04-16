@@ -15,6 +15,8 @@ object UnitConverter extends UnitConstants {
 
   def kmToCm(kilometers: Double): Double = kilometers * CM_PER_KM
 
+  def earthMassToSolarMass(earthMass: Double): Double = earthMass * (1/SOLAR_MASS_IN_EARTH_MASS)
+
   def solarMassToEarthMass(sunMass: Double): Double = sunMass * SOLAR_MASS_IN_EARTH_MASS
 
   def solarMassToKg(sunMass: Double): Double = sunMass * SOLAR_MASS_IN_KG

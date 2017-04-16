@@ -1,4 +1,4 @@
-package com.szadowsz.starform.model
+package com.szadowsz.starform.model.fogg
 
 import com.szadowsz.starform.model.star.calc.StarCalc
 import com.szadowsz.starform.system.bodies.base.Star
@@ -6,7 +6,7 @@ import com.szadowsz.starform.system.bodies.base.Star
 /**
   * 04/10/2016.
   */
-case class TestStar[S <: Star](calc: StarCalc[S]) extends Star{
+case class FoggTestStar[S <: Star](calc: StarCalc[S]) extends Star{
 
   val mass: Double = 1.0
 
