@@ -33,5 +33,7 @@ object UnitConverter extends UnitConstants {
 
   def mSec2ToGs(acceleration: Double): Double = acceleration / EARTH_GRAVITY
 
+  def GsToMetreSec2(acceleration: Double): Double = acceleration * EARTH_GRAVITY
+
   def millibarsToBars(millibars : Double): Double  = millibars / MILLIBARS_PER_BAR
 }

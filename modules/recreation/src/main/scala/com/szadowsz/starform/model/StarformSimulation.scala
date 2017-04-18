@@ -9,6 +9,7 @@ import com.szadowsz.starform.model.star.constants.StarConstants
 import com.szadowsz.starform.system.AbstractStarSystem
 import com.szadowsz.starform.system.bodies.base.{Planetismal, Star}
 import com.szadowsz.starform.system.bodies.fogg.Planet
+import com.szadowsz.starform.unit.UnitConverter
 
 /**
   * @author Zakski : 31/12/2015.
@@ -65,7 +66,7 @@ abstract class StarformSimulation
       val (synch, resonant, lengthOfDay) = eCalc.dayLength(angularVelocity, lengthOfOrbit, proto.ecc)
 
       val gravity = eCalc.surfaceGravity(proto.mass, equatorialRadius)
-      val escapeVel = eCalc.escapeVelocity(gravity, equatorialRadius)
+      val escapeVel = eCalc.escapeVelocity(UnitConverter.mToKm(gravity), equatorialRadius)
       val rmsSpeed = eCalc.speedRMS(eCalc.MOLECULAR_NITROGEN, equatorialRadius)
 
       val suffersFromGE = eCalc.suffersGreenhouseEffect(proto.axis, star.innerHabitableRadius)

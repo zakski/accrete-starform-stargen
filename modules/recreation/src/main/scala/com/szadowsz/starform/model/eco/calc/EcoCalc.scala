@@ -327,7 +327,7 @@ trait EcoCalc extends UnitConstants {
     * @see method escape_vel, line 282 in enviro.c - Mat Burdick (starform)
     * @see method escape_vel, line 612 in Planet.java - Carl Burke (starform)
     *
-    * @param surfaceGravity surface gravity of the planet in m / sec^2^.
+    * @param surfaceGravity surface gravity of the planet in km / sec^2^.
     * @param radius         the radius of the planet in kilometers.
     * @return escape velocity of the planet in km per sec.
     */
