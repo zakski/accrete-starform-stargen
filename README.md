@@ -15,6 +15,7 @@ More detailed analysis can be found in the docs folder.
 
 - Gradle 3.4.x+
 - Visual Studio 2015 (any edition)
+- IntelliJ IDEA
 
 ## Source Code
 
@@ -30,7 +31,9 @@ compiler in his two iterations.
 
 #### Interesting Features
 
-- based off Dole, not Burdick
+- His accretion code is based off Dole papers, not Burdick recreation of them
+- Has a distinctive way of generating stars
+- Still uses Burdick's recreation of Fogg's atmospheric work
 - usage of drand48 c/c++ random number generator by Keris
 
 ### Gilham
