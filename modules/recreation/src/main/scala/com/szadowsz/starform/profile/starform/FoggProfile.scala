@@ -10,7 +10,7 @@ import com.szadowsz.starform.model.eco.calc.{EcoCalc, FoggEcoCalc}
 import com.szadowsz.starform.model.star.calc.{FoggStarCalc, StarCalc}
 import com.szadowsz.starform.model.star.constants.FoggStarConstants
 import com.szadowsz.starform.rand.{JDKRandGen, RandGenTrait}
-import com.szadowsz.starform.system.bodies.fogg.FoggStar
+import com.szadowsz.starform.system.bodies.star.FoggStar
 
 /**
   * Created on 13/04/2017.

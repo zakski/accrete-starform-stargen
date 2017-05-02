@@ -1,6 +1,8 @@
 package com.szadowsz.starform.model.uwp
 
 /**
+  * Useful for at a glance categorization.
+  *
   *   Starport -1st digit
   *   Size -2nd digit
   *   Atmosphere -3rd digit
@@ -16,7 +18,7 @@ package com.szadowsz.starform.model.uwp
   *
   * Created on 16/04/2017.
   */
-class UWPCalc {
+trait UWPCalc {
   //
   //  if (isGasGiant)
   //    fprintf(f,"%s gas giant\n",(isGasGiant==1) ? "Small" : ((isGasGiant==2) ? "Large" : "Brown Dwarf"));
@@ -39,7 +41,7 @@ class UWPCalc {
     * @param radius
     * @return
     */
-  def calcUWPSize(radius: Double): Char = {
+  protected def calcUWPSize(radius: Double): Char = {
     radius match {
       case r if r <= 800.0 => '0'
       case r if r <= 1600.0 => '1'
@@ -70,7 +72,7 @@ class UWPCalc {
     * @param surfacePressure
     * @return
     */
-  def calcUWPAtmos(surfacePressure: Double): Char = {
+  protected def calcUWPAtmos(surfacePressure: Double): Char = {
     if (surfacePressure < 10.0) '0'
     else if (surfacePressure < 100.0) '1'
     else if (surfacePressure <= 400.0) '3'
@@ -87,7 +89,7 @@ class UWPCalc {
     * @param iceCover
     * @return
     */
-  def calcUWPHydrographics(hydrosphere: Double, iceCover: Double): Char = {
+  protected def calcUWPHydrographics(hydrosphere: Double, iceCover: Double): Char = {
     val lvl = ((hydrosphere + iceCover) * 10.0).floor.toInt
     lvl match {
       case percent if percent <= 5 => '0'

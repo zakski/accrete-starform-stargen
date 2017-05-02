@@ -1,6 +1,4 @@
-package com.szadowsz.starform.system.bodies.dole
-
-import com.szadowsz.starform.system.bodies.base.Star
+package com.szadowsz.starform.system.bodies.star
 
 /**
   * Created on 15/04/2017.

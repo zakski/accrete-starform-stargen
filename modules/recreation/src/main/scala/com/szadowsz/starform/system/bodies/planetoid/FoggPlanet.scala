@@ -1,4 +1,4 @@
-package com.szadowsz.starform.system.bodies.fogg
+package com.szadowsz.starform.system.bodies.planetoid
 
 import com.szadowsz.starform.system.bodies.base.Planetismal
 
@@ -9,7 +9,7 @@ import com.szadowsz.starform.system.bodies.base.Planetismal
   *
   * @author Zakski : 20/07/2015.
   */
-class Planet(
+class FoggPlanet(
               proto: Planetismal,
               eqRad: Double,
               den: Double,

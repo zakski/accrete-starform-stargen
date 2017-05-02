@@ -3,15 +3,14 @@ package com.szadowsz.starform.profile.starform
 import com.szadowsz.starform.model.StarformProfile
 import com.szadowsz.starform.model.accrete.calc.{FoggAccCalc, StarformAccrCalc}
 import com.szadowsz.starform.model.accrete.calc.collision.{CollisionCalc, DoleCollCalc}
-import com.szadowsz.starform.model.accrete.calc.insert.{AccreteInsertStrat, FolkinsInsertStrat, RandInsertStrat}
+import com.szadowsz.starform.model.accrete.calc.insert.{AccreteInsertStrat, FolkinsInsertStrat}
 import com.szadowsz.starform.model.accrete.calc.planet.{FoggPlanCalc, PlanetesimalCalc, StarformPlanCalc}
 import com.szadowsz.starform.model.accrete.constants.{AccreteConstants, DoleConstants}
 import com.szadowsz.starform.model.eco.calc.{EcoCalc, FoggEcoCalc}
-import com.szadowsz.starform.model.star.calc.{FoggStarCalc, FolkinsStarCalc, StarCalc}
-import com.szadowsz.starform.model.star.constants.{FoggStarConstants, FolkinsStarConstants}
+import com.szadowsz.starform.model.star.calc.{FolkinsStarCalc, StarCalc}
+import com.szadowsz.starform.model.star.constants.FolkinsStarConstants
 import com.szadowsz.starform.rand.{JDKRandGen, RandGenTrait}
-import com.szadowsz.starform.system.bodies.dole.FolkinsStar
-import com.szadowsz.starform.system.bodies.fogg.FoggStar
+import com.szadowsz.starform.system.bodies.star.FolkinsStar
 
 /**
   * Created on 15/04/2017.

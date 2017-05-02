@@ -1,4 +1,4 @@
-package com.szadowsz.starform.system.bodies.dole
+package com.szadowsz.starform.system.bodies.planetoid
 
 import com.szadowsz.starform.system.bodies.base.{Planetismal, ProtoPlanet}
 

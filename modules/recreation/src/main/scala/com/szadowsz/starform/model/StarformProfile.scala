@@ -7,7 +7,7 @@ import com.szadowsz.starform.model.accrete.constants.AccreteConstants
 import com.szadowsz.starform.model.eco.calc.EcoCalc
 import com.szadowsz.starform.model.star.calc.StarCalc
 import com.szadowsz.starform.model.star.constants.StarConstants
-import com.szadowsz.starform.system.bodies.base.Star
+import com.szadowsz.starform.system.bodies.star.Star
 
 /**
   * Created on 13/04/2017.

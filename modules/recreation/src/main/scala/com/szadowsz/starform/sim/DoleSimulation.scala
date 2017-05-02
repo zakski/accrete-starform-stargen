@@ -3,7 +3,7 @@ package com.szadowsz.starform.sim
 
 import com.szadowsz.starform.model.accrete.{AccreteProfile, AccreteSimulation, AccreteStats}
 import com.szadowsz.starform.system.AccreteSystem
-import com.szadowsz.starform.system.bodies.dole.DolePlanet
+import com.szadowsz.starform.system.bodies.planetoid.DolePlanet
 
 case class DoleSimulation(profile : AccreteProfile, a: Option[Double] = None, k: Option[Double] = None, w: Option[Double] = None)
   extends AccreteSimulation[AccreteStats,DolePlanet,AccreteSystem[DolePlanet]](profile) {

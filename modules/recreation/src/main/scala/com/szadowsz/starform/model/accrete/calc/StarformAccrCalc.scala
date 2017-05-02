@@ -2,7 +2,7 @@ package com.szadowsz.starform.model.accrete.calc
 
 import com.szadowsz.starform.model.StarRequired
 import com.szadowsz.starform.model.accrete.calc.planet.StarformPlanCalc
-import com.szadowsz.starform.system.bodies.base.Star
+import com.szadowsz.starform.system.bodies.star.Star
 
 
 /**

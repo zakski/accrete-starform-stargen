@@ -2,7 +2,7 @@ package com.szadowsz.starform.model.star.calc
 
 import com.szadowsz.starform.model.star.constants.FolkinsBaseStarConst
 import com.szadowsz.starform.rand.RandGenTrait
-import com.szadowsz.starform.system.bodies.dole.FolkinsStar
+import com.szadowsz.starform.system.bodies.star.FolkinsStar
 
 /**
   * Created on 13/04/2017.

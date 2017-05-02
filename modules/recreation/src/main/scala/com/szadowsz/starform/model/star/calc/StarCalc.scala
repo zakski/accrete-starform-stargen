@@ -2,7 +2,7 @@ package com.szadowsz.starform.model.star.calc
 
 import com.szadowsz.starform.model.star.constants.StarConstants
 import com.szadowsz.starform.rand.RandGenTrait
-import com.szadowsz.starform.system.bodies.base.Star
+import com.szadowsz.starform.system.bodies.star.Star
 
 /**
   * @author Zakski : 10/09/2016.

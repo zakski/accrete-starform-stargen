@@ -1,7 +1,7 @@
 package com.szadowsz.starform.model.fogg
 
 import com.szadowsz.starform.model.star.calc.StarCalc
-import com.szadowsz.starform.system.bodies.base.Star
+import com.szadowsz.starform.system.bodies.star.Star
 
 /**
   * 04/10/2016.

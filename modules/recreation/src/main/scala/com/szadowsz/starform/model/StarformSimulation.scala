@@ -7,16 +7,17 @@ import com.szadowsz.starform.model.eco.calc.EcoCalc
 import com.szadowsz.starform.model.star.calc.StarCalc
 import com.szadowsz.starform.model.star.constants.StarConstants
 import com.szadowsz.starform.system.AbstractStarSystem
-import com.szadowsz.starform.system.bodies.base.{Planetismal, Star}
-import com.szadowsz.starform.system.bodies.fogg.Planet
+import com.szadowsz.starform.system.bodies.base.Planetismal
+import com.szadowsz.starform.system.bodies.planetoid.FoggPlanet
+import com.szadowsz.starform.system.bodies.star.Star
 import com.szadowsz.starform.unit.UnitConverter
 
 /**
   * @author Zakski : 31/12/2015.
   */
 abstract class StarformSimulation
-[S <: Star, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, Planet]](profile : StarformProfile[S,C])
-  extends AccreteSimulation[H, Planet, R](profile) {
+[S <: Star, P <: FoggPlanet, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, P]](profile : StarformProfile[S,C])
+  extends AccreteSimulation[H, P, R](profile) {
 
   protected var star : S = _
 
@@ -48,7 +49,7 @@ abstract class StarformSimulation
     *
     * @return a new list of [[Planetismal]] instances.
     */
-  final protected def generatePlanets(): List[Planet] = {
+  final protected def generatePlanets(): List[P] = {
     star = sCalc.initStar(rand)
     pCalc.setStar(star)
     accCalc.setStar(star)
@@ -56,29 +57,5 @@ abstract class StarformSimulation
     planetismals.map(proto => buildEcosphere(proto))
   }
 
-  protected def buildEcosphere(proto: Planetismal): Planet = {
-      val orbitZone: Int = eCalc.orbitalZone(star.luminosity, proto.axis)
-
-      val (equatorialRadius, density) = eCalc.radiusAndDensity(proto.mass, proto.axis, star.meanHabitableRadius, proto.isGasGiant, orbitZone)
-
-      val angularVelocity = eCalc.totalAngularVelocity(star.mass, star.age, proto.mass, equatorialRadius, proto.axis, density, proto.isGasGiant)
-      val lengthOfOrbit = eCalc.orbitLength(proto.axis, proto.mass, star.mass)
-      val (synch, resonant, lengthOfDay) = eCalc.dayLength(angularVelocity, lengthOfOrbit, proto.ecc)
-
-      val gravity = eCalc.surfaceGravity(proto.mass, equatorialRadius)
-      val escapeVel = eCalc.escapeVelocity(UnitConverter.mToKm(gravity), equatorialRadius)
-      val rmsSpeed = eCalc.speedRMS(eCalc.MOLECULAR_NITROGEN, equatorialRadius)
-
-      val suffersFromGE = eCalc.suffersGreenhouseEffect(proto.axis, star.innerHabitableRadius)
-      val retainsGas = eCalc.hasGasRetention(escapeVel, rmsSpeed)
-      val volatileGasInventory = eCalc.vGasInventory(rand, proto.mass, orbitZone, retainsGas, suffersFromGE, star.mass)
-
-      val surfPressure = eCalc.surfacePressure(volatileGasInventory, equatorialRadius, gravity)
-      val atmos = eCalc.atmosphere(orbitZone, surfPressure, suffersFromGE, proto.isGasGiant)
-      val mw = eCalc.molecule_limit(proto.mass,escapeVel,equatorialRadius)
-      val (water, clouds, ice, albedo, surfTemp) = eCalc.calcClimate(star.meanHabitableRadius,proto.axis, equatorialRadius, surfPressure, volatileGasInventory, mw, atmos)
-
-
-      new Planet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp)
-    }
+  protected def buildEcosphere(proto: Planetismal): P
 }

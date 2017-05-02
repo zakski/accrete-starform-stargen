@@ -1,16 +1,19 @@
 package com.szadowsz.starform.sim
 
 import com.szadowsz.starform.model.accrete.AccreteStats
-import com.szadowsz.starform.model.star.constants.FolkinsBaseStarConst
 import com.szadowsz.starform.model.{StarformProfile, StarformSimulation}
+import com.szadowsz.starform.model.star.constants.FoggBaseStarConst
 import com.szadowsz.starform.system.StarformSystem
 import com.szadowsz.starform.system.bodies.base.Planetismal
-import com.szadowsz.starform.system.bodies.planetoid.FoggPlanet
-import com.szadowsz.starform.system.bodies.star.FolkinsStar
+import com.szadowsz.starform.system.bodies.planetoid.WebbPlanet
+import com.szadowsz.starform.system.bodies.star.FoggStar
 import com.szadowsz.starform.unit.UnitConverter
 
-case class FolkinsSimulation[C <: FolkinsBaseStarConst](profile : StarformProfile[FolkinsStar,C])
-  extends StarformSimulation[FolkinsStar, FoggPlanet, C,AccreteStats, StarformSystem[FolkinsStar, FoggPlanet]](profile) {
+/**
+  * Created on 02/05/2017.
+  */
+case class WebbSimulation[C <: FoggBaseStarConst](profile : StarformProfile[FoggStar,C])
+    extends StarformSimulation[FoggStar, WebbPlanet, C,AccreteStats, StarformSystem[FoggStar, WebbPlanet]](profile) {
 
   /**
     * Function to initialise a new instance at the beginning of each run.
@@ -24,11 +27,11 @@ case class FolkinsSimulation[C <: FolkinsBaseStarConst](profile : StarformProfil
     *
     * @return a new [[StarformSystem]] instance.
     */
-  override protected def createSystem(seed: Long, stats: AccreteStats, planets: List[FoggPlanet]): StarformSystem[FolkinsStar, FoggPlanet] = {
+  override protected def createSystem(seed: Long, stats: AccreteStats, planets: List[WebbPlanet]): StarformSystem[FoggStar, WebbPlanet] = {
     StarformSystem(seed, stats, star, planets)
   }
 
-  override protected def buildEcosphere(proto: Planetismal): FoggPlanet  = {
+  override protected def buildEcosphere(proto: Planetismal): WebbPlanet  = {
     val orbitZone: Int = eCalc.orbitalZone(star.luminosity, proto.axis)
 
     val (equatorialRadius, density) = eCalc.radiusAndDensity(proto.mass, proto.axis, star.meanHabitableRadius, proto.isGasGiant, orbitZone)
@@ -50,6 +53,6 @@ case class FolkinsSimulation[C <: FolkinsBaseStarConst](profile : StarformProfil
     val mw = eCalc.molecule_limit(proto.mass,escapeVel,equatorialRadius)
     val (water, clouds, ice, albedo, surfTemp) = eCalc.calcClimate(star.meanHabitableRadius,proto.axis, equatorialRadius, surfPressure, volatileGasInventory, mw, atmos)
 
-    new FoggPlanet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp)
+    new WebbPlanet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp)
   }
 }

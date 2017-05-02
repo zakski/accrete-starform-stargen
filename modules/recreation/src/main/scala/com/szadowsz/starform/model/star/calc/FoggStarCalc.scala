@@ -2,7 +2,7 @@ package com.szadowsz.starform.model.star.calc
 
 import com.szadowsz.starform.model.star.constants.FoggBaseStarConst
 import com.szadowsz.starform.rand.RandGenTrait
-import com.szadowsz.starform.system.bodies.fogg.FoggStar
+import com.szadowsz.starform.system.bodies.star.FoggStar
 
 /**
   * Created on 13/04/2017.
