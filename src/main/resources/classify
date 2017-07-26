@@ -1,1 +1,0 @@
-nawk 'BEGIN{s="no";b="no";h="no";c="no"}/SYSTEM/{s++}/habitable/{h++}/Planet.*brown/{b++}/Planet.*compan/{c++}END{print s,"system"(s==1?"":"s");print h,"habitable";print b,"brown dwarf"(b==1?"":"s");print c,"companion"(c==1?"":"s")}' $1

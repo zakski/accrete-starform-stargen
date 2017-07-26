@@ -148,6 +148,13 @@ issues that could be the product of my new build process.
 
 Webb adds traveller specific info to burdick's accrete code branch.
 
+### Keris
+***
+
+##### 2000 - Keris - Starform
+
+The starform code that Keris wrote is of great importance since it would be the line of code that Jim Burrows used to create StarGen.
+
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. 

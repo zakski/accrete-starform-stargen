@@ -23,7 +23,8 @@ class BurrellProfile extends AccreteProfile {
 
   override def buildCollCalc(pCalc: PlanetesimalCalc): CollisionCalc = DoleCollCalc(pCalc)
 
-  override def buildAccCalc(pCalc: PlanetesimalCalc, aConst: AccreteConstants): AccreteCalc = DoleAccCalc(pCalc, aConst) // TODO check if it should use fogg calc
-
+  override def buildAccCalc(pCalc: PlanetesimalCalc, aConst: AccreteConstants): AccreteCalc = {
+    DoleAccCalc(pCalc, aConst) // TODO check if it should use fogg calc
+  }
 }
 
