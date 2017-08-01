@@ -11,17 +11,18 @@ import com.szadowsz.starform.system.bodies.base.Planetismal
   */
 class FoggPlanet(
               proto: Planetismal,
-              eqRad: Double,
-              den: Double,
-              lengthOfOrbit: Double,
-              lengthOfDay: Double,
-              grav: Double,
-              surfPressure: Double,
-              water: Double,
-              clouds: Double,
-              ice: Double,
-              alb: Double,
-              surfTemp: Double
+              val equatorialRadius: Double,
+              val density: Double,
+              val orbitLength: Double,
+              val dayLength: Double,
+              val gravity: Double,
+              val surfacePressure: Double,
+              val hydrosphere: Double,
+              val cloudCover: Double,
+              val iceCover: Double,
+              val albedo: Double,
+              val surfaceTemperature: Double,
+              val tilt : Double
             )
   extends Planetismal {
 
@@ -66,26 +67,4 @@ class FoggPlanet(
     * Whether the planet has surpassed its critical mass limit and become a gas giant.
     */
   override val isGasGiant: Boolean = proto.isGasGiant
-
-  val equatorialRadius = eqRad
-
-  val density = den
-
-  val orbitLength = lengthOfOrbit
-
-  val dayLength = lengthOfDay
-
-  val gravity = grav
-
-  val surfacePressure = surfPressure
-
-  val hydrosphere = water
-
-  val cloudCover = clouds
-
-  val iceCover = ice
-
-  val albedo = alb
-
-  val surfaceTemperature = surfTemp
 }

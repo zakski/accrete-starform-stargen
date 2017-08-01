@@ -100,6 +100,8 @@ trait EcoConstants {
   def GAS_RETENTION_THRESHOLD: Double = 5.0 /* ratio of esc vel to RMS vel */
 
 
+  def EARTH_AXIAL_TILT : Double = 23.4
+
   def CONVECTION_FACTOR: Double = 0.43
 
   def GAS_GIANT_ALBEDO: Double = 0.5

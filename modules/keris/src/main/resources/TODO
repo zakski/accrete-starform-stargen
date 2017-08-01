@@ -1,0 +1,25 @@
+Things I intend to do with Starform, as of 1999.04.19:
+
+  Tidy up the variable names - having variables with names like 'age' in the
+  global namespace is asking for trouble, and other names are much too long.
+
+  Convert it to C++, making it a (set of) class(es).  That will also solve the
+  name problem above.
+
+  Have a look at proper moon generation, and possibly asteroid belts and rings
+  as well.  (You can get asteroid belts simply by smashing up planets, of
+  course, which used to be how they were thought to occur.  Same with rings by
+  breaking up moons.  However, I believe current theories are on the lines of
+  them being planets that failed to coalesce...)
+
+  Separate out the environmental stuff more.  As it is, it's designed for
+  Earth-like planets, but we know that most of the ones in our solar system
+  (the solid ones, that is, gas giants are a totally different beast) don't
+  seem to be at all similar.
+
+  Generate stars separately.  I want to be able to generate stars first, then
+  later generate planetary systems for those stars which seem likely (for
+  instance ignoring type M and type O stars).  The current system only
+  generates type IV to VI stars of class F to K anyway, a more realistic one
+  should generate the whole range including doubles.
+

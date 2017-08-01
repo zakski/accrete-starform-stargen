@@ -6,7 +6,7 @@ import com.szadowsz.starform.system.bodies.base.Planetismal
 /**
   * Created on 02/05/2017.
   */
-class WebbPlanet(
+class KerisPlanet(
                   proto: Planetismal,
                   eqRad: Double,
                   den: Double,
@@ -19,8 +19,9 @@ class WebbPlanet(
                   ice: Double,
                   alb: Double,
                   surfTemp: Double,
-                  tilt : Double
-                ) extends FoggPlanet(proto,eqRad,den,lengthOfOrbit,lengthOfDay,grav,surfPressure,water,clouds,ice,alb,surfTemp,tilt) with UWPCalc {
-
-  val uwp : String = "X-" + calcUWPSize(equatorialRadius) + calcUWPAtmos(surfacePressure) + calcUWPHydrographics(hydrosphere,iceCover) + "XXX-X"
-}
+                  tilt : Double,
+                  val dayTemp : Double,
+                  val nightTemp : Double,
+                  val minTemp : Double,
+                  val maxTemp : Double
+                ) extends FoggPlanet(proto,eqRad,den,lengthOfOrbit,lengthOfDay,grav,surfPressure,water,clouds,ice,alb,surfTemp,tilt)

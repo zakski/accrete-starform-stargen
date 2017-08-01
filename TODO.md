@@ -21,13 +21,13 @@
 - convert code to scala
 
 ## Recreation (Short Term)
-- Convert to Scala (In Progress)
 - Consider Carl Burke's Code (In Progress)
    
 ## Recreation (Medium Term)
 - Investigate Folkins' Accretion Branch and Keris' modifications
    
 ## Recreation (Long Term)
+- Convert all added features to Scala (In Progress)
 - Reconcile StarGen with codebase
 - Get a solid Moon/Rings/Asteroid Belt accretion process
 - Better Star Classification

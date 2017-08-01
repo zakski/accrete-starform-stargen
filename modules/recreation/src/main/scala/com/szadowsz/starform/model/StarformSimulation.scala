@@ -16,22 +16,22 @@ import com.szadowsz.starform.unit.UnitConverter
   * @author Zakski : 31/12/2015.
   */
 abstract class StarformSimulation
-[S <: Star, P <: FoggPlanet, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, P]](profile : StarformProfile[S,C])
+[S <: Star, P <: FoggPlanet, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, P], E <: EcoCalc](profile: StarformProfile[S, C, E])
   extends AccreteSimulation[H, P, R](profile) {
 
-  protected var star : S = _
+  protected var star: S = _
 
-  protected val sConst : C = profile.starConstants
+  protected val sConst: C = profile.starConstants
 
   /**
     * calculations innately tied to the protoplanets
     */
-  protected lazy val eCalc: EcoCalc = profile.buildEcoCalc()
+  protected lazy val eCalc: E = profile.buildEcoCalc()
 
   /**
     * calculations to work out new protoplanet info after a collision.
     */
-  protected lazy val sCalc : StarCalc[S] = profile.buildStarCalc(sConst)
+  protected lazy val sCalc: StarCalc[S] = profile.buildStarCalc(sConst)
 
   /**
     * calculations innately tied to the protoplanets
@@ -41,7 +41,7 @@ abstract class StarformSimulation
   /**
     * the accretion code to use when hoovering up dust.
     */
-  protected override lazy val accCalc: StarformAccrCalc = profile.buildAccCalc(pCalc,this)
+  protected override lazy val accCalc: StarformAccrCalc = profile.buildAccCalc(pCalc, this)
 
 
   /**

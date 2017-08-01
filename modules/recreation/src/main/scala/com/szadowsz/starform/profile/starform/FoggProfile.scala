@@ -15,7 +15,7 @@ import com.szadowsz.starform.system.bodies.star.FoggStar
 /**
   * Created on 13/04/2017.
   */
-class FoggProfile extends StarformProfile[FoggStar,FoggStarConstants] {
+class FoggProfile extends StarformProfile[FoggStar,FoggStarConstants,FoggEcoCalc] {
 
   override val starConstants : FoggStarConstants = new FoggStarConstants
 
@@ -23,7 +23,7 @@ class FoggProfile extends StarformProfile[FoggStar,FoggStarConstants] {
 
   override val accConsts: AccreteConstants = new DoleConstants() // TODO double check they are unchanged
 
-  override def buildEcoCalc(): EcoCalc = new FoggEcoCalc()
+  override def buildEcoCalc(): FoggEcoCalc = new FoggEcoCalc()
 
   override def buildStarCalc(sConst : FoggStarConstants): StarCalc[FoggStar] = FoggStarCalc(sConst)
 

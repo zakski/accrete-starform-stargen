@@ -36,4 +36,10 @@ object UnitConverter extends UnitConstants {
   def GsToMetreSec2(acceleration: Double): Double = acceleration * EARTH_GRAVITY
 
   def millibarsToBars(millibars : Double): Double  = millibars / MILLIBARS_PER_BAR
+
+  def barsToMillibars(bars : Double): Double  = bars * MILLIBARS_PER_BAR
+
+  def kelvinToCelsius(kelvin : Double) : Double = kelvin - KELVIN_CELSIUS_DIFFERENCE
+
+  def celsiusToKelvin(celsius : Double) : Double = celsius + KELVIN_CELSIUS_DIFFERENCE
 }

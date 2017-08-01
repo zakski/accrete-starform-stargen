@@ -1,6 +1,7 @@
 package com.szadowsz.starform.sim
 
 import com.szadowsz.starform.model.accrete.AccreteStats
+import com.szadowsz.starform.model.eco.calc.FoggEcoCalc
 import com.szadowsz.starform.model.star.constants.FolkinsBaseStarConst
 import com.szadowsz.starform.model.{StarformProfile, StarformSimulation}
 import com.szadowsz.starform.system.StarformSystem
@@ -9,8 +10,8 @@ import com.szadowsz.starform.system.bodies.planetoid.FoggPlanet
 import com.szadowsz.starform.system.bodies.star.FolkinsStar
 import com.szadowsz.starform.unit.UnitConverter
 
-case class FolkinsSimulation[C <: FolkinsBaseStarConst](profile : StarformProfile[FolkinsStar,C])
-  extends StarformSimulation[FolkinsStar, FoggPlanet, C,AccreteStats, StarformSystem[FolkinsStar, FoggPlanet]](profile) {
+case class FolkinsSimulation[C <: FolkinsBaseStarConst](profile : StarformProfile[FolkinsStar,C, FoggEcoCalc])
+  extends StarformSimulation[FolkinsStar, FoggPlanet, C,AccreteStats, StarformSystem[FolkinsStar, FoggPlanet],FoggEcoCalc](profile) {
 
   /**
     * Function to initialise a new instance at the beginning of each run.
@@ -50,6 +51,8 @@ case class FolkinsSimulation[C <: FolkinsBaseStarConst](profile : StarformProfil
     val mw = eCalc.molecule_limit(proto.mass,escapeVel,equatorialRadius)
     val (water, clouds, ice, albedo, surfTemp) = eCalc.calcClimate(star.meanHabitableRadius,proto.axis, equatorialRadius, surfPressure, volatileGasInventory, mw, atmos)
 
-    new FoggPlanet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp)
+    val tilt = eCalc.inclination(rand,proto.axis)
+
+    new FoggPlanet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp,tilt)
   }
 }

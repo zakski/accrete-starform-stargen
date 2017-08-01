@@ -1,6 +1,6 @@
 rootProject.name = 'accrete'
 
-include "recreation","gilham","folkins","burrell","burke","burdick/accrete","burdick/starform","webb"
+include "recreation","gilham","folkins","burrell","burke","burdick/accrete","burdick/starform","webb","keris"
 
 project(":recreation").projectDir = file("modules/recreation")
 project(":gilham").projectDir = file("modules/gilham")
@@ -10,3 +10,4 @@ project(":burke").projectDir = file("modules/burke")
 project(":burdick/accrete").projectDir = file("modules/burdick/accrete")
 project(":burdick/starform").projectDir = file("modules/burdick/starform")
 project(":webb").projectDir = file("modules/webb")
+project(":keris").projectDir = file("modules/keris")

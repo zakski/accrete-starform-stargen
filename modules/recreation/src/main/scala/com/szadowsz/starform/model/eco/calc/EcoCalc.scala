@@ -638,4 +638,12 @@ trait EcoCalc extends UnitConstants {
     (3.0 * Math.pow(GAS_RETENTION_THRESHOLD * CM_PER_METER, 2.0) * (MOLAR_GAS_CONST * EXOSPHERE_TEMP)) / (escapeVel * escapeVel)
   }
 
+  /*--------------------------------------------------------------------------*/
+  /*   The orbital radius is expected in units of Astronomical Units (AU).    */
+  /*   Inclination is returned in units of degrees.                           */
+  /*--------------------------------------------------------------------------*/
+  def inclination(rand: RandGenTrait, orbital_radius : Double): Double = {
+    val t = (EARTH_AXIAL_TILT *(rand.nextDouble() * 0.4 - 0.4)) + EARTH_AXIAL_TILT
+    (Math.pow(orbital_radius,0.2) * t) % 360
+  }
 }

@@ -12,11 +12,11 @@ import com.szadowsz.starform.system.bodies.star.Star
 /**
   * Created on 13/04/2017.
   */
-trait StarformProfile[S <: Star, C <: StarConstants] extends AccreteProfile {
+trait StarformProfile[S <: Star, C <: StarConstants, E <: EcoCalc] extends AccreteProfile {
 
   val starConstants : C
 
-  def buildEcoCalc() : EcoCalc
+  def buildEcoCalc() : E
 
   def buildStarCalc(sConst : C) : StarCalc[S]
 

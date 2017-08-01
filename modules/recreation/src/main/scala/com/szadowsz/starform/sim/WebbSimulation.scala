@@ -1,6 +1,7 @@
 package com.szadowsz.starform.sim
 
 import com.szadowsz.starform.model.accrete.AccreteStats
+import com.szadowsz.starform.model.eco.calc.FoggEcoCalc
 import com.szadowsz.starform.model.{StarformProfile, StarformSimulation}
 import com.szadowsz.starform.model.star.constants.FoggBaseStarConst
 import com.szadowsz.starform.system.StarformSystem
@@ -12,8 +13,8 @@ import com.szadowsz.starform.unit.UnitConverter
 /**
   * Created on 02/05/2017.
   */
-case class WebbSimulation[C <: FoggBaseStarConst](profile : StarformProfile[FoggStar,C])
-    extends StarformSimulation[FoggStar, WebbPlanet, C,AccreteStats, StarformSystem[FoggStar, WebbPlanet]](profile) {
+case class WebbSimulation[C <: FoggBaseStarConst](profile : StarformProfile[FoggStar,C,FoggEcoCalc])
+    extends StarformSimulation[FoggStar, WebbPlanet, C,AccreteStats, StarformSystem[FoggStar, WebbPlanet],FoggEcoCalc](profile) {
 
   /**
     * Function to initialise a new instance at the beginning of each run.
@@ -53,6 +54,8 @@ case class WebbSimulation[C <: FoggBaseStarConst](profile : StarformProfile[Fogg
     val mw = eCalc.molecule_limit(proto.mass,escapeVel,equatorialRadius)
     val (water, clouds, ice, albedo, surfTemp) = eCalc.calcClimate(star.meanHabitableRadius,proto.axis, equatorialRadius, surfPressure, volatileGasInventory, mw, atmos)
 
-    new WebbPlanet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp)
+    val tilt = eCalc.inclination(rand,proto.axis)
+
+    new WebbPlanet(proto, equatorialRadius, density, lengthOfOrbit, lengthOfDay, gravity, surfPressure, water, clouds, ice, albedo, surfTemp,tilt)
   }
 }
