@@ -1,4 +1,4 @@
-
+package iburrell;
 // Author: Ian Burrell  <iburrell@leland.stanford.edu>
 // Created: 1997/01/15
 // Modified: 1997/02/09
@@ -32,7 +32,7 @@ public class Postscript
         out = output;
     }
 
-    void begin(int numpage) {
+    protected void begin(int numpage) {
         out.println("%!PS-Adobe-2.1");
         out.println("%%Pages: " + numpage);
         out.println("%%EndComments");
@@ -43,16 +43,16 @@ public class Postscript
         beginpage();
     }
 
-    void end() {
+    protected void end() {
         out.println("%%Trailer");
         out.println("end");
     }
 
-    void beginpage() {
+    protected void beginpage() {
         beginpage(++page);
     }
     
-    void beginpage(int pg) {
+    protected void beginpage(int pg) {
         out.println("%%Page: " + pg + " " + pg);
         out.println((xoff+base) + " " + yoff+base + " translate");
         out.println(xscale + " " + yscale + " " + " scale");
@@ -60,11 +60,11 @@ public class Postscript
         out.println("0 setlinewidth");
     }
 
-    void showpage() {
+    protected void showpage() {
         out.println("showpage");
     }
 
-    void window(double x1, double y1, double x2, double y2) {
+    protected void window(double x1, double y1, double x2, double y2) {
         double xspan = x2 - x1;
         double yspan = y2 - y1;
         xscale = width / xspan;
@@ -73,19 +73,19 @@ public class Postscript
         yoff = -yscale * y1;
     }
 
-    void circle(double x, double y, double radius, boolean fill) {
+    protected void circle(double x, double y, double radius, boolean fill) {
         out.print(x + " " + y + " " + radius + " 0 360 arc ");
         String type = fill ? "fill" : "stroke";
         out.println(type);
     }
 
-    void line(double x1, double y1, double x2, double y2) {
+    protected void line(double x1, double y1, double x2, double y2) {
         out.print(x1 + " " + y1 + " moveto ");
         out.print(x2 + " " + y2 + " lineto stroke");
         out.println();
     }
 
-    void text(double x, double y, String s) {
+    protected void text(double x, double y, String s) {
         out.println(x + " " + y + " moveto (" + s + ") show newpath");
     }
 

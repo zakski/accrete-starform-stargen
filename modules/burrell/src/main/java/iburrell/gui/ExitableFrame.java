@@ -5,7 +5,7 @@
 
 // Copyright 1996 Ian Burrell
 
-package iburrell.accrete.gui;
+package iburrell.gui;
 
 import java.awt.*;
 

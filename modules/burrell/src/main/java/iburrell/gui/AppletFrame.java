@@ -1,11 +1,13 @@
 
-package iburrell.accrete.gui;
+package iburrell.gui;
 
 import java.applet.*;
-import java.awt.*;
 import java.awt.Image;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.Enumeration;
+import java.util.Iterator;
 
 
 public class AppletFrame extends ExitableFrame
@@ -46,5 +48,20 @@ implements AppletStub, AppletContext
     public void showDocument(URL url) { }
     public void showDocument(URL url, String target) { }
     public void showStatus(String status) { }
+
+    @Override
+    public void setStream(String key, InputStream stream) throws IOException {
+
+    }
+
+    @Override
+    public InputStream getStream(String key) {
+        return null;
+    }
+
+    @Override
+    public Iterator<String> getStreamKeys() {
+        return null;
+    }
 
 }

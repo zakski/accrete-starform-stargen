@@ -1,4 +1,4 @@
-
+package iburrell;
 // Author: Ian Burrell  <iburrell@leland.stanford.edu>
 // Created: 1997/01/17
 // Modified: 1997/02/09
@@ -12,7 +12,7 @@ import java.util.*;
 import iburrell.accrete.Accrete;
 import iburrell.accrete.Planetismal;
 
-import iburrell.accrete.gui.AppletFrame;
+import iburrell.gui.AppletFrame;
 
 public class AccreteApplet extends Applet implements Runnable
 {

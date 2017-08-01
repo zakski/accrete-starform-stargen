@@ -1,14 +1,13 @@
-
+package iburrell.accrete;
 // Author: Ian Burrell  <iburrell@leland.stanford.edu>
 // Created: 1997/01/15
 // Modified: 1997/02/09
 
 // Copyright 1997 Ian Burrell
 
-import java.util.*;
+import iburrell.Postscript;
 
-import iburrell.accrete.Accrete;
-import iburrell.accrete.Planetismal;
+import java.util.*;
 
 public class AccretePostscript extends Postscript
 {
