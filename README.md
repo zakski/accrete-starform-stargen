@@ -29,6 +29,10 @@ This project is split into three sections:
 - Visual Studio 2015 (any edition)
 - IntelliJ IDEA
 
+## Local Resources
+
+- [Author List By Source Year](/docs/authors%20-%20by%20source%20year.md)
+
 ## Source Code
 
 This section contains general comments about the recovered source code for each processed version.
