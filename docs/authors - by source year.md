@@ -9,7 +9,7 @@ Initial model order will be according to the resource name.
 
 ## Implementations with Sources / Docs
 
-###[ACRETE](http://www.rand.org/content/dam/rand/pubs/papers/2005/P4226.pdf)
+### [ACRETE](http://www.rand.org/content/dam/rand/pubs/papers/2005/P4226.pdf)
 
 - Resource Name: 1969 - Stephen H. Dole - Formation of Planetary Systems by Aggregation A Computer Simulation
 - Author: Stephen H. Dole
@@ -29,7 +29,7 @@ online, with the exception of the random number generator that he used as that w
 
 References are stored in accrete.bib.
 
-###[ACRETE]
+### [ACRETE]
 
 - Resource Name: 1970 - Stephen H. Dole - Computer Simulation of the Formation of Planetary Systems
 - Author: Stephen H. Dole
@@ -48,7 +48,7 @@ Rand Corporation.
 
 References are stored in 1.5 accrete.bib.
 
-###[ACRETE](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
+### [ACRETE](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
 
 - Resource Name: 1977 - Isaacmam & Sagan - Computer Simulations of Planetary Accretion Dynamics: Sensitivity to Initial Conditions
 - Author: Richard Isaacman & Carl Sagan
@@ -70,7 +70,7 @@ Most recreations of Accrete do not directly use this paper as their inspiration.
 
 References are stored in 1.7 accrete.bib.
 
-###[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
+### [ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
 - Resource Name: 1984 - Steve Gilham - Acrete 
 - Author: Steve Gilham
@@ -88,7 +88,7 @@ Gilham wrote a variant based on Dole's original paper in Icarus in the late '60s
 published in October 1984. He may have also released it on usenet, but such a post is missing from google groups.
 
 
-###[Silicon Creation](http://www.academia.edu/download/31676329/fogg1985.pdf)
+### [Silicon Creation](http://www.academia.edu/download/31676329/fogg1985.pdf)
 
 - Resource Name: 1985 - Martyn J. Fogg - Extra-Solar Planetary Systems A Microcomputer Simulation
 - Author: Martyn J. Fogg
@@ -111,7 +111,7 @@ classification system.
 
 References are stored in 2.0 accrete.bib.
 
-###[Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
+### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
 - Resource Name: 1988 - Matt Budick - Accrete -  Steve Gilham Incomplete
 - Author: Matt Burdick
@@ -128,7 +128,7 @@ References are stored in 2.0 accrete.bib.
 A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve Gilham. Whilst it does seem to date back to 1988, 
 the end of Gilham's post was cut off in the Google Group archive, so the code is incomplete.
 
-###[Starform](https://groups.google.com/forum/#!topic/rec.games.design/xp8edV1wyIE)
+### [Starform](https://groups.google.com/forum/#!topic/rec.games.design/xp8edV1wyIE)
 
 - Resource Name: 1993 - Matt Burdick & Sean Malloy - Starform
 - Author: Matt Burdick
@@ -149,7 +149,7 @@ one intermediate version between the two.
  
 It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its precise place in the timeline.
 
-###[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
+### [ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
 - Resource Name: 1993 - Steve Gilham - Acrete Psuedocode
 - Author: Steve Gilham
@@ -165,7 +165,7 @@ It was wrapped into a shar in 1993, but Malloy had been sitting on it for a whil
 
 Gilham re-wrote his variant in psuedocode in response to a request on usenet in 1993.
 
-###[ACCRETE](http://znark.com/create/files/accrete.zip)
+### [ACCRETE](http://znark.com/create/files/accrete.zip)
 - Resource Name: 1994 - Matt Burdick - Accrete
 - Author: Mat Burdick
 - Poster/Publisher: Ian Burell
@@ -182,7 +182,7 @@ One of Mat Burdick's C versions which is commonly distributed as accrete.
  
 This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting comparison.  
 
-###[ACCRETION](http://znark.com/create/accrete.html)
+### [ACCRETION](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Accretion
 - Author: Matt Burdick
@@ -206,7 +206,7 @@ Burdick could only partially reproduce Fogg's work, since the way that Fogg dete
 
 Nevertheless, this codebase is the parent of the vast majority of variations that have any source code still extant. 
 
-###[Starform](http://znark.com/create/accrete.html)
+### [Starform](http://znark.com/create/accrete.html)
 - Resource Name: 1994 - Matt Burdick - Starform
 - Author: Matt Burdick
 - Poster/Publisher: Ian Burrell
@@ -227,7 +227,7 @@ to detect a site belonging to him that still hosted his source code so third par
 Accrete2 and Starform are names given to this iteration fairly interchangeably.
 
 
-###[ACCRETION](http://reocities.com/CapeCanaveral/8191/usml.html)
+### [ACCRETION](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Andrew Folkins - Accretion
 - Author: Andrew Folkins
 - Poster/Publisher: Steve Dang
@@ -245,7 +245,7 @@ has a different last modified date than the wrapping header info, so I am uncert
 
 Like Steve Gilham, his line of code is at least initially distinct from Burdick's.
 
-###[Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
+### [Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Matt Burdick - Starform
 - Author: Matt Burdick
 - Poster/Publisher: Steve Dang
@@ -262,7 +262,7 @@ Nyrath, like Burrell and a few others, has a cached copy of what I assume is one
 dated as been last modified later than Burrell's copy, so we have a potential version order between them.
 
 
-###[ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
+### [ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Nyrath - Accrete
 - Author: Matt Burdick
 - Poster/Publisher: Nyrath the nearly wise
@@ -278,7 +278,7 @@ dated as been last modified later than Burrell's copy, so we have a potential ve
 Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
 dated as been last modified later than Burrell's copy, so we have a potential version order between them.
 
-###[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
+### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
 
 - Resource Name: 1995 - Steve Gilham - Acrete
 - Author: Steve Gilham
@@ -295,7 +295,7 @@ dated as been last modified later than Burrell's copy, so we have a potential ve
 Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code that has not evolved along the burdick
 branch.
 
-###[Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/MqgYTuIf13w)
+### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/MqgYTuIf13w)
 
 - Resource Name: 1996 - Erik Max Francis - Accrete
 - Author: Erik Max Francis
@@ -312,7 +312,7 @@ branch.
 Erik Max Francis produced a slightly modified version of Burdick's code that prints it's output slightly differently. It seems to extends from the first 
 generation code line but I am unsure as to which variant is the closest to being the actual parent.
 
-###[ACCRETE2 mod 0](http://www.mu.org/~joe/traveller/archive/software/accrete2.zip)
+### [ACCRETE2 mod 0](http://www.mu.org/~joe/traveller/archive/software/accrete2.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 0
 - Author: Christopher E. Webb
 - Poster/Publisher: Joseph Heck
@@ -327,7 +327,7 @@ generation code line but I am unsure as to which variant is the closest to being
 
 Christopher E. Webb seems to of modified a version of accrete to utilise and generate some traveller rpg specific values such a UWP.
 
-###[ACCRETE2 mod 1](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
+### [ACCRETE2 mod 1](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 1
 - Author: Christopher E. Webb
 - Poster/Publisher: Christopher E. Webb
@@ -344,7 +344,7 @@ Christopher E. Webb developed an updated version of his code that uses traveller
 
 This copy was found on his website.
 
-###[ACCRETE3](http://www.mu.org/~joe/traveller/archive/software/accrete3.zip)
+### [ACCRETE3](http://www.mu.org/~joe/traveller/archive/software/accrete3.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete3
 - Author: Christopher E. Webb
 - Poster/Publisher: Joseph Heck
@@ -361,7 +361,7 @@ Christopher E. Webb developed an updated version of his code that uses traveller
 
 This copy was found on Joseph Heck's website with the label of Accrete3, but is labelled Accrete2 mod 1 in the readme just like the one on Webb's website.
 
-###[ACCRETE](http://znark.com/create/accrete.html)
+### [ACCRETE](http://znark.com/create/accrete.html)
 - Resource Name: 1997 - Ian Burrell - Accrete
 - Author: Ian Burell
 - Poster/Publisher: Ian Burrell
@@ -381,7 +381,7 @@ accretion and Burdick's code works.
 
 Burrell's code is loosely based on Burdick's source code, but takes a much more rigid object-oriented approach.
 
-###[STARFORM](http://www.reocities.com/Area51/6902/w_accr.html)
+### [STARFORM](http://www.reocities.com/Area51/6902/w_accr.html)
 
 - Resource Name: 1998 - Carl Burke - Starform
 - Author: Carl Burke
@@ -400,7 +400,7 @@ Burrell's code is loosely based on Burdick's source code, but takes a much more 
  
  In any case, He has written several versions in Pascal, C, Modula-2, C++ as well Java, but only this java version seems to remain.
 
-###[Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
+### [Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
 - Resource Name: 1998 - Mark J. Stock - Acrete2
 - Author: Mark J. Stock
 - Poster/Publisher: Mark J. Stock
@@ -415,7 +415,7 @@ Burrell's code is loosely based on Burdick's source code, but takes a much more 
 
 One of Mat Burdick's versions hacked about by Mark J. Stock. 
 
-###[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+### [Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
 - Resource Name: 1999 - Keris - Accretion v1
 - Author: Chris "Keris" Croughton
 - Poster/Publisher: Chris "Keris" Croughton
@@ -431,7 +431,7 @@ One of Mat Burdick's versions hacked about by Mark J. Stock.
 A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for normal planets to give some sort of 
 atmosphere, it seems to work reasonably. The output formats are (of course) totally different from starform. 
 
-###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 - Resource Name: 1999 - Peter Keel - Accrete
 - Author: Matt Burdick
 - Poster/Publisher: Peter Keel
@@ -447,7 +447,7 @@ atmosphere, it seems to work reasonably. The output formats are (of course) tota
 A version cached by Peter Keel on his traveller rpg site.
 
 
-###[Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
+### [Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
 - Resource Name: 1999 - Peter Keel - Starform
 - Author: Matt Burdick
 - Poster/Publisher: Peter Keel
@@ -462,7 +462,7 @@ A version cached by Peter Keel on his traveller rpg site.
 
 A version cached by Peter Keel on his traveller rpg site.
 
-###[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+### [Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
 - Resource Name: 2000 - Keris - Accretion v2
 - Author: Chris "Keris" Croughton
 - Poster/Publisher: Chris "Keris" Croughton
@@ -477,7 +477,7 @@ A version cached by Peter Keel on his traveller rpg site.
 
 This is Andrew Folkins' code again, but converted to C++. It's even more hacked about.
 
-###[Starform](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+### [Starform](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
 - Resource Name: 2000 - Keris - Starform
 - Author: Chris "Keris" Croughton
 - Poster/Publisher: Chris "Keris" Croughton
@@ -492,7 +492,7 @@ This is Andrew Folkins' code again, but converted to C++. It's even more hacked 
 
 This is Matt Burdick's original Starform code, hacked about by Keris with additions for atmospheric composition
 
-###[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
+### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
 
 - Resource Name: 2001 - Jon Leech - Accrete
 - Author: Jon Leech
@@ -512,7 +512,7 @@ is no longer stored there.
 I have acquired a version of it from Ian Burrell's [website](http://znark.com/create/accrete.html), though I do not know if there have been any changes in 
 the meantime.
 
-###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 
 - Resource Name: 2003 - Chuck Swiger - Accrete
 - Author: Chuck Swiger
@@ -528,7 +528,7 @@ the meantime.
  
 A version altered by Swiger to include psuedorandom number generation enhancements and convert to use ansi C.
 
-###[Stargen](https://web.archive.org/web/20070221205935/http://home.comcast.net/~brons/NerdCorner/StarGen/StarGen.html)
+### [Stargen](https://web.archive.org/web/20070221205935/http://home.comcast.net/~brons/NerdCorner/StarGen/StarGen.html)
 
 - Resource Name: 2006 - Jim Burrows - StarGen
 - Author: Jim Burrows
@@ -545,7 +545,7 @@ A version altered by Swiger to include psuedorandom number generation enhancemen
 A starform version altered by Burrows with bits and pieces added and modified and borrowed from Ian Burrell, C. Burke and Chris Croughton. StarGen is based 
 mostly on Burdick's, but has borrowed from the others, most notably Keris's.
                               
-###[Stargen](http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html)
+### [Stargen](http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html)
 
 - Resource Name: 2008 - Jim Burrows - StarGen
 - Author: Jim Burrows
@@ -561,7 +561,7 @@ mostly on Burdick's, but has borrowed from the others, most notably Keris's.
 
 Updated version of the 2006 edition.
  
-###[Accrete](https://github.com/sveco/AccreteSharp)
+### [Accrete](https://github.com/sveco/AccreteSharp)
 
 - Resource Name: 2012 - sveco - Accrete
 - Author: sveco
@@ -577,7 +577,7 @@ Updated version of the 2006 edition.
   
 port of Carl Burke's accrete to c#
  
-###[Stargen](http://www.fedtrek.com/staff/omega13a/stargen_2013.zip)
+### [Stargen](http://www.fedtrek.com/staff/omega13a/stargen_2013.zip)
 - Resource Name: 2013 - Brandon Amaro - Stargen
 - Author: Brandon Amaro (omega13a)
 - Poster/Publisher: Brandon Amaro (omega13a)
@@ -592,7 +592,7 @@ port of Carl Burke's accrete to c#
   
 A snapshot of omega13a's version of Stargen that he put on his Star Trek fan site.
 
-###[Accrete](https://github.com/calebrob6/accrete)
+### [Accrete](https://github.com/calebrob6/accrete)
 
 - Resource Name: 2013 - Caleb Robinson - Accrete
 - Author: Caleb Robinson
@@ -609,7 +609,7 @@ A snapshot of omega13a's version of Stargen that he put on his Star Trek fan sit
 port of Chuck Swiger's accrete to Javascript
 
  
-###[Starform](https://github.com/fusiongyro/starform)
+### [Starform](https://github.com/fusiongyro/starform)
 
 - Resource Name: 2013 - Daniel Lyons - Starform
 - Author: Daniel Lyons
@@ -625,7 +625,7 @@ port of Chuck Swiger's accrete to Javascript
    
 port of Keris's starform code to modern ansi C standards. Technically last touched the core code in 2011.
 
-###[Stargen](https://github.com/grahamreeds/StarGen)
+### [Stargen](https://github.com/grahamreeds/StarGen)
 
 - Resource Name: 2013 - Graham Reeds - Stargen
 - Author: Graham Reeds
@@ -641,7 +641,7 @@ port of Keris's starform code to modern ansi C standards. Technically last touch
   
 An expansion on burrow's code.
 
-###[Accrete2](https://github.com/makhidkarun/accrete2)
+### [Accrete2](https://github.com/makhidkarun/accrete2)
 
 - Resource Name: 2013 - Joseph Heck - Accrete2
 - Author: Joseph Heck
@@ -658,7 +658,7 @@ An expansion on burrow's code.
 A copy of a bunch of different version all in the same place, pretty sure this guys had a copy of Webb's code too.
 
 
-###[Accrete](https://github.com/kennon/Accrete.js)
+### [Accrete](https://github.com/kennon/Accrete.js)
 - Resource Name: 2013 - Kennon Ballou - Accrete
 - Author: Kennon Ballou
 - Poster/Publisher: Kennon Ballou (github)
@@ -673,7 +673,7 @@ A copy of a bunch of different version all in the same place, pretty sure this g
   
 fork of Mitch Anderson's port
 
-###[Accrete](https://github.com/tmanderson/Accrete.js)
+### [Accrete](https://github.com/tmanderson/Accrete.js)
 
 - Resource Name: 2013 - Mitch Anderson - Accrete
 - Author: Mitch Anderson
@@ -689,7 +689,7 @@ fork of Mitch Anderson's port
   
 A port of burrow's code.
 
-##[Accrete](https://github.com/pgremo/accrete)
+## [Accrete](https://github.com/pgremo/accrete)
 
 - Resource Name: 2013 - pgremo - Accrete
 - Author: pgremo
@@ -705,7 +705,7 @@ A port of burrow's code.
   
 A version based on Ian Burrell's java code.
 
-###[Stargen](https://github.com/omega13a/stargen)
+### [Stargen](https://github.com/omega13a/stargen)
 - Resource Name: 2014 - Brandon Amaro - Stargen
 - Author: Brandon Amaro 
 - Poster/Publisher: Brandon Amaro (github)
@@ -721,7 +721,7 @@ A version based on Ian Burrell's java code.
 omega13a's version on github
 
 
-###[Stargen](https://github.com/makhidkarun/stargen)
+### [Stargen](https://github.com/makhidkarun/stargen)
 
 - Resource Name: 2014 - Joseph Heck - Stargen
 - Author: Joseph Heck
@@ -737,7 +737,7 @@ omega13a's version on github
   
 Joseph Heck copy of Burrow's code.
 
-###[Accrete](https://github.com/kbingman/accrete)
+### [Accrete](https://github.com/kbingman/accrete)
 
 - Resource Name: 2014 - Keith Bingman - Accrete
 - Author: Keith Bingman
@@ -753,7 +753,7 @@ Joseph Heck copy of Burrow's code.
 
 May be his own version or undocumented fork.
 
-###[Accrete](https://github.com/monolar/nim-accrete)
+### [Accrete](https://github.com/monolar/nim-accrete)
 - Resource Name: 2015 - Andreas Marr - Accrete - Nim
 - Author: Andreas Marr
 - Poster/Publisher: Andreas Marr (github)
@@ -768,7 +768,7 @@ May be his own version or undocumented fork.
 
 An Interesting standalone recreation of dole/sagan's versions in an obscure language.
 
-###[Accrete](https://github.com/monolar/accrete-rb)
+### [Accrete](https://github.com/monolar/accrete-rb)
 
 - Resource Name: 2015 - Andreas Marr - Accrete
 - Author: Andreas Marr
@@ -784,7 +784,7 @@ An Interesting standalone recreation of dole/sagan's versions in an obscure lang
 
 I Believe this to be a follow on from his previous stuf in a more mainstream language.
 
-###[Accrete](https://github.com/kbingman/accretejs)
+### [Accrete](https://github.com/kbingman/accretejs)
 
 - Resource Name: 2015 - Keith Bingman - Accrete
 - Author: Keith Bingman
@@ -800,7 +800,7 @@ I Believe this to be a follow on from his previous stuf in a more mainstream lan
 
 Fork of Anderson's work.
 
-###[Accrete](https://github.com/zonkmachine/starsysgen)
+### [Accrete](https://github.com/zonkmachine/starsysgen)
 
 - Resource Name: 2015 - Oskar Wallgren - Accrete
 - Author: Oskar Wallgren
@@ -816,7 +816,7 @@ Fork of Anderson's work.
   
 copy of Chuck Swiger's accrete.
 
-###[Stargen](https://github.com/Zomega/garnets)
+### [Stargen](https://github.com/Zomega/garnets)
 
 - Resource Name: 2015 - Will Oursler - Stargen
 - Author: Will Oursler
@@ -832,7 +832,7 @@ copy of Chuck Swiger's accrete.
   
 A port of burrow's code.
 
-###[Stargen](https://github.com/donggas90/ACCRETEPlus)
+### [Stargen](https://github.com/donggas90/ACCRETEPlus)
 
 - Resource Name: 015- Jong-il Hong - Accrete
 - Author: Jong-il Hong
@@ -848,7 +848,7 @@ A port of burrow's code.
 
 A port of Lyons's code to C++
 
-###[Accrete](https://bitbucket.org/dchapes/accrete)
+### [Accrete](https://bitbucket.org/dchapes/accrete)
 
 - Resource Name: 2016 - Dave Chapeskie - Accrete
 - Author: Dave Chapeskie
@@ -864,7 +864,7 @@ A port of Lyons's code to C++
 
 Looks like copies of old code.
 
-###[Accrete](https://github.com/StollD/Accrete)
+### [Accrete](https://github.com/StollD/Accrete)
 
 - Resource Name: 2016 - Dorian Stoll - Accrete
 - Author: Dorian Stoll
@@ -880,7 +880,7 @@ Looks like copies of old code.
   
 variant of Chuck Swiger's accrete.
 
-###[Stargen](https://github.com/glegeza/StarformNET)
+### [Stargen](https://github.com/glegeza/StarformNET)
 
 - Resource Name: 2017 - George Legeza - Starform
 - Author: George Legeza
@@ -899,7 +899,7 @@ A port of burrow's code.
 
 ## Missing Implementations
 
-###ACCRETE 1a/1b
+### ACCRETE 1a/1b
 
 - Resource Name: n/a
 - Author: Dave Allen
@@ -920,7 +920,7 @@ picture. Most likely given other variations that I do have the source code for, 
 of Burdick's early recreations.
 
 
-###[SYSTEM 2300](https://groups.google.com/forum/#!topic/rec.games.frp/uRaCg-xv6Ac)
+### [SYSTEM 2300](https://groups.google.com/forum/#!topic/rec.games.frp/uRaCg-xv6Ac)
 
 - Resource Name: n/a
 - Author: Burton Choinski
@@ -938,7 +938,7 @@ and accrete. I cannot currently find any source code of this program online, so 
 fits into the bigger picture.
 
 
-###[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
+### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
 
 - Resource Name: n/a
 - Author: Wales Larrison
@@ -954,7 +954,7 @@ fits into the bigger picture.
 Jon Leech claims that Wales wrote a variation based on Dole's 1970 paper. I cannot currently find any source code of this program online, so this branch is 
 considered orphaned right now, since I don't know where it fits into the bigger picture.
 
-###ACRETE
+### ACRETE
 
 - Resource Name: n/a
 - Author: Matt Burdick
@@ -970,7 +970,7 @@ considered orphaned right now, since I don't know where it fits into the bigger 
 published to comp.sources by Joe Nowakowski but missing in the archives.
 
 
-###[Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
+### [Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
 - Resource Name: n/a
 - Author: Matt Burdick
 - Poster/Publisher: Philip Hodder
@@ -986,7 +986,7 @@ published to comp.sources by Joe Nowakowski but missing in the archives.
 A variant of the highest version of Burdick's code that we have source code for. Posted by Hodder, but no cached post lying around as far as I can see.
 
 
-###[Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
+### [Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
 - Resource Name: n/a
 - Author: Matt Burdick
 - Poster/Publisher: n/a
