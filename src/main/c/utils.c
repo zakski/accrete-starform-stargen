@@ -1,34 +1,40 @@
-#include        <stdlib.h>
 #include	<math.h>
+#include	<stdlib.h>
 #include	"const.h"
+#include	"utils.h"
 
 /*----------------------------------------------------------------------*/
-/*  This function returns a random real number between the specified    */
-/* inner and outer bounds.                                              */
+/*	This function returns a random real number between the specified	*/
+/* inner and outer bounds.												*/
 /*----------------------------------------------------------------------*/
 
-double
-random_number(double inner, double outer)
+long double random_number(long double inner, long double outer)
 {
-  unsigned long r = rand();
-  double rr = (double)r / ((double)RAND_MAX);
-  double range = outer - inner;
-  return (rr * range + inner);
+	long double range;
+	
+	range = outer - inner;
+	return((((long double)rand()) / (long double)(RAND_MAX)) * range + inner);
 }
 
+
 /*----------------------------------------------------------------------*/
-/*   This function returns a value within a certain variation of the    */
-/*   exact value given it in 'value'.                                   */
+/*	 This function returns a value within a certain variation of the	*/
+/*	 exact value given it in 'value'.									*/
 /*----------------------------------------------------------------------*/
 
-double
-about(double value, double variation)
+long double about(long double value, long double variation)
 {
-  return (value + (value * random_number(-variation, variation)));
+	return(value + (value * random_number(-variation,variation)));
 }
 
-double
-random_eccentricity(void)
+long double random_eccentricity()
 {
-  return (1.0 - pow(random_number(0.000001, 1.0), ECCENTRICITY_COEFF));
+	long double	e;
+	
+	e = 1.0 - pow(random_number(0.0, 1.0), ECCENTRICITY_COEFF);
+	
+	if (e > .99)	// Note that this coresponds to a random
+		e = .99;	// number less than 10E-26
+					// It happens with GNU C for -S254 -W27
+	return(e);
 }

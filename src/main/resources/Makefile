@@ -1,74 +1,88 @@
-# Makefile for "starform", a star system and planet generator
+# Makefile for "stargen", a star system and planet generator
 
-# Change the following if your C compiler isn't called 'cc' (note that on Linux the default compiler is gcc but it can still be run as cc).
-CC=g++
+# Change the following if your C compiler isn't called 'gcc' (note that on Linux 
+# the default compiler is gcc but it can still be run as cc).
+CC=gcc
 
-# For those machines in which the rand() function returns a long int, and for
-# some reason RAND_MAX isn't defined in the standard headers, put a LONG_RAND
-# flag into the CFLAGS line that you use.  For instance, uncomment and use the
-# next line for a normal version of the program:
-CFLAGS = -g -O -DLONG_RAND -Wall -DMOON
+# And change this to your fvorite C compiler flags:
+CFLAGS = -O -g -W -Wall -D_USE_LIBM_MATH_H
 
-# To make a normal version for machines with rand() returning 16-bit numbers,
-# or with RAND_MAX defined in standard headers (as ANSI/ISO C says it should):
-#CFLAGS = -O
+# We use a lot of long doubles and Mac OS X currently warns you that they're
+# thinking about changing these from 64 to 128 bits. To suppress that warning:
 
-# These next lines must always be uncommented:
-OBJS = accrete.o enviro.o display.o utils.o steltype.o propert.o \
-       gensys.o data.o
+CFLAGS += -Wno-long-double
+
+# StarGen comes with a copy of World Benders' portable memory checker, Dumas
+# If you're debugging StarGen, you may want to uncomment the following line:
+
+#CFLAGS += -DMEMORY_CHECK=1
+
+OBJDIR = obj
+OBJS = main.o stargen.o accrete.o display.o Dumas.o enviro.o utils.o
+
 LIBS = -lm
 
-# rule to make a .o file from a .c file
 .c.o:
 	$(CC) -c $(CFLAGS) $*.c
 
-# Targets:
+# on Amiga, I'm told this should be:
+#   $(CC) -c $(CFLAGS) $*.c -o $*.o
 
-all:	starform
+all:	stargen
 
-starform: starform.o $(OBJS)
-	$(CC) $(CFLAGS) -o starform starform.o $(OBJS) $(LIBS)
-	@echo "starform made"
+stargen: $(OBJS)
+	$(CC) $(CFLAGS) -o stargen $(OBJS) $(LIBS)
+	@echo "stargen made"
 
 clean:
-	rm -f *.o starform
+	rm -f $(OBJS) stargen
 
 lint:
-	lint -abchp starform.c accrete.c enviro.c display.c utils.c
+	lint -abchp accrete.c display.c Dumas.c enviro.c stargen.c utils.c main.c
 
-SHARFILES = README INSTALL EXAMPLE TODO starform.mak Makefile \
-            accrete.c   data.h      enviro.h    propert.h   structs.h \
-	    accrete.h   display.c   gensys.c    starform.c  utils.c \
-	    const.h     display.h   gensys.h    steltype.c  utils.h \
-	    data.c      enviro.c    propert.c   steltype.h  elements.dat
+KITFILES  = Credits.txt ReadMe.txt help
+SRCFILES  = accrete.c display.c Dumas.c enviro.c stargen.c utils.c main.c \
+            accrete.h const.h display.h Dumas.h enviro.h structs.h \
+            types.h stargen.h utils.h \
+            mac_prefix.h StarGen.r StarGen.prj Makefile \
+            StarGen.dsw StarGen.dsp Stargen.rc resource.h
 
+MACFILES    = StarGen\ 68K StarGen\ PPC stargen $(KITFILES) ref
+OSXFILES    = stargen $(KITFILES) ref
+WINEXEFILES = WinStarGen.exe StarGen.exe \
+              mfc80u.dll msvcr80.dll \
+              $(KITFILES) ref/*
+SHARFILES   = $(KITFILES) $(SRCFILES) ref/*
 
-shar:	$(SHARFILES)
-	shar -abcCs $(SHARFILES) >starform.shar
+zip:	$(SHARFILES) $(WINEXEFILES)
+	mkdir new-html
+	mv html html-safe
+	mv new-html html
+	zip StarGenSource.zip $(SHARFILES) html
+	zip WinStarGen.zip $(WINEXEFILES) html
+	zip MacStarGen.zip $(OSXFILES) html
+	mv html new-html
+	mv html-safe html
+	rm -rf new-html
 
-tar:	$(SHARFILES)
-	tar cvf starform.tar $(SHARFILES)
-
-tgz:	$(SHARFILES)
-	tar cvf - $(SHARFILES) | gzip > starform.tgz
-
-zip:	$(SHARFILES)
-	zip starform.zip $(SHARFILES)
+sit:	$(MACFILES) $(SHARFILES)
+	mkdir new-html
+	mv html html-safe
+	mv new-html html
+	stuff -o -n StarGenSource.sit $(MACFILES) $(SRCFILES) html
+	stuff -o -n StarGen.sit $(MACFILES) html	
+	mv html new-html
+	mv html-safe html
+	rm -rf new-html
 
 rmarc:
-	rm -f starform.shar starform.tar starform.tgz starform.zip
+	rm -f StarGenSource.zip WinStarGen.zip StarGenSource.sit StarGen.sit
 
-# Dependencies
-
-accrete.o:	accrete.c const.h structs.h accrete.h utils.h data.h
-data.o:		data.c data.h const.h
-display.o:	display.c structs.h const.h propert.h enviro.h data.h
-enviro.o:	enviro.c const.h structs.h utils.h data.h
-gensys.o:	gensys.c const.h structs.h accrete.h utils.h data.h enviro.h \
-		display.h steltype.h
-propert.o:	propert.c propert.h elements.dat
-starform.o:	starform.c const.h structs.h gensys.h accrete.h utils.h \
-		data.h enviro.h display.h steltype.h propert.h
-steltype.o:	steltype.c
-utils.o:	utils.c const.h
+accrete.o:	const.h structs.h accrete.h stargen.h utils.h Dumas.h
+display.o:	const.h structs.h enviro.h display.h stargen.h
+Dumas.o:	Dumas.h
+enviro.o:	const.h structs.h enviro.h stargen.h utils.h
+stargen.o:	const.h structs.h enviro.h display.h accrete.h stargen.h utils.h Dumas.h
+utils.o:	const.h utils.h
+stargen.o:	const.h structs.h enviro.h accrete.h stargen.h Dumas.h
 
