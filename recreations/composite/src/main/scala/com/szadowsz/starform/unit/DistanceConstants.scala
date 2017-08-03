@@ -3,6 +3,8 @@ package com.szadowsz.starform.unit
 /**
   * Separation of Distance Unit Constants from General Program Constants.
   *
+  * These values should not be alterable.
+  *
   * These values come from the following files of the original programs unless otherwise noted:
   * const.h - Burdick (accrete)
   * const.h - Burdick (starform)
@@ -10,6 +12,9 @@ package com.szadowsz.starform.unit
   * const.h - Webb (starform)
   * PhysicalConstants.java - Burke (starform)
   * Astro.java - Burrell (accrete)
+  *
+  * Folkins and Gilham do not have a separation between constants and calculation, therefore you will find their declarations in the same place as the
+  * functions that use them.
   *
   * @author Zakski : 08/07/2015.
   */
