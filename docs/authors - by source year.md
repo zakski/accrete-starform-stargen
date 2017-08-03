@@ -19,7 +19,7 @@ Initial model order will be according to the resource name.
 - Source Year: 1969
 - Parents: n/a, the original
 - Original Source: Research paper, but no code
-- Reproducibility: Completely Reproducible.
+- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/Formation%20of%20Planetary%20Systems%20by%20Aggregation.md)
 - Burdick Version: n/a
 - Key: Dole.1969
 
@@ -39,7 +39,7 @@ References are stored in accrete.bib.
 - Source Year: 1970
 - Parents: n/a, the original
 - Original Source: Research paper, but no code
-- Reproducibility: Completely Reproducible.
+- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/Computer%20Simulation%20of%20the%20Formation%20of%20Planetary%20Systems.md)
 - Burdick Version: n/a
 - Key: Dole.1970
 
@@ -58,7 +58,7 @@ References are stored in 1.5 accrete.bib.
 - Source Year: 1977
 - Parents: Dole.1969, Dole.1970
 - Original Source: Research paper, but no code
-- Reproducibility: Possibly Reproducible.
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/Computer%20Simulations%20of%20Planetary%20Accretion%20Dynamics.md)
 - Burdick Version: n/a
 - Key: Sagan.1977
 
@@ -80,7 +80,7 @@ References are stored in 1.7 accrete.bib.
 - Source Year: 1984
 - Parents: Dole.1969, Dole.1970
 - Original Source: Located.
-- Reproducibility: Reproducible.
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/Gilham1984.md)
 - Burdick Version: n/a
 - Key: Gilham.1984
 
@@ -97,8 +97,8 @@ published in October 1984. He may have also released it on usenet, but such a po
 - Creation Year: 1985
 - Source Year: 1985
 - Parents: Dole.1969, Dole.1970, Sagan.1977
-- Original Source: Gone.
-- Reproducibility: Partially Reproducible.
+- Original Source: Research Paper, but source code is gone.
+- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Extra-Solar%20Planetary%20Systems.md)
 - Burdick Version: n/a
 - Key: Fogg.1985
 

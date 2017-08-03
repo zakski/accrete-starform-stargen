@@ -1,5 +1,10 @@
 # TODO List
 
+## Docs
+
+- Fill out assumptions made by Dole's Paper.
+- Finish Documentation Overhaul
+
 ## Branches
 - ~~add burdick accrete branch~~
 - ~~add burdick accrete2 branch~~
