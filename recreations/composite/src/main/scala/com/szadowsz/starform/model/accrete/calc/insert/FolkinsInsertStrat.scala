@@ -43,7 +43,7 @@ class FolkinsInsertStrat(aConst : AccreteConstants, protected val randomisedCoun
     * @return the semi major axis of a planetismal orbiting a star in AU.
     */
   override def semiMajorAxis(rand: RandGenTrait, nucleiCount: Int, innermost: Double, outermost: Double, bands: List[DustBand]): Double = {
-    if (nucleiCount >= nucleiCount){
+    if (randomisedCount >= nucleiCount){
       super.semiMajorAxis(rand,nucleiCount,innermost,outermost,bands)
     } else {
       val eligible = bands.filter(db => db.hasDust && db.outerEdge > innermost && db.innerEdge < outermost)
