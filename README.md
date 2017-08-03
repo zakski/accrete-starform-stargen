@@ -55,13 +55,6 @@ This section contains a brief list of the current codelines in progess of or com
 9. [Webb](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/webb.md)
 
 
-### Burrows
-***
-
-##### 2006 - Jim Burrows - Stargen
-
-The stargen code that everyone is so familiar with.
-
 ## Papers
 
 The Research Papers that inspired all the extant accrete code. Contains most of the mathematics necessary to construct the basic models on a home computer.
@@ -85,6 +78,7 @@ This project would not be possible without the hardwork of the these people:
 - Chris "Keris" Croughton
 - Christopher Webb
 - Ian Burrell
+- Jim Burrows
 - Martyn Fogg
 - Matt Burdick
 - Peter Keel

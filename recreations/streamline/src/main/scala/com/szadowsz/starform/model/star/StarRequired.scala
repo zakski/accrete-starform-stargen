@@ -1,6 +1,6 @@
-package com.szadowsz.starform.model
+package com.szadowsz.starform.model.star
 
-import com.szadowsz.starform.system.bodies.star.Star
+import com.szadowsz.starform.system.bodies.Star
 
 /**
   * Created on 13/04/2017.

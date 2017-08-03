@@ -1,6 +1,5 @@
 package com.szadowsz.starform.system.bodies.planetoid
 
-import com.szadowsz.starform.model.uwp.UWPCalc
 import com.szadowsz.starform.system.bodies.base.Planetismal
 
 /**

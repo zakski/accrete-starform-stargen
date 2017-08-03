@@ -13,7 +13,7 @@ object InsertionStrat {
   *
   * @author zakski : 30/09/2016.
   */
-class InsertionStrat(aConst : AccreteConstants, protected val randomisedCount: Int = InsertionStrat.defaultRandomCount) {
+case class InsertionStrat(aConst : AccreteConstants, randomisedCount: Int = InsertionStrat.defaultRandomCount) {
 
   /**
     * Function to produce the semi major axis of a planetesimal. Formula taken from "Formation of Planetary Systems by Aggregation: A Computer Simulation" in
