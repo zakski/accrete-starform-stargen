@@ -44,7 +44,7 @@ case class InsertionStrat(aConst : AccreteConstants, randomisedCount: Int = Inse
       innermost + (outermost - innermost) * rand.nextDouble()
     } else {
       val eligible = bands.filter(db => db.hasDust && db.outerEdge > innermost && db.innerEdge < outermost)
-      val band = eligible(rand.nextInt(bands.length))
+      val band = eligible(rand.nextInt(eligible.length))
       val min = Math.max(band.innerEdge, innermost)
       val max = Math.min(band.outerEdge, outermost)
       min + (max - min) * rand.nextDouble()

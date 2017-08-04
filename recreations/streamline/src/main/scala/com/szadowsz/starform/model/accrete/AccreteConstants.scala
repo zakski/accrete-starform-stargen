@@ -130,15 +130,16 @@ trait AccreteConstants {
     * @note unit is solar mass.
     * @note referred to as m0 in Dole's Paper.
     * @note Dole states that the simulation is pretty insensitive to this value becoming smaller.
+    * @note Sagan confirms dole's assertion. No point in altering it.
     *
     * @see p. 15, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
     * @see const var m0 in dole.cc - Keris.2000.A (converted to Kg)
     * @see const var PROTOPLANET_MASS, in Planetismal.java - Burrell.1997
     */
-  def PROTOPLANET_MASS: Double = 1.0E-15 /* Starting Mass in solar mass */
+  val PROTOPLANET_MASS: Double = 1.0E-15 /* Starting Mass in solar mass */
 
   /**
-    * The Critical Mass Constant. A Proportionality factor that should be between 1.0E-5 and 2.0E-5 olar masses.
+    * The Critical Mass Constant. A Proportionality factor that should be between 1.0E-5 and 2.0E-5 solar masses.
     *
     * @note unit is solar mass.
     * @note referred to as B in Dole's Paper.

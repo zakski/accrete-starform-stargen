@@ -3,6 +3,19 @@ package com.szadowsz.starform.unit
 /**
   * Separation of Mass Unit Constants from General Program Constants.
   *
+  * These values should not be alterable.
+  *
+  * These values come from the following files of the original programs unless otherwise noted:
+  * const.h - Burdick (accrete)
+  * const.h - Burdick (starform)
+  * const.h - Keris (starform)
+  * const.h - Webb (starform)
+  * PhysicalConstants.java - Burke (starform)
+  * Astro.java - Burrell (accrete)
+  *
+  * Folkins and Gilham do not have a separation between constants and calculation, therefore you will find their declarations in the same place as the
+  * functions that use them.
+  *
   * @author Zakski : 08/07/2015.
   */
 trait MassConstants {
@@ -11,11 +24,6 @@ trait MassConstants {
     * Number of grams in a kilogram. Unit of Mass.
     *
     * @note unit is grams.
-    *
-    * @see line 17 in Astro.java - Ian Burrell (accrete)
-    * @see line 18 in const.h - Mat Burdick (accrete)
-    * @see line 16 in const.h - Mat Burdick (starform)
-    * @see line 66 in  PhysicalConstants.java - Carl Burke (starform)
     */
   final val GRAMS_PER_KG: Double = 1000.0
 
@@ -39,10 +47,6 @@ trait MassConstants {
     * @note Earth mass is the unit of mass equal to that of Earth in kg.
     *
     * @see http://solarsystem.nasa.gov/planets/profile.cfm?Object=Earth&Display=Facts
-    * @see line 14 in Astro.java - Ian Burrell (accrete)
-    * @see line 17 in const.h - Mat Burdick (accrete)
-    * @see line 15 in const.h - Mat Burdick (starform)
-    * @see line 65 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val EARTH_MASS_IN_GRAMS: Double = EARTH_MASS_IN_KG * GRAMS_PER_KG
 
@@ -68,10 +72,6 @@ trait MassConstants {
      *
      * @see http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html
      * @see http://solarsystem.nasa.gov/planets/profile.cfm?Object=Earth&Display=Facts
-     * @see line 15 in Astro.java - Ian Burrell (accrete)
-     * @see line 24 in const.h - Mat Burdick (accrete)
-     * @see line 22 in const.h - Mat Burdick (starform)
-     * @see line 72 in PhysicalConstants.java - Carl Burke (starform)
      */
     final val SOLAR_MASS_IN_EARTH_MASS: Double = SOLAR_MASS_IN_KG / EARTH_MASS_IN_KG
 
@@ -82,11 +82,6 @@ trait MassConstants {
      * @note Solar mass is the unit of mass equal to that of Sun in kg.
      *
      * @see http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html
-     * @see line 13 in Astro.java - Ian Burrell (accrete)
-     * @see line 16 in const.h - Mat Burdick (accrete)
-     * @see line 14 in const.h - Mat Burdick (starform)
-     * @see line 64 in PhysicalConstants.java - Carl Burke (starform)
      */
     final val SOLAR_MASS_IN_GRAMS: Double = SOLAR_MASS_IN_KG * GRAMS_PER_KG
-
  }

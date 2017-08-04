@@ -1,6 +1,10 @@
 package com.szadowsz.starform.unit
 
 /**
+  * Utility method to convert from one unit of measurement to another.
+  *
+  * Function names description what is being convert to/from.
+  *
   * @author Zakski : 03/07/2015.
   */
 object UnitConverter extends UnitConstants {

@@ -54,6 +54,6 @@ case class KerisSimulation[C <: FoggBaseStarConst](profile : StarformProfile[Fog
     val tilt = eCalc.inclination(rand,proto.axis)
     val (day,night,max,min) = eCalc.calcTempLimits(proto.ecc,surfPressure,surfTemp,tilt,dayLen)
 
-    new KerisPlanet(proto, eqRadius, density, lengthOfOrbit, dayLen, gravity, surfPressure, water, clouds, ice, albedo, surfTemp,day, night, min,max, tilt)
+    new KerisPlanet(proto, eqRadius, density, lengthOfOrbit, dayLen, gravity, surfPressure, water, clouds, ice, albedo, surfTemp, tilt, day, night, min,max)
   }
 }

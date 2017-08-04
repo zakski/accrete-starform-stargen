@@ -1,11 +1,22 @@
 package com.szadowsz.starform.unit
 
-import com.szadowsz.starform.model.eco.calc.EcoCalc
-
 /**
   * Constants File inherits the fully fledged unit categories and declares constants that don't quite fit into them.
   *
-  * @author Zakski : 31/05/2015.
+  *  These values should not be alterable.
+  *
+  * These values come from the following files of the original programs unless otherwise noted:
+  * const.h - Burdick (accrete)
+  * const.h - Burdick (starform)
+  * const.h - Keris (starform)
+  * const.h - Webb (starform)
+  * PhysicalConstants.java - Burke (starform)
+  * Astro.java - Burrell (accrete)
+  *
+  * Folkins and Gilham do not have a separation between constants and calculation, therefore you will find their declarations in the same place as the
+  * functions that use them.
+  *
+  *  @author Zakski : 31/05/2015.
   */
 trait UnitConstants extends DistanceConstants with MassConstants {
 
@@ -19,10 +30,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     *
     * @see eq. 13, Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
     * @see http://solarsystem.nasa.gov/planets/profile.cfm?Object=Earth&Display=Facts
-    * @see var EARTH_DENSITY, line 19 in const.h - Mat Burdick (accrete)
-    * @see var EARTH_DENSITY, line 20 in const.h - Keris (starform)
-    * @see var EARTH_DENSITY, line 17 in const.h - Mat Burdick (starform)
-    * @see var EARTH_DENSITY, line 67 in  PhysicalConstants.java - Carl Burke (starform)
     */
   final val EARTH_DENSITY: Double = 5.513
 
@@ -31,11 +38,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * between two bodies. It usually appears in Sir Isaac Newton's law of universal gravitation, and in Albert Einstein's general theory of relativity.
     *
     * @note N⋅m^2^/kg^2^
-    *
-    * @see var GRAV_CONSTANT, line 49 in const.h - Mat Burdick (accrete)
-    * @see var GRAV_CONSTANT, line 50 in const.h - Keris (starform)
-    * @see var GRAV_CONSTANT, line 47 in const.h - Mat Burdick (starform)
-    * @see var GRAV_CONSTANT, line 96 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val GRAV_CONSTANT = 6.674E-11
 
@@ -49,11 +51,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * Number of Days in an earth year.
     *
     * @note unit is days.
-    *
-    * @see var DAYS_IN_A_YEAR, line 42 in const.h - Mat Burdick (accrete)
-    * @see var DAYS_IN_A_YEAR, line 33 in const.h - Keris (starform)
-    * @see var DAYS_IN_A_YEAR, line 40 in const.h - Mat Burdick (starform)
-    * @see var DAYS_IN_A_YEAR, line 89 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val DAYS_IN_EARTH_YEAR: Double = 365.25
 
@@ -61,10 +58,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * Number of Seconds in an hour. Used in calculating rotation length in hours.
     *
     * @note unit is sec.
-    *
-    * @see line 42 in const.h - Mat Burdick (accrete)
-    * @see line 40 in const.h - Mat Burdick (starform)
-    * @see line 89 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val SECONDS_PER_HOUR: Double = 3600.0
 
@@ -84,10 +77,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * Used in RMS calculation which is equivalent to Fogg's eq 16.
     *
     * @note unit is J K−1 mol−1.
-    *
-    * @see line 51 in const.h - Mat Burdick (accrete)
-    * @see line 49 in const.h - Mat Burdick (starform)
-    * @see line 98 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val MOLAR_GAS_CONST = 8.3144621
 
@@ -95,10 +84,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * Base Exosphere temperature. Temperature in kelvin.
     *
     * @note unit is degrees kelvin.
-    *
-    * @see line 23 in const.h - Mat Burdick (accrete)
-    * @see line 21 in const.h - Mat Burdick (starform)
-    * @see line 71 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val EXOSPHERE_TEMP: Double = 1273.0
 
@@ -106,10 +91,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * Gravitational Acceleration of Earth.
     *
     * @note unit is metres / sec^2^.
-    *
-    * @see line 21 in const.h - Mat Burdick (accrete)
-    * @see line 19 in const.h - Mat Burdick (starform)
-    * @see line 69 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val EARTH_GRAVITY: Double = 9.81
 
@@ -118,9 +99,6 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * Molecular Weight of Nitrogen or N2. See "Habitable Planets for Man", p. 38.
     *
     * @see Habitable Planets for Man - Dole
-    * @see line 73 in const.h - Mat Burdick (accrete)
-    * @see line 71 in const.h - Mat Burdick (starform)
-    * @see line 120 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val MOLECULAR_NITROGEN: Double = 28.0
 
@@ -128,30 +106,41 @@ trait UnitConstants extends DistanceConstants with MassConstants {
     * Molecular Weight of Nitrogen or N2. See "Habitable Planets for Man", p. 38.
     *
     * @see Habitable Planets for Man - Dole
-    * @see line 73 in const.h - Mat Burdick (accrete)
-    * @see line 71 in const.h - Mat Burdick (starform)
-    * @see line 120 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val MOLECULAR_HYDROGEN: Double = 2.0
 
 
   /**
-    * Earth's Effective temperature. Temperature in kelvin.
+    * Earth's Effective temperature.
     *
     * @note unit is degrees kelvin.
-    *
-    * @see line 25 in const.h - Mat Burdick (accrete)
-    * @see line 23 in const.h - Mat Burdick (starform)
-    * @see line 73 in PhysicalConstants.java - Carl Burke (starform)
     */
   final val EARTH_EFFECTIVE_TEMP: Double = 255.0
 
-
-  final val MILLIBARS_PER_BAR = 1000.0
-
-  final val EARTH_SURF_PRES_IN_MILLIBARS = 1000.0
-
+  /**
+    * Freezing point of water on Earth.
+    *
+    * @note unit is degrees kelvin.
+    */
   final val FREEZING_POINT_OF_WATER = 273.0
 
+  /**
+    * The Difference between 0 degrees celsius and 0 degrees kelvin
+    */
   final val KELVIN_CELSIUS_DIFFERENCE = 273.0
+
+
+  /**
+    * Number of millibars per bar, a unit of atmospheric pressure.
+    *
+    * @note unit is millibars.
+    */
+  final val MILLIBARS_PER_BAR = 1000.0
+
+  /**
+    * Average atmospheric pressure of Earth's Surface.
+    *
+    * @note unit is millibars.
+    */
+  final val EARTH_SURF_PRES_IN_MILLIBARS = 1000.0
 }
