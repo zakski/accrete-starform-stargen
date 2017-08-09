@@ -3,7 +3,9 @@
 ## Intro
 
 This file contains a brief description of each examined implementations. Research papers, source code and/or more detailed readmes, if they exist, will be 
-deposited into the model folder.
+deposited into the models folder, whilst descriptions of their operation and reproducability will be placed in notes under build descriptions.
+ 
+Additionally in the notes folder, I will place my proposed arrangement of the various branches and forks. 
 
 Initial model order will be according to the resource name.
 
@@ -29,7 +31,7 @@ online, with the exception of the random number generator that he used as that w
 
 References are stored in accrete.bib.
 
-### [ACRETE]
+### ACRETE
 
 - Resource Name: 1970 - Stephen H. Dole - Computer Simulation of the Formation of Planetary Systems
 - Author: Stephen H. Dole
@@ -121,7 +123,7 @@ References are stored in 2.0 accrete.bib.
 - Source Year: 1993
 - Parent: Burdick.1988
 - Original Source: Incomplete.
-- Reproducibility: Partially Reproducible.
+- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Gilham1988.md)
 - Burdick Version: None
 - Key: Gilham.1988
 

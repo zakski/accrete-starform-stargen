@@ -34,7 +34,7 @@ Nevertheless, this codebase is the parent of the vast majority of variations tha
 - Source Year: 1993
 - Parent: Burdick.1988
 - Original Source: Incomplete.
-- Reproducibility: Partially Reproducible.
+- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Gilham1988.md)
 - Burdick Version: None
 - Key: Gilham.1988
 

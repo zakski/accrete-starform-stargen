@@ -1,7 +1,0 @@
-Almost exactly treads the same ground as "Formation of Planetary Systems by Aggregation: A Computer Simulation". Except that it uses less references and you
-can actually track them all down via google scholar.
-
-reference-wise the bibtex file for this paper will be "1.5 accrete"
-
-its main usages are as a cross-reference for references found in the previous paper, its comparision of a small dataset against the available accurate (for
-the time) measurements of the solar system, and its slightly alternate look at some of the formula used.

@@ -26,7 +26,7 @@ of Burdick's early recreations.
 - Resource Name: n/a
 - Author: Burton Choinski
 - Poster/Publisher: n/a
-- Language: C
+- Language: Modula-2
 - Creation Year: 1990
 - Source Year: n/a
 - Parents: Dole.1969, Dole.1970 or Fogg.1985 most likely

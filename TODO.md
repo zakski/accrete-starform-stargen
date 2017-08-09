@@ -3,7 +3,12 @@
 ## Docs
 
 - Fill out assumptions made by Dole's Paper.
-- Finish Documentation Overhaul
+- Finish all the Model descriptions
+- Add by creation year ordering list
+
+## Composite
+
+- Remove Dole specific branching and replace with Fogg's code using the values of our star and no eco model.
 
 ## Branches
 - ~~add burdick accrete branch~~
