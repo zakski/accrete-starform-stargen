@@ -4,9 +4,10 @@ package com.szadowsz.starform.sim
 import com.szadowsz.starform.model.accrete.{AccreteProfile, AccreteSimulation, AccreteStats}
 import com.szadowsz.starform.system.AccreteSystem
 import com.szadowsz.starform.system.bodies.planetoid.DolePlanet
+import com.szadowsz.starform.system.bodies.star.DoleStar
 
-case class DoleSimulation(profile : AccreteProfile, a: Option[Double] = None, k: Option[Double] = None, w: Option[Double] = None)
-  extends AccreteSimulation[AccreteStats,DolePlanet,AccreteSystem[DolePlanet]](profile) {
+case class DoleSimulation(profile: AccreteProfile, a: Option[Double] = None, k: Option[Double] = None, w: Option[Double] = None)
+  extends AccreteSimulation[DoleStar,AccreteStats, DolePlanet, AccreteSystem](profile) {
 
 
   override val DUST_DENSITY_COEFF: Double = a.getOrElse(aConsts.DUST_DENSITY_COEFF)
@@ -28,6 +29,7 @@ case class DoleSimulation(profile : AccreteProfile, a: Option[Double] = None, k:
     * @return a new list of [[DolePlanet]] instances.
     */
   override protected def generatePlanets(): List[DolePlanet] = {
+    star = new DoleStar()
     accrete()
     planetismals.map(new DolePlanet(_))
   }
@@ -37,7 +39,7 @@ case class DoleSimulation(profile : AccreteProfile, a: Option[Double] = None, k:
     *
     * @return a new [[AccreteSystem]] instance.
     */
-  override protected def createSystem(seed: Long, stats: AccreteStats, planets: List[DolePlanet]): AccreteSystem[DolePlanet] = {
-    AccreteSystem(seed, stats, planets)
+  override protected def createSystem(seed: Long, stats: AccreteStats, planets: List[DolePlanet]): AccreteSystem = {
+    AccreteSystem(star,seed, stats, planets)
   }
 }

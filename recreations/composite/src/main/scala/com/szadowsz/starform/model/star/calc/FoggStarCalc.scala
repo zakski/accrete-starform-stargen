@@ -63,6 +63,6 @@ case class FoggStarCalc(override val sConst: FoggBaseStarConst) extends StarCalc
     val age: Double = stellarAge(rand, lifespan)
     val meanHabitableRadius: Double = ecosphereRadius(luminosity)
     val innerHabitableRadius: Double = greenhouseRadius(meanHabitableRadius)
-    FoggStar(mass, luminosity, lifespan, age, innerHabitableRadius, meanHabitableRadius)
+    new FoggStar(mass, luminosity, lifespan, age, innerHabitableRadius, meanHabitableRadius)
   }
 }

@@ -3,8 +3,7 @@ package com.szadowsz.starform.profile.starform
 import com.szadowsz.starform.model.StarformProfile
 import com.szadowsz.starform.model.accrete.calc.collision.{CollisionCalc, DoleCollCalc}
 import com.szadowsz.starform.model.accrete.calc.insert.{AccreteInsertStrat, RandInsertStrat}
-import com.szadowsz.starform.model.accrete.calc.planet.{FoggPlanCalc, PlanetesimalCalc, StarformPlanCalc}
-import com.szadowsz.starform.model.accrete.calc.{FoggAccCalc, StarformAccrCalc}
+import com.szadowsz.starform.model.accrete.calc.planet.PlanetesimalCalc
 import com.szadowsz.starform.model.accrete.constants.{AccreteConstants, DoleConstants}
 import com.szadowsz.starform.model.eco.calc.{EcoCalc, FoggEcoCalc}
 import com.szadowsz.starform.model.star.calc.{FoggStarCalc, StarCalc}
@@ -29,9 +28,5 @@ class FoggProfile extends StarformProfile[FoggStar,FoggStarConstants,FoggEcoCalc
 
   override def buildInsertStrat(aConst: AccreteConstants): AccreteInsertStrat = new RandInsertStrat(aConst)
 
-  override def buildPlanCalc(aConst: AccreteConstants): StarformPlanCalc = FoggPlanCalc(aConst)
-
   override def buildCollCalc(pCalc: PlanetesimalCalc): CollisionCalc = DoleCollCalc(pCalc)
-
-  override def buildStarAccCalc(pCalc: StarformPlanCalc, aConst: AccreteConstants): StarformAccrCalc = FoggAccCalc(pCalc,aConst)
 }

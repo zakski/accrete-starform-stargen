@@ -18,9 +18,9 @@ trait AccreteProfile {
 
   def buildInsertStrat(aConst: AccreteConstants): AccreteInsertStrat
 
-  def buildPlanCalc(aConst: AccreteConstants): PlanetesimalCalc
-
   def buildCollCalc(pCalc: PlanetesimalCalc): CollisionCalc
 
-  def buildAccCalc(pCalc: PlanetesimalCalc, aConst: AccreteConstants): AccreteCalc
+  final def buildPlanCalc(aConst: AccreteConstants): PlanetesimalCalc = PlanetesimalCalc(aConst)
+
+  final def buildAccCalc(pCalc: PlanetesimalCalc, aConst: AccreteConstants): AccreteCalc = AccreteCalc(pCalc,aConst)
 }

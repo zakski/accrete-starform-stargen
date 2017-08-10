@@ -6,13 +6,12 @@ import com.szadowsz.starform.model.accrete.constants.AccreteConstants
 /**
   * Calculations specific to the formation of the star and the dust cloud.
   *
+  * @note dustDensity function was adjusted to be Fogg's Version, if running dole's simulation ensure that values representing earth's star are used to
+  *       maintain parity.
+  *
   * @author Zakski : 03/06/2015.
   */
-trait AccreteCalc {
-
-  val pCalc : PlanetesimalCalc
-
-  val aConst : AccreteConstants
+case class AccreteCalc(pCalc: PlanetesimalCalc, aConst: AccreteConstants){
 
   /**
     * Method to calculate outer dust band edge. The Formula that this comes from is unknown, it seems to be introduced in one of the early accrete versions, but
@@ -33,10 +32,12 @@ trait AccreteCalc {
   def outerDustLimit(mass: Double): Double = 200 * Math.pow(mass, 1.0 / 3.0)
 
   /**
-    * Method to calculate dust cloud density at a given radius. Formula taken from "III. Experimental Simulation section a) Initial Conditions in the Cloud" in
-    * "Formation of Planetary Systems by Aggregation: A Computer Simulation".
+    * Method to calculate dust cloud density at a given radius. Original Formula taken from "III. Experimental Simulation section a) Initial Conditions in the
+    * Cloud" in "Formation of Planetary Systems by Aggregation: A Computer Simulation". In the case of simulations (not Dole's) that use a central star that is
+    * not identical to ours, we alter the Density by its mass.
     *
     * @see p. 14, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
+    * @see eq. 8, p. 503, Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
     * @see method DustDensity, line 96 in DoleParams.java - Ian Burrell (accrete)
     * @see method distribute_planetary_masses, line 417 in accrete.c - Mat Burdick (accrete)
     * @see method Density, line 122 in Dole.c - Andrew Folkins (accretion)
@@ -46,10 +47,13 @@ trait AccreteCalc {
     * @see method dist_planetary_masses, line 419 in accrete.c - Mat Burdick (starform)
     * @see method dist_planetary_masses, line 154 in  Star.java - Carl Burke (starform)
     *
+    * @param starMass - the mass of the central star in Solar Masses.
     * @param radius - the current distance from the stellar mass in AU
     * @return Dust density at that radius of the cloud
     */
-  def dustDensity(radius: Double): Double = aConst.DUST_DENSITY_COEFF * Math.exp(-aConst.ALPHA * Math.pow(radius, 1.0 / aConst.N))
+  def dustDensity(starMass : Double, radius: Double): Double = {
+    (aConst.DUST_DENSITY_COEFF * Math.sqrt(starMass)) * Math.exp(-aConst.ALPHA * Math.pow(radius, 1.0 / aConst.N))
+  }
 
   /**
     * Method to calculate total density in situations where critical mass has been reached and the protoplanet is accreting gas as well as dust. Formula comes

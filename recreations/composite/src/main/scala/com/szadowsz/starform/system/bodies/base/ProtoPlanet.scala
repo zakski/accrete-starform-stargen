@@ -23,7 +23,7 @@ import com.szadowsz.starform.model.accrete.calc.planet.PlanetesimalCalc
   *
   * @author Zakski : 25/06/2015.
   */
-class ProtoPlanet(val calc: PlanetesimalCalc, var mass: Double, var axis: Double, var ecc: Double) extends Planetismal {
+class ProtoPlanet(val star : Star, val calc: PlanetesimalCalc, var mass: Double, var axis: Double, var ecc: Double) extends Planetismal {
 
   /**
     * The closest to the star that the planet will be during its orbit.
@@ -74,7 +74,7 @@ class ProtoPlanet(val calc: PlanetesimalCalc, var mass: Double, var axis: Double
     *
     * @note unit of value is Solar Masses.
     */
-  def criticalMass: Double = calc.criticalMass(perihelion)
+  def criticalMass: Double = calc.criticalMass(star.luminosity,perihelion)
 
 
   /**

@@ -73,6 +73,6 @@ case class FolkinsStarCalc(override val sConst : FolkinsBaseStarConst) extends S
     val age: Double = stellarAge(rand, lifespan)
     val meanHabitableRadius: Double = ecosphereRadius(luminosity)
     val innerHabitableRadius: Double = greenhouseRadius(meanHabitableRadius)
-    FolkinsStar(specClass,specSubClass,lumClass,magnitude,mass, luminosity, lifespan, age, innerHabitableRadius, meanHabitableRadius)
+    new FolkinsStar(specClass,specSubClass,lumClass,magnitude,mass, luminosity, lifespan, age, innerHabitableRadius, meanHabitableRadius)
   }
 }

@@ -1,10 +1,9 @@
 package com.szadowsz.starform.profile.starform
 
 import com.szadowsz.starform.model.StarformProfile
-import com.szadowsz.starform.model.accrete.calc.{FoggAccCalc, StarformAccrCalc}
 import com.szadowsz.starform.model.accrete.calc.collision.{CollisionCalc, DoleCollCalc}
 import com.szadowsz.starform.model.accrete.calc.insert.{AccreteInsertStrat, FolkinsInsertStrat}
-import com.szadowsz.starform.model.accrete.calc.planet.{FoggPlanCalc, PlanetesimalCalc, StarformPlanCalc}
+import com.szadowsz.starform.model.accrete.calc.planet.PlanetesimalCalc
 import com.szadowsz.starform.model.accrete.constants.{AccreteConstants, DoleConstants}
 import com.szadowsz.starform.model.eco.calc.{EcoCalc, FoggEcoCalc}
 import com.szadowsz.starform.model.star.calc.{FolkinsStarCalc, StarCalc}
@@ -29,10 +28,5 @@ class FolkinsProfile extends StarformProfile[FolkinsStar,FolkinsStarConstants,Fo
 
   override def buildInsertStrat(aConst: AccreteConstants): AccreteInsertStrat = new FolkinsInsertStrat(aConst)
 
-  override def buildPlanCalc(aConst: AccreteConstants): StarformPlanCalc = FoggPlanCalc(aConst) // TODO double check component is right
-
-  override def buildCollCalc(pCalc: PlanetesimalCalc): CollisionCalc = DoleCollCalc(pCalc) // TODO double check component is right
-
-  // TODO double check component is right
-  override def buildStarAccCalc(pCalc: StarformPlanCalc, aConst: AccreteConstants): StarformAccrCalc = FoggAccCalc(pCalc,aConst)
+   override def buildCollCalc(pCalc: PlanetesimalCalc): CollisionCalc = DoleCollCalc(pCalc) // TODO double check component is right
 }

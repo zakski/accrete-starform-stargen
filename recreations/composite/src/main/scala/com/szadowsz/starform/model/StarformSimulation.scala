@@ -1,25 +1,21 @@
 package com.szadowsz.starform.model
 
 import com.szadowsz.starform.model.accrete.AccreteSimulation
-import com.szadowsz.starform.model.accrete.calc.StarformAccrCalc
-import com.szadowsz.starform.model.accrete.calc.planet.StarformPlanCalc
+import com.szadowsz.starform.model.accrete.calc.AccreteCalc
 import com.szadowsz.starform.model.eco.calc.EcoCalc
 import com.szadowsz.starform.model.star.calc.StarCalc
+import com.szadowsz.starform.model.accrete.calc.planet.PlanetesimalCalc
 import com.szadowsz.starform.model.star.constants.StarConstants
 import com.szadowsz.starform.system.AbstractStarSystem
-import com.szadowsz.starform.system.bodies.base.Planetismal
+import com.szadowsz.starform.system.bodies.base.{Planetismal, Star}
 import com.szadowsz.starform.system.bodies.planetoid.FoggPlanet
-import com.szadowsz.starform.system.bodies.star.Star
 import com.szadowsz.starform.unit.UnitConverter
 
 /**
   * @author Zakski : 31/12/2015.
   */
-abstract class StarformSimulation
-[S <: Star, P <: FoggPlanet, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, P], E <: EcoCalc](profile: StarformProfile[S, C, E])
-  extends AccreteSimulation[H, P, R](profile) {
-
-  protected var star: S = _
+abstract class StarformSimulation[S <: Star, P <: FoggPlanet, C <: StarConstants, H <: SimulationStats[H], R <: AbstractStarSystem[S, H, P], E <: EcoCalc]
+(profile: StarformProfile[S, C, E]) extends AccreteSimulation[S,H, P, R](profile) {
 
   protected val sConst: C = profile.starConstants
 
@@ -36,12 +32,12 @@ abstract class StarformSimulation
   /**
     * calculations innately tied to the protoplanets
     */
-  protected override lazy val pCalc: StarformPlanCalc = profile.buildPlanCalc(this)
+  protected override lazy val pCalc: PlanetesimalCalc = profile.buildPlanCalc(this)
 
   /**
     * the accretion code to use when hoovering up dust.
     */
-  protected override lazy val accCalc: StarformAccrCalc = profile.buildAccCalc(pCalc, this)
+  protected override lazy val accCalc: AccreteCalc = profile.buildAccCalc(pCalc, this)
 
 
   /**
@@ -51,8 +47,6 @@ abstract class StarformSimulation
     */
   final protected def generatePlanets(): List[P] = {
     star = sCalc.initStar(rand)
-    pCalc.setStar(star)
-    accCalc.setStar(star)
     accrete()
     planetismals.map(proto => buildEcosphere(proto))
   }

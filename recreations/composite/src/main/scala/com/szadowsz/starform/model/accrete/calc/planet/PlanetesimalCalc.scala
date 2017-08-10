@@ -7,9 +7,7 @@ import com.szadowsz.starform.model.accrete.constants.AccreteConstants
   *
   * @author Zakski : 21/07/2015.
   */
-trait PlanetesimalCalc {
-
-  val aConst : AccreteConstants
+case class PlanetesimalCalc(aConst : AccreteConstants){
 
   /**
     * Method to get the Perihelion distance between an orbiting planetary body and its star. The Perihelion distance is the closest that the planetary body will
@@ -56,14 +54,13 @@ trait PlanetesimalCalc {
 
   /**
     * Method to calculate whether a planetesimal has gained enough mass to accrete gas as well as dust, see "III. Experimental Simulation, section c)
-    * Aggregation" in "Formation of Planetary Systems by Aggregation: A Computer Simulation".
+    * Aggregation" in "Formation of Planetary Systems by Aggregation: A Computer Simulation". Modified by Fogg in his eq. 7 to take solar luminosity into
+    * account. In Dole's Simulation we assume the luminosity to be 1.0.
     *
-    * @note formula is updated for Starform in [[StarformPlanCalc]]
+    * @note original formula is located in [[PlanetesimalCalc]]
     * @note unit of return value is solar mass.
     *
-    * @see bottom of p. 21, Formation of Planetary Systems by Aggregation: A Computer Simulation - Stephen H. Dole
-    * @see figure (7), p. 503, Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
-    * @see method CriticalMass, line 29 in DoleParams.java - Ian Burrell (accrete)
+    * @see eq (7), p. 503, Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
     * @see method critical_limit, line 257 in accrete.c - Mat Burdick (accrete)
     * @see method EvolvePlanet, line 359 in Dole.c - Andrew Folkins (accretion)
     * @see method EvolvePlanet, line 435 in dole.c - Keris (accretion v1)
@@ -72,10 +69,10 @@ trait PlanetesimalCalc {
     * @see method critical_limit, line 256 in accrete.c - Mat Burdick (starform)
     * @see method critical_limit, line 243 in  Star.java - Carl Burke (starform)
     *
-    * @param perihelion closest the planetesimal gets to the sun in AU.
+    * @param perihelion closest protoplanet gets to the sun.
     * @return critical mass in solar mass.
     */
-  def criticalMass(perihelion: Double): Double = aConst.B * Math.pow(perihelion, -0.75)
+   def criticalMass(starLum : Double, perihelion: Double): Double = aConst.B * Math.pow(perihelion * Math.sqrt(starLum), -0.75)
 
   /**
     * Method is function of mass used in calculation to get the distance at which the protoplanet nuclei will attract particles by gravitation attraction. Used

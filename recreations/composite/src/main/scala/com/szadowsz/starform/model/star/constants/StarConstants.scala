@@ -1,7 +1,6 @@
 // scalastyle:off method.name
 package com.szadowsz.starform.model.star.constants
 
-import com.szadowsz.starform.system.bodies.star.Star
 
 /**
   * Star Generation Constants Specific to Martyn J. Fogg's adaptation of Dole's paper.

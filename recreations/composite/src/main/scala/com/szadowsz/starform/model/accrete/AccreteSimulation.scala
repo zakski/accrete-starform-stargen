@@ -7,8 +7,8 @@ import com.szadowsz.starform.model.accrete.calc.insert.AccreteInsertStrat
 import com.szadowsz.starform.model.accrete.calc.planet.PlanetesimalCalc
 import com.szadowsz.starform.model.accrete.constants.AccreteConstants
 import com.szadowsz.starform.rand.RandGenTrait
-import com.szadowsz.starform.system.AbstractSystem
-import com.szadowsz.starform.system.bodies.base.{DustBand, Planetismal, ProtoPlanet}
+import com.szadowsz.starform.system.AbstractStarSystem
+import com.szadowsz.starform.system.bodies.base.{DustBand, Planetismal, ProtoPlanet, Star}
 import org.slf4j.{Logger, LoggerFactory}
 
 /**
@@ -18,7 +18,9 @@ import org.slf4j.{Logger, LoggerFactory}
   * @tparam S type of class to record the statistics of each system's generation.
   * @tparam P type of protoplanet class to be used as output by the simulation.
   */
-abstract class AccreteSimulation[S <: SimulationStats[S], P <: Planetismal, R <: AbstractSystem[S,P]](profile : AccreteProfile) extends AccreteSimConstants {
+abstract class AccreteSimulation[S <: Star,R <: SimulationStats[R], P <: Planetismal, X <: AbstractStarSystem[S,R,P]](
+                                                                                                                       profile : AccreteProfile
+                                                                                                                     ) extends AccreteSimConstants {
 
   /**
     * SLF4J built logger to document the goings on during the generation.
@@ -52,12 +54,16 @@ abstract class AccreteSimulation[S <: SimulationStats[S], P <: Planetismal, R <:
     */
   protected lazy val accCalc: AccreteCalc = profile.buildAccCalc(pCalc,this)
 
+  /**
+    * The central star of the system.
+    */
+  protected var star: S = _
 
 
-   /**
+  /**
     * The statistics recorder for the accretion process.
     */
-  protected var stats: S = _
+  protected var stats: R = _
 
   /**
     * Representation of the dust cloud that the planetismals form from.
@@ -74,7 +80,7 @@ abstract class AccreteSimulation[S <: SimulationStats[S], P <: Planetismal, R <:
     *
     * @return a new [[SimulationStats]] instance.
     */
-  protected def initStats(): S
+  protected def initStats(): R
 
 
   /**
@@ -87,9 +93,9 @@ abstract class AccreteSimulation[S <: SimulationStats[S], P <: Planetismal, R <:
   /**
     * Function to initialise a new solar system instance at the end of each run.
     *
-    * @return a new [[AbstractSystem]] instance.
+    * @return a new [[AbstractStarSystem]] instance.
     */
-  protected def createSystem(seed: Long, stats: S, planets: List[P]): R
+  protected def createSystem(seed: Long, stats: R, planets: List[P]): X
 
   /**
     * Method to generate a new [[ProtoPlanet]]. Varies from implementation to implementation.
@@ -99,7 +105,7 @@ abstract class AccreteSimulation[S <: SimulationStats[S], P <: Planetismal, R <:
     * @param ecc  eccentrisity on a scale of 0 to 1
     * @return a freshly made proto-planet.
     */
-  final protected  def createProtoplanet(mass: Double, axis: Double, ecc: Double): ProtoPlanet = new ProtoPlanet(pCalc, mass, axis, ecc)
+  final protected  def createProtoplanet(mass: Double, axis: Double, ecc: Double): ProtoPlanet = new ProtoPlanet(star,pCalc, mass, axis, ecc)
 
   /**
     * Steps through list of dust bands checking to see if any of those that bands that overlap the given range have dust present.
@@ -146,7 +152,7 @@ abstract class AccreteSimulation[S <: SimulationStats[S], P <: Planetismal, R <:
         } else if (band.innerEdge >= outerSweep) {
           0.0
         } else {
-          var density: Double = if (band.hasDust) accCalc.dustDensity(proto.axis) else 0.0
+          var density: Double = if (band.hasDust) accCalc.dustDensity(star.mass,proto.axis) else 0.0
 
           if (band.hasGas && proto.isGasGiant) {
             density = accCalc.dustAndGasDensity(density, proto.criticalMass, proto.mass)
@@ -471,7 +477,7 @@ abstract class AccreteSimulation[S <: SimulationStats[S], P <: Planetismal, R <:
     * @param seedOpt optional seed
     * @return the generated solar system.
     */
-  final def generateSystem(seedOpt: Option[Long] = None): R = {
+  final def generateSystem(seedOpt: Option[Long] = None): X = {
     logger.debug("Initialising Statistics Recorder")
     stats = initStats()
 

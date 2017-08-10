@@ -1,7 +1,8 @@
-package com.szadowsz.starform.system.bodies.star
+package com.szadowsz.starform.system.bodies.base
 
 /**
-  * Abstract Outline Class to represent a star. Defines the basic members required for the starform simulation.
+  * Trait to represent a star. Defines the bare minimum required to plug in to the accrete side of the simulation. In the case of anything strictly involving
+  * Dole, we can assume the mass and luminosity are 1.0, the same as our own star.
   *
   * @see pp. 502-503, 3. Characteristics Of The Primary Star, Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
   * @see struct Star, line 21 in system.h - Andrew Folkins (accretion)
@@ -10,9 +11,9 @@ package com.szadowsz.starform.system.bodies.star
   * @see struct StellarTypeS, in steltype.h - Keris (starform)
   * @see Star.java - Carl Burke (starform)
   *
-  * @author Zakski : 06/07/2015.
+  * @author Zakski : 09/08/2017.
   */
-abstract class Star {
+trait Star {
 
   /**
     * The mass of the Star. Naturally the unit of the member is Solar Mass. Most iterations expect a pseudo-random value between 0.6 and 1.3 M☉. This is due to
@@ -30,33 +31,4 @@ abstract class Star {
     * @note unit of value is Solar Luminosity.
     */
   val luminosity: Double
-
-  /**
-    * An Estimation of the Star's Lifespan on the main sequence.
-    *
-    * @note unit of value is Byr (billion years).
-    */
-  val lifespan: Double
-
-  /**
-    * A member to record the Star's current age.
-    *
-    * @note unit of value is Byr (billion years).
-    */
-  val age: Double
-
-  /**
-    * The mean orbital radius at which we may expect a planetary body to have a habitable ecosphere.
-    *
-    * @note unit of value is AU.
-    */
-  val meanHabitableRadius: Double
-
-  /**
-    * The minimum orbital radius at which we may expect a planetary body to have a habitable ecosphere.
-    *
-    * @note the outer limit is dependent on the planet and determined individually for each in this simulation.
-    * @note unit of value is AU.
-    */
-  val innerHabitableRadius: Double
 }
