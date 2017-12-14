@@ -412,40 +412,6 @@ trait EcoCalc extends UnitConstants {
     vGas * gees / Math.pow(equatorialRadius, 2)
   }
 
-
-  def atmosphere(zone: Int, surfacePressure: Double, suffersGE: Boolean, isGiant: Boolean): Atmosphere = {
-    // IF It is a Gas Giant
-    if (isGiant) {
-      Atmosphere.GAS_GIANT // RETURN Gas Giant Atmosphere
-      // ELSE
-    } else {
-      // IF Does Not Retains Atmosphere
-      if (surfacePressure < 1.0) {
-        if (zone == 3) Atmosphere.AIRLESS_ICE else Atmosphere.AIRLESS_ROCK // IF Zone 3, RETURN Icy Airless Atmosphere ELSE RETURN Rocky Airless Atmosphere
-        // ELSE
-      } else {
-        zone match {
-          case 3 => Atmosphere.ATMOS_VII // IF Zone 3, RETURN Icy Atmosphere VII
-          case 2 => Atmosphere.ATMOS_III // IF Zone 2, RETURN Atmosphere III
-          case 1 if suffersGE => Atmosphere.ATMOS_II_VENUS // IF Zone 1 AND Suffering Runaway Greenhouse effect, RETURN Venus Atmosphere II
-          case _ => Atmosphere.FEEDBACK_MODEL // ELSE RETURN Atmosphere I,II or V
-        }
-      }
-    }
-  }
-
-  def getInitialAlbedo(a: Atmosphere): Double = {
-    a match {
-      case Atmosphere.GAS_GIANT => GAS_GIANT_ALBEDO
-      case Atmosphere.AIRLESS_ROCK => AIRLESS_ROCKY_ALBEDO
-      case Atmosphere.AIRLESS_ICE => AIRLESS_ICE_ALBEDO
-      case Atmosphere.FEEDBACK_MODEL => EARTH_ALBEDO
-      case Atmosphere.ATMOS_II_VENUS => ATMOSPHERE_II_V_ALBEDO
-      case Atmosphere.ATMOS_III => ATMOSPHERE_III_ALBEDO
-      case Atmosphere.ATMOS_VII => ATMOSPHERE_VII_ALBEDO
-    }
-  }
-
   /** This is Fogg's eq.19, intended to calculate the effective surface temperature in kelvin.
     *
     * @note The effective surface temperature is returned in units of kelvin.

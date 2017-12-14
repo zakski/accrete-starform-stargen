@@ -5,10 +5,16 @@
 - Fill out assumptions made by Dole's Paper.
 - Finish all the Model descriptions
 - Add by creation year ordering list
+- Sort out TODO list
 
 ## Composite
 
 - Remove Dole specific branching and replace with Fogg's code using the values of our star and no eco model.
+
+## General Recreation
+
+- Ensure the usage of a system portable math library, e.g. strictfp
+- Sort out Psuedorandom number generation mess
 
 ## Branches
 - ~~add burdick accrete branch~~

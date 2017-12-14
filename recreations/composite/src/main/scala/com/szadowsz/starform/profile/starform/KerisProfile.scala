@@ -1,6 +1,5 @@
 package com.szadowsz.starform.profile.starform
 
-import com.szadowsz.starform.model.StarformProfile
 import com.szadowsz.starform.model.accrete.calc.collision.{CollisionCalc, DoleCollCalc}
 import com.szadowsz.starform.model.accrete.calc.insert.{AccreteInsertStrat, FolkinsInsertStrat}
 import com.szadowsz.starform.model.accrete.calc.planet.PlanetesimalCalc
@@ -8,6 +7,7 @@ import com.szadowsz.starform.model.accrete.constants.{AccreteConstants, DoleCons
 import com.szadowsz.starform.model.eco.calc.{EcoCalc, FoggEcoCalc, KerisEcoCalc}
 import com.szadowsz.starform.model.star.calc.{FolkinsStarCalc, StarCalc}
 import com.szadowsz.starform.model.star.constants.FolkinsStarConstants
+import com.szadowsz.starform.profile.StarformProfile
 import com.szadowsz.starform.rand.{JDKRandGen, RandGenTrait}
 import com.szadowsz.starform.system.bodies.star.FolkinsStar
 

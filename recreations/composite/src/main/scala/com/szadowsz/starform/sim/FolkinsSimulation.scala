@@ -3,7 +3,8 @@ package com.szadowsz.starform.sim
 import com.szadowsz.starform.model.accrete.AccreteStats
 import com.szadowsz.starform.model.eco.calc.FoggEcoCalc
 import com.szadowsz.starform.model.star.constants.FolkinsBaseStarConst
-import com.szadowsz.starform.model.{StarformProfile, StarformSimulation}
+import com.szadowsz.starform.model.StarformSimulation
+import com.szadowsz.starform.profile.StarformProfile
 import com.szadowsz.starform.system.StarformSystem
 import com.szadowsz.starform.system.bodies.base.Planetismal
 import com.szadowsz.starform.system.bodies.planetoid.FoggPlanet

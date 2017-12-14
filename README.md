@@ -46,6 +46,7 @@ This section contains a brief list of the current codelines in progess of or com
 4. [Burrell](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/burrell.md)
 5. [Burrows](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/burrows.md)
 6. [Folkins](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/folkins.md)
+    - the latest commits to this branch incorporate changes made to it by Keris.
 7. [Gihlam](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/gilham.md)
 8. [Keris](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/keris.md)
 9. [Webb](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/webb.md)
@@ -67,7 +68,7 @@ options.
 
 ## Acknowledgements
 
-This project would not be possible without the hardwork of the these people:
+This project would not be possible without the hard work of the these people:
 
 - Andrew Folkins
 - Carl Burke
