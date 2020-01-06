@@ -1,5 +1,12 @@
 # Steve Gilham Branch
 
+## Up-to-Date Compile/Run Status
+
+- Module: Yes, gilham
+- Latest Version: Gilham.1995
+- Compiles: Yes, With Changes (Uses pre-Iso C++ maim method)
+- Runs: Yes
+
 ####[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
 - Resource Name: 1984 - Steve Gilham - Acrete 
@@ -50,3 +57,4 @@ Gilham re-wrote his variant in psuedocode in response to a request on usenet in 
 Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code that has not evolved along the burdick
 branch.
 
+This is pre-ISO C++, so cannot be compiled by gcc as is.
