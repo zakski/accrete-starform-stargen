@@ -1,3 +1,6 @@
+#ifndef STRUCTS
+#define	STRUCTS
+
 typedef struct planets_record  *planet_pointer;
 
 typedef struct planets_record {
@@ -29,3 +32,11 @@ typedef struct planets_record {
     planet_pointer first_moon;
     planet_pointer next_planet;
 } planets;
+
+extern float anum;
+extern planet_pointer planet_head;
+extern double stellar_mass_ratio, stellar_luminosity_ratio, main_seq_life;
+extern double age, r_ecosphere, r_greenhouse, radians_per_rotation;
+extern int spin_resonance;
+
+#endif

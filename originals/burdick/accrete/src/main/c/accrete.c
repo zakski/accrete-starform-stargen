@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <math.h>
+#include "structs.h"
+#include "const.h"
 
 /*----------------------------------------------------------------------*/
 /*                           BIBLIOGRAPHY                               */

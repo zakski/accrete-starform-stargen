@@ -1,3 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include "const.h"
+#include "structs.h"
+
+/*  These are all of the global variables used during accretion declared in main.c  */
+extern float anum;
+extern planet_pointer planet_head;
+extern double stellar_mass_ratio, stellar_luminosity_ratio, main_seq_life;
+extern double age, r_ecosphere, r_greenhouse, radians_per_rotation;
+extern int spin_resonance;
+
 void display_system()
 {
      planet_pointer node1;

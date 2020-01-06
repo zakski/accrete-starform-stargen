@@ -13,7 +13,7 @@
   #define VERBOSE
 */
 
-/*  These are all of the global variables used during accretion:  */
+// /*  These are all of the global variables used during accretion:  */
 float anum;
 planet_pointer planet_head;
 double stellar_mass_ratio, stellar_luminosity_ratio, main_seq_life;
@@ -31,19 +31,16 @@ srand (trec.tm_sec);
 }
 
 
-
-#include "utils.c"
-#include "accrete.c"
-#include "display.c"
-#include "enviro.c"
-
 void generate_stellar_system()
 {
+     fprintf(stderr,"DEBUG-10\n");
      planet_pointer planet;
      radians_per_rotation = 2.0 * PI;
      stellar_mass_ratio = random_number(0.6,1.3);
      stellar_luminosity_ratio = luminosity(stellar_mass_ratio);
+	 fprintf(stderr,"DEBUG-11\n");
      planet = distribute_planetary_masses(stellar_mass_ratio,stellar_luminosity_ratio,0.0,stellar_dust_limit(stellar_mass_ratio));
+ 	 fprintf(stderr,"DEBUG-12\n");
      main_seq_life = 1.0E10 * (stellar_mass_ratio / stellar_luminosity_ratio);
      if ((main_seq_life >= 6.0E9))
 	  age = random_number(1.0E9,6.0E9);
@@ -97,12 +94,15 @@ void generate_stellar_system()
 	  }
 	  planet = planet->next_planet;
      }
+     printf("DEBUG-2");
      display_system( );
 }
 
 
 int main () {
+     fprintf(stderr,"DEBUG-00\n");
      init();
+     fprintf(stderr,"DEBUG-01\n");
      generate_stellar_system();
      return 0;
 }

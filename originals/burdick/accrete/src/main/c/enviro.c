@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include "const.h"
+#include "structs.h"
+
 double luminosity(mass_ratio)
 double mass_ratio;
 {

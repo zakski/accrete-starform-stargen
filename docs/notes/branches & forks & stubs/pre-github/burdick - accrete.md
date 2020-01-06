@@ -1,5 +1,14 @@
 # Matt Burdick Accrete Branch
 
+## Up-to-Date Compile/Run Status
+
+- Module: Yes, burdick-accrete
+- Module Version: Keel.1999.A
+- Compiles: Yes, With Import Changes
+- Runs: No, Hangs
+
+## Versions
+
 ###[ACCRETION](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Accretion
