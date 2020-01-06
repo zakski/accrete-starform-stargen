@@ -1,5 +1,12 @@
 # Matt Burdick Accrete2/Starform Branch
 
+## Up-to-Date Compile/Run Status
+
+- Module: Yes, burdick-starform
+- Latest Version: Malloy.1993
+- Compiles: Yes
+- Runs: Yes
+
 ###[Starform](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Starform
