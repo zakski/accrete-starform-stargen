@@ -25,7 +25,7 @@ This project is split into three sections:
 
 ## Requirements
 
-- Gradle 3.4.x+
+- Gradle 7.+
 - Visual Studio 2015 (any edition)
 - IntelliJ IDEA
 
