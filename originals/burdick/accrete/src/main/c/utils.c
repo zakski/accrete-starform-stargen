@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <math.h>
+#include "const.h"
+
 /*----------------------------------------------------------------------*/
 /*  This function returns a random real number between the specified    */
 /* inner and outer bounds.                                              */
