@@ -15,7 +15,7 @@ application {
         if (toolChain instanceof VisualCpp) {
             compileTask.compilerArgs = ["/TC"]
         } else if (toolChain instanceof GccCompatibleToolChain) {
-            compileTask.compilerArgs = ["-x", "c", "-std=c11"]
+            compileTask.compilerArgs = ["-x", "c", "-std=c90"]
         }
 
         def linkTask = linkTask.get()
