@@ -4,7 +4,7 @@ rootProject.name = 'accrete'
 include "gilham","folkins","burrell","burke","burdick-accrete","burdick-starform","webb","keris"
 
 // few different styles of recreation
-include "composite","streamline"
+include "recreation","composite","streamline"
 
 project(":gilham").projectDir = file("originals/gilham")
 project(":folkins").projectDir = file("originals/folkins")

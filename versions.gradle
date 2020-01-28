@@ -1,0 +1,11 @@
+//========================================================
+// Specify version numbers used by a number of libraries
+//========================================================
+
+ext.versions = [:]
+
+//==== Scala version
+versions.scala = '2.13'
+versions.scala_full = versions.scala +'.1'
+versions.scalaTest = '3.1.0'
+versions.slf4j = '1.7.30'

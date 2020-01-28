@@ -1,0 +1,35 @@
+
+plugins {
+    id 'java'
+    id 'scala'
+    id 'idea'
+}
+
+apply from: '../versions.gradle'
+
+idea {
+
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+/* The Repositories to pull the dependencies from. Can include local jars. */
+repositories {
+    mavenCentral()
+}
+
+/*
+ * Dependencies of the current system. Important dependencies for interops between scala and java are: scala compiler,
+ * slf4j logger, scalatest and junit.
+ */
+dependencies {
+    implementation group: 'org.scala-lang', name: 'scala-compiler', version: versions.scala_full
+
+    testImplementation group: 'org.scalatest', name: "scalatest_${versions.scala}", version: versions.scalaTest
+
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: versions.slf4j
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: versions.slf4j
+
+}

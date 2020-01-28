@@ -23,9 +23,12 @@ This project is split into three sections:
  3. the 3rd and final section is a recreation of all the little variations into one program that can be used to play around with all the authors' variations 
  and eventually streamlined into something a lot less clunky than it is currently.
 
+## C/C++ standards
+[GCC Compiler flags for the various dialects of iso c/c++ used](https://gcc.gnu.org/onlinedocs/gcc/Standards.html)
+
 ## Requirements
 
-- Gradle 5.2.x+
+- Gradle 6.0.x+
 - Visual Studio 2015 (any edition)
 - IntelliJ IDEA
 
