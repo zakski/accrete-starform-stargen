@@ -3,7 +3,7 @@ package com.szadowsz.starform.planets
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should.Matchers
 
-class UWPFunSpec extends AnyFunSpec with Matchers {
+class UWPFunSpec extends StarformFunSpec {
   
   describe("A Universal World Profile") {
     

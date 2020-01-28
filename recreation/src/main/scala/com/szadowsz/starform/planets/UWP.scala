@@ -1,5 +1,8 @@
 package com.szadowsz.starform.planets
 
+/**
+ * Companion Object, Contains methods to calculate individual parts of the UWP
+ */
 object UWP {
   
   /**
@@ -94,8 +97,14 @@ object UWP {
  * As in A678945-9 or A-867974-8
  *
  * See Traveller SRD doc for more details and licence.
+ * 
+ * Added originally by Andrew Webb, though his calculations did not conform exactly to the Traveller SRD as mine do.
  *
  * Created on 16/04/2017.
+ * 
+ * @param s the UWP world size character
+ * @param a the UWP atmosphere character
+ * @param h the UWP hydrosphere character
  */
 class UWP private(s : Char, a : Char, h : Char) {
   
@@ -109,10 +118,21 @@ class UWP private(s : Char, a : Char, h : Char) {
   private var law : Char = 'X'
   private var tech : Char = 'X'
   
+  /**
+   * Constructor for profile calculation using environment variables
+   * 
+   * @param equatorialRadius the equatorial radius in km
+   * @param surfacePressure the surface pressure in millibars
+   * @param hydrosphere the percentage covered by water
+   * @param iceCover the percentage covered by ice
+   */
   def this(equatorialRadius : Double, surfacePressure: Double, hydrosphere : Double, iceCover : Double){
     this(UWP.calcUWPSize(equatorialRadius),UWP.calcUWPAtmos(surfacePressure),UWP.calcUWPHydrographics(hydrosphere,iceCover))
   }
   
+  /**
+   * Constructor for unknown profile
+   */
   def this(){
     this('X','X','X')
   }
