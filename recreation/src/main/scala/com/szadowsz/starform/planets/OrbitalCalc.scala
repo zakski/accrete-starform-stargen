@@ -1,6 +1,9 @@
 package com.szadowsz.starform.planets
 
+import com.szadowsz.starform.unit.UnitConstants
+
 trait OrbitalCalc {
+  this : UnitConstants =>
   
   /**
    * Method to get the Perihelion distance between an orbiting planetary body and its star. The Perihelion distance is
@@ -46,5 +49,26 @@ trait OrbitalCalc {
    */
   def aphelionDistance(axis: Double, ecc: Double): Double = axis * (1.0 + ecc)
   
-  
+  /**
+   * Function to determine the length of the orbit of a small body around a large body sun in hours. Though orbit length
+   * in days is reported by Fogg he doesn't explicitly mention its calculation, so we take a leaf out of Mat Burdick's
+   * code and use a derivation of Newton's version of Kepler's 3rd law, for when the orbiting body has a non-negligible
+   * mass.
+   *
+   * @note the unit is earth days.
+   *
+   * @see method period, line 168 in enviro.c - Mat Burdick (accrete)
+   * @see method period, line 167 in enviro.c - Keris (starform)
+   * @see method period, line 168 in enviro.c - Mat Burdick (starform)
+   * @see method period, line 486 in Planet.java - Carl Burke (starform)
+   *
+   * @param smallMass small body mass in Solar Mass. Typically the Planet.
+   * @param largeMass larger body mass in Solar Mass. Typically the Sun.
+   * @param axis      Semi-major axis of orbit in AU.
+   * @return Orbit length in Earth Days.
+   */
+  def orbitLength(axis: Double, smallMass: Double, largeMass: Double): Double = {
+    // TODO consider optimisation by removing smallMass as the mass of the planet in solar mass should actually be negligible
+    Math.sqrt(Math.pow(axis, 3) / (smallMass + largeMass)) * DAYS_IN_EARTH_YEAR
+  }
 }

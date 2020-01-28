@@ -1,5 +1,6 @@
 package com.szadowsz.starform.planets
 
+import com.szadowsz.starform.StarformFunSpec
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should.Matchers
 
