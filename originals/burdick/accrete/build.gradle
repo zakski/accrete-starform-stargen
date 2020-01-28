@@ -1,33 +1,26 @@
-// IntelliJ is the primary development medium, so it makes sense to add explicit support for it in gradle
-apply plugin: 'visual-studio'
+plugins {
+    // add c language support
+    id 'cpp-application'
 
-// Add necessary language support
-apply plugin: "c"
+    // Add os specific ide support
+    id 'xcode'
+    id 'visual-studio'
+}
 
-model {
-    toolChains {
-        visualCpp(VisualCpp) {
-            // Specify the installDir if Visual Studio cannot be located
-            // installDir "C:/Apps/Microsoft Visual Studio 10.0"
+application {
+    binaries.configureEach {
+        def compileTask = compileTask.get()
+        compileTask.source.from fileTree(dir: "src/main/c", include: "**/*.c")
+        compileTask.includes.from fileTree(dir: "src/main/headers", include: "**/*.h")
+        if (toolChain instanceof VisualCpp) {
+            compileTask.compilerArgs = ["/TC"]
+        } else if (toolChain instanceof GccCompatibleToolChain) {
+            compileTask.compilerArgs = ["-x", "c", "-std=c90"]
         }
-        gcc(Gcc) {
-            // Uncomment to use a GCC install that is not in the PATH
-            // path "/usr/bin/gcc"
-        }
-    }
-    components {
-        accrete(NativeExecutableSpec) {
-            sources {
-                c {
-                    source {
-                        srcDir "src/main/c"
-                        include "**/*.c"
-                    }
-                    exportedHeaders {
-                        srcDir "src/main/headers"
-                    }
-                }
-            }
+
+        def linkTask = linkTask.get()
+        if (toolChain instanceof GccCompatibleToolChain) {
+            linkTask.linkerArgs = ["-nodefaultlibs", "-lc"]
         }
     }
 }

@@ -15,7 +15,7 @@
 .gradle/
 
 # Do not add user-specific Gradle Wrapper information
-gradle/
+gradle/**/*.jar
 gradlew
 gradlew.bat
 

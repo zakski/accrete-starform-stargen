@@ -589,7 +589,7 @@ ap)
     if(next) next->collide(s,r,as,ap); // and continue
 }
 
-void main ()
+int main ()
 {                    
     Random r;
     char name[120];
@@ -632,5 +632,6 @@ void main ()
 //    cout << d.mass() + list->rock() << " after all dust gone\n";;
 //    cout << list->gas()/list->rock() << " = gas to rock ratio\n";
     list->print(s, 1, &r);                                // output
+    return 0;
 }
 
