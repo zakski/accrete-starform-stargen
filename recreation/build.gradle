@@ -26,6 +26,8 @@ repositories {
  */
 dependencies {
     implementation group: 'org.scala-lang', name: 'scala-compiler', version: versions.scala_full
+    
+    implementation group: 'org.apache.commons', name: 'commons-math3', version: versions.apache_commons_math3
 
     testImplementation group: 'org.scalatest', name: "scalatest_${versions.scala}", version: versions.scalaTest
 

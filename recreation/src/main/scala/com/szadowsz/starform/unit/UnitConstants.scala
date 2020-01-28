@@ -19,7 +19,7 @@ package com.szadowsz.starform.unit
   *
   *  @author Zakski : 31/05/2015.
   */
-trait UnitConstants {
+trait UnitConstants extends MassConstants {
 
   /**
     * Earth Density in g/cm3. The average density of the earth. Original value used by Carl, Ian and Mat is 5.52. A more up-to-date  and (hopefully) accurate

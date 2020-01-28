@@ -1,8 +1,8 @@
-package com.szadowsz.starform.planets
+package com.szadowsz.starform.system.planets
 
 import com.szadowsz.starform.unit.UnitConstants
 
-trait OrbitalCalc {
+protected[starform] trait OrbitalCalc {
   this : UnitConstants =>
   
   /**

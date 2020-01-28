@@ -1,4 +1,4 @@
-package com.szadowsz.starform.planets
+package com.szadowsz.starform.system.planets
 
 /**
  * Companion Object, Contains methods to calculate individual parts of the UWP
