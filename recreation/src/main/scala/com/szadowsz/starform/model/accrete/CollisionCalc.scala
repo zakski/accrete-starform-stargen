@@ -42,7 +42,7 @@ case class CollisionCalc(pCalc: GravityCalc){
     val outer = pCalc.outerGravLimit(axis1, ecc1, mass1) - axis1
     val inner = axis2 - pCalc.innerGravLimit(axis2, ecc2, mass2)
 
-    (Math.abs(dist) <= outer) || (Math.abs(dist) <= inner)
+    (dist <= outer) || (dist <= inner)
   }
 
   /**

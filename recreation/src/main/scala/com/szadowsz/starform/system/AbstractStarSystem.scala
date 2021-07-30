@@ -1,6 +1,6 @@
 package com.szadowsz.starform.system
 
-import com.szadowsz.starform.AccreteStats
+import com.szadowsz.starform.model.accrete.AccreteStats
 import com.szadowsz.starform.system.planets.Planetismal
 import com.szadowsz.starform.system.star.Star
 

@@ -1,6 +1,5 @@
-package com.szadowsz.starform
+package com.szadowsz.starform.model.accrete
 
-import com.szadowsz.starform.model.accrete.{AccreteCalc, AccreteConstants, CollisionCalc, GravityCalc}
 import com.szadowsz.starform.model.accrete.body.{DustBand, ProtoPlanet}
 import com.szadowsz.starform.model.accrete.insert.AccreteInsertStrat
 import com.szadowsz.starform.rand.gen.RandGenTrait
@@ -111,13 +110,15 @@ abstract class AccreteSimulation[S <: Star, P <: Planetismal, R <: AccreteStats,
   final protected def createProtoplanet(mass: Double, axis: Double, ecc: Double): ProtoPlanet = new ProtoPlanet(star, pCalc, mass, axis, ecc)
   
   /**
-   * Steps through list of dust bands checking to see if any of those that bands that overlap the given range have dust present.
+   * Steps through list of dust bands checking to see if any of those that bands that overlap the given range have dust
+   * present.
    *
    * This is used in two situations:
    *
-   * 1: Checking the end conditions of the experiment, that all dust between two arbitrary radii is swept away. This is taken from "III. Experimental
-   * Simulation" in "Formation of Planetary Systems by Aggregation: A Computer Simulation"; The inner and outer bounds of where a planet can spawn are
-   * used by Dole as these radii, which has been adopted by several subsequent implementations.
+   * 1: Checking the end conditions of the experiment, that all dust between two arbitrary radii is swept away. This is
+   * taken from "III. Experimental Simulation" in "Formation of Planetary Systems by Aggregation: A Computer
+   * Simulation"; The inner and outer bounds of where a planet can spawn are used by Dole as these radii, which has been
+   * adopted by several subsequent implementations.
    *
    * 2: To check whether an injection at a given AU is possible, based on the curretn dust banding situation.
    *
@@ -125,7 +126,9 @@ abstract class AccreteSimulation[S <: Star, P <: Planetismal, R <: AccreteStats,
    * @param outer the outer limit of the range in AU.
    * @return whether or not there is still dust between inner and outer limits in this current accretion process.
    */
-  final protected def isDustAvailable(inner: Double, outer: Double): Boolean = dust.exists(d => d.hasDust && d.outerEdge > inner && d.innerEdge < outer)
+  final protected[starform] def isDustAvailable(inner: Double, outer: Double): Boolean = {
+    dust.exists(d => d.hasDust && d.outerEdge > inner && d.innerEdge < outer)
+  }
   
   
   /**
@@ -443,30 +446,39 @@ abstract class AccreteSimulation[S <: Star, P <: Planetismal, R <: AccreteStats,
     val outer = aConsts.OUTERMOST_PLANET * planetLimitMod
     
     while (isDustAvailable(inner, outer)) {
-      val axis = iStrat.semiMajorAxis(rand, stats.injectedNuclei, inner, outer, dust)
-      val ecc = iStrat.eccentricity(rand)
-      val proto: ProtoPlanet = createProtoplanet(aConsts.PROTOPLANET_MASS, axis, ecc)
-      stats = stats.injectNuclei()
-      logger.debug("Checking {} AU for suitability.", proto.axis)
+      accretePlanet(inner, outer)
+    }
+  }
+  
+  final protected[starform] def accretePlanet(inner: Double, outer: Double): Unit = {
+    val proto: ProtoPlanet = createNuclei(inner, outer)
+  
+    if (isDustAvailable(proto.innerBandLimit, proto.outerBandLimit)) {
+      logger.info("Injecting protoplanet at {} AU.", proto.axis)
       
-      if (isDustAvailable(proto.innerBandLimit, proto.outerBandLimit)) {
-        logger.info("Injecting protoplanet at {} AU.", proto.axis)
-        
-        accreteDust(proto)
-        updateDustLanes(proto)
-        
-        if (proto.mass > aConsts.PROTOPLANET_MASS) {
-          if (!coalescePlanetesimals(proto)) {
-            insertPlanet(proto)
-          }
-        } else {
-          // TODO check if this if/else is needed
-          logger.debug("Injection of protoplanet at {} AU failed due to large neighbor.", proto.axis)
+      accreteDust(proto)
+      updateDustLanes(proto)
+      
+      if (proto.mass > aConsts.PROTOPLANET_MASS) {
+        if (!coalescePlanetesimals(proto)) {
+          insertPlanet(proto)
         }
       } else {
-        logger.debug("Injection of protoplanet at {} AU failed due to no available dust.", proto.axis)
+        // TODO check if this if/else is needed
+        logger.debug("Injection of protoplanet at {} AU failed due to large neighbor.", proto.axis)
       }
+    } else {
+      logger.debug("Injection of protoplanet at {} AU failed due to no available dust.", proto.axis)
     }
+  }
+  
+  protected def createNuclei(inner: Double, outer: Double): ProtoPlanet = {
+    val axis = iStrat.semiMajorAxis(rand, stats.injectedNuclei, inner, outer, dust)
+    val ecc = iStrat.eccentricity(rand, stats.injectedNuclei)
+    val proto: ProtoPlanet = createProtoplanet(aConsts.PROTOPLANET_MASS, axis, ecc)
+    stats = stats.injectNuclei()
+    logger.debug("Checking {} AU for suitability.", proto.axis)
+    proto
   }
   
   /**
@@ -480,7 +492,6 @@ abstract class AccreteSimulation[S <: Star, P <: Planetismal, R <: AccreteStats,
    * @see method generate_stellar_system, line 47 in gensys.c - Keris (starform)
    * @see method generate_stellar_system, line 76 in starform.c - Mat Burdick (starform)
    * @see method Initialize, line 57 in  StarSystem.java - Carl Burke (starform)
-   *
    * @param seedOpt optional seed
    * @return the generated solar system.
    */

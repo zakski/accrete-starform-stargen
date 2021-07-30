@@ -1,7 +1,4 @@
-// scalastyle:off method.name
-package com.szadowsz.starform
-
-import com.szadowsz.starform.model.accrete.AccreteConstants
+package com.szadowsz.starform.model.accrete
 
 /**
   * Created on 13/04/2017.

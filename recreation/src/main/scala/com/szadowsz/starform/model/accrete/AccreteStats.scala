@@ -1,4 +1,4 @@
-package com.szadowsz.starform
+package com.szadowsz.starform.model.accrete
 
 import com.szadowsz.starform.system.planets.Planetismal
 

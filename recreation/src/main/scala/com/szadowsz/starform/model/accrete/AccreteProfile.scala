@@ -1,7 +1,6 @@
 // scalastyle:off method.name
-package com.szadowsz.starform
+package com.szadowsz.starform.model.accrete
 
-import com.szadowsz.starform.model.accrete.AccreteConstants
 import com.szadowsz.starform.model.accrete.insert.AccreteInsertStrat
 import com.szadowsz.starform.rand.gen.RandGenTrait
 
@@ -12,6 +11,10 @@ import com.szadowsz.starform.rand.gen.RandGenTrait
 abstract class AccreteProfile(a: Option[Double] = None, k: Option[Double] = None, w: Option[Double] = None) {
 
 
+  def this(a: Double, k: Double, w: Double){
+    this(Option(a),Option(k),Option(w))
+  }
+  
   protected val DUST_DENSITY_COEFF: Option[Double] = a.map(v => Math.min(3.0E-3, Math.max(v, 0.5E-3)))
 
   protected val K: Option[Double] = k.map(v => Math.min(100.0, Math.max(v, 10.0)))

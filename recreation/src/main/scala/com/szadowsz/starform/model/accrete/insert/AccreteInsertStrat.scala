@@ -35,9 +35,10 @@ trait AccreteInsertStrat {
     * @see constructor Protoplanet, line 151 in  Protoplanet.java - Carl Burke (starform)
     *
     * @param rand - a random number generator to supply a value between 0.0 and 1.0
+   * @param nucleiCount the number of already injected nuclei
     * @return eccentricity between 0.0 and 1.0, essential for a planetesimal to stay in the system.
     */
-  def eccentricity(rand: RandGenTrait): Double = 1.0 - Math.pow(rand.nextDouble(), aConst.ECCENTRICITY_COEFF)
+  def eccentricity(rand: RandGenTrait, nucleiCount: Int): Double = 1.0 - Math.pow(rand.nextDouble(), aConst.ECCENTRICITY_COEFF)
 
   /**
     * Function to produce the semi major axis of a planetesimal. Formula taken from "Formation of Planetary Systems by Aggregation: A Computer Simulation" in
@@ -57,7 +58,8 @@ trait AccreteInsertStrat {
     * @see method dist_planetary_masses, line 403 in accrete.c - Mat Burdick (starform)
     * @see constructor Protoplanet, line 150 in  Protoplanet.java - Carl Burke (starform)
     *
-    * @param rand    - a random number generator to supply a value between 0.0 and 1.0
+    * @param rand    a random number generator to supply a value between 0.0 and 1.0
+    * @param nucleiCount the number of already injected nuclei
     * @param minAxis the closest distance to the parent star that a planet can form at.
     * @param maxAxis the furthest distance from the parent star that a planet can form at.
     * @param bands   the current state of the accretion disc that the new planetismal will be inserted into.
