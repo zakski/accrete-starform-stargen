@@ -1,0 +1,11 @@
+ext.versions = [:]
+
+// Language Libraries
+versions.scala_major = '3'
+versions.scala = '3.2.2'
+
+// Third-Party Libraries
+
+// Test Libraries
+versions.junit4 = '4.11'
+versions.junit5 = '5.9.1'

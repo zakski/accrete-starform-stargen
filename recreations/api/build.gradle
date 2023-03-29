@@ -1,0 +1,12 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+plugins {
+    id 'accrete.common-conventions'
+    id "scala"
+}

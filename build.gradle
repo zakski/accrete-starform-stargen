@@ -15,11 +15,12 @@ apply plugin: 'c'
 model {
     toolChains {
         visualCpp(VisualCpp) {
-            // Specify the installDir if Visual Studio cannot be located
+            // Specify the installDir if Visual Studio cannot be located, e.g.
             // installDir "C:/Apps/Microsoft Visual Studio 10.0"
         }
+        clang(Clang)
         gcc(Gcc) {
-            // Uncomment to use a GCC install that is not in the PATH
+            // Uncomment to use a GCC install that is not in the PATH, e.g.
             // path "/usr/bin/gcc"
         }
     }
