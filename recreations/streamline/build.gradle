@@ -31,13 +31,13 @@ repositories {
  * slf4j logger, scalatest and junit.
  */
 dependencies {
-    compile group: 'org.scala-lang', name: 'scala-compiler', version: scalaVersion
+    implementation group: 'org.scala-lang', name: 'scala-compiler', version: scalaVersion
 
-    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+    implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
 
-    compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
-    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: slf4jVersion
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: slf4jVersion
 
-    testCompile group: 'org.scalatest', name: 'scalatest_2.11', version: scalaTestVersion
-    testCompile group: 'junit', name: 'junit', version: junitVersion
+    testImplementation group: 'org.scalatest', name: 'scalatest_2.11', version: scalaTestVersion
+    testImplementation group: 'junit', name: 'junit', version: junitVersion
 }
