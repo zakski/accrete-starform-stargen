@@ -2,8 +2,9 @@
 
 ## Intro
 
-This file contains a brief description of each examined implementations. Research papers, source code and/or more detailed readmes, if they exist, will be 
-deposited into the models folder, whilst descriptions of their operation and reproducability will be placed in notes under build descriptions.
+This file contains a brief description of each examined implementations. Research papers, source code and/or more 
+detailed readmes, if they exist, will be deposited into the models folder, whilst descriptions of their operation and 
+reproducability will be placed in notes under build descriptions.
  
 Additionally in the notes folder, I will place my proposed arrangement of the various branches and forks. 
 
@@ -25,9 +26,10 @@ Initial model order will be according to the resource name.
 - Burdick Version: n/a
 - Key: Dole.1969
 
-Stephen H. Dole wrote the original program and research paper that detailed the solar system formation simulation code. He was a prolific astronomy 
-researcher and whilst I have not recovered his original source code; I have a reliable recreations of his original engine based on his papers that exist 
-online, with the exception of the random number generator that he used as that would be machine dependent.
+Stephen H. Dole wrote the original program and research paper that detailed the solar system formation simulation 
+code. He was a prolific astronomy researcher and whilst I have not recovered his original source code; I have a reliable 
+recreations of his original engine based on his papers that exist online, with the exception of the random number 
+generator that he used as that would be machine dependent.
 
 References are stored in accrete.bib.
 
@@ -45,8 +47,8 @@ References are stored in accrete.bib.
 - Burdick Version: n/a
 - Key: Dole.1970
 
-Stephen H. Dole presented the original research paper findings in Icarus in 1970. The program that used is basically identical to the one written for the 
-Rand Corporation.
+Stephen H. Dole presented the original research paper findings in Icarus in 1970. The program that used is basically 
+identical to the one written for the Rand Corporation.
 
 References are stored in 1.5 accrete.bib.
 
@@ -64,9 +66,10 @@ References are stored in 1.5 accrete.bib.
 - Burdick Version: n/a
 - Key: Sagan.1977
 
-Programmed by J.Rice and provided to Sagan by Stephen H. Dole. Isaacman and Sagan modified the original to scrutinise the sensitivity of the starting 
-conditions. They come to the conclusion that Acrete is either missing some essential physics of solar system cosmogony or that planetary systems similar to 
-our own are only one variety out of many different possible planetary systems.
+Programmed by J.Rice and provided to Sagan by Stephen H. Dole. Isaacman and Sagan modified the original to scrutinise 
+the sensitivity of the starting conditions. They come to the conclusion that Acrete is either missing some essential 
+physics of solar system cosmogony or that planetary systems similar to our own are only one variety out of many 
+different possible planetary systems.
 
 Most recreations of Accrete do not directly use this paper as their inspiration.
 
@@ -86,8 +89,9 @@ References are stored in 1.7 accrete.bib.
 - Burdick Version: n/a
 - Key: Gilham.1984
 
-Gilham wrote a variant based on Dole's original paper in Icarus in the late '60s. It appeared in the gaming magazine White Dwarf issue 58/57 (UK/US) which was 
-published in October 1984. He may have also released it on usenet, but such a post is missing from google groups.
+Gilham wrote a variant based on Dole's original paper in Icarus in the late '60s. It appeared in the gaming magazine 
+White Dwarf issue 58/57 (UK/US) which was published in October 1984. He may have also released it on usenet, but such a 
+post is missing from google groups.
 
 
 ### [Silicon Creation](http://www.academia.edu/download/31676329/fogg1985.pdf)
@@ -104,12 +108,12 @@ published in October 1984. He may have also released it on usenet, but such a po
 - Burdick Version: n/a
 - Key: Fogg.1985
 
-Martyn J. Fogg wrote a subsequent research paper that attempted to vary the mass of the star and build up information about the potential atmosphere of each 
-planet in the generated system. 
+Martyn J. Fogg wrote a subsequent research paper that attempted to vary the mass of the star and build up information 
+about the potential atmosphere of each planet in the generated system. 
 
 Brian Davis reports that he wrote Fogg to request the source, and he replied that is was on a discarded machine in his 
-garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up. Thus far no one seems to of replicated his planetary 
-classification system.
+garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up. Thus far no one 
+seems to of replicated his planetary classification system.
 
 References are stored in 2.0 accrete.bib.
 
@@ -123,12 +127,13 @@ References are stored in 2.0 accrete.bib.
 - Source Year: 1993
 - Parent: Burdick.1988
 - Original Source: Incomplete.
-- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Gilham1988.md)
+- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Gilham.1988.md)
 - Burdick Version: None
 - Key: Gilham.1988
 
-A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve Gilham. Whilst it does seem to date back to 1988, 
-the end of Gilham's post was cut off in the Google Group archive, so the code is incomplete.
+A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve 
+Gilham. Whilst it does seem to date back to 1988, the end of Gilham's post was cut off in the Google Group archive, so 
+the code is incomplete.
 
 ### [Starform](https://groups.google.com/forum/#!topic/rec.games.design/xp8edV1wyIE)
 
@@ -146,10 +151,11 @@ the end of Gilham's post was cut off in the Google Group archive, so the code is
 
 More up-to-date version of Matt Burdick's code, ported to C from pascal. Was given to Ian Burrell by Sean Malloy. 
 
-It has the complete source code, and seems to be a higher version than the one posted by Steve Gilham, however the name change suggests that there is at least 
-one intermediate version between the two.
+It has the complete source code, and seems to be a higher version than the one posted by Steve Gilham, however the name 
+change suggests that there is at least one intermediate version between the two.
  
-It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its precise place in the timeline.
+It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its 
+precise place in the timeline.
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
@@ -182,7 +188,8 @@ Gilham re-wrote his variant in psuedocode in response to a request on usenet in 
 
 One of Mat Burdick's C versions which is commonly distributed as accrete.
  
-This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting comparison.  
+This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting 
+comparison.  
 
 ### [ACCRETION](http://znark.com/create/accrete.html)
 
@@ -198,13 +205,16 @@ This looks like The same major version as the incomplete code gilham supplied so
 - Burdick Version: n/a
 - Key: Burdick.1988
 
-Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone seems to of worked off.
+Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone 
+seems to of worked off.
 
-This pretty close to being the original copy of Mat Burdick's first version, In that it is written in pascal which apparently is his original language and the 
-comments mention copyright 1988. However the fact that the source code was found on Ian Burrell's website and the files were last modified in 1994 count 
-against it being the very first version. Additionally the zip file was also labelled accretion, which has never been a name that Burdick has called it. 
+This pretty close to being the original copy of Mat Burdick's first version, In that it is written in pascal which 
+apparently is his original language and the comments mention copyright 1988. However the fact that the source code was 
+found on Ian Burrell's website and the files were last modified in 1994 count against it being the very first 
+version. Additionally the zip file was also labelled accretion, which has never been a name that Burdick has called it. 
 
-Burdick could only partially reproduce Fogg's work, since the way that Fogg determined the atmosphere type is not cleared marked out in his research paper.
+Burdick could only partially reproduce Fogg's work, since the way that Fogg determined the atmosphere type is not 
+cleared marked out in his research paper.
 
 Nevertheless, this codebase is the parent of the vast majority of variations that have any source code still extant. 
 
@@ -223,8 +233,9 @@ Nevertheless, this codebase is the parent of the vast majority of variations tha
 
 Mat Burdick's third iteration of his simulation reversed engineered from Dole and Fogg's papers. 
 
-Like the other iterations this seems to be the main fork of source code that everyone seems to of worked off. Unfortunately I was unable 
-to detect a site belonging to him that still hosted his source code so third party hosted copies will have to do.
+Like the other iterations this seems to be the main fork of source code that everyone seems to of worked 
+off. Unfortunately I was unable to detect a site belonging to him that still hosted his source code so third party 
+hosted copies will have to do.
 
 Accrete2 and Starform are names given to this iteration fairly interchangeably.
 
@@ -242,8 +253,9 @@ Accrete2 and Starform are names given to this iteration fairly interchangeably.
 - Burdick Version: n/a
 - Key: Folkins.1988
 
-Andrew Folkins at some point published a version of accrete for the amiga, which was then modified by keris, unfortunately it was packed up in a shar which 
-has a different last modified date than the wrapping header info, so I am uncertain about this version's exact date.
+Andrew Folkins at some point published a version of accrete for the amiga, which was then modified by keris, 
+unfortunately it was packed up in a shar which has a different last modified date than the wrapping header info, so I am 
+uncertain about this version's exact date.
 
 Like Steve Gilham, his line of code is at least initially distinct from Burdick's.
 
@@ -260,8 +272,9 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Burdick Version: V3.0
 - Key: Burdick.1995
 
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
-dated as been last modified later than Burrell's copy, so we have a potential version order between them.
+Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of 
+Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential 
+version order between them.
 
 
 ### [ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
@@ -277,8 +290,9 @@ dated as been last modified later than Burrell's copy, so we have a potential ve
 - Burdick Version: n/a
 - Key: Nyrath.1995
 
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
-dated as been last modified later than Burrell's copy, so we have a potential version order between them.
+Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of 
+Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential 
+version order between them.
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
 
@@ -294,8 +308,8 @@ dated as been last modified later than Burrell's copy, so we have a potential ve
 - Burdick Version: n/a
 - Key: Gilham.1995
 
-Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code that has not evolved along the burdick
-branch.
+Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code 
+that has not evolved along the burdick branch.
 
 ### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/MqgYTuIf13w)
 
@@ -311,8 +325,9 @@ branch.
 - Burdick Version: n/a
 - Key: Francis.1996
 
-Erik Max Francis produced a slightly modified version of Burdick's code that prints it's output slightly differently. It seems to extends from the first 
-generation code line but I am unsure as to which variant is the closest to being the actual parent.
+Erik Max Francis produced a slightly modified version of Burdick's code that prints it's output slightly differently. It 
+seems to extends from the first generation code line but I am unsure as to which variant is the closest to being the 
+actual parent.
 
 ### [ACCRETE2 mod 0](http://www.mu.org/~joe/traveller/archive/software/accrete2.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 0
@@ -327,7 +342,8 @@ generation code line but I am unsure as to which variant is the closest to being
 - Burdick Version: n/a
 - Key: Webb.1997.A
 
-Christopher E. Webb seems to of modified a version of accrete to utilise and generate some traveller rpg specific values such a UWP.
+Christopher E. Webb seems to of modified a version of accrete to utilise and generate some traveller rpg specific values 
+such a UWP.
 
 ### [ACCRETE2 mod 1](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 1
@@ -361,7 +377,8 @@ This copy was found on his website.
 
 Christopher E. Webb developed an updated version of his code that uses traveller rpg information more substantially.
 
-This copy was found on Joseph Heck's website with the label of Accrete3, but is labelled Accrete2 mod 1 in the readme just like the one on Webb's website.
+This copy was found on Joseph Heck's website with the label of Accrete3, but is labelled Accrete2 mod 1 in the readme 
+just like the one on Webb's website.
 
 ### [ACCRETE](http://znark.com/create/accrete.html)
 - Resource Name: 1997 - Ian Burrell - Accrete
@@ -376,10 +393,11 @@ This copy was found on Joseph Heck's website with the label of Accrete3, but is 
 - Burdick Version: n/a
 - Key: Burrell.1997
 
-Ian Burrell's version, which given the information I have a available, seems to ported from some code provided by Sean Malloy.
+Ian Burrell's version, which given the information I have a available, seems to ported from some code provided by Sean 
+Malloy.
 
-Only the portion of Burdick's code relating to Dole's paper seems to of been ported to Java, but it has provided me the initial understanding of how 
-accretion and Burdick's code works. 
+Only the portion of Burdick's code relating to Dole's paper seems to of been ported to Java, but it has provided me the 
+initial understanding of how accretion and Burdick's code works. 
 
 Burrell's code is loosely based on Burdick's source code, but takes a much more rigid object-oriented approach.
 
@@ -397,10 +415,11 @@ Burrell's code is loosely based on Burdick's source code, but takes a much more 
 - Burdick Version: unsure
 - Key: Burke.1998
  
- Carl Burke, like Ian Burell, wrote his own java applet version of starform/accrete. He also was aware of Ian Burell's work and wonder how much it influenced
- him.
+Carl Burke, like Ian Burell, wrote his own java applet version of starform/accrete. He also was aware of Ian Burell's 
+work and I wonder how much it influenced him.
  
- In any case, He has written several versions in Pascal, C, Modula-2, C++ as well Java, but only this java version seems to remain.
+In any case, He has written several versions in Pascal, C, Modula-2, C++ as well Java, but only this java version seems 
+to remain.
 
 ### [Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
 - Resource Name: 1998 - Mark J. Stock - Acrete2
@@ -430,8 +449,9 @@ One of Mat Burdick's versions hacked about by Mark J. Stock.
 - Burdick Version: n/a
 - Key: Keris.1999
 
-A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for normal planets to give some sort of 
-atmosphere, it seems to work reasonably. The output formats are (of course) totally different from starform. 
+A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for 
+normal planets to give some sort of atmosphere, it seems to work reasonably. The output formats are (of course) totally 
+different from starform. 
 
 ### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 - Resource Name: 1999 - Peter Keel - Accrete
@@ -508,11 +528,11 @@ This is Matt Burdick's original Starform code, hacked about by Keris with additi
 - Burdick Version: n/a
 - Key: Leech.1992
 
-Jon Leech ported code to C++ based on code written by Wales Larrison. He mentions an ftp site where his code is located, ftp.cs.unc.edu:pub/acrete.c, but it 
-is no longer stored there. 
+Jon Leech ported code to C++ based on code written by Wales Larrison. He mentions an ftp site where his code is located, 
+ftp.cs.unc.edu:pub/acrete.c, but it is no longer stored there. 
  
-I have acquired a version of it from Ian Burrell's [website](http://znark.com/create/accrete.html), though I do not know if there have been any changes in 
-the meantime.
+I have acquired a version of it from Ian Burrell's [website](http://znark.com/create/accrete.html), though I do not know 
+if there have been any changes in the meantime.
 
 ### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 
@@ -544,8 +564,8 @@ A version altered by Swiger to include psuedorandom number generation enhancemen
 - Burdick Version: n/a
 - Key: Burrows.2006
 
-A starform version altered by Burrows with bits and pieces added and modified and borrowed from Ian Burrell, C. Burke and Chris Croughton. StarGen is based 
-mostly on Burdick's, but has borrowed from the others, most notably Keris's.
+A starform version altered by Burrows with bits and pieces added and modified and borrowed from Ian Burrell, C. Burke 
+and Chris Croughton. StarGen is based mostly on Burdick's, but has borrowed from the others, most notably Keris's.
                               
 ### [Stargen](http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html)
 
@@ -914,12 +934,12 @@ A port of burrow's code.
 - Reproducibility: Unreproducible.
 - Key: Allen.????
 
-Dave Allen claims in usml to have written variations of Accrete, 1a to allow captured moons rather than coalesce straight away. The second one, 1b, an attempt
-to simulate moon systems, as well as potentially an original version. 
+Dave Allen claims in usml to have written variations of Accrete, 1a to allow captured moons rather than coalesce 
+straight away. The second one, 1b, an attempt to simulate moon systems, as well as potentially an original version. 
 
-I cannot currently find any source code of these programs online so his branches are considered to end with him and its hard to see how they fit into the big
-picture. Most likely given other variations that I do have the source code for, it either comes from a direct recreation of Dole's paper or is based of one 
-of Burdick's early recreations.
+I cannot currently find any source code of these programs online so his branches are considered to end with him and its 
+hard to see how they fit into the big picture. Most likely given other variations that I do have the source code for, it 
+either comes from a direct recreation of Dole's paper or is based of one of Burdick's early recreations.
 
 
 ### [SYSTEM 2300](https://groups.google.com/forum/#!topic/rec.games.frp/uRaCg-xv6Ac)
@@ -935,9 +955,9 @@ of Burdick's early recreations.
 - Reproducibility: Unreproducible.
 - Key: Choinski.????
 
-Choinski wrote a variation on burdick's accrete/starform program for the 2300ad RPG. It uses a combination of the World Builder's Guid, the Director's guide 
-and accrete. I cannot currently find any source code of this program online, so this branch is considered orphaned right now, since I don't know where it 
-fits into the bigger picture.
+Choinski wrote a variation on burdick's accrete/starform program for the 2300ad RPG. It uses a combination of the World 
+Builder's Guid, the Director's guide and accrete. I cannot currently find any source code of this program online, so 
+this branch is considered orphaned right now, since I don't know where it fits into the bigger picture.
 
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
@@ -953,8 +973,9 @@ fits into the bigger picture.
 - Reproducibility: Unreproducible.
 - Key: Larrison.????
 
-Jon Leech claims that Wales wrote a variation based on Dole's 1970 paper. I cannot currently find any source code of this program online, so this branch is 
-considered orphaned right now, since I don't know where it fits into the bigger picture.
+Jon Leech claims that Wales wrote a variation based on Dole's 1970 paper. I cannot currently find any source code of 
+this program online, so this branch is considered orphaned right now, since I don't know where it fits into the bigger 
+picture.
 
 ### ACRETE
 
@@ -985,7 +1006,8 @@ published to comp.sources by Joe Nowakowski but missing in the archives.
 - Burdick Version: V3.1
 - Key: Hodder.????
 
-A variant of the highest version of Burdick's code that we have source code for. Posted by Hodder, but no cached post lying around as far as I can see.
+A variant of the highest version of Burdick's code that we have source code for. Posted by Hodder, but no cached post 
+lying around as far as I can see.
 
 
 ### [Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
