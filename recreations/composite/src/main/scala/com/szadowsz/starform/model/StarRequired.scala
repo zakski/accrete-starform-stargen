@@ -1,17 +1,17 @@
-package com.szadowsz.starform.model
-
-import com.szadowsz.starform.system.bodies.base.Star
-
-/**
-  * Created on 13/04/2017.
-  */
-trait StarRequired {
-
-  protected var star : Star = _
-
-  def getStar: Star = star
-
-  def setStar(s : Star): Unit = {
-    star = s
-  }
-}
+//package com.szadowsz.starform.model
+//
+//import com.szadowsz.starform.system.bodies.Star
+//
+///**
+//  * Created on 13/04/2017.
+//  */
+//trait StarRequired {
+//
+//  protected var star : Star = _
+//
+//  def getStar: Star = star
+//
+//  def setStar(s : Star): Unit = {
+//    star = s
+//  }
+//}

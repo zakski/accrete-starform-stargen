@@ -33,7 +33,7 @@ class JDKRandGen extends JDKRandomGenerator with RandGenTrait {
 
     val multField = rClass.getDeclaredField("multiplier")
     multField.setAccessible(true)
-    val multiplier = multField.get().asInstanceOf[Long]
+    val multiplier = multField.get(this).asInstanceOf[Long]
 
     scrambledSeed ^ multiplier
   }

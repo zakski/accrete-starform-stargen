@@ -1,20 +1,20 @@
 rootProject.name = 'accrete'
 
 // last version of that branch, in the same language it was started in
-include "gilham","folkins","burrell","burke","burdick-accrete","burdick-starform","webb","keris"
+//include "gilham","folkins","burrell","burke","burdick-accrete","burdick-starform","webb","keris"
 
 // few different styles of recreation
-include "api","composite","streamline"
+include "api","composite"//, "streamline"
 
-project(":gilham").projectDir = file("originals/gilham")
-project(":folkins").projectDir = file("originals/folkins")
-project(":burrell").projectDir = file("originals/burrell")
-project(":burke").projectDir = file("originals/burke")
-project(":burdick-accrete").projectDir = file("originals/burdick/accrete")
-project(":burdick-starform").projectDir = file("originals/burdick/starform")
-project(":webb").projectDir = file("originals/webb")
-project(":keris").projectDir = file("originals/keris")
+//project(":gilham").projectDir = file("originals/gilham")
+//project(":folkins").projectDir = file("originals/folkins")
+//project(":burrell").projectDir = file("originals/burrell")
+//project(":burke").projectDir = file("originals/burke")
+//project(":burdick-accrete").projectDir = file("originals/burdick/accrete")
+//project(":burdick-starform").projectDir = file("originals/burdick/starform")
+//project(":webb").projectDir = file("originals/webb")
+//project(":keris").projectDir = file("originals/keris")
 
 project(":api").projectDir = file("recreations/api")
 project(":composite").projectDir = file("recreations/composite")
-project(":streamline").projectDir = file("recreations/streamline")
+// project(":streamline").projectDir = file("recreations/streamline")

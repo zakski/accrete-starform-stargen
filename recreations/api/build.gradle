@@ -10,3 +10,14 @@ plugins {
     id 'accrete.common-conventions'
     id "scala"
 }
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.scala-lang/scala3-library
+    implementation group: 'org.scala-lang', name: 'scala3-library_3', version: versions.scala
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+    implementation group: 'org.apache.commons', name: 'commons-math3', version: versions.commonsMath3
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: versions.slf4j
+}

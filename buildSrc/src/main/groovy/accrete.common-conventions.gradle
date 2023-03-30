@@ -5,6 +5,14 @@ plugins {
 
 }
 
+idea {
+
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
 repositories {
     mavenCentral() // Use Maven Central for resolving dependencies.
 }

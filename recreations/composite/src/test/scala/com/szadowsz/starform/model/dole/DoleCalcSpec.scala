@@ -1,11 +1,11 @@
 package com.szadowsz.starform.model.dole
 
-import com.szadowsz.starform.model.accrete.calc.AccreteCalc
-import com.szadowsz.starform.model.accrete.calc.planet.PlanetesimalCalc
-import com.szadowsz.starform.model.accrete.constants.{AccreteConstants, DoleConstants}
-import com.szadowsz.starform.profile.accrete.DoleProfile
-import com.szadowsz.starform.sim.DoleSimulation
-import org.scalatest.{FlatSpec, Matchers}
+import com.szadowsz.starform.sim.calc.accrete.AccreteCalc
+import com.szadowsz.starform.sim.calc.planetismal.PlanetismalCalc
+import com.szadowsz.starform.sim.constants.AccreteConstants
+import com.szadowsz.starform.sim.constants.dole.DoleConstants
+import org.scalatest.flatspec.*
+import org.scalatest.matchers.should.*
 
 /**
   * Tests to make sure that a (1.0,1.0) Star in Fogg's equations is functionally equivalent to Dole's equations, so that we may collapse the two variations
@@ -13,13 +13,13 @@ import org.scalatest.{FlatSpec, Matchers}
   *
   * Created on 09/08/2017.
   */
-class DoleCalcSpec extends FlatSpec with Matchers {
+class DoleCalcSpec extends AnyFlatSpec with Matchers {
 
   val aConst : AccreteConstants = new DoleConstants
 
-  val pCalc : PlanetesimalCalc = PlanetesimalCalc(aConst)
+  val pCalc : PlanetismalCalc = PlanetismalCalc(aConst)
 
-  val acrete = AccreteCalc(pCalc,aConst)
+  val acrete: AccreteCalc = AccreteCalc(pCalc,aConst)
 
 
   /**
