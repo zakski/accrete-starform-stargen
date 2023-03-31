@@ -1,4 +1,4 @@
-package com.szadowsz.starform.sim.calc.planetismal
+package com.szadowsz.starform.sim.calc.planetesimal
 
 import com.szadowsz.starform.rand.RandGenTrait
 import com.szadowsz.starform.sim.bodies.DustBand
@@ -10,7 +10,7 @@ import com.szadowsz.starform.sim.constants.AccreteConstants
   *
   * @author zakski : 30/09/2016.
   */
-trait PlanetismalInsertStrat {
+trait PlanetesimalInsertStrat {
 
   /**
     * Constants Used by the Accrete Simulation Model

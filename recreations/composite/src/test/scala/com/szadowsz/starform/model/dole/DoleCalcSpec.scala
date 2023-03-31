@@ -1,7 +1,7 @@
 package com.szadowsz.starform.model.dole
 
 import com.szadowsz.starform.sim.calc.accrete.AccreteCalc
-import com.szadowsz.starform.sim.calc.planetismal.PlanetismalCalc
+import com.szadowsz.starform.sim.calc.planetesimal.PlanetesimalCalc
 import com.szadowsz.starform.sim.constants.AccreteConstants
 import com.szadowsz.starform.sim.constants.dole.DoleConstants
 import org.scalatest.flatspec.*
@@ -17,7 +17,7 @@ class DoleCalcSpec extends AnyFlatSpec with Matchers {
 
   val aConst : AccreteConstants = new DoleConstants
 
-  val pCalc : PlanetismalCalc = PlanetismalCalc(aConst)
+  val pCalc : PlanetesimalCalc = PlanetesimalCalc(aConst)
 
   val acrete: AccreteCalc = AccreteCalc(pCalc,aConst)
 

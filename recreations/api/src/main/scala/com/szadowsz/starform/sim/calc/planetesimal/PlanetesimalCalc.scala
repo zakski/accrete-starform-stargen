@@ -1,4 +1,4 @@
-package com.szadowsz.starform.sim.calc.planetismal
+package com.szadowsz.starform.sim.calc.planetesimal
 
 import com.szadowsz.starform.sim.constants.AccreteConstants
 
@@ -8,7 +8,7 @@ import com.szadowsz.starform.sim.constants.AccreteConstants
   *
   * @author Zakski : 21/07/2015.
   */
-case class PlanetismalCalc(aConst : AccreteConstants){ // TODO Consider as Trait
+case class PlanetesimalCalc(aConst : AccreteConstants){ // TODO Consider as Trait
 
   /**
     * Method to get the Perihelion distance between an orbiting planetary body and its star. The Perihelion distance is the closest that the planetary body will
@@ -58,7 +58,7 @@ case class PlanetismalCalc(aConst : AccreteConstants){ // TODO Consider as Trait
     * Aggregation" in "Formation of Planetary Systems by Aggregation: A Computer Simulation". Modified by Fogg in his eq. 7 to take solar luminosity into
     * account. In Dole's Simulation we assume the luminosity to be 1.0.
     *
-    * @note original formula is located in [[PlanetismalCalc]]
+    * @note original formula is located in [[PlanetesimalCalc]]
     * @note unit of return value is solar mass.
     * @see eq (7), p. 503, Extra-solar Planetary Systems: A Microcomputer Simulation - Martyn J. Fogg
     * @see method critical_limit, line 257 in accrete.c - Mat Burdick (accrete)

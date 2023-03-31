@@ -5,7 +5,7 @@ import com.szadowsz.starform.rand.RandGenTrait
 import com.szadowsz.starform.sim.bodies.{DustBand, ProtoPlanet}
 import com.szadowsz.starform.sim.calc.accrete.AccreteCalc
 import com.szadowsz.starform.sim.calc.collision.CollisionCalc
-import com.szadowsz.starform.sim.calc.planetismal.{PlanetismalCalc, PlanetismalInsertStrat}
+import com.szadowsz.starform.sim.calc.planetesimal.{PlanetesimalCalc, PlanetesimalInsertStrat}
 import com.szadowsz.starform.sim.constants.AccreteConstants
 import com.szadowsz.starform.system.StarSystem
 import com.szadowsz.starform.system.bodies.{Planetismal, Star}
@@ -30,12 +30,12 @@ abstract class AccreteSimulation[S <: Star,R <: SimulationStats[R], P <: Planeti
   /**
     * the placement strategy to use when inserting new planetismals.
     */
-  protected lazy val iStrat: PlanetismalInsertStrat = profile.buildInsertStrat(this)
+  protected lazy val iStrat: PlanetesimalInsertStrat = profile.buildInsertStrat(this)
 
   /**
     * calculations innately tied to the protoplanets
     */
-  protected lazy val pCalc: PlanetismalCalc = profile.buildPlanCalc(this)
+  protected lazy val pCalc: PlanetesimalCalc = profile.buildPlanCalc(this)
 
   /**
     * calculations to work out new protoplanet info after a collision.

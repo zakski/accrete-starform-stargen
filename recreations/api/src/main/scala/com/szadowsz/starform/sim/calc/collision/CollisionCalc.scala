@@ -1,6 +1,6 @@
 package com.szadowsz.starform.sim.calc.collision
 
-import com.szadowsz.starform.sim.calc.planetismal.PlanetismalCalc
+import com.szadowsz.starform.sim.calc.planetesimal.PlanetesimalCalc
 
 
 /**
@@ -10,7 +10,7 @@ import com.szadowsz.starform.sim.calc.planetismal.PlanetismalCalc
   */
 trait CollisionCalc {
 
-  val pCalc : PlanetismalCalc
+  val pCalc : PlanetesimalCalc
 
   /**
     * Convenience Method used as part of the combined eccentricity of coalescing planetesimals calculation.

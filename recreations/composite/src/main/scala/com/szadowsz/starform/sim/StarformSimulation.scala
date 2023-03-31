@@ -3,7 +3,7 @@ package com.szadowsz.starform.sim
 import com.szadowsz.starform.config.StarformProfile
 import com.szadowsz.starform.sim.calc.accrete.AccreteCalc
 import com.szadowsz.starform.sim.calc.eco.EcoCalc
-import com.szadowsz.starform.sim.calc.planetismal.PlanetismalCalc
+import com.szadowsz.starform.sim.calc.planetesimal.PlanetesimalCalc
 import com.szadowsz.starform.sim.calc.star.StarCalc
 import com.szadowsz.starform.sim.constants.star.StarConstants
 import com.szadowsz.starform.system.StarSystem
@@ -32,7 +32,7 @@ abstract class StarformSimulation[S <: Star, P <: FoggPlanet, C <: StarConstants
   /**
     * calculations innately tied to the protoplanets
     */
-  protected override lazy val pCalc: PlanetismalCalc = profile.buildPlanCalc(this)
+  protected override lazy val pCalc: PlanetesimalCalc = profile.buildPlanCalc(this)
 
   /**
     * the accretion code to use when hoovering up dust.

@@ -1,6 +1,6 @@
 package com.szadowsz.starform.sim.bodies
 
-import com.szadowsz.starform.sim.calc.planetismal.PlanetismalCalc
+import com.szadowsz.starform.sim.calc.planetesimal.PlanetesimalCalc
 import com.szadowsz.starform.system.bodies.{Planetismal, Star}
 
 /**
@@ -21,7 +21,7 @@ import com.szadowsz.starform.system.bodies.{Planetismal, Star}
   * @param ecc The Eccentricity of the body's orbit.
   * @author Zakski : 25/06/2015.
   */
-final class ProtoPlanet(val star : Star, val calc: PlanetismalCalc, var mass: Double, var axis: Double, var ecc: Double) extends Planetismal {
+final class ProtoPlanet(val star : Star, val calc: PlanetesimalCalc, var mass: Double, var axis: Double, var ecc: Double) extends Planetismal {
 
   /**
     * The closest to the star that the planet will be during its orbit.

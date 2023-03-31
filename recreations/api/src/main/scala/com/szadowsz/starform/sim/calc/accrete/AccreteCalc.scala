@@ -1,6 +1,6 @@
 package com.szadowsz.starform.sim.calc.accrete
 
-import com.szadowsz.starform.sim.calc.planetismal.PlanetismalCalc
+import com.szadowsz.starform.sim.calc.planetesimal.PlanetesimalCalc
 import com.szadowsz.starform.sim.constants.AccreteConstants
 
 /**
@@ -10,7 +10,7 @@ import com.szadowsz.starform.sim.constants.AccreteConstants
   *       maintain parity.
   * @author Zakski : 03/06/2015.
   */
-case class AccreteCalc(pCalc: PlanetismalCalc, aConst: AccreteConstants){
+case class AccreteCalc(pCalc: PlanetesimalCalc, aConst: AccreteConstants){
 
   /**
     * Method to calculate outer dust band edge. The Formula that this comes from is unknown, it seems to be introduced in one of the early accrete versions, but

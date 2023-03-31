@@ -2,7 +2,7 @@ package com.szadowsz.starform.sim.calc.dole.planetismal
 
 import com.szadowsz.starform.rand.RandGenTrait
 import com.szadowsz.starform.sim.bodies.DustBand
-import com.szadowsz.starform.sim.calc.planetismal.PlanetismalInsertStrat
+import com.szadowsz.starform.sim.calc.planetesimal.PlanetesimalInsertStrat
 import com.szadowsz.starform.sim.constants.AccreteConstants
 
 import scala.util.Random
@@ -12,7 +12,7 @@ import scala.util.Random
   *
   * @author zakski : 30/09/2016.
   */
-class RandInsertStrat(protected override val aConst : AccreteConstants) extends PlanetismalInsertStrat {
+class RandInsertStrat(protected override val aConst : AccreteConstants) extends PlanetesimalInsertStrat {
 
   /**
     * Function to produce the semi major axis of a planetesimal. Formula taken from "Formation of Planetary Systems by Aggregation: A Computer Simulation" in
