@@ -15,7 +15,7 @@ object DoleApp {
 
   def main(args: Array[String]): Unit = {
     val acrete = DoleSimulation(new DoleProfile)
-    val system = acrete.generateSystem(Option(1L))
+    val system = acrete.generateSystem()
     system.planets.zipWithIndex.foreach{case (pl,i) => logger.info("Planet {}: {}", i, pl)}
   }
 }

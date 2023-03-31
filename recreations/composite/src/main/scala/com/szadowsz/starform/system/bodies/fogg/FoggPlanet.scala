@@ -3,7 +3,7 @@ package com.szadowsz.starform.system.bodies.fogg
 import com.szadowsz.starform.system.bodies.Planetismal
 
 /**
-  * Class to represent TODO.
+  * Class to represent Planet built with a Fogg-like Ecosystem simulation.
   *
   * @param proto the basic characteristics of the accreted planetary body.
   *

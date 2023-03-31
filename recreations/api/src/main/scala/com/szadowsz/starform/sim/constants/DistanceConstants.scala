@@ -1,4 +1,4 @@
-package com.szadowsz.starform.unit
+package com.szadowsz.starform.sim.constants
 
 /**
   * Separation of Distance Unit Constants from General Program Constants.

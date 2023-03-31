@@ -1,6 +1,7 @@
-package com.szadowsz.starform.system
+package com.szadowsz.starform.system.fogg
 
 import com.szadowsz.starform.sim.dole.AccreteStats
+import com.szadowsz.starform.system.StarSystem
 import com.szadowsz.starform.system.bodies.fogg.{FoggPlanet, FoggStar}
 
 /**

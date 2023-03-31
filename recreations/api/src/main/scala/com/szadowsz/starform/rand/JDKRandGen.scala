@@ -1,14 +1,16 @@
 package com.szadowsz.starform.rand
 
+import org.apache.commons.math3.random.JDKRandomGenerator
+
 import java.util.Random
 import java.util.concurrent.atomic.AtomicLong
-
-import org.apache.commons.math3.random.JDKRandomGenerator
 
 /**
   * Created on 11/04/2017.
   */
-class JDKRandGen extends JDKRandomGenerator with RandGenTrait {
+class JDKRandGen extends JDKRandomGenerator with RandGenTrait with Serializable {
+
+  private val multiplier = 0x5DEECE66DL
 
   def this(seed : Long) ={
     this()
@@ -30,10 +32,6 @@ class JDKRandGen extends JDKRandomGenerator with RandGenTrait {
     val seedField = rClass.getDeclaredField("seed")
     seedField.setAccessible(true)
     val scrambledSeed = seedField.get(this).asInstanceOf[AtomicLong].get()
-
-    val multField = rClass.getDeclaredField("multiplier")
-    multField.setAccessible(true)
-    val multiplier = multField.get(this).asInstanceOf[Long]
 
     scrambledSeed ^ multiplier
   }
