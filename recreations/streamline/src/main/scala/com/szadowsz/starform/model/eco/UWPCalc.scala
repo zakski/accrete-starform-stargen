@@ -87,6 +87,6 @@ trait UWPCalc {
     */
   protected def calcUWPHydrographics(hydrosphere: Double, iceCover: Double): Char = {
     val lvl = ((hydrosphere + iceCover) * 10.0).floor.toInt
-    size.find(lvl <= _).map(bin => hydrographics.indexOf(bin).toString.head).getOrElse('A')
+    hydrographics.find(lvl <= _).map(bin => hydrographics.indexOf(bin).toString.head).getOrElse('A')
   }
 }

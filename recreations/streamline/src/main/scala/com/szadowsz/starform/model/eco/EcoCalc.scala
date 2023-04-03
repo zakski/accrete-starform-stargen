@@ -569,7 +569,7 @@ class EcoCalc extends EcoConstants with UnitConstants {
     if (atmosphere == Atmosphere.FEEDBACK_MODEL) {
       var previous = Double.NaN
       val boilPoint = boilingPoint(surfPressure)
-      do {
+      while {
         previous = surfTemperature
         clouds = cloudFraction(surfTemperature)
         water = hydrosphereFraction(volatileGasInventory, eqRadius)
@@ -584,7 +584,8 @@ class EcoCalc extends EcoConstants with UnitConstants {
         val effectiveTemp = effectiveTemperature(ecoRadius, axis, albedo)
         val greenhouseDelta = greenhouseEffectDelta(optical_depth, effectiveTemp, surfPressure)
         surfTemperature = effectiveTemp + greenhouseDelta
-      } while (Math.abs(surfTemperature - previous) > 1.0)
+        Math.abs(surfTemperature - previous) > 1.0
+      } do ()
     }
     (water, clouds, ice, albedo, surfTemperature)
   }

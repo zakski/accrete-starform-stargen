@@ -1,6 +1,15 @@
-/* Language plugins to aid in compilation of target languages, probably best to be explicit here.*/
-apply plugin: 'java'
-apply plugin: 'scala'
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+plugins {
+    id 'accrete.common-conventions'
+    id "scala"
+}
 
 /*
  * Specifying the versions as extra variables here so that they can be reused across multiple dependencies. Note you
@@ -31,13 +40,19 @@ repositories {
  * slf4j logger, scalatest and junit.
  */
 dependencies {
-    implementation group: 'org.scala-lang', name: 'scala-compiler', version: scalaVersion
+    // https://mvnrepository.com/artifact/org.scala-lang/scala3-library
+    implementation group: 'org.scala-lang', name: 'scala3-library_3', version: versions.scala
 
-    implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+    implementation group: 'org.apache.commons', name: 'commons-math3', version: versions.commonsMath3
 
-    implementation group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
-    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: slf4jVersion
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: versions.slf4j
 
-    testImplementation group: 'org.scalatest', name: 'scalatest_2.11', version: scalaTestVersion
-    testImplementation group: 'junit', name: 'junit', version: junitVersion
+    // https://mvnrepository.com/artifact/org.scalatest/scalatest
+    testImplementation group: 'org.scalatest', name: 'scalatest_3', version: versions.scalatest
+
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: versions.log4j2
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: versions.log4j2
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j2-impl', version: versions.log4j2
 }
