@@ -1,0 +1,183 @@
+
+                        STAR    v1.3
+                        ************
+
+
+Introduction:
+
+   Star is a system generator for SF GMs.It's like Accrete,a little
+less science oriented (no exact formulas but datas still are
+realistics).It's based on Accrete (a cool program) and RPG planet
+generators (principally 2300AD,Space Opera,Legion of Super Heroes
+vol II,World Builder's Handbook).I think Star is more complete than
+other identic stuffs (like Accrete for example) cause it includes
+things like binary sytems,asteroids,atmospheric compostion,
+unusual planet characteristics (rings,native life,high tides...),
+day and night temperatures or quantity of mineral ressources.
+It's not the final version and with time new features will be added.
+When generating systems Star creates a text file with all the 
+information: star.log (or star.??? if you used the command option
+/x???).
+ 
+History:
+  v1.0 :the original release
+  v1.1 :added three new unusual characteristics (unstable planets,high
+        humidity,low humidity),fixed two bugs (effective luminosity of
+        two stars and the width of asteroid belt) and changed the
+        determination of unusual characteristics.
+  v1.2 :added gaia parameter and alien generator.    
+  v1.21:fixed a bug in luminosity calcul.
+  v1.3 :added new descriptions for moons,filename extension for the log
+        file,alien descriptions are now in the same file as the system
+        log file,mineral resources are divided in 5 different categories,
+        four new alien government types.
+  v1.4 :used objects programming (mainly for future addons),fixed a bug       
+        on star creation (stars with no spectral class).
+
+Some precisions:
+
+a) World types:
+
+  -Rock:a plain rock ball with no appreciable atmosphere.
+  -Ice Ball:a plain ball of frozen gases.
+  -Gas Giant:a massive planet with an atmosphere of hydrogen and helium.
+  -Hot House:a planet with a large greenhouse-effect atmosphere.
+  -Glacier:a planet with a heavy overburden of ice.
+  -Desert:a planet with an atmosphere but without liquid water.(Example:Mars)
+  -Failed Core:a planet which accumulated an atmosphere but which never 
+   accumulated enough mass to become a gas giant.(Example:Triton)
+  -Terran:a world with a hospitable environment and an oxygen atmosphere.
+   (Example:Earth)
+  -Arid:a world with a hospitable environment but with less than 20% of 
+   liquid water.(Example:Dune)
+  -Jungle:a world with a hospitable environment entierly covered by jungles 
+   and swamps.
+  -Ocean:a world with a hospitable environment with more than 90 % of liquid 
+   water.
+  -Steppe:a world with a hospitable environment and between 30 and 50 % of 
+   liquid water.
+  -Chunk:a small airless world less than 1000 km in diameter.
+
+b) Unusual Characteristics
+
+  -Extreme Vulcanism:the planetary crust is unstable either because the
+   planet is still young or due to a gravitational factor like an oversize
+   moon.
+  -Atmospheric Contaminants:the atmosphere is polluted with various gases
+   or dust.
+  -Meteors Storms:the planet suffers frequent meteor storms, often including
+   large asteroid or comet impacts, making the planet's surface a dangerous
+   place.
+  -High Radiation Level:this world has a radiation level much higher than
+   Earth-normal.This could be due to several factors:a thin atmosphere,
+   radioactive minerals or a nuclear war.
+  -Violent Storms:this could be dust or sand storms on arid or desert planets,
+   a frontal activity between well defined climate belts ...
+  -Microbes:unusual micro-organisms are present in the atmosphere.This could
+   cause several different results,the most common is the presence of
+   diseases.
+  -Orbital Conjunction:a body in the system passes close enough to the world
+   to cause any one of a number of effects (extreme vulcanism,tidal waves ...)
+   Such a conjunction would happen rarely,occuring only once in a matter or
+   decades or even centuries.
+  -Rugged Terrain:the planet's land surface is almost entirely covered with
+   mountains and rough, rocky terrain, with practically no flat plains or
+   rounded hills.
+  -Retrograde Rotation:like Venus the rotation  is in a retrograde movement.
+  -Unstable Climate:the climate undergoes severe and unpredictable changes
+   from year to year.
+  -Orbital Eccentricity:the planet has an erratic orbit,such a world would
+   combine the result of extreme axial tilt and extreme vulcanism with extreme
+   variation in temperature.
+  -Strong Magnetic Field:this world has a strong magnetic field,an effect
+   that can have consequences in the biological makeup of the natives.
+  -Cloud Cover:the planet has a permanent cloud cover over its entire surface;
+   it probably rains most of the time.
+  -No Axial Tilt:the world's axis is perpendicular to the plane of ecliptic.
+   Therefore,there are no seasonal weather changes.
+  -High Tides:a large, close moon or sun produces extremely high tides.
+  -Tidal Lock:the world's period of revolution about its primary coincides
+   exactly with its period of rotation on its axis;that is,its year is the
+   same length as the day.The consequence is that one side of the world will
+   always be turned toward the sun.
+  -Extreme Axial Tilt:the planet's axis is tilted closer to the plane of the
+   ecliptic than Earth's.There will be extreme variation in seasons,with
+   bitter cold temperatures in winter and searing heat in summer.
+  -Native Intelligent Lifeforms:the planet has a native sentient life form,
+   which may or may not have advanced technology.
+  -Native Semi-Intelligent Lifeforms:the planet has a native life form which
+   is not fully sentient yet, but comes close, and may develop further.
+  -Unstable Planet:the planet is fatally unstable and it might be in danger
+   of blowing up in the forseable future.
+  -High Humidity:(only for worlds with water)high humidity at high 
+   temperatures can prove to be uncomfortable and sometimes dangerous,it's 
+   like living in a steam bath.
+  -Low Humidity:(only for world with water) at high temperatures will cause
+   rapid drying of mucus membranes,dehydration and eventually delirium.
+
+
+c) Stars & systems:
+  I only included six spectral types:A,F,G,K,M and white dwarfs because type
+  O and B stars are extremely rare.Like in 2300AD I assumed that A stars and
+  white dwarfs didn't have allowed orbits.
+
+d) Mineral ressources:planet's mineral resources are measured on an
+  arbitrary scale, running from 1 (very rare) to 100 (huge quantities).
+  For comparison, Earth values are:
+      Metal ore      : 50
+      Radioactive ore: 20
+      Precious metal : 5
+      Raw crystals   : 15
+      Precious gems  : 5
+
+      
+
+e) Temperature:
+     -Effects of eccentricity:the eccentricity of the orbit will cause higher
+      temperatures at closest approach and lower temperatures at the farthest
+      separation from the star.
+     -Maximum increase:the maximum increase in temperature during the summer.
+     -Maximum decrease:the maximum decrease in temperature during the winter.
+     -Maximum day increase:the average temperature increase during the day.
+     -Maximum day decrease:the average temperature decrease during the night.
+
+f) Satellites:
+     The orbit is the orbit radius of the satellite in thousand of kilometres,
+     mine is the quantity of mineral ressources.
+
+g) Gaia parameter
+     A user of Star send me a request on how to have more often Terran worlds.
+     So I decided to include a Gaia parameter who increase the chance of 
+     having Terran planets.Normally there are between 5 and 10 % of chance
+     to have habitable worlds,when you use the gaia parameter you increase
+     the chance to between 40 and 50 %.
+     For using gaia parameter type :
+       star /g
+
+h) Alien generator
+     The alien generator program (alien.exe) can be used separetly of star
+     generator.
+
+i) Future addons :
+  There are projects of addons in the near future:
+   -more unusual characteristics
+   -more spectral types (type O,B ,Size I and IV,brown dwarfs ...)
+   -corrosive and insidious atmospheres
+   -trinary systems
+   -a better documentation
+
+  If you have any comments or find any bugs please mail me.
+
+                        Aina Rasolomalala
+                        aina@geocities.com
+
+
+
+
+
+
+
+
+
+
+

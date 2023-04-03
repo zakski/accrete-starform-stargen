@@ -1,0 +1,37 @@
+plugins {
+    id 'idea' // intellij ide support
+    id 'java'
+    id 'accrete.versions'
+
+}
+
+idea {
+
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+repositories {
+    mavenCentral() // Use Maven Central for resolving dependencies.
+}
+
+dependencies {
+    // Use JUnit Jupiter for testing - https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+    testImplementation(platform("org.junit:junit-bom:${versions.junit5}"))
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter'
+    testImplementation group: 'org.junit.jupiter', name:'junit-jupiter-params'
+
+    // Junit 5 support for legacy Junit Tests
+    testImplementation group: 'junit', name: 'junit', version: versions.junit4
+    testImplementation group: 'org.junit.vintage', name: 'junit-vintage-engine'
+
+    // allow tests to run from IDEs that bundle older version of launcher'
+    testRuntimeOnly group: 'org.junit.platform', name: 'junit-platform-launcher'
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}

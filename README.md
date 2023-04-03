@@ -3,29 +3,35 @@ Accrete/Starform/Stargen
 
 ## Intro
 
-Accrete's origin dates back to the late 60's when Stephen H. Dole published "Formation of Planetary Systems by Aggregation: A Computer Simulation". 
+Accrete's origin dates back to the late 60's when Stephen H. Dole published "Formation of Planetary Systems by 
+Aggregation: A Computer Simulation". 
 
-It grew to prominence in the 80's/90's after a recreated version of the source code based on a subsequent paper by Martyn J. Fogg was released into the fertile 
-ground that was the now defunct USML mailing list.
+It grew to prominence in the 80's/90's after a recreated version of the source code based on a subsequent paper by 
+Martyn J. Fogg was released into the fertile ground that was the now defunct USML mailing list.
 
-Since then there have been numerous versions, and the work on this module is primarily focused on preserving the timeline of events that I have pieced together.
+Since then there have been numerous versions, and the work on this module is primarily focused on preserving the 
+timeline of events that I have pieced together.
 
 This project is split into three sections:
  
- 1. the 1st is research into who was interested in the algorithm on Usenet, on Mailing Lists, on Github, etc and then the subsequent retrieval of any 
- distinct old copies of the code, particularly in the pre-github days where these represent snapshots of development done by various authors. I will compile 
- my research and analysis of the data into the docs folder.
+ 1. the 1st is research into who was interested in the algorithm on Usenet, on Mailing Lists, on Github, etc and then 
+    the subsequent retrieval of any distinct old copies of the code, particularly in the pre-github days where these 
+    represent snapshots of development done by various authors. I have placed my research and analysis of the data into
+    the docs folder.
  
- 2. the 2nd is making an attempt to compile and run these programs on windows where possible. Several of this were written pre-windows, in an era prior to 
- microsoft's dominance of the pc market, so they are mostly designed for now obsolete compilers and need little tweaks to get to run. these will primarily 
- represented in their own branches or releases, while the master branch will be concerned primarily with the 3rd section.
+ 2. the 2nd is making an attempt to compile and run these programs on windows where possible. Several of this were
+    written pre-windows, in an era prior to microsoft's dominance of the pc market, so they are mostly designed for now 
+    obsolete compilers and need little tweaks to get to run. these will primarily be represented in their own branches
+    or modules.
   
- 3. the 3rd and final section is a recreation of all the little variations into one program that can be used to play around with all the authors' variations 
- and eventually streamlined into something a lot less clunky than it is currently.
+ 3. the 3rd and final section is a recreation of all the little variations into one program that can be used to play 
+    around with all the authors' variations and eventually streamlined into something a lot less clunky than it is 
+    currently.
 
 ## Requirements
 
-- Gradle 3.4.x+
+- JDK 11
+- Gradle 7.+
 - Visual Studio 2015 (any edition)
 - IntelliJ IDEA
 
@@ -53,10 +59,11 @@ This section contains a brief list of the current codelines in progess of or com
 
 ## Papers
 
-The Research Papers that inspired all the extant accrete code. Contains most of the mathematics necessary to construct the basic models on a home computer.
+The Research Papers that inspired all the extant accrete code. Contains most of the mathematics necessary to construct 
+the basic models on a home computer.
 
-At some point I hope to go back through these and find improvements / enhancements suggested by papers that cite these and add them to my recreation as 
-options. 
+At some point I hope to go back through these and find improvements / enhancements suggested by papers that cite these 
+and add them to my recreation as options. 
 
 ***
 - [Formation of Planetary Systems by Aggregation: A Computer Simulation](/docs/notes/build%20descriptions/Formation%20of%20Planetary%20Systems%20by%20Aggregation.md)
@@ -64,6 +71,9 @@ options.
 - [Computer Simulations of Planetary Accretion Dynamics: Sensitivity to Initial Conditions](docs/notes/build%20descriptions/Computer%20Simulations%20of%20Planetary%20Accretion%20Dynamics.md)
 - [Extra-Solar Planetary Systems: A Microcomputer Simulation](docs/notes/build%20descriptions/Extra-Solar%20Planetary%20Systems.md)
 ***
+
+## TODO
+[see here](/TODO.md)
 
 ## Acknowledgements
 

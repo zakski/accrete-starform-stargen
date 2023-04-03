@@ -1,4 +1,4 @@
-// IntelliJ is the primary development medium, so it makes sense to add explicit support for it in gradle
+// Add visual studio support for compiling with c++
 apply plugin: 'visual-studio'
 
 // Add necessary language support

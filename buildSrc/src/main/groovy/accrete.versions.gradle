@@ -1,0 +1,15 @@
+ext.versions = [:]
+
+// Language Libraries
+versions.scala_major = '3'
+versions.scala = '3.2.2'
+
+// Third-Party Libraries
+versions.commonsMath3 = '3.6.1'
+versions.slf4j = '2.0.7'
+versions.log4j2 = '2.20.0'
+
+// Test Libraries
+versions.scalatest = '3.2.15'
+versions.junit4 = '4.11'
+versions.junit5 = '5.9.1'

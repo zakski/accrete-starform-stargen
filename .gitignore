@@ -16,8 +16,6 @@
 
 # Do not add user-specific Gradle Wrapper information
 gradle/**/*.jar
-gradlew
-gradlew.bat
 
 # Do not add local builds to git
 build/

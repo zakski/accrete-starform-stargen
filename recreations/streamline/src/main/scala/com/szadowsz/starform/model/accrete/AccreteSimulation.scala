@@ -41,7 +41,7 @@ abstract class AccreteSimulation(protected val aConsts: AccreteConstants) {
   /**
     * the accretion code to use when hoovering up dust.
     */
-  protected val accCalc: AccreteCalc
+  protected lazy val accCalc: AccreteCalc
 
 
   /**
@@ -166,11 +166,12 @@ abstract class AccreteSimulation(protected val aConsts: AccreteConstants) {
     */
   final protected def accreteDust(proto: ProtoPlanet): Unit = {
     var lastMass: Double = 0.0
-    do {
+    while {
       lastMass = proto.mass
       val currMass = accreteDust(proto, dust)
       proto.mass = if (currMass > lastMass) currMass else lastMass
-    } while (accCalc.shouldAccreteContinue(lastMass, proto.mass))
+      accCalc.shouldAccreteContinue(lastMass, proto.mass)
+    } do ()
   }
 
   /**

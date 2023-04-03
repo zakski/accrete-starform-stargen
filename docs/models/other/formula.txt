@@ -1,0 +1,763 @@
+			Star Generator Formulas v1.6a
+			*****************************
+
+
+This is the first draft of a doc file that list all the formulas I used
+in Star Generator v1.6a. I hope that it's better understandable than my 
+chaotic code. I didn't include the Alien Generator Formulas, perhaps in
+the future...
+
+These formulas were based mainly on 2300 AD and MegaTraveller rules, and
+on the Accrete program. With time they will change and will become more
+accurate, but for now they contain some randomness.
+
+
+If these formulas look like chinese to you (even it's sometimes a little 
+nebulous for me...), you could always e-mail me at
+aina@geocities.com (or aina@usa.net). Be patient for the answer, I could only
+check my mails once per week.
+
+
+		     *********************************************
+
+
+I NOTES:
+--------
+
+
+* Dices:
+
+     dX means rolling a dice with X sides, so 3d6 means rolling 3 six-sided
+     dices.
+
+
+* World types:
+
+    1 Ice Ball     
+    2 Rock         
+    3 Gas Giant    
+    4 Hot House    
+    5 Failed Core  
+    6 Asteroid Belt
+    7 Chunk        
+    8 Arid         
+    9 Steppe       
+   10 Terran       
+   11 Jungle       
+   12 Ocean        
+   13 Desert       
+   14 Glacier      
+   15 Nickel-Iron  
+   16 Stony        
+   17 Carbonaceous 
+   18 Icy          
+   19 Ring         
+   20 Brown Dwarf  
+   21 Post Garden  
+   22 Pre Garden   
+   23 Tundra       
+
+* Unusual planet characteristics
+
+    1 Extreme Vulcanism
+    2 Atmos. Contaminants
+    3 Meteors Storms
+    4 High Radiation Level
+    5 Violent Storms
+    6 Microbes
+    7 Orbital Conjunction
+    8 Rugged Terrain
+    9 Retrograde Rotation
+   10 Unstable Climate
+   11 Orbital Eccentricity
+   12 Unstable World
+   13 Strong Magnetic Field
+   14 Cloud Cover
+   15 No Axial Tilt
+   16 High Tides
+   17 Tidal Lock
+   18 Extreme Axial Tilt
+   19 Int. Lifeforms
+   20 Semi-Int. Lifeforms
+   21 High Humidity
+   22 Low Humidity
+   23 Corrosive Atmosphere
+   24 Insidious Atmosphere
+   25 Twin World
+   26 Roche World
+   27 Climatic Vortex
+   28 Alien artifacts
+   29 Recent city ruins
+   30 Remains of dead civ.
+   31 Space cemetery
+   32 Wonder of the galaxy
+   33 Holy site
+   34 Proto-organisms
+   35 Primitive Lifeforms
+   36 High population
+   37 Terraformed
+   38 u38
+   39 u39
+   40 u40
+
+* Star types:
+
+    1 A II
+    2 M III
+    3 F IV
+    4 F V
+    5 G V
+    6 K V
+    7 M V
+    8 M VI
+    9 F VII
+   10 M Ib
+   11 B II
+   12 M Ia
+   13 O Ia
+   14 -Not used-
+   15 Nebula
+   16 Pulsar
+   17 Black hole
+   18 Quasar
+   19 Ion storms
+   20 N/A
+   21 N/A
+   22 Space Rift
+
+		     *********************************************
+
+II STAR(S):
+-----------
+
+
+* Star creation: procedure star_creation
+
+    d10   Number of stars
+    1-4         1
+    5-8         2
+    9-10        3
+
+   d1000  Star type
+	 1	Phenomenae
+			1	Space rift	
+			2	Pulsar
+			3	Black hole
+			4	Quasar
+		     5-7	Ion storms
+		     8-10	Nebula
+	2-6	 Miscleanous
+			1	M Ib
+			2	B II
+			3	M Ia
+			4	O Ia
+			5	M VI
+	7-15	 A II
+     16-35	 M III
+     36-65	 F IV
+     66-180  F V
+    181-430  G V
+    431-690  K V
+    691-950  M V
+    951-1000 F VII
+
+	     Modifier to d1000: +(b-1)*200     b=1 for main star
+					       b=2 for the first companion
+					       b=3 for the second companion     
+
+   The companion size cannot be higher than the main star, if it's higher
+     replace the companion spectral class by the one just lower than the
+     main star. For example if the main star is a G V star, its companion
+     couldn't be a F V star, so replace the F V star by a K V star.
+   F VII, A II, Pulsar and Black Hole cannot have companion(s).
+
+   Decimal classification=d10-1 (no classification for F VII stars)
+
+       Spectral class     Mass           Luminosity
+	   A II          14-0.3*dec     2200-160*dec
+	   M III         6.3+0.31*dec   470+22*dec
+	   F IV          2.5-0.05*dec   19-0.7*dec
+	   F V           1.7-0.07*dec   8.1-0.7*dec
+	   G V           1.04-0.01*dec  1.32-0.08*dec
+	   K V           0.82-0.034*dec 0.42-0.038*dec
+	   M V           0.48-0.027*dec 0.04-0.0039*dec
+	   M VI	     0.15-0.01*dec  0.011-0.0011*dec
+	   F VII         0.8            0.001
+	   M Ib          16+dec         46000+750*dec
+	   B II	     30-1.7*dec	  170000-16800*dec	
+	   M Ia	     20+dec		  117000+2400*dec	
+	   O Ia	     30+3*dec	  200000+30000*dec
+	
+			 with dec=decimal classifaction of the star
+
+   Distance between the main star and his companion:
+
+	 d6      distance
+	      (in 0.1 A.U. unit)
+	 1       d950+50
+	 2-6     d90+10  (if Gaia parameter On minimum distance=50)
+
+	 if main star mass>2 then distance=d950+50
+	 if main star mass>10 then distance=d700+300
+
+   Star age:
+
+       main_sequence_life=1000*mass/luminosity
+       if main_sequence_life>5 then star age=d50+10
+       else star age=d10
+
+	 O Ia   : d3
+	 Nebula : d5
+	 Other phenomenaes: d10
+
+* Orbit creation : procedure orbit_creation
+   (returns the number of planets around stars and their orbit radius)
+
+	Spectral class     Number of planets
+	    F V              1d10 (Gaia On : d8+2)
+	    G V              3d6 (Gaia On : 4d4+2)
+	    K V              2d6
+	    M V              1d6
+
+
+	Initial orbit of the first planet = 1d10
+	   (orbit radius are given in 0.1 A.U.)
+
+	Untenable orbits (planet cannot exist due to the high temperature)
+	   initial orbit should be superior to sqrt(lux)/10
+
+	Subsequent orbits:
+
+	     1d10  Multiplier           Multiply the previous robit
+	       1    Empty orbit         by the multiplier to determine
+	       2    1.3                 subsequent orbit radius. If
+	       3    1.4                 empy orbit, roll 1d6:
+	       4    1.5                      1-2  no more planets
+	       5    1.6                      3-6  Asteroid belt with
+	       6    1.7                           a subsequent orbit
+	       7    1.8                           multiplier of 1d9/10+1.1
+	       8    1.9                           (minimum orbit radius=2)
+	       9    2.0
+	       10   2.1
+
+	Maximum allowed orbit radius:
+
+	    Single star: 400*star mass
+	    Multiple stars: distance to companion/3
+
+
+* Star system creation (Misc): main program star.pas
+
+       lux:=star luminosity+Sum of(companion_luminosity/(sqrt(companion_dist/10)))
+	       note: the distance between the two companions of the primary star
+		     is considered equal to the sum of the distance of
+		     companions to primary star.
+	       lux : effective luminosity of the star(s)
+
+       Innerzone  0 to 8.2*sqrt(lux) A.U.
+       Lifezone   8.2*sqrt(lux) to 12*sqrt(lux)
+       Outerzone  12*sqrt(lux) to the end of stellar system
+
+
+		     *********************************************
+
+
+III ASTEROID BELT
+-----------------
+
+
+* Asteroid Belt creation: main program star.pas
+
+ 2d6-1  Belt width (in A.U.)    Dices modifiers:  Asteroid belt orbit radius < 1.5 A.U. : -3
+   1    0.01                                        1.5 A.U <   orbit radius < 20  A.U. : -1
+   2    0.05
+   3    0.1
+   4    0.1
+   5    0.5
+   6    0.5
+   7    1
+   8    1.5
+   9    2
+   10   5
+   11   10
+
+
+  2d6   World type           Density
+  2-4   Nickel-Iron           d3/10+1
+  5-7   Stony                 d3/10+0.6
+  8-11  Carbonaceous          d3/10+0.2
+  12    Icy                   d6/10
+		      
+	Dices modifiers: Innerzone :-4
+			     Outerzone :+2
+   
+
+
+		     *********************************************
+
+
+
+IV PLANETS:
+-----------
+
+
+* Planet creation (Misc): main program star.pas
+
+      If planet diameter>299999 then world type=Brown Dwarf
+
+      Gas Giants and Brown Dwarfs doesn't have mineral ressources
+
+      If Hydrography>0 and atmosphere componants different of Vacuum or 
+	 Nitrogen/Hydrogen then  8.3 % chance of water tainted (2d6>10) 
+
+
+* Diameter determination: procedure diametre_calcul
+
+   Core: (outerzone) 1   Rocky
+		     2-6 Icy
+	 (innerzone) Rocky
+	 (lifezone)  Rocky      
+  
+   For Rocky worlds:
+
+					   diameter        density
+	(outerzone) and (innerzone)     Xd6*1000+d999     d10/10+0.3  (X=1d6)
+	(lifezone)                      (d8+8)*1000+d999  d6/10+0.7
+  
+   For Icy worlds:
+	
+	density=d6/10
+	diameter:     d6   1  d6*1000+d999
+			   2  2d6*1000+d999
+			   3  3d6*1000+d999
+			   4  5d6*1000+d999
+			   5  6d6*1000+d999
+			   6  8d6*1000+d999     
+
+
+* Gravity determination : procedure gravity_calcul (procunit.pas)
+  
+     Snowball if Icy Core and one of these cases:
+	   density=0.1  and diameter>39000
+	   density=0.2  and diameter>30000
+	   density=0.3  and diameter>26000
+	   density=0.4  and diameter>23000
+	   density=0.5  and diameter>21000
+	   density=0.6  and diameter>20000
+
+     If Snowball diameter=diameter*1d10
+     gravity=pi*density*(diameter/1000)*169/6765
+     mass=pi*density*cube(diameter/2000)/813.9
+
+
+* Atmosphere type determination: procedure atmos_calcul
+
+    gravity            atmosphere
+      less than 0.1      Vacuum
+      0.1-0.5            30 % Thin
+			 40 % Very Thin
+			 30 % Vacuum
+      0.5-0.8            10 % Standard (30 % if Gaia On)
+			 70 % Thin (50 % if Gaia On)
+			 10 % Very Thin
+			 10 % Vacuum
+      0.8-1.3            20 % Dense
+			 50 % Standard (80 % if Gaia On)
+			 10 % Thin  (0 %)
+			 10 % Very Thin (0 %)
+			 10 % Vacuum  (0 %)
+      1.3-2.0            70 % Dense
+			 20 % Standard
+			 10 % Thin
+      more than 2.0      Dense
+      (or Mass>2)
+
+
+* Atmospheric Pressure:  function press_calcul (procunit.pas)
+
+      aux=gravity*(0.9+d20/100)
+
+     Atmosphere    Pressure
+      Very Dense     aux*100
+      Dense          aux*1.25   
+      Standard       aux
+      Thin           aux*0.5
+      Very Thin      aux*0.1
+      Vacuum         0
+
+
+* World type determination:  procedure word_calcul
+
+   atmosphere   core       world type
+    Vacuum       Rocky      Rock
+    Vacuum       Icy        Ice Ball
+    Very Thin    Rocky      Rock
+    Very Thin    Icy        Ice Ball
+    Thin         Rocky      Desert
+    Thin         Icy        Ice Ball
+    Standard     Rocky      Hot House (Innerzone)
+			    Failed Core (Outerzone)
+			    Inhabitable (Lifezone)
+    Standard     Icy        Ice Ball
+    Dense        Rocky      Hot House (Innerzone)
+			    Failed Core (Outerzone)
+			    Inhabitable (Lifezone)
+    Dense        Icy        Gas Giant
+
+
+ Hot House and Gas Giant have automatically Massive atmospheres.
+ Worlds with a diameter less than 1000 kms are Chunks.
+ If the diameter is zero the world is an Asteroid Belt.
+
+ Inhabitable world :
+
+       Dice          World            Dice
+  (Gaia factor Off)              (Gaia factor On)
+       1-4            Glacier          1
+       5-8            Terran           2-8
+       9-10           Hot House        9-10
+
+
+* Hydrography and Water Type determination: procedure water_calcul (procunit.pas)
+
+       World type                     Water type
+	Ice Ball,Desert                 Ice
+	Rock                            Rare Ice
+	Gas Giant,Brown Dwarf           Crystals
+	Failed Core,Glacier             Ice Sheets
+	Chunk (Lifezone,Outer Zone)     Rare Ice
+	others                          None
+
+
+       Water type               Hydrography
+	Rare Ice                    1   
+	Crystals                    1   
+	Ice                         d5*10+d10
+	Ice (Desert)                (d5*10+d10)/4
+	Oceans                      (3d4-3)*10+d10
+	Ice Sheets                  (3d4-3)*10+d10
+
+     
+       Hydrography      World Terran Types
+	  1-19            Arid
+	  20-49           Steppe
+	  50-79           Terran
+	  80-89           40 % Terran
+			  60 % Jungle
+	  90-100          Ocean
+
+
+* Oxygen pressure determination: function oxygene_calcul
+
+	 hydrography/10  oxygene_table
+	       0             5
+	       1             10
+	       2             12
+	       3             14
+	       4             16
+	       5             18
+	       6             19
+	       7             20
+	       8             22
+	       9             24
+	       10            26
+
+      If world_type=(Arid,Steppe,Terran,Jungle,Ocean) then
+	 oxygen_pressure=oxygene_table*gravity/100
+      If world_type=Glacier then oxygen_pressure=(oxygene_table*gravity)/300
+      If atmospheric_componant is not Nitrogen/Oxygen then
+	 oxygen_pressure=oxygen_pressure/5
+
+
+* Atmospheric Components: function compos_atmos
+
+     World type                       Componants
+       Hot House                        Carbon Dioxyde
+       Gas Giant,Glacier,Brown Dwarf    70 % Methane/Ammonia/Hydrogen
+					30 % Hydrogen
+       Ice Ball,Failed Core             50 % Ammonia
+					50 % Methane
+       Arid,Steppe,Terran,Jungle,Ocean  80 % (70 % if dense atmos) Nitrogen/Oxygen
+					20 % (30 % if dense atmos) Exotic
+       Desert                           70 % Carbon Dioxyde
+					30 % Exotic (see Exotic table)
+       Chunk                            None
+
+   Miscleanous modificators:
+      If Thin atmosphere then automatically the main componant is Carbon Dioxyde.
+      If Vacuum atmosphere then automatically there's no componant.
+
+   Exotic atmospheres table:
+	25 % Nitrogen
+	10 % Carbon Dioxyde
+	5  % Fluorine/Carbon Dioxyde
+	5  % Nitrogen/Carbon Dioxyde
+	5  % Chlorine/Carbon Dioxyde
+	10 % Chlorine
+	10 % Flourine
+	10 % Exotic
+	5  % Nitrogen/Chlorine
+	10 % Methane/Ammonia
+	5  % Fluorine/Nitrogen
+
+
+* Orbit period determination: function orbit_calcul
+
+       period= sqrt(cube(orbit/10)/mass)*365
+
+		with cube: expression raised to the 3rd power
+		     orbit: planet orbit in .1 A.U.
+		     mass : stellar mass
+		     sqrt : square root of the expression
+
+
+* Rotation period determination: procedure rotation_calcul (procunit.pas)
+
+   j=1.18E-19
+  
+   K=0.19
+   K=0.66  for Brown Dwarves and Gas Giants
+   K=0.33  for world with oceans and satellites
+
+   angular_velocity=sqrt(j*planet_mass*5.98E27/(K*sqr(planet_diameter*5E4)))
+   aux1=6.28/(3600*angular_velocity)
+   aux2:=(exp(0.27*ln(10/orbit)))/mass_stellar
+   rotation period=aux1*aux2
+
+	   notes:    sqr: expression raised to the 2nd power
+		     orbit: planet orbit in 0.1 A.U.
+		     sqrt : square root of the expression
+   
+   if orbit<(9*mass_stellar) then rotation period=2
+   if rotation period<=2 then 
+	  rotation period=24*orbit period
+	  if eccentricity>100 then 
+	       rotation period:=(1-eccentricity/1000)*rotation period/(1+eccentricity/1000)
+	  planet is in resonance
+   if rotation period>orbit period*24 then
+	  rotation period=24*orbit period*24
+	  planet is in resonance
+
+
+* Eccentricity determination: function eccentricity_calcul
+
+    2d6    eccentricity (in .001 unit)
+    2-7         0
+     8          d5
+     9          d5+5
+    10          d5+10
+    11          d5+15
+    12        d6:  1   d5+20
+		   2   d25+25
+		   3   d50+50
+		   4   d100+100
+		   5   d50+200
+		   6   d600+200    
+
+
+* Axial tilt determination: function axial_tilt_calcul
+
+    X=2d6
+   
+     X
+   2-11   axial tilt=2d6-2+(X/2-1)*10
+    12    axial tilt=38+d4*10+2d6
+
+
+* Average surface temperature determination: function temp_calcul       
+
+   lux=effective luminosity of the star(s)
+   green_effect=greenhouse effect
+   energy_abs=energy absorption of the world
+	
+   atmosphere        energy_abs         green_effect
+      Vacuum           0.8-d50/1000         1.05
+      Very Thin        0.8-d50/1000         1 
+      Thin             0.8-d190/1000        1
+      Standard         0.8-d190/1000        1
+      Dense            0.7-d200/1000        1.1
+      Massive          0.7-d200/1000        1.15
+
+   if Hydrography<10  then energy_abs=energy_abs+0.1
+   if world_type is Hot House then green_effect is 1.15
+
+  temperature=sqrt(sqrt(lux)/(orbit/10))*340*energy_abs*green_effect-273
+
+  Maximal temperature:
+	Glacier      -15
+	Gas Giant    -25
+	Brown Dwarf  -25 
+
+  Minimal temperature:
+	Hot House     40
+	Arid          40
+	Ocean         5
+	Jungle        20
+	Terran        10
+	Steppe        25
+
+
+* Night and day temperature variation determination
+
+   atmosphere        day_table  day_max  night_table  night_max
+      Vacuum           0.2        5        0.2          0.05
+      Very Thin        0.4        4        0.5          0.1
+      Thin             0.5        2.5      1            0.15
+      Standard         0.6        1.5      3            0.3
+      Dense            0.8        0.8      8            0.5
+      Massive          1          0.1      20           0.8
+	
+Day variation temp=day_table*lux/sqrt(orbit/10)*rot/2
+Max variation=(avg_temp+273)*day_max*lux/sqrt(orbit/10)
+A temperature cannot be superior to 2000 ø C.
+
+Night variation temp=night_table*rot/2
+Max variation=(avg_temp+273)*night_max
+
+variables:   orbit : planet orbit radius in .1 A.U.
+	     lux   : effective luminosity of the star(s)
+	     avg_temp: average surface temperature in ø C
+
+
+* Mineral ressources determination:
+
+      mineral                X(mine_k in the program)   
+	Metal ore               70      
+	Radioactive ore         40
+	Precious metal          10
+	Raw crystals            30
+	Precious gems           10
+				
+     Asteroid belt are considered like a planet of 5000 km diameter.
+     Rings are considered like a planet of 700 km diameter and a density of
+       d10/10+0.3
+
+     aux1=diameter*density/200  (maximum value=120)
+     mineral_ressource=aux1+1dX-60  (minimum value=1)
+     if mineral_ressource>X then 
+		mineral_ressource=X+(mineral_ressouce-X)/5
+     maximum value for mineral_ressource is 100
+
+
+* Unusual characteristics determination: procedure unusual_calcul
+
+  . Rocky core and satellite(s) present:
+	  1.33 % (1d75=1) chance of "Extreme Vulcanism"
+	  If there's Extreme Vulcanism and atmosphere is thin or higher,
+	  60 % chance of Atmospheric Contaminants. In this case atmospheric
+	  componants could change:
+		Carbon Dioxyde  ------> Carbon Dioxyde/Sulfur Dioxyde
+		Chlorine        ------> Chlorine/Disulfur Dichloride
+		Flourine        ------> Fluorine/Sulfur Tetrachloride
+	  If there's Extreme Vulcanism, 40 % chance of Unstable World.
+
+   . If atmosphere thin or higher: 1.33 % (1d75=1) chance of Atmospheric
+	Contaminants
+   . Meteor Storms: 1.33 % (1d75=1) chancce
+   . If atmosphere is Very Thin or Vacuum:  10 % chance of High Radiation
+	Level
+   . High Radiation Level: Radioactive ore/3 % chance
+			   0.5 % chance for miscleanous reasons (like nuclear
+			     war...)
+   . Violent Storms: 3.33 % (1d30=1)  if atmosphere is thin or higher.
+		     16.66 % (1d6=1)  if axial tilt<4
+   . Microbes      : 2 % (1d50=1) if atmosphere is thin or higher
+   . Orbital Conjunction: 0.5 % (1d200=1)
+   . Rugged Terrain : 2 % (1d50=1) should have a rocky core and the world
+		      type should be different of Ocean planet.
+   . Unstable Climat: 2 % (1d50=1) if atmosphere is thin or higher
+   . Cloud Cover    : 16.6 % (1d6=1) if atmosphere is standard or higher
+   . High Tides     : 16.6 % (1d6=1) if hydrography>50, and if ocean and
+		      satellites are present.
+   . Extreme Axial Tilt : if axial tilt>50. In this case, 50 % chance of
+			  Strong magnetic field.
+   . No Axial Tilt  : if axial tilt<5.
+   . Strong Magnetic Field : 3.33 % (1d30=1)
+			     10 % (1d10=1) if rotation period<15
+   . Tidal Lock     : if the planet is in resonance with its star.
+   . Orbital Eccentricity : if eccentricity>0.250. In this case if Rocky core
+			    then Extrem Vulcanism, with 70 % chance of
+			    Atmospheric Contaminants if atmosphere is Standard
+			    or higher.
+   . if water type=Ocean  : water vapor=exp(0.698*(temperature-15))*hydrography/(0.007*gravity)
+			    if water vapor>30000 then High Humidity
+			    if water vapor<0.2 then Low Humidity
+   . Life chance determination:
+
+			  Life chance                 Life chance
+    'Extreme Vulcanism'       -5           Terran        +25
+    'Atmos. Contaminants'     -5           Jungle        +25
+    'Meteors Storms'          -5           Ocean         +25
+    'High Radiation Level'    -15          Arid          +5
+    'Violent Storms'          -5           Steppe        +5
+    'Microbes'                -5           Desert        -45
+    'Orbital Conjunction'     -20          Glacier       -45
+    'Unstable Climate'        -10          Failed Core   -55
+    'Orbital Eccentricity'    -5           others        -200
+    'Strong Magnetic Field'   -10                           Life chance 
+    'No Axial Tilt'           +10         Nitrogen/Oxygen       0 
+    'High Tides'              -5          others                -10
+    'Extreme Axial Tilt'      -15          
+
+      Life chance= 1d100 + modifiers
+      If Life chance> 49 then Semi-Intelligent Lifeforms present
+      If Life chance> 74 then Intelligent Lifeforms present
+
+   . Corrosive Atmosphere : If atmosphere componant<>(None,Nitrogen/Oxygen,
+			    Carbon/Dioxyde,Methane) and
+			    (Average temperature+ Day variation temp)>50.
+   . Insidious Atmosphere : If atmosphere componant=(Nitrogen,Methane/Ammonia
+			    /Hydrogen,Hydrogen) and
+			    (Average temperature+ Day variation temp)>100.
+			    If High Radiation Level.
+		     
+		     
+		     *********************************************
+
+
+V SATELLITES:
+-------------
+
+* Number of satellites: function satellites_calcul
+
+  world type     satellites
+    Gas Giant      2d6          
+    Brown Dwarf    d6:  1    d6-3 (minimum=0)
+			2-6  0
+    Others         d6-3 (minimum=0)
+
+
+* Orbital radius of satellites : function moon_orbit
+    (given in planetary diameters of the parent planet)
+
+      d10
+      1-3  factor=1
+      4-6  factor=2
+      7-10 factor=3
+
+      if diameter=0 then factor=1 (rings)
+
+      factor    moon orbit
+	1         d7+3  (rings: 1d3)
+	2         d10*5+10
+	3         d10*10+60
+
+* Satellites creation (Misc): procedure moon_creation
+
+      Diameter=(1d10-4)*1000+d999 km
+      If Diameter<0 then Diameter =1000
+
+      If the satellite diameter is higher than its mother planet diameter
+      divide its diameter by 2 until it's inferior to its mother planet
+      diameter.
+
+      Outerzone : 83.3 % Icy core (density=1d6/10)
+		  16.7 % Rocky core (density=1d10/10+0.3)
+      Innerzone, Lifezone :  Rocky Core
+
+      For temperature determination luminosity=luminosity+0.1 if
+      mother planet is Brown Dwarf.
+
+
+
+

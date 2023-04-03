@@ -4,13 +4,15 @@
 
 - Module: Yes, burdick-starform
 - Latest Version: Malloy.1993
-- Compiles: Yes
-- Runs: Yes
+- Compiles: 
+    - On Mac: Yes
+- Runs:
+    - On Mac: Yes
 
 ###[Starform](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Starform
-- Author: Matt Burdick
+- Author: Matt Burdick****
 - Poster/Publisher: Ian Burrell
 - Language: C
 - Creation Year: 1988

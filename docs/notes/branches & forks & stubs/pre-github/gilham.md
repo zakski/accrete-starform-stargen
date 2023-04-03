@@ -4,8 +4,10 @@
 
 - Module: Yes, gilham
 - Latest Version: Gilham.1995
-- Compiles: Yes, With Changes (Uses pre-Iso C++ maim method)
-- Runs: Yes
+- Compiles: 
+    - On Mac: Yes, With Changes (Uses pre-Iso C++ main method)
+- Runs:
+    - On Mac: Yes
 
 ####[ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
