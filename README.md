@@ -72,6 +72,9 @@ and add them to my recreation as options.
 - [Extra-Solar Planetary Systems: A Microcomputer Simulation](docs/notes/build%20descriptions/Extra-Solar%20Planetary%20Systems.md)
 ***
 
+## TODO
+[see here](/TODO.md)
+
 ## Acknowledgements
 
 This project would not be possible without the hardwork of the these people:
