@@ -109,8 +109,16 @@ comparison.
 - Burdick Version: n/a
 - Key: Nyrath.1995
 
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
-dated as been last modified later than Burrell's copy, so we have a potential version order between them.
+Nyrath, like Burrell and a few others, has a cached copy of Burdick's accrete program. This version is dated as been 
+last modified later than Burrell's copy, so we have a potential version order between them.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Fails using gcc.
+- Runs:
+  - N/A
 
 ### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 - Resource Name: 1999 - Peter Keel - Accrete

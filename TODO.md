@@ -4,7 +4,8 @@
 
 ### Refresh
 - Re-read simulation notes/docs
-- Re-test compilation against vs code / visual studio
+- Re-test compilation against vs code / visual studio / WSL
+- Re-check native gradle setup for c compilation
 - Round up new variations
 - Consider if Scala is the best option, for modern usage with how lightbend is going
 - Consider alternative JVM languages

@@ -259,6 +259,23 @@ uncertain about this version's exact date.
 
 Like Steve Gilham, his line of code is at least initially distinct from Burdick's.
 
+### [ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
+- Resource Name: 1995 - Nyrath - Accrete
+- Author: Matt Burdick
+- Poster/Publisher: Nyrath the nearly wise
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1995
+- Parents: Burdick.1994.A
+- Original Source: Acquired.
+- Reproducibility: [Reproducible.](/docs/notes/build descriptions/1990s/1995%20-%20Nyrath.1995.md).
+- Burdick Version: n/a
+- Key: Nyrath.1995
+
+Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of
+Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential
+version order between them.
+
 ### [Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Matt Burdick - Starform
 - Author: Matt Burdick
@@ -272,27 +289,7 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Burdick Version: V3.0
 - Key: Burdick.1995
 
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of 
-Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential 
-version order between them.
-
-
-### [ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
-- Resource Name: 1995 - Nyrath - Accrete
-- Author: Matt Burdick
-- Poster/Publisher: Nyrath the nearly wise
-- Language: C
-- Creation Year: >= 1988
-- Source Year: 1995
-- Parents: Burdick.1994.A
-- Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Nyrath.1995
-
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of 
-Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential 
-version order between them.
+TODO
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
 
