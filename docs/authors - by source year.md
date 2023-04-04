@@ -182,13 +182,13 @@ Gilham re-wrote his variant in psuedocode in response to a request on usenet in 
 - Source Year: 1994
 - Parents: Gilham.1988
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1994A.md)
 - Burdick Version: n/a
 - Key: Burdick.1994.A
 
 One of Mat Burdick's C versions which is commonly distributed as accrete.
  
-This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting 
+This looks like the same major version as the incomplete code gilham supplied so it should make for an interesting 
 comparison.  
 
 ### [ACCRETION](http://znark.com/create/accrete.html)
@@ -201,7 +201,7 @@ comparison.
 - Source Year: 1994
 - Parents: Fogg.1985
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
 - Burdick Version: n/a
 - Key: Burdick.1988
 

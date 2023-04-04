@@ -19,19 +19,30 @@
 - Source Year: 1994
 - Parents: Fogg.1985
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
 - Burdick Version: n/a
 - Key: Burdick.1988
 
-Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone seems to of worked off.
+Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone
+seems to of worked off.
 
-This pretty close to being the original copy of Mat Burdick's first version, In that it is written in pascal which apparently is his original language and the 
-comments mention copyright 1988. However the fact that the source code was found on Ian Burrell's website and the files were last modified in 1994 count 
-against it being the very first version. Additionally the zip file was also labelled accretion, which has never been a name that Burdick has called it. 
+This pretty close to being the original copy of Mat Burdick's first version, In that it is written in pascal which
+apparently is his original language and the comments mention copyright 1988. However the fact that the source code was
+found on Ian Burrell's website and the files were last modified in 1994 count against it being the very first
+version. Additionally the zip file was also labelled accretion, which has never been a name that Burdick has called it.
 
-Burdick could only partially reproduce Fogg's work, since the way that Fogg determined the atmosphere type is not cleared marked out in his research paper.
+Burdick could only partially reproduce Fogg's work, since the way that Fogg determined the atmosphere type is not
+cleared marked out in his research paper.
 
-Nevertheless, this codebase is the parent of the vast majority of variations that have any source code still extant. 
+Nevertheless, this codebase is the parent of the vast majority of variations that have any source code still extant.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in Turbo Pascal.
+  - On Windows: ???, written in Turbo Pascal.
+  - On Linux (WSL2): ???, written in Turbo Pascal.
+- Runs:
+  - N/A
 
 ### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
@@ -59,7 +70,7 @@ the code is incomplete.
 - Runs:
     - N/A
 
-###[ACCRETE](http://znark.com/create/files/accrete.zip)
+### [ACCRETE](http://znark.com/create/files/accrete.zip)
 - Resource Name: 1994 - Matt Burdick - Accrete
 - Author: Mat Burdick
 - Poster/Publisher: Ian Burell
@@ -74,9 +85,18 @@ the code is incomplete.
 
 One of Mat Burdick's C versions which is commonly distributed as accrete.
  
-This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting comparison.  
+This looks like the same major version as the incomplete code gilham supplied so it should make for an interesting 
+comparison.  
 
-###[ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using Visualcpp.
+  - On Linux (WSL2): Fails using gcc.
+- Runs:
+  - N/A
+
+### [ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Nyrath - Accrete
 - Author: Matt Burdick
 - Poster/Publisher: Nyrath the nearly wise
@@ -92,7 +112,7 @@ This looks like The same major version as the incomplete code gilham supplied so
 Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
 dated as been last modified later than Burrell's copy, so we have a potential version order between them.
 
-###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 - Resource Name: 1999 - Peter Keel - Accrete
 - Author: Matt Burdick
 - Poster/Publisher: Peter Keel
