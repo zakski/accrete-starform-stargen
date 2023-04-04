@@ -9,7 +9,7 @@
 
 ## Versions
 
-###[ACCRETION](http://znark.com/create/accrete.html)
+### [ACCRETION](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Accretion
 - Author: Matt Burdick
@@ -33,7 +33,7 @@ Burdick could only partially reproduce Fogg's work, since the way that Fogg dete
 
 Nevertheless, this codebase is the parent of the vast majority of variations that have any source code still extant. 
 
-###[Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
+### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
 - Resource Name: 1988 - Matt Budick - Accrete -  Steve Gilham Incomplete
 - Author: Matt Burdick
@@ -43,12 +43,21 @@ Nevertheless, this codebase is the parent of the vast majority of variations tha
 - Source Year: 1993
 - Parent: Burdick.1988
 - Original Source: Incomplete.
-- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Gilham1988.md)
+- Reproducibility: [Partially Reproducible](/docs/notes/build%20descriptions/1960s%20-%201980s/1988%20-%20Gilham.1988.md).
 - Burdick Version: None
 - Key: Gilham.1988
 
-A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve Gilham. Whilst it does seem to date back to 1988, 
-the end of Gilham's post was cut off in the Google Group archive, so the code is incomplete.
+A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve
+Gilham. Whilst it does seem to date back to 1988, the end of Gilham's post was cut off in the Google Group archive, so
+the code is incomplete.
+
+#### Compile/Run Status
+- Compiles:
+    - On Mac: No, code is incomplete.
+    - On Windows: No, code is incomplete.
+    - On Linux (WSL2): No, code is incomplete.
+- Runs:
+    - N/A
 
 ###[ACCRETE](http://znark.com/create/files/accrete.zip)
 - Resource Name: 1994 - Matt Burdick - Accrete

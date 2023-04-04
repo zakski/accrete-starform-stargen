@@ -127,7 +127,7 @@ References are stored in [2.0 accrete.bib](/docs/models/references/bib/2.0 accre
 - Source Year: 1993
 - Parent: Burdick.1988
 - Original Source: Incomplete.
-- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Gilham.1988.md)
+- Reproducibility: [Partially Reproducible](/docs/notes/build%20descriptions/1960s%20-%201980s/1988%20-%20Gilham.1988.md).
 - Burdick Version: None
 - Key: Gilham.1988
 
