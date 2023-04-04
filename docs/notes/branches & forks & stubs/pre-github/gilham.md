@@ -19,7 +19,7 @@
 - Source Year: 1984
 - Parents: Dole.1969, Dole.1970
 - Original Source: Located.
-- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/Gilham1984.md)
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1984%20-%20Gilham1984.md)
 - Burdick Version: n/a
 - Key: Gilham.1984
 

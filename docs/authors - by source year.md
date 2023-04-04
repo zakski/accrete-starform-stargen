@@ -22,7 +22,7 @@ Initial model order will be according to the resource name.
 - Source Year: 1969
 - Parents: n/a, the original
 - Original Source: Research paper, but no code
-- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/Formation%20of%20Planetary%20Systems%20by%20Aggregation.md)
+- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1969%20-%20Formation%20of%20Planetary%20Systems%20by%20Aggregation.md)
 - Burdick Version: n/a
 - Key: Dole.1969
 
@@ -31,7 +31,7 @@ code. He was a prolific astronomy researcher and whilst I have not recovered his
 recreations of his original engine based on his papers that exist online, with the exception of the random number 
 generator that he used as that would be machine dependent.
 
-References are stored in accrete.bib.
+References are stored in [accrete.bib](/docs/models/references/bib/accrete.bib).
 
 ### ACRETE
 
@@ -43,14 +43,14 @@ References are stored in accrete.bib.
 - Source Year: 1970
 - Parents: n/a, the original
 - Original Source: Research paper, but no code
-- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/Computer%20Simulation%20of%20the%20Formation%20of%20Planetary%20Systems.md)
+- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1970%20-%20Computer%20Simulation%20of%20the%20Formation%20of%20Planetary%20Systems.md)
 - Burdick Version: n/a
 - Key: Dole.1970
 
 Stephen H. Dole presented the original research paper findings in Icarus in 1970. The program that used is basically 
 identical to the one written for the Rand Corporation.
 
-References are stored in 1.5 accrete.bib.
+References are stored in [1.5 accrete.bib](/docs/models/references/bib/1.5 accrete.bib).
 
 ### [ACRETE](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
 
@@ -62,7 +62,7 @@ References are stored in 1.5 accrete.bib.
 - Source Year: 1977
 - Parents: Dole.1969, Dole.1970
 - Original Source: Research paper, but no code
-- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/Computer%20Simulations%20of%20Planetary%20Accretion%20Dynamics.md)
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1977%20-%20Computer%20Simulations%20of%20Planetary%20Accretion%20Dynamics.md)
 - Burdick Version: n/a
 - Key: Sagan.1977
 
@@ -73,7 +73,7 @@ different possible planetary systems.
 
 Most recreations of Accrete do not directly use this paper as their inspiration.
 
-References are stored in 1.7 accrete.bib.
+References are stored in [1.7 accrete.bib](/docs/models/references/bib/1.7 accrete.bib).
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
@@ -85,7 +85,7 @@ References are stored in 1.7 accrete.bib.
 - Source Year: 1984
 - Parents: Dole.1969, Dole.1970
 - Original Source: Located.
-- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/Gilham1984.md)
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1984%20-%20Gilham1984.md)
 - Burdick Version: n/a
 - Key: Gilham.1984
 
@@ -104,7 +104,7 @@ post is missing from google groups.
 - Source Year: 1985
 - Parents: Dole.1969, Dole.1970, Sagan.1977
 - Original Source: Research Paper, but source code is gone.
-- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Extra-Solar%20Planetary%20Systems.md)
+- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1985%20-%20Extra-Solar%20Planetary%20Systems.md)
 - Burdick Version: n/a
 - Key: Fogg.1985
 
@@ -115,7 +115,7 @@ Brian Davis reports that he wrote Fogg to request the source, and he replied tha
 garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up. Thus far no one 
 seems to of replicated his planetary classification system.
 
-References are stored in 2.0 accrete.bib.
+References are stored in [2.0 accrete.bib](/docs/models/references/bib/2.0 accrete.bib).
 
 ### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 

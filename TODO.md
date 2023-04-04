@@ -1,6 +1,8 @@
 # TODO List
 
 ## 2023 Priorities
+
+### Refresh
 - Re-read simulation notes/docs
 - Re-test compilation against vs code / visual studio
 - Round up new variations

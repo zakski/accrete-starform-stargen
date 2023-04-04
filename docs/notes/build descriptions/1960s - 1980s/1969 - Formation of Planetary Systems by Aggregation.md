@@ -7,8 +7,8 @@ This is the main paper that the accretion part of the simulation is based upon. 
 
 - Planets can form between the radii 0.3 astronomical units (AU) and 50.0 AU.
 
-- Planets form from a spherically symmetrical cloud of dust and gas with a constant ratio of gas to dust with the density decreasing with the distance from 
-the center.
+- Planets form from a spherically symmetrical cloud of dust and gas with a constant ratio of gas to dust with the
+  density decreasing with the distance from the center.
 
 - All particles in the cloud are moving on elliptical orbits with the center of mass (star) at one focus.
 
@@ -22,8 +22,9 @@ the center.
 ## Limitations:
 
 ### In Recreation:
-- No way to recreate exact tests results; even with a seed listed in the sample run, the age of the computer hardware he used means that accurately recreating
-the pseudo-random number sequence is a tall order without the original software to hand. (internal random number generator of an IBM 7044 PC).
+- No way to recreate exact tests results; even with a seed listed in the sample run, the age of the computer hardware he
+  used means that accurately recreating the pseudo-random number sequence is a tall order without the original software
+  to hand. (internal random number generator of an IBM 7044 PC).
 
 ### With the Model:
 - Collision calculations are less than accurate due to not taking into account any axial inclinations on the orbital plane.
@@ -37,3 +38,6 @@ the pseudo-random number sequence is a tall order without the original software 
 - No consideration given to the kind of atmosphere that rocky planets will have.
 
 - Arbitrarily set the outer and inner limits at with planets can form.
+
+## Compilation
+N/a - no source
