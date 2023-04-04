@@ -79,7 +79,7 @@ the code is incomplete.
 - Source Year: 1994
 - Parents: Gilham.1988
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
 - Burdick Version: n/a
 - Key: Burdick.1994.A
 
@@ -105,7 +105,7 @@ comparison.
 - Source Year: 1995
 - Parents: Burdick.1994.A
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible.](/docs/notes/build descriptions/1990s/1995%20-%20Nyrath.1995.md).
 - Burdick Version: n/a
 - Key: Nyrath.1995
 
@@ -119,6 +119,14 @@ last modified later than Burrell's copy, so we have a potential version order be
   - On Linux (WSL2): Fails using gcc.
 - Runs:
   - N/A
+
+#### Compile/Run Status With Modification
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Linux (WSL2): Runs successfully.
 
 ### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 - Resource Name: 1999 - Peter Keel - Accrete
