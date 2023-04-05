@@ -85,7 +85,7 @@ References are stored in [1.7 accrete.bib](/docs/models/references/bib/1.7 accre
 - Source Year: 1984
 - Parents: Dole.1969, Dole.1970
 - Original Source: Located.
-- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1984%20-%20Gilham1984.md)
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1984%20-%20Gilham.1984.md)
 - Burdick Version: n/a
 - Key: Gilham.1984
 
@@ -301,12 +301,14 @@ TODO
 - Source Year: 1995
 - Parents: Gilham.1984, Gilham.1993
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build%20descriptions/1990s/1995%20-%20Gilham.1995.md).
 - Burdick Version: n/a
 - Key: Gilham.1995
 
-Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code 
+Steve wrote a port of his original basic code to c++. Like his original basic code, its pretty interesting to see code
 that has not evolved along the burdick branch.
+
+This is pre-ISO C++, so cannot be compiled by gcc as is.
 
 ### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/MqgYTuIf13w)
 
