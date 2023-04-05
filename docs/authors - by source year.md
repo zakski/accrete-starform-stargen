@@ -22,7 +22,7 @@ Initial model order will be according to the resource name.
 - Source Year: 1969
 - Parents: n/a, the original
 - Original Source: Research paper, but no code
-- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/Formation%20of%20Planetary%20Systems%20by%20Aggregation.md)
+- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1969%20-%20Formation%20of%20Planetary%20Systems%20by%20Aggregation.md)
 - Burdick Version: n/a
 - Key: Dole.1969
 
@@ -31,7 +31,7 @@ code. He was a prolific astronomy researcher and whilst I have not recovered his
 recreations of his original engine based on his papers that exist online, with the exception of the random number 
 generator that he used as that would be machine dependent.
 
-References are stored in accrete.bib.
+References are stored in [accrete.bib](/docs/models/references/bib/accrete.bib).
 
 ### ACRETE
 
@@ -43,14 +43,14 @@ References are stored in accrete.bib.
 - Source Year: 1970
 - Parents: n/a, the original
 - Original Source: Research paper, but no code
-- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/Computer%20Simulation%20of%20the%20Formation%20of%20Planetary%20Systems.md)
+- Reproducibility: [Completely Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1970%20-%20Computer%20Simulation%20of%20the%20Formation%20of%20Planetary%20Systems.md)
 - Burdick Version: n/a
 - Key: Dole.1970
 
 Stephen H. Dole presented the original research paper findings in Icarus in 1970. The program that used is basically 
 identical to the one written for the Rand Corporation.
 
-References are stored in 1.5 accrete.bib.
+References are stored in [1.5 accrete.bib](/docs/models/references/bib/1.5 accrete.bib).
 
 ### [ACRETE](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19770006045.pdf)
 
@@ -62,7 +62,7 @@ References are stored in 1.5 accrete.bib.
 - Source Year: 1977
 - Parents: Dole.1969, Dole.1970
 - Original Source: Research paper, but no code
-- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/Computer%20Simulations%20of%20Planetary%20Accretion%20Dynamics.md)
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1977%20-%20Computer%20Simulations%20of%20Planetary%20Accretion%20Dynamics.md)
 - Burdick Version: n/a
 - Key: Sagan.1977
 
@@ -73,7 +73,7 @@ different possible planetary systems.
 
 Most recreations of Accrete do not directly use this paper as their inspiration.
 
-References are stored in 1.7 accrete.bib.
+References are stored in [1.7 accrete.bib](/docs/models/references/bib/1.7 accrete.bib).
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
@@ -85,7 +85,7 @@ References are stored in 1.7 accrete.bib.
 - Source Year: 1984
 - Parents: Dole.1969, Dole.1970
 - Original Source: Located.
-- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/Gilham1984.md)
+- Reproducibility: [Possibly Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1984%20-%20Gilham1984.md)
 - Burdick Version: n/a
 - Key: Gilham.1984
 
@@ -104,7 +104,7 @@ post is missing from google groups.
 - Source Year: 1985
 - Parents: Dole.1969, Dole.1970, Sagan.1977
 - Original Source: Research Paper, but source code is gone.
-- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Extra-Solar%20Planetary%20Systems.md)
+- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/1960s%20-%201980s/1985%20-%20Extra-Solar%20Planetary%20Systems.md)
 - Burdick Version: n/a
 - Key: Fogg.1985
 
@@ -115,7 +115,7 @@ Brian Davis reports that he wrote Fogg to request the source, and he replied tha
 garage, and even he wouldn't retrieve it, but write it from scratch again if the situation ever came up. Thus far no one 
 seems to of replicated his planetary classification system.
 
-References are stored in 2.0 accrete.bib.
+References are stored in [2.0 accrete.bib](/docs/models/references/bib/2.0 accrete.bib).
 
 ### [Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
 
@@ -127,8 +127,8 @@ References are stored in 2.0 accrete.bib.
 - Source Year: 1993
 - Parent: Burdick.1988
 - Original Source: Incomplete.
-- Reproducibility: [Partially Reproducible.](/docs/notes/build%20descriptions/Gilham.1988.md)
-- Burdick Version: None
+- Reproducibility: [Partially Reproducible](/docs/notes/build%20descriptions/1960s%20-%201980s/1988%20-%20Gilham.1988.md).
+- Burdick Version: 1.x
 - Key: Gilham.1988
 
 A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve 
@@ -182,13 +182,13 @@ Gilham re-wrote his variant in psuedocode in response to a request on usenet in 
 - Source Year: 1994
 - Parents: Gilham.1988
 - Original Source: Complete.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick.1994.A.md)
+- Burdick Version: 1.x
 - Key: Burdick.1994.A
 
 One of Mat Burdick's C versions which is commonly distributed as accrete.
  
-This looks like The same major version as the incomplete code gilham supplied so it should make for an interesting 
+This looks like the same major version as the incomplete code gilham supplied so it should make for an interesting 
 comparison.  
 
 ### [ACCRETION](http://znark.com/create/accrete.html)
@@ -201,8 +201,8 @@ comparison.
 - Source Year: 1994
 - Parents: Fogg.1985
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick.1988.md)
+- Burdick Version: 1.x
 - Key: Burdick.1988
 
 Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone 
@@ -259,6 +259,23 @@ uncertain about this version's exact date.
 
 Like Steve Gilham, his line of code is at least initially distinct from Burdick's.
 
+### [ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
+- Resource Name: 1995 - Nyrath - Accrete
+- Author: Matt Burdick
+- Poster/Publisher: Nyrath the nearly wise
+- Language: C
+- Creation Year: >= 1988
+- Source Year: 1995
+- Parents: Burdick.1994.A
+- Original Source: Acquired.
+- Reproducibility: [Reproducible.](/docs/notes/build descriptions/1990s/1995%20-%20Nyrath.1995.md).
+- Burdick Version: 1.x
+- Key: Nyrath.1995
+
+Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of
+Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential
+version order between them.
+
 ### [Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Matt Burdick - Starform
 - Author: Matt Burdick
@@ -272,27 +289,7 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Burdick Version: V3.0
 - Key: Burdick.1995
 
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of 
-Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential 
-version order between them.
-
-
-### [ACCRETE](http://reocities.com/CapeCanaveral/8191/usml.html)
-- Resource Name: 1995 - Nyrath - Accrete
-- Author: Matt Burdick
-- Poster/Publisher: Nyrath the nearly wise
-- Language: C
-- Creation Year: >= 1988
-- Source Year: 1995
-- Parents: Burdick.1994.A
-- Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Nyrath.1995
-
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of 
-Burdick's accrete program. This version is dated as been last modified later than Burrell's copy, so we have a potential 
-version order between them.
+TODO
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
 
@@ -319,10 +316,10 @@ that has not evolved along the burdick branch.
 - Language: C
 - Creation Year: <= 1996
 - Source Year: 1996
-- Parents:  Burdick.1994.A / Nyrath.1995 / Burdick.1995
+- Parents:  Burdick.1994.A / Nyrath.1995
 - Original Source: Complete.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
+- Reproducibility: [Reproducible.](/docs/notes/build descriptions/1990s/1996%20-%20Francis.1996.md).
+- Burdick Version: 1.x
 - Key: Francis.1996
 
 Erik Max Francis produced a slightly modified version of Burdick's code that prints it's output slightly differently. It 
@@ -460,10 +457,10 @@ different from starform.
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1999
-- Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995
+- Parents: Nyrath.1995
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1999%20-%20Keel.1999.A.md).
+- Burdick Version: 1.x
 - Key: Keel.1999.A
 
 A version cached by Peter Keel on his traveller rpg site.

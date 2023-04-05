@@ -1,21 +1,8 @@
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-#include "const.h"
-#include "structs.h"
-
-/*  These are all of the global variables used during accretion declared in main.c  */
-extern float anum;
-extern planet_pointer planet_head;
-extern double stellar_mass_ratio, stellar_luminosity_ratio, main_seq_life;
-extern double age, r_ecosphere, r_greenhouse, radians_per_rotation;
-extern int spin_resonance;
-
 void display_system()
 {
-     planet_pointer node1;
-     int counter;
-     char word[(10)+1];
+     planet_pointer node1; 
+     int counter; 
+     char word[(10)+1]; 
 
      FILE *f;
      f = fopen("New.System", "w");
@@ -50,7 +37,7 @@ void display_system()
 	       fprintf(f,"   Surface Pressure (in atmospheres): %5.3lf",(node1->surface_pressure / 1000.0));
 	       if ((node1->greenhouse_effect) && (node1->surface_pressure > 0.0))
 		    fprintf(f,"     RUNAWAY GREENHOUSE EFFECT\n");
-	       else
+	       else 
 		    fprintf(f,"\n");
 	       fprintf(f,"   Surface temperature (Celcius): %4.2lf\n",(node1->surface_temp - KELVIN_CELCIUS_DIFFERENCE));
 	       fprintf(f,"   Hydrosphere percentage: %6.2lf\n",(node1->hydrosphere * 100.0));

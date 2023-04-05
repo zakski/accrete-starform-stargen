@@ -1,0 +1,248 @@
+ste...@arc.ug.eds.com unread, 18 May 1993, 10:23:30
+
+References to bear in mind are
+
+Dole, S.H. Icarus _13_ 494 "Computer simulation of the formation of planetary
+systems"
+Hart, M. Icarus _35_ 23 "Evolution of the atmosphere of the Earth"
+Icarus _37_ 351 "Habitable Zones about Main sequence Stars"
+Fogg, M. JBIS _38_ 501 "Extrasolar Planetary Systems: a microcomputer
+simulation".
+
+Rather than have to code & debug the program again here, I'll outline what I
+did based on Dole's paper (and his "Habitable Planets for Man", publ. Elsvier
+1974, I believe). My scalings with star mass, & planet mass are my own, and
+differ from those of Fogg, for example. The climate modelling is based partly
+on Hart's papers (I've not done anything with the atmospheric evolution, since
+that model allows things only within a couple of % of Earthlike).
+
+1) Establish size of protoplanetary disk.
+
+If star mas is MS in solar units, then luminosity in solar unis=ts LS is
+
+MS^4 (MS > 0.4) otherwise 0.23*(MS^2.3)
+
+Rock will volatilise at 3*(LS^0.5) AU. From here up to ~50AU the mass of dust
+in a band 0.1 AU wide is given by the following
+
+let a1 = radius of band/MS^(1/3)
+mass in band = 1.5*(a1^2)*exp(-5*(a1^(1/3))) dust (earth masses)
+usually 25 times this value works for the gas
+
+2) Inject a nucleus at some radius R where there is still dust, with a chosen
+orbital eccentricity e (0.35 was used in the original). The periastron is at
+Rp = R(1-e), apastron at R(1+e). All dust still within these radii acculumate
+on the nucleus. (R = semi-major axis of ellipse).
+
+The critical mass for gas accumulation is 0.12*(Rp^-0.75)*(LS^0.375). If this
+much mass has been accumulated, all gas ramaining between RP and RA is also
+accumulated.
+
+The gravity of the body extends its range roughly
+
+0.1*((mass of body in earths/MS)^(0.25)) beyond the apsides.
+
+Keep iterating until this mass stabilises. Then add another.
+
+3) Collisions occur if two bodies can reach the same radius. Sum the angular
+momenta
+
+mass * ((semi-major axis * (1-e^2))^0.5)
+
+and masses. The new eccentricity I took randomly over 0-smaller of the two,
+and thus derived semi-major axis of composite as
+
+R = (total ang-mom/total mass)^2 /(1-e(new)^2)
+
+and the new composite gets to accrete any gas & dust available to its new
+orbit and mass.
+
+Repeat until no dust is left.
+
+* * * * *
+
+approximate climate modelling:-
+
+1) Assume earth-like greenhouse effect: Average temperature of 0-dimensional
+model is 288*(LS^0.25)/(semi-major axis of orbit ^ 0.5)
+
+2) Assume temperature dependent greenhouse effect. Assume some fraction of
+the planet's surface covered by water, say FW (I used 0.7 M/(R^2) M,R in
+Earth =1 units). The Black-body temperature is 0.9680555 of that from stage 1.
+Gravity is G = M/(R^2). base atmospheric pressure = G^2 (Assumption mass of
+volatiles proportional to mass of body; thus per unit area the amount of water
+or atmosphere goes as mass/area)
+
+Iterate from the temperature of stage 1. Call temperature this iteration T.
+
+Quantity of water vapour = exp(0.698*(T-288)) * FW/(0.7*G) excess
+(maximum = 1597900*G*FW = 100% cloud)
+Cloud cover, FC = 0.674286 * FW * Quantity of vater vapour
+Atmospheric pressure = G^2+0.00244*G*(quantity of water vapour - 1)
+Fraction of surface glaciated, FI = ((328-T)/70) ^ 5 ; limitied between 0&1
+
+Albedo = 0.52*FC+(1-FC)(0.7*FI + (1-FI)*(FW*0.04+(1-FW)*0.14)))
+
+Effective temperature = Black-body temperature*(1-Albedo)^).25
+Water greenhouse = Quantity of water vapour*pressure*(288/T)^0.5
+CO2 greenhouse = 4.60388*pressure*(288/T)^0.5
+Tau = 2.34*(Water greenhouse)^0.5 = 0.15*(CO2 greenhouse)^0.5
+
+Temperature with this greenhouse value Tg is given by
+
+Effective temperature * (1 + 0.43 * ((1+0.75*Tau)^0.25))
+
+Set T to 0.9*T+0.1*Tg and continue the iteration until T stabilises.
+
+* * * *
+
+The following is based on an algorithm by Henderson-Sellers in an introductory
+textbook to climate modelling, the reference to which I don't have to hand.
+I've not worked on this for a while, but it looks like I started, but didn't
+finish, attempting to model seasonal effects.
+
+implicit real*8 (a-h,o-z)
+character*16 name
+dimension range(10)
+c
+10 continue
+C read planet radius (earths), nominal temperature (k), dummy value, dummy
+C value, orbital radius(AU), star mass (solar units), orbital eccentricity &
+C fraction of surface covered with water
+read(1,*,end=999) rp,tnom,rlam,phi,starr,starm,eps,fw
+read(1,9000) name
+9000 format(a16)
+c
+write(2,9100) name
+write(6,9100) name
+9100 format(//,5x,a21)
+c
+q = tnom/288.0d0
+tnom = tnom -273.0d0
+q = 342.5 * q * q * q * q
+a = 204.0d0
+b = 2.17d0
+rk = 3.8d0/(rp*rp)
+c = 1.63d0 * starr*dsqrt(starr/starm)
+t0 = -13.0d0*fw
+t0 = -10.0d0*fw/0.7d0
+a0 = 0.7
+a1 = 0.4
+c
+pi = 4.0*datan(1.0d0)
+rlhs = (b+rk)*t0 + a*(1.0d0 + (rk/b))
+rlhs = ((rlhs/q) - rk*a1/b)*(pi/2.0d0)
+c1 = (a0+a1)
+c2 = (a0-a1)*rk/b
+c
+halfpi = pi/2.0d0
+f0 = c1 - rlhs
+fh = halfpi*c2 - rlhs
+c
+s = -(c1 - dsqrt(c1*c1+16.0d0*c2*c2))/(4.0d0*c2)
+th = 0.0d0
+if(s.le.1.0d0) th = dasin(s)
+fth = c1*dcos(th) + c2*(th+dsin(th)*dcos(th))
+& - rlhs
+c
+if (fh .ge. 0.0d0) then
+theta0 = halfpi
+goto 20
+else
+if(f0 .le. 0.0) then
+if(fth .gt. 0.0d0) goto 40
+theta0 = 0.0d0
+goto 20
+endif
+endif
+c
+40 continue
+fold = fh
+theta0 = halfpi
+do k = 1,50
+theta = halfpi*float(50-k)*0.02d0
+fth = c1*dcos(theta) + c2*(theta+dsin(theta)*dcos(theta))
+& - rlhs
+write(6,5000) theta,fth
+5000 format(2(2x,f10.4))
+if( (fth*fold.lt.0.0d0).and.(fth.gt.0.0d0)) then
+theta0 = theta
+goto 60
+endif
+fold = fth
+enddo
+20 continue
+write(6,9001)
+write(2,9001)
+9001 format(' defaulted')
+goto 100
+c
+60 continue
+fth = c1*dcos(theta0) + c2*(theta0+dsin(theta0)*dcos(theta0))
+& - rlhs
+fpth = -c1*dsin(theta0) + c2*(1.0d0+dcos(2.0d0*theta0))
+dth = -fth/fpth
+c
+theta0 = theta0+dth
+write(6,9999) theta0
+c
+if( dabs(dth) .gt. 0.0001) goto 60
+c
+100 continue
+write(6,9999) theta0
+9999 format(1x,f10.3)
+if(theta0 .gt. pi/2.0d0) theta0 = pi/2.0d0
+if(theta0 .lt. 0.0d0) theta0 = 0.0d0
+thdeg = theta0*180.0d0/pi
+c
+write(2,9200) thdeg,tnom
+9200 format(' Ice above latitude ',f5.1,' Nominal temp = ',f6.1)
+c
+sigma = a1 + 2.0d0*(a0-a1)*(theta0+dsin(theta0)*dcos(theta0))/pi
+z = (q*sigma-a)/b
+xy = 2.0d0*eps*q*sigma/(b*b+c*c)
+x = xy*c
+y = xy*b
+c
+write(2,9300) z,x,y
+9300 format(' T_bar = ',f6.2,' + ',f6.2,'sin(t-\) + ',f6.2,'cos(t-\)')
+c
+z1 = 4.0d0*q/(pi*(b+rk))
+z2 = ( -(rk*q*sigma/b) + a*(1.0d0+(rk/b)) )/(b+rk)
+c
+write(2,9400) z1, z2
+9400 format(' annual mean = ',f6.2,'*a*cos - ',f6.2)
+tx = z1*(a1+a0)*dcos(theta0)*0.5d0 - z2
+write(2,9410) tx, t0
+9410 format(' t(ice) = ',f6.2,' t_crit = ',f6.2)
+do k = 1, 10
+ax = a0
+if (10*(k-1) .gt. thdeg) ax = a1
+range(k) = z1*ax*cosd(10.0*float(k-1)) - z2
+end do
+write (2,9411) (range(k),k=1,10)
+9411 format(10(2x,f5.1))
+c
+del = ((b+rk)*(b+rk)+c*c)
+fac = 2.0d0*eps*q/del
+d2 = (b*b + c*c)
+rksc = -rk*sigma*c
+c
+x1 = 4.0d0*fac/pi
+y1 = x1 * (b+rk)
+x1 = x1 * c
+x2 = -fac*rksc*(c+b+rk)/d2
+c
+write(2,9500) x1, x2
+9500 format(' sin(t-\) coeff= ',f6.2,'*a*cos + ',f6.2)
+c
+c
+y2 = -fac*rksc*(-c+b+rk)/d2
+c
+write(2,9600) y1, y2
+9600 format(' cos(t-\) coeff= ',f6.2,'*a*cos + ',f6.2)
+c
+goto 10
+999 continue
+stop ' '
+end

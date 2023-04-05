@@ -13,7 +13,7 @@
   #define VERBOSE
 */
 
-// /*  These are all of the global variables used during accretion:  */
+/*  These are all of the global variables used during accretion:  */
 float anum;
 planet_pointer planet_head;
 double stellar_mass_ratio, stellar_luminosity_ratio, main_seq_life;
@@ -31,20 +31,23 @@ srand (trec.tm_sec);
 }
 
 
+
+#include "utils.c"
+#include "accrete.c"
+#include "display.c"
+#include "enviro.c"
+
 void generate_stellar_system()
 {
-     fprintf(stderr,"DEBUG-10\n");
      planet_pointer planet;
      radians_per_rotation = 2.0 * PI;
      stellar_mass_ratio = random_number(0.6,1.3);
      stellar_luminosity_ratio = luminosity(stellar_mass_ratio);
-	 fprintf(stderr,"DEBUG-11\n");
      planet = distribute_planetary_masses(stellar_mass_ratio,stellar_luminosity_ratio,0.0,stellar_dust_limit(stellar_mass_ratio));
- 	 fprintf(stderr,"DEBUG-12\n");
      main_seq_life = 1.0E10 * (stellar_mass_ratio / stellar_luminosity_ratio);
      if ((main_seq_life >= 6.0E9))
 	  age = random_number(1.0E9,6.0E9);
-     else
+     else 
 	  age = random_number(1.0E9,main_seq_life);
      r_ecosphere = sqrt(stellar_luminosity_ratio);
      r_greenhouse = r_ecosphere * GREENHOUSE_EFFECT_CONST;
@@ -56,7 +59,7 @@ void generate_stellar_system()
 	       planet->density = empirical_density(planet->mass,planet->a,planet->gas_giant);
 	       planet->radius = volume_radius(planet->mass,planet->density);
 	  }
-	  else
+	  else 
 	  {
 	       planet->radius = kothari_radius(planet->mass,planet->a,planet->gas_giant,planet->orbit_zone);
 	       planet->density = volume_density(planet->mass,planet->radius);
@@ -80,7 +83,7 @@ void generate_stellar_system()
 	       planet->albedo = about(GAS_GIANT_ALBEDO,0.1);
 	       planet->surface_temp = INCREDIBLY_LARGE_NUMBER;
 	  }
-	  else
+	  else 
 	  {
 	       planet->surface_grav = gravity(planet->surface_accel);
 	       planet->greenhouse_effect = greenhouse(planet->orbit_zone,planet->a,r_greenhouse);
@@ -88,21 +91,18 @@ void generate_stellar_system()
 	       planet->surface_pressure = pressure(planet->volatile_gas_inventory,planet->radius,planet->surface_grav);
 	       if ((planet->surface_pressure == 0.0))
 		    planet->boil_point = 0.0;
-	       else
+	       else 
 		    planet->boil_point = boiling_point(planet->surface_pressure);
 	       iterate_surface_temp(&(planet));
 	  }
 	  planet = planet->next_planet;
      }
-     printf("DEBUG-2");
      display_system( );
 }
 
 
 int main () {
-     fprintf(stderr,"DEBUG-00\n");
      init();
-     fprintf(stderr,"DEBUG-01\n");
      generate_stellar_system();
      return 0;
 }

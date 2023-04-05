@@ -1,23 +1,15 @@
-+9# Branch Stubs
+# +9 Branch Stubs
 
-###[Accrete](https://groups.google.com/forum/#!topic/rec.arts.sf.science/MqgYTuIf13w)
+## Up-to-Date Compile/Run Status
 
-- Resource Name: 1996 - Erik Max Francis - Accrete
-- Author: Erik Max Francis
-- Poster/Publisher: Erik Max Francis
-- Language: C
-- Creation Year: <= 1996
-- Source Year: 1996
-- Parents:  Burdick.1994.A / Nyrath.1995 / Burdick.1995
-- Original Source: Complete.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
-- Key: Francis.1996
+- Module: No
+- Latest Version: N/A
+- Compiles: See individual variants
+- Runs: See individual variants
 
-Erik Max Francis produced a slightly modified version of Burdick's code that prints it's output slightly differently. It seems to extends from the first 
-generation code line but I am unsure as to which variant is the closest to being the actual parent.
+## Versions
 
-###[Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
+### [Accrete2](https://web.archive.org/web/20120201000000*/http://markjstock.org/progs/accrete2.tar.gz)
 
 - Resource Name: 1998 - Mark J. Stock - Acrete2
 - Author: Mark J. Stock
@@ -33,7 +25,7 @@ generation code line but I am unsure as to which variant is the closest to being
 
 One of Mat Burdick's versions hacked about by Mark J. Stock. 
 
-###[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
+### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
 
 - Resource Name: 2001 - Jon Leech - Accrete
 - Author: Jon Leech
@@ -53,7 +45,7 @@ is no longer stored there.
 I have acquired a version of it from Ian Burrell's [website](http://znark.com/create/accrete.html), though I do not know if there have been any changes in 
 the meantime.
 
-###[Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
+### [Accrete](http://seegras.discordia.ch/Roleplay/Traveller/Software/Accrete.tgz)
 
 - Resource Name: 2003 - Chuck Swiger - Accrete
 - Author: Chuck Swiger

@@ -1,7 +1,3 @@
-#include <stdlib.h>
-#include <math.h>
-#include "structs.h"
-#include "const.h"
 
 /*----------------------------------------------------------------------*/
 /*                           BIBLIOGRAPHY                               */
@@ -44,19 +40,19 @@ double inner_limit_of_dust, outer_limit_of_dust;
 }
 
 double stellar_dust_limit(stellar_mass_ratio)
-double stellar_mass_ratio;
+double stellar_mass_ratio; 
 {
      return(200.0 * pow(stellar_mass_ratio,(1.0 / 3.0)));
 }
 
 double innermost_planet(stellar_mass_ratio)
-double stellar_mass_ratio;
+double stellar_mass_ratio; 
 {
      return(0.3 * pow(stellar_mass_ratio,(1.0 / 3.0)));
 }
 
 double outermost_planet(stellar_mass_ratio)
-double stellar_mass_ratio;
+double stellar_mass_ratio; 
 {
      return(50.0 * pow(stellar_mass_ratio,(1.0 / 3.0)));
 }
@@ -78,7 +74,7 @@ double inside_range, outside_range;
 {
      dust_pointer current_dust_band;
      int dust_here;
-
+     
      current_dust_band = dust_head;
      while ((current_dust_band != NULL)
 	    && (current_dust_band->outer_edge < inside_range))
@@ -98,13 +94,13 @@ void update_dust_lanes(min, max, mass, crit_mass,
 		       body_inner_bound, body_outer_bound)
 double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 {
-     int gas;
+     int gas; 
      dust_pointer node1, node2, node3;
-
+     
      dust_left = FALSE;
      if ((mass > crit_mass))
 	  gas = FALSE;
-     else
+     else 
 	  gas = TRUE;
      node1 = dust_head;
      while ((node1 != NULL))
@@ -116,7 +112,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 	       node2->outer_edge = max;
 	       if ((node1->gas_present == TRUE))
 		    node2->gas_present = gas;
-	       else
+	       else 
 		    node2->gas_present = FALSE;
 	       node2->dust_present = FALSE;
 	       node3 = (dust_bands *)malloc(sizeof(dust_bands));
@@ -130,7 +126,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 	       node1->outer_edge = min;
 	       node1 = node3->next_band;
 	  }
-	  else
+	  else 
 	       if (((node1->inner_edge < max) && (node1->outer_edge > max)))
 	       {
 		    node2 = (dust_bands *)malloc(sizeof(dust_bands));
@@ -143,12 +139,12 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 		    node1->outer_edge = max;
 		    if ((node1->gas_present == TRUE))
 			 node1->gas_present = gas;
-		    else
+		    else 
 			 node1->gas_present = FALSE;
 		    node1->dust_present = FALSE;
 		    node1 = node2->next_band;
 	       }
-	       else
+	       else 
 		    if (((node1->inner_edge < min) && (node1->outer_edge > min)))
 		    {
 			 node2 = (dust_bands *)malloc(sizeof(dust_bands));
@@ -156,7 +152,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 			 node2->dust_present = FALSE;
 			 if ((node1->gas_present == TRUE))
 			      node2->gas_present = gas;
-			 else
+			 else 
 			      node2->gas_present = FALSE;
 			 node2->outer_edge = node1->outer_edge;
 			 node2->inner_edge = min;
@@ -164,7 +160,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 			 node1->outer_edge = min;
 			 node1 = node2->next_band;
 		    }
-		    else
+		    else 
 			 if (((node1->inner_edge >= min) && (node1->outer_edge <= max)))
 			 {
 			      if ((node1->gas_present == TRUE))
@@ -172,7 +168,7 @@ double min, max, mass, crit_mass, body_inner_bound, body_outer_bound;
 			      node1->dust_present = FALSE;
 			      node1 = node1->next_band;
 			 }
-			 else
+			 else 
 			      if (((node1->outer_edge < min) || (node1->inner_edge > max)))
 				   node1 = node1->next_band;
      }
@@ -203,7 +199,7 @@ double last_mass, a, e, crit_mass;
 dust_pointer dust_band;
 {
      double mass_density, temp1, temp2, temp, temp_density, bandwidth, width, volume;
-
+     
      temp = last_mass / (1.0 + last_mass);
      reduced_mass = pow(temp,(1.0 / 4.0));
      r_inner = inner_effect_limit(a, e, reduced_mass);
@@ -212,15 +208,15 @@ dust_pointer dust_band;
 	  r_inner = 0.0;
      if ((dust_band == NULL))
 	  return(0.0);
-     else
+     else 
      {
 	  if ((dust_band->dust_present == FALSE))
 	       temp_density = 0.0;
-	  else
+	  else 
 	       temp_density = dust_density;
 	  if (((last_mass < crit_mass) || (dust_band->gas_present == FALSE)))
 	       mass_density = temp_density;
-	  else
+	  else 
 	       mass_density = K * temp_density / (1.0 + sqrt(crit_mass / last_mass)
 						  * (K - 1.0));
 	  if (((dust_band->outer_edge <= r_inner)
@@ -259,7 +255,7 @@ double critical_limit(orbital_radius, eccentricity, stellar_luminosity_ratio)
 double orbital_radius, eccentricity, stellar_luminosity_ratio;
 {
      double temp, perihelion_dist;
-
+     
      perihelion_dist = (orbital_radius - orbital_radius * eccentricity);
      temp = perihelion_dist * sqrt(stellar_luminosity_ratio);
      return(B * pow(temp,-0.75));
@@ -273,7 +269,7 @@ double *seed_mass, a, e, crit_mass,
      body_inner_bound, body_outer_bound;
 {
      double perihelion_dist, new_mass, temp_mass;
-
+     
      new_mass = (*seed_mass);
      do
      {
@@ -295,9 +291,9 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
      body_inner_bound, body_outer_bound;
 {
      planet_pointer node1, node2, node3;
-     int coalesced;
+     int coalesced; 
      double temp, dist1, dist2, a3;
-
+     
      coalesced = FALSE;
      node1 = planet_head;
      while ((node1 != NULL))
@@ -312,7 +308,7 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 	       dist2 = node1->a
 		    - (node1->a * (1.0 - node1->e) * (1.0 - reduced_mass));
 	  }
-	  else
+	  else 
 	  {
 	       dist1 = a - (a * (1.0 - e) * (1.0 - reduced_mass));
 	       /* x perihelion */
@@ -342,7 +338,7 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 	       node1 = NULL;
 	       coalesced = TRUE;
 	  }
-	  else
+	  else 
 	       node1 = node1->next_planet;
      }
      if (!(coalesced))
@@ -352,7 +348,7 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 	  node3->e = e;
 	  if ((mass >= crit_mass))
 	       node3->gas_giant = TRUE;
-	  else
+	  else 
 	       node3->gas_giant = FALSE;
 	  node3->mass = mass;
 	  if ((planet_head == NULL))
@@ -360,7 +356,7 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 	       planet_head = node3;
 	       node3->next_planet = NULL;
 	  }
-	  else
+	  else 
 	  {
 	       node1 = planet_head;
 	       if ((a < node1->a))
@@ -368,13 +364,13 @@ double a, e, mass, crit_mass, stellar_luminosity_ratio,
 		    node3->next_planet = node1;
 		    planet_head = node3;
 	       }
-	       else
+	       else 
 		    if ((planet_head->next_planet == NULL))
 		    {
 			 planet_head->next_planet = node3;
 			 node3->next_planet = NULL;
 		    }
-		    else
+		    else 
 		    {
 			 while (((node1 != NULL) && (node1->a < a)))
 			 {
@@ -395,7 +391,7 @@ double stellar_mass_ratio, stellar_luminosity_ratio, inner_dust, outer_dust;
 {
      double a, e, mass, crit_mass,
      planetesimal_inner_bound, planetesimal_outer_bound;
-
+     
      set_initial_conditions(inner_dust,outer_dust);
      planetesimal_inner_bound = innermost_planet(stellar_mass_ratio);
      planetesimal_outer_bound = outermost_planet(stellar_mass_ratio);

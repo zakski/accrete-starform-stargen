@@ -1,7 +1,3 @@
-#include <stdlib.h>
-#include <math.h>
-#include "const.h"
-
 /*----------------------------------------------------------------------*/
 /*  This function returns a random real number between the specified    */
 /* inner and outer bounds.                                              */
@@ -10,8 +6,8 @@
 double random_number (inner, outer)
 double inner, outer;
 {
-     double range;
-
+     double range; 
+     
      range = outer - inner;
      return((((double)rand()) / (double)(RAND_MAX)) * range + inner);
 }
