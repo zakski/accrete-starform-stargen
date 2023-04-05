@@ -52,8 +52,17 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Burdick Version: n/a
 - Key: Keris.1999
 
-A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for normal planets to give some sort of 
-atmosphere, it seems to work reasonably. The output formats are (of course) totally different from starform. 
+A version based on Andrew Folkins, hacked about by Keris, removing some of his optimisations and added gas accretion for 
+normal planets to give some sort of atmosphere, it seems to work reasonably. The output formats are (of course) totally 
+different from starform. 
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Linux (WSL2): Runs successfully.
 
 ####[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
 - Resource Name: 2000 - Keris - Accretion v2
