@@ -1,4 +1,4 @@
-# Gilham - Acrete (basic)
+# Acrete (basic)
 
 This is Steve Gilham's first iteration, published in White Dwarf back in 1984. 
 
