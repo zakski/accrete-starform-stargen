@@ -29,5 +29,5 @@ Source Code is written in C. As is, it may need modifications to run on modern s
 compiler may need to be persuaded as to what PI is. A switch was made to output the data as a file, rather than on 
 console.
 
-see [here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete.md) for the status on Burdick's
+see [here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete%20-%201.x%20-%20core.md) for the status on Burdick's
 latest accrete code

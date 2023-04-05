@@ -46,7 +46,7 @@ This project is split into three sections:
 
 This section contains a brief list of the current codelines in progess of or completely added to Git.
 
-1. [Burdick/Accrete](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete.md)
+1. [Burdick/Accrete](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete%20-%201.x%20-%20core.md)
 2. [Burdick/Accrete2](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete2.md)
 3. [Burke](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/burke.md)
 4. [Burrell](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/burrell.md)

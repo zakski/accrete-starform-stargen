@@ -20,7 +20,7 @@
 - Parents: Fogg.1985
 - Original Source: Acquired.
 - Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
-- Burdick Version: n/a
+- Burdick Version: 1.x
 - Key: Burdick.1988
 
 Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone
@@ -80,7 +80,7 @@ the code is incomplete.
 - Parents: Gilham.1988
 - Original Source: Complete.
 - Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
-- Burdick Version: n/a
+- Burdick Version: 1.x
 - Key: Burdick.1994.A
 
 One of Mat Burdick's C versions which is commonly distributed as accrete.
@@ -106,7 +106,7 @@ comparison.
 - Parents: Burdick.1994.A
 - Original Source: Acquired.
 - Reproducibility: [Reproducible.](/docs/notes/build descriptions/1990s/1995%20-%20Nyrath.1995.md).
-- Burdick Version: n/a
+- Burdick Version: 1.x
 - Key: Nyrath.1995
 
 Nyrath, like Burrell and a few others, has a cached copy of Burdick's accrete program. This version is dated as been 
@@ -138,7 +138,7 @@ last modified later than Burrell's copy, so we have a potential version order be
 - Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
-- Burdick Version: n/a
+- Burdick Version: 1.x
 - Key: Keel.1999.A
 
 A version cached by Peter Keel on his traveller rpg site.

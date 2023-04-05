@@ -128,7 +128,7 @@ References are stored in [2.0 accrete.bib](/docs/models/references/bib/2.0 accre
 - Parent: Burdick.1988
 - Original Source: Incomplete.
 - Reproducibility: [Partially Reproducible](/docs/notes/build%20descriptions/1960s%20-%201980s/1988%20-%20Gilham.1988.md).
-- Burdick Version: None
+- Burdick Version: 1.x
 - Key: Gilham.1988
 
 A version of Matt Burdick's code, ported by him to C from pascal. Was posted to a usernet newsgroup by Steve 
@@ -183,7 +183,7 @@ Gilham re-wrote his variant in psuedocode in response to a request on usenet in 
 - Parents: Gilham.1988
 - Original Source: Complete.
 - Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1994A.md)
-- Burdick Version: n/a
+- Burdick Version: 1.x
 - Key: Burdick.1994.A
 
 One of Mat Burdick's C versions which is commonly distributed as accrete.
@@ -202,7 +202,7 @@ comparison.
 - Parents: Fogg.1985
 - Original Source: Acquired.
 - Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
-- Burdick Version: n/a
+- Burdick Version: 1.x
 - Key: Burdick.1988
 
 Mat Burdick's simulation reversed engineered from Dole and Fogg's papers. The main fork of source code that everyone 
@@ -269,7 +269,7 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Parents: Burdick.1994.A
 - Original Source: Acquired.
 - Reproducibility: [Reproducible.](/docs/notes/build descriptions/1990s/1995%20-%20Nyrath.1995.md).
-- Burdick Version: n/a
+- Burdick Version: 1.x
 - Key: Nyrath.1995
 
 Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of
@@ -316,10 +316,10 @@ that has not evolved along the burdick branch.
 - Language: C
 - Creation Year: <= 1996
 - Source Year: 1996
-- Parents:  Burdick.1994.A / Nyrath.1995 / Burdick.1995
+- Parents:  Burdick.1994.A / Nyrath.1995
 - Original Source: Complete.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
+- Reproducibility: [Reproducible.](/docs/notes/build descriptions/1990s/1996%20-%20Francis.1996.md).
+- Burdick Version: 1.x
 - Key: Francis.1996
 
 Erik Max Francis produced a slightly modified version of Burdick's code that prints it's output slightly differently. It 
