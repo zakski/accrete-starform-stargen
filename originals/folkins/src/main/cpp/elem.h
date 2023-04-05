@@ -1,9 +1,9 @@
-#ifndef _LIST_H
-#define _LIST_H
+#ifndef _ELEM_H
+#define _ELEM_H
 
 /*
-  list.h
-  Copyright Chris Croughton 1998
+  elem.h
+  Copyright Chris Croughton, 1999
   Internet: chris@keris.demon.co.uk
 
   Redistribution and use in source and binary forms, with or without
@@ -44,46 +44,66 @@
 */
 
 /*
-  $RCSfile: list.h,v $
+  $RCSfile: elem.h,v $
     
-  $Date: 1999/04/21 13:28:56 $
-  $Revision: 1.1 $
+  $Date: 2000/01/20 10:23:15 $
+  $Revision: 2.0 $
           
-  $Log: list.h,v $
-  Revision 1.1  1999/04/21 13:28:56  ccrough
+  $Log: elem.h,v $
+  Revision 2.0  2000/01/20 10:23:15  chrisc
+  Start of MKS conversion
+
+  Revision 1.1  2000/01/20 10:13:49  chrisc
+  Initial revision
+
+  Revision 1.1  1999/11/29 13:21:57  chrisc
   Initial revision
 
 */
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include <ctype.h>
+#ifdef PROP_GEN
+typedef XString     StrType;
+typedef struct ElemBasics  Basics;
+typedef struct ElemThermal Thermal;
+typedef struct ElemAbund   Abund;
+typedef struct ElemData    Data;
+#else
+typedef const char *StrType;
+#endif
 
-typedef struct List List;
-typedef struct Node Node;
-
-struct Node
+struct ElemBasics
 {
-  List *list;
-  Node *prev;
-  Node *next;
-  int   num;
+  StrType symbol;
+  StrType name;
+  double  weight;
 };
 
-struct List
+struct ElemThermal
 {
-  Node *head;
-  Node *tail;
+  double melt;
+  double boil;
+  double crit;
+  double supercond;
 };
 
-int listInit(List *list);
-int listFree(List *list);
-int listAddHead(List *list, Node *node);
-int listAddTail(List *list, Node *node);
-int listInsBefore(List *list, Node *curr, Node *node);
-int listInsAfter(List *list, Node *curr, Node *node);
-int listDelete(Node *node);
+struct ElemAbund
+{
+  double universe;
+  double solar;
+  double meteorite;
+  double crustal;
+  double sea;
+  double stream;
+  double human;
+};
+
+struct ElemData
+{
+  ElemBasics  b;
+  ElemThermal t;
+  ElemAbund   a;
+  ElemAbund   m;
+};
 
 #endif
+

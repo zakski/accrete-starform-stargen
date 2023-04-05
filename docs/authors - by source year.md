@@ -444,7 +444,7 @@ One of Mat Burdick's versions hacked about by Mark J. Stock.
 - Source Year: 1999
 - Parents: Folkins.1988
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1999%20-%20Keris.1999.md).
 - Burdick Version: n/a
 - Key: Keris.1999
 
@@ -492,7 +492,7 @@ A version cached by Peter Keel on his traveller rpg site.
 - Source Year: 2000
 - Parents: Keris.1999
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2000s/2000%20-%20Keris.2000.A.md).
 - Burdick Version: n/a
 - Key: Keris.2000.A
 

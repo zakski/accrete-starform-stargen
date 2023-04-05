@@ -6,8 +6,8 @@
 - Latest Version: Keris.2000.A
 - Compiles:
     - On Mac: ???
-    - On Windows: ???
-    - On Linux (WSL2): ???
+    - On Windows: No, need to target version/build env Keris used
+    - On Linux (WSL2): No, need to target version/build env Keris used
 - Runs:
     - ???
 
@@ -48,7 +48,7 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Source Year: 1999
 - Parents: Folkins.1988
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1999%20-%20Keris.1999.md).
 - Burdick Version: n/a
 - Key: Keris.1999
 
@@ -64,7 +64,7 @@ different from starform.
 - Runs:
   - On Linux (WSL2): Runs successfully.
 
-####[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+### [Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
 - Resource Name: 2000 - Keris - Accretion v2
 - Author: Chris "Keris" Croughton
 - Poster/Publisher: Chris "Keris" Croughton
@@ -73,8 +73,16 @@ different from starform.
 - Source Year: 2000
 - Parents: Keris.1999
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2000s/2000%20-%20Keris.2000.A.md).
 - Burdick Version: n/a
 - Key: Keris.2000.A
 
 This is Andrew Folkins' code again, but converted to C++. It's even more hacked about.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???
+  - On Windows: No, need to target version/build env Keris used
+  - On Linux (WSL2): No, need to target version/build env Keris used
+- Runs:
+  - ???

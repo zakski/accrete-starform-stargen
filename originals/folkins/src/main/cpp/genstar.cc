@@ -10,9 +10,26 @@
  * Author : Andrew Folkins
  *
  * This code is public domain, see the file 'display.c'.
+ *
+ * $Log: genstar.cc,v $
+ * Revision 2.4  2000/02/22 16:25:49  chrisc
+ * Alter debugging printfs in start details
+ *
+ * Revision 2.3  2000/02/03 17:39:06  chrisc
+ * Add routines to generate a star from existing data (mass primarily).
+ *
+ * Revision 2.2  2000/01/21 18:10:15  chrisc
+ * Add temperature, age, lifetime and radius
+ *
+ * Revision 2.1  2000/01/20 17:55:26  chrisc
+ * Converted to MKS
+ *
  */
 
+#include <time.h>
+
 #include "system.h"
+#include "const.h"
 
 #ifdef MAIN
 #include <stdio.h>
@@ -22,7 +39,7 @@ struct Star star;
 
 #define MINMAG -7
 #define MAXMAG 16
-#define N_SPC_CLASS 7
+#define N_SPC_CLASS 9
 #define N_MAG_CLASS 24
 #define N_LUM_CLASS 8
 
@@ -116,21 +133,78 @@ float   StarCounts[N_MAG_CLASS][N_SPC_CLASS] =
  */
 float   LClassMag[N_LUM_CLASS][N_SPC_CLASS] =
 {
-/*   O      B       A      F      G      K      M */
-  {-6.5,  -6.5,   -6.5,  -6.5,  -6.5,  -6.5,  -6.5},	/* Ia */
-  {-6.0,  -6.0,   -5.0,  -5.0,  -5.0,  -5.0,  -5.0},	/* Ib */
-  {-5.0,  -3.5,   -3.0,  -2.0,  -2.0,  -2.5,  -2.5},	/* II */
-  {-4.0,  -3.0,   -0.5,   1.5,   2.5,   3.0,   2.0},	/* III */
-  {-3.0,  -2.0,    0.5,   2.5,   3.5,   5.5,   2.0},	/* IV */
-  {-1.0,   2.0,    2.5,   5.0,   7.0,  10.0,  14.0},	/* V */
-  { 1.0,   4.0,    5.0,   9.0,  10.0,  20.0,  20.0},	/* VI */
-  {20.0,  20.0,   20.0,  20.0,  20.0,  20.0,  20.0},	/* VII */
+  /* O      B       A      F      G      K      M      L      T */
+  {-6.5,  -6.5,   -6.5,  -6.5,  -6.5,  -6.5,  -6.5,  -6.5,  -6.5}, /* Ia  */
+  {-6.0,  -6.0,   -5.0,  -5.0,  -5.0,  -5.0,  -5.0,  -5.0,  -5.0}, /* Ib  */
+  {-5.0,  -3.5,   -3.0,  -2.0,  -2.0,  -2.5,  -2.5,  -2.5,  -2.5}, /* II  */
+  {-4.0,  -3.0,   -0.5,   1.5,   2.5,   3.0,   2.0,   2.0,   2.0}, /* III */
+  {-3.0,  -2.0,    0.5,   2.5,   3.5,   5.5,   6.0,   6.0,   6.0}, /* IV  */
+  {-1.0,   2.0,    2.5,   5.0,   7.0,  10.0,  14.0,  14.0,  14.0}, /* V   */
+  { 1.0,   4.0,    5.0,   9.0,  10.0,  20.0,  20.0,  20.0,  20.0}, /* VI  */
+  {20.0,  20.0,   20.0,  20.0,  20.0,  20.0,  30.0,  40.0,  60.0}, /* VII */
 };
 
-char    SpectralClass[7] =
-{'O', 'B', 'A', 'F', 'G', 'K', 'M'};
+double Lifetime[N_SPC_CLASS+1] =
+{
+    1e6 * Year,
+   11e6 * Year,
+  440e6 * Year,
+    3e9 * Year,
+    8e9 * Year,
+   17e9 * Year,
+   56e9 * Year,
+  100e9 * Year,
+  100e9 * Year,
+  100e9 * Year,
+};
+
+double Temperature[N_SPC_CLASS+1] =
+{
+  /* O     B       A       F      G      K      M      L     T    X */     
+  1e10,  30000,  12000,  7500,  6000,  5000,  3500,  2000, 1500, 800
+};
+
+double StarDensity[N_SPC_CLASS+1] =
+{
+  0.01, 0.1, 0.3, 1.0, 1.4, 1.8, 2.5, 3.0, 3.0, 3.0
+};
+
+char    SpectralClass[9] =
+{'O', 'B', 'A', 'F', 'G', 'K', 'M', 'L', 'T'};
+
 char   *LuminosityClass[8] =
 {"Ia ", "Ib ", "II ", "III", "IV ", "V  ", "VI ", "VII"};
+
+double
+getLifetime(int mag, int spc, int sub)
+{
+  double life = Lifetime[spc];
+  double next = Lifetime[spc+1];
+  double frac = pow(next / life, 0.1);
+  double rand = drand48() * mag/N_LUM_CLASS + sub;
+  life *= pow(frac, rand);
+  return life;
+}
+
+double
+getTemperature(int spc, int sub)
+{
+  double temp = Temperature[spc];
+  double next = Temperature[spc+1];
+  double frac = pow(next / temp, 0.1);
+  double rand = drand48() + sub;
+  temp *= pow(frac, rand);
+  return temp;
+}
+
+int
+getSubclassFromTemp(int spc, double temp)
+{
+  double t = Temperature[spc];
+  double n = Temperature[spc+1];
+  double f = 10 * log(n / temp) / log(n/t);
+  return int(10-f);
+}
 
 /*
  * Compute a cumulative distribution from the values in StarCounts[][]
@@ -179,7 +253,7 @@ found:
 
   s->spc_class = SpectralClass[j];
   t = drand48();
-  s->spc_subclass = t * 10;	/* Give it a random subclass */
+  s->spc_subclass  = int(t * 10);	/* Give it a random subclass */
   s->abs_magnitude = MINMAG + i + t;
   /* Compute luminosity relative to Sun */
   s->luminosity = pow(2.5118, 4.7 - s->abs_magnitude);
@@ -187,7 +261,10 @@ found:
   for (i = 0; i < N_LUM_CLASS; i++)
     if (LClassMag[i][j] >= s->abs_magnitude)
       break;
+
   s->lum_class = i;
+  s->lifetime = getLifetime(s->lum_class, j, s->spc_subclass);
+  s->temperature = getTemperature(j, s->spc_subclass);
 
   switch (s->lum_class)
   {
@@ -197,23 +274,86 @@ found:
   case 3:
     /* Supergiants & giants */
     t = log(s->luminosity) + (drand48() / 5.0);
-    s->mass = exp(t / 3.0);
+    s->mass = exp(t / 3.0) * Msol;
     break;
   case 4:
   case 5:
   case 6:
     /* subgiants, dwarfs, subdwarfs */
     t = log(s->luminosity) + 0.1 + (drand48() / 5.0 - 0.1);
-    s->mass = exp(t / 4.1);
+    s->mass = exp(t / 4.1) * Msol;
     break;
   case 7:
     /* white dwarfs */
-    s->mass = 0.7 * drand48() + 0.6;
+    s->mass = (0.7 * drand48() + 0.6) * Msol;
     break;
   }
-  s->r_ecos = sqrt(s->luminosity);
+  s->r_ecos = sqrt(s->luminosity) * AU;
   s->r_inner = 0.93 * s->r_ecos;
   s->r_outer = 1.1 * s->r_ecos;	/* approximately */
+  s->age = s->lifetime * (drand48() * 0.9 + 0.05);
+
+  double lmod = s->luminosity / 6 + 0.1;
+  double density = 1.54 * pow(lmod, -0.33333333) * 1000;
+  s->radius = pow(s->mass / density, 0.33333333);
+  s->radius = Rsol * sqrt(s->luminosity) / pow(s->temperature/5500, 2);
+  s->mass   = PI*4/3 * pow(s->radius, 3) * density;
+}
+
+
+Star&
+GenStarDetails(Star& s)
+{
+  int spc_class = (s.mass > 0.084*Msol ? 6 : 7); // spc_class 'M'
+  s.spc_class = SpectralClass[spc_class];
+  s.spc_subclass = getSubclassFromTemp(spc_class, s.temperature);
+  if (spc_class < 7 && s.temperature < 2000)
+  {
+    printf("=== GenStarDetails  %c%d  %4.0f K\n", SpectralClass[spc_class], 
+	   s.spc_subclass, s.temperature);
+    getTemperature(spc_class, s.spc_subclass);
+  }
+  s.abs_magnitude = 4.7 - log(s.luminosity) / log(2.5118);
+  s.lum_class = N_LUM_CLASS - 1;
+  for (int i = 0; i < N_LUM_CLASS; i++)
+  {
+    if (LClassMag[i][spc_class] >= s.abs_magnitude)
+    {
+      s.lum_class = i;
+      break;
+    }
+  }
+  s.lifetime = getLifetime(s.lum_class, spc_class, s.spc_subclass);
+  s.r_ecos = sqrt(s.luminosity) * AU;
+  s.r_inner = 0.93 * s.r_ecos;
+  s.r_outer = 1.1 * s.r_ecos; /* approximately */
+  if (s.age > s.lifetime)
+    s.age = s.lifetime * (drand48() * 0.9 + 0.05);
+  double density = (3 - log(s.luminosity)/20) * 1000;
+  double radius = pow(3/(4*PI) * s.mass / density, 0.33333333);
+  s.radius = Rsol * sqrt(s.luminosity) / pow(s.temperature/5500, 2);
+  if (s.radius < radius)
+    s.radius = radius;
+  return s;
+}
+
+Star
+GenStarFromMass(double mass)
+{
+  Star s;
+  double t = log(mass/Msol) * 4.1;
+  int spc_class = (mass > 0.087*Msol ? 6 : 7);
+  int subclass = int(drand48() * 10);
+  s.mass = mass;
+  s.luminosity = exp(t - 0.1 - (drand48() / 5.0 - 0.1));
+  s.temperature = getTemperature(spc_class, subclass);
+  if (spc_class < 7 && s.temperature < 2000)
+  {
+    printf("=== GenStarFromMass %c%d  %4.0f K\n",
+	   SpectralClass[spc_class], subclass, s.temperature);
+    getTemperature(spc_class, subclass);
+  }
+  return GenStarDetails(s);
 }
 
 /*
@@ -222,7 +362,7 @@ found:
 void
 InitGenStar(void)
 {
-  short   seed[3];
+  unsigned short seed[3];
 
   seed[0] = time(NULL) >> 16;
   seed[1] = time(NULL) & 0xFFFF;
@@ -234,70 +374,27 @@ InitGenStar(void)
 
 #ifdef MAIN
 void
-PrintStar(s)
-struct Star *s;
+PrintStar(Star *s)
 {
   printf("%c%d %s ", s->spc_class, s->spc_subclass, LuminosityClass[s->lum_class]);
   printf("Abs mag  %5.2f  ", s->abs_magnitude);
   printf("Luminosity %10.3f  ", s->luminosity);
-  printf("Mass %8.5f ", s->mass);
+  printf("Mass %8.5f ", s->mass / Msol);
   printf("\n");
 }
 
 int
 main(int argc, char **argv)
 {
-  short   i;
-
-  for (i = 1; i < argc; i++)
+  for (int c = 0; c < N_SPC_CLASS; c++)
   {
-    if (argv[i][0] == '-')
+    for (int s = 0; s < 10; s++)
     {
-      switch (argv[i][1])
-      {
-        case 'S':
-          {
-            int i, j;
-            printf("{\n");
-            printf("/*  ");
-            for (j = 0; j < N_SPC_CLASS; j++)
-              printf("%7c  ", SpectralClass[j]);
-            printf("     Mag */\n");
-            for (i = 0; i < N_MAG_CLASS; i++)
-            {
-              printf("  { ");
-              for (j = 0; j < N_SPC_CLASS; j++)
-              {
-                char buff[16];
-                if (StarCounts[i][j] < 1)
-                {
-                  char *p;
-                  sprintf(buff, "%7.5f", StarCounts[i][j]);
-                  for (p = strchr(buff, 0); p - buff > 1; p--)
-                  {
-                    if (p[-1] == '0' || p[-1] == '.')
-                      p[-1] = 0;
-                    else
-                      break;
-                  }
-                }
-                else
-                  sprintf(buff, "%7.7g", StarCounts[i][j]);
-                printf("%7.7s%s ", buff, j==N_SPC_CLASS-1 ? "" : ",");
-              }
-              printf("}, /* %+3d */\n", i-7);
-            }
-            printf("};\n");
-          }
-          return 0;
-      }
+      double t = getTemperature(c, s);
+      int sub = getSubclassFromTemp(c, t);
+      printf("class %c%d   %8.0f  subclass %d  %s\n",
+	     SpectralClass[c], s, t, sub, s==sub ? "" : "***");
     }
-  }
-  InitGenStar();
-  for (i = 0; i < 20; i++)
-  {
-    GenStar(&star);
-    PrintStar(&star);
   }
   return 0;
 }

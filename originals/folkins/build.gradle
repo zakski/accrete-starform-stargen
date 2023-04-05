@@ -21,7 +21,7 @@ model {
                 cpp {
                     source {
                         srcDir "src/main/cpp"
-                        //include "**/*.cc"
+                        include "**/*.cc"
                     }
                     exportedHeaders {
                         srcDir "src/main/cpp"
