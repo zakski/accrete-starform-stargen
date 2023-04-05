@@ -1,6 +1,19 @@
 # Andrew Folkins Branch
 
-####[ACCRETION](http://reocities.com/CapeCanaveral/8191/usml.html)
+## Up-to-Date Compile/Run Status
+
+- Module: Yes, folkins
+- Latest Version: Keris.2000.A
+- Compiles:
+    - On Mac: ???
+    - On Windows: ???
+    - On Linux (WSL2): ???
+- Runs:
+    - ???
+
+## Versions
+
+### [ACCRETION](http://reocities.com/CapeCanaveral/8191/usml.html)
 - Resource Name: 1995 - Andrew Folkins - Accretion
 - Author: Andrew Folkins
 - Poster/Publisher: Steve Dang
@@ -9,16 +22,24 @@
 - Source Year: 1995
 - Parents: Dole.1969, Dole.1970
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1995%20-%20Folkins.1988.md).
 - Burdick Version: n/a
 - Key: Folkins.1988
 
-Andrew Folkins at some point published a version of accrete for the amiga, which was then modified by keris, unfortunately it was packed up in a shar which 
-has a different last modified date than the wrapping header info, so I am uncertain about this version's exact date.
+Andrew Folkins at some point published a version of accrete for the amiga.
+
+Unfortunately it was packed up in a shar which has a different last modified date than the wrapping header info, so I am 
+uncertain about this version's exact date.
 
 Like Steve Gilham, his line of code is at least initially distinct from Burdick's.
 
-####[Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
+#### Compile/Run Status
+- Compiles:
+  - N/A, written for the Amiga, not tested at this time.
+- Runs:
+  - N/A
+
+### [Accrete2](https://web.archive.org/web/20040905132355/http://firedrake.org/keris/stars/index.html)
 - Resource Name: 1999 - Keris - Accretion v1
 - Author: Chris "Keris" Croughton
 - Poster/Publisher: Chris "Keris" Croughton

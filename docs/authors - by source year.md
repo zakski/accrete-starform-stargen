@@ -249,7 +249,7 @@ Accrete2 and Starform are names given to this iteration fairly interchangeably.
 - Source Year: 1995
 - Parents: Dole.1969, Dole.1970
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1995%20-%20Folkins.1988.md).
 - Burdick Version: n/a
 - Key: Folkins.1988
 
