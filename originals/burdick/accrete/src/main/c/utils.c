@@ -6,8 +6,8 @@
 double random_number (inner, outer)
 double inner, outer;
 {
-     double range;
-
+     double range; 
+     
      range = outer - inner;
      return((((double)rand()) / (double)(RAND_MAX)) * range + inner);
 }

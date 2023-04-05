@@ -28,6 +28,4 @@ typedef struct planets_record {
     double ice_cover;		/* fraction of surface covered	     */
     planet_pointer first_moon;
     planet_pointer next_planet;
-    } planets;
-
-
+} planets;

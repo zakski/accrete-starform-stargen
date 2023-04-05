@@ -37,7 +37,7 @@ void display_system()
 	       fprintf(f,"   Surface Pressure (in atmospheres): %5.3lf",(node1->surface_pressure / 1000.0));
 	       if ((node1->greenhouse_effect) && (node1->surface_pressure > 0.0))
 		    fprintf(f,"     RUNAWAY GREENHOUSE EFFECT\n");
-	       else
+	       else 
 		    fprintf(f,"\n");
 	       fprintf(f,"   Surface temperature (Celcius): %4.2lf\n",(node1->surface_temp - KELVIN_CELCIUS_DIFFERENCE));
 	       fprintf(f,"   Hydrosphere percentage: %6.2lf\n",(node1->hydrosphere * 100.0));

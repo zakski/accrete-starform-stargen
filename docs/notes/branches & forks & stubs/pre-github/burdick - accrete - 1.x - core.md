@@ -4,8 +4,12 @@
 
 - Module: Yes, burdick-accrete
 - Latest Version: Keel.1999.A
-- Compiles: Yes, With Import Changes
-- Runs: No, Hangs
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Linux (WSL2): Runs successfully.
 
 ## Versions
 
@@ -19,7 +23,7 @@
 - Source Year: 1994
 - Parents: Fogg.1985
 - Original Source: Acquired.
-- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick.1988.md)
 - Burdick Version: 1.x
 - Key: Burdick.1988
 
@@ -79,7 +83,7 @@ the code is incomplete.
 - Source Year: 1994
 - Parents: Gilham.1988
 - Original Source: Complete.
-- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick.1994.A.md)
 - Burdick Version: 1.x
 - Key: Burdick.1994.A
 
@@ -135,10 +139,24 @@ last modified later than Burrell's copy, so we have a potential version order be
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1999
-- Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995
+- Parents: Nyrath.1995
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1999%20-%20Keel.1999.A.md).
 - Burdick Version: 1.x
 - Key: Keel.1999.A
 
 A version cached by Peter Keel on his traveller rpg site.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Linux (WSL2): Runs successfully.
+
+## Follow Up
+The main progression of the source code continues 
+[here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete2.md) with Starform. Best guess is 
+it actually splits off from this 1.x branch in the late 80s to early 90s from code that looks similar to the 
+Burdick.1994.A variant.

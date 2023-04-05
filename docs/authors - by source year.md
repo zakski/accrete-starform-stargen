@@ -182,7 +182,7 @@ Gilham re-wrote his variant in psuedocode in response to a request on usenet in 
 - Source Year: 1994
 - Parents: Gilham.1988
 - Original Source: Complete.
-- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1994A.md)
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick.1994.A.md)
 - Burdick Version: 1.x
 - Key: Burdick.1994.A
 
@@ -201,7 +201,7 @@ comparison.
 - Source Year: 1994
 - Parents: Fogg.1985
 - Original Source: Acquired.
-- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick1988.md)
+- Reproducibility: [Reproducible.](/docs/notes/build%20descriptions/1990s/1994%20-%20Burdick.1988.md)
 - Burdick Version: 1.x
 - Key: Burdick.1988
 
@@ -457,10 +457,10 @@ different from starform.
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1999
-- Parents: Burdick.1994.A / Nyrath.1995 / Burdick.1995
+- Parents: Nyrath.1995
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
-- Burdick Version: n/a
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1999%20-%20Keel.1999.A.md).
+- Burdick Version: 1.x
 - Key: Keel.1999.A
 
 A version cached by Peter Keel on his traveller rpg site.
