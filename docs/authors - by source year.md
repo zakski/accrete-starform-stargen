@@ -227,7 +227,7 @@ Nevertheless, this codebase is the parent of the vast majority of variations tha
 - Source Year: 1994
 - Parents: Burdick.1994.A
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1994%20-%20Burdick.1994.B.md).
 - Burdick Version: V3.0
 - Key: Burdick.1994.B
 

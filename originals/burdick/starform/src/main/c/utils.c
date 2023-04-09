@@ -1,6 +1,5 @@
-#include        <math.h>
-#include        "config.h"
-#include        "const.h"
+#include	<math.h>
+#include	"const.h"
 
 /*----------------------------------------------------------------------*/
 /*  This function returns a random real number between the specified    */
@@ -11,7 +10,7 @@ double random_number(inner, outer)
 double inner, outer;
 {
      double range;
-
+     
      range = outer - inner;
      return((((double)rand()) / (double)(RAND_MAX)) * range + inner);
 }
@@ -30,5 +29,5 @@ double value, variation;
 
 double random_eccentricity()
 {
-	return(1.0 - pow(random_number(0.0, 1.0), ECCENTRICITY_COEFF));
+     return(1.0 - pow(random_number(0.0, 1.0),ECCENTRICITY_COEFF));
 }

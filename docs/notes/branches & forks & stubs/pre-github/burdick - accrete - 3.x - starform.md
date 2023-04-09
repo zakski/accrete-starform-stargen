@@ -9,17 +9,19 @@
 - Runs:
     - On Mac: Yes
 
-###[Starform](http://znark.com/create/accrete.html)
+## Versions
+
+### [Starform](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Starform
 - Author: Matt Burdick****
 - Poster/Publisher: Ian Burrell
-- Language: C
+- Language: C / Microsoft QuickC
 - Creation Year: 1988
 - Source Year: 1994
 - Parents: Burdick.1994.A
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1994%20-%20Burdick.1994.B.md).
 - Burdick Version: V3.0
 - Key: Burdick.1994.B
 
@@ -30,7 +32,16 @@ to detect a site belonging to him that still hosted his source code so third par
 
 Accrete2 and Starform are names given to this iteration fairly interchangeably.
 
-###[Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Passes
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Windows: Runs successfully.
+  - On Linux (WSL2): Hangs.
+
+### [Starform](http://reocities.com/CapeCanaveral/8191/usml.html)
 
 - Resource Name: 1995 - Matt Burdick - Starform
 - Author: Matt Burdick
