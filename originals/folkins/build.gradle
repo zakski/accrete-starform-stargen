@@ -24,7 +24,7 @@ model {
                         include "**/*.cc"
                     }
                     exportedHeaders {
-                        srcDir "src/main/headers"
+                        srcDir "src/main/cpp"
                     }
                 }
             }

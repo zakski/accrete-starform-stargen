@@ -15,15 +15,15 @@
 #define TRUE    1
 #define FALSE   0
 
-#include <cstdlib>
-#include <cmath>
+#include <stdlib.h>
+#include <math.h>
 
 #include <vector>
 #include <list>
 
 typedef struct Star     Star;
 typedef struct Planet   Planet;
-typedef std::vector<Planet>  PlanetList;
+typedef vector<Planet>  PlanetList;
 
 struct Object
 {
