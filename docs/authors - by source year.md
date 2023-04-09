@@ -477,7 +477,7 @@ A version cached by Peter Keel on his traveller rpg site.
 - Source Year: 1999
 - Parents: Burdick.1995
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1999%20-%20Keel.1999.B.md).
 - Burdick Version: V3.0
 - Key: Keel.1999.B
 
