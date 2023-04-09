@@ -285,11 +285,11 @@ version order between them.
 - Source Year: 1995
 - Parents: Burdick.1994.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1995%20-%20Burdick.1995.md).
 - Burdick Version: V3.0
 - Key: Burdick.1995
 
-TODO
+Sean Dang has a pretty unmodified version of 3.0 on his geocities page.
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
 

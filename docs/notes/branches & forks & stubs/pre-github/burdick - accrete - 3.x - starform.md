@@ -51,14 +51,22 @@ Accrete2 and Starform are names given to this iteration fairly interchangeably.
 - Source Year: 1995
 - Parents: Burdick.1994.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1995%20-%20Burdick.1995.md).
 - Burdick Version: V3.0
 - Key: Burdick.1995
 
-Nyrath, like Burrell and a few others, has a cached copy of what I assume is one of the first gen iterations of Burdick's accrete program. This version is 
-dated as been last modified later than Burrell's copy, so we have a potential version order between them. 
+Sean Dang has a pretty unmodified version of 3.0 on his geocities page.
 
-###[Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Passes
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Windows: Runs successfully.
+  - On Linux (WSL2): Hangs.
+
+### [Starform](http://seegras.discordia.ch/Roleplay/Traveller/Software/StarForm.tgz)
 
 - Resource Name: 1999 - Peter Keel - Starform
 - Author: Matt Burdick
