@@ -8,7 +8,7 @@
 
 ### In Recreation:
 
-- Source Code is incomplete. It is missing a couple of brackets and the like.
+- Source Code is incomplete. It is missing a couple of brackets and the like. 
 
 ## Compilation
-Source Code is written in C.
+Source Code is written in C. Needs to be slightly modified to compile.

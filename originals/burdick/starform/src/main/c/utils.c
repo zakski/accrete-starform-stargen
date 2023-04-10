@@ -31,3 +31,4 @@
         double random_eccentricity()
         {
              return(1.0 - pow(random_number(0.0, 1.0),ECCENTRICITY_COEFF));
+        }

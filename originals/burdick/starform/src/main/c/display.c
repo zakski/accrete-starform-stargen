@@ -263,14 +263,14 @@
                 printf("%s\n", CP);
         }
         
-        void display_system(system)
-        sys_pointer system;
+        void display_system(sys)
+        sys_pointer sys;
         {
                 if (flag_graphics)
-                        chart_system(system);
+                        chart_system(sys);
                 else if (flag_lisp)
-                        lisp_describe_system(system);
+                        lisp_describe_system(sys);
                 else
-                        text_describe_system(system);
+                        text_describe_system(sys);
         }
         

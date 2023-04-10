@@ -92,7 +92,7 @@ A mostly unmodified version cached by Peter Keel on his traveller rpg site.
 - Source Year: 1993
 - Parents: Keel.1999.B
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1993%20-%20Malloy.1993.md).
 - Burdick Version: V3.1
 - Key: Malloy.1993
 
@@ -114,10 +114,10 @@ precise place in the timeline.
 #### Compile/Run Status With Modification
 - Compiles:
   - On Mac: ???, written in C.
-  - On Windows: Fails using gradle/Visualcpp.
-  - On Linux (WSL2): Passes using gcc.
+  - On Windows: Passes.
+  - On Linux (WSL2): Fails using gcc, makefile issue.
 - Runs:
-  - On Linux (WSL2): Runs successfully.
+  - On Windows: Runs, but Hangs, RNG issue with planetesimal insertion.
 
 ## Follow Up
 ???
