@@ -82,6 +82,15 @@ Sean Dang has a pretty unmodified version of 3.0 on his geocities page.
 
 A mostly unmodified version cached by Peter Keel on his traveller rpg site.
 
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Passes
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Windows: Runs successfully.
+  - On Linux (WSL2): Hangs.
+
 ### [Starform](https://groups.google.com/forum/#!topic/rec.games.design/xp8edV1wyIE)
 
 - Resource Name: 1993 - Matt Burdick & Sean Malloy - Starform

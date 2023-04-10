@@ -426,9 +426,9 @@ to remain.
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1998
-- Parents: Burdick.1995 ?
+- Parents: Burdick.1995
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1998%20-%20Stock.1998.md).
 - Burdick Version: V3.0
 - Key: Stock.1998
 

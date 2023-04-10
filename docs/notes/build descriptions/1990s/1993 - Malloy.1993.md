@@ -12,3 +12,6 @@
 
 ## Compilation
 Source Code is written in C. Needs to be slightly modified to compile.
+
+see [here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete%20-%203.x%20-%20starform.md) for
+the status on Burdick's latest accrete code
