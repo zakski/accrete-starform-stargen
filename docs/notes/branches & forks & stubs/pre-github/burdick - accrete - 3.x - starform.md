@@ -96,9 +96,28 @@ A mostly unmodified version cached by Peter Keel on his traveller rpg site.
 - Burdick Version: V3.1
 - Key: Malloy.1993
 
-More up-to-date version of Matt Burdick's code, ported to C from pascal. Was given to Ian Burrell by Sean Malloy. 
+Most up-to-date version of Matt Burdick's code, was labelled V3.1 by Sean Malloy. 
 
-It has the complete source code, and seems to be a higher version than the one posted by Steve Gilham, however the name change suggests that there is at least 
-one intermediate version between the two.
+It has the complete source code, and seems to be a higher version than the others.
  
-It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its precise place in the timeline.
+It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its 
+precise place in the timeline.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails
+  - On Linux (WSL2): Fails
+- Runs:
+  - N/A
+
+#### Compile/Run Status With Modification
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Linux (WSL2): Runs successfully.
+
+## Follow Up
+???
