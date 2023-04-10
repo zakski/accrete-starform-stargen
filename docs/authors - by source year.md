@@ -145,16 +145,15 @@ the code is incomplete.
 - Source Year: 1993
 - Parents: Burdick.1998
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build%20descriptions/1990s/1993%20-%20Malloy.1993.md).
 - Burdick Version: V3.1
 - Key: Malloy.1993
 
-More up-to-date version of Matt Burdick's code, ported to C from pascal. Was given to Ian Burrell by Sean Malloy. 
+Most up-to-date version of Matt Burdick's code, was labelled V3.1 by Sean Malloy.
 
-It has the complete source code, and seems to be a higher version than the one posted by Steve Gilham, however the name 
-change suggests that there is at least one intermediate version between the two.
- 
-It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its 
+It has the complete source code, and seems to be a higher version than the others.
+
+It was wrapped into a shar in 1993, but Malloy had been sitting on it for a while, so it is difficult to place its
 precise place in the timeline.
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/rec.arts.sf.science/2Xm6WP5n1F8)
@@ -227,7 +226,7 @@ Nevertheless, this codebase is the parent of the vast majority of variations tha
 - Source Year: 1994
 - Parents: Burdick.1994.A
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1994%20-%20Burdick.1994.B.md).
 - Burdick Version: V3.0
 - Key: Burdick.1994.B
 
@@ -285,11 +284,11 @@ version order between them.
 - Source Year: 1995
 - Parents: Burdick.1994.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1995%20-%20Burdick.1995.md).
 - Burdick Version: V3.0
 - Key: Burdick.1995
 
-TODO
+Sean Dang has a pretty unmodified version of 3.0 on his geocities page.
 
 ### [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/hs3hTFtJdKY)
 
@@ -477,7 +476,7 @@ A version cached by Peter Keel on his traveller rpg site.
 - Source Year: 1999
 - Parents: Burdick.1995
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1999%20-%20Keel.1999.B.md).
 - Burdick Version: V3.0
 - Key: Keel.1999.B
 
