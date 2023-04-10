@@ -157,6 +157,9 @@ A version cached by Peter Keel on his traveller rpg site.
 
 ## Follow Up
 The main progression of the source code continues 
-[here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete2.md) with Starform. Best guess is 
+[here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burdick%20-%20accrete%20-%203.x%20-%20starform.md) with Starform. Best guess is 
 it actually splits off from this 1.x branch in the late 80s to early 90s from code that looks similar to the 
 Burdick.1994.A variant.
+
+Alternate progression of the source code continues
+[here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/webb.md), splitting off at Nyrath.1995.

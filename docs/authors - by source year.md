@@ -334,7 +334,7 @@ actual parent.
 - Language: C++
 - Creation Year: <= 1997
 - Source Year: 1997
-- Parents:  Burdick.1994.A / Nyrath.1995
+- Parents: Nyrath.1995
 - Original Source: Complete.
 - Reproducibility: Reproducible.
 - Burdick Version: n/a
