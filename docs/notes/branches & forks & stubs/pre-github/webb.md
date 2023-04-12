@@ -24,7 +24,7 @@
 - Source Year: 1997
 - Parents:  Nyrath.1995
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1997%20-%20Webb.1997.A.md).
 - Burdick Version: n/a
 - Key: Webb.1997.A
 
@@ -40,11 +40,11 @@ Christopher E. Webb seems to of modified a version of accrete to utilise and gen
 
 #### Compile/Run Status With Modification
 - Compiles:
-  - On Mac: ???, written in C.
-  - On Windows: Fails using gradle/Visualcpp.
-  - On Linux (WSL2): Passes using gcc.
+  - On Mac: ???
+  - On Windows: ???
+  - On Linux (WSL2): ???
 - Runs:
-  - On Linux (WSL2): Runs successfully.
+  - ???
 
 ### [ACCRETE2 mod 1](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 1

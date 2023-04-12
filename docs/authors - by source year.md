@@ -336,7 +336,7 @@ actual parent.
 - Source Year: 1997
 - Parents: Nyrath.1995
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1997%20-%20Webb.1997.A.md).
 - Burdick Version: n/a
 - Key: Webb.1997.A
 
