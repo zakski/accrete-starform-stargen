@@ -36,7 +36,7 @@ starSystem::starSystem(double stellarMass, double stellarLuminosity)
 	rGreenhouse = rEcosphere * GREENHOUSE_EFFECT_CONST;
 }
 
-void starSystem::make(void)
+void starSystem::make(int diam, int atm, int hyd)
 {
 	planetList=distributePlanetaryMasses(0.0,stellarMaxDust(starMass));
 	planets *planet_head=planetList;
@@ -44,10 +44,17 @@ void starSystem::make(void)
 	{
 		planet_head->buildPlanet(starMass,starLuminosity,rEcosphere,rGreenhouse,age);
 // attempt to build moons!
-		planet_head->addMoons(planet_head->radius*4.0/1E6,planet_head->radius*300.0/1E6,starMass, starLuminosity, rEcosphere, rGreenhouse, age);
+		planet_head->addMoons(starMass, starLuminosity, rEcosphere, rGreenhouse, age);
 //		distributeMoonMasses(*planet_head,planet_head->radius*2.0/1E6,stellarMaxDust(planet_head->mass));
 
 		planet_head = planet_head->nextPlanet;
+	}
+
+	if(diam>-1)
+	{
+		planets* mainworld=new planets;
+		mainworld->buildMainworld(diam,atm,hyd,random_eccentricity(),starMass,starLuminosity,rEcosphere,age);
+		insertMainworld(mainworld);
 	}
 }
 
@@ -65,7 +72,7 @@ void starSystem::display(void)
 //	fprintf(f,"Current age of stellar system (in million yrs): %10.3lf\n",(age / 1.0E6));
 	fprintf(f,"Radius of habitable ecosphere (AU)            : %6.3lf\n\n",rEcosphere);
 
-	fprintf(f,"Num     Orbit (AU) UPP___      Orbit (diam) UPP___\n");
+	fprintf(f,"Num     Orbit (AU) UWP___      Num Orbit (diam) UWP___\n");
 	while(node1!=NULL)
 	{
 		fprintf(f,"%2d  ",counter++);
@@ -412,5 +419,41 @@ planets * starSystem::distributePlanetaryMasses(double inner_dust, double outer_
 #endif
 	}
 	return temp;
+}
+
+void starSystem::insertMainworld(planets *mw)
+{
+	planets* head=planetList;
+
+	while(head->nextPlanet && head->nextPlanet->axis < mw->axis)
+		head=head->nextPlanet;
+
+	if(!head->nextPlanet) // no worlds in or outside of habitable zone!
+	{
+		head->nextPlanet=mw;
+		mw->addMoons(starMass, starLuminosity, rEcosphere, rGreenhouse, age);
+	}
+	else
+	{
+		if(fabs(head->axis-mw->axis)>fabs(head->nextPlanet->axis-mw->axis))
+		{
+		}
+		else
+		{
+			head=head->nextPlanet;
+		}
+
+		if(head->isGasGiant)
+		{
+      	head->insertMainWorld(mw,rEcosphere);
+		}
+		else
+		{
+			planets* temp=head->nextPlanet;
+			*head=*mw;
+         head->nextPlanet=temp;
+			head->addMoons(starMass, starLuminosity, rEcosphere, rGreenhouse, age);
+		}
+	}
 }
 

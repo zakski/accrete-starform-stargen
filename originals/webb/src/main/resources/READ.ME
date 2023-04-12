@@ -1,10 +1,11 @@
-ACCRETE2 mod 0 release notes
+ACCRETE2 mod 1 release notes
 Author:  Christopher E. Webb
+12 FEB 97
 
 DISCLAIMER:
 This software is not 100% debugged.  It may cause lockups on your machine.  I
-don't presently have the time to fully trace the problems that have occurred
-(see notes below for details).
+don't presently have the time to fully trace the problem that has occurred
+(see KNOWN PROBLEMS below for details).
 
 WHAT IT DOES:
 ACCRETE2 is a DOS-based update to ACCRETE, a simulation that generates solar
@@ -13,33 +14,53 @@ the user the ability to choose a solar luminosity and mass, providing a
 greater flexibility for the program.  The original sourcecode appeared to be
 K&R C, which I rewrote and converted to ANSI C++  (compiled with Borland C++
 4.52, compatible with BC++ 4.xx).  This change will allow me to make a more
-robust program/database at a later time.  Also included in this archive is the
-rewritten sourcecode for the original ACCRETE (changed to ANSI C).  I have not
-included an executable for this version, since it is not as useful (no control
-of stellar masses & luminosity).
+robust program/database at a later time.
+
+WHAT'S INCLUDED:
+The following files should be in this archive:
+* The rewritten ANSI C sourcecode for ACCRETE.
+* The ACCRETE2 C++ sourcecode.
+* The Borland 4.xx IDE project files & makefile.
+* ACCRETE.REF, a list of reference books from the original ACCRETE program.
+* SAMPLE.TXT, an interesting system generated to test the mainworld creation.
+* STARTABL.XLS, an Excel spreadsheet showing star luminosity and mass, derived
+  from MT World Tamer's Handbook, with interpolations of intermediate values.
+* TEMPTABL.XLS, an Excel spreadsheet set up to compute min/max temperatures
+  for worlds -- just fill in the yellowish fields on the top of the spread
+  sheet, and read the results below.
 
 USAGE:
-ACCRETE [mass lum]
+ACCRETE [mass lum [UWP]]
 If no parameters are supplied on the command line, ACCRETE2 will ask for the
 mass of the star in solar masses and the luminosity of the star in solar
-masses.  You can also supply the mass and luminosity on the command line in
-order to use batch processing or speed up generation times.  For instance, to
-build a star system orbiting a G5 V star (0.94M(Sol), 0.90L(Sol)):
+luminosity factors.  It will also prompt for a UWP.  If you have a specific
+UWP for which you wish to build a system, type it in at the prompt; otherwise,
+press enter and a completely random system will be built.  You can also supply
+the mass and luminosity on the command line in order to use batch processing
+or speed up generation times.  If both mass and luminosity are provided, you
+can also specify the UWP for the main world, if you wish to build a system
+around a pre-generated world.  Only the diameter, atmosphere, and hydrosphere
+ratings are important -- do not give it the starport.  For instance, to build
+a star system orbiting a G5 V star (0.94M(Sol), 0.90L(Sol)):
 ACCRETE .94 .90
+If the system has a main world with UWP A-867974-8, you can specify:
+ACCRETE .94 .90 867
 
 PROCESS:
-I'm really not qualified to discuss the theory behind what's going on.  I can
-read the formulae used and interpret what's happening.  The source code has
-references and the original program's sourcecode has better documentation and
-explanation.  What I do understand is that the program generates a dust cloud
-surrounding the star, then randomly checks different radii of the disk to see
-if dust is available.  Planetisimals near to each other collide and accrete
-into larger planetisimals.
+I'm really not qualified to discuss the theory behind what's going on in the
+original program.  I can read the formulae used and interpret what's
+happening.  The source code has references and the original program's
+sourcecode has better documentation and explanation.  What I do understand is
+that the program generates a dust cloud surrounding the star, then randomly
+checks different radii of the disk to see if dust is available.  Planetisimals
+near to each other collide and accrete into larger planetisimals.
 
-I have added to the program so that moons are generated around planets,
-tiny planets (<800km radius) are instead made asteroid belts, and tiny moons
-(<100km radius) become rings.  These processes were arbitrarily done as
-follows, using Traveller's (TNE and MT) system detailing procedure:
+I extended the program so that moons are generated around planets, tiny
+planets (<800km radius) are instead made asteroid belts, and tiny moons
+(<100km radius) become rings.  Main worlds are also now placed.  These
+processes were arbitrarily done as follows.  Anyone who has better values
+to use is welcome to let me know.  For moons, I used Traveller's (TNE and MT)
+system detailing procedure:
 
 I:   Moons: For small gas giants, 2D6-2; for large GG, 2D6; for worlds of
      radius 1600km and larger, 50% chance of 1D3.
@@ -48,18 +69,38 @@ II:  Moon size: For gas giants, no larger than 0.50M(Earth); for planets, no
 III: Rings/Asteroids: Arbitrary radii.  If anyone wants to provide different
      figures, I'll be happy to accomodate them.
 IV:  Gas giant size:  The cutoff on small/large gas giants is taken from MT
-     World Tamer's Handbook.  Brown Dwarfs (Dwarves?) are chosen as any GG with
-   a mass > .02M(Sol), taken from a suggestion from [someone on TML (I will
-   put your name here when I can get it from my home computer -- sorry I don't
-   have it here!)].
+     World Tamer's Handbook.  Brown Dwarfs (Dwarves?) are chosen as any
+     GG with a mass > .02M(Sol), taken from information supplied by Bruce
+     Macintosh (thanks for the suggestion).
+V:   Main world creation:  Once the star system is built, the main world will
+     built and placed in the solar system.  See below for details.
 
-I have seen asteroid belts get generated, 
+I have seen asteroid belts generated, but I have yet to see ring systems
+develop.
+
 While the program runs, it will display "Checking x.xxxAU: " as it tests
 random radii for available dust.  These will scroll by for several seconds
-(probably longer on low-end systems; the slowest I have available is a P5-90).
+(probably longer on low-end systems; the slowest I have available is a P5-90
+at work, nothing slower at home).
+
 A quick summary of the solar system will be displayed (the orbital distance
-and radius of each world).  The actual star system info is stored in
+and radius of each world).  The actual star system info is written to the file
 NEWSYS.TXT.
+
+MAINWORLD INSERTION:
+If the UWP for a mainworld is supplied, either from the command line or user
+prompts, then an additional step is taken after the solar system is built.
+First, an approximated diameter is computer and the mainworld mass is adjusted
+until the world is close to the approximate diameter.  Then, the atmosphere is
+created to fit the world's mass -- if the desired atmosphere is not possible
+with the planet, the values will be forced to fit within specifications for the
+planet.  The world's hydrosphere is overridden to accept the value provided,
+even if it is not a possible hydrosphere combination.  The mainworld is placed
+within 2% of the ecosphere radius.  The system is then checked to see which
+world is closest to the mainworld's orbit.  If the nearest neighbor is a
+planet, it is replaced by the mainworld.  If it is a gas giant, it is moved to
+the mainworld's orbit, the temperatures of the moons are re-computed, and the
+mainworld is added as an additional satellite of the gas giant.
 
 OUTPUT:
 The output file has three sections:
@@ -69,21 +110,16 @@ The output file has three sections:
 
 2)  A Traveller-compatible summary of the system as follows:
 
-Num     Orbit (AU) UPP___      Orbit (diam) UPP___
+Num     Orbit (AU) UWP___      Num Orbit (diam) UWP___
  1        0.382    400XXX
-                                84.634      200XXX
+                                 1  84.634      200XXX
 
 Where Num is the ordinal planet number (1 is closest to primary), Orbit (AU)
-is the orbital radius of the world in AU, and UPP shows the first three UPP
-values (Size, Atm, Hyd).  Any moons will have information provided also,
-with Orbit (diam) showing the radius of the moon's orbit in factors of the
-primary planet's diameter and UPP showing the first three UPP values of the
-moon.
-
-*** I realize that the UPP should probably be UWP (I'm at work, don't have any
-Traveller books here, and I've always thought of Universal Planetary Profile,
-not Universal World Profile).  I'll fix it next time I do a rewrite/
-enhancement.                                                               ***
+is the orbital radius of the world in AU, and UWP shows the first three UWP
+values (Size, Atm, Hyd).  Any moons will have similar information provided,
+with Num showing the ordinal moon number, Orbit (diam) showing the radius of
+the moon's orbit in factors of the primary planet's diameter and UWP showing
+the first three UWP values of the moon.
 
 3)  Detailed system information.  There's plenty of information on every world
     generated, more than you probably have immediate need for.
@@ -96,20 +132,35 @@ I haven't had a chance to trace every single FP operation done in the program,
 so I don't know where the problem is.  When it occurs, I just re-run the
 program.
 
+The UWP in the output of a mainworld reflects the algorithm I'm using to
+compute atmosphere ratings.  If you specify an atmosphere A through E, it
+will probably appear as an E in the UWP; atm F will appear as a 3 or 4.
+
 FUTURE ENHANCEMENTS:
 I'll get around to them.  If I get enough feedback from publicly releasing
 the software, I'll try to fix the known problem and incorporate any features
-asked for.  Eventually, I would like to write a program that can act as a
-database, referring to details, ref notes, etc for each system.  I've started
-and stopped on that project twice so far.  Once I know what features I want in
+asked for.  The program does not support multiple star systems, and I have no
+clue how to build multiple star systems -- close binaries could be
+approximated by summing masses and luminosities, but beyond that, good luck.
+Eventually, I would like to write a program that can act as a database,
+referring to details, ref notes, etc for each system.  I've started and
+stopped on that project twice so far.  Once I know what features I want in
 such a program, I'll get to work on it.
+
+REVISION HISTORY:
+mod  0: 06 FEB 97 First release, with some features added beyond original
+                  ACCRETE app.
+mod  1: 11 FEB 97 added ability to specify mainworld UWP and force ACCRETE to
+                  fit a system around the mainworld.
 
 CONTACT:
 If you find undocumented features in this program that need to be addressed,
-PLEASE email me.  I really haven't done complete testing of this software 
-(less than 75 star systems built), and it is possible that there are problems
-that haven't occurred to me.  If there are other features that you'd like to
-see, or any feedback or comments, let me know.  I can be contacted via email:
+PLEASE email me.  I really haven't done complete testing of this software
+(less than 100 star systems built), and it is possible that there are problems
+that I haven't encountered.  If there are other features that you'd like to
+see, or any feedback or comments, let me know.  I can also let you know if or
+when I update the program.  I can be contacted via email:
 
 Christopher Webb
 cwebb@mail.ctainforms.com
+http://www.mscomm.com/~cwebb

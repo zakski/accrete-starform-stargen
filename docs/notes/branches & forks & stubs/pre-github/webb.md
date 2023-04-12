@@ -34,7 +34,7 @@ Christopher E. Webb seems to of modified a version of accrete to utilise and gen
 - Compiles:
   - On Mac: ???, written in C++.
   - On Windows: Fails using gradle/Visualcpp.
-  - On Linux (WSL2): Fails using gcc. Makefile written for Turbo C++.
+  - On Linux (WSL2): Fails using gcc. Makefile written for Borland Ansi C++.
 - Runs:
   - N/A
 
@@ -62,6 +62,22 @@ Christopher E. Webb seems to of modified a version of accrete to utilise and gen
 Christopher E. Webb developed an updated version of his code that uses traveller rpg information more substantially.
 
 This copy was found on his website.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C++.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Fails using gcc. Makefile written for Borland Ansi C++.
+- Runs:
+  - N/A
+
+#### Compile/Run Status With Modification
+- Compiles:
+  - On Mac: ???
+  - On Windows: ???
+  - On Linux (WSL2): ???
+- Runs:
+  - ???
 
 ### [ACCRETE3](http://www.mu.org/~joe/traveller/archive/software/accrete3.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete3

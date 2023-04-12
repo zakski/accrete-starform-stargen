@@ -37,10 +37,6 @@ double cloud_fraction(double surface_temp, double smallest_MW_retained,
 		fraction = CLOUD_COVERAGE_FACTOR * water_vapor_in_kg / surface_area;
 
 		return (fraction>=1.0) ? 1.0 : fraction;
-//		if (fraction >= 1.0)
-//			return(1.0);
-//		else
-//			return(fraction);
 	}
 }
 
@@ -65,10 +61,6 @@ double ice_fraction(double hydrosphere_fraction, double surface_temp)
 		temp = (1.5 * hydrosphere_fraction);
 
 	return (temp>=1.0) ? 1.0 : temp;
-//	if (temp >= 1.0)
-//		return(1.0);
-//	else
-//		return(temp);
 }
 
 
@@ -162,8 +154,6 @@ double planets::opacity(void)
 /*--------------------------------------------------------------------------*/
 /*  This implements Fogg's eq.17.  The 'inventory' returned is unitless.    */
 /*--------------------------------------------------------------------------*/
-//double vol_inventory(double mass, double escape_vel, double rms_vel,
-//	double stellar_mass, int zone, int greenhouse_effect)
 double planets::volInventory(double stellar_mass)
 {
 	double
@@ -177,11 +167,9 @@ double planets::volInventory(double stellar_mass)
 		switch (orbitalZone)
 		{
 			case 1:
-//			proportion_const = 10000.0;
 			proportion_const = 100000.0;
 			break;
 			case 2:
-//			proportion_const = 7500.0;
 			proportion_const = 75000.0;
 			break;
 			case 3:
@@ -212,7 +200,7 @@ double planets::volInventory(double stellar_mass)
 /* to the change in angular velocity for the Earth, we can come up with an  */
 /* approximation for our new planet (his eq.13) and take that into account. */
 /*--------------------------------------------------------------------------*/
-double planets::dayLength(int &spin_resonance, double age)
+double planets::dayLength(int &spin_resonance, double /*age*/)
 {
 	double
 		base_angular_velocity,
@@ -220,21 +208,23 @@ double planets::dayLength(int &spin_resonance, double age)
 		k2=(isGasGiant) ? .24 : .33,
 		temp,
 		equatorial_radius_in_cm= radius * CM_PER_KM,
-		change_in_angular_velocity,
 		spin_resonance_period;
 
 	spin_resonance = FALSE;
 	base_angular_velocity = sqrt(2.0 * J * (planetary_mass_in_grams) / (k2 * pow(equatorial_radius_in_cm, 2.0)));
 
+// Following section commented out -- original code does not account for moons &
+// I don't have the relevant equations.
 	//   This next term describes how much a planet's rotation is slowed by
 	//  it's moons.  Find out what dw/dt is after figuring out Goldreich and
 	//  Soter's Q'.
-	change_in_angular_velocity = 0.0;
-	temp = base_angular_velocity + (change_in_angular_velocity * age);
+//	double change_in_angular_velocity = 0.0;
+//	temp = base_angular_velocity + (change_in_angular_velocity * age);
 
 	//   'temp' is now the angular velocity. Now we change from rad/sec to
 	//  hours/rotation.
-	temp = 1.0 / ((temp / radians_per_rotation) * SECONDS_PER_HOUR);
+//	temp = 1.0 / ((temp / radians_per_rotation) * SECONDS_PER_HOUR);
+	temp = 1.0 / ((base_angular_velocity / radians_per_rotation) * SECONDS_PER_HOUR);
 	if (temp >= orbitalPeriod*24.0)
 	{
 		spin_resonance_period = ((1.0 - eccentricity) / (1.0 + eccentricity)) * 24.0* orbitalPeriod;
@@ -391,7 +381,7 @@ void planets::buildPlanet(double starMass, double starLuminosity, double rEcosph
 		surfaceGrav = gravity(surfaceAccel);
 		isGreenhouseEffect = greenhouse(orbitalZone,axis,rGreenhouse);
 		volatileGasInventory = volInventory(starMass);
-//		volatileGasInventory = vol_inventory(mass,escapeVelocity,RMSvelocity,starMass,orbitalZone,isGreenhouseEffect);
+
 		surfacePressure = pressure(volatileGasInventory,radius,surfaceGrav);
 
 		if ((surfacePressure == 0.0))
@@ -414,29 +404,25 @@ void planets::buildPlanet(double starMass, double starLuminosity, double rEcosph
 /*	 planet->radius							    */
 /*	 planet->boil_point						    */
 /*--------------------------------------------------------------------------*/
-void planets::iterateSurfaceTemp(double dist, double rEcosphere)
+// targetHyd allows artificial forcing of the Hydrosphere value to a user
+// defined rating
+void planets::iterateSurfaceTemp(double dist, double rEcosphere,double targetHyd)
 {
 	double
-//		surface_temp,
 		effective_temp = eff_temp(rEcosphere,dist,EARTH_ALBEDO),
 		greenhouse_rise,
 		previous_temp,
 		optical_depth = opacity(),
-//		albedo,
 		water,
 		clouds,
 		ice;
 
-//	optical_depth = opacity((*planet)->molecule_weight,(*planet)->surface_pressure);
-//	effective_temp = eff_temp(r_ecosphere,(*planet)->a,EARTH_ALBEDO);
 	greenhouse_rise = green_rise(optical_depth,effective_temp,surfacePressure);
 	surfaceTemp = effective_temp + greenhouse_rise;
-//	previous_temp = surface_temp - 5.0;		/* force the while loop the first time */
-//	while ((fabs(surface_temp - previous_temp) > 1.0))
 	do
 	{
 		previous_temp = surfaceTemp;
-		water = hydrosphere_fraction(volatileGasInventory,radius);
+		water = (targetHyd>=0.0) ? targetHyd : hydrosphere_fraction(volatileGasInventory,radius);
 		clouds = cloud_fraction(surfaceTemp,minMoleculeWeight,radius,water);
 		ice = ice_fraction(water,surfaceTemp);
 		if ((surfaceTemp >= boilPoint) || (surfaceTemp <= FREEZING_POINT_OF_WATER))
@@ -451,8 +437,6 @@ void planets::iterateSurfaceTemp(double dist, double rEcosphere)
 	hydrosphere = water;
 	cloudCover = clouds;
 	iceCover = ice;
-//	albedo = albedo;
-//	surface_temp = surface_temp;
 }
 
 int planets::getAtmRate(void)
@@ -469,6 +453,7 @@ int planets::getAtmRate(void)
 void planets::showUPP(FILE *f)
 {
 	planets *node2=firstMoon;
+	int moonCount=1;
 
 	fprintf(f,"    %7.3f    ",axis);
 
@@ -479,7 +464,7 @@ void planets::showUPP(FILE *f)
 
 	while(node2)
 	{
-		fprintf(f,"                               %7.3f   ",node2->axis*CM_PER_AU/CM_PER_KM/radius/2.0);
+		fprintf(f,"                               %3d %7.3f   ",moonCount++,node2->axis*CM_PER_AU/CM_PER_KM/radius/2.0);
 		if(node2->radius >800.0 ||node2->isPlanetoid ) fprintf(f,"   %X%X%XXXX\n",(int)(node2->radius/800.0),node2->getAtmRate(),(int)((node2->hydrosphere+node2->iceCover)*10.0));
 		else fprintf(f,"   S%X%XXXX\n",node2->getAtmRate(),(int)((node2->hydrosphere+node2->iceCover)*10.0));
 
@@ -586,13 +571,13 @@ void planets::buildMoonData(double minOrbit, double maxOrbit, double starMass, d
 	if(isGasGiant)
 	{
 		pl->mass=random_number(0.0,.5/EARTH_MASSES_PER_SOLAR_MASS);
-		pl->axis=random_number(minOrbit,maxOrbit)*1e06*CM_PER_KM/CM_PER_AU;
 	}
 	else
 	{
 		pl->mass=random_number(0.0,mass/8.0);
-		pl->axis=random_number(minOrbit,maxOrbit)*1e06*CM_PER_KM/CM_PER_AU;
 	}
+
+	pl->axis=random_number(minOrbit,maxOrbit)*1e06*CM_PER_KM/CM_PER_AU;
 
 	pl->orbitalZone = orbital_zone(axis, starLuminosity);
 
@@ -628,7 +613,7 @@ void planets::buildMoonData(double minOrbit, double maxOrbit, double starMass, d
 	if(!firstMoon)
 	{
 		pl->nextPlanet=0;
-      firstMoon=pl;
+		firstMoon=pl;
 	}
 	else
 	{
@@ -643,7 +628,7 @@ void planets::buildMoonData(double minOrbit, double maxOrbit, double starMass, d
 			while(here->nextPlanet && here->nextPlanet->axis < pl->axis)
 				here=here->nextPlanet;
 			pl->nextPlanet=here->nextPlanet;
-         here->nextPlanet=pl;
+			here->nextPlanet=pl;
 		}
 	}
 }
@@ -653,8 +638,11 @@ void planets::buildMoonData(double minOrbit, double maxOrbit, double starMass, d
 // Sm GG 2D6-2,
 // Lg GG 2D6
 // Planets of at least size 2, 50% chance 1D3 moons
-void planets::addMoons(double minOrbit, double maxOrbit,double starMass, double starLuminosity, double rEcosphere, double rGreenhouse, double age)
+void planets::addMoons(double starMass, double starLuminosity, double rEcosphere, double rGreenhouse, double age)
 {
+	double
+		minOrbit=radius*4.0/1E6,
+		maxOrbit=radius*300.0/1E6;
 	firstMoon=0;
 
 	printf("%5.1lf: %7.0lfkm radius\n",axis,radius);
@@ -682,3 +670,203 @@ void planets::addMoons(double minOrbit, double maxOrbit,double starMass, double 
 		}
 	}
 }
+
+void planets::buildMainworld(int diam, int atm, int hyd, double e, double starMass, double starLuminosity, double rEcosphere,double age)
+{
+	int spin_resonance;
+	isGasGiant=0;
+	isPlanetoid=(!diam);
+	axis=about(rEcosphere,.02);
+	eccentricity=e;
+
+	orbitalZone = orbital_zone(axis, starLuminosity);
+	double targetRadius=(double)(diam*800.0+random(750));
+	if(targetRadius<400.0) targetRadius=400.0;
+
+	radius=0.0;
+	double delta=0.1;
+	int dir=1;
+	mass=0.0;
+
+	printf("Computing mainworld mass . . .\n");
+// Since I could not solve the kothariRadius equation for mass, I just iterate
+// numbers -- plug a value and oscillate closer to the correct radius estimate.
+	while(radius<.98*targetRadius || radius>1.02*targetRadius)
+	{
+		mass+=delta;
+		radius = kothariRadius();
+		switch(dir)
+		{
+			case 1:
+				if(radius>targetRadius) { dir=-dir; delta/=-2.0; }
+				break;
+			case -1:
+				if(radius<targetRadius) { dir=-dir; delta/=-2.0; }
+				break;
+		}
+	}
+
+	density = volumeDensity();
+
+	orbitalPeriod = period(axis,mass,starMass);
+	day = dayLength(spin_resonance,age);
+
+	isResonantPeriod = spin_resonance;
+	axialTilt = inclination(axis);
+	escapeVelocity = escape_vel(mass,radius);
+	surfaceAccel = acceleration(mass,radius);
+	RMSvelocity = rms_vel(MOLECULAR_NITROGEN,axis);
+	minMoleculeWeight = molecule_limit(axis,mass,radius);
+
+	surfaceGrav = gravity(surfaceAccel);
+	printf("Computing mainworld atmosphere . . .\n");
+	isGreenhouseEffect = 0;
+	volatileGasInventory = createVolInventory(atm,starMass);
+
+	surfacePressure = pressure(volatileGasInventory,radius,surfaceGrav);
+
+	if ((surfacePressure == 0.0))
+		boilPoint = 0.0;
+	else
+		boilPoint = boiling_point(surfacePressure);
+
+	double tgtHyd=(hyd*10.0-4.0+random(10))/100.0;
+	if(tgtHyd<0.0) tgtHyd=0.0; else if(tgtHyd>1.0) tgtHyd=1.0;
+	iterateSurfaceTemp(axis,rEcosphere,tgtHyd);
+}
+
+// return lower and upper bounds on each atmospheric rating
+double lowUWP2pressure(int atm)
+{
+	switch(atm)
+	{
+		case 0:
+			return 0.0;
+		case 1:
+			return 10.0;
+		case 2:
+		case 3:
+			return 100.0;
+		case 4:
+		case 5:
+			return 400.0;
+		case 6:
+		case 7:
+			return 750.0;
+		case 8:
+		case 9:
+			return 1500.0;
+		case 15:
+      	return 230.0;
+		default:
+			return 2500.0;
+	}
+}
+
+double hiUWP2pressure(int atm)
+{
+	switch(atm)
+	{
+		case 0:
+			return 0.0;
+		case 1:
+			return 100.0;
+		case 2:
+		case 3:
+			return 400.0;
+		case 4:
+		case 5:
+			return 750.0;
+		case 6:
+		case 7:
+			return 1500.0;
+		case 8:
+		case 9:
+			return 2500.0;
+		case 15:
+			return 550.0;
+		default:
+			return 10000.0;
+	}
+}
+
+double planets::getInv4Press(double press)
+{
+	double retval;
+
+	retval=press/surfaceGrav*pow(EARTH_RADIUS_IN_KM/radius,2.0);
+
+   return retval;
+}
+
+// This function will pick an acceptable atmospheric pressure for the UWP atm
+// provided, then see if a valid volInventory value exists.  If not, it will
+// fudge a workable value into the system & print its results.
+double planets::createVolInventory(int atm, double stellar_mass)
+{
+	double retval;
+	double
+		lowTargetpress=lowUWP2pressure(atm), // convert from atm to mb
+		hiTargetpress=hiUWP2pressure(atm);
+
+	double
+		lowInv=800.0*mass*EARTH_MASSES_PER_SOLAR_MASS/stellar_mass,
+		hiInv=1200.0*mass*EARTH_MASSES_PER_SOLAR_MASS/stellar_mass;
+
+	double
+		lowPress=pressure(lowInv,radius,surfaceGrav),
+		hiPress=pressure(hiInv,radius,surfaceGrav);
+
+	if(lowPress>lowTargetpress && hiPress<hiTargetpress)
+	{
+	// Valid ATM for SIZE
+		printf("Ideal atmosphere for world.\n");
+		retval=random_number(lowInv,hiInv);
+	}
+	else if(lowPress>hiTargetpress || hiPress<lowTargetpress)
+	{
+	// fudge a value -- atmosphere doesn't work for given size world
+		if(lowPress>hiTargetpress)
+			printf("Fudging atmosphere -- lowest pressure possible is %.3f atm.\n",lowPress/1000.0);
+		else
+			printf("Fudging atmosphere -- highest pressure possible is %.3f atm.\n",hiPress/1000.0);
+//		printf("Atmosphere is invalid for this size world -- fudging value\n");
+		retval=random_number(getInv4Press(lowTargetpress),getInv4Press(hiTargetpress));
+	} else if(lowPress<=lowTargetpress)
+	{
+	// Compute a value whose inventory ranges between lowTgtPress's value & the
+	// hiInv value.
+		printf("Atmosphere is valid but slightly low for this size world.\n");
+		retval=random_number(getInv4Press(lowTargetpress),hiInv);
+	}
+	else
+	{
+	// Compute a value whose inventory ranges between lowInv & the hiTgtPress's
+	// value.
+		printf("Atmosphere is valid but slightly high for this size world.\n");
+		retval=random_number(lowInv,getInv4Press(hiTargetpress));
+	}
+
+	return retval;
+}
+
+void planets::insertMainWorld(planets* who, double rEcosphere)
+{
+	axis=who->axis;
+	who->axis=random_number(radius*4.0/1E6,radius*300.0/1E6)*1e06*CM_PER_KM/CM_PER_AU;
+	planets* head=firstMoon;
+
+	while(head)
+	{
+		head->iterateSurfaceTemp(axis,rEcosphere);
+		head=head->nextPlanet;
+	}
+
+	head=firstMoon;
+	while(head->nextPlanet && head->nextPlanet->axis < who->axis)
+		head=head->nextPlanet;
+
+	who->nextPlanet=head->nextPlanet;
+   head->nextPlanet=who;
+}
+
