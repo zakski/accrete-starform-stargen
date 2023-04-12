@@ -262,7 +262,7 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Resource Name: 1995 - Nyrath - Accrete
 - Author: Matt Burdick
 - Poster/Publisher: Nyrath the nearly wise
-- Language: C
+- Language: K&R C
 - Creation Year: >= 1988
 - Source Year: 1995
 - Parents: Burdick.1994.A
@@ -331,7 +331,7 @@ actual parent.
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 0
 - Author: Christopher E. Webb
 - Poster/Publisher: Joseph Heck
-- Language: C++
+- Language: ANSI C++
 - Creation Year: <= 1997
 - Source Year: 1997
 - Parents: Nyrath.1995

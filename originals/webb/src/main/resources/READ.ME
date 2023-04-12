@@ -1,3 +1,115 @@
-Compile this with the makefile. You might want to turn off "VERBOSE"
-if you don't like the screen messages. Run it, and a file "New.System"
-will be created with the system produced.
+ACCRETE2 mod 0 release notes
+Author:  Christopher E. Webb
+
+DISCLAIMER:
+This software is not 100% debugged.  It may cause lockups on your machine.  I
+don't presently have the time to fully trace the problems that have occurred
+(see notes below for details).
+
+WHAT IT DOES:
+ACCRETE2 is a DOS-based update to ACCRETE, a simulation that generates solar
+systems after randomly determining a solar mass.  What I have done is given
+the user the ability to choose a solar luminosity and mass, providing a
+greater flexibility for the program.  The original sourcecode appeared to be
+K&R C, which I rewrote and converted to ANSI C++  (compiled with Borland C++
+4.52, compatible with BC++ 4.xx).  This change will allow me to make a more
+robust program/database at a later time.  Also included in this archive is the
+rewritten sourcecode for the original ACCRETE (changed to ANSI C).  I have not
+included an executable for this version, since it is not as useful (no control
+of stellar masses & luminosity).
+
+USAGE:
+ACCRETE [mass lum]
+If no parameters are supplied on the command line, ACCRETE2 will ask for the
+mass of the star in solar masses and the luminosity of the star in solar
+masses.  You can also supply the mass and luminosity on the command line in
+order to use batch processing or speed up generation times.  For instance, to
+build a star system orbiting a G5 V star (0.94M(Sol), 0.90L(Sol)):
+ACCRETE .94 .90
+
+PROCESS:
+I'm really not qualified to discuss the theory behind what's going on.  I can
+read the formulae used and interpret what's happening.  The source code has
+references and the original program's sourcecode has better documentation and
+explanation.  What I do understand is that the program generates a dust cloud
+surrounding the star, then randomly checks different radii of the disk to see
+if dust is available.  Planetisimals near to each other collide and accrete
+into larger planetisimals.
+
+I have added to the program so that moons are generated around planets,
+tiny planets (<800km radius) are instead made asteroid belts, and tiny moons
+(<100km radius) become rings.  These processes were arbitrarily done as
+follows, using Traveller's (TNE and MT) system detailing procedure:
+
+I:   Moons: For small gas giants, 2D6-2; for large GG, 2D6; for worlds of
+     radius 1600km and larger, 50% chance of 1D3.
+II:  Moon size: For gas giants, no larger than 0.50M(Earth); for planets, no
+     larger than 0.125M(parent).
+III: Rings/Asteroids: Arbitrary radii.  If anyone wants to provide different
+     figures, I'll be happy to accomodate them.
+IV:  Gas giant size:  The cutoff on small/large gas giants is taken from MT
+     World Tamer's Handbook.  Brown Dwarfs (Dwarves?) are chosen as any GG with
+   a mass > .02M(Sol), taken from a suggestion from [someone on TML (I will
+   put your name here when I can get it from my home computer -- sorry I don't
+   have it here!)].
+
+I have seen asteroid belts get generated, 
+While the program runs, it will display "Checking x.xxxAU: " as it tests
+random radii for available dust.  These will scroll by for several seconds
+(probably longer on low-end systems; the slowest I have available is a P5-90).
+A quick summary of the solar system will be displayed (the orbital distance
+and radius of each world).  The actual star system info is stored in
+NEWSYS.TXT.
+
+OUTPUT:
+The output file has three sections:
+
+1)  A quick reference about the star (its mass, its luminosity, and the radius
+    of the habitable zone).
+
+2)  A Traveller-compatible summary of the system as follows:
+
+Num     Orbit (AU) UPP___      Orbit (diam) UPP___
+ 1        0.382    400XXX
+                                84.634      200XXX
+
+Where Num is the ordinal planet number (1 is closest to primary), Orbit (AU)
+is the orbital radius of the world in AU, and UPP shows the first three UPP
+values (Size, Atm, Hyd).  Any moons will have information provided also,
+with Orbit (diam) showing the radius of the moon's orbit in factors of the
+primary planet's diameter and UPP showing the first three UPP values of the
+moon.
+
+*** I realize that the UPP should probably be UWP (I'm at work, don't have any
+Traveller books here, and I've always thought of Universal Planetary Profile,
+not Universal World Profile).  I'll fix it next time I do a rewrite/
+enhancement.                                                               ***
+
+3)  Detailed system information.  There's plenty of information on every world
+    generated, more than you probably have immediate need for.
+
+KNOWN PROBLEMS:
+One of the floating point computations occasionally (<15% of the time) goes
+out of range and generates an error.  The error shows up after the program
+has completed running.  It has never locked any of my machines up, but it may.
+I haven't had a chance to trace every single FP operation done in the program,
+so I don't know where the problem is.  When it occurs, I just re-run the
+program.
+
+FUTURE ENHANCEMENTS:
+I'll get around to them.  If I get enough feedback from publicly releasing
+the software, I'll try to fix the known problem and incorporate any features
+asked for.  Eventually, I would like to write a program that can act as a
+database, referring to details, ref notes, etc for each system.  I've started
+and stopped on that project twice so far.  Once I know what features I want in
+such a program, I'll get to work on it.
+
+CONTACT:
+If you find undocumented features in this program that need to be addressed,
+PLEASE email me.  I really haven't done complete testing of this software 
+(less than 75 star systems built), and it is possible that there are problems
+that haven't occurred to me.  If there are other features that you'd like to
+see, or any feedback or comments, let me know.  I can be contacted via email:
+
+Christopher Webb
+cwebb@mail.ctainforms.com

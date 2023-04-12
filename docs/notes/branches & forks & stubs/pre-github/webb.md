@@ -19,7 +19,7 @@
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 0
 - Author: Christopher E. Webb
 - Poster/Publisher: Joseph Heck
-- Language: C++
+- Language: ANSI C++
 - Creation Year: <= 1997
 - Source Year: 1997
 - Parents:  Nyrath.1995
@@ -29,6 +29,22 @@
 - Key: Webb.1997.A
 
 Christopher E. Webb seems to of modified a version of accrete to utilise and generate some traveller rpg specific values such a UWP.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C++.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Fails using gcc. Makefile written for Turbo C++.
+- Runs:
+  - N/A
+
+#### Compile/Run Status With Modification
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Linux (WSL2): Runs successfully.
 
 ### [ACCRETE2 mod 1](https://web.archive.org/web/19970709191550/http://www.mscomm.com/~cwebb/download/accrete2.zip)
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 1
