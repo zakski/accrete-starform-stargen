@@ -4,14 +4,14 @@
 
 ## Up-to-Date Compile/Run Status
 
-- Module: Yes, burdick-accrete
-- Latest Version: Keel.1999.A
+- Module: Yes, webb
+- Latest Version: Webb.1997.C
 - Compiles:
-    - On Mac: ???, written in C.
-    - On Windows: Fails using gradle/Visualcpp.
-    - On Linux (WSL2): Passes using gcc.
+  - On Mac: ???, written in C++.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Fails using gcc. Makefile written for Borland Ansi C++.
 - Runs:
-    - On Linux (WSL2): Runs successfully.
+  - N/A
 
 ## Versions
 
@@ -88,10 +88,26 @@ This copy was found on his website.
 - Source Year: 1997
 - Parents:  Webb.1997.A
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1997%20-%20Webb.1997.C.md).
 - Burdick Version: n/a
 - Key: Webb.1997.C
 
 Christopher E. Webb developed an updated version of his code that uses traveller rpg information more substantially.
 
 This copy was found on Joseph Heck's website with the label of Accrete3, but is labelled Accrete2 mod 1 in the readme just like the one on Webb's website.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C++.
+  - On Windows: Fails using gradle/Visualcpp.
+  - On Linux (WSL2): Fails using gcc. Makefile written for Borland Ansi C++.
+- Runs:
+  - N/A
+
+#### Compile/Run Status With Modification
+- Compiles:
+  - On Mac: ???
+  - On Windows: ???
+  - On Linux (WSL2): ???
+- Runs:
+  - ???
