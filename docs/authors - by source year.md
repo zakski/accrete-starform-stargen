@@ -369,7 +369,7 @@ This copy was found on his website.
 - Source Year: 1997
 - Parents:  Webb.1997.A
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1997%20-%20Webb.1997.C.md).
 - Burdick Version: n/a
 - Key: Webb.1997.C
 
