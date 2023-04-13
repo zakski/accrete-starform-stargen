@@ -1,6 +1,6 @@
 # Missing Implementations
 
-###ACCRETE 1a/1b
+## ACCRETE 1a/1b
 
 - Resource Name: n/a
 - Author: Dave Allen
@@ -21,7 +21,7 @@ picture. Most likely given other variations that I do have the source code for, 
 of Burdick's early recreations.
 
 
-###[SYSTEM 2300](https://groups.google.com/forum/#!topic/rec.games.frp/uRaCg-xv6Ac)
+## [SYSTEM 2300](https://groups.google.com/forum/#!topic/rec.games.frp/uRaCg-xv6Ac)
 
 - Resource Name: n/a
 - Author: Burton Choinski
@@ -39,7 +39,7 @@ and accrete. I cannot currently find any source code of this program online, so 
 fits into the bigger picture.
 
 
-###[ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
+## [ACRETE](https://groups.google.com/forum/#!topic/sci.astro/9WzlczI3cL0)
 
 - Resource Name: n/a
 - Author: Wales Larrison
@@ -55,7 +55,7 @@ fits into the bigger picture.
 Jon Leech claims that Wales wrote a variation based on Dole's 1970 paper. I cannot currently find any source code of this program online, so this branch is 
 considered orphaned right now, since I don't know where it fits into the bigger picture.
 
-###ACRETE
+## ACRETE
 
 - Resource Name: n/a
 - Author: Matt Burdick
@@ -71,7 +71,7 @@ considered orphaned right now, since I don't know where it fits into the bigger 
 published to comp.sources by Joe Nowakowski but missing in the archives.
 
 
-###[Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
+## [Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
 - Resource Name: n/a
 - Author: Matt Burdick
 - Poster/Publisher: Philip Hodder
@@ -87,7 +87,7 @@ published to comp.sources by Joe Nowakowski but missing in the archives.
 A variant of the highest version of Burdick's code that we have source code for. Posted by Hodder, but no cached post lying around as far as I can see.
 
 
-###[Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
+## [Accrete2 / Starform](https://groups.google.com/forum/#!topic/sci.astro/Gq-4HLD9DYU)
 - Resource Name: n/a
 - Author: Matt Burdick
 - Poster/Publisher: n/a

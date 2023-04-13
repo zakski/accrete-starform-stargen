@@ -21,10 +21,10 @@ model {
                 cpp {
                     source {
                         srcDir "src/main/cpp"
-                        include "**/*.cc"
+                        include "**/*.CPP"
                     }
                     exportedHeaders {
-                        srcDir "src/main/headers"
+                        srcDir "src/main/cpp"
                     }
                 }
             }

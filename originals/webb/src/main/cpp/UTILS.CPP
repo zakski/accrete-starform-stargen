@@ -1,20 +1,20 @@
-#include        <math.h>
-#include        "config.h"
-#include        "const.h"
+#include <math.h>
+#include <stdlib.h>
+
+#include "fctn.h"
 
 /*----------------------------------------------------------------------*/
 /*  This function returns a random real number between the specified    */
 /* inner and outer bounds.                                              */
 /*----------------------------------------------------------------------*/
-
-double random_number(inner, outer)
-double inner, outer;
+/*
+double random_number(double inner, double outer)
 {
-     double range;
+	  double range;
 
-     range = outer - inner;
-     return((((double)rand()) / (double)(RAND_MAX)) * range + inner);
-}
+	  range = outer - inner;
+	  return((((double)rand()) / (double)(RAND_MAX)) * range + inner);
+} */
 
 
 /*----------------------------------------------------------------------*/
@@ -22,13 +22,12 @@ double inner, outer;
 /*   exact value given it in 'value'.                                   */
 /*----------------------------------------------------------------------*/
 
-double about(value, variation)
-double value, variation;
+/*double about (double value, double variation)
 {
-     return(value + (value * random_number(-variation,variation)));
+	  return(value + (value * random_number(-variation,variation)));
 }
 
-double random_eccentricity()
+double random_eccentricity ()
 {
-	return(1.0 - pow(random_number(0.0, 1.0), ECCENTRICITY_COEFF));
-}
+	  return(1.0 - pow(random_number(0.0, 1.0),ECCENTRICITY_COEFF));
+}*/

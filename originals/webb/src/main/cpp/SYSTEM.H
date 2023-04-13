@@ -44,7 +44,7 @@ struct planets
 		iceCover;	// fraction of surface covered
 
 	int
-	   isPlanetoid,
+		isPlanetoid,
 		isGasGiant,		// TRUE if the planet is a gas giant
 		orbitalZone,   // the 'zone' of the planet (1=inner, 2=habitable)
 		isResonantPeriod,	// TRUE if in resonant rotation
@@ -61,7 +61,9 @@ struct planets
 		volumeDensity(void),
 		dayLength(int &spin_resonance, double age),
 		volInventory(double starMass),
+		createVolInventory(int atm, double starMass),
 		opacity(void),
+		getInv4Press(double press),
 		empiricalDensity(double rEcosphere);
 
 	int
@@ -69,10 +71,12 @@ struct planets
 
 	void
 		buildMoonData(double minOrbit, double maxOrbit,double starMass, double starLuminosity, double rEcosphere, double rGreenhouse, double age),
-		addMoons(double minOrbit, double maxOrbit,double starMass, double starLuminosity, double rEcosphere, double rGreenhouse, double age),
+		addMoons(double starMass, double starLuminosity, double rEcosphere, double rGreenhouse, double age),
 		showStats(FILE *f),
-      showUPP(FILE *f),
-		iterateSurfaceTemp(double distance, double rEcosphere),
+		showUPP(FILE *f),
+      insertMainWorld(planets* who, double rEcosphere),
+		iterateSurfaceTemp(double distance, double rEcosphere,double hyd=-1.0),
+		buildMainworld(int diam, int atm, int hyd, double ecc, double starMass, double starLuminosity, double rEcosphere, double age),
 		buildPlanet(double starMass, double starLuminosity, double rEcosphere, double rGreenhouse, double age);
 };
 
@@ -118,12 +122,13 @@ class starSystem
 			dust_bands* dust_band);
 		void updateDustLanes(dust_bands *dust_head, double min, double max, double mass, double crit_mass,
 			 double body_inner_bound, double body_outer_bound);
-
+		void insertMainworld(planets*mainworld);
+		
 	public:
 		starSystem(double stellarMass, double stellarLuminosity);
 
 		void
-			make(void),
+			make(int diam, int atm, int hyd), // mainworld vals, -1 means randomize
          display(void);
 };
 

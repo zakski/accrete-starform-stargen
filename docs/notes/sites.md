@@ -1,6 +1,6 @@
 # Incomplete Todo List of Possible hosting sites / search terms for accrete variants
 
-##RPGS
+## RPGS
 * ~~2300 AD~~
 * ~~Albedo~~
 * ~~Alternity~~

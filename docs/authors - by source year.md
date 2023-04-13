@@ -262,7 +262,7 @@ Like Steve Gilham, his line of code is at least initially distinct from Burdick'
 - Resource Name: 1995 - Nyrath - Accrete
 - Author: Matt Burdick
 - Poster/Publisher: Nyrath the nearly wise
-- Language: C
+- Language: K&R C
 - Creation Year: >= 1988
 - Source Year: 1995
 - Parents: Burdick.1994.A
@@ -331,12 +331,12 @@ actual parent.
 - Resource Name: 1997 - Christopher E. Webb - Accrete2 Mod 0
 - Author: Christopher E. Webb
 - Poster/Publisher: Joseph Heck
-- Language: C++
+- Language: ANSI C++
 - Creation Year: <= 1997
 - Source Year: 1997
-- Parents:  Burdick.1994.A / Nyrath.1995
+- Parents: Nyrath.1995
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1997%20-%20Webb.1997.A.md).
 - Burdick Version: n/a
 - Key: Webb.1997.A
 
@@ -352,7 +352,7 @@ such a UWP.
 - Source Year: 1997
 - Parents:  Webb.1997.A
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1997%20-%20Webb.1997.B.md).
 - Burdick Version: n/a
 - Key: Webb.1997.B
 
@@ -369,7 +369,7 @@ This copy was found on his website.
 - Source Year: 1997
 - Parents:  Webb.1997.A
 - Original Source: Complete.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1997%20-%20Webb.1997.C.md).
 - Burdick Version: n/a
 - Key: Webb.1997.C
 
@@ -426,9 +426,9 @@ to remain.
 - Language: C
 - Creation Year: >= 1988
 - Source Year: 1998
-- Parents: Burdick.1995 ?
+- Parents: Burdick.1995
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/1990s/1998%20-%20Stock.1998.md).
 - Burdick Version: V3.0
 - Key: Stock.1998
 
