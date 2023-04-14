@@ -1,6 +1,6 @@
 # Jim Burrows Branch
 
-###[Stargen](https://web.archive.org/web/20070221205935/http://home.comcast.net/~brons/NerdCorner/StarGen/StarGen.html)
+### [Stargen](https://web.archive.org/web/20070221205935/http://home.comcast.net/~brons/NerdCorner/StarGen/StarGen.html)
 
 - Resource Name: 2006 - Jim Burrows - StarGen
 - Author: Jim Burrows
@@ -17,7 +17,7 @@
 A starform version altered by Burrows with bits and pieces added and modified and borrowed from Ian Burrell, C. Burke and Chris Croughton. StarGen is based 
 mostly on Burdick's, but has borrowed from the others, most notably Keris's.
                               
-###[Stargen](http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html)
+### [Stargen](http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html)
 
 - Resource Name: 2008 - Jim Burrows - StarGen
 - Author: Jim Burrows
@@ -33,7 +33,7 @@ mostly on Burdick's, but has borrowed from the others, most notably Keris's.
 
 Updated version of the 2006 edition.
 
-###[Stargen](https://github.com/grahamreeds/StarGen)
+### [Stargen](https://github.com/grahamreeds/StarGen)
 
 - Resource Name: 2013 - Graham Reeds - Stargen
 - Author: Graham Reeds

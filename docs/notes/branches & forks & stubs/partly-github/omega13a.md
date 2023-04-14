@@ -1,6 +1,6 @@
 # Brandon Amaro Branch
 
-###[Stargen](http://www.fedtrek.com/staff/omega13a/stargen_2013.zip)
+### [Stargen](http://www.fedtrek.com/staff/omega13a/stargen_2013.zip)
 - Resource Name: 2013 - Brandon Amaro - Stargen
 - Author: Brandon Amaro (omega13a)
 - Poster/Publisher: Brandon Amaro (omega13a)
@@ -15,7 +15,7 @@
   
 A snapshot of omega13a's version of Stargen that he put on his Star Trek fan site.
 
-###[Stargen](https://github.com/omega13a/stargen)
+### [Stargen](https://github.com/omega13a/stargen)
 - Resource Name: 2014 - Brandon Amaro - Stargen
 - Author: Brandon Amaro 
 - Poster/Publisher: Brandon Amaro (github)

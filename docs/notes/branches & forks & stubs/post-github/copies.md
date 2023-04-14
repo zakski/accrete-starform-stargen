@@ -1,6 +1,6 @@
 # Direct Copies
 
-###[Accrete2](https://github.com/makhidkarun/accrete2)
+### [Accrete2](https://github.com/makhidkarun/accrete2)
 
 - Resource Name: 2013 - Joseph Heck - Accrete2
 - Author: Joseph Heck
@@ -17,7 +17,7 @@
 A copy of a bunch of different version all in the same place, pretty sure this guys had a copy of Webb's code too.
 
 
-###[Stargen](https://github.com/makhidkarun/stargen)
+### [Stargen](https://github.com/makhidkarun/stargen)
 
 - Resource Name: 2014 - Joseph Heck - Stargen
 - Author: Joseph Heck
@@ -33,7 +33,7 @@ A copy of a bunch of different version all in the same place, pretty sure this g
   
 Joseph Heck copy of Burrow's code.
 
-###[Accrete](https://github.com/zonkmachine/starsysgen)
+### [Accrete](https://github.com/zonkmachine/starsysgen)
 
 - Resource Name: 2015 - Oskar Wallgren - Accrete
 - Author: Oskar Wallgren
@@ -49,7 +49,7 @@ Joseph Heck copy of Burrow's code.
   
 copy of Chuck Swiger's accrete.
 
-###[Accrete](https://bitbucket.org/dchapes/accrete)
+### [Accrete](https://bitbucket.org/dchapes/accrete)
 
 - Resource Name: 2016 - Dave Chapeskie - Accrete
 - Author: Dave Chapeskie

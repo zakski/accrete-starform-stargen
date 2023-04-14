@@ -14,7 +14,7 @@
 ### [Starform](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Starform
-- Author: Matt Burdick****
+- Author: Matt Burdick
 - Poster/Publisher: Ian Burrell
 - Language: C / Microsoft QuickC
 - Creation Year: 1988

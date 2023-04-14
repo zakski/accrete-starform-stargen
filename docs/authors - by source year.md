@@ -501,7 +501,7 @@ This is Andrew Folkins' code again, but converted to C++. It's even more hacked 
 - Resource Name: 2000 - Keris - Starform
 - Author: Chris "Keris" Croughton
 - Poster/Publisher: Chris "Keris" Croughton
-- Language: C++
+- Language: C
 - Creation Year: >= 1988
 - Source Year: 2000
 - Parents: Keris.1999
