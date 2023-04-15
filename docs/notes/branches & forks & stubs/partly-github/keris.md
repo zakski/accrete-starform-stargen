@@ -20,11 +20,21 @@
 - Source Year: 2000
 - Parents: Keel.1999.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility:[Reproducible](/docs/notes/build descriptions/2000s/2000%20-%20Keris.2000.B.md).
 - Burdick Version: V3.0
 - Key: Keris.2000.B
 
 This is Matt Burdick's original Starform code, hacked about by Keris with additions for atmospheric composition
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Passes
+  - On Linux (WSL2): Passes using gcc.
+- Runs:
+  - On Windows: Runs successfully.
+  - On Linux (WSL2): Runs successfully.
+
 
 ### [Starform](https://github.com/fusiongyro/starform)
 

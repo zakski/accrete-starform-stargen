@@ -18,6 +18,8 @@ This is Matt Burdick's original Starform code, hacked about by Keris with additi
 -  ad-hoc moon generation stuff, if you define 'MOON' when compiling (add '-DMOON' to the CFLAGS variable in the makefile) then you'll
    get moons generated as well. 
 
+- cut-down star generation from Keris' dabblings with Folkins code.
+
 ## Limitations:
 
 - see [notes on Fogg's paper](/docs/notes/build%20descriptions/1960s%20-%201980s/1985%20-%20Extra-Solar%20Planetary%20Systems.md)
