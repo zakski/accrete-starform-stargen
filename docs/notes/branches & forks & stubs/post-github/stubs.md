@@ -1,4 +1,4 @@
-###[Accrete](https://github.com/calebrob6/accrete)
+### [Accrete](https://github.com/calebrob6/accrete)
 
 - Resource Name: 2013 - Caleb Robinson - Accrete
 - Author: Caleb Robinson
@@ -14,7 +14,7 @@
   
 port of Chuck Swiger's accrete to Javascript
 
-###[Accrete](https://github.com/kbingman/accrete)
+### [Accrete](https://github.com/kbingman/accrete)
 
 - Resource Name: 2014 - Keith Bingman - Accrete
 - Author: Keith Bingman
@@ -30,10 +30,7 @@ port of Chuck Swiger's accrete to Javascript
 
 May be his own version or undocumented fork.
 
-
-https://github.com/monolar/nim-accrete
-
-###[Stargen](https://github.com/Zomega/garnets)
+### [Stargen](https://github.com/Zomega/garnets)
 
 - Resource Name: 2015 - Will Oursler - Stargen
 - Author: Will Oursler
@@ -49,7 +46,7 @@ https://github.com/monolar/nim-accrete
   
 A port of burrow's code.
 
-###[Accrete](https://github.com/monolar/nim-accrete)
+### [Accrete](https://github.com/monolar/nim-accrete)
 - Resource Name: 2015 - Andreas Marr - Accrete - Nim
 - Author: Andreas Marr
 - Poster/Publisher: Andreas Marr (github)
@@ -64,7 +61,7 @@ A port of burrow's code.
 
 An Interesting standalone recreation of dole/sagan's versions in an obscure language.
 
-###[Accrete](https://github.com/monolar/accrete-rb)
+### [Accrete](https://github.com/monolar/accrete-rb)
 
 - Resource Name: 2015 - Andreas Marr - Accrete
 - Author: Andreas Marr
@@ -80,7 +77,7 @@ An Interesting standalone recreation of dole/sagan's versions in an obscure lang
 
 I Believe this to be a follow on from his previous stuff in a more mainstream language.
 
-###[Accrete](https://github.com/StollD/Accrete)
+### [Accrete](https://github.com/StollD/Accrete)
 
 - Resource Name: 2016 - Dorian Stoll - Accrete
 - Author: Dorian Stoll
@@ -96,7 +93,7 @@ I Believe this to be a follow on from his previous stuff in a more mainstream la
   
 variant of Chuck Swiger's accrete.
 
-###[Stargen](https://github.com/glegeza/StarformNET)
+### [Stargen](https://github.com/glegeza/StarformNET)
 
 - Resource Name: 2017 - George Legeza - Starform
 - Author: George Legeza

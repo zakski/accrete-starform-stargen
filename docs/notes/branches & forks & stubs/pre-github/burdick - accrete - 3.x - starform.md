@@ -4,17 +4,27 @@
 
 - Module: Yes, burdick-starform
 - Latest Version: Malloy.1993
-- Compiles: 
-    - On Mac: Yes
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails
+  - On Linux (WSL2): Fails
 - Runs:
-    - On Mac: Yes
+  - N/A
+
+## Up-to-Date Compile/Run Status With Modification
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Passes.
+  - On Linux (WSL2): Fails using gcc, makefile issue.
+- Runs:
+  - On Windows: Runs, but Hangs, RNG issue with planetesimal insertion.
 
 ## Versions
 
 ### [Starform](http://znark.com/create/accrete.html)
 
 - Resource Name: 1994 - Matt Burdick - Starform
-- Author: Matt Burdick****
+- Author: Matt Burdick
 - Poster/Publisher: Ian Burrell
 - Language: C / Microsoft QuickC
 - Creation Year: 1988
@@ -129,4 +139,4 @@ precise place in the timeline.
   - On Windows: Runs, but Hangs, RNG issue with planetesimal insertion.
 
 ## Follow Up
-???
+V3.0 goes to [here](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/keris.md).

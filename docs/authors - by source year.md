@@ -501,12 +501,12 @@ This is Andrew Folkins' code again, but converted to C++. It's even more hacked 
 - Resource Name: 2000 - Keris - Starform
 - Author: Chris "Keris" Croughton
 - Poster/Publisher: Chris "Keris" Croughton
-- Language: C++
+- Language: C
 - Creation Year: >= 1988
 - Source Year: 2000
-- Parents: Keris.1999
+- Parents: Keel.1999.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility:[Reproducible](/docs/notes/build descriptions/2000s/2000%20-%20Keris.2000.B.md).
 - Burdick Version: V3.0
 - Key: Keris.2000.B
 
@@ -639,7 +639,7 @@ port of Chuck Swiger's accrete to Javascript
 - Source Year: 2013
 - Parents:  Keris.2000.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2010s/2013%20-%20Lyons.2013.md).
 - Burdick Version: n/a
 - Key: Lyons.2013
    
@@ -862,7 +862,7 @@ A port of burrow's code.
 - Source Year: 2015
 - Parents:  Lyons.2013
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2010s/2015%20-%20Hong.2015.md).
 - Burdick Version: n/a
 - Key: Hong.2015
 

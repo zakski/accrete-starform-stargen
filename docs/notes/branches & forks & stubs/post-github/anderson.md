@@ -1,6 +1,6 @@
 # Mitch Anderson Forks
 
-###[Accrete](https://github.com/tmanderson/Accrete.js)
+### [Accrete](https://github.com/tmanderson/Accrete.js)
 
 - Resource Name: 2013 - Mitch Anderson - Accrete
 - Author: Mitch Anderson
@@ -16,7 +16,7 @@
   
 A port of burrow's code.
 
-###[Accrete](https://github.com/kennon/Accrete.js)
+### [Accrete](https://github.com/kennon/Accrete.js)
 - Resource Name: 2013 - Kennon Ballou - Accrete
 - Author: Kennon Ballou
 - Poster/Publisher: Kennon Ballou (github)
@@ -31,7 +31,7 @@ A port of burrow's code.
   
 fork of Mitch Anderson's port
 
-###[Accrete](https://github.com/kbingman/accretejs)
+### [Accrete](https://github.com/kbingman/accretejs)
 
 - Resource Name: 2015 - Keith Bingman - Accrete
 - Author: Keith Bingman

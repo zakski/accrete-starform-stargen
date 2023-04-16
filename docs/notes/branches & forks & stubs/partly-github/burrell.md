@@ -1,6 +1,6 @@
 # Ian Burrell Branch
 
-###[ACCRETE](http://znark.com/create/accrete.html)
+### [ACCRETE](http://znark.com/create/accrete.html)
 - Resource Name: 1997 - Ian Burrell - Accrete
 - Author: Ian Burell
 - Poster/Publisher: Ian Burrell
@@ -20,7 +20,7 @@ accretion and Burdick's code works.
 
 Burrell's code is loosely based on Burdick's source code, but takes a much more rigid object-oriented approach.
 
-###[Accrete](https://github.com/pgremo/accrete)
+### [Accrete](https://github.com/pgremo/accrete)
 
 - Resource Name: 2013 - pgremo - Accrete
 - Author: pgremo
