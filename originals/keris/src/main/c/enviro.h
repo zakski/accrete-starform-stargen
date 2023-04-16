@@ -1,27 +1,33 @@
-extern double luminosity(double mass_ratio);
-extern int  orb_zone(double orb_radius);
-extern double volume_radius(double mass, double density);
-extern double kothari_radius(double mass, int giant, int zone);
-extern double empirical_density(double mass, double orb_radius, int gas_giant);
-extern double volume_density(double mass, double equat_radius);
-extern double period(double separation, double small_mass, double large_mass);
-extern double day_length(double mass, double radius, double eccentricity, double density, double orb_radius, double orb_period, int giant, double mass_ratio);
-extern int  inclination(double orb_radius);
-extern double escape_vel(double mass, double radius);
-extern double rms_vel(double molecular_weight, double orb_radius);
-extern double molecule_limit(double mass, double equat_radius);
-extern double acceleration(double mass, double radius);
-extern double gravity(double acceleration);
-extern int  grnhouse(int zone, double orb_radius, double r_greenhouse);
-extern double vol_inventory(double mass, double escape_vel, double rms_vel, double stellar_mass, int zone, int greenhouse_effect);
-extern double pressure(double volatile_gas_inventory, double equat_radius, double gravity);
-extern double boiling_point(double surf_pressure);
-extern double hydro_fraction(double volatile_gas_inventory, double planet_radius);
-extern double cloud_fraction(double surf_temp, double smallest_MW_retained, double equat_radius, double hydro_fraction);
-extern double ice_fraction(double hydro_fraction, double surf_temp);
-extern double eff_temp(double ecosphere_radius, double orb_radius, double albedo);
-extern double green_rise(double optical_depth, double effective_temp, double surf_pressure);
-extern double planet_albedo(double water_fraction, double cloud_fraction, double ice_fraction, double surf_pressure);
-extern double opacity(double molecular_weight, double surf_pressure);
-extern void iterate_surface_temp(planet_pointer * planet);
-extern void iterate_surface_temp_moon(planet_pointer * primary, planet_pointer * planet);
+#ifndef __ENVIRO_H
+#define __ENVIRO_H
+
+#include "gensys.h"
+
+double luminosity(double mass_ratio);
+int    orbital_zone(stellar_system* system, double orb_radius);
+double volume_radius(double mass, double density);
+double kothari_radius(double mass, bool is_gas_giant, int zone);
+double empirical_density(stellar_system* system, double mass, 
+        double orb_radius, bool is_gas_giant);
+double volume_density(double mass, double equatorial_radius);
+double period(double separation, double small_mass, double large_mass);
+double day_length(stellar_system* system, double mass, double radius, 
+        double eccentricity, double density, double orb_radius, 
+        double orb_period, bool is_gas_giant, double mass_ratio);
+int    inclination(double orb_radius);
+double escape_velocity(double mass, double radius);
+double rms_velocity(stellar_system* system, double molecular_weight, double orb_radius);
+double molecule_limit(double mass, double equatorial_radius);
+double acceleration(double mass, double radius);
+double gravity(double acceleration);
+int    greenhouse(int zone, double orb_radius, double r_greenhouse);
+double vol_inventory(double mass, double escape_velocity, double rms_velocity, 
+        double stellar_mass, int zone, int greenhouse_effect);
+double pressure(double volatile_gas_inventory, double equatorial_radius, 
+        double gravity);
+double boiling_point(double surf_pressure);
+void   iterate_surface_temp(stellar_system* system, planet** planet);
+void   iterate_surface_temp_moon(stellar_system* system, 
+        planet** primary, planet** planet);
+
+#endif

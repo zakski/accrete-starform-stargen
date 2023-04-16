@@ -2,12 +2,15 @@
 
 ## Up-to-Date Compile/Run Status
 
-- Module: Yes, burdick-starform
-- Latest Version: Malloy.1993
+- Module: Yes, keris
+- Latest Version: Keris.2000.B
 - Compiles:
-    - On Mac: Yes
+  - On Mac: ???, written in C.
+  - On Windows: Passes
+  - On Linux (WSL2): Passes using gcc.
 - Runs:
-    - On Mac: Yes
+  - On Windows: Runs successfully.
+  - On Linux (WSL2): Runs successfully.
 
 ## Versions
 
@@ -41,16 +44,24 @@ This is Matt Burdick's original Starform code, hacked about by Keris with additi
 - Resource Name: 2013 - Daniel Lyons - Starform
 - Author: Daniel Lyons
 - Poster/Publisher: Daniel Lyons (github)
-- Language: C
+- Language: C -std=99 / Standard ML
 - Creation Year: >= 2000
 - Source Year: 2013
 - Parents:  Keris.2000.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2010s/2013%20-%20Lyons.2013.md).
 - Burdick Version: n/a
 - Key: Lyons.2013
    
-port of Keris's starform code to modern ansi C standards. Technically last touched the core code in 2011.
+port of Keris's starform code to modernish ansi C standards. Technically last touched the core code in 2011.
+
+#### Compile/Run Status
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails
+  - On Linux (WSL2): Fails
+- Runs:
+  - N/A
 
 ### [Stargen](https://github.com/donggas90/ACCRETEPlus)
 

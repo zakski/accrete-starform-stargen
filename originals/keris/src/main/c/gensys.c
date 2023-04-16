@@ -1,85 +1,74 @@
+#include <stdio.h>
+#include <sys/time.h>
+#include <math.h>
+#include <stdlib.h>
 
-#include        <stddef.h>
-#include	<stdlib.h>
-#include	<stdio.h>
-#include        <float.h>
-#include        <math.h>
-#include        <sys/types.h>
-#include        <sys/timeb.h>
-
-#ifdef MSDOS
-#include        <malloc.h>
-#endif
-
-#include        "const.h"
-#include        "structs.h"
-
+#include "gensys.h"
+#include "structs.h"
 #include "accrete.h"
 #include "enviro.h"
-#include "display.h"
-#include "utils.h"
 #include "steltype.h"
-#include "data.h"
 
-void 
-init(void)
+void display_banner()
 {
-  struct timeb grap;
-  long         seed;
-
-  if (sf_f_seed)
-  {
-    seed = sf_f_seed;
-  }
-  else
-  {
-    ftime(&grap);
-    seed = (long)grap.time * 1000 + grap.millitm;
-  }
-  (void)srand(seed);
-  if (sf_f_lisp)
-    printf("(Accrete (version %s) (seed 0x%.8lx))\n", "3.0", seed);
-  else
-    printf("Accrete - V%s; seed=0x%.8lx\n", "3.0", seed);
+  printf("Accrete - V%s\n", "4.0");
 }
 
-planet_pointer
-generate_stellar_system(void)
+// seed the random number generator with this random seed, or the current time
+// if the random_seed is 0.
+void setup_seed(stellar_system* system, unsigned long random_seed)
 {
-  planet_pointer first_planet;
-  planet_pointer planet;
+  if (random_seed == 0)
+  {
+    struct timeval time;
+    gettimeofday(&time, NULL);
+    random_seed = time.tv_sec * 1000 + time.tv_usec;
+  }
+
+  // seed the system random number generator
+  srand(random_seed);
+  
+  // preserve the random seed in our stellar system
+  system->random_seed = random_seed;
+}
+
+stellar_system* generate_stellar_system(unsigned long random_seed)
+{
+  planet* planet;
   double      outer_dust_limit;
 
-  star_mass_r = random_number(0.6, 1.3);	/* was 0.6, 1.3 */
-  star_radius_r = about(pow(star_mass_r, 1.0 / 3.0), 0.05);
+  stellar_system *system = malloc(sizeof(stellar_system));
+  system->first_planet = NULL;
+  setup_seed(system, random_seed);
+
+  system->star_mass_r = random_number(0.6, 1.3);  /* was 0.6, 1.3 */
+  system->star_radius_r = about(pow(system->star_mass_r, 1.0 / 3.0), 0.05);
   /* for some unknown reason, only 3 digits wanted... */
-  star_radius_r = floor(star_radius_r * 1000.0) / 1000.0;
-  star_lum_r = luminosity(star_mass_r);
+  system->star_radius_r = floor(system->star_radius_r * 1000.0) / 1000.0;
+  system->star_lum_r = luminosity(system->star_mass_r);
   /* luminosity is proportional to T^4 and to area of star */
   /* so temp is Tsol * 4th-root ( Lum / r^2 )              */
-  star_temp = 5650 * sqrt(sqrt(star_lum_r) / star_radius_r);
+  system->star_temp = 5650 * sqrt(sqrt(system->star_lum_r) / system->star_radius_r);
   /* ignore fractional degrees */
-  star_temp = floor(star_temp);
-  sprintf(star_class, "%.16s", starFindClass(star_mass_r, star_temp));
-  outer_dust_limit = stellar_dust_limit(star_mass_r);
-  first_planet = dist_planetary_masses(star_mass_r, 
-                                           star_lum_r, 
-                                           0.0, outer_dust_limit);
-  main_seq_life = 1.0E10 * (star_mass_r / star_lum_r);
-  if (main_seq_life > 6.0E9)
-    star_age = random_number(1.0E9, 6.0E9);
-  else if (main_seq_life > 1.0E9)
-    star_age = random_number(1.0E9, main_seq_life);
+  system->star_temp = floor(system->star_temp);
+  sprintf(system->star_class, "%.16s", find_star_class(system->star_temp));
+  outer_dust_limit = stellar_dust_limit(system->star_mass_r);
+  system->first_planet = distribute_planetary_masses(system, 0.0, outer_dust_limit);
+  system->main_seq_life = 1.0E10 * (system->star_mass_r / system->star_lum_r);
+  if (system->main_seq_life > 6.0E9)
+    system->star_age = random_number(1.0E9, 6.0E9);
+  else if (system->main_seq_life > 1.0E9)
+    system->star_age = random_number(1.0E9, system->main_seq_life);
   else
-    star_age = random_number(main_seq_life/10, main_seq_life);
-  r_ecosphere = sqrt(star_lum_r);
-  r_greenhouse = r_ecosphere * GREENHOUSE_EFFECT_CONST;
-  for (planet = first_planet; planet != NULL; planet = planet->next_planet)
+    system->star_age = random_number(system->main_seq_life/10, system->main_seq_life);
+  system->r_ecosphere = sqrt(system->star_lum_r);
+  system->r_greenhouse = system->r_ecosphere * GREENHOUSE_EFFECT_CONST;
+  for (planet = system->first_planet; planet != NULL; planet = planet->next_planet)
   {
-    planet->orbit_zone = orb_zone(planet->a);
+    planet->orbit_zone = orbital_zone(system, planet->a);
     if (planet->gas_giant)
     {
-      planet->density = empirical_density(planet->mass, planet->a, 
+      planet->density = empirical_density(system, planet->mass, planet->a, 
                                           planet->gas_giant);
       planet->radius = volume_radius(planet->mass, planet->density);
     }
@@ -89,21 +78,21 @@ generate_stellar_system(void)
                                       planet->orbit_zone);
       planet->density = volume_density(planet->mass, planet->radius);
     }
-    planet->orb_period = period(planet->a, planet->mass, star_mass_r);
-    planet->day = day_length(planet->mass, planet->radius, planet->e,
-			     planet->density, planet->a,
-			     planet->orb_period, planet->gas_giant,
-			     star_mass_r);
-    planet->resonant_period = resonance;
+    planet->orb_period = period(planet->a, planet->mass, system->star_mass_r);
+    planet->day = day_length(system, planet->mass, planet->radius, planet->e,
+           planet->density, planet->a,
+           planet->orb_period, planet->gas_giant,
+           system->star_mass_r);
+    planet->resonant_period = system->resonance;
     planet->axial_tilt = inclination(planet->a);
-    planet->esc_velocity = escape_vel(planet->mass, planet->radius);
+    planet->esc_velocity = escape_velocity(planet->mass, planet->radius);
     planet->surf_accel = acceleration(planet->mass, planet->radius);
-    planet->rms_velocity = rms_vel(MOL_NITROGEN, planet->a);
+    planet->rms_velocity = rms_velocity(system, MOL_NITROGEN, planet->a);
     planet->molec_weight = molecule_limit(planet->mass, planet->radius);
     if ((planet->gas_giant))
     {
       planet->surf_grav = INCREDIBLY_LARGE_NUMBER;
-      planet->greenhouse_effect = FALSE;
+      planet->greenhouse_effect = false;
       planet->volatile_gas_inventory = INCREDIBLY_LARGE_NUMBER;
       planet->surf_pressure = INCREDIBLY_LARGE_NUMBER;
       planet->boil_point = INCREDIBLY_LARGE_NUMBER;
@@ -114,77 +103,92 @@ generate_stellar_system(void)
     else
     {
       planet->surf_grav = gravity(planet->surf_accel);
-      planet->greenhouse_effect = grnhouse(planet->orbit_zone, planet->a, 
-                                           r_greenhouse);
+      planet->greenhouse_effect = greenhouse(planet->orbit_zone, planet->a, 
+                                           system->r_greenhouse);
       planet->volatile_gas_inventory = vol_inventory(planet->mass, 
                                                      planet->esc_velocity, 
                                                      planet->rms_velocity, 
-                                                     star_mass_r, 
+                                                     system->star_mass_r, 
                                                      planet->orbit_zone, 
                                                      planet->greenhouse_effect);
       planet->surf_pressure = pressure(planet->volatile_gas_inventory, 
                                        planet->radius, planet->surf_grav);
-      if ((planet->surf_pressure == 0.0))
-	planet->boil_point = 0.0;
+      if (planet->surf_pressure == 0.0)
+        planet->boil_point = 0.0;
       else
-	planet->boil_point = boiling_point(planet->surf_pressure);
-      iterate_surface_temp(&(planet));
+        planet->boil_point = boiling_point(planet->surf_pressure);
+      iterate_surface_temp(system, &(planet));
     }
-#ifdef	MOON
-    if (sf_f_moon)
+#ifdef  MOON
+    if (args.make_moon)
     {
 #ifdef  PROPER_MOON
       planet->first_moon = dist_moon_masses(planet->mass,
-					    star_lum_r, planet->e,
-					    0.0, planet_dust_limit(planet->mass));
+              star_lum_r, planet->e,
+              0.0, planet_dust_limit(planet->mass));
 #else
       planet->first_moon = do_dist_moon_masses(planet->mass, planet->radius);
       {
-	planet_pointer moon = planet->first_moon;
+  planet* moon = planet->first_moon;
 
-	while (moon)
-	{
-	  moon->radius = kothari_radius(moon->mass, 0, planet->orbit_zone);
-	  moon->density = volume_density(moon->mass, moon->radius);
-	  moon->density = random_number(1.5, moon->density * 1.1);
-	  if (moon->density < 1.5)
-	    moon->density = 1.5;
-	  moon->radius = volume_radius(moon->mass, moon->density);
-	  moon->orb_period = period(moon->a, moon->mass, planet->mass);
-	  moon->day = day_length(moon->mass, moon->radius, moon->e,
-				 moon->density, moon->a,
-				 moon->orb_period, moon->gas_giant,
-				 planet->mass);
-	  moon->resonant_period = resonance;
-	  moon->axial_tilt = inclination(moon->a);
-	  moon->esc_velocity = escape_vel(moon->mass, moon->radius);
-	  moon->surf_accel = acceleration(moon->mass, moon->radius);
-	  moon->rms_velocity = rms_vel(MOL_NITROGEN, planet->a);
-	  moon->molec_weight = molecule_limit(moon->mass, moon->radius);
-	  moon->surf_grav = gravity(moon->surf_accel);
-	  moon->greenhouse_effect = grnhouse(planet->orbit_zone,
-					     planet->a,
-					     r_greenhouse);
-	  moon->volatile_gas_inventory = vol_inventory(moon->mass,
-						       moon->esc_velocity,
-						       moon->rms_velocity,
-						       star_mass_r,
-						       planet->orbit_zone,
-						  moon->greenhouse_effect);
-	  moon->surf_pressure = pressure(moon->volatile_gas_inventory,
-					 moon->radius, moon->surf_grav);
-	  if ((moon->surf_pressure == 0.0))
-	    moon->boil_point = 0.0;
-	  else
-	    moon->boil_point = boiling_point(moon->surf_pressure);
-	  iterate_surface_temp_moon(&planet, &moon);
-	  moon = moon->next_planet;
-	}
-      }
-#endif				/* CC_MOON */
-    }
-#endif				/* MOON */
+  while (moon)
+  {
+    moon->radius = kothari_radius(moon->mass, 0, planet->orbit_zone);
+    moon->density = volume_density(moon->mass, moon->radius);
+    moon->density = random_number(1.5, moon->density * 1.1);
+    if (moon->density < 1.5)
+      moon->density = 1.5;
+    moon->radius = volume_radius(moon->mass, moon->density);
+    moon->orb_period = period(moon->a, moon->mass, planet->mass);
+    moon->day = day_length(system, moon->mass, moon->radius, moon->e,
+         moon->density, moon->a,
+         moon->orb_period, moon->gas_giant,
+         planet->mass);
+    moon->resonant_period = system->resonance;
+    moon->axial_tilt = inclination(moon->a);
+    moon->esc_velocity = escape_vel(moon->mass, moon->radius);
+    moon->surf_accel = acceleration(moon->mass, moon->radius);
+    moon->rms_velocity = rms_vel(system, MOL_NITROGEN, planet->a);
+    moon->molec_weight = molecule_limit(moon->mass, moon->radius);
+    moon->surf_grav = gravity(moon->surf_accel);
+    moon->greenhouse_effect = grnhouse(planet->orbit_zone,
+               planet->a,
+               system->r_greenhouse);
+    moon->volatile_gas_inventory = vol_inventory(moon->mass,
+                   moon->esc_velocity,
+                   moon->rms_velocity,
+                   system->star_mass_r,
+                   planet->orbit_zone,
+              moon->greenhouse_effect);
+    moon->surf_pressure = pressure(moon->volatile_gas_inventory,
+           moon->radius, moon->surf_grav);
+    if ((moon->surf_pressure == 0.0))
+      moon->boil_point = 0.0;
+    else
+      moon->boil_point = boiling_point(moon->surf_pressure);
+    iterate_surface_temp_moon(system, &planet, &moon);
+    moon = moon->next_planet;
   }
-  return first_planet;
+      }
+#endif        /* CC_MOON */
+    }
+#endif        /* MOON */
+  }
+  return system;
 }
 
+void free_stellar_system(stellar_system* system)
+{
+  // first, free all the planets
+  planet *p, *q = NULL;
+  for (p = system->first_planet;
+       p != NULL; 
+       p = q)
+  {
+    q = p->next_planet;
+    free(p);
+  }
+  
+  // now, free the system
+  free(system);
+}

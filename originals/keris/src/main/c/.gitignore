@@ -1,2 +1,3 @@
 starform
 *.o
+.depend

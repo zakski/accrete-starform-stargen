@@ -1,0 +1,363 @@
+                         SYSTEM  CHARACTERISTICS
+Random seed: 0x12f95048169
+Stellar mass: 1.10 solar masses
+Stellar radius: 1.00 solar radii
+Stellar luminosity: 1.56
+Stellar temperature: 6302 K
+Stellar class: F7
+Age: 3.050 billion years  (3.961 billion left on main sequence)
+Habitable ecosphere radius: 1.251 AU
+
+Planets present at:
+1	  0.396 AU	no atmosphere
+2	  0.445 AU	no atmosphere
+3	  0.681 AU	greenhouse
+4	  1.305 AU	high pressure
+5	  2.425 AU	gas giant
+6	  3.917 AU	gas giant
+7	  7.277 AU	cold
+8	 10.193 AU	gas giant
+9	 17.296 AU	gas giant
+10	 25.793 AU	no atmosphere
+11	 37.996 AU	gas giant
+12	 43.708 AU	no atmosphere
+13	 49.955 AU	no atmosphere
+
+
+
+Planet 1	
+   Distance from primary:	0.396	AU
+   Mass:			0.024	Earth masses
+   Equatorial radius:		1867.3	km
+   Density:			5.261	grams/cc
+   Eccentricity of orbit:	0.057
+   Surface gravity:		0.28	Earth gees
+   Surface pressure:		0.000	Earth atmospheres
+   Surface temperature:		214.48	degrees Celcius
+   Maximum temperature:   	427.19	degrees Celcius
+   Minimum temperature:   	-201.36	degrees Celcius
+   Escape Velocity:		3.20	km/sec
+   Molecular weight retained:	77.41 and above
+   Surface acceleration:	274.57	cm/sec2
+   Axial tilt:			24	degrees
+   Planetary albedo:		0.063
+   Length of year:		86.86	days
+   Length of day:		2084.69	hours
+   Boiling point of water:	-273.0	degrees Celcius
+   Hydrosphere percentage:	0.00
+   Cloud cover percentage:	0.00
+   Ice cover percentage:	0.00
+   liquids at surface:
+				Francium     melts at 27    boils at 356
+				Cesium       melts at 28    boils at 374
+				Gallium      melts at 30    boils at 1499
+				Rubidium     melts at 39    boils at 363
+				Potassium    melts at 63    boils at 415
+				Sodium       melts at 98    boils at 491
+				Indium       melts at 157   boils at 1285
+				Lithium      melts at 181   boils at 800
+
+
+Planet 2	
+   Distance from primary:	0.445	AU
+   Mass:			0.055	Earth masses
+   Equatorial radius:		2464.3	km
+   Density:			5.273	grams/cc
+   Eccentricity of orbit:	0.055
+   Surface gravity:		0.37	Earth gees
+   Surface pressure:		0.000	Earth atmospheres
+   Surface temperature:		183.60	degrees Celcius
+   Maximum temperature:   	389.60	degrees Celcius
+   Minimum temperature:   	-209.06	degrees Celcius
+   Escape Velocity:		4.23	km/sec
+   Molecular weight retained:	44.35 and above
+   Surface acceleration:	363.15	cm/sec2
+   Axial tilt:			12	degrees
+   Planetary albedo:		0.089
+   Length of year:		103.54	days
+   Length of day:		2484.98	hours
+   Boiling point of water:	-273.0	degrees Celcius
+   Hydrosphere percentage:	0.00
+   Cloud cover percentage:	0.00
+   Ice cover percentage:	0.00
+   liquids at surface:
+				Francium     melts at 27    boils at 356
+				Cesium       melts at 28    boils at 374
+				Gallium      melts at 30    boils at 1499
+				Rubidium     melts at 39    boils at 363
+				Potassium    melts at 63    boils at 415
+				Sodium       melts at 98    boils at 491
+				Sulfur       melts at 113   boils at 202
+				Indium       melts at 157   boils at 1285
+				Lithium      melts at 181   boils at 800
+
+
+Planet 3	
+   Distance from primary:	0.681	AU
+   Mass:			1.122	Earth masses
+   Equatorial radius:		6648.0	km
+   Density:			5.448	grams/cc
+   Eccentricity of orbit:	0.231
+   Surface gravity:		1.03	Earth gees
+   Surface pressure:		120.099	Earth atmospheres    GREENHOUSE EFFECT
+   Surface temperature:		548.03	degrees Celcius
+   Maximum temperature:   	552.12	degrees Celcius
+   Minimum temperature:   	540.48	degrees Celcius
+   Escape Velocity:		11.60	km/sec
+   Molecular weight retained:	5.90 and above
+   Surface acceleration:	1012.25	cm/sec2
+   Axial tilt:			25	degrees
+   Planetary albedo:		0.494
+   Length of year:		196.23	days
+   Length of day:		24.19	hours
+   Boiling point of water:	304.1	degrees Celcius
+   Hydrosphere percentage:	0.00
+   Cloud cover percentage:	100.00
+   Ice cover percentage:	0.00
+   liquids at surface:
+				Francium     melts at 27    boils at 1197
+				Cesium       melts at 28    boils at 1240
+				Gallium      melts at 30    boils at 3867
+				Rubidium     melts at 39    boils at 1214
+				Potassium    melts at 63    boils at 1334
+				Sodium       melts at 98    boils at 1513
+				Indium       melts at 157   boils at 3367
+				Lithium      melts at 181   boils at 2233
+				Selenium     melts at 217   boils at 1209
+				Tin          melts at 232   boils at 4207
+				Polonium     melts at 254   boils at 1638
+				Bismuth      melts at 271   boils at 2569
+				Thallium     melts at 304   boils at 2403
+				Cadmium      melts at 321   boils at 1333
+				Lead         melts at 328   boils at 2858
+				Zinc         melts at 420   boils at 1552
+				Tellurium    melts at 450   boils at 1681
+   gasses in atmosphere:
+				Sulfur           21.7%  PP 26063.8 mb
+				Nitrogen         77.6%  PP 93249.0 mb
+				Phosphorus        0.4%  PP  518.5 mb
+
+
+Planet 4	
+   Distance from primary:	1.305	AU
+   Mass:			2.482	Earth masses
+   Equatorial radius:		8587.6	km
+   Density:			5.592	grams/cc
+   Eccentricity of orbit:	0.062
+   Surface gravity:		1.37	Earth gees
+   Surface pressure:		6.651	Earth atmospheres
+   Surface temperature:		35.68	degrees Celcius
+   Normal daytime temperature:	37.27	degrees Celcius
+   Normal night temperature:	33.98	degrees Celcius
+   Maximum temperature:   	48.01	degrees Celcius
+   Minimum temperature:   	22.74	degrees Celcius
+   Escape Velocity:		15.18	km/sec
+   Molecular weight retained:	3.44 and above
+   Surface acceleration:	1342.18	cm/sec2
+   Axial tilt:			16	degrees
+   Planetary albedo:		0.441
+   Length of year:		519.86	days
+   Length of day:		13.13	hours
+   Boiling point of water:	160.7	degrees Celcius
+   Hydrosphere percentage:	100.00
+   Cloud cover percentage:	100.00
+   Ice cover percentage:	0.06
+   liquids at surface:
+				Ethanol      melts at -114  boils at 136
+				Mercury      melts at -39   boils at 459
+				Bromine      melts at -7    boils at 114
+				Water        melts at 0     boils at 161
+				Francium     melts at 27    boils at 831
+				Cesium       melts at 28    boils at 864
+				Gallium      melts at 30    boils at 2838
+   gasses in atmosphere:
+				Nitrogen          0.8%  PP   50.2 mb
+				Helium           99.2%  PP 6601.1 mb
+
+
+Planet 5	*gas giant*
+   Distance from primary:	2.425	AU
+   Mass:			89.736	Earth masses
+   Equatorial radius:		41557.6	km
+   Density:			1.784	grams/cc
+   Eccentricity of orbit:	0.022
+   Escape Velocity:		41.50	km/sec
+   Molecular weight retained:	0.46 and above
+   Surface acceleration:	2072.06	cm/sec2
+   Axial tilt:			19	degrees
+   Planetary albedo:		0.511
+   Length of year:		1316.92	days
+   Length of day:		8.98	hours
+
+
+Planet 6	*gas giant*
+   Distance from primary:	3.917	AU
+   Mass:			166.784	Earth masses
+   Equatorial radius:		51823.2	km
+   Density:			1.710	grams/cc
+   Eccentricity of orbit:	0.113
+   Escape Velocity:		50.66	km/sec
+   Molecular weight retained:	0.31 and above
+   Surface acceleration:	2476.55	cm/sec2
+   Axial tilt:			34	degrees
+   Planetary albedo:		0.518
+   Length of year:		2703.84	days
+   Length of day:		8.21	hours
+
+
+Planet 7	
+   Distance from primary:	7.277	AU
+   Mass:			0.680	Earth masses
+   Equatorial radius:		7527.0	km
+   Density:			2.276	grams/cc
+   Eccentricity of orbit:	0.004
+   Surface gravity:		0.49	Earth gees
+   Surface pressure:		0.362	Earth atmospheres
+   Surface temperature:		-159.65	degrees Celcius
+   Normal daytime temperature:	-155.87	degrees Celcius
+   Normal night temperature:	-163.68	degrees Celcius
+   Maximum temperature:   	-139.67	degrees Celcius
+   Minimum temperature:   	-181.48	degrees Celcius
+   Escape Velocity:		8.49	km/sec
+   Molecular weight retained:	11.01 and above
+   Surface acceleration:	478.76	cm/sec2
+   Axial tilt:			37	degrees
+   Planetary albedo:		0.359
+   Length of year:		6847.19	days
+   Length of day:		21.90	hours
+   Boiling point of water:	73.9	degrees Celcius
+   Hydrosphere percentage:	0.00
+   Cloud cover percentage:	0.00
+   Ice cover percentage:	40.70
+   liquids at surface:
+				Ozone        melts at -193  boils at -123
+   gasses in atmosphere:
+				Oxygen           18.7%  PP   67.5 mb
+				Nitrogen         81.3%  PP  294.2 mb
+
+
+Planet 8	*gas giant*
+   Distance from primary:	10.193	AU
+   Mass:			109.483	Earth masses
+   Equatorial radius:		49637.8	km
+   Density:			1.277	grams/cc
+   Eccentricity of orbit:	0.124
+   Escape Velocity:		41.94	km/sec
+   Molecular weight retained:	0.45 and above
+   Surface acceleration:	1771.98	cm/sec2
+   Axial tilt:			26	degrees
+   Planetary albedo:		0.524
+   Length of year:		11349.17	days
+   Length of day:		9.71	hours
+
+
+Planet 9	*gas giant*
+   Distance from primary:	17.296	AU
+   Mass:			323.415	Earth masses
+   Equatorial radius:		71146.5	km
+   Density:			1.281	grams/cc
+   Eccentricity of orbit:	0.064
+   Escape Velocity:		60.21	km/sec
+   Molecular weight retained:	0.22 and above
+   Surface acceleration:	2547.96	cm/sec2
+   Axial tilt:			36	degrees
+   Planetary albedo:		0.486
+   Length of year:		25078.08	days
+   Length of day:		8.10	hours
+
+
+Planet 10	
+   Distance from primary:	25.793	AU
+   Mass:			0.130	Earth masses
+   Equatorial radius:		4375.1	km
+   Density:			2.215	grams/cc
+   Eccentricity of orbit:	0.009
+   Surface gravity:		0.28	Earth gees
+   Surface pressure:		0.000	Earth atmospheres
+   Surface temperature:		-213.78	degrees Celcius
+   Normal daytime temperature:	-206.26	degrees Celcius
+   Normal night temperature:	-221.25	degrees Celcius
+   Maximum temperature:   	-192.59	degrees Celcius
+   Minimum temperature:   	-235.70	degrees Celcius
+   Escape Velocity:		4.87	km/sec
+   Molecular weight retained:	33.49 and above
+   Surface acceleration:	270.89	cm/sec2
+   Axial tilt:			52	degrees
+   Planetary albedo:		0.137
+   Length of year:		45690.28	days
+   Length of day:		29.12	hours
+   Boiling point of water:	-59.6	degrees Celcius
+   Hydrosphere percentage:	0.00
+   Cloud cover percentage:	0.00
+   Ice cover percentage:	0.07
+   liquids at surface:
+				Oxygen       melts at -218  boils at -213
+
+
+Planet 11	*gas giant*
+   Distance from primary:	37.996	AU
+   Mass:			1.846	Earth masses
+   Equatorial radius:		16837.6	km
+   Density:			0.552	grams/cc
+   Eccentricity of orbit:	0.029
+   Escape Velocity:		9.35	km/sec
+   Molecular weight retained:	9.08 and above
+   Surface acceleration:	259.68	cm/sec2
+   Axial tilt:			42	degrees
+   Planetary albedo:		0.466
+   Length of year:		81692.75	days
+   Length of day:		25.36	hours
+
+
+Planet 12	
+   Distance from primary:	43.708	AU
+   Mass:			0.044	Earth masses
+   Equatorial radius:		3065.3	km
+   Density:			2.200	grams/cc
+   Eccentricity of orbit:	0.011
+   Surface gravity:		0.19	Earth gees
+   Surface pressure:		0.000	Earth atmospheres
+   Surface temperature:		-227.68	degrees Celcius
+   Normal daytime temperature:	-220.94	degrees Celcius
+   Normal night temperature:	-234.30	degrees Celcius
+   Maximum temperature:   	-207.47	degrees Celcius
+   Minimum temperature:   	-247.99	degrees Celcius
+   Escape Velocity:		3.40	km/sec
+   Molecular weight retained:	68.70 and above
+   Surface acceleration:	188.49	cm/sec2
+   Axial tilt:			49	degrees
+   Planetary albedo:		0.147
+   Length of year:		100789.80	days
+   Length of day:		34.91	hours
+   Boiling point of water:	-76.8	degrees Celcius
+   Hydrosphere percentage:	0.00
+   Cloud cover percentage:	0.00
+   Ice cover percentage:	0.05
+
+
+Planet 13	
+   Distance from primary:	49.955	AU
+   Mass:			0.038	Earth masses
+   Equatorial radius:		2901.5	km
+   Density:			2.199	grams/cc
+   Eccentricity of orbit:	0.029
+   Surface gravity:		0.18	Earth gees
+   Surface pressure:		0.000	Earth atmospheres
+   Surface temperature:		-230.51	degrees Celcius
+   Normal daytime temperature:	-224.05	degrees Celcius
+   Normal night temperature:	-236.84	degrees Celcius
+   Maximum temperature:   	-211.10	degrees Celcius
+   Minimum temperature:   	-249.90	degrees Celcius
+   Escape Velocity:		3.22	km/sec
+   Molecular weight retained:	76.72 and above
+   Surface acceleration:	178.30	cm/sec2
+   Axial tilt:			53	degrees
+   Planetary albedo:		0.140
+   Length of year:		123155.03	days
+   Length of day:		35.89	hours
+   Boiling point of water:	-80.2	degrees Celcius
+   Hydrosphere percentage:	0.00
+   Cloud cover percentage:	0.00
+   Ice cover percentage:	0.04
+
+

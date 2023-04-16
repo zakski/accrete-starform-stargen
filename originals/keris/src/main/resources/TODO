@@ -1,3 +1,18 @@
+TODO
+====
+
+ - Clean up the code, make it C99 compliant.
+
+
+OLDER
+=====
+
+Old data, probably written by Chris Croughton. This was originally taken from
+
+  http://www.keristor.net/stars/
+
+I (DKL) don't really intend to do these things.
+
 Things I intend to do with Starform, as of 1999.04.19:
 
   Tidy up the variable names - having variables with names like 'age' in the

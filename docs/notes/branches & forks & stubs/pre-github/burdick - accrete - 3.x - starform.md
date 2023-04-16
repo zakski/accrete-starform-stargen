@@ -4,10 +4,20 @@
 
 - Module: Yes, burdick-starform
 - Latest Version: Malloy.1993
-- Compiles: 
-    - On Mac: Yes
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Fails
+  - On Linux (WSL2): Fails
 - Runs:
-    - On Mac: Yes
+  - N/A
+
+## Up-to-Date Compile/Run Status With Modification
+- Compiles:
+  - On Mac: ???, written in C.
+  - On Windows: Passes.
+  - On Linux (WSL2): Fails using gcc, makefile issue.
+- Runs:
+  - On Windows: Runs, but Hangs, RNG issue with planetesimal insertion.
 
 ## Versions
 

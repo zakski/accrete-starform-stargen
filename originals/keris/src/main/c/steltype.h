@@ -1,8 +1,7 @@
 #ifndef _STELTYPE_H
 #define _STELTYPE_H
 
-typedef struct StellarTypeS StellarType;
-struct StellarTypeS
+typedef struct
 {
   const char *star_class;
   double      temp;
@@ -13,12 +12,10 @@ struct StellarTypeS
   double      density;
   double      lum;
   double      star_age;
-};
- 
-extern StellarType StarType[];
+} stellar_type;
 
-extern StellarType *starFindByMass(double mass);
-extern StellarType *starFindByTemp(double temp);
-extern const char *starFindClass(double mass, double temp);
+extern stellar_type STAR_TYPES[];
+
+const char* find_star_class(double temperature);
 
 #endif
