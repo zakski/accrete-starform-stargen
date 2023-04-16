@@ -1,8 +1,23 @@
+#include <stddef.h>
+#include <stdlib.h>
 #include <stdio.h>
 
-#include "steltype.h"
+typedef struct StellarTypeS StellarType;
 
-stellar_type STAR_TYPES[] =
+struct StellarTypeS
+{
+  const char *star_class;
+  double      temp;
+  const char *balmer;
+  const char *lines;
+  double      mass;
+  double      size;
+  double      density;
+  double      lum;
+  double      star_age;
+};
+
+StellarType StarType[] =
 {
 /*  Type  Tsurf   Balmer     Other Lines     Mrel  Rrel  rho   Lrel   MS Age */
 /*         max    lines                                                years */
@@ -17,43 +32,65 @@ stellar_type STAR_TYPES[] =
   {NULL, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 
-stellar_type* find_stellar_type_by_mass(double mass)
+StellarType *
+starFindByMass(double mass)
 {
-  stellar_type *p = STAR_TYPES;
+  StellarType *p = StarType;
 
   while (p->star_class && mass <= p->mass)
     p++;
-  return p->star_class ? p : NULL;
+  return (p->star_class ? p : NULL);
 }
 
-stellar_type* find_stellar_type_by_temp(double temperature)
+StellarType *
+starFindByTemp(double temp)
 {
-  stellar_type *p = STAR_TYPES;
+  StellarType *p = StarType;
 
-  while (p->star_class && temperature <= p->temp)
+  while (p->star_class && temp <= p->temp)
     p++;
-  return p->star_class ? p : NULL;
+  return (p->star_class ? p : NULL);
 }
 
-const char* find_star_class(double temperature)
+const char *
+starFindClass(double mass, double temp)
 {
   static char star_class[16];
   double      dm;
   int         sub;
-  stellar_type *p = find_stellar_type_by_temp(temperature);
+  StellarType *p = starFindByTemp(temp);
+
+  mass = mass; /* not used at present */
 
   if (!p)
     return NULL;
-  
-  if (p == STAR_TYPES)
+  if (p == StarType)
     return p->star_class;
 
   --p;
-  
   /* p -> smallest star with more mass than wanted */
   dm = p->temp - p[1].temp;
-  sub = (int)(10 * (p->temp - temperature) / dm);
+  sub = (int)(10 * (p->temp - temp) / dm);
 
   sprintf(star_class, "%c%d", p->star_class[0], sub);
   return star_class;
 }
+
+#ifdef TEST
+
+int
+main(int argc, char **argv)
+{
+  int         i;
+
+  for (i = 1; i < argc; i++)
+  {
+    const char *star_class = starFindClass(atof(argv[i]), 0);
+
+    printf("Mass %-8g  star_class %s\n", 
+	   atof(argv[i]), star_class ? star_class : "brown dwarf");
+  }
+  return 0;
+}
+
+#endif

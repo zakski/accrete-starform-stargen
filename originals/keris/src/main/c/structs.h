@@ -1,20 +1,21 @@
 #ifndef _STRUCTS_H
 #define _STRUCTS_H
 
-#include <stdbool.h>
+typedef struct dust_record *dust_pointer;
+typedef struct planets_record *planet_pointer;
 
-typedef struct planet_s
+typedef struct planets_record
 {
   double      a;		/* semi-major axis of the orbit (in AU) */
   double      e;		/* eccentricity of the orbit         */
   double      mass;		/* mass (in solar masses)            */
-  bool        gas_giant;	/* true if the planet is a gas giant */
+  int         gas_giant;	/* TRUE if the planet is a gas giant */
   int         orbit_zone;	/* the 'zone' of the planet          */
   double      radius;		/* equatorial radius (in km)         */
   double      density;		/* density (in g/cc)                 */
   double      orb_period;	/* length of the local year (days)   */
   double      day;		/* length of the local day (hours)   */
-  bool        resonant_period;	/* true if in resonant rotation      */
+  int         resonant_period;	/* TRUE if in resonant rotation   */
   int         axial_tilt;	/* units of degrees                  */
   double      esc_velocity;	/* units of cm/sec                   */
   double      surf_accel;	/* units of cm/sec2                  */
@@ -30,14 +31,19 @@ typedef struct planet_s
   double      hydrosphere;	/* fraction of surface covered       */
   double      cloud_cover;	/* fraction of surface covered       */
   double      ice_cover;	/* fraction of surface covered       */
-  struct planet_s* first_moon;
-  struct planet_s* next_planet;
-} planet;
+  planet_pointer first_moon;
+  planet_pointer next_planet;
+}
+planets;
 
-typedef struct 
+typedef struct dust_record
 {
-  bool make_moon;
-  bool verbose;
-} flags;
+  double      inner_edge;
+  double      outer_edge;
+  int         dust_present;
+  int         gas_present;
+  dust_pointer next_band;
+}
+dust;
 
 #endif

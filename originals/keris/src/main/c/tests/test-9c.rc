@@ -1,6 +1,0 @@
-#!/usr/bin/env 9 rc
-
-for (file in 9c-mac-x86/*.run) {
-	seed = 0x`{echo $file | sed 's/.*\/(.*)\.run/\1/g'}
-	../o.starform -s$seed | /usr/bin/diff -q - $file && echo 'pass'
-}

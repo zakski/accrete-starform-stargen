@@ -639,7 +639,7 @@ port of Chuck Swiger's accrete to Javascript
 - Source Year: 2013
 - Parents:  Keris.2000.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2010s/2013%20-%20Lyons.2013.md).
 - Burdick Version: n/a
 - Key: Lyons.2013
    
@@ -862,7 +862,7 @@ A port of burrow's code.
 - Source Year: 2015
 - Parents:  Lyons.2013
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2010s/2015%20-%20Hong.2015.md).
 - Burdick Version: n/a
 - Key: Hong.2015
 
