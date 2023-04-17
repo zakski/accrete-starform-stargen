@@ -10,7 +10,7 @@
 - Source Year: 2006
 - Parents: Keris.2000.B
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2000s/2006%20-%20Burrows.2006.md).
 - Burdick Version: n/a
 - Key: Burrows.2006
 

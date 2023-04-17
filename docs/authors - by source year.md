@@ -558,7 +558,7 @@ A version altered by Swiger to include psuedorandom number generation enhancemen
 - Source Year: 2006
 - Parents: Many
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2000s/2006%20-%20Burrows.2006.md).
 - Burdick Version: n/a
 - Key: Burrows.2006
 
@@ -852,7 +852,7 @@ copy of Chuck Swiger's accrete.
   
 A port of burrow's code.
 
-### [Stargen](https://github.com/donggas90/ACCRETEPlus)
+### [ACCRETEPlus](https://github.com/donggas90/ACCRETEPlus)
 
 - Resource Name: 015- Jong-il Hong - Accrete
 - Author: Jong-il Hong

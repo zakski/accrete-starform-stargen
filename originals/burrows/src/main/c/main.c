@@ -6,7 +6,7 @@
  *	general functionality and then calling stargen(), whose API is
  *	defined in stargen.h
  *
- *	$Id: main.c,v 1.13 2008/12/30 23:15:13 brons Exp $
+ *	$Id: main.c,v 1.7 2006/02/11 04:08:03 brons Exp $
  */
 
 #include	<stdio.h>
@@ -48,14 +48,16 @@
  *		for debuggery. They may go away.
  */
 
+#define ZEROES 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NULL,0,0,tUnknown,NULL
+
 #define EM(x)		(x)/SUN_MASS_IN_EARTH_MASSES
 #define AVE(x,y)	((x+y)/2.)
 
 				/*  No 	Orbit	Eccen. 	Tilt	Mass		Giant?	Dust Mass	Gas */
-planets sphinx3   ={ 4,	3.0,	0.046,	10.5,	EM(2.35),	FALSE,	EM(2.35),	0, 	ZEROES,0,NULL, NULL};
-planets sphinx2   ={ 3,	2.25,	0.02,	10.5,	EM(2.35),	FALSE,	EM(2.35),	0, 	ZEROES,0,NULL, &sphinx3};
-planets sphinx    ={ 2,	1.6,	0.02,	10.5,	EM(2.2),	FALSE,	EM(2.2),	0, 	ZEROES,0,NULL, &sphinx2};
-planets manticore ={ 1,	1.115,	0.017,	23.5,	EM(1.01),	FALSE,	EM(1.01),	0, 	ZEROES,0,NULL, &sphinx};
+planets sphinx3   ={ 4,	3.0,	0.046,	10.5,	EM(2.35),	FALSE,	EM(2.35),	0, 	ZEROES, NULL};
+planets sphinx2   ={ 3,	2.25,	0.02,	10.5,	EM(2.35),	FALSE,	EM(2.35),	0, 	ZEROES, &sphinx3};
+planets sphinx    ={ 2,	1.6,	0.02,	10.5,	EM(2.2),	FALSE,	EM(2.2),	0, 	ZEROES, &sphinx2};
+planets manticore ={ 1,	1.115,	0.017,	23.5,	EM(1.01),	FALSE,	EM(1.01),	0, 	ZEROES, &sphinx};
 
 
 star	manticores[] = 
@@ -65,7 +67,7 @@ star	manticores[] =
  {1.0,		1.00,	1.047,	0.05,	79.2,	 NULL,		"Manticore B",	 1, "Manticore B"},
 };
 
-catalog	manticore_cat	= {sizeof(manticores) / sizeof (star),	"B", &manticores};
+catalog	manticore_cat	= {sizeof(manticores) / sizeof (star), &manticores};
 
 star	helios[] = 
 // L		Mass	Mass2	Eccen.	SMAxis	 Planets	Designation		Name
@@ -74,12 +76,12 @@ star	helios[] =
  {0.83,		0.87,	1.0,	0.45,	8.85,	 NULL,		"Helio B",	 1, "Helio B"},
 };
 
-catalog	helio		= {sizeof(helios) / sizeof (star), "?",	&helios};
+catalog	helio		= {sizeof(helios) / sizeof (star), &helios};
 
 			     /*	No Orbit Eccen. Tilt   Mass    Gas Giant? Dust Mass   Gas */
-planets ilaqrb={1, 0.21, 0.1,   0,     EM(600.),TRUE,     0,   EM(600.), ZEROES,0,NULL, NULL};
-planets ilaqrc={2, 0.13, 0.27,  0,     EM(178.),TRUE,     0,   EM(178.), ZEROES,0,NULL, &ilaqrb};
-planets ilaqrd={3, 0.021,0.22,  0,     EM(5.9), FALSE,    EM(5.9),    0, ZEROES,0,NULL, &ilaqrc};	// EM(5.9) or 7.53 +/- 0.70 Earth-masses
+planets ilaqrb={1, 0.21, 0.1,   0,     EM(600.),TRUE,     0,   EM(600.), ZEROES, NULL};
+planets ilaqrc={2, 0.13, 0.27,  0,     EM(178.),TRUE,     0,   EM(178.), ZEROES, &ilaqrb};
+planets ilaqrd={3, 0.021,0.22,  0,     EM(5.9), FALSE,    EM(5.9),    0, ZEROES, &ilaqrc};	// EM(5.9) or 7.53 +/- 0.70 Earth-masses
 
 star	ilAqrs[] = 
 // L		Mass	Mass2	Eccen.	SMAxis	 Planets	Designation	Celes	Name
@@ -87,7 +89,7 @@ star	ilAqrs[] =
 {0.0016,	0.32,	0,		0,		0,		 &ilaqrd,	"IL Aqr",	1, "IL Aquarii/Gliese 876"}	// 15.2
 };
 
-catalog	ilAqr_cat		= {sizeof(ilAqrs) / sizeof (star),	"G", &ilAqrs};
+catalog	ilAqr_cat		= {sizeof(ilAqrs) / sizeof (star), &ilAqrs};
 void usage(char*);
 
 void usage(char *prognam)
@@ -110,27 +112,23 @@ void usage(char *prognam)
 					"    -l   List nearby stars and exit\n"
 					"    -H   Output only systems with habitable planets\n"
 					"    -2   Only systems with 2 or more habitable planets\n"
-					"    -E   Only systems with earthlike planets\n"
 					"\n"
 					"  Experimental options (may go away):\n"
 					"    -c   Output Celestia .ssc file on stdout\n"
-					"    -e   Output Excel .csv file\n"
-					"    -V   Create vector graphics (SVG) system image\n"
 					"    -k   Incorporate known planets (incomplete)\n"
 					"          (use only orbital data at present)\n"
 					"          Without -k, -c skips systems with known planets.\n"
 					"    -g   Show atmospheric gases\n"
 					"    -Z   Dump tables used for gases and exit\n"
+#ifdef MOONS
 					"    -M   Do moons (highly experimental)\n"
+#endif
 					"\n"
 					"        Nearest stars taken from:\n"
 					"          http://www.solstation.com/stars.htm\n"
-					"\n"
-					"        StarGen: %s\n"
 					"\n",
 					dole.count - 1,
-					solstation.count - 1,
-					stargen_revision);
+					solstation.count - 1);
 }
 
 int main (int argc, char *argv[])
@@ -155,7 +153,6 @@ int main (int argc, char *argv[])
 
 	int			flags_arg				= 0;
 	int			out_format				= ffHTML;
-	int			graphic_format			= gfGIF;
 	
 	char 		*c						= NULL;
 	int  		skip					= FALSE;
@@ -211,7 +208,7 @@ int main (int argc, char *argv[])
 				break;
 /*
 			case 'T':	// Use the solar system with Titan, not Saturn
-				jupiter.next_planet = &titan2;
+				jupiter.next_planet = &titan;
  */
 			case 'x':	// Use the solar system
 				flag_char = *c;
@@ -238,18 +235,6 @@ int main (int argc, char *argv[])
 				if ((toupper(*c) != 'X') && (*c != '\0'))
 					sys_no_arg = atoi(c) + 1;
 				skip = TRUE;
-				break;
-			case 'F':
-				catalog = &jimb;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				skip = TRUE;
-				break;
-			case 'f':
-				catalog = &jimb;
-				flag_char = toupper(*c);
 				break;
 			case 'd':
 				catalog = &dole;
@@ -298,21 +283,8 @@ int main (int argc, char *argv[])
 			case 't':	// display text
 				out_format = ffTEXT;
 				break;
-			case 'e':
-				out_format = ffCSV;
-				break;
-			case 'C':
-				out_format = ffCSVdl;
-				break;
 			case 'c':
 				out_format = ffCELESTIA;
-				break;
-			case 'V':
-				graphic_format = gfSVG;
-				break;
-			case 'S':
-				graphic_format = gfSVG;
-				out_format = ffSVG;
 				break;
 			case 'k':
 				flags_arg |= fUseKnownPlanets;
@@ -387,9 +359,6 @@ int main (int argc, char *argv[])
 			case 'J':
 				flags_arg |= fDoGases | fOnlyJovianHabitable;
 				break;
-			case 'E':
-				flags_arg |= fDoGases | fOnlyEarthlike;
-				break;
 			case 'A':
 			{
 				double ratio;
@@ -441,8 +410,7 @@ int main (int argc, char *argv[])
 			 ratio_arg,
 			 
 			 flags_arg,
-			 out_format,
-			 graphic_format
+			 out_format
 			 );
 
 	return(0);

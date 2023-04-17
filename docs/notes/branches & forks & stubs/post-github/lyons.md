@@ -37,7 +37,7 @@ port of Keris's starform code to modernish ansi C standards. Technically last to
 - Runs:
     - N/A
 
-### [Stargen](https://github.com/donggas90/ACCRETEPlus)
+### [ACCRETEPlus](https://github.com/donggas90/ACCRETEPlus)
 
 - Resource Name: 015- Jong-il Hong - Accrete
 - Author: Jong-il Hong

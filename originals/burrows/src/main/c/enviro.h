@@ -1,27 +1,46 @@
-extern double luminosity(double mass_ratio);
-extern int  orb_zone(double orb_radius);
-extern double volume_radius(double mass, double density);
-extern double kothari_radius(double mass, int giant, int zone);
-extern double empirical_density(double mass, double orb_radius, int gas_giant);
-extern double volume_density(double mass, double equat_radius);
-extern double period(double separation, double small_mass, double large_mass);
-extern double day_length(double mass, double radius, double eccentricity, double density, double orb_radius, double orb_period, int giant, double mass_ratio);
-extern int  inclination(double orb_radius);
-extern double escape_vel(double mass, double radius);
-extern double rms_vel(double molecular_weight, double orb_radius);
-extern double molecule_limit(double mass, double equat_radius);
-extern double acceleration(double mass, double radius);
-extern double gravity(double acceleration);
-extern int  grnhouse(int zone, double orb_radius, double r_greenhouse);
-extern double vol_inventory(double mass, double escape_vel, double rms_vel, double stellar_mass, int zone, int greenhouse_effect);
-extern double pressure(double volatile_gas_inventory, double equat_radius, double gravity);
-extern double boiling_point(double surf_pressure);
-extern double hydro_fraction(double volatile_gas_inventory, double planet_radius);
-extern double cloud_fraction(double surf_temp, double smallest_MW_retained, double equat_radius, double hydro_fraction);
-extern double ice_fraction(double hydro_fraction, double surf_temp);
-extern double eff_temp(double ecosphere_radius, double orb_radius, double albedo);
-extern double green_rise(double optical_depth, double effective_temp, double surf_pressure);
-extern double planet_albedo(double water_fraction, double cloud_fraction, double ice_fraction, double surf_pressure);
-extern double opacity(double molecular_weight, double surf_pressure);
-extern void iterate_surface_temp(planet_pointer * planet);
-extern void iterate_surface_temp_moon(planet_pointer * primary, planet_pointer * planet);
+long double luminosity(long double);
+int orb_zone(long double, long double);
+long double volume_radius(long double, long double);
+long double kothari_radius(long double, int, int);
+long double empirical_density(long double, long double, long double, int);
+long double volume_density(long double, long double);
+long double period(long double, long double, long double);
+long double day_length(planet_pointer);
+int inclination(long double);
+long double escape_vel(long double, long double);
+long double rms_vel(long double, long double);
+long double molecule_limit(long double, long double, long double);
+long double min_molec_weight (planet_pointer);
+long double acceleration(long double, long double);
+long double gravity(long double);
+long double vol_inventory(long double, long double, long double, long double, int, int, int);
+long double pressure(long double, long double, long double);
+long double boiling_point(long double);
+long double hydro_fraction(long double, long double);
+long double cloud_fraction(long double, long double, long double, long double);
+long double ice_fraction(long double, long double);
+long double eff_temp(long double, long double, long double);
+long double est_temp(long double, long double, long double);
+int grnhouse(long double r_ecosphere, long double);
+long double green_rise(long double, long double, long double);
+long double planet_albedo(long double, long double, long double, long double);
+long double opacity(long double, long double);
+long double gas_life(long double, planet_pointer);
+void calculate_surface_temp(planet_pointer, int, long double, long double,
+							long double, long double, long double);
+void iterate_surface_temp(planet_pointer);
+
+long double inspired_partial_pressure (long double, long double);
+
+unsigned int breathability (planet_pointer);
+
+#define	NONE			0
+#define	BREATHABLE		1
+#define	UNBREATHABLE	2
+#define	POISONOUS		3
+
+extern char* breathability_phrase[4];
+
+extern long double lim(long double x);
+long double soft(long double v, long double max, long double min);
+extern void set_temp_range(planet_pointer planet);
