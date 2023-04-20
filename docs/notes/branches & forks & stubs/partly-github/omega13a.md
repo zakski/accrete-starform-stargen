@@ -1,5 +1,18 @@
 # Brandon Amaro Branch
 
+## Up-to-Date Compile/Run Status
+
+- Module: ???
+- Latest Version: ???
+- Compiles:
+    - On Mac: ???
+    - On Windows: ???
+    - On Linux (WSL2): ???
+- Runs:
+    - N/A
+
+## Versions
+
 ### [Stargen](http://www.fedtrek.com/staff/omega13a/stargen_2013.zip)
 - Resource Name: 2013 - Brandon Amaro - Stargen
 - Author: Brandon Amaro (omega13a)

@@ -1,20 +1,21 @@
 rootProject.name = 'accrete'
 
 // last version of that branch, in the same language it was started in
-include "gilham", /*"folkins",*/ "burrell","burke","burrows" /*,"burdick-accrete"*/, "burdick-starform"/*,"webb"*/,"keris"
+include "amaro","burrell","burdick-starform","burke","burrows", "gilham", "keris" /*"folkins",*/  /*,"burdick-accrete","webb"*/
 
 // few different styles of recreation
 include "api","composite", "streamline"
 
-project(":gilham").projectDir = file("originals/gilham")
-//project(":folkins").projectDir = file("originals/folkins") // TODO, currently use gcc and make for this
+project(":amaro").projectDir = file("originals/amaro")
 project(":burrell").projectDir = file("originals/burrell")
-project(":burke").projectDir = file("originals/burke")
-project(":burrows").projectDir = file("originals/burrows")
 //project(":burdick-accrete").projectDir = file("originals/burdick/accrete") // TODO, currently use gcc and make for this
 project(":burdick-starform").projectDir = file("originals/burdick/starform")
-// project(":webb").projectDir = file("originals/webb") // TODO webb won't compile as is
+project(":burke").projectDir = file("originals/burke")
+project(":burrows").projectDir = file("originals/burrows")
+//project(":folkins").projectDir = file("originals/folkins") // TODO, currently use gcc and make for this
+project(":gilham").projectDir = file("originals/gilham")
 project(":keris").projectDir = file("originals/keris")
+// project(":webb").projectDir = file("originals/webb") // TODO webb won't compile as is
 
 project(":api").projectDir = file("recreations/api")
 project(":composite").projectDir = file("recreations/composite")
