@@ -558,7 +558,7 @@ A version altered by Swiger to include psuedorandom number generation enhancemen
 - Source Year: 2006
 - Parents: Many
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2000s/2006%20-%20Burrows.2006.md).
 - Burdick Version: n/a
 - Key: Burrows.2006
 
@@ -575,7 +575,7 @@ and Chris Croughton. StarGen is based mostly on Burdick's, but has borrowed from
 - Source Year: 2008
 - Parents: Burrows.2006
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2000s/2008%20-%20Burrows.2008.md).
 - Burdick Version: n/a
 - Key: Burrows.2008
 
@@ -657,7 +657,7 @@ port of Keris's starform code to modern ansi C standards. Technically last touch
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
 - Burdick Version: n/a
-- Key: Amaro.2013
+- Key: Reeds.2013
   
 An expansion on burrow's code.
 
@@ -852,7 +852,7 @@ copy of Chuck Swiger's accrete.
   
 A port of burrow's code.
 
-### [Stargen](https://github.com/donggas90/ACCRETEPlus)
+### [ACCRETEPlus](https://github.com/donggas90/ACCRETEPlus)
 
 - Resource Name: 015- Jong-il Hong - Accrete
 - Author: Jong-il Hong

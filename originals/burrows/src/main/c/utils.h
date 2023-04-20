@@ -1,3 +1,3 @@
-extern double random_number(double inner, double outer);
-extern double about(double value, double variation);
-extern double random_eccentricity(void);
+long double random_number(long double, long double);
+long double about(long double, long double);
+long double random_eccentricity(void);

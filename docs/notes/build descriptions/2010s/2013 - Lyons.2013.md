@@ -49,4 +49,4 @@ Netbeans project support
 
 Includes Unit Tests.
 
-see [here](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/keris.md) for the status on Keris' latest code.
+see [here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/keris.md) for the status on Keris' latest code.

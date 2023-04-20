@@ -139,4 +139,4 @@ precise place in the timeline.
   - On Windows: Runs, but Hangs, RNG issue with planetesimal insertion.
 
 ## Follow Up
-V3.0 goes to [here](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/keris.md).
+V3.0 goes to [here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/keris.md).
