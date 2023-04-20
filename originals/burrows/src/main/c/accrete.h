@@ -9,13 +9,9 @@ void update_dust_lanes(long double, long double, long double, long double, long 
 long double collect_dust(long double, long double *, long double *, long double, long double, long double, dust_pointer);
 long double critical_limit(long double, long double, long double );
 void accrete_dust(long double *, long double *, long double *, long double, long double, long double, long double, long double );
-void coalesce_planetesimals(long double, long double, long double, long double, long double, long double, long double, long double, long double );
-planet_pointer dist_planetary_masses(long double, long double, long double, long double, long double, long double, planet_pointer);
+void coalesce_planetesimals(long double, long double, long double, long double, long double, long double, long double, long double, long double, int );
+planet_pointer dist_planetary_masses(long double, long double, long double, long double, long double, long double, planet_pointer, int);
 void free_dust (dust_pointer);
 void free_planet (planet_pointer);
 void free_atmosphere(planet_pointer);
 void free_generations();
-
-#ifdef MOONS
-planet_pointer dist_moon_masses(long double, long double, long double, long double, long double, long double, long double, long double );
-#endif

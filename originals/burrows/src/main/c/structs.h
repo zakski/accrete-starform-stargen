@@ -1,3 +1,5 @@
+#pragma once
+
 typedef struct dust_record	*dust_pointer;
 typedef struct planets_record  *planet_pointer;
 typedef struct gen *gen_pointer;
@@ -22,25 +24,27 @@ typedef struct gas {
 	long double	surf_pressure;		/* units of millibars (mb)			 */
 	} gas;
 
-typedef struct primary {
+typedef struct sun {
 	long double	luminosity;
 	long double	mass;
 	long double life;
 	long double age;
 	long double r_ecosphere;
 	char		*name;
-	} primary;
+	} sun;
 
 typedef struct planets_record {
 	int			planet_no;
-	long double a;					/* semi-major axis of the orbit (in AU)*/
-	long double e;					/* eccentricity of the orbit		 */
+	long double a;					/* semi-major axis of solar orbit (in AU)*/
+	long double e;					/* eccentricity of solar orbit		 */
 	long double	axial_tilt;			/* units of degrees					 */
 	long double mass;				/* mass (in solar masses)			 */
 	int 		gas_giant;			/* TRUE if the planet is a gas giant */
 	long double	dust_mass;			/* mass, ignoring gas				 */
 	long double	gas_mass;			/* mass, ignoring dust				 */
 									/*   ZEROES start here               */
+	long double moon_a;				/* semi-major axis of lunar orbit (in AU)*/
+	long double moon_e;				/* eccentricity of lunar orbit		 */
 	long double	core_radius;		/* radius of the rocky core (in km)	 */
 	long double radius;				/* equatorial radius (in km)		 */
 	int 		orbit_zone;			/* the 'zone' of the planet			 */
@@ -70,14 +74,18 @@ typedef struct planets_record {
 	long double	hydrosphere;		/* fraction of surface covered		 */
 	long double	cloud_cover;		/* fraction of surface covered		 */
 	long double	ice_cover;			/* fraction of surface covered		 */
-	primary*	primary;
+	sun*		sun;
 	int			gases;				/* Count of gases in the atmosphere: */
 	gas*		atmosphere;
 	planet_type type;				/* Type code						 */
+	int			minor_moons;
 	planet_pointer first_moon;
 									/*   ZEROES end here               */
 	planet_pointer next_planet;
 	} planets;
+
+/*	Define the solar system for comparisons, etc. */
+#define ZEROES 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NULL,0,NULL,tUnknown
 
 typedef struct dust_record {
 	long double inner_edge;
@@ -101,6 +109,7 @@ typedef struct star {
 
 typedef struct catalog {
 	int				count;
+	char*			arg;
 	star			(*stars)[];
 	} catalog;
 

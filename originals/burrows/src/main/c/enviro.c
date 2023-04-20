@@ -236,10 +236,10 @@ long double day_length(planet_pointer	planet)
 								 (planet->density / EARTH_DENSITY) *
 								 (equatorial_radius_in_cm / EARTH_RADIUS) *
 								 (EARTH_MASS_IN_GRAMS / planetary_mass_in_grams) *
-								 pow(planet->primary->mass, 2.0) *
+								 pow(planet->sun->mass, 2.0) *
 								 (1.0 / pow(planet->a, 6.0));
 	ang_velocity = base_angular_velocity + (change_in_angular_velocity * 
-											planet->primary->age);
+											planet->sun->age);
 
 /* Now we change from rad/sec to hours/rotation.						 */
 
@@ -733,9 +733,9 @@ long double min_molec_weight (planet_pointer planet)
 	
 	int	loops = 0;
 	
-	if (NULL != planet->primary)
+	if (NULL != planet->sun)
 	{
-		target = planet->primary->age;
+		target = planet->sun->age;
 	}
 
 	if (life > target)
@@ -804,7 +804,7 @@ void calculate_surface_temp(planet_pointer 	planet,
 	{
 		planet->albedo = EARTH_ALBEDO;
 	
-		effective_temp 		= eff_temp(planet->primary->r_ecosphere, planet->a, planet->albedo);
+		effective_temp 		= eff_temp(planet->sun->r_ecosphere, planet->a, planet->albedo);
 		greenhouse_temp     = green_rise(opacity(planet->molec_weight, 
 												 planet->surf_pressure), 
 										 effective_temp, 
@@ -819,7 +819,7 @@ void calculate_surface_temp(planet_pointer 	planet,
 	{
 		if (flag_verbose & 0x0010)
 			fprintf (stderr, "Deluge: %s %d max (%Lf) < boil (%Lf)\n",
-					planet->primary->name,
+					planet->sun->name,
 					planet->planet_no,
 					planet->max_temp,
 					planet->boil_point);
@@ -829,7 +829,7 @@ void calculate_surface_temp(planet_pointer 	planet,
 		planet->volatile_gas_inventory 	= vol_inventory(planet->mass,
 													    planet->esc_velocity,
 													    planet->rms_velocity,
-													    planet->primary->mass,
+													    planet->sun->mass,
 													    planet->orbit_zone,
 													    planet->greenhouse_effect,
 													    (planet->gas_mass
@@ -878,7 +878,7 @@ void calculate_surface_temp(planet_pointer 	planet,
 											planet->ice_cover, 
 											planet->surf_pressure);
 	
-	effective_temp 			= eff_temp(planet->primary->r_ecosphere, planet->a, planet->albedo);
+	effective_temp 			= eff_temp(planet->sun->r_ecosphere, planet->a, planet->albedo);
 	greenhouse_temp     	= green_rise(opacity(planet->molec_weight,
 												 planet->surf_pressure), 
 										 effective_temp, 
@@ -915,13 +915,20 @@ void iterate_surface_temp(planet)
 planet_pointer planet; 
 {
 	int			count = 0;
-	long double initial_temp = est_temp(planet->primary->r_ecosphere, planet->a, planet->albedo);
+	long double initial_temp = est_temp(planet->sun->r_ecosphere, planet->a, planet->albedo);
 
 	long double h2_life  = gas_life (MOL_HYDROGEN,    planet);
 	long double h2o_life = gas_life (WATER_VAPOR,     planet);
 	long double n2_life  = gas_life (MOL_NITROGEN,    planet);
 	long double n_life   = gas_life (ATOMIC_NITROGEN, planet);
 	
+	if (flag_verbose & 0x20000)
+		fprintf (stderr, "%d:                     %5.1Lf it [%5.1Lf re %5.1Lf a %5.1Lf alb]\n",
+				planet->planet_no,
+				initial_temp,
+				planet->sun->r_ecosphere, planet->a, planet->albedo
+				);
+
 	if (flag_verbose & 0x0040)
 		fprintf (stderr, "\nGas lifetimes: H2 - %Lf, H2O - %Lf, N - %Lf, N2 - %Lf\n",
 				h2_life, h2o_life, n_life, n2_life);
@@ -945,8 +952,18 @@ planet_pointer planet;
 		if (fabs(planet->surf_temp - last_temp) < 0.25)
 			break;
 	}
-	
+
 	planet->greenhs_rise = planet->surf_temp - initial_temp;
+	
+	if (flag_verbose & 0x20000)
+		fprintf (stderr, "%d: %5.1Lf gh = %5.1Lf (%5.1Lf C) st - %5.1Lf it [%5.1Lf re %5.1Lf a %5.1Lf alb]\n",
+				planet->planet_no,
+				planet->greenhs_rise,
+				planet->surf_temp,
+				planet->surf_temp - FREEZING_POINT_OF_WATER,
+				initial_temp,
+				planet->sun->r_ecosphere, planet->a, planet->albedo
+				);
 }
 
 /*--------------------------------------------------------------------------*/

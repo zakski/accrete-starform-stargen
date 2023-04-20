@@ -575,7 +575,7 @@ and Chris Croughton. StarGen is based mostly on Burdick's, but has borrowed from
 - Source Year: 2008
 - Parents: Burrows.2006
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2000s/2008%20-%20Burrows.2008.md).
 - Burdick Version: n/a
 - Key: Burrows.2008
 

@@ -329,7 +329,8 @@ void accrete_dust(long double *seed_mass, long double *new_dust, long double *ne
 void coalesce_planetesimals(long double a, long double e, long double mass, long double crit_mass,
 							long double dust_mass, long double gas_mass,
 							long double stell_luminosity_ratio,
-							long double body_inner_bound, long double body_outer_bound)
+							long double body_inner_bound, long double body_outer_bound,
+							int			do_moons)
 {
 	planet_pointer	the_planet;
 	planet_pointer	next_planet;
@@ -375,13 +376,6 @@ void coalesce_planetesimals(long double a, long double e, long double mass, long
 			long double new_a = (the_planet->mass + mass) / 
 								((the_planet->mass / the_planet->a) + (mass / a));
 			
-			if (flag_verbose & 0x0100)
-					fprintf (stderr, "Collision between two planetesimals! "
-							"%5.3Lf AU (%.2LfEM) + %5.3Lf AU (%.2LfEM)-> %5.3Lf AU\n",
-							a, mass * SUN_MASS_IN_EARTH_MASSES, 
-							the_planet->a, the_planet->mass * SUN_MASS_IN_EARTH_MASSES, 
-							new_a);
-
 			temp = the_planet->mass * sqrt(the_planet->a) * sqrt(1.0 - pow(the_planet->e,2.0));
 			temp = temp + (mass * sqrt(a) * sqrt(sqrt(1.0 - pow(e,2.0))));
 			temp = temp / ((the_planet->mass + mass) * sqrt(new_a));
@@ -390,31 +384,137 @@ void coalesce_planetesimals(long double a, long double e, long double mass, long
 				temp = 0.0;
 			e = sqrt(temp);
 			
-			temp = the_planet->mass + mass;
-			accrete_dust(&temp, &new_dust, &new_gas,
-						 new_a,e,stell_luminosity_ratio,
-						 body_inner_bound,body_outer_bound);
-
-			the_planet->a = new_a;
-			the_planet->e = e;
-			the_planet->mass = temp;
-			the_planet->dust_mass += dust_mass + new_dust;
-			the_planet->gas_mass += gas_mass + new_gas;
-			if (temp >= crit_mass)
-				the_planet->gas_giant = TRUE;
-				
-			while (the_planet->next_planet != NULL && the_planet->next_planet->a < new_a)
+			if (do_moons)
 			{
-				next_planet = the_planet->next_planet;
+				long double existing_mass = 0.0;
 				
-				if (the_planet == planet_head)
-					planet_head = next_planet;
-				else
-					prev_planet->next_planet = next_planet;
-				
-				the_planet->next_planet = next_planet->next_planet;
-				next_planet->next_planet = the_planet;
-				prev_planet = next_planet;
+				if (the_planet->first_moon != NULL)
+				{
+					planet_pointer	m;
+					
+					for (m = the_planet->first_moon;
+						 m != NULL;
+						 m = m->next_planet)
+					{
+						existing_mass += m->mass;
+					}
+				}
+
+				if (mass < crit_mass)
+				{
+					if ((mass * SUN_MASS_IN_EARTH_MASSES) < 2.5
+					 && (mass * SUN_MASS_IN_EARTH_MASSES) > .0001
+					 && existing_mass < (the_planet->mass * .05)
+					   )
+					{
+						planet_pointer	the_moon = (planets *)malloc(sizeof(planets));
+						
+						the_moon->type 			= tUnknown;
+	/* 					the_moon->a 			= a; */
+	/* 					the_moon->e 			= e; */
+						the_moon->mass 			= mass;
+						the_moon->dust_mass 	= dust_mass;
+						the_moon->gas_mass 		= gas_mass;
+						the_moon->atmosphere 	= NULL;
+						the_moon->next_planet 	= NULL;
+						the_moon->first_moon 	= NULL;
+						the_moon->gas_giant 	= FALSE;
+						the_moon->atmosphere	= NULL;
+						the_moon->albedo		= 0;
+						the_moon->gases			= 0;
+						the_moon->surf_temp		= 0;
+						the_moon->high_temp		= 0;
+						the_moon->low_temp		= 0;
+						the_moon->max_temp		= 0;
+						the_moon->min_temp		= 0;
+						the_moon->greenhs_rise	= 0;
+						the_moon->minor_moons 	= 0;
+	
+						if ((the_moon->dust_mass + the_moon->gas_mass)
+						  > (the_planet->dust_mass + the_planet->gas_mass))
+						{
+							long double	temp_dust = the_planet->dust_mass;
+							long double temp_gas  = the_planet->gas_mass;
+							long double temp_mass = the_planet->mass;
+							
+							the_planet->dust_mass = the_moon->dust_mass;
+							the_planet->gas_mass  = the_moon->gas_mass;
+							the_planet->mass      = the_moon->mass;
+							
+							the_moon->dust_mass   = temp_dust;
+							the_moon->gas_mass    = temp_gas;
+							the_moon->mass        = temp_mass;
+						}
+	
+						if (the_planet->first_moon == NULL)
+							the_planet->first_moon = the_moon;
+						else
+						{
+							the_moon->next_planet = the_planet->first_moon;
+							the_planet->first_moon = the_moon;
+						}
+						
+						finished = TRUE;
+						
+						if (flag_verbose & 0x0100)
+							fprintf (stderr, "Moon Captured... "
+									 "%5.3Lf AU (%.2LfEM) <- %.2LfEM\n",
+									the_planet->a, the_planet->mass * SUN_MASS_IN_EARTH_MASSES, 
+									mass * SUN_MASS_IN_EARTH_MASSES
+									);
+					}
+					else 
+					{
+						if (flag_verbose & 0x0100)
+							fprintf (stderr, "Moon Escapes... "
+									 "%5.3Lf AU (%.2LfEM)%s %.2LfEM%s\n",
+									the_planet->a, the_planet->mass * SUN_MASS_IN_EARTH_MASSES, 
+									existing_mass < (the_planet->mass * .05) ? "" : " (big moons)",
+									mass * SUN_MASS_IN_EARTH_MASSES,
+									(mass * SUN_MASS_IN_EARTH_MASSES) >= 2.5 ? ", too big" : 
+									  (mass * SUN_MASS_IN_EARTH_MASSES) <= .0001 ? ", too small" : ""
+									);
+					}
+				}
+			}
+
+			if (!finished)
+			{
+				if (flag_verbose & 0x0100)
+						fprintf (stderr, "Collision between two planetesimals! "
+								"%4.2Lf AU (%.2LfEM) + %4.2Lf AU (%.2LfEM = %.2LfEMd + %.2LfEMg [%.3LfEM])-> %5.3Lf AU (%5.3Lf)\n",
+								the_planet->a, the_planet->mass * SUN_MASS_IN_EARTH_MASSES, 
+								a, mass * SUN_MASS_IN_EARTH_MASSES, 
+								dust_mass * SUN_MASS_IN_EARTH_MASSES, gas_mass * SUN_MASS_IN_EARTH_MASSES, 
+								crit_mass * SUN_MASS_IN_EARTH_MASSES,
+								new_a, e);
+			
+				temp = the_planet->mass + mass;
+				accrete_dust(&temp, &new_dust, &new_gas,
+							 new_a,e,stell_luminosity_ratio,
+							 body_inner_bound,body_outer_bound);
+	
+				the_planet->a = new_a;
+				the_planet->e = e;
+				the_planet->mass = temp;
+				the_planet->dust_mass += dust_mass + new_dust;
+				the_planet->gas_mass += gas_mass + new_gas;
+				if (temp >= crit_mass)
+					the_planet->gas_giant = TRUE;
+					
+				while (the_planet->next_planet != NULL && the_planet->next_planet->a < new_a)
+				{
+					next_planet = the_planet->next_planet;
+					
+					if (the_planet == planet_head)
+						planet_head = next_planet;
+					else
+						prev_planet->next_planet = next_planet;
+					
+					the_planet->next_planet = next_planet->next_planet;
+					next_planet->next_planet = the_planet;
+					prev_planet = next_planet;
+				}
 			}
 
 			finished = TRUE;
@@ -430,14 +530,24 @@ void coalesce_planetesimals(long double a, long double e, long double mass, long
 	{
 		the_planet = (planets *)malloc(sizeof(planets));
 		
-		the_planet->type = tUnknown;
-		the_planet->a = a;
-		the_planet->e = e;
-		the_planet->mass = mass;
-		the_planet->dust_mass = dust_mass;
-		the_planet->gas_mass = gas_mass;
-		the_planet->atmosphere = NULL;
-		the_planet->first_moon = NULL;
+		the_planet->type 			= tUnknown;
+		the_planet->a 				= a;
+		the_planet->e 				= e;
+		the_planet->mass 			= mass;
+		the_planet->dust_mass 		= dust_mass;
+		the_planet->gas_mass 		= gas_mass;
+		the_planet->atmosphere 		= NULL;
+		the_planet->first_moon 		= NULL;
+		the_planet->atmosphere		= NULL;
+		the_planet->albedo			= 0;
+		the_planet->gases			= 0;
+		the_planet->surf_temp		= 0;
+		the_planet->high_temp		= 0;
+		the_planet->low_temp		= 0;
+		the_planet->max_temp		= 0;
+		the_planet->min_temp		= 0;
+		the_planet->greenhs_rise	= 0;
+		the_planet->minor_moons 	= 0;
 		
 		if ((mass >= crit_mass))
 			the_planet->gas_giant = TRUE;
@@ -480,7 +590,8 @@ planet_pointer dist_planetary_masses(long double stell_mass_ratio,
 									 long double outer_dust,
 									 long double outer_planet_limit,
 									 long double dust_density_coeff,
-									 planet_pointer seed_system)
+									 planet_pointer seed_system,
+									 int		 do_moons)
 {
 	long double 	a; 
 	long double 	e; 
@@ -537,11 +648,12 @@ planet_pointer dist_planetary_masses(long double stell_mass_ratio,
 			
 			dust_mass += PROTOPLANET_MASS;
 			
-			if ((mass != 0.0) && (mass != PROTOPLANET_MASS))
+			if (mass > PROTOPLANET_MASS)
 				coalesce_planetesimals(a,e,mass,crit_mass,
 									   dust_mass, gas_mass,
 									   stell_luminosity_ratio,
-									   planet_inner_bound,planet_outer_bound);
+									   planet_inner_bound,planet_outer_bound,
+									   do_moons);
 			else if (flag_verbose & 0x0100)
 				fprintf (stderr, ".. failed due to large neighbor.\n");
 		}
@@ -634,69 +746,3 @@ void free_atmosphere(planet_pointer head)
 	}
 }
 
-#ifdef MOONS
-planet_pointer dist_moon_masses(long double planetary_mass, 
-								long double stell_luminosity_ratio,
-								long double planet_a, 
-								long double planet_e, 
-								long double inner_dust, 
-								long double outer_dust,
-								long double dust_density_coeff,
-								long double outer_planet_limit)
-{
-	long double 	a; 
-	long double 	e; 
-	long double 	mass;
-	long double		dust_mass;
-	long double		gas_mass;
-	long double 	crit_mass= critical_limit(planet_a, planet_e ,stell_luminosity_ratio); 
-	long double 	moon_inner_bound; 
-	long double 	moon_outer_bound;
-	
-	set_initial_conditions(inner_dust, outer_dust);
-	moon_inner_bound = nearest_planet(planetary_mass);
-	moon_outer_bound = outer_planet_limit;
-		
-	while (dust_left)
-	{
-		a = random_number(moon_inner_bound,moon_outer_bound);
-		e = random_eccentricity( );
-		
-		mass      = PROTOPLANET_MASS;
-		dust_mass = 0;
-		gas_mass  = 0;
-		
-		if (flag_verbose & 0x0200)
-			fprintf (stderr, "Checking %Lg AU.\n",a);
-			
-		if (dust_available(inner_effect_limit(a, e, mass),
-						   outer_effect_limit(a, e, mass))) 
-		{
-			if (flag_verbose & 0x0100)
-				fprintf (stderr, "Injecting protoplanet at %Lg AU.\n", a);
-			
-			dust_density = dust_density_coeff * sqrt(planetary_mass)
-						   * exp(-ALPHA * pow(a,(1.0 / N)));
-
-			accrete_dust(&mass, &dust_mass, &gas_mass,
-						 a, e, crit_mass,
-						 moon_inner_bound,
-						 moon_outer_bound);
-			
-			dust_mass += PROTOPLANET_MASS;
-			
-			if ((mass != 0.0) && (mass != PROTOPLANET_MASS))
-				coalesce_planetesimals(a, e, mass, crit_mass,
-									   dust_mass, gas_mass,
-									   stell_luminosity_ratio,
-									   moon_inner_bound, moon_outer_bound);
-			else if (flag_verbose & 0x0200)
-				fprintf (stderr, ".. failed due to large neighbor.\n");
-		}
-		else if (flag_verbose & 0x0200)
-			fprintf (stderr, ".. failed.\n");
-	}
-
-	return(planet_head);
-}
-#endif
