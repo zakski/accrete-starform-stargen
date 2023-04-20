@@ -657,7 +657,7 @@ port of Keris's starform code to modern ansi C standards. Technically last touch
 - Original Source: Acquired.
 - Reproducibility: Reproducible.
 - Burdick Version: n/a
-- Key: Amaro.2013
+- Key: Reeds.2013
   
 An expansion on burrow's code.
 

@@ -43,4 +43,4 @@ Made more modular, so that modules are not using data from modules that call the
 Put the 'main' function as the only thing in starform.c, so that (hopefully) all the other modules can be called by 
 other programs.
 
-see [here](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/keris.md) for the status on Keris' latest code.
+see [here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/keris.md) for the status on Keris' latest code.

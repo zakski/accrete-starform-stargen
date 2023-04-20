@@ -20,7 +20,7 @@ and Chris Croughton. StarGen is based mostly on Burdick's, but has borrowed from
 ## Compilation
 Compiles.
 
-see [here](/docs/notes/branches%20&%20forks%20&%20stubs/partly-github/burrows.md) for the status on Burrows' latest code.
+see [here](/docs/notes/branches%20&%20forks%20&%20stubs/pre-github/burrows.md) for the status on Burrows' latest code.
 
 ## Runtime Options
 - see [previous version](/docs/notes/build descriptions/2000s/2008%20-%20Burrows.2008.md).
