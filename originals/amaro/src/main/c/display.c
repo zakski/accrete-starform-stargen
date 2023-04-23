@@ -1,28 +1,29 @@
-#include	<stdio.h>
-#include	<string.h>
-#include	<math.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
 
 #ifdef THINK_C
 #define macintosh 1
 #endif
 
 #ifdef macintosh
-#include	<console.h>
-#include	<unix.h>
+#include <console.h>
+#include <unix.h>
 #endif
 
 #ifdef MSDOS
-#include	<stddef.h>
-#include	<stdlib.h>
-#include	<string.h>
-#include	<float.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <float.h>
 #endif
 
-#include	"structs.h"
-#include	"const.h"
-#include	"display.h"
-#include	"enviro.h"
-#include	"stargen.h"
+#include "structs.h"
+#include "const.h"
+#include "display.h"
+#include "enviro.h"
+#include "stargen.h"
+#include "utils.h"
 
 #define	MAX_EXP_DIGS	3
 #define	MAX_MAN_DIGS	20
@@ -123,12 +124,12 @@ void text_describe_system(planet_pointer innermost_planet, int do_gases, long in
 			printf("Planet is tidally locked with one face to star.\n");
 		if (planet->resonant_period)
 			printf("Planet's rotation is in a resonant spin lock with the star\n");
-		printf("   Distance from primary star:\t%5.3Lf\tAU\n",planet->a);
-		printf("   Mass:\t\t\t%5.3Lf\tEarth masses\n",planet->mass * SUN_MASS_IN_EARTH_MASSES);
+		printf("   Distance from primary star:\t%5.4Lf\tAU\n",planet->a);
+		printf("   Mass:\t\t\t%5.4Lf\tEarth masses\n",planet->mass * SUN_MASS_IN_EARTH_MASSES);
 		if (!(planet->gas_giant))
 		{
 			printf("   Surface gravity:\t\t%4.2Lf\tEarth gees\n",planet->surf_grav);
-			printf("   Surface pressure:\t\t%5.3Lf\tEarth atmospheres",(planet->surf_pressure / 1000.0));
+			printf("   Surface pressure:\t\t%5.4Lf\tEarth atmospheres",(planet->surf_pressure / 1000.0));
 			if ((planet->greenhouse_effect) && (planet->surf_pressure > 0.0))
 				printf("\tGREENHOUSE EFFECT\n");
 			else 
@@ -138,11 +139,12 @@ void text_describe_system(planet_pointer innermost_planet, int do_gases, long in
 		}
 		printf("   Equatorial radius:\t\t%3.1Lf\tKm\n",planet->radius);
 		printf("   Density:\t\t\t%5.3Lf\tgrams/cc\n",planet->density);
-		printf("   Eccentricity of orbit:\t%5.3Lf\n",planet->e);
+		printf("   Eccentricity of orbit:\t%5.4Lf\n",planet->e);
 		printf("   Escape Velocity:\t\t%4.2Lf\tKm/sec\n",planet->esc_velocity / CM_PER_KM);
 		printf("   Molecular weight retained:\t%4.2Lf and above\n",planet->molec_weight);
 		printf("   Surface acceleration:\t%4.2Lf\tcm/sec2\n",planet->surf_accel);
-		printf("   Axial tilt:\t\t\t%2.0Lf\tdegrees\n",planet->axial_tilt);
+
+		printf("   Axial tilt:\t\t\t%3.1Lf\tdegrees\n",planet->axial_tilt);
 		printf("   Planetary albedo:\t\t%5.3Lf\n",planet->albedo);
 		printf("   Length of year:\t\t%4.2Lf\tdays\n",planet->orb_period);
 		printf("   Length of day:\t\t%4.2Lf\thours\n",planet->day);
@@ -170,7 +172,7 @@ void csv_describe_system(FILE *file, planet_pointer innermost_planet, int do_gas
 	planet_pointer 	planet;
 	sun*			sun = innermost_planet->sun;
 	int 			counter; 
-	char 			buffer[2000];
+	char 			buffer[200000];
 	planet_pointer 	moon;
 	int 			moons; 
 
@@ -186,7 +188,7 @@ void csv_describe_system(FILE *file, planet_pointer innermost_planet, int do_gas
 			);
 
 	fprintf (file,
-			"%ld, '%s', %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf\n",
+			"%ld, '%s', %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf\n",
 			seed,
 			sun->name,
 			sun->luminosity,
@@ -209,6 +211,8 @@ void csv_describe_system(FILE *file, planet_pointer innermost_planet, int do_gas
 			"e",
 			"axial_tilt",
 			"mass",
+			"ice mass fraction",
+			"rock mass fraction",
 			"gas_giant",
 			"dust_mass",
 			"gas_mass",
@@ -255,9 +259,10 @@ void csv_describe_system(FILE *file, planet_pointer innermost_planet, int do_gas
 		
 		*buffer = '\0';
 		
-		if (do_gases && (planet->gases > 0))
+		//if (do_gases && (planet->gases > 0))
 		{
 			int	i;
+			long double ipp;
 			
 			for (i = 0; i < planet->gases; i++)
 			{
@@ -271,41 +276,44 @@ void csv_describe_system(FILE *file, planet_pointer innermost_planet, int do_gas
 						index = n;
 				}
 				
-				if (inspired_partial_pressure (planet->surf_pressure,
-											   planet->atmosphere[i].surf_pressure)
-					> gases[index].max_ipp)
-					poisonous = TRUE;
+				ipp = inspired_partial_pressure (planet->surf_pressure,
+								 planet->atmosphere[i].surf_pressure);
+				if (ipp < 0.0 ) ipp = 0.0;
+				if (ipp
+				    > gases[index].max_ipp)
+				  poisonous = TRUE;
 				
-				if (((planet->atmosphere[i].surf_pressure
+				/*if (((planet->atmosphere[i].surf_pressure
 					 / planet->surf_pressure) > .0005)
-				 || poisonous)
-				{
-					sprintf (ptr, "%s %.1Lf%% %.0Lfmb (ipp:%.0Lf)%s; ",
-									gases[index].symbol,
-									100. * (planet->atmosphere[i].surf_pressure /
-											planet->surf_pressure),
-									planet->atmosphere[i].surf_pressure,
-									inspired_partial_pressure (planet->surf_pressure,
-															   planet->atmosphere[i].surf_pressure),
-									poisonous ? " poisonous" : ""
-							);
+				 || poisonous)*/
+				{ 
+					sprintf (ptr, "%s %.100Lf%% %.100Lfmb (ipp:%.100Lf)%s; ",
+						 gases[index].symbol,
+						 100. * (planet->atmosphere[i].surf_pressure /
+							 planet->surf_pressure),
+						 planet->atmosphere[i].surf_pressure,
+						 ipp,
+						 poisonous ? " poisonous" : ""
+						 );
 					ptr = buffer + strlen(buffer);
 				}
 			}
 		}
 
 		fprintf (file,
-			"'%s %d', %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %d, "
-				"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %d, %5.3Lf, "
-				"%5.3Lf, %5.3Lf, %d, %5.3Lf, %5.3Lf, %5.3Lf, "
-				"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %d, %5.3Lf, "
-				"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, "
-				"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, "
-				"%5.3Lf, '%s', '%s', %d\n",
+			"'%s %d', %5.100Lf, %5.100Lf, %5.100Lf, %1.100Lf, %1.100Lf, %5.100Lf, %d, "
+				"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %d, %5.100Lf, "
+				"%5.100Lf, %5.100Lf, %d, %5.100Lf, %5.100Lf, %5.100Lf, "
+				"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %d, %5.100Lf, "
+				"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, "
+				"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, "
+				"%5.100Lf, '%s', '%s', %d\n",
 				sun->name, planet->planet_no,
 				planet->a,
 				planet->e,
 				planet->axial_tilt,
+				planet->imf,
+				planet->rmf,
 				planet->mass,
 				planet->gas_giant,
 				planet->dust_mass,
@@ -357,7 +365,8 @@ void csv_describe_system(FILE *file, planet_pointer innermost_planet, int do_gas
 			if (do_gases && (moon->gases > 0))
 			{
 				int	i;
-				
+				long double ipp;
+
 				for (i = 0; i < moon->gases; i++)
 				{
 					int n;
@@ -370,41 +379,44 @@ void csv_describe_system(FILE *file, planet_pointer innermost_planet, int do_gas
 							index = n;
 					}
 					
-					if (inspired_partial_pressure (moon->surf_pressure,
-												   moon->atmosphere[i].surf_pressure)
-						> gases[index].max_ipp)
-						poisonous = TRUE;
+				ipp = inspired_partial_pressure (moon->surf_pressure,
+								 moon->atmosphere[i].surf_pressure);
+				if (ipp < 0.0 ) ipp = 0.0;
+				if (ipp
+				    > gases[index].max_ipp)
+				  poisonous = TRUE;
 					
-					if (((moon->atmosphere[i].surf_pressure
+					/*if (((moon->atmosphere[i].surf_pressure
 						 / moon->surf_pressure) > .0005)
-					 || poisonous)
+					 || poisonous)*/
 					{
-						sprintf (ptr, "%s %.1Lf%% %.0Lfmb (ipp:%.0Lf)%s; ",
-										gases[index].symbol,
-										100. * (moon->atmosphere[i].surf_pressure /
-												moon->surf_pressure),
-										moon->atmosphere[i].surf_pressure,
-										inspired_partial_pressure (moon->surf_pressure,
-																   moon->atmosphere[i].surf_pressure),
-										poisonous ? " poisonous" : ""
-								);
+						sprintf (ptr, "%s %.100Lf%% %.100Lfmb (ipp:%.100Lf)%s; ",
+							 gases[index].symbol,
+							 100. * (moon->atmosphere[i].surf_pressure /
+								 moon->surf_pressure),
+							 moon->atmosphere[i].surf_pressure,
+							 ipp,
+							 poisonous ? " poisonous" : ""
+							 );
 						ptr = buffer + strlen(buffer);
 					}
 				}
 			}
 	
 			fprintf (file,
-				"'%s %d.%d', %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %d, "
-					"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %d, %5.3Lf, "
-					"%5.3Lf, %5.3Lf, %d, %5.3Lf, %5.3Lf, %5.3Lf, "
-					"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %d, %5.3Lf, "
-					"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, "
-					"%5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, %5.3Lf, "
-					"%5.3Lf, '%s', '%s'\n",
+				"'%s %d.%d', %5.100Lf, %5.100Lf, %5.100Lf, %1.100Lf, %1.100Lf, %5.100Lf, %d, "
+					"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %d, %5.100Lf, "
+					"%5.100Lf, %5.100Lf, %d, %5.100Lf, %5.100Lf, %5.100Lf, "
+					"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %d, %5.100Lf, "
+					"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, "
+					"%5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, %5.100Lf, "
+					"%5.100Lf, '%s', '%s'\n",
 					sun->name, planet->planet_no, moons,
-					moon->a,
-					moon->e,
+					moon->moon_a,
+					moon->moon_e,
 					moon->axial_tilt,
+					moon->imf,
+					moon->rmf,
 					moon->mass,
 					moon->gas_giant,
 					moon->dust_mass,
@@ -488,6 +500,7 @@ char *type_string (planet_type type)
 		case tIce:				typeString = "Ice";			break;
 		case tAsteroids: 		typeString = "Asteroids";	break;
 		case t1Face:			typeString = "1Face";		break;
+		case tBrownDwarf:			typeString = "BrownDwarf";		break;
 	}
 	return typeString;
 }
@@ -498,18 +511,19 @@ char *texture_name (planet_type type)
 	
 	switch (type)
 	{
-		case tUnknown:			typeString = "x.jpg";			break;
-		case tRock:				typeString = "callisto.jpg";	break;
-		case tVenusian:			typeString = "venuslike.jpg";	break;
-		case tTerrestrial:		typeString = "Earthlike.png";	break;
-		case tSubSubGasGiant:	typeString = "x.jpg";			break;
-		case tSubGasGiant:		typeString = "gasgiant.jpg";	break;
-		case tGasGiant:			typeString = "jupiterlike.jpg";	break;
-		case tMartian:			typeString = "mars.jpg";		break;
-		case tWater:			typeString = "x.jpg";			break;
-		case tIce:				typeString = "pluto.jpg";		break;
-		case tAsteroids: 		typeString = "asteroid.jpg";	break;
-		case t1Face:			typeString = "x.jpg";			break;
+		case tUnknown:			typeString = "tunknown.*";	break;
+		case tRock:			typeString = "trock.*";	break;
+		case tVenusian:			typeString = "tvenus.*";	break;
+		case tTerrestrial:		typeString = "tearth.*";	break;
+	        case tSubSubGasGiant:	        typeString = "tsubsubgasgiant.*";    	break;
+		case tSubGasGiant:		typeString = "tsubgasgiant.*";	break;
+		case tGasGiant:			typeString = "tgasgiant.*";	break;
+		case tMartian:			typeString = "tmars.*";	break;
+		case tWater:			typeString = "twater.*";	break;
+		case tIce:			typeString = "tice.*";	break;
+		case tAsteroids: 		typeString = "tasteroid.*";	break;
+		case t1Face:			typeString = "t1face.*";	break;
+		case tBrownDwarf:		typeString = "browndwarf.*";	break;
 	}
 	return typeString;
 }
@@ -794,7 +808,7 @@ FILE *open_html_file (char *system_name,
 				"</style>\r"
 				"<link rel='icon' type='image/png' href='%sref/favicon.png'>\r"
 				"</head>\n<body bgcolor='" BGCOLOR "' text='" TXCOLOR "' "
-							   "link='" LINKCOLOR "' vlink='" TXCOLOR "' alink='" ALINKCOLOR "'>\n\n\n", 
+							   "link='" LINKCOLOR "' vlink='" TXCOLOR "' alink='" ALINKCOLOR "'>\n\n", 
 				'"','"','"','"',
 				seed,
 				noname ? "" : " - ",
@@ -814,10 +828,11 @@ FILE *file;
 	fprintf (file,
 			"<p>\n\n"
 			"<center>\n"
-			"This page was created by <a href='" STARGEN_URL "'>StarGen</a>.\n"
+			"This page was created by omega13a's variant of <a href='" STARGEN_URL "'>StarGen</a> (%s).\n"
 			"</center>\n"
 			"<p>\n\n"
-	        "</body>\n</html>\n");
+		 "</body>\n</html>\n",
+		  stargen_revision);
 	fflush (file);
 	fclose (file);
 }
@@ -831,6 +846,7 @@ void print_description(FILE*			file,
 {
 	if ((planet->type == tGasGiant)
 	 || (planet->type == tSubGasGiant)
+	 || (planet->type == tBrownDwarf) //seb
 	 || (planet->type == tSubSubGasGiant))
 	{
 		// Nothing, for now.
@@ -920,9 +936,16 @@ void print_description(FILE*			file,
 					 breathability_phrase[temp]);
 		}
 		
-		if ((int)planet->day == (int)(planet->orb_period * 24.0)
-		 || (planet->resonant_period))
+		if ((int)planet->day == (int)(planet->orb_period * 24.0))
+		{
 			LPRINT ("1-Face");
+		}
+		else if (planet->resonant_period)
+		{
+			LPRINT ("Resonant Spin");
+		}
+			
+		fprintf (file, " (%Lf day long year)", planet->orb_period);
 		
 		fprintf (file, closing);
 	}
@@ -971,7 +994,7 @@ void list_molecules(FILE*		file,
 /*
  *	Table of scaled planet pictures
  */
- 
+
 void html_thumbnails(planet_pointer innermost_planet, 
 					 FILE*	file, 
 					 char*	system_name, 
@@ -997,9 +1020,9 @@ void html_thumbnails(planet_pointer innermost_planet,
 		 planet != NULL;
 		 planet=planet->next_planet)
 		planet_count++;
- 
+
 	fprintf (file,
-	        "\n<p>\n\n"
+	        "<p>\n\n"
 	        "<table border=3 cellspacing=2 cellpadding=2 align=center "
 	        	   "bgcolor='" BGTABLE "' width='90%%'>\n"
 			"<tr><th colspan=2 bgcolor='" BGTABLE "' align=center>\n"
@@ -1227,7 +1250,7 @@ void html_thumbnails(planet_pointer innermost_planet,
 				sun->mass);
 		fprintf (file,
 		        "<tr><td>Stellar luminosity</td>\n"
-		        "\t<td>%4.2Lf</td></tr>\n",
+		        "\t<td>%4.5Lf</td></tr>\n",
 				sun->luminosity);
 		fprintf (file,
 		        "<tr><td>Age</td>\n"
@@ -1319,8 +1342,8 @@ void html_decribe_planet(planet_pointer planet,
 	fprintf (file,
 			"<p>\n<a name='%s'></a><table border=3 cellspacing=2 cellpadding=2 align=center "
 										 "bgcolor='" BGTABLE "' width='%d%%'>\n"
-			"<colgroup span=1 align=left valign=middle>"
-			"<colgroup span=2 align=left valign=middle>"
+			"<colgroup span=1 align=left valign=middle>\n"
+			"<colgroup span=2 align=left valign=middle>\n"
 			"<tr><th colspan=3 bgcolor='" BGHEADER "' align=center>\n"
 				"<font size='+2' color='" TXHEADER "'>%s #%s Statistics</font></th></tr>\n", 
 			planet_id,
@@ -1345,12 +1368,22 @@ void html_decribe_planet(planet_pointer planet,
 	print_description(file, "<br>", planet, "");
 
 	fprintf (file, "</td></tr>\n");
-				
-	fprintf (file,
+	if (!moons)
+	{
+	  fprintf (file,
 		"<tr><th>Distance from primary star</th><td>%.2LG KM</td>"
-		"<td>%5.3Lf AU</td></tr>\n",
+		"<td>%5.4Lf AU</td></tr>\n",
 			planet->a * KM_PER_AU,
 			planet->a);
+	}
+	else
+	{
+	  fprintf (file,
+		"<tr><th>Distance from planet</th><td>%.2LG KM</td>"
+		"<td>%5.4Lf AU</td></tr>\n",
+			planet->moon_a * KM_PER_AU,
+			planet->moon_a);
+	}
 	fprintf (file,
 			"<tr><th>Mass</th><td>%.2LGKg</td>"
 			"<td>",
@@ -1359,7 +1392,9 @@ void html_decribe_planet(planet_pointer planet,
 	if ((planet->dust_mass * SUN_MASS_IN_EARTH_MASSES >= 0.0006)
 	 && (planet->gas_mass * SUN_MASS_IN_EARTH_MASSES >= 0.0006)
 	 && (planet->type != tGasGiant) 
-	 && (planet->type != tSubGasGiant))
+	 && (planet->type != tSubGasGiant)
+	 && (planet->type != tBrownDwarf)
+	)
 	{
 		int core_size = (int)((50. * planet->core_radius) / planet->radius);
 		
@@ -1395,12 +1430,29 @@ void html_decribe_planet(planet_pointer planet,
 				planet->dust_mass * SUN_MASS_IN_EARTH_MASSES,
 				planet->gas_mass * SUN_MASS_IN_EARTH_MASSES);
 	}
+	if (planet->type != tSubGasGiant && planet->type != tGasGiant && planet->type != tBrownDwarf)
+	{
+	  if (planet->orbit_zone == 3)
+	  {
+	    fprintf(file, "%5.3Lf%% ice<br>", planet->imf * 100);
+	  }
+	  else if (planet->orbit_zone == 2)
+	  {
+	    fprintf(file, "%5.3Lf%% rock<br>", planet->rmf * 100);
+	    fprintf(file, "%5.3Lf%% ice<br>", planet->imf * 100);
+	  }
+	  else
+	  {
+	    fprintf(file, "%5.3Lf%% rock<br>", planet->rmf * 100);
+	  }
+	}
 	
 	fprintf (file,
 		"</td></tr>\n");
 
 	if ((planet->type != tGasGiant) 
 	 && (planet->type != tSubGasGiant) 
+	 && (planet->type != tBrownDwarf) //seb
 	 && (planet->type != tSubSubGasGiant))
 	{
 		long double	celsius = (planet->surf_temp - FREEZING_POINT_OF_WATER);
@@ -1413,11 +1465,11 @@ void html_decribe_planet(planet_pointer planet,
 					planet->surf_grav);
 		
 		fprintf (file,
-				 "<tr><th>Surface pressure</th><td>%5.0Lf millibars",
+				 "<tr><th>Surface pressure</th><td>%5.1Lf millibars",
 				planet->surf_pressure);
 		
 		fprintf (file,
-				 "</td><td>%5.3Lf Earth atmospheres</td></tr>\n",
+				 "</td><td>%5.4Lf Earth atmospheres</td></tr>\n",
 				 (planet->surf_pressure / EARTH_SURF_PRES_IN_MILLIBARS));
 		
 		fprintf (file,
@@ -1487,23 +1539,38 @@ void html_decribe_planet(planet_pointer planet,
 			"</table></center></td></tr>\n");
 		}
 	}
-
-	fprintf (file,
-		"<tr><th>Equatorial radius</th>"
-		"<td>%3.1Lf Km</td>"
-		"<td>%.2LG Earth radii</td></tr>\n",
-			planet->radius,
-			planet->radius / KM_EARTH_RADIUS);
+	else
+	{
+	  fprintf (file, "<tr><th>Estimated Temperature</th><td>%6.2Lf&deg; K</td><td>%+6.2Lf&deg; C Earth temperature</td></tr>", planet->estimated_temp, planet->estimated_temp - EARTH_AVERAGE_KELVIN);
+	}
+	if ((planet->dust_mass * SUN_MASS_IN_EARTH_MASSES >= 0.0006) && (planet->gas_mass * SUN_MASS_IN_EARTH_MASSES >= 0.0006))
+	{
+	  fprintf (file, "<tr><th>Equatorial radius</th><td>%3.1Lf Km</td><td>%.2LG Earth radii<br />%.2LG Jupiter radii</td></tr>\n", planet->radius, planet->radius / KM_EARTH_RADIUS, planet->radius / KM_JUPITER_RADIUS);
+	}
+	else
+	{
+	  fprintf (file, "<tr><th>Equatorial radius</th><td>%3.1Lf Km</td><td>%.2LG Earth radii</td></tr>\n", planet->radius, planet->radius / KM_EARTH_RADIUS);
+	}
 	fprintf (file,
 		"<tr><th>Density</th>"
 		"<td>%4.2Lf grams/cc</td>"
 		"<td>%.2LG Earth densities</td></tr>\n",
 			planet->density,
 			planet->density / EARTH_DENSITY);
-	fprintf (file,
-		"<tr><th>Eccentricity of orbit</th><td>%5.3Lf</td>"
+	if (!moons)
+	{
+	  fprintf (file,
+		"<tr><th>Eccentricity of orbit</th><td>%5.4Lf</td>"
 		"<td></td></tr>\n",
 			planet->e);
+	}
+	else
+	{
+	  fprintf (file,
+		"<tr><th>Eccentricity of orbit</th><td>%5.4Lf</td>"
+		"<td></td></tr>\n",
+			planet->moon_e);
+	}
 	fprintf (file,
 		"<tr><th>Escape Velocity</th><td>%4.1Lf Km/sec</td>"
 		"<td></td></tr>\n",
@@ -1526,35 +1593,50 @@ void html_decribe_planet(planet_pointer planet,
 			int n;
 			int index = max_gas;
 			int	poisonous = FALSE;
-			
+			long double ipp;
+
 			for (n = 0; n < max_gas; n++)
 			{
 				if (gases[n].num == planet->atmosphere[i].num)
 					index = n;
 			}
-			
-			if (inspired_partial_pressure (planet->surf_pressure,
-										   planet->atmosphere[i].surf_pressure)
-				> gases[index].max_ipp)
-				poisonous = TRUE;
+	
+			ipp = inspired_partial_pressure (planet->surf_pressure,
+							 planet->atmosphere[i].surf_pressure);
+			if (ipp < 0.0 ) ipp = 0.0;
+			if (ipp
+			    > gases[index].max_ipp)
+			  poisonous = TRUE;
 			
 			if (((planet->atmosphere[i].surf_pressure
-				 / planet->surf_pressure) > .0005)
+				 / planet->surf_pressure) > .001)
 			 || poisonous)
 			{
+			  if (ipp > 0.1)
 				fprintf (file, "<tr><th align=left>%s&nbsp;</th>"
-							   "<td align=right>%4.1Lf%%&nbsp;</td>"
-							   "<td align=right>%5.0Lf mb&nbsp;</td>"
-							   "<td align=right>(ipp:%5.0Lf)</td>"
-							   "<td align=right>&nbsp;%s</td></tr>\n",
-								gases[index].name,
-								100. * (planet->atmosphere[i].surf_pressure /
-										planet->surf_pressure),
-								planet->atmosphere[i].surf_pressure,
-								inspired_partial_pressure (planet->surf_pressure,
-														   planet->atmosphere[i].surf_pressure),
-								poisonous ? "poisonous" : ""
-						);
+					 "<td align=right>%4.1Lf%%&nbsp;</td>"
+					 "<td align=right>%5.1Lf mb&nbsp;</td>"
+					 "<td align=right>(ipp:%5.1Lf)</td>"
+					 "<td align=right>&nbsp;%s</td></tr>\n",
+					 gases[index].name,
+					 100. * (planet->atmosphere[i].surf_pressure /
+						 planet->surf_pressure),
+					 planet->atmosphere[i].surf_pressure,
+					 ipp,
+					 poisonous ? "poisonous" : ""
+					 );
+			  else fprintf (file, "<tr><th align=left>%s&nbsp;</th>"
+					 "<td align=right>%4.1Lf%%&nbsp;</td>"
+					 "<td align=right>%5.1Lf mb&nbsp;</td>"
+					 "<td align=right>(ipp:%5.6Lf)</td>"
+					 "<td align=right>&nbsp;%s</td></tr>\n",
+					 gases[index].name,
+					 100. * (planet->atmosphere[i].surf_pressure /
+						 planet->surf_pressure),
+					 planet->atmosphere[i].surf_pressure,
+					 ipp,
+					 poisonous ? "poisonous" : ""
+					 );
 			}
 		}
 		fprintf (file, "</table>\n");
@@ -1562,7 +1644,7 @@ void html_decribe_planet(planet_pointer planet,
 	
 	fprintf (file, "</td></tr>\n");
 	fprintf (file,
-		"<tr><th>Axial tilt</th><td>%2.0Lf&deg;</td>"
+		"<tr><th>Axial tilt</th><td>%3.1Lf&deg;</td>"
 		"<td></td></tr>\n",
 			planet->axial_tilt);
 	fprintf (file,
@@ -1648,24 +1730,14 @@ void html_describe_system(planet_pointer 	innermost_planet,
 		planet=planet->next_planet, counter++)
 	{
 		char	*typeString = type_string (planet->type);
-		
-		fprintf (file,
-	        "<tr align=right>\n"
-				"\t<td><a href='#%d'>%d</a></td>\n"
-				"\t<td align=center><img alt='%s' src='%sref/%s.gif'></td>\n"
-				"\t<td colspan=2>%s</td>\n"
-				"\t<td>%7.3Lf  AU</td>\n"
-				"\t<td>%8.3Lf EM</td>\n"
-				"\t<td>%8.3Lf ER</td>"
-				"</tr>\n",
-				counter, counter, 
-			    typeString, 
-			    url_path, 
-			    typeString, 
-			    typeString, 
-				planet->a, 
-				planet->mass * SUN_MASS_IN_EARTH_MASSES,
-				planet->radius / KM_EARTH_RADIUS);
+		if ((planet->dust_mass * SUN_MASS_IN_EARTH_MASSES >= 0.0006)  && (planet->gas_mass * SUN_MASS_IN_EARTH_MASSES >= 0.0006))
+		{
+		  fprintf (file, "<tr align=right>\n\t<td><a href='#%d'>%d</a></td>\n\t<td align=center><img alt='%s' src='%sref/%s.gif'></td>\n\t<td colspan=2>%s</td>\n\t<td>%7.4Lf  AU</td>\n\t<td>%8.4Lf EM</td>\n\t<td>%8.4Lf ER (%8.4Lf JR)</td></tr>\n", counter, counter, typeString, url_path, typeString, typeString, planet->a, planet->mass * SUN_MASS_IN_EARTH_MASSES, planet->radius / KM_EARTH_RADIUS, planet->radius / KM_JUPITER_RADIUS);
+		}
+		else
+		{
+		  fprintf (file, "<tr align=right>\n\t<td><a href='#%d'>%d</a></td>\n\t<td align=center><img alt='%s' src='%sref/%s.gif'></td>\n\t<td colspan=2>%s</td>\n\t<td>%7.4Lf  AU</td>\n\t<td>%8.4Lf EM</td>\n\t<td>%8.4Lf ER</td></tr>\n", counter, counter, typeString, url_path, typeString, typeString, planet->a, planet->mass * SUN_MASS_IN_EARTH_MASSES, planet->radius / KM_EARTH_RADIUS);
+		}
 		for (moon=planet->first_moon, moons=1;
 			moon != NULL;
 			moon=moon->next_planet, moons++)
@@ -1678,7 +1750,7 @@ void html_describe_system(planet_pointer 	innermost_planet,
 					"\t<td align=center><a href='#%d.%d'>%d.%d</a></td>\n"
 					"\t<td align=center><img alt='%s' src='%sref/%s.gif'></td>\n"
 					"\t<td>%s</td>\n"
-					"\t<td>%7.3Lf  AU</td>\n"
+					"\t<td>%7.3Lf km</td>\n"
 					"\t<td>%8.3Lf EM</td>\n"
 					"\t<td>%8.3Lf ER</td>"
 					"</tr>\n",
@@ -1687,7 +1759,7 @@ void html_describe_system(planet_pointer 	innermost_planet,
 					url_path, 
 					typeString, 
 					typeString, 
-					moon->a, 
+					moon->moon_a * KM_PER_AU, 
 					moon->mass * SUN_MASS_IN_EARTH_MASSES,
 					moon->radius / KM_EARTH_RADIUS);
 		}
@@ -1710,43 +1782,447 @@ void html_describe_system(planet_pointer 	innermost_planet,
 			moon != NULL;
 			moon=moon->next_planet, moons++)
 		{
+			moon->orb_period = period(moon->moon_a, moon->mass, planet->mass);
+			moon->day = day_length(moon, planet->mass, 1);
 			html_decribe_planet(moon, counter, moons, do_gases, url_path, file);
 		}
 	}
 }
 
-void celestia_describe_system(planet_pointer innermost_planet, char* designation)
+//seb: generate script to provide random moons
+void moongen_describe_system(planet_pointer innermost_planet, char* designation, char* system_name, long seed, FILE * sgErr)
 {
 	planet_pointer planet;
+	sun*			sun = innermost_planet->sun;
+	long tmp;
+	int num_moons = 0;
+	int num_planets = 0;
 	int counter; 
-	
+
+	printf("#! /bin/sh -x\n");
+	printf("# Stargen - %s; seed=%ld\n", stargen_revision, seed);
+	printf("#\n");
+	printf("# Script to generate moons for some planets in the system %s (%s)\n",designation,system_name);
+	printf("#\n");
+
 	for (planet=innermost_planet, counter=1;
 		planet != NULL;
 		planet=planet->next_planet, counter++)
 	{
-		char	*typeString = texture_name (planet->type);
-		
-		printf("\"p%d\" \"%s\"\n", counter, designation);
-		printf("{\n");
+		 
 
-		printf("	Texture \"%s\"\n",	typeString);
-		printf("	Radius %3.1Lf\n", planet->radius);
-		printf("	Mass %3.1Lf\n", planet->mass * SUN_MASS_IN_EARTH_MASSES);
+	  long double mass = planet->mass;
+	  /*planet_pointer moon;
+	  for (moon = planet->first_moon; moon != NULL; moon = moon->next_planet)
+	  {
+	    mass += moon->mass;
+	  }*/
+	  tmp =	Poisson(mass * SUN_MASS_IN_EARTH_MASSES);
+	  
+	  num_moons +=tmp;
+	    if (tmp > 0 )
+	      {
+		num_planets +=1;
+	  printf("moon_orbits -a %5.4Lf -m %5.4Lf -R %5.4Lf -M %5.4Lf -n p%d -N %ld -s %ld -S %s\n",
+		 planet->a,		 //planet's sma
+		 mass * SUN_MASS_IN_EARTH_MASSES, //planet's mass (earths)
+		 planet->radius,
+		 sun->mass,  //star's mass (sols)
+		 counter,    //planet's name (no spaces)
+		 tmp, //# moons
+		 seed+(counter*1000),       //seed
+		 designation //star's name
+		 );
+	      }
+	}
+	//	fprintf(sgErr,"Planets w/ random moons: %d w/ %d\n",num_planets,num_moons);
+
+}
+
+void celestia_describe_world(planet_pointer planet, char* designation, char* system_name, long seed, long double inc, long double an, FILE * sgErr, int counter, sun* sun, int is_moon, int planet_num)
+{
+	
+  long double tmp,local_inc,mean_long;
+	long double min_r_ecosphere = sqrt( sun->luminosity / 1.51 );
+	long double max_r_ecosphere = sqrt( sun->luminosity / 0.48 );
+  char	*typeString = texture_name (planet->type);
+		
+if (!is_moon)		
+  printf("\"p%d\" \"%s\"\n", counter, designation);
+else
+  printf("\"p%d-%d\" \"%s/p%d\"\n", planet_num, counter, designation, planet_num);
+		printf("{\n");
+if (!is_moon)
+{
+		//seb: specify object class explicitly
+		// tAsteroids is defined as mass < 0.001 Earths. this probably subsumes r < 600 *shrug*
+		if (planet->type == tAsteroids)  printf("	Class \"asteroid\"\n");
+		else if (planet->radius < 250.0) printf("	Class \"asteroid\"\n");
+		else if (planet->radius < 600.0) printf("	Class \"dwarfplanet\"\n");
+		else printf("	Class \"planet\"\n");
+}
+else
+  printf("	Class \"moon\"\n");
+		printf ("\n");
+
+		printf("	Radius %5.4Lf\n", planet->radius);
+		//seb: Celestia ignores mass
+		if  (planet->mass * SUN_MASS_IN_EARTH_MASSES > 0.01 )
+	          printf("	Mass %5.4Lf\n", planet->mass * SUN_MASS_IN_EARTH_MASSES);
+		else   printf("	Mass %12.4Le\n", planet->mass * SUN_MASS_IN_EARTH_MASSES);
+		printf ("\n");
+
+		//seb: explicitly determine surface texture by planet type: each has variations
+		if (planet->type == tSubSubGasGiant 
+		    || planet->type == tSubGasGiant 
+		    || planet->type == tGasGiant 
+		    )
+		  {
+		    //seb: gas giant texture and coloration depends on temperature
+		    long double ts = 85.1+1, tu = 60.3+1, tn = 48.1+1;
+
+		    if  (planet->estimated_temp < tn) // Neptune est temp = 48.1
+		      {
+			printf("	Texture \"tgasgiant.*\"\n");
+			printf("	Color [ 0.37 0.5 0.87]\n");
+			printf("	BlendTexture true\n");
+		      }
+		    else if (planet->estimated_temp < tu) // Uranus est temp = 60.3
+		      {
+			long double r,g,b,te;
+			long double r0 = 0.58, g0 = 0.69, b0 = 0.74, t0=tu;
+			long double r1 = 0.37, g1 = 0.50, b1 = 0.87, t1=tn;
+
+			te = planet->estimated_temp;
+			// modify color proportional to temperature
+			r = r0+ (r1-r0)*((te-t0)/(t1-t0));
+			g = g0+ (g1-g0)*((te-t0)/(t1-t0));
+			b = b0+ (b1-b0)*((te-t0)/(t1-t0));
+
+			printf("	Texture \"tgasgiant.*\"\n");
+			printf("	Color [ %5.2Lf %5.2Lf %5.2Lf ]\n",r,g,b);
+			printf("	BlendTexture true\n");
+		      }
+		    else if (planet->estimated_temp < ts) // Saturn est temp = 85.5
+		      {
+			long double r,g,b,te;
+			long double r0 = 0.91, g0 = 0.87, b0 = 0.76, t0=ts;
+			long double r1 = 0.58, g1 = 0.69, b1 = 0.74, t1=tu;
+
+			te = planet->estimated_temp;
+			// modify color proportional to temperature
+			r = r0+ (r1-r0)*((te-t0)/(t1-t0));
+			g = g0+ (g1-g0)*((te-t0)/(t1-t0));
+			b = b0+ (b1-b0)*((te-t0)/(t1-t0));
+
+			printf("	Texture \"tgasgiant.*\"\n");
+			printf("	Color [ %5.2Lf %5.2Lf %5.2Lf ]\n",r,g,b);
+			printf("	BlendTexture true\n");
+		      }
+		      else if (planet->estimated_temp < 150)
+			{
+			long double r,g,b,te;
+			long double r1 = 0.91, g1 = 0.87, b1 = 0.76, t1=ts;
+			long double r0 = 1, g0 = 1, b0 = 1, t0=150;
+
+			te = planet->estimated_temp;
+			// modify color proportional to temperature
+			r = r0+ (r1-r0)*((te-t0)/(t1-t0));
+			g = g0+ (g1-g0)*((te-t0)/(t1-t0));
+			b = b0+ (b1-b0)*((te-t0)/(t1-t0));
+
+			printf("	Texture \"exo-class1.*\"\n");
+			printf("	Color [ %5.2Lf %5.2Lf %5.2Lf ]\n",r,g,b);
+			printf("	BlendTexture true\n");
+			}
+		      else if (planet->estimated_temp < 350) printf("	Texture \"exo-class2.*\"\n");
+		      else if (planet->estimated_temp < 900)  printf("	Texture \"exo-class3.*\"\n");
+		      else if (planet->estimated_temp < 1500) 
+			{
+			  printf("	Texture \"exo-class4.*\"\n");
+			  printf("	NightTexture \"exo-class4night.*\"\n");
+			}
+		      else 
+			{
+			  printf("	Texture \"exo-class5.*\"\n");
+			  printf("	NightTexture \"exo-class5night.*\"\n");
+			}
+		  }
+		else if (planet->type == tIce) 
+		  {
+		    //seb: randomize surface texture somewhat
+		    int ranItex;
+		    ranItex = random_number(1.5,5.5);
+		    printf("	Texture \"tice%d.*\"\n",ranItex);
+
+		    //seb: include smooth specular reflection
+		    printf("\tSpecularColor [ 0.1 0.1 0.13 ]\n");
+		    printf("\tSpecularPower 25.0\n");
+
+		    //seb: include bumps on sphere
+		    printf("\tBumpMap \"tice%d-bump.*\"\n",ranItex);
+		    printf("\tBumpHeight\t3.5\n");
+
+		    printf("	Color [ 1.0 0.9 0.75 ]\n");
+
+		  }
+		else if (planet->type == tWater) 
+		  {
+		    //seb: randomize surface texture somewhat
+		    int ranWtex;
+		    ranWtex = random_number(1.5,5.5);
+		    printf("	Texture \"twater%d.*\"\n",ranWtex);
+
+		    //seb: include smooth specular reflection
+		    printf("	SpecularColor [ 0.5 0.5 0.55 ]\n");
+		    printf("	SpecularPower 25.0\n");
+		    // and no bumps
+
+		    // blue dot
+		    printf("	Color [ 0.75 0.75 1.0 ]\n");
+		  }
+		else if (planet->type == tRock)
+		  {
+		    int ranRtex;
+		    //seb: vary colorization of surface texture
+		    long double r,g,b;
+		    long double r0=0.52,g0=0.47,b0=0.42;
+
+		    //seb: randomize surface texture somewhat
+		    ranRtex = random_number(1.5,5.5);
+		    printf("	Texture \"trock%d.*\"\n",ranRtex);
+
+		    //seb: no specular reflections
+
+		    //seb: include bumps on sphere
+		    printf("\tBumpMap \"trock%d-bump.*\"\n",ranRtex);
+		    printf("\tBumpHeight\t3.5\n");
+
+		    // modify color proportional to distance as fraction of max
+		    r = r0+ (1.0-r0)*((planet->a)/50.0);
+		    g = g0+ (1.0-g0)*((planet->a)/50.0);
+		    b = b0+ (1.0-b0)*((planet->a)/50.0);
+		    printf("	Color   [ %5.2Lf %5.2Lf %5.2Lf ]\n",r,g,b);
+		    printf("	BlendTexture true\n");
+		  }
+		else if (planet->type == t1Face) 
+		  {
+		    int ran1tex;
+		    //seb: randomize surface texture somewhat
+		    ran1tex = random_number(1.5,5.5);
+		    printf("	Texture \"t1face%d.*\"\n",ran1tex);
+
+		    //seb: include specular reflection on ice (at poles and on back)
+		    // (allowing for lighting in multi-star systems)
+		    printf("\tSpecularTexture \"t1face%d-spec.*\"\n",ran1tex);
+		    printf("\tSpecularColor [ 0.1 0.1 0.13 ]\n");
+		    printf("\tSpecularPower 25.0\n");
+
+		    //seb: include bumps on sphere
+		    printf("\tBumpMap \"t1face%d-bump.*\"\n",ran1tex);
+		    printf("\tBumpHeight\t3.5\n");
+
+		    printf("	Color   [ 0.52 0.47 0.42 ]\n");
+		    printf("	BlendTexture true\n");
+
+		  }
+		else if (planet->type == tVenusian) 
+		  {
+		    int ranVtex;
+		    //seb: randomize surface texture somewhat
+		    ranVtex = random_number(1.5,5.5);
+		    printf("	Texture \"tvenus%d.*\"\n",ranVtex);
+
+		    //seb: no specular reflections
+
+		    //seb: include bumps on sphere
+		    printf("\tBumpMap \"tvenus%d-bump.*\"\n",ranVtex);
+		    printf("\tBumpHeight\t3.5\n");
+
+		    //seb: default white color shading due to clouds
+		  }
+		else if (planet->type == tMartian) 
+		  {
+		    int ranMtex;
+		    //seb: vary colorization of surface texture
+		    long double r,g,b;
+		    long double r0=1.0,g0=0.75,b0=0.7;
+
+		    //seb: randomize surface texture somewhat
+		    ranMtex = random_number(1.5,5.5);
+		    printf("	Texture \"tmars%d.*\"\n",ranMtex);
+
+		    //seb: no specular reflections
+
+		    //seb: include bumps on sphere
+		    printf("\tBumpMap \"tmars%d-bump.*\"\n",ranMtex);
+		    printf("\tBumpHeight\t3.5\n");
+
+		    // modify color proportional to distance as fraction of max
+		    r = r0+ (1.0-r0)*((planet->a)/50.0);
+		    g = g0+ (1.0-g0)*((planet->a)/50.0);
+		    b = b0+ (1.0-b0)*((planet->a)/50.0);
+		    printf("	Color   [ %5.2Lf %5.2Lf %5.2Lf ]\n",r,g,b);
+		    printf("	BlendTexture true\n");
+		  }
+		else if (planet->type == tTerrestrial)
+		  {
+		    //seb: these should affect surface texture choices
+		    // but not yet
+		    printf (
+			    "# Hydrosphere percentage: %4.1Lf\n",
+			    (planet->hydrosphere * 100.0));
+		    printf (
+			    "# Ice cover percentage:   %4.1Lf\n",
+			    (planet->ice_cover * 100));
+		    printf("\n");
+
+		    //seb: nb: each is unique, so textures will be edited manually
+		    //seb: randomize surface texture somewhat
+		    int ranEtex;
+		    ranEtex = random_number(1.5,5.5);
+		    printf("	Texture \"tearth%d.*\"\n",ranEtex);
+
+		    //seb: include specular reflection on water
+		    printf("\tSpecularTexture \"tearth%d-spec.*\"\n",ranEtex);
+		    printf("\tSpecularColor [ 0.8 0.8 0.85 ]\n");
+		    printf("\tSpecularPower 25.0\n");
+
+		    //seb: include bumps on sphere
+		    printf("\tBumpMap \"tearth%d-bump.*\"\n",ranEtex);
+		    printf("\tBumpHeight\t3.5\n");
+
+		    //seb: pale blue dot
+		    printf("\tColor [ 0.9 0.9 0.95 ]\n");
+
+		  }
+		else if (planet->type == tAsteroids)
+		  {
+		    int ranAtex;
+		    ranAtex = random_number(1.5,5.5);
+		    printf("	Texture \"tasteroid%d.*\"\n",ranAtex);
+
+		  // seb: show an irregular lump for small objects
+		  // some kind of mass/density lumpiness function is needed
+		    if (planet->radius < 250.0) 
+		      printf("        Mesh \"asteroid.cms\"\n");
+		    else
+		      {
+			//seb: include bumps on sphere
+			printf("\tBumpMap \"tasteroid%d-bump.*\"\n",ranAtex);
+			printf("\tBumpHeight\t3.5\n");
+		      }
+
+		    // no specular reflections
+
+		    //seb: different types of asteroids have different colors
+		    // (but categories are much more complicated now)
+		    ranAtex = random_number(1.5,3.5);
+		    if (ranAtex == 1)   printf("	Color   [ 0.52 0.46 0.43 ]\n"); //S
+		    else if (ranAtex == 2)   printf("	Color   [ 0.37 0.37 0.37 ]\n"); //C
+		    else  printf("	Color   [ 0.7 0.7 0.7 ]\n");  //M
+
+		    printf("	BlendTexture true\n");
+		  }
+		else
+		  {
+		    printf("	Texture \"%s\"\n",	typeString);
+		  }
+
+		printf("\n");
+
+		// seb: include descriptive comments
+
+		printf("#   Density:\t\t\t%5.4Lf\tgrams/cc\n",planet->density);
+		printf("#   Escape Velocity:\t\t%5.4Lf\tKm/sec\n",planet->esc_velocity / CM_PER_KM);
+		printf("#   Surface acceleration:\t%5.4Lf\tcm/sec2\n",planet->surf_accel);
+		printf("#   Surface gravity:\t\t%5.4Lf\tEarth gees\n",planet->surf_grav);
+		printf("#   Surface temperature:\t%5.4Lf\tdegrees Celcius\n",
+					(planet->surf_temp - FREEZING_POINT_OF_WATER));
+		printf("#   Estimated temperature:\t%5.4Lf\tdegrees Celcius\n",
+					(planet->estimated_temp - FREEZING_POINT_OF_WATER));
+		printf("#   Estimated terrestrial temperature:\t%5.4Lf\tdegrees Celcius\n",
+					(planet->estimated_terr_temp - FREEZING_POINT_OF_WATER));
+		printf("#   Boiling point of water:\t%5.4Lf\tdegrees Celcius\n",(planet->boil_point - FREEZING_POINT_OF_WATER));
+		printf("#   Surface pressure:\t\t%5.4Lf\tEarth atmospheres",(planet->surf_pressure / 1000.0));
+		if ((planet->greenhouse_effect) && (planet->surf_pressure > 0.0))
+			printf("\tGREENHOUSE EFFECT\n");
+		else 
+			printf("\n");
+
+		printf("#   Molecular weight retained:\t%5.4Lf and above\n",planet->molec_weight);
+
+	if ( (planet->gases > 0))
+	{
+		int	i;
+		for (i = 0; i < planet->gases; i++)
+		{
+			int n;
+			int index = max_gas;
+			int	poisonous = FALSE;
+			long double ipp;
+
+			for (n = 0; n < max_gas; n++)
+			{
+				if (gases[n].num == planet->atmosphere[i].num)
+					index = n;
+			}
+			
+			ipp = inspired_partial_pressure (planet->surf_pressure,
+							 planet->atmosphere[i].surf_pressure);
+			if (ipp < 0.0 ) ipp = 0.0;
+			if (ipp
+			    > gases[index].max_ipp)
+			  poisonous = TRUE;
+			
+			if (((planet->atmosphere[i].surf_pressure
+				 / planet->surf_pressure) > .0005)
+			 || poisonous)
+			{
+			  printf ("#           %s: %4.1Lf%% %5.0Lf mb (ipp:%5.0Lf) %s",
+				  gases[index].name,
+				  100. * (planet->atmosphere[i].surf_pressure /
+					  planet->surf_pressure),
+				  planet->atmosphere[i].surf_pressure,
+				  ipp,
+				  poisonous ? "poisonous\n" : "\n"
+				  );
+			}
+		}
+	}
+	//	else { printf ("# no gases?");}
+
 		printf("\n");
 		
+		//seb: atmosphere characteristics
 		switch (planet->type)
 		{
 			 case tUnknown:
 				break;
-			 case tRock:
 			 case tAsteroids:
-			 case t1Face:
-				printf("	Color   [ 0.52 0.47 0.42 ]\n");
-				printf("	BlendTexture true\n");
-				printf("\n");
 				break;
+			 case tRock:
+				break;
+			 case t1Face:
+
+				//seb: 1face has atmosphere
+				printf("	HazeColor [ 1 1 1 ]\n");
+				printf("	HazeDensity 0.3\n");
+				printf("\n");
+				printf("	Atmosphere {\n");
+				printf("		Height 30\n");
+				printf("		Lower [ 0.8 0.4 0.1 ]\n");
+				printf("		Upper [ 0.0 0.0 0.9 ]\n");
+				printf("		Sky [ 0.8 0.4 0.1 ]\n");
+				printf("\t\tSunset [ 0.8 0.5 0.2 ]\n"); //seb
+				printf("	}\n");
+
+				printf("\n");
+
+				break;
+
 			 case tIce:
-				printf("	Color [ 1.0 0.9 0.75 ]\n");
+
 				printf("	HazeColor [ 0.2 0.5 1 ]\n");
 				printf("	HazeDensity 1\n");
 				printf("\n");
@@ -1755,11 +2231,13 @@ void celestia_describe_system(planet_pointer innermost_planet, char* designation
 				printf("		Lower [ 0.8 0.4 0.1 ]\n");
 				printf("		Upper [ 0.0 0.0 0.9 ]\n");
 				printf("		Sky [ 0.8 0.4 0.1 ]\n");
+				printf("\t\tSunset [ 0.8 0.5 0.2 ]\n"); //seb
 				printf("	}\n");
 				printf("\n");
 				break;
+
 			 case tMartian:
-				printf("	Color   [ 1 0.75 0.7 ]\n");
+
 				printf("	HazeColor [ 1 1 1 ]\n");
 				printf("	HazeDensity 0.45\n");
 				printf("\n");
@@ -1768,13 +2246,12 @@ void celestia_describe_system(planet_pointer innermost_planet, char* designation
 				printf("		Lower [ 0.8 0.6 0.6 ]\n");
 				printf("		Upper [ 0.7 0.3 0.3 ]\n");
 				printf("		Sky [ 0.83 0.75 0.65 ]\n");
+				printf("\t\tSunset [ 0.7 0.7 0.8 ]\n"); //seb
 				printf("	}\n");
 				printf("\n");
 				break;
+
 			 case tTerrestrial:
-				printf("	Color [ 0.85 0.85 1.0 ]\n");
-				printf("	SpecularColor [ 0.5 0.5 0.55 ]\n");
-				printf("	SpecularPower 25.0\n");
 				printf("	HazeColor [ 1 1 1 ]\n");
 				printf("	HazeDensity 0.3\n");
 				printf("\n");
@@ -1783,17 +2260,25 @@ void celestia_describe_system(planet_pointer innermost_planet, char* designation
 				printf("		Lower [ 0.5 0.5 0.65 ]\n");
 				printf("		Upper [ 0.3 0.3 0.6 ]\n");
 				printf("		Sky [ 0.3 0.6 0.9 ]\n");
+				printf("\t\tSunset [ 1.0 0.6 0.2 ]\n"); //seb
+
+				printf("\n");
+				printf (
+					"# Cloud cover percentage: %4.1Lf\n",
+					(planet->cloud_cover * 100));
 				printf("		CloudHeight 7\n");
 				printf("		CloudSpeed 65\n");
-				printf("		CloudMap \"earth-clouds.png\"\n");
+				{
+				  int ranCtex;
+				  ranCtex = random_number(1.5,5.5);
+				  printf("\t\tCloudMap \"t50-clouds%d.*\"\n",ranCtex);
+				}
 				printf("	}\n");
 				printf("\n");
 				break;
+
 			 case tWater:
-				printf("	Color [ 0.75 0.75 1.0 ]\n");
-				printf("	SpecularColor [ 0.5 0.5 0.55 ]\n");
-				printf("	SpecularPower 25.0\n");
-				printf("	HazeColor [ 1 1 1 ]\n");
+				printf("	HazeColor [ 1 1 1 ]\nsun*			sun");
 				printf("	HazeDensity 0.3\n");
 				printf("\n");
 				printf("	Atmosphere {\n");
@@ -1801,9 +2286,22 @@ void celestia_describe_system(planet_pointer innermost_planet, char* designation
 				printf("		Lower [ 0.4 0.4 0.7 ]\n");
 				printf("		Upper [ 0.2 0.2 0.6 ]\n");
 				printf("		Sky [ 0.4 0.7 0.9 ]\n");
+				printf("\t\tSunset [ 1.0 0.6 0.2 ]\n"); //seb
+				printf("\n");
+				printf (
+					"# Cloud cover percentage: %4.1Lf\n",
+					(planet->cloud_cover * 100));
+				printf("		CloudHeight 11\n");
+				printf("		CloudSpeed 65\n");
+				{
+				  int ranWtex;
+				  ranWtex = random_number(1.5,5.5);
+				  printf("\t\tCloudMap \"t100-clouds%d.*\"\n",ranWtex);
+				}
 				printf("	}\n");
 				printf("\n");
 				break;
+
 			 case tVenusian:
 				printf("	HazeColor [ 0.5 0.35 0.2 ]\n");
 				printf("	HazeDensity 0.35\n");
@@ -1813,38 +2311,170 @@ void celestia_describe_system(planet_pointer innermost_planet, char* designation
 				printf("		Lower [ 0.8 0.8 0.5 ]\n");
 				printf("		Upper [ 0.6 0.6 0.6 ]\n");
 				printf("		Sky [ 0.8 0.8 0.5 ]\n");
+				printf("\n");
+				printf (
+					"# Cloud cover percentage: %4.1Lf\n",
+					(planet->cloud_cover * 100));
+				printf("	      	CloudHeight 50\n");
+				printf("	       	CloudSpeed  90\n");
+				{
+				  int rantex;
+				  rantex = random_number(1.5,5.5);
+				  printf("\t\tCloudMap \"t100-clouds%d.*\"\n",rantex);
+				}
 				printf("	}\n");
 				printf("\n");
 				break;
+
 			 case tSubSubGasGiant:
 			 case tSubGasGiant:
-				printf("	Color [ 0.75 0.85 1.0 ]\n");
+			   // seb: oblaten spinning gas balls
+			   tmp =  planet->mass * SUN_MASS_IN_EARTH_MASSES;
+			   tmp = 4.94e-12 * (pow(planet->radius,3)/(tmp * pow(planet->day,2)));
+			   printf("        Oblateness %5.4Lf\n",tmp);
+				printf("\n");
 				printf("	HazeColor [ 0.5 0.8 1.0 ]\n");
 				printf("	HazeDensity 0.2\n");
 				printf("\n");
 				break;
 			 case tGasGiant:
+			   // seb: oblaten spinning gas balls
+			   tmp =  planet->mass * SUN_MASS_IN_EARTH_MASSES;
+			   tmp = 5.56e-12 * (pow(planet->radius,3)/(tmp * pow(planet->day,2)));
+			   printf("        Oblateness %5.4Lf\n",tmp);
+				printf("\n");
+
 				printf("	HazeColor [ 0.4 0.45 0.5 ]\n");
 				printf("	HazeDensity 0.3\n");
 				printf("\n");
 				break;
+			 case tBrownDwarf:
+			   // seb: some planets are big enough to almost be stars
+			        printf("# Brown Dwarf!\n");
+				printf("	HazeColor [ 0.5 0.45 0.45 ]\n");
+				printf("	HazeDensity 0.4\n");
+				printf("\n");
+				break;
 		}
 		
+		printf("	OrbitFrame { EclipticJ2000{} }\n");
+		
 		printf("	EllipticalOrbit {\n");
-		printf("		Period            %4.2Lf  # years\n", planet->orb_period / DAYS_IN_A_YEAR);
-		printf("		SemiMajorAxis     %5.3Lf  # AU\n", planet->a);
-		printf("		Eccentricity      %5.3Lf\n", planet->e);
-		printf("		Inclination       0.0\n");
-		printf("		AscendingNode     0\n");
-		printf("		LongOfPericenter  0\n");
-		printf("	        MeanLongitude 0\n");
+		
+		if (!is_moon)
+		{
+		  printf("		Period            %5.4Lf \t # years\n", planet->orb_period / DAYS_IN_A_YEAR);
+		  printf("		SemiMajorAxis     %5.4Lf \t # AU\n", planet->a);
+		  printf("		Eccentricity      %5.4Lf\n", planet->e);
+		}
+		else
+		{
+		  printf("		Period            %5.4Lf \t # days\n", planet->orb_period);
+		  printf("		SemiMajorAxis     %5.4Lf \t # km\n", planet->moon_a * KM_PER_AU);
+		  printf("		Eccentricity      %5.4Lf\n", planet->moon_e);
+		}
+
+		//seb: small random variations in inclination (and ascending node?)
+		// doubtless some physical constraints should be applied
+		// like distance from star, obliquity, oblatness, mass, etc.
+		local_inc = inc+gaussian(1.0);
+		printf("		Inclination       %5.100Lf\n",local_inc);
+		printf("		AscendingNode     %5.100Lf\n",an);
+		tmp = random_number(0.0,360.0);
+		printf("		LongOfPericenter  %5.100Lf\n",tmp);
+		mean_long = random_number(0.0,360.0);
+		printf("	        MeanLongitude     %5.100Lf\n",mean_long);
 		printf("	}\n");
 		printf("\n");
-		printf("	RotationPeriod    %4.2Lf\n", planet->day);
-		printf("	Obliquity         %2.0Lf\n", planet->axial_tilt);
-		printf("	Albedo            %5.3Lf\n", planet->albedo);
+
+		//seb: restructured rotation directives
+	    	printf("	BodyFrame { EclipticJ2000{} }\n");
+	    	printf("	UniformRotation {\n");
+
+		if (planet->resonant_period)
+		  {
+			if (!is_moon)
+			  printf("# Planet's rotation is in a resonant spin lock with the star\n");
+			else
+			  printf("# Moon's rotation is in a resonant spin lock with the planet\n");
+			if (!is_moon)
+			{
+			  /*printf("# spin resonance factor = %5.4Lf / %5.4Lf = %5.4Lf\n", 
+			       (1.0 - planet->e) , (1.0 + planet->e),
+			       (1.0 - planet->e) / (1.0 + planet->e));*/
+			  printf("# spin resonance factor = %5.4Lf / %5.4Lf = %5.4Lf\n", (1.0 - planet->e) , (1.0 + planet->e), getSpinResonanceFactor(planet->e));
+			}
+			else
+			{
+			  /*printf("# spin resonance factor = %5.4Lf / %5.4Lf = %5.4Lf\n", 
+			       (1.0 - planet->moon_e) , (1.0 + planet->moon_e),
+			       (1.0 - planet->moon_e) / (1.0 + planet->moon_e));*/
+			  printf("# spin resonance factor = %5.4Lf / %5.4Lf = %5.4Lf\n", (1.0 - planet->moon_e) , (1.0 + planet->moon_e), getSpinResonanceFactor(planet->moon_e));
+			}
+		  }
+
+		if ((int)planet->day == (int)(planet->orb_period * 24.0) && !planet->resonant_period)
+		  {
+		    if (!is_moon)
+		      printf("# Planet is tidally locked with one face to star.\n");
+		    else
+		      printf("# Moon is tidally locked with one face to planet.\n");
+		    //seb: default is locked if no period is specified
+		    printf("\t\t Inclination\t%5.100Lf \t # same as orbit incl\n",local_inc); // same as orbit inc = 0
+		  }
+		else
+		  {
+		    printf("\t\t Period\t\t%5.4Lf \t # hours\n", planet->day);
+		    //seb: axial tilt is relative to planet's orbit (local ecliptic?)
+		    printf("\t\t Inclination\t%5.100Lf\n",local_inc+planet->axial_tilt);
+		    //A bug in Celestia v1.6.1: large inclinations cause the planetographic grid to be inverted.
+		  }
+
+		printf("\t\t AscendingNode\t%5.100Lf\n",an);
+		printf("\t\t MeridianAngle\t%5.100Lf\n",mean_long); // ma is offset
+
+		printf("	}\n");
+
+		printf("	Albedo            %5.4Lf\n", planet->albedo);
 
 		printf("}\n");
 		printf("\n");
+}
+
+void celestia_describe_system(planet_pointer innermost_planet, char* designation, char* system_name, long seed, long double inc, long double an, FILE * sgErr)
+{
+	planet_pointer planet, moon;
+	sun*			sun = innermost_planet->sun;
+	int counter, moons;
+	long double tmp,local_inc,mean_long;
+	long double min_r_ecosphere = sqrt( sun->luminosity / 1.51 );
+	long double max_r_ecosphere = sqrt( sun->luminosity / 0.48 );
+
+	printf("# Stargen - %s; seed=%ld\n", stargen_revision, seed);
+	printf("#\n");
+	printf("# %s, %s\n",designation,system_name);
+	printf("#\n");
+	printf("# Stellar mass: %5.4Lf solar masses\n", sun->mass);
+	printf("# Stellar luminosity: %5.4Le\n",sun->luminosity);
+	printf("# Age: %5.3Lf billion years	(%5.4Lf billion left on main sequence)\n",
+		   (sun->age /1.0E9),(sun->life - sun->age) / 1.0E9);
+	printf("# Habitable ecosphere radius: %5.4Lf AU (%3.3Lf - %3.3Lf AU)\n",
+	       sun->r_ecosphere,
+	       min_r_ecosphere,
+	       max_r_ecosphere);
+
+	printf("\n");
+
+	for (planet=innermost_planet, counter=1;
+		planet != NULL;
+		planet=planet->next_planet, counter++)
+	{
+		celestia_describe_world(planet, designation, system_name, seed, inc, an, sgErr, counter, sun, 0, counter);
+		for (moon=planet->first_moon, moons=1; moon != NULL; moon=moon->next_planet, moons++)
+		{
+		  moon->orb_period = period(moon->moon_a, moon->mass, planet->mass);
+		  moon->day = day_length(moon, planet->mass, 1);
+		  celestia_describe_world(moon, designation, system_name, seed, inc, an, sgErr, moons, sun, 1, counter);
+		}
 	}
 }

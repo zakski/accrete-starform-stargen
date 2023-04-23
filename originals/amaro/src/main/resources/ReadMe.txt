@@ -1,20 +1,43 @@
+To build omega13a's version of Stargen on Linux,
+
+1. install cmake
+2. install compilars for C and Fortran
+3. cd to the build directory
+4. type the command
+   cmake ..
+5. then type tge command
+   make install
+
+To run Stargen, type the command
+./stargen 
+
+I do not know how to build Stargen on Windows but it is possible. If anyone
+can figure it out, please give me the instructions!
+
+The text below was provided with the version of StarGen adapted by JimB.
+It has *not* been updated to correspond to omega13a's version.
+
+omega13a
+omega13a@yahoo.com
+==============================
+
 Welcome to StarGen. 
 
 StarGen is a a random solar system generator, derived from the work of a
 great number of people over the past three dozen years. (See Credits.txt for
 details.) It's called StarGen because there are already enough versions that
 call themselves starform to be confusing. StarGen's preferred output format
-its Web pages.
+is its Web pages.
 
 There are 4 differen distributions available. All of them contain:
 
     ReadMe.txt                  The file you are reading
     Credits.txt                 The history of the program
-    help						A folder/directory containing
+    help			A folder/directory containing
 	    Manual.html             The user's manual
 	    Manual2-Building.html	Software Developer's Manual
 	    WinStarGenHelp.html		Windows help
-	ref							A folder containing
+	ref			A folder containing
 		*.gif and Key.html		Images etc used in generated HTML
 		*.jpg					Images used in the Manual
 

@@ -1,0 +1,65 @@
+$ ./stargen
+Usage: stargen [options] [system name]
+  Options:
+Seed values:
+    -s#  Set random number seed [default: from time]
+    -i#  Number to increment each random seed [default: 1]
+    -n#  Specify number of systems [default: 1]
+    -A#  set accretion dust density ratio_arg to # [default: 0.0]
+    -q#  set accretion inner dust border to # [default: 0.3]
+    -Q#  set accretion planetesimal seed eccentricity coefficient to # [default: 0.077]
+Preset seeds:
+    -k   Use known planets as planitesimal seeds [from internal tables]
+    -K   Generate only known planets [from internal tables]
+      -x   Use the Solar System's masses/orbits
+      -a   Use the Solar System's masses/orbits varying Earth
+Stars:
+    -m#  Specify stellar mass # [fraction of Sun's mass]
+or select an internal table:
+    -B   Use all 2 Manticore systems & planets
+    -B#  Use Manticore system #
+    -D   Use all of Dole's 16 nearby stars
+    -D#  Use Dole's system #
+    -F   Use all 38 AU systems
+    -F#  Use AU system #
+    -G   Use all 1 IL Aqr systems & planets
+    -G#  Use IL Aqr system #
+    -W   Use all 52 nearby stars taken from the Web
+    -W#  Use Web system #
+    -l   List stars of selected table and exit
+    -L   List stars of selected table as HTML and exit
+Filters:
+    -E   Only systems with earthlike planets
+    -H   Only systems with habitable planets
+    -2   Only systems with 2 or more habitable planets
+    -J   Only systems with Jovian planets in habitable region
+    -g   Include atmospheric gases
+    -v   List verbosities [hex values] and exit
+    -v#  Set verbosity [hex value]
+    -V   Use vector graphics [SVG] images [default: GIF]
+    -z   Do numeric size check and exit
+    -Z   Dump tables used for gases and exit
+File specs:
+    --   use stdout
+    -o   Name for the output file(s) [default: taken from star name]
+    -p   Path for the output file(s) [default: ./html]
+    -u   Internet URL path for/in the output file(s) [default: none]
+Output formats: (only one is generated)
+(default) HTML to file
+    -c   Celestia .ssc to stdout
+    -C   Excel .csv [dl: no thumbnail html] to file
+    -e   Excel .csv to file
+    -S   Vector graphics (SVG) to file
+    -t   Text to stdout
+    -P   Moon creation script to stdout
+Other:
+    -M   Generate moons (highly experimental and incomplete)
+
+        Web systems (-W) taken from
+          http://www.solstation.com/stars.htm
+        AU systems (-F) taken from
+          stories by C.J. Cherryh
+        Manticore systems (-B) taken from
+          stories by David Weber
+
+        StarGen: $Revision: 1.47+seb $

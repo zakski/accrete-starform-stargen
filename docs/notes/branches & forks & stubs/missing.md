@@ -101,3 +101,19 @@ A variant of the highest version of Burdick's code that we have source code for.
 - Key: Burdick.????
 
 Highest version known to exist of burdick's code. may have put it on an anonymous ftp site
+
+
+### [Stargen](http://www.fedtrek.com/staff/omega13a/stargen_2013.zip)
+- Resource Name: n/a
+- Author: Selden
+- Poster/Publisher: Selden
+- Language: C / Fortran
+- Creation Year: >= 2008
+- Source Year: 2013
+- Parents: Burrows.2008
+- Original Source: Acquired.
+- Reproducibility: Reproducible.
+- Burdick Version: n/a
+- Key: Amaro.2013
+
+A missing version referenced in a snapshot of omega13a's version of Stargen that he put on his Star Trek fan site.

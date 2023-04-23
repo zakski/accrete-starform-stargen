@@ -1,0 +1,5 @@
+*.cmake
+CMakeCache.txt
+
+moon_orbits
+stargen

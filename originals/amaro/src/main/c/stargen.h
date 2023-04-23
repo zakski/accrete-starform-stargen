@@ -1,3 +1,4 @@
+
 /*
  *	StarGen main API
  */
@@ -26,6 +27,7 @@ int stargen (actions		action,			// One of the above
 			 FILE *			sgErr,			// Stream to write errors to (opt.)
 			 char *			prognam,		// Name of program (opt.)
 			 long double	mass_arg,		// Mass of star (not used with catalog)
+			 long double    luminosity_arg,
 			 long			seed_arg,		// Random number seed
 			 int			count_arg,		// Number of systems (or cats) to do
 			 int			incr_arg,		// Amount to increment seed by
@@ -33,6 +35,8 @@ int stargen (actions		action,			// One of the above
 			 int			sys_no_arg,		// Star within a catalog (0 = all)
 			 
 			 long double	ratio_arg,		// Change dust density (experimental)
+			 long double	ecc_coef_arg,		//seb: Change eccentricity coeffecient in accrete 
+			 long double	inner_planet_factor_arg,		//seb: Change innermost planet limit  in accrete 
 			 
 			 int			flags_arg,		// Options (see below)
 			 int			out_format,		// Output file formats (see below)
@@ -47,16 +51,19 @@ int stargen (actions		action,			// One of the above
 
 #define	fDoGases				0x0010
 #define	fDoMoons				0x0020
+#define fOnlyAsteroids                          0x0040 //seb
 
 #define fOnlyHabitable			0x0100
 #define fOnlyMultiHabitable		0x0200
-#define fOnlyJovianHabitable	0x0400
+#define fOnlyJovianHabitable 	        0x0400
 #define fOnlyEarthlike			0x0800
+#define fOnlyThreeHabitable		0x1000
 
 										// Values of out_format
 #define	ffHTML				'HTML'
 #define	ffTEXT				'TEXT'
 #define	ffCELESTIA			'.SSC'
+#define	ffMOONGEN			'.BSH'
 #define ffCSV				'.CSV'
 #define ffCSVdl				'+CSV'
 #define ffSVG				'.SVG'
@@ -69,7 +76,7 @@ int stargen (actions		action,			// One of the above
 extern catalog	solstation;
 extern catalog	dole;
 extern catalog  jimb;
-										// You can roll your own (see main.c)
+										// Ycan roll your own (see main.c)
 
 extern planets mercury;					// For building private catalogs
 

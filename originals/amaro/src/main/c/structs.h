@@ -16,7 +16,8 @@ typedef enum planet_type {
 	tSubGasGiant,
 	tSubSubGasGiant,
 	tAsteroids,
-	t1Face
+	t1Face,
+	tBrownDwarf  //seb
 } planet_type;
 
 typedef struct gas {
@@ -42,6 +43,8 @@ typedef struct planets_record {
 	int 		gas_giant;			/* TRUE if the planet is a gas giant */
 	long double	dust_mass;			/* mass, ignoring gas				 */
 	long double	gas_mass;			/* mass, ignoring dust				 */
+	long double	imf;				/* ice mass fraction */
+	long double	rmf;				/* rock mass fraction */
 									/*   ZEROES start here               */
 	long double moon_a;				/* semi-major axis of lunar orbit (in AU)*/
 	long double moon_e;				/* eccentricity of lunar orbit		 */
@@ -85,7 +88,7 @@ typedef struct planets_record {
 	} planets;
 
 /*	Define the solar system for comparisons, etc. */
-#define ZEROES 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NULL,0,NULL,tUnknown
+#define ZEROES 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NULL,0,NULL,tUnknown
 
 typedef struct dust_record {
 	long double inner_edge;
@@ -101,6 +104,8 @@ typedef struct star {
 	long double		m2;
 	long double		e;
 	long double		a;
+	long double		inc;
+	long double		an;
 	planet_pointer	known_planets;
 	char			*desig;
 	int				in_celestia;

@@ -1,0 +1,16 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x18\x00s\x00t\x00a\x00r\x00g\x00e\x00n\x00_\x002\x000\x001\x002)
+
+[CMake]
+BuildDirs=/home/omega13a/projects/stargen_2013/build
+CMakeDir=/usr/share/cmake/Modules
+Current CMake Binary=file:///usr/bin/cmake
+CurrentBuildDir=file:///home/omega13a/projects/stargen_2013/build
+CurrentBuildType=Debug
+CurrentInstallDir=
+Extra Arguments=
+ProjectRootRelative=./
+
+[MakeBuilder]
+Default Make Environment Profile=0
+Number Of Jobs=1

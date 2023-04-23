@@ -36,7 +36,7 @@ void set_initial_conditions(long double inner_limit_of_dust,
     hist->planets = planet_head;
     hist->next = hist_head;
     hist_head = hist;
-    
+
 	dust_head = (dust *)malloc(sizeof(dust));
 	planet_head = NULL;
 	dust_head->next_band = NULL;
@@ -45,7 +45,8 @@ void set_initial_conditions(long double inner_limit_of_dust,
 	dust_head->dust_present = TRUE;
 	dust_head->gas_present = TRUE;
 	dust_left = TRUE;
-	cloud_eccentricity = 0.2;
+		cloud_eccentricity = 0.2;
+       //	cloud_eccentricity = 0.6;
 }
 
 long double stellar_dust_limit(long double stell_mass_ratio)
@@ -53,9 +54,12 @@ long double stellar_dust_limit(long double stell_mass_ratio)
 	return(200.0 * pow(stell_mass_ratio,(1.0 / 3.0)));
 }
 
-long double nearest_planet(long double stell_mass_ratio)
+long double nearest_planet(long double stell_mass_ratio,
+			   long double nearest_planet_factor)
 {
-	return(0.3 * pow(stell_mass_ratio,(1.0 / 3.0)));
+  // seb: allow much closer than 0.3 au? (changes all systems)
+  	return(nearest_planet_factor * pow(stell_mass_ratio,(1.0 / 3.0)));
+  //   	return(0.3 * pow(stell_mass_ratio,(1.0 / 3.0)));
 }
 
 long double farthest_planet(long double stell_mass_ratio)
@@ -324,7 +328,221 @@ void accrete_dust(long double *seed_mass, long double *new_dust, long double *ne
 	update_dust_lanes(r_inner,r_outer,(*seed_mass),crit_mass,body_inner_bound,body_outer_bound);
 }
 
+int is_in_hd_10180(planet_pointer the_planet)
+{
+  if (the_planet->a == 0.02222 && the_planet->e == 0.0005)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.0641 && the_planet->e == 0.07)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.0904 && the_planet->e == 0.05)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.1284 && the_planet->e == 0.011)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.270 && the_planet->e == 0.001)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.330 && the_planet->e == 0.07)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.4929 && the_planet->e == 0.13)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 1.415 && the_planet->e == 0.03)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 3.49 && the_planet->e == 0.18)
+  {
+    return TRUE;
+  }
+  return FALSE;
+}
 
+int is_in_55_cab_a(planet_pointer the_planet)
+{
+  if (the_planet->a == 0.016 && the_planet->e == 0.057)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.115 && the_planet->e == 0.014)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.24 && the_planet->e == 0.086)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.78 && the_planet->e == 0.4)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 5.77 && the_planet->e == 0.025)
+  {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+int is_in_ups_and_a(planet_pointer the_planet)
+{
+  if (the_planet->a == 0.0595 && the_planet->e == 0.013)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.832 && the_planet->e == 0.224)
+  {
+      return TRUE;
+  }
+  else if (the_planet->a == 2.53 && the_planet->e == 0.267)
+  {
+      return TRUE;
+  }
+  else if (the_planet->a == 5.2456 && the_planet->e == 0.00536)
+  {
+      return TRUE;
+  }
+  return FALSE;
+}
+
+int is_in_gliese_581(planet_pointer the_planet)
+{
+  if (the_planet->a == 0.0284533 && the_planet->e == 0)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.0406163 && the_planet->e == 0)
+  {
+      return TRUE;
+  }
+  else if (the_planet->a == 0.072993 && the_planet->e == 0)
+  {
+      return TRUE;
+  }
+  else if (the_planet->a == 0.14601 && the_planet->e == 0)
+  {
+      return TRUE;
+  }
+  else if (the_planet->a == 0.21847 && the_planet->e == 0)
+  {
+      return TRUE;
+  }
+  else if (the_planet->a == 0.758 && the_planet->e == 0)
+  {
+      return TRUE;
+  }
+  return FALSE;
+}
+
+int is_in_hd_10647(planet_pointer the_planet)
+{
+  if (the_planet->a == 2.03 && the_planet->e == 0.16)
+  {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+int is_in_fictional_1(planet_pointer the_planet)
+{
+  if (the_planet->a == 0.390205 && the_planet->e == 0.185172)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.480459 && the_planet->e == 0.127780)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.585048 && the_planet->e == 0.031666)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 0.718046 && the_planet->e == 0.022336)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 1.001873 && the_planet->e == 0.004431)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 1.373711 && the_planet->e == 0.206417)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 5.424729 && the_planet->e == 0.0302880)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 12.811632 && the_planet->e == 0.015692)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 22.916998 && the_planet->e == 0.020474)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 42.075003 && the_planet->e == 0)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 50.191203 && the_planet->e == 0)
+  {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+int is_in_83_leo_b(planet_pointer the_planet)
+{
+  if (the_planet->a == 0.12186 && the_planet->e == 0.13)
+  {
+    return TRUE;
+  }
+  else if (the_planet->a == 5.4 && the_planet->e == 0.1)
+  {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+int is_predefined_planet(planet_pointer the_planet)
+{
+  if (is_in_hd_10180(the_planet))
+  {
+    return TRUE;
+  }
+  else if (is_in_55_cab_a(the_planet))
+  {
+    return TRUE;
+  }
+  else if (is_in_ups_and_a(the_planet))
+  {
+    return TRUE;
+  }
+  else if (is_in_gliese_581(the_planet))
+  {
+    return TRUE;
+  }
+  else if (is_in_hd_10647(the_planet))
+  {
+    return TRUE;
+  }
+  else if (is_in_fictional_1(the_planet))
+  {
+    return TRUE;
+  }
+  return FALSE;
+}
 
 void coalesce_planetesimals(long double a, long double e, long double mass, long double crit_mass,
 							long double dust_mass, long double gas_mass,
@@ -384,7 +602,7 @@ void coalesce_planetesimals(long double a, long double e, long double mass, long
 				temp = 0.0;
 			e = sqrt(temp);
 			
-			if (do_moons)
+			if (do_moons || is_predefined_planet(the_planet))
 			{
 				long double existing_mass = 0.0;
 				
@@ -402,10 +620,10 @@ void coalesce_planetesimals(long double a, long double e, long double mass, long
 
 				if (mass < crit_mass)
 				{
-					if ((mass * SUN_MASS_IN_EARTH_MASSES) < 2.5
+					if (((mass * SUN_MASS_IN_EARTH_MASSES) < 2.5
 					 && (mass * SUN_MASS_IN_EARTH_MASSES) > .0001
 					 && existing_mass < (the_planet->mass * .05)
-					   )
+					   ) || is_predefined_planet(the_planet))
 					{
 						planet_pointer	the_moon = (planets *)malloc(sizeof(planets));
 						
@@ -478,7 +696,7 @@ void coalesce_planetesimals(long double a, long double e, long double mass, long
 				}
 			}
 
-			if (!finished)
+			if (!finished && !is_predefined_planet(the_planet))
 			{
 				if (flag_verbose & 0x0100)
 						fprintf (stderr, "Collision between two planetesimals! "
@@ -585,13 +803,15 @@ void coalesce_planetesimals(long double a, long double e, long double mass, long
 
 
 planet_pointer dist_planetary_masses(long double stell_mass_ratio,
-									 long double stell_luminosity_ratio, 
-									 long double inner_dust, 
-									 long double outer_dust,
-									 long double outer_planet_limit,
-									 long double dust_density_coeff,
-									 planet_pointer seed_system,
-									 int		 do_moons)
+				     long double stell_luminosity_ratio, 
+				     long double inner_dust, 
+				     long double outer_dust,
+				     long double outer_planet_limit,
+				     long double dust_density_coeff,
+				     long double ecc_coef, //seb
+				     long double nearest_planet_factor, //seb
+				     planet_pointer seed_system,
+				     int		 do_moons)
 {
 	long double 	a; 
 	long double 	e; 
@@ -604,7 +824,7 @@ planet_pointer dist_planetary_masses(long double stell_mass_ratio,
 	planet_pointer 	seeds = seed_system;
 	
 	set_initial_conditions(inner_dust,outer_dust);
-	planet_inner_bound = nearest_planet(stell_mass_ratio);
+	planet_inner_bound = nearest_planet(stell_mass_ratio,nearest_planet_factor);
 	
 	if (outer_planet_limit == 0)
 		planet_outer_bound = farthest_planet(stell_mass_ratio);
@@ -617,17 +837,20 @@ planet_pointer dist_planetary_masses(long double stell_mass_ratio,
 		{
 			a = seeds->a;
 			e = seeds->e;
+			mass = seeds->mass;
+			dust_mass = seeds->dust_mass;
+			gas_mass = seeds->gas_mass;
 			seeds = seeds->next_planet;
 		}
 		else
 		{
 			a = random_number(planet_inner_bound,planet_outer_bound);
-			e = random_eccentricity( );
+			e = random_eccentricity( ecc_coef );
+			mass      = PROTOPLANET_MASS;
+			dust_mass = 0;
+			gas_mass  = 0;
 		}
 		
-		mass      = PROTOPLANET_MASS;
-		dust_mass = 0;
-		gas_mass  = 0;
 		
 		if (flag_verbose & 0x0200)
 			fprintf (stderr, "Checking %Lg AU.\n",a);
@@ -641,12 +864,15 @@ planet_pointer dist_planetary_masses(long double stell_mass_ratio,
 			dust_density = dust_density_coeff * sqrt(stell_mass_ratio)
 						   * exp(-ALPHA * pow(a,(1.0 / N)));
 			crit_mass = critical_limit(a,e,stell_luminosity_ratio);
-			accrete_dust(&mass, &dust_mass, &gas_mass,
+			if (mass == PROTOPLANET_MASS)
+			{
+			  accrete_dust(&mass, &dust_mass, &gas_mass,
 						 a,e,crit_mass,
 						 planet_inner_bound,
 						 planet_outer_bound);
 			
-			dust_mass += PROTOPLANET_MASS;
+			  dust_mass += PROTOPLANET_MASS;
+			}
 			
 			if (mass > PROTOPLANET_MASS)
 				coalesce_planetesimals(a,e,mass,crit_mass,

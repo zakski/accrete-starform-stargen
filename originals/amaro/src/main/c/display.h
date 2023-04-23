@@ -12,7 +12,8 @@ void list_molecules(FILE *, long double);
 void html_thumbnails(planet_pointer, FILE *, char *, char *, char *, char *, char *, int, int, int, int, int);
 void html_thumbnail_totals(FILE *);
 void html_describe_system(planet_pointer, int, char *, FILE *);
-void celestia_describe_system(planet_pointer, char *);
+void celestia_describe_system(planet_pointer, char *, char *, long, long double, long double, FILE *); //seb
+void moongen_describe_system(planet_pointer, char *, char *, long, FILE *); // seb
 char *texture_name (planet_type);
 
 #define STARGEN_URL	"http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html"

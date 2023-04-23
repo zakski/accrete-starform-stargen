@@ -16,7 +16,7 @@
 // for the Macintosh and for Windows-32, but the generic ANSI C code should work
 // everywhere.
 //
-// $Id: Dumas.c,v 1.2 2003/12/31 19:36:44 brons Exp $
+// $Id: Dumas.c,v 1.3 2009/03/17 19:03:00 brons Exp $
 
 #include <string.h>
 #include <stdio.h>
@@ -881,11 +881,11 @@ char *dumasDupString (char *string, char *moduleName, long lineNo)
 {
 	long	requestedBytes = strlen(string)+1;
 	char	*s;
-  
+
 	// NULL, "" -> NULL 
 	if (string == 0 || *string == '\0')
 		return 0;			//// Turn this around someday
-  
+
 	if (NULL == (s = dumasAlloc (requestedBytes, moduleName, lineNo)))
 		abort ();
 

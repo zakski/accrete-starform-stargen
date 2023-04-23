@@ -606,7 +606,7 @@ port of Carl Burke's accrete to c#
 - Source Year: 2013
 - Parents: Burrows.2008
 - Original Source: Acquired.
-- Reproducibility: Reproducible.
+- Reproducibility: [Reproducible](/docs/notes/build descriptions/2010s/2013%20-%20Amaro.2013.md).
 - Burdick Version: n/a
 - Key: Amaro.2013
   
