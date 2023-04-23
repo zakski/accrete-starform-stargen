@@ -2,7 +2,7 @@
 apply plugin: 'visual-studio'
 
 // Add necessary language support
-apply plugin: "c"
+apply plugin: "cpp"
 
 model {
     toolChains {
@@ -20,11 +20,11 @@ model {
             sources {
                 c {
                     source {
-                        srcDir "src/main/c"
-                        include "**/*.c"
+                        srcDir "src/main/cpp"
+                        include "**/*.cpp"
                     }
                     exportedHeaders {
-                        srcDir "src/main/c"
+                        srcDir "src/main/cpp"
                     }
                 }
             }
