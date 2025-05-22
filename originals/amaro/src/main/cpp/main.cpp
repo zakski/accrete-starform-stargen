@@ -1,706 +1,629 @@
-/*
- *	StarGen Main Routine
- *
- *	This file provides the main command-line interface to StarGen.
- *	Other platform-specific UIs can be created by duplicating its
- *	general functionality and then calling stargen(), whose API is
- *	defined in stargen.h
- *
- *	$Id: main.c,v 1.14 2009/01/15 23:15:55 brons Exp $
- */
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
+#include <string>
+#include "andromeda.h"
+#include "dole.h"
+#include "elements.h"
+#include "ic3094.h"
+#include "jimb.h"
+#include "omega_galaxy.h"
+#include "Planetary_Habitability_Laboratory.h"
+#include "planets.h"
+#include "radius_tables.h"
+#include "ring_universe.h"
+#include "solstation.h"
+#include "stargen.h"
+#include "star_trek.h"
+#include "structs.h"
+#include "utils.h"
 
-#include	<stdio.h>
-#include	<stdlib.h>
-#include	<string.h>
-#include	<math.h>
-#include	<time.h>
-#include	<ctype.h>
+using namespace std;
 
-#include	"Dumas.h"
+void initData();
+void usage(string);
 
-#ifdef THINK_C
-#define macintosh 1
-#endif
+int main(int argc, char **argv)
+{
+  actions action = aGenerate;
+  string flag_char = "?";
+  string path = SUBDIR;
+  string url_path_arg = "";
+  string filename_arg = "";
+  string arg_name = "";
+  char arg_name_temp[80] = "";
+
+  bool use_stdout = false;
+  string prognam;
+  long double mass_arg = 0.0;
+  long double luminosity_arg = 0.0;
+  long seed_arg = 0;
+  int count_arg = 1;
+  int increment_arg = 1;
+  catalog star_catalog;
+  int sys_no_arg = 0;
+
+  long double ratio_arg = 0.0;
+  long double ecc_coef_arg = 0.077; //seb: dole value
+  long double inner_planet_factor_arg = 0.3; //seb: dole value
+
+  int flags_arg = 0;
+  int out_format = ffHTML;
+  int graphic_format = gfGIF;
+	
+  const char *c;
+  bool skip = false;
+  int index = 0;
+  
+  string temp_string;
 
 #ifdef macintosh
-#include	<console.h>
-#include	<unix.h>
-#else
-#include	<sys/types.h>
+  _ftype  = 'TEXT';
+  _fcreator = 'R*ch';
+  argc = ccommand (&argv);
 #endif
+  
+  initData();
 
-#ifdef MSDOS
-#include	<stddef.h>
-#include	<stdlib.h>
-#include	<float.h>
-#endif
-
-#ifdef WIN32
-#pragma warning (disable: 4048) // Hush compiler - don't complain about storing specific arrays in generic pointers
-#endif
-
-#include	"const.h"
-#include	"structs.h"
-#include	"stargen.h"
-#include 	"ring_universe.h"
-#include	"ic3094.h"
-#include	"ba_gal.h"
-#include	"omega_galaxy.h"
-
-/*
- *		StarGen supports private catalogs. The two here are ones I am using
- *		for debuggery. They may go away.
- */
-
-#define EM(x)		(x)/SUN_MASS_IN_EARTH_MASSES
-#define AVE(x,y)	((x+y)/2.)
-
- // light minutes in 1 AU (Honorverse distances are in LM)
-#define lmpau  8.31675359
-// mass = g x r x r // HV values are g and D
-
-		/*  No 	Orbit	Eccen. 	Tilt	Mass		Giant?	Dust Mass	Gas */
-//planets sphinx3   ={ 4,	3.0,	0.046,	10.5,	EM(2.35),	FALSE,	EM(2.35),	0, 	ZEROES,0,NULL, NULL};
-//planets sphinx2   ={ 3,	2.25,	0.02,	10.5,	EM(2.35),	FALSE,	EM(2.35),	0, 	ZEROES,0,NULL, &sphinx3};
-///planets sphinx    ={ 2,	1.6,	0.02,	10.5,	EM(2.2),	FALSE,	EM(2.2),	0, 	ZEROES,0,NULL, &sphinx2};
-//planets manticore ={ 1,	1.115,	0.017,	23.5,	EM(1.01),	FALSE,	EM(1.01),	0, 	ZEROES,0,NULL, &sphinx};
-
-// mass = g x r x r // HV values are g and D
-// manticore A system
-                  /*  No 	Orbit	Eccen. 	Tilt	Mass		Giant?	Dust Mass	Gas */
-#define mau7  (156.96/lmpau)
-#define mm7  38.72 // (3*(38.72)*(38.72))
-planets wyvern    =  { 7,       mau7,	0.02,	10.5,	EM(mm7),	TRUE,	0,	0, 	ZEROES,0,NULL, NULL};
-
-#define mau6  (79.35/lmpau)
-#define mm6  423.19 //  (3*(423.19)*(423.19))
-planets roc    =  { 6,       mau6,	0.02,	10.5,	EM(mm6),	TRUE,	0,	0, 	ZEROES,0,NULL, &wyvern};
-
-#define mau5  (40.55/lmpau)
-#define mm5  293.66 // (3*(293.66)*(293.66))
-planets draco    =  { 5,       mau5,	0.02,	10.5,	EM(mm5),	TRUE,	0,	0, 	ZEROES,0,NULL, &roc};
-
-#define mau4  (21.25/lmpau)
-#define mm4  (1.30*(1.30)*(1.30))
-planets sphinx    =  { 4,       mau4,	0.02,	10.5,	EM(mm4),	FALSE,	0,	0, 	ZEROES,0,NULL, &draco};
-
-#define mau3  (11.45/lmpau)
-#define mm3  (1.01*(1.22)*(1.22))
-planets manticore =  { 3,       mau3,	0.017,	23.5,	EM(mm3),	FALSE,	0,	0, 	ZEROES,0,NULL, &sphinx};
-
-#define mau2  (6.6/lmpau)
-#define mm2  (0.75*(0.75)*(0.75))
-planets phoenix =    { 2,       mau2,	0.002,	23.5,	EM(mm2),	FALSE,	0,	0, 	ZEROES,0,NULL, &manticore};
-
-#define mau1  (1.75/lmpau)
-#define mm1  (0.25*(0.41)*(0.41))
-planets salamander = { 1,       mau1,	0.0,	0.0,    EM(mm1),	FALSE,	0,	0, 	ZEROES,0,NULL, &phoenix};
-
-
-// manticore B system
-#define mau210  (258.24/lmpau)
-#define mm210 125.62// (2*(125.62)*(125.62))
-planets Fenris = { 10,       mau210,	0.0,	0.0,    EM(mm210),	TRUE,	0,	0, 	ZEROES,0,NULL, NULL};
-
-#define mau29  (116.17/lmpau)
-#define mm29  (0.00001*(0.00001)*(0.00001))
-planets GorgonBelt = { 9,       mau29,	0.0,	0.0,    EM(mm29),	FALSE,	0,	0, 	ZEROES,0,NULL, &Fenris};
-
-#define mau28  (83.61/lmpau)
-#define mm28 695.26// (2*(695.26)*(695.26))
-planets Titan = { 8,       mau28,	0.0,	0.0,    EM(mm28),	TRUE,	0,	0, 	ZEROES,0,NULL, &GorgonBelt};
-
-#define mau27  (42.33/lmpau)
-#define mm27  (0.00001*(0.00001)*(0.00001))
-planets NibelungBelt = { 7,       mau27,	0.0,	0.0,    EM(mm27),	FALSE,	0,	0, 	ZEROES,0,NULL, &Titan};
-
-#define mau26  (21.69/lmpau)
-#define mm26  (0.00001*(0.00001)*(0.00001))
-planets UnicornBelt = { 6,       mau26,	0.0,	0.0,    EM(mm26),	FALSE,	0,	0, 	ZEROES,0,NULL, &NibelungBelt};
-
-#define mau25  (11.37/lmpau)
-#define mm25  (1.00*(1.01)*(1.01))
-planets gryphon = { 5,       mau25,	0.0,	0.0,    EM(mm25),	FALSE,	0,	0, 	ZEROES,0,NULL, &UnicornBelt};
-
-#define mau24  (6.21/lmpau)
-#define mm24  (1.19*(0.97)*(0.97))
-planets damocles = { 4,       mau24,	0.0,	0.0,    EM(mm24),	FALSE,	0,	0, 	ZEROES,0,NULL, &gryphon};
-
-#define mau23  (3.63/lmpau)
-#define mm23  (0.96*(0.96)*(0.96))
-planets aphrodite = { 3,       mau23,	0.0,	0.0,    EM(mm23),	FALSE,	0,	0, 	ZEROES,0,NULL, &damocles};
-
-#define mau22  (2.34/lmpau)
-#define mm22   (0.76*(0.81)*(0.81))
-planets gorgon = { 2,       mau22,	0.0,	0.0,    EM(mm22),	FALSE,	0,	0, 	ZEROES,0,NULL, &aphrodite};
-
-#define mau21  (1.05/lmpau)
-#define mm21  (0.85*(0.72)*(0.72))
-planets erinye = { 1,       mau21,	0.0,	0.0,    EM(mm21),	FALSE,	0,	0, 	ZEROES,0,NULL, &gorgon};
-
-
-
-
-star	manticores[] = 
-// L		Mass	Mass2	Eccen.	SMAxis	 Planets	Designation			Name
+  prognam = argv[0];
+  if ((c = strrchr(prognam.c_str(), DIRSEP[0])) != NULL)
   {
-    {1.6374,   	1.12,	0.92,	0.119,	44.84,	 0,0,&salamander,"Manticore A",	 1, "Manticore A"},
-    {0.6842,   	0.92,	1.12,	0.119,	54.65,	 0,0,&erinye,  	"Manticore B",	 1, "Manticore B"},
-  };
-
-catalog	manticore_cat	= {sizeof(manticores) / sizeof (star),	"B", &manticores};
-
-star	helios[] = 
-// L		Mass	Mass2	Eccen.	SMAxis	 Planets	Designation		Name
-  {{1.00,		1.00,	0,		0,		0,		 0,0,&mercury,	"Sol",		 1, "The Solar System"},
-   {1.08,		1.0,	0.87,	0.45,	8.85,	 0,0,NULL,		"Helio A",	 1, "Helio A"},
-   {0.83,		0.87,	1.0,	0.45,	8.85,	 0,0,NULL,		"Helio B",	 1, "Helio B"}
-};
-
-catalog	helio		= {sizeof(helios) / sizeof (star), "?",	&helios};
-
-			     /*	No Orbit Eccen. Tilt   Mass    Gas Giant? Dust Mass   Gas */
-planets ilaqrb={1, 0.21, 0.1,   0,     EM(600.),TRUE,     0,   EM(600.), ZEROES,0,NULL, NULL};
-planets ilaqrc={2, 0.13, 0.27,  0,     EM(178.),TRUE,     0,   EM(178.), ZEROES,0,NULL, &ilaqrb};
-planets ilaqrd={3, 0.021,0.22,  0,     EM(5.9), FALSE,    EM(5.9),    0, ZEROES,0,NULL, &ilaqrc};	// EM(5.9) or 7.53 +/- 0.70 Earth-masses
-
-star	ilAqrs[] = 
-// L		Mass	Mass2	Eccen.	SMAxis	 Planets	Designation	Celes	Name
+    prognam = c + 1;
+  }
+  
+  if (argc <= 1)
   {
-   {0.0016,	0.32,	0,     	0,	0,	 0,0,&ilaqrd,	"IL Aqr",	1, "IL Aquarii/Gliese 876"}	// 15.2
-};
-
-catalog	ilAqr_cat		= {sizeof(ilAqrs) / sizeof (star),	"G", &ilAqrs};
-
-
-void usage(char*);
-
-void usage(char *prognam)
-{
-	fprintf(stderr, "Usage: %s [options] [system name]\n", prognam);
-	fprintf(stderr, 
-		"  Options:\n"
-		"Seed values:\n"
-		"    -s#  Set random number seed [default: from time]\n"
-		"    -i#  Number to increment each random seed [default: 1]\n"
-		"    -n#  Specify number of systems [default: 1]\n"
-		"    -A#  set accretion dust density ratio_arg to # [default: 0.0]\n"    
-		"    -q#  set accretion inner dust border to # [default: 0.3]\n"    
-		"    -Q#  set accretion planetesimal seed eccentricity coefficient to # [default: 0.077]\n"    
-		"Preset seeds:\n"
-		"    -k   Use known planets as planitesimal seeds [from internal tables]\n"
-		"    -K   Generate only known planets [from internal tables]\n"
-		"      -x   Use the Solar System's masses/orbits\n"
-		"      -a   Use the Solar System's masses/orbits varying Earth\n"
-		"Stars:\n"
-		"    -m#  Specify stellar mass # [fraction of Sun's mass]\n"
-		"    -y#  Specify stellar luminosity # [fraction of Sun's luminosity]\n"
-		"or select an internal table:\n"
-		"    -B   Use all %d Manticore systems & planets\n"    
-		"    -B#  Use Manticore system #\n"    
- 		"    -D   Use all of Dole's %d nearby stars\n"
-		"    -D#  Use Dole's system #\n"
-		"    -F   Use all %d AU systems\n"    
-		"    -F#  Use AU system #\n"    
-		"    -G   Use all %d IL Aqr systems & planets\n"
-		"    -G#  Use IL Aqr system #\n"
-		"    -W   Use all %d nearby stars taken from the Web\n"
-		"    -W#  Use Web system #\n"
-		"    -R   Use all %d stars in the Ring Universe Galaxy\n"
-		"    -R#  Use Ring Universe system #\n"
-		"    -I   Use all %d fictious stars in IC 3094\n"
-		"    -I#  Use IC 3094 system #\n"
-		"    -N   Use all %d fictious stars in the fictious galaxy BA GAL 1\n"
-		"    -N#  Use BA GAL 1 system #\n"
-		"    -U   Use all %d fictious stars in the fictious Omega Galaxy\n"
-		"    -U#  Use Omega Galaxy system #\n"
-		"    -l   List stars of selected table and exit\n"
-		"    -L   List stars of selected table as HTML and exit\n"
-		"Filters:\n"
-		"    -E   Only systems with earthlike planets\n"
-		"    -H   Only systems with habitable planets\n"
-		"    -2   Only systems with 2 or more habitable planets\n"
-		"    -3   Only systems with 3 or more habitable planets\n"
-		"    -J   Only systems with Jovian planets in habitable region\n"
-		"    -g   Include atmospheric gases\n"
-		"    -v   List verbosities [hex values] and exit\n"
-		"    -v#  Set verbosity [hex value]\n"
-		"    -V   Use vector graphics [SVG] images [default: GIF]\n"
-		"    -z   Do numeric size check and exit\n"
-		"    -Z   Dump tables used for gases and exit\n"
-		"File specs:\n"
-		"    --   use stdout\n"
-		"    -o   Name for the output file(s) [default: taken from star name]\n"
-		"    -p   Path for the output file(s) [default: ./html]\n"
-		"    -u   Internet URL path for/in the output file(s) [default: none]\n"
-		"Output formats: (only one is generated)\n"
-		"(default) HTML to file\n"
-		"    -c   Celestia .ssc to stdout\n"
-		"    -C   Excel .csv [dl: no thumbnail html] to file\n"
-		"    -e   Excel .csv to file\n"
-		"    -S   Vector graphics (SVG) to file\n"
-		"    -t   Text to stdout\n"
-		"    -P   Moon creation script to stdout\n"
-		"Other:\n"
-		"    -M   Generate moons (highly experimental and incomplete)\n"
-		"\n"
-		"        Web systems (-W) taken from\n"
-		"          http://www.solstation.com/stars.htm\n"
-		"        AU systems (-F) taken from\n"
-		"          stories by C.J. Cherryh\n"
-		"        Manticore systems (-B) taken from\n"
-		"          stories by David Weber\n"
-		"\n"
-		"        StarGen: %s\n"
-		"\n",
-		manticore_cat.count,
-		dole.count ,
-		jimb.count ,
-		ilAqr_cat.count ,
-		solstation.count ,
-		ring_universe.count,
-		ic3094.count,
-		ba_gal.count,
-		omega_galaxy.count,
-		stargen_revision);
+    usage(prognam);
+    return EXIT_FAILURE;
+  }
+  
+  // need to somehow parse arguments
+  bool first_part_of_name = true;
+  for (int i = 0; i < argc; i++)
+  {
+    skip = false;
+    temp_string = argv[i];
+    if (compare_string_char(temp_string, 0, "-"))
+    {
+      if (compare_string_char(temp_string, 1, "-"))
+      {
+	use_stdout = true;
+      }
+      else if (compare_string_char(temp_string, 1, "PHL", 3))
+      {
+	star_catalog = phl;
+	if (temp_string.length() > 2)
+	{
+	  sys_no_arg = atoi(temp_string.substr(4, temp_string.length() - 4).c_str());
+	}
+	else
+	{
+	  sys_no_arg = 0;
+	}
+	
+	flag_char = star_catalog.getArg();
+      }
+      else if (compare_string_char(temp_string, 1, "sn", 2))
+      {
+	decimals_arg = atoi(temp_string.substr(3, temp_string.length() - 3).c_str());
+      }
+      else if (compare_string_char(temp_string, 1, "CB", 2))
+      {
+	flags_arg |= fIsCircubinaryStar;
+      }
+      else if (compare_string_char(temp_string, 1, "MY", 2))
+      {
+	max_age_backup = max_age = atof(temp_string.substr(3, temp_string.length() - 3).c_str());
+      }
+      else if (compare_string_char(temp_string, 1, "md", 2))
+      {
+	max_distance_arg = atof(temp_string.substr(3, temp_string.length() - 3).c_str());
+      }
+      else if (compare_string_char(temp_string, 1, "s"))
+      {
+	seed_arg = atol(temp_string.substr(2, temp_string.length() - 2).c_str());
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "m"))
+      {
+	mass_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "y"))
+      {
+	luminosity_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "Y"))
+      {
+	min_age = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "n"))
+      {
+	count_arg = atoi(temp_string.substr(2, temp_string.length() - 2).c_str());
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "i"))
+      {
+	increment_arg = atoi(temp_string.substr(2, temp_string.length() - 2).c_str());
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "x"))
+      {
+	flag_char = temp_string.substr(1, 1).c_str();
+	flags_arg |= fUseSolarsystem;
+	if (mass_arg == 0.0)
+	  mass_arg = 1.0;
+      }
+      else if (compare_string_char(temp_string, 1, "a"))
+      {
+	flag_char = temp_string.substr(1, 1).c_str();
+	flags_arg |= fReuseSolarsystem;
+	break;
+      }
+      else if (compare_string_char(temp_string, 1, "D") || compare_string_char(temp_string, 1, "W") || compare_string_char(temp_string, 1, "F") || compare_string_char(temp_string, 1, "O") || compare_string_char(temp_string, 1, "R") || compare_string_char(temp_string, 1, "I") || compare_string_char(temp_string, 1, "U") || compare_string_char(temp_string, 1, "G"))
+      {
+	if (compare_string_char(temp_string, 1, "D"))
+	{
+	  star_catalog = dole;
+	}
+	else if (compare_string_char(temp_string, 1, "W"))
+	{
+	  star_catalog = solstation;
+	}
+	else if (compare_string_char(temp_string, 1, "F"))
+	{
+	  star_catalog = jimb;
+	}
+	else if (compare_string_char(temp_string, 1, "O"))
+	{
+	  star_catalog = omega_galaxy;
+	}
+	else if (compare_string_char(temp_string, 1, "R"))
+	{
+	  star_catalog = ring_universe;
+	}
+	else if (compare_string_char(temp_string, 1, "I"))
+	{
+	  star_catalog = ic3094;
+	}
+	else if (compare_string_char(temp_string, 1, "U"))
+	{
+	  star_catalog = andromeda;
+	}
+	else if (compare_string_char(temp_string, 1, "G"))
+	{
+	  star_catalog = star_trek;
+	}
+	if (temp_string.length() > 2)
+	{
+	  sys_no_arg = atoi(temp_string.substr(2, temp_string.length() - 2).c_str());
+	}
+	else
+	{
+	  sys_no_arg = 0;
+	}
+	
+	flag_char = star_catalog.getArg();
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "o"))
+      {
+	filename_arg = argv[i + 1];
+	skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "t"))
+      {
+	out_format = ffTEXT;
+      }
+      else if (compare_string_char(temp_string, 1, "e"))
+      {
+	out_format = ffCSV;
+      }
+      else if (compare_string_char(temp_string, 1, "C"))
+      {
+	out_format = ffCSVdl;
+      }
+      else if (compare_string_char(temp_string, 1, "c"))
+      {
+	out_format = ffCELESTIA;
+      }
+      /*else if (compare_string_char(temp_string, 1, "P"))
+      {
+	out_format = ffMOONGEN;
+      }*/
+      else if (compare_string_char(temp_string, 1, "V"))
+      {
+	graphic_format = gfSVG;
+      }
+      else if (compare_string_char(temp_string, 1, "S"))
+      {
+	graphic_format = gfSVG;
+	out_format = ffSVG;
+      }
+      else if (compare_string_char(temp_string, 1, "k"))
+      {
+	flags_arg |= fUseKnownPlanets;
+      }
+      else if (compare_string_char(temp_string, 1, "K"))
+      {
+	flags_arg |= fUseKnownPlanets | fNoGenerate;
+      }
+      else if (compare_string_char(temp_string, 1, "p"))
+      {
+	path = argv[i + 1];
+	skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "u"))
+      {
+	url_path_arg = argv[i + 1];
+	skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "g"))
+      {
+	flags_arg |= fDoGases;
+      }
+      else if (compare_string_char(temp_string, 1, "v"))
+      {
+	if (temp_string.length() > 2)
+	{
+	  sscanf(temp_string.substr(2, temp_string.length() - 2).c_str(), "%x", &flag_verbose);
+	  if (flag_verbose & 0x0001)
+	  {
+	    flags_arg |= fDoGases;
+	  }
+	  //skip = true;
+	}
+	else
+	{
+	  action = aListVerbosity;
+	}
+      }
+      else if (compare_string_char(temp_string, 1, "l"))
+      {
+	action = aListCatalog;
+      }
+      else if (compare_string_char(temp_string, 1, "L"))
+      {
+	action = aListCatalogAsHTML;
+      }
+      else if (compare_string_char(temp_string, 1, "z"))
+      {
+	action = aSizeCheck;
+      }
+      else if (compare_string_char(temp_string, 1, "Z"))
+      {
+	action = aListGases;
+      }
+      else if (compare_string_char(temp_string, 1, "M"))
+      {
+	flags_arg |= fDoMoons;
+      }
+      else if (compare_string_char(temp_string, 1, "r"))
+      {
+	flags_arg |= fDoMigration;
+      }
+      else if (compare_string_char(temp_string, 1, "H"))
+      {
+	flags_arg |= fDoGases | fOnlyHabitable;
+      }
+      else if (compare_string_char(temp_string, 1, "2"))
+      {
+	flags_arg |= fDoGases | fOnlyMultiHabitable;
+      }
+      else if (compare_string_char(temp_string, 1, "3"))
+      {
+	flags_arg |= fDoGases | fOnlyThreeHabitable;
+      }
+      else if (compare_string_char(temp_string, 1, "J"))
+      {
+	flags_arg |= fDoGases | fOnlyJovianHabitable;
+      }
+      else if (compare_string_char(temp_string, 1, "E"))
+      {
+	flags_arg |= fDoGases | fOnlyEarthlike;
+      }
+      else if (compare_string_char(temp_string, 1, "P"))
+      {
+	flags_arg |= fDoGases | fOnlyPotentialHabitable;
+      }
+      else if (compare_string_char(temp_string, 1, "A"))
+      {
+	ratio_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (ratio_arg <= 0.0)
+	{
+	  cout << "Accrete dust density coefficient -A (" << ratio_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "Q"))
+      {
+	ecc_coef_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (ecc_coef_arg <= 0.0)
+	{
+	  cout << "Accrete eccentricity coeffecient -Q (" << ecc_coef_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "q"))
+      {
+	inner_planet_factor_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (inner_planet_factor_arg <= 0.0)
+	{
+	  cout << "Accrete inner dust boundary -q (" << inner_planet_factor_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "w"))
+      {
+	compainion_mass_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (compainion_mass_arg <= 0.0)
+	{
+	  cout << "Mass of compainion object -w (" << compainion_mass_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "f"))
+      {
+	compainion_eccentricity_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (compainion_eccentricity_arg <= 0.0)
+	{
+	  cout << "Eccentritiy of compainion object's orbit (" << compainion_eccentricity_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "d"))
+      {
+	compainion_distant_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (compainion_distant_arg <= 0.0)
+	{
+	  cout << "Distance of compainion object -d (" << compainion_distant_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "b"))
+      {
+	temp_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (temp_arg <= 0.0)
+	{
+	  cout << "Temperature of star -b (" << temp_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "B"))
+      {
+	type_arg = temp_string.substr(2, temp_string.length() - 2).c_str();
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "j"))
+      {
+	compainion_lum_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (compainion_lum_arg <= 0.0)
+	{
+	  cout << "Luminosity of companion star j (" << compainion_lum_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "X"))
+      {
+	compainion_eff_arg = atof(temp_string.substr(2, temp_string.length() - 2).c_str());
+	if (compainion_eff_arg <= 0.0)
+	{
+	  cout << "Temperature of companion star X (" << compainion_lum_arg << ") must be > 0.0" << endl;
+	  return EXIT_FAILURE;
+	}
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "N"))
+      {
+	companion_spec_arg = temp_string.substr(2, temp_string.length() - 2).c_str();
+	//skip = true;
+      }
+      else if (compare_string_char(temp_string, 1, "h"))
+      {
+	usage(prognam);
+	return EXIT_FAILURE;
+      }
+      else
+      {
+	usage(prognam);
+	return EXIT_FAILURE;
+      }
+    }
+    else if (temp_string != prognam)
+    {
+      if (first_part_of_name)
+      {
+	first_part_of_name = false;
+	arg_name = temp_string;
+      }
+      else
+      {
+	arg_name.append(" ");
+	arg_name.append(temp_string);
+      }
+    }
+    if (skip)
+    {
+      i++;
+    }
+  }
+  
+  //cout << arg_name << " blada" << endl;
+  
+  /*for (index = 0; index < argc; index++)
+  {
+    if ((strlen(argv[index]) + arg_name.length()) < arg_name.size())
+    {
+      if (arg_name.length())
+	arg_name = " ";
+      
+      arg_name = argv[index];
+    }
+    if ((strlen(argv[index]) + strlen(arg_name_temp)) < sizeof(arg_name_temp))
+    {
+      if (strlen(arg_name_temp))
+      {
+	strcpy(arg_name_temp + strlen(arg_name_temp), " ");
+      }
+      strcpy(arg_name_temp + strlen(arg_name_temp), argv[index]);
+    }
+  }
+  
+  arg_name = arg_name_temp;*/
+  
+  if (use_stdout)
+  {
+    if (flags_arg & (fOnlyHabitable | fOnlyMultiHabitable | fOnlyJovianHabitable | fOnlyEarthlike))
+    {
+      if (count_arg > 50000)
+      {
+	cout << "Sorry, you cannot set the Repeat count > 50,000 even if you use a filter, due to system resource issues." << endl;
+	return EXIT_FAILURE;
+      }
+    }
+    else
+    {
+      if (count_arg > 1000)
+      {
+	cout << "Sorry, you cannot set the Repeat count > 1,000 unless you use a filter, due to system resource issues." << endl;
+	return EXIT_FAILURE;
+      }
+    }
+  }
+  
+  flags_arg_clone = flags_arg;
+  return stargen(action, flag_char, path, url_path_arg, filename_arg, arg_name, prognam, mass_arg, luminosity_arg, seed_arg, count_arg, increment_arg, star_catalog, sys_no_arg, ratio_arg, ecc_coef_arg, inner_planet_factor_arg, flags_arg, out_format, graphic_format);
 }
 
-int main (int argc, char *argv[])
+void initData()
 {
-	actions		action					= aGenerate;
-	char		flag_char				= '?';
-	char		path[300]				= SUBDIR;
-	char 		url_path_arg[300]		= "";
-	char		filename_arg[300]		= "";
-	char 		arg_name [80] 			= "";
+  initRadii();
+  initGases();
+  initPlanets();
+  initDole();
+  initSolStation();
+  initJimb();
+  initOmegaGalaxy();
+  initRingUniverse();
+  initIC3094();
+  initAndromeda();
+  initStarTrek();
+  initPlanetaryHabitabilityLaboratory();
+}
 
-	int			use_stdout				= FALSE;
-	char *		prognam;
-	long double	mass_arg				= 0.0;
-	long double	luminosity_arg				= 0.0;
-	long		seed_arg				= 0;
-	int  		count_arg 				= 1;
-	int			increment_arg			= 1;
-	catalog	*	catalog					= NULL;
-	int 		sys_no_arg				= 0;
-
-	long double	ratio_arg				= 0.0;
-	long double	ecc_coef_arg				= 0.077; //seb: dole value
-	long double	inner_planet_factor_arg			= 0.3; //seb: dole value
-
-	int			flags_arg				= 0;
-	int			out_format				= ffHTML;
-	int			graphic_format			= gfGIF;
-	
-	char 		*c						= NULL;
-	int  		skip					= FALSE;
-	int  		index					= 0;
-
-#ifdef macintosh
-	_ftype 		= 'TEXT';
-	_fcreator 	= 'R*ch';
-	argc = ccommand (&argv);
-#endif
-	
-	prognam = argv[0];
-	
-	if ((c = strrchr(prognam, DIRSEP[0])) != NULL)
-		prognam = c + 1;
-	
-	if (argc <= 1)
-	{
-		usage(prognam);
-		return(1);
-	}
-	
-	while (--argc > 0 && (*++argv)[0] == '-') {
-		for (c = argv[0]+1, skip=FALSE; 
-			 (*c != '\0') && (!(skip)); 
-			 c++)
-			switch (*c) 
-			{
-			case '-':
-				use_stdout = TRUE;
-				break;
-			case 's':	// set random seed
-				seed_arg = atol(&(*++c));
-				skip = TRUE;
-				break;
-			case 'm':	// set mass of star
-			{
-				double	m;	// gnu C doesn't like to scanf long doubles
-				sscanf (++c, "%lf", &m);
-				mass_arg = m;
-				
-				skip = TRUE;
-				break;
-			}
-			case 'y':	// set luminosity of star
-			{
-				double	l;	// gnu C doesn't like to scanf long doubles
-				sscanf (++c, "%lf", &l);
-				luminosity_arg = l;
-				
-				skip = TRUE;
-				break;
-			}
-			case 'n':	// number of systems
-				count_arg = atoi(&(*++c));
-				skip = TRUE;
-				break;
-			case 'i':	// step random number seed by this for next system
-				increment_arg = atoi(&(*++c));
-				skip = TRUE;
-				break;
-/*
-			case 'T':	// Use the solar system with Titan, not Saturn
-				jupiter.next_planet = &titan2;
- */
-			case 'x':	// Use the solar system
-				flag_char = *c;
-				flags_arg |= fUseSolarsystem;
-				if (mass_arg == 0.0)
-					mass_arg = 1.0;
-				break;
-			case 'a':	// Use the solar system varying earth
-				flag_char = *c;
-				flags_arg |= fReuseSolarsystem;
-				break;
-			case 'D':
-				catalog = &dole;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				skip = TRUE;
-				break;
-			case 'W':
-				catalog = &solstation;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				skip = TRUE;
-				break;
-			case 'F':
-				catalog = &jimb;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				skip = TRUE;
-				break;
-				/* seb: make options available -- lower case options subsumed by upper case versions
-				 * case 'f':
-				 * catalog = &jimb;
-				 * flag_char = toupper(*c);
-				 * break;
-				 * case 'd':
-				 * catalog = &dole;
-				 * flag_char = toupper(*c);
-				 * break;
-				 *  case 'w':
-				 * catalog = &solstation;
-				 * flag_char = toupper(*c);
-				 * break;
-				 * case 'b':
-				 * // experimental catal (Manticore, Helios etc.)
-				 * catalog = &manticore_cat;
-				 * flag_char = toupper(*c);
-				 * break;
-				 */
-			case 'B':
-				catalog = &manticore_cat;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				//seb: option -K else flags_arg |= fNoGenerate;
-				skip = TRUE;
-				sphinx.greenhouse_effect = TRUE;
-				break;
-			case 'G':
-				catalog = &ilAqr_cat;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				//seb option -K else flags_arg |= fNoGenerate;
-				skip = TRUE;
-				break;
-			case 'R':
-				catalog = &ring_universe;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				//seb option -K else flags_arg |= fNoGenerate;
-				skip = TRUE;
-				break;
-			case 'I':
-				catalog = &ic3094;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				//seb option -K else flags_arg |= fNoGenerate;
-				skip = TRUE;
-				break;
-			case 'N':
-				catalog = &ba_gal;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				//seb option -K else flags_arg |= fNoGenerate;
-				skip = TRUE;
-				break;
-			case 'U':
-				catalog = &omega_galaxy;
-				flag_char = toupper(*c);
-				++c;
-				if ((toupper(*c) != 'X') && (*c != '\0'))
-					sys_no_arg = atoi(c) + 1;
-				//seb option -K else flags_arg |= fNoGenerate;
-				skip = TRUE;
-				break;
-			case 'o':
-				if (*++c == '\0')
-					if (argc > 1)
-					{
-						--argc;
-						c = (++argv)[0];
-					}
-				
-				if (*c != '\0')
-					strcpy(filename_arg, c);
-
-				skip = TRUE;
-				break;
-			case 't':	// display text
-				out_format = ffTEXT;
-				break;
-			case 'e':
-				out_format = ffCSV;
-				break;
-			case 'C':
-				out_format = ffCSVdl;
-				break;
-			case 'c':
-				out_format = ffCELESTIA;
-				break;
-			case 'P':
-				out_format = ffMOONGEN;
-				break;
-			case 'V':
-				graphic_format = gfSVG;
-				break;
-			case 'S':
-				graphic_format = gfSVG;
-				out_format = ffSVG;
-				break;
-			case 'k':
-				flags_arg |= fUseKnownPlanets;
-				break;
-			case 'K': //seb: make force of listed planets optional
-				flags_arg |= fUseKnownPlanets | fNoGenerate;
-				break;
-			case 'p':
-				if (*++c == '\0')
-					if (argc > 1)
-					{
-						--argc;
-						c = (++argv)[0];
-					}
-				
-				if (*c != '\0')
-					strcpy(path, c);
-				
-				if (strcmp(path + strlen(path) - strlen(DIRSEP), DIRSEP) != 0)
-					strncat (path, DIRSEP, 80-strlen(path));
-					
-				skip = TRUE;
-				break;
-			case 'u':
-				if (*++c == '\0')
-					if (argc > 1)
-					{
-						--argc;
-						c = (++argv)[0];
-					}
-				
-				if (*c != '\0')
-					strcpy(url_path_arg, c);
-				
-				if (strcmp(url_path_arg + strlen(url_path_arg) - strlen("/"), "/") != 0)
-					strncat (url_path_arg, "/", 80-strlen(url_path_arg));
-				
-				skip = TRUE;
-				break;
-			case 'g':
-				flags_arg |= fDoGases;
-				break;
-			case 'v':	// verbosity
-				if (isdigit(*(c+1)))
-				{
-					sscanf (++c, "%x", &flag_verbose);
-					skip = TRUE;
-					if (flag_verbose & 0x0001)
-						flags_arg |= fDoGases;
-				}
-				else
-					action = aListVerbosity;
-				break;
-			case 'l':
-				action = aListCatalog;
-				break;
-			case 'L':
-				action = aListCatalogAsHTML;
-				break;
-			case 'z':
-				action = aSizeCheck;
-				break;
-			case 'Z':
-				action = aListGases;
-				break;
-			case 'M':
-				flags_arg |= fDoMoons;
-				break;
-			case 'H':
-				flags_arg |= fDoGases | fOnlyHabitable;
-				break;
-			case '2':
-				flags_arg |= fDoGases | fOnlyMultiHabitable;
-				break;
-			case '3':
-				flags_arg |= fDoGases | fOnlyThreeHabitable;
-				break;
-			case 'J':
-				flags_arg |= fDoGases | fOnlyJovianHabitable;
-				break;
-			case 'E':
-				flags_arg |= fDoGases | fOnlyEarthlike;
-				break;
-			case 'A':
-			{
-				double ratio;
-				
-				sscanf (++c, "%lf", &ratio);
-				skip = TRUE;
-				
-				if (ratio > 0.0)
-					ratio_arg = ratio;
-				else 
-				  {
-				    fprintf (stderr, "Accrete dust density coefficient -A (%f) must be > 0.0\n", ratio);
-				    return (1);
-				  }
-				break;
-			}
-			
-			case 'Q': //seb: eccentricity coefficient for accrete
-			{
-				double ecc;
-				
-				sscanf (++c, "%lf", &ecc);
-				skip = TRUE;
-				
-				if (ecc > 0.0)
-					ecc_coef_arg = ecc;
-				else 
-				  {
-				    fprintf (stderr, "Accrete eccentricity coeffecient -Q (%f) must be > 0.0\n", ecc);
-				    return (1);
-				  }
-				break;
-			}
-			case 'q': //seb: inner dust limit for accrete
-			{
-				double lim;
-				
-				sscanf (++c, "%lf", &lim);
-				skip = TRUE;
-				
-				if (lim > 0.0)
-					inner_planet_factor_arg = lim;
-				else 
-				  {
-				    fprintf (stderr, "Accrete inner dust boundary -q (%f) must be > 0.0\n", lim);
-				    return (1);
-				  }
-				break;
-			}
-			
-			default:
-				fprintf (stderr, "Unknown option: %s\n", c);
-			case '?':
-			case 'h':
-				usage(prognam);
-				return (1);
-			}
-	}
-	
-	for (index = 0; index < argc; index++) {
-		if ((strlen(argv[index]) + strlen(arg_name)) < sizeof(arg_name))
-		{
-			if (strlen(arg_name))
-				strcpy(arg_name+strlen(arg_name), " ");
-			
-			strcpy(arg_name+strlen(arg_name), argv[index]);
-		}
-	}
-	
-	if (use_stdout)
-	{
-		if (flags_arg & (fOnlyHabitable
-					   | fOnlyMultiHabitable
-					   | fOnlyJovianHabitable
-					   | fOnlyEarthlike))
-		{
-			if (count_arg > 50000)
-			{
-				printf ("Sorry, you cannot set the Repeat count > 50,000 even "
-						 "if you use a filter, due to system resource issues.");
-				return (1);
-			}
-		}
-		else
-		{
-			if (count_arg > 1000)
-			{
-				printf ("Sorry, you cannot set the Repeat count > 1,000 unless "
-						 "you use a filter, due to system resource issues.");
-				return (1);
-			}
-		}
-	}
-	
-	stargen (action,
-			 flag_char,
-			 path,
-			 url_path_arg,
-			 filename_arg,
-			 arg_name,
-			 
-			 use_stdout ? stdout : NULL,
-			 stderr,
-			 prognam,
-			 mass_arg,
-			 luminosity_arg,
-			 seed_arg,
-			 count_arg,
-			 increment_arg,
-			 catalog,
-			 sys_no_arg,
-			 
-			 ratio_arg,
-			 ecc_coef_arg,
-			 inner_planet_factor_arg,
-			 
-			 flags_arg,
-			 out_format,
-			 graphic_format
-			 );
-
-	return(0);
+void usage(string program)
+{
+  cout << "Usage: " << program << " [options] [system name]" << endl;
+  cout << "  Options:" << endl;
+  cout << "Seed values:" << endl;
+  cout << "    -s#  Set random number seed [default: from time]" << endl;
+  cout << "    -i#  Number to increment each random seed [default: 1]" << endl;
+  cout << "    -n#  Specify number of systems [default: 1]" << endl;
+  cout << "    -A#  set accretion dust density ratio_arg to # [default: 0.0]" << endl;
+  cout << "    -q#  set accretion inner dust border to # [default: 0.3]" << endl;
+  cout << "    -Q#  set accretion planetesimal seed eccentricity coefficient to # [default: 0.077]" << endl;    
+  cout << "Preset seeds:" << endl;
+  cout << "    -k   Use known planets as planitesimal seeds [from internal tables]" << endl;
+  cout << "    -K   Generate only known planets [from internal tables]" << endl;
+  cout << "    -x   Use the Solar System's masses/orbits" << endl;
+  cout << "    -a   Use the Solar System's masses/orbits varying Earth" << endl;
+  cout << "Stars:" << endl;
+  cout << "  For a custom star:" << endl;
+  cout << "    Please note that for a custom star, you need to specify a mass and/or a luminosity as well as a spectral type and/or a temperature. Other wise the program will not work." << endl;
+  cout << "    -m#  Specify stellar mass # [fraction of Sun's mass] (optional if -y is used)" << endl;
+  cout << "    -y#  Specify stellar luminosity # [fraction of Sun's luminosity] (optional if -m is used)" << endl;
+  cout << "    -Y#  Specify minimum age for star (years) (optional)" << endl;
+  cout << "    -MY# Specify maximum age for star (years) (optional)" << endl;
+  cout << "    -b#  The temperature of the star (optional if -B is used)" << endl;
+  cout << "    -B   Spectral type of the star (optional if -b is used)" << endl;
+  cout << "    -CB  Make this a circumbinary system like Tatoonine in Star Wars (optional)" << endl;
+  cout << "    -w#  The mass of a companion star (optional and required if the -CB option is used)" << endl;
+  cout << "    -j#  The luminosity of a companion star (optional and required if the -CB option is used)" << endl;
+  cout << "    -X#  The temperature of a companion star (optional and required if the -CB option is used)" << endl;
+  cout << "    -N   Spectral type of the companion star (optional and required if the -CB option is used)" << endl;
+  cout << "    -d#  The distance to a companion star (optional and required if the -CB option is used)" << endl;
+  cout << "    -f#  The eccentricity of the orbit of the companion star (optional and required if the -CB option is used)" << endl;
+  cout << "  For a predefined star:" << endl;
+  cout << "    -D   Use all of Dole's " << dole.count() << " nearby stars" << endl;
+  cout << "    -D#  Use Dole's system #" << endl;
+  cout << "    -F   Use all " << jimb.count() << " AU systems" << endl;
+  cout << "    -F#  Use AU system #" << endl;    
+  cout << "    -W   Use all " << solstation.count() << " nearby stars taken from the Web" << endl;
+  cout << "    -W#  Use Web system #" << endl;
+  cout << "    -O   Use all " << omega_galaxy.count() << " fictious stars in the fictious Omega Galaxy" << endl;
+  cout << "    -O#  Use Omega Galaxy system #" << endl;
+  cout << "    -R   Use all " << ring_universe.count() << " fictious stars in the fictious Ring Universe galaxy" << endl;
+  cout << "    -R#  Use Ring Universe system #" << endl;
+  cout << "    -I   Use all " << ic3094.count() << " fictious stars in IC 3094 that cham generated" << endl;
+  cout << "    -I#  Use IC 3094 system #" << endl; 
+  cout << "    -U   Use all " << andromeda.count() << " fictious stars in the Andromeda Galaxy that cham generated" << endl;
+  cout << "    -U#  Use Andromeda Galaxy system #" << endl;
+  cout << "    -G   Use the " << star_trek.count() << " predefined stars from Star Trek" << endl;
+  cout << "    -G#  Use Star Trek system #" << endl;
+  cout << "    -PHL Use the " << phl.count() << " predefined stars listed at the Planetary Habitability Library" << endl;
+  cout << "    -PHL#Use potentially habitable system #" << endl;
+  cout << "    -l   List stars of selected table and exit" << endl;
+  cout << "    -L   List stars of selected table as HTML and exit" << endl;
+  cout << "Filters:" << endl;
+  cout << "    Please note that these options are only usefull if you are making a large batch of systems and only want to save certain ones." << endl;
+  cout << "    -E   Only systems with earthlike planets" << endl;
+  cout << "    -H   Only systems with habitable planets" << endl;
+  cout << "    -2   Only systems with 2 or more habitable planets" << endl;
+  cout << "    -3   Only systems with 3 or more habitable planets" << endl;
+  cout << "    -T   Only systems with habitable planets more than 2 Earth Masses in size" << endl;
+  cout << "    -P   Only systems with planets habitable by the Planetary Habitability Laboratory's criteria" << endl;
+  cout << "    -J   Only systems with Jovian planets in habitable region" << endl;
+  cout << "    -g   Include atmospheric gases" << endl;
+  cout << "    -v   List verbosities [hex values] and exit" << endl;
+  cout << "    -v#  Set output verbosity [hex value]" << endl;
+  cout << "    -V   Use vector graphics [SVG] images [default: GIF]" << endl;
+  cout << "    -z   Do numeric size check and exit" << endl;
+  cout << "    -Z   Dump tables used for gases and exit" << endl;
+  cout << "File specs:" << endl;
+  cout << "    --   use stdout" << endl;
+  cout << "    -o   Name for the output file(s) [default: taken from star name]" << endl;
+  cout << "    -p   Path for where the output file(s) are saved [default: ./html]" << endl;
+  cout << "    -u   Internet URL path for/in the output file(s) [default: none]" << endl;
+  cout << "Output formats: (only one is generated)" << endl;
+  cout << "(default) HTML to file" << endl;
+  cout << "    -c   Celestia .ssc to stdout" << endl;
+  cout << "    -C   Excel .csv [dl: no thumbnail html] to file" << endl;
+  cout << "    -e   Excel .csv to file" << endl;
+  cout << "    -S   Vector graphics (SVG) to file" << endl;
+  cout << "    -t   Text to stdout" << endl;
+  cout << "    -sn# Number of decimal places for numbers" << endl;
+  cout << "Other:" << endl;
+  cout << "    -M   Generate moons (highly experimental and incomplete)" << endl;
+  cout << "    -r   Allow planet migration after forming. (highly experimental)" << endl;
+  cout << endl;
+  cout << "Examples:" << endl;
+  cout << "10000 systems with 1 as the seed for the first system around a custom star with moons and migrated planets and only save ones with an earthlike planet:" << endl;
+  cout << program << " -m1.09 -y1.12609 -BG0V -b6215 -M -r -s1 -n10000 -E" << endl;
+  cout << "10000 systems with 1 as the seed for the first system around a custom star in a circumbinary system with moons and migrated planets and only save ones with an earthlike planet:" << endl;
+  cout << program << " -m1.09 -y1.12609 -BG0V -b6215 -CB -w0.75 -j0.178473 -X4493 -NK3V -d0.11146 -f0.011 -M -r -s1 -n10000 -E" << endl;
+  cout << "10000 systems with 1 as the seed for the first system around a predefined star:" << endl;
+  cout << program << " -W73 -M -r -s1 -n10000 -E" << endl;
+  cout << "10000 systems with 1 as the seed for the first system around a custom star with a distant companion star with moons and migrated planets and only save ones with an earthlike planet:" << endl;
+  cout << program << " -m1.09 -y1.12609 -BG0V -b6215 -w0.75 -d1114.6 -f0.011 -M -r -s1 -n10000 -E" << endl;
+  cout << endl;
+  cout << "        Web systems (-W) taken from" << endl;
+  cout << "          http://www.solstation.com/stars.htm, Wikipedia, and various research papers" << endl;
+  cout << "        AU systems (-F) taken from" << endl;
+  cout << "          stories by C.J. Cherryh" << endl;
+  cout << "        Manticore systems (-B) taken from" << endl;
+  cout << "          stories by David Weber" << endl;
+  cout << endl;
+  cout << "        StarGen: " << stargen_revision << endl;
+  cout << endl;
 }

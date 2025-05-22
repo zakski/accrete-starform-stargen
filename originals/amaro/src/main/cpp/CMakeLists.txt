@@ -1,18 +1,16 @@
 project(stargen)
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8.4)
 
-enable_language(Fortran)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR})
 
-find_library(M_LIB m)
+find_package(GSL REQUIRED)
+include_directories(${GSL_INCLUDE_DIRS})
+set(LIBS ${LIBS} ${GSL_LIBRARIES})
 
-add_executable(stargen main.c stargen.c accrete.c display.c Dumas.c enviro.c utils.c ring_universe.c ic3094.c ba_gal.c omega_galaxy.c)
+add_executable(stargen accrete.cpp andromeda.cpp andromeda2.c display.cpp dole.cpp elements.cpp enviro.cpp gas_radius_helpers.cpp ic3094.cpp ic3094_2.c jimb.cpp main.cpp omega_galaxy.cpp omega_galaxy2.c Planetary_Habitability_Laboratory.cpp planets.cpp radius_tables.cpp ring_universe.cpp ring_universe2.c solid_radius_helpers.cpp solstation.cpp stargen.cpp star_temps.cpp star_trek.cpp structs.cpp utils.cpp)
 
-add_executable(moon_orbits moon_orbits.f)
+target_link_libraries(stargen ${LIBS})
 
-set_target_properties(stargen PROPERTIES COMPILE_FLAGS "-D_USE_LIBM_MATH_H")
-
-target_link_libraries(stargen ${M_LIB})
-
-install(TARGETS stargen moon_orbits RUNTIME DESTINATION bin)
-# install(TARGETS moon_orbits RUNTIME DESTINATION bin)
+install(TARGETS stargen RUNTIME DESTINATION bin)
+install(DIRECTORY html ref DESTINATION bin)

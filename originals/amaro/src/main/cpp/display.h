@@ -1,45 +1,37 @@
-char *engineer_notation(long double, int);
-void text_describe_system(planet_pointer, int, long);
-void csv_describe_system(FILE *, planet_pointer, int, long);
-void csv_thumbnails(FILE*, char*, char*, char*, char*);
-char *type_string(planet_type);
-void create_svg_file (FILE *, planet_pointer, char *, char *, char *, char *);
-FILE *open_csv_file (char *, char *);
-FILE *open_html_file(char *, long, char *, char *, char *, char *, char *, FILE *);
-void close_html_file(FILE *);
-void print_description(FILE *, char *, planet_pointer, char *);
-void list_molecules(FILE *, long double);
-void html_thumbnails(planet_pointer, FILE *, char *, char *, char *, char *, char *, int, int, int, int, int);
-void html_thumbnail_totals(FILE *);
-void html_describe_system(planet_pointer, int, char *, FILE *);
-void celestia_describe_system(planet_pointer, char *, char *, long, long double, long double, FILE *); //seb
-void moongen_describe_system(planet_pointer, char *, char *, long, FILE *); // seb
-char *texture_name (planet_type);
+#ifndef DISPLAY_H
+#define DISPLAY_H
+#include <fstream>
+#include <sstream>
+#include <string>
+#include "structs.h"
 
-#define STARGEN_URL	"http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html"
+using namespace std;
 
-// Define the color scheme. Black, Brown and Beige (with a nod to the Duke)
-
-// Main page colors: Beige BG, Dark brown text, Red links
-#define BGCOLOR		"#FFCC99"
-#define TXCOLOR		"#330000"
-#define LINKCOLOR	"#990000"
-#define ALINKCOLOR	"#FF0000"
-
-// Contrasting headers: Light brown with black text
-#define BGHEADER	"#CC9966"
-#define TXHEADER	"#000000"
-
-// Space, background for planets, black with sand colored letters
-#define BGSPACE		"#000000"
-#define TXSPACE		"#FFE6CC"
-
-// Main table color scheme: Sand with black (space reversed)
-#define BGTABLE		"#FFE6CC"
-#define TXTABLE		"#000000"
-
-// Notices: Post-It yellow with normal text
-
-#define BGNOTE		"#FFFF66"
-#define TXNOTE		TXCOLOR
-
+void text_describe_system(planet *, bool, long, bool);
+void csv_describe_system(fstream&, planet *, bool, long, bool);
+void csv_row(fstream&, planet *, bool, bool, string, stringstream&);
+string type_string(planet *);
+string cloud_type_string(planet *);
+void create_svg_file(planet *, string, string, string, string, bool);
+void open_csv_file(string, string, fstream&);
+void refresh_file_stream(fstream&, string, string, string);
+void open_html_file(string, long, string, string, string, string, string, fstream&);
+void close_html_file(fstream&);
+void print_description(fstream&, string, planet *, string);
+void list_molecules(fstream&, long double);
+void html_thumbnails(planet *, fstream&, string, string, string, string, string, bool, bool, bool, bool, int, bool);
+void html_thumbnail_totals(fstream&);
+void html_decribe_planet(planet *, int, int, bool, string, fstream&);
+void html_describe_system(planet *, bool, bool, string, fstream&);
+void celestia_describe_system(planet *, string, string, long, long double, long double, bool);
+void celestia_describe_world(planet *, string, string, long, long double, long double, int, sun&, bool, int);
+void moongen_describe_system(planet *, string, string, long);
+void lprint(fstream&, bool&, string);
+string image_type_string(planet *);
+string printSpinResonanceFactor(long double);
+void mol_print(fstream&, bool&, int&, int, long double, string, long double);
+string texture_name(planet_type);
+void display_clouds(planet *);
+void assignDistanceColors(planet *, long double, long double, long double);
+void assignTemperatureColors(planet *, long double, long double, long double, long double, long double, long double, long double, long double);
+#endif

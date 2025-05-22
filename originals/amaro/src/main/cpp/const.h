@@ -1,4 +1,10 @@
+#ifndef CONST_H
+#define CONST_H
+#ifdef __cplusplus
+#include <cmath>
+#else
 #include <math.h>
+#endif
 
 #if 0
 #ifdef LONG_RAND
@@ -11,14 +17,10 @@
 #define PI						(3.1415926536)
 #define RADIANS_PER_ROTATION	(2.0 * PI)
 
-#ifndef TRUE
-#define TRUE					(1)
-#define FALSE					(0)
-#endif
-
 #define ECCENTRICITY_COEFF		(0.077)			/* Dole's was 0.077			*/
 #define PROTOPLANET_MASS		(1.0E-15)		/* Units of solar masses	*/
 #define CHANGE_IN_EARTH_ANG_VEL (-1.3E-15)		/* Units of radians/sec/year*/
+//#define CHANGE_IN_EARTH_ANG_VEL (-9.38547486033519553073e-15)		/* Units of radians/sec/year. From http://www.ridgenet.net/~do_while/sage/v5i5d.htm*/
 #define SOLAR_MASS_IN_GRAMS		(1.98892E33)		/* Units of grams			*/
 #define SOLAR_MASS_IN_KILOGRAMS	(1.98892E30)		/* Units of kg				*/
 #define EARTH_MASS_IN_GRAMS		(5.9742E27)		/* Units of grams			*/
@@ -40,17 +42,20 @@
 #define MMHG_TO_MILLIBARS (EARTH_SURF_PRES_IN_MILLIBARS / EARTH_SURF_PRES_IN_MMHG)
 #define PSI_TO_MILLIBARS (EARTH_SURF_PRES_IN_MILLIBARS / EARTH_SURF_PRES_IN_PSI)
 #define H20_ASSUMED_PRESSURE	(47. * MMHG_TO_MILLIBARS) /* Dole p. 15      */
-#define MIN_O2_IPP	(72. * MMHG_TO_MILLIBARS)	/* Dole, p. 15				*/
+//#define MIN_O2_IPP	(72. * MMHG_TO_MILLIBARS)	/* Dole, p. 15				*/
+#define MIN_O2_IPP	(53. * MMHG_TO_MILLIBARS)	/* Dole, p. 15				*/
 #define MAX_O2_IPP	(400. * MMHG_TO_MILLIBARS)	/* Dole, p. 15				*/
-#define MAX_HE_IPP	(61000. * MMHG_TO_MILLIBARS)	/* Dole, p. 16			*/
+#define MAX_HE_IPP	(61000. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
 #define MAX_NE_IPP	(3900. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
+#define MIN_N2_IPP	(10. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
 #define MAX_N2_IPP	(2330. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
 #define MAX_AR_IPP	(1220. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
 #define MAX_KR_IPP	(350. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
 #define MAX_XE_IPP	(160. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
-//#define MAX_CO2_IPP (7. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
-#define MAX_CO2_IPP (14. * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/ // SEB: FOR PELL
-#define MAX_HABITABLE_PRESSURE (118 * PSI_TO_MILLIBARS)	/* Dole, p. 16		*/
+#define MIN_CO2_IPP	(0.05 * MMHG_TO_MILLIBARS)	/* Dole, p. 16				*/
+//#define MAX_CO2_IPP (7. * MMHG_TO_MILLIBARS)	/* Dole, p. 16					*/
+#define MAX_CO2_IPP (14. * MMHG_TO_MILLIBARS)	/* Dole, p. 16					*/ // SEB: FOR PELL
+#define MAX_HABITABLE_PRESSURE (118 * PSI_TO_MILLIBARS)	/* Dole, p. 16				*/
 // The next gases are listed as poisonous in parts per million by volume at 1 atm:
 #define PPM_PRSSURE (EARTH_SURF_PRES_IN_MILLIBARS / 1000000.)
 #define MAX_F_IPP	(0.1 * PPM_PRSSURE)			/* Dole, p. 18				*/
@@ -79,12 +84,25 @@
 #define CLASS_III_ALBEDO		(0.12)
 #define CLASS_IV_ALBEDO			(0.03)
 #define CLASS_V_ALBEDO			(0.55)
+#define CARBON_GIANT_ALBEDO		(0.01)
+#define SULFAR_GIANT_ALBEDO		(0.63)
+#define METHANE_GIANT_ALBEDO		(0.3)
 #define AIRLESS_ICE_ALBEDO		(0.5)
 #define EARTH_ALBEDO			(0.3)			/* was .33 for a while */
 #define GREENHOUSE_TRIGGER_ALBEDO (0.20)
 #define ROCKY_ALBEDO			(0.15)
 #define ROCKY_AIRLESS_ALBEDO	(0.07)
 #define WATER_ALBEDO			(0.04)
+#define TEMPERATURE_NEPTUNE (48.1)
+#define TEMPERATURE_URANUS (60.3)
+#define TEMPERATURE_CLASS_I (81.0)
+#define TEMPERATURE_SATURN (85.1)
+#define TEMPERATURE_CLASS_II (150.0)
+#define TEMPERATURE_SULFUR_GIANT (320.0)
+#define TEMPERATURE_CLASS_III (360.0)
+#define TEMPERATURE_CLASS_IV (900.0)
+#define TEMPERATURE_CLASS_V (1400.0)
+#define TEMPERATURE_CARBON_GIANT (2240.0)
 
 #define SECONDS_PER_HOUR		(3600.0)
 #define CM_PER_AU				(1.495978707E13)/* number of cm in an AU	*/
@@ -169,34 +187,98 @@
 
 #define JIMS_FUDGE				(1.004)
 
-#define SUNMAG 4.83	/* absolute magnitude of the sun */
-#define N2 2.51188643150958	/* 5th root of 100 */
+#define SUNMAG 4.83 /* absolute magnitude of the sun */
+#define N2 2.51188643150958 /* 5th root of 100 */
 
 /*	 The following defines are used in determining the fraction of a planet	 */
 /*	covered with clouds in function cloud_fraction in file enviro.c.		 */
-#define Q1_36					(1.258E19)		/* grams	*/
-#define Q2_36					(0.0698)		/* 1/Kelvin */
+#define Q1_36 (1.258E19) /* grams	*/
+#define Q2_36 (0.0698) /* 1/Kelvin */
+
+#define PARSEC 3.2615638 /*light years*/
+
+#define AVOGADRO 6.02214179E23
+#define H 6.62606E-34 /*Planck constant*/
+#define C 299792458 /*Speed of light*/
+#define KB (MOLAR_GAS_CONST / 1000.0) / AVOGADRO /*Boltzmann constant*/
+#define ACCURACY_FOR_PEAK 0.01
 
 /* macros: */
 #define pow2(a) ((a) * (a))
 #define pow3(a) ((a) * (a) * (a))
 #define pow4(a) ((a) * (a) * (a) * (a))
-#define pow1_4(a)		sqrt(sqrt(a))
-#define pow1_3(a)		pow(a,(1.0/3.0))
-#define pow1_2(a)		sqrt(a)
+#define pow1_4(a) sqrt(sqrt(a))
+#define pow1_3(a) pow(a,(1.0/3.0))
+#define pow1_2(a) sqrt(a)
 /*define mass(a) pow(a, (1.0/3.5)) calculates mass based on luminosity (a) */
 //define mass(a) (a <= (0.3815*pow(0.6224,2.5185))) ? ((log(a)/log(2.5185))/0.6224) : (a <= 1) ? (log(a)/log(4.551)) : (a <= pow(3.1623, 4.351)) ? (log(a)/log(4.351)) : (a <= (2.7563*pow(16,3.4704))) ? ((log(a)/log(3.4704))/2.7563) : ((log(a)/log(2.4853))/42.321) /* calculates mass based on luminosity (a) */
 #define mass(a) (a <= (0.3815*pow(0.6224,2.5185))) ? (1.46613*pow(a,0.3970617431010522)) : (a <= 1) ? pow(a,0.2197319270490002) : (a <= pow(3.1623, 4.351)) ? pow(a,0.2298322224775914) : (a <= (2.7563*pow(16,3.4704))) ? (0.746654*pow(a,0.2881512217611803)) : (0.221579*pow(a,0.4023659115599726)) /* calculates mass based on luminosity (a) */
 #define abs2luminosity(a) pow(N2,(SUNMAG-a)) /* calculates luminosity based on absolute magnitude (a) */
+#define vis2abs(v,d) (v - 5 * (log10(d/PARSEC) - 1))
 
 #define EM(x)		(x)/SUN_MASS_IN_EARTH_MASSES
-#define AVE(x,y)	((x+y)/2.)
+#define AVE(x,y)	((x+y)/2.0)
 #define ADD(x,y)	(x+y)
 #define DIVIDE(x,y)	(x/y)
 
-#define JUPITER_MASS 317.8 /* mass of Jupiter in Earth Masses */
-#define KM_JUPITER_RADIUS 71492.0 /* radius of Jupiter in km */
+#define JUPITER_CORE_RATIO(x)	(EM((x / JUPITER_MASS) * 10.0))
+#define JUPITER_GAS_RATIO(x)	(EM(x) - JUPITER_CORE_RATIO(x))
 
-#define ICE_DENSITY 0.9167 /* Units of g/cc */
-#define IRON_DENSITY 7.874 /* Units of g/cc */
+#define JUPITER_MASS 317.8 /* mass of Jupiter in Earth Masses */
+#define KM_JUPITER_RADIUS 69911.0 /* average radius of Jupiter in km */
+
 #define ROCK_DENSITY 4.7825 /* Units of g/cc (derived from ((EARTH_DENSITY - (IRON_DENSITY / 3))/(2/3)) */
+#define CARBON_DENSITY 3.22 /* Units of g/cc (this is actually the density of SiC) */
+
+#define GRAPHITE_DENSITY 2.25 /* Units of g/cc */
+#define IRON_DENSITY 7.874 /* Units of g/cc */
+#define FeS_DENSITY 4.77 /* Units of g/cc */
+#define ICE_DENSITY 1.46 /* Units of g/cc (this is actually the density of ice VII) */
+#define MgO_DENSITY 3.56 /* Units of g/cc */
+#define MgSiO3_DENSITY 4.10 /* Units of g/cc */
+#define SiC_DENSITY 3.22 /* Units of g/cc */
+
+#define K2 1.7E+16 /* Years. Value from "Regarding the Criteria for Planethood And Proposed Planetary Classification Schemes by S. Allan Stern and Harold F. Levison. Used to determine what is a planet and what is a dwarf planet */
+
+#define RECENT_VENUS 1
+#define RUNAWAY_GREENHOUSE 2
+#define MOIST_GREENHOUSE 3
+#define MAXIMUM_GREENHOUSE 4
+#define EARLY_MARS 5
+#define TWO_AU_CLOUD_LIMIT 6
+#define FIRST_CO2_CONDENSATION_LIMIT 7
+#define EARTH_LIKE 8
+
+#define NONE 0
+#define BREATHABLE 1
+#define UNBREATHABLE 2
+#define POISONOUS 3
+
+// Define the color scheme. Black, Brown and Beige (with a nod to the Duke)
+
+// Main page colors: Beige BG, Dark brown text, Red links
+#define BGCOLOR		"#FFCC99"
+#define TXCOLOR		"#330000"
+#define LINKCOLOR	"#990000"
+#define ALINKCOLOR	"#FF0000"
+
+// Contrasting headers: Light brown with black text
+#define BGHEADER	"#CC9966"
+#define TXHEADER	"#000000"
+
+// Space, background for planets, black with sand colored letters
+#define BGSPACE		"#000000"
+#define TXSPACE		"#FFE6CC"
+
+// Main table color scheme: Sand with black (space reversed)
+#define BGTABLE		"#FFE6CC"
+#define TXTABLE		"#000000"
+
+// Notices: Post-It yellow with normal text
+
+#define BGNOTE		"#FFFF66"
+#define TXNOTE		TXCOLOR
+
+#define STARGEN_URL "http://www.eldacur.com/~brons/NerdCorner/StarGen/StarGen.html"
+
+#endif
